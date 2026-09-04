@@ -2,6 +2,8 @@
 
 A rerun needs an available `gpt-5.6-luna` model with reasoning `xhigh`, archived method baselines, scenario dependencies and access to the pinned hosted release for Prist. Hosted model/service availability is external to this export. Baseline archives supply tracked method files and baseline product canon.
 
+Use the archived Russian-language `classic-2026.08` baseline for a condition-matched Classic rerun. A future English translation is a different experimental condition because this cohort did not test it.
+
 Prepare an independent repository and prompt without dispatching a task:
 
 ```text

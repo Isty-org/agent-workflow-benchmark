@@ -2,6 +2,8 @@
 
 `data/cohort.json` selects exactly 36 results by task ID from the unchanged final `source-snapshot.json`. Each selection identifies its first-pass record, usage, final objective receipt, final evaluation, method lock and prompt evidence. Original source JSON, evaluations, prompts and inputs retain their language and values.
 
+The Classic condition is the Russian-language `classic-2026.08` edition captured in the frozen setup trees. A future English edition is a translation and was not run or evaluated by this cohort.
+
 The 27 Plain/BMAD/Classic task records come from V7. The nine Prist task records come from permissions-corrected V7C. The selected V7 Classic small/r3 task is `01a061d1-f717-7bd3-9b76-60c62ac807d4`, the permitted infrastructure replacement captured in V7 `retry-1`. Only that selected first pass is exported for its cell. It has no repair turns. Its dispatch projection records the frozen-envelope/scenario policy.
 
 All 12 large-project final scores use the same V7C supplemental uniform evaluator. The nine large comparator implementations, task IDs, usage and timing still come from V7. `evaluationSeries` distinguishes evaluation provenance from measured-task provenance. This does not add measured tasks. The final evaluator lock identifies the original harness and additive semantic-copy correction. Existing frozen-check references inside original evaluations remain historical pointers; the cohort's `references.checks` identifies the final scoring input.

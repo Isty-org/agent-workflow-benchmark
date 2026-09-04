@@ -60,11 +60,57 @@
   "sourceFilesRechecked": 337,
   "sourceHashMismatches": 0,
   "status": "pass",
+  "stage6PublicRepository": {
+    "status": "pass",
+    "primaryReadme": "README.md",
+    "russianReadme": "README.ru.md",
+    "readmeResultCellsVerified": 12,
+    "readmeFactAndTableParity": true,
+    "resultsSource": "reports/benchmark-v7-final/source-snapshot.json",
+    "classicCondition": {
+      "edition": "classic-2026.08",
+      "language": "Russian",
+      "futureEnglishTranslationTested": false
+    },
+    "frozenPayload": {
+      "baseCommit": "a37177f015facdafbc5338aede5c0b930a60742b",
+      "directories": ["data", "protocol", "evidence"],
+      "aggregateLocksMatched": 3,
+      "contentEdits": 0
+    },
+    "license": {
+      "repositoryOwnedScope": "Apache-2.0",
+      "scopeDocument": "LICENSE-NOTES.md",
+      "thirdPartyDocument": "THIRD_PARTY_NOTICES.md",
+      "localSnapshotAudit": "pass_with_release_gate"
+    },
+    "release": {
+      "archivesPrepared": 9,
+      "archivesUploaded": 0,
+      "uploadManifest": "assets/release-upload-manifest.json",
+      "archiveGate": "third_party_rights_confirmation_required"
+    },
+    "publicFacingScan": {
+      "files": 20,
+      "secretLikeMatches": 0,
+      "machineSpecificPathMatches": 0
+    },
+    "ci": {
+      "workflow": ".github/workflows/verify.yml",
+      "platforms": ["ubuntu-latest", "windows-latest"],
+      "python": "3.12",
+      "node": "24",
+      "releaseArchivesRequired": false
+    }
+  },
   "sourceEdits": 0,
   "publishingActions": 0,
   "measuredTasksDispatched": 0,
   "commands": [
-    "python scripts/verify.py",
+    "npm run verify",
+    "npm run reevaluate",
+    "npm run check:public",
+    "npm run check",
     "python scripts/verify.py --assets",
     "python scripts/reevaluate.py --output work/recomputed-scores.json",
     "python scripts/self_test.py"

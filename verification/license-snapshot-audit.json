@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "basis": "Frozen local baseline ZIPs and committed member manifests; no network claims",
+  "snapshotsChecked": [
+    "release-assets/baselines-new-project.zip",
+    "release-assets/baselines-small-project.zip",
+    "release-assets/baselines-large-project.zip",
+    "assets/manifests/baselines-new-project.json",
+    "assets/manifests/baselines-small-project.json",
+    "assets/manifests/baselines-large-project.json"
+  ],
+  "methodIsolationFinding": {
+    "source": "Product-empty new-project baseline",
+    "bmad": {
+      "version": "6.11.0",
+      "roots": ["_bmad/", ".agents/skills/bmad-*"],
+      "licenseOrNoticePathFound": false
+    },
+    "classic": {
+      "edition": "classic-2026.08",
+      "language": "Russian",
+      "licenseOrNoticePathFound": false,
+      "englishEditionTested": false
+    },
+    "prist": {
+      "roots": [".agents/skills/spec-driven-work/", ".claude/skills/spec-driven-work/", ".codex/"],
+      "licenseOrNoticePathFound": false
+    }
+  },
+  "productNoticeFinding": {
+    "largeProjectComponentNoticePathsFound": true,
+    "examples": [
+      "native/whisper/licenses/openai-whisper-LICENSE.txt",
+      "native/whisper/licenses/whisper.cpp-LICENSE.txt",
+      "packaging/macos/licenses/SourceGear-SQLite.txt",
+      "packaging/windows/notices/licenses/Apache-2.0.txt",
+      "packaging/windows/notices/licenses/MIT.txt",
+      "packaging/windows/notices/licenses/OFL-1.1.txt"
+    ],
+    "archiveWideGrantInferred": false
+  },
+  "repositoryOwnedScope": "LICENSE-NOTES.md",
+  "archivePublicationGate": "third_party_rights_confirmation_required",
+  "status": "pass_with_release_gate"
+}

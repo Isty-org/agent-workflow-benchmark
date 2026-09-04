@@ -1,7 +1,19 @@
-# License and third-party notes
+# License scope
 
-This is a local publication-preparation export. No blanket license or ownership assertion is applied to benchmark inputs, reports, evaluations, source projects, method artifacts or implementations. The publisher must select a license for material they are entitled to license during publication preparation.
+The repository includes an Apache License 2.0 text in `LICENSE`. Its grant applies to material authored by the benchmark publisher for this public export:
 
-BMAD is pinned to 6.11.0 (`bmm`, Codex integration). Classic Spec-Driven AI Development is identified by exact setup trees. Prist is identified by the recorded release, image and kit. Naming a method or preserving its files does not assert permission to relicense it. Existing copyright, license and notice files are preserved in release assets. Dependency rights remain governed by their respective notices and lockfiles.
+- top-level public documentation and community files;
+- `.github/` repository metadata and CI configuration;
+- portable export, verification, replay, and materialization source in `scripts/`;
+- repository-level schemas in `schemas/`;
+- publication-specific metadata created for this export, including `assets/release-upload-manifest.json` and Stage 6 verification records.
 
-Before public distribution, establish rights for each relevant source/method tree and include required upstream notices. Where no license grant is recorded, this export does not infer one. Hosted services, model access, credentials and trademarks are outside any proposed source-code license. Credential-bearing connection files remain hash-only.
+The Apache-2.0 grant does not extend to preserved or projected benchmark payload whose rights may belong to other parties. Excluded scope includes:
+
+- `data/`, `protocol/`, `evidence/`, `reports/`, `evaluator/`, `inputs/`, `manifests/`, and `provenance/`;
+- `assets/manifests/`, `assets/release-assets.json`, `assets/SHA256SUMS`, and every file represented by them;
+- the Git-ignored `release-assets/` archives and all archive members;
+- BMAD, Classic, and Prist method material; source-project baselines; measured implementations and normalized reviewer inputs;
+- third-party packages, lockfile dependencies, hosted services, model access, credentials, names, logos, and trademarks.
+
+The exclusions define licensing scope and do not alter the benchmark's integrity or availability for verification. Existing copyright, attribution, license, and notice files remain attached to their original components. [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) records the local snapshot review and the publication gate for release archives.

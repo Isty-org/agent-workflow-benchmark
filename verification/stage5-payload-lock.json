@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "a37177f015facdafbc5338aede5c0b930a60742b",
+  "algorithm": "sha256 of sorted UTF-8 lines: <raw_sha256> <bytes> <repo_relative_path>\\n",
+  "scope": [
+    {
+      "directory": "data",
+      "files": 37,
+      "bytes": 85743,
+      "manifestSha256": "fc8190af7c4d1f3cce4062624c0e86d67098a66398fd8c519758dad123430c34",
+      "gitTree": "ea5ff8eb8c78e0671a13189d392428f413be2949"
+    },
+    {
+      "directory": "protocol",
+      "files": 42,
+      "bytes": 133993,
+      "manifestSha256": "40178b1a4f49c98b1dc35819a7084476800492db92a97a0291c4a1ee70dccbae",
+      "gitTree": "7a05bf18b29436e6d72c6f2a09cbfdfccd0f1c6d"
+    },
+    {
+      "directory": "evidence",
+      "files": 269,
+      "bytes": 6776640,
+      "manifestSha256": "71d511b72c5fa05c23a305f33de1f94a3358cf0ad5717b9f7db36cd75e826ad9",
+      "gitTree": "f888785764fac05d23bbea645aeba0855ce54042"
+    }
+  ]
+}

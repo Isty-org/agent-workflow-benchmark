@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "prepared_for_final_audit_not_uploaded",
+  "releaseTarget": "Select a tag tied to the reviewed Stage 6 commit at publication time.",
+  "repositoryLicense": {
+    "spdx": "Apache-2.0",
+    "scope": "LICENSE-NOTES.md"
+  },
+  "archiveLicenseGate": {
+    "status": "third_party_rights_confirmation_required",
+    "details": "THIRD_PARTY_NOTICES.md"
+  },
+  "checksumFile": "assets/SHA256SUMS",
+  "uploads": [
+    {
+      "name": "first-pass-large-project.zip",
+      "sourcePath": "release-assets/first-pass-large-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 28157491,
+      "sha256": "5df64bdc15295149d1dc41cdee2d6a998326718195c93a8e8041f57b3f7a0ad2",
+      "memberManifest": "assets/manifests/first-pass-large-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    },
+    {
+      "name": "first-pass-new-project.zip",
+      "sourcePath": "release-assets/first-pass-new-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 2948164,
+      "sha256": "b74c4b7bfa5a56828e416b3964ea6e2244834a8c2bcd5443326edcebc2c045d1",
+      "memberManifest": "assets/manifests/first-pass-new-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    },
+    {
+      "name": "first-pass-small-project.zip",
+      "sourcePath": "release-assets/first-pass-small-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 4106306,
+      "sha256": "089e1e8f030ec63e9b3045112e3cf64d1b89e02f670a6893a2142681cf8d62f7",
+      "memberManifest": "assets/manifests/first-pass-small-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    },
+    {
+      "name": "review-inputs-large-project.zip",
+      "sourcePath": "release-assets/review-inputs-large-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 24926492,
+      "sha256": "a53aa36c0e9724b860f8368e91868b829453239a769c349a009f641019d92f07",
+      "memberManifest": "assets/manifests/review-inputs-large-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    },
+    {
+      "name": "review-inputs-new-project.zip",
+      "sourcePath": "release-assets/review-inputs-new-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 322359,
+      "sha256": "a050c5fdf129acf9fefa70ea49ac1071d12d92e38f803034b283370a503644c7",
+      "memberManifest": "assets/manifests/review-inputs-new-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    },
+    {
+      "name": "review-inputs-small-project.zip",
+      "sourcePath": "release-assets/review-inputs-small-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 1617341,
+      "sha256": "8d2326b34b22d0ecadc7f9a1d1c6a4490d5470b6dff13334d14372f06c6f6070",
+      "memberManifest": "assets/manifests/review-inputs-small-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    },
+    {
+      "name": "baselines-large-project.zip",
+      "sourcePath": "release-assets/baselines-large-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 28119430,
+      "sha256": "15ad3a0dc4426a0b1a856c7057b4e1f822a8d9a5846d6eccf907fca2796aacf5",
+      "memberManifest": "assets/manifests/baselines-large-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    },
+    {
+      "name": "baselines-new-project.zip",
+      "sourcePath": "release-assets/baselines-new-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 2675017,
+      "sha256": "a17416a2ef905b1b04b8102140ae784493d2d337cf0682c013c714a0496a87c6",
+      "memberManifest": "assets/manifests/baselines-new-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    },
+    {
+      "name": "baselines-small-project.zip",
+      "sourcePath": "release-assets/baselines-small-project.zip",
+      "mediaType": "application/zip",
+      "bytes": 3886597,
+      "sha256": "6fb884f4f4a7fafaa8650ea2ef6c071378dba33b29e3e612ac4f2db8443c1358",
+      "memberManifest": "assets/manifests/baselines-small-project.json",
+      "status": "prepared_local_awaiting_rights_confirmation"
+    }
+  ]
+}

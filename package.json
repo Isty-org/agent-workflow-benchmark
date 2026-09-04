@@ -6,7 +6,9 @@
   "engines": { "node": ">=24 <25" },
   "scripts": {
     "verify": "python scripts/verify.py",
-    "reevaluate": "python scripts/reevaluate.py"
+    "reevaluate": "python scripts/reevaluate.py",
+    "check:public": "python scripts/check_publication.py",
+    "check": "npm run verify && npm run reevaluate && npm run check:public"
   },
   "devDependencies": { "@playwright/test": "1.62.1" }
 }

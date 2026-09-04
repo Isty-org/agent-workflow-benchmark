@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "command": "npm run check:public",
+  "readmeResultRowsVerified": 12,
+  "readmeParity": true,
+  "resultsMatchedSourceSnapshot": true,
+  "stage5PayloadDirectoriesVerified": 3,
+  "stage5PayloadContentEdits": 0,
+  "releaseAssetsInUploadManifest": 9,
+  "publicFilesScanned": 20,
+  "secretLikeMatches": 0,
+  "machineSpecificPathMatches": 0,
+  "licenseSnapshotAudit": "pass_with_release_gate"
+}

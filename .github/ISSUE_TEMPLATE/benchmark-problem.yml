@@ -1,0 +1,39 @@
+name: Benchmark problem
+description: Report a reproducibility, evidence, documentation, or portability problem.
+title: "[benchmark]: "
+labels:
+  - benchmark
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Verification
+        - Re-evaluation
+        - Rerun preparation
+        - Documentation or translation
+        - Provenance or licensing
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the observed behavior and the expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include commands, platform, Python/Node versions, and concise output. Remove secrets and machine-specific private paths.
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit
+      description: Full commit hash used for the check.
+    validations:
+      required: true
