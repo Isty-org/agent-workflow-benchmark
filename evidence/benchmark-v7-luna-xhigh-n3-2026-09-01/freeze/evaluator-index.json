@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "status": "draft",
+  "contracts": {
+    "new": "evaluator/contracts-v7/new.json",
+    "small": "evaluator/contracts-v7/small.json",
+    "large": "evaluator/contracts-v7/large.json"
+  },
+  "harnesses": {
+    "new": "evaluator/harness-v7/new-ui.hidden.mjs",
+    "small": "evaluator/harness-v7/small-api.hidden.ts",
+    "large": "evaluator/harness-v7/large-search.hidden.cs"
+  },
+  "v5CorrectedOverlay": "evaluator/harness-v7/large-search-overlay.mjs",
+  "repetitions": 3,
+  "reviewers": "2 independent; 3rd only when review delta > 4"
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3,
+  "scenario": "large",
+  "title": "IsTranscribe recent recordings live search",
+  "checks": [
+    { "id": "L3-A01", "category": "functional", "maxPoints": 7, "scoring": "binary", "procedure": "Search finds a recording by displayed meeting title, case-insensitively." },
+    { "id": "L3-A02", "category": "functional", "maxPoints": 6, "scoring": "binary", "procedure": "Search finds a recording by displayed application/source, case-insensitively." },
+    { "id": "L3-A03", "category": "functional", "maxPoints": 5, "scoring": "binary", "procedure": "Results update on every query change without submit." },
+    { "id": "L3-A04", "category": "functional", "maxPoints": 6, "scoring": "binary", "procedure": "Empty query and clear restore the original capped order exactly." },
+    { "id": "L3-A05", "category": "functional", "maxPoints": 5, "scoring": "binary", "procedure": "Zero matches show a localized no-results state distinct from empty history." },
+    { "id": "L3-A06", "category": "functional", "maxPoints": 4, "scoring": "binary", "procedure": "Clear is keyboard accessible, named and restores the full recent list." },
+    { "id": "L3-A07", "category": "functional", "maxPoints": 6, "scoring": "binary", "procedure": "An active query survives a runtime snapshot refresh and applies to new data." },
+    { "id": "L3-A08", "category": "functional", "maxPoints": 5, "scoring": "binary", "procedure": "Rename updates membership under the active query without clearing it." },
+    { "id": "L3-A09", "category": "functional", "maxPoints": 3, "scoring": "binary", "procedure": "Filtered items retain rename, remove, transcription and existing actions." },
+    { "id": "L3-A10", "category": "functional", "maxPoints": 3, "scoring": "binary", "procedure": "RU/EN resources cover field, clear and no-results and update with language change." },
+    { "id": "L3-B01", "category": "regression", "maxPoints": 8, "scoring": "binary", "procedure": "IsTranscribe.Desktop.Tests plus harness-owned filter tests pass in all three repetitions." },
+    { "id": "L3-B02", "category": "regression", "maxPoints": 6, "scoring": "binary", "procedure": "Desktop project and affected dependencies build on the pinned SDK." },
+    { "id": "L3-B03", "category": "regression", "maxPoints": 6, "scoring": "binary", "procedure": "A harness-owned Avalonia XAML load/smoke executes the changed surface and reports no new binding errors." },
+    { "id": "L3-C01", "category": "architecture", "maxPoints": 6, "scoring": "review", "procedure": "Search belongs to MainWindow presentation state and does not mutate runtime persistence." },
+    { "id": "L3-C02", "category": "architecture", "maxPoints": 4, "scoring": "review", "procedure": "The recent snapshot remains the source; the visible collection is a coherent derivation." },
+    { "id": "L3-C03", "category": "architecture", "maxPoints": 4, "scoring": "review", "procedure": "Direct ViewModel/UI tests cover query, refresh, rename, localization and accessibility." },
+    { "id": "L3-C04", "category": "architecture", "maxPoints": 3, "scoring": "review", "procedure": "Search preserves MaximumRecentItems, ordering and item lifecycle." },
+    { "id": "L3-C05", "category": "architecture", "maxPoints": 3, "scoring": "review", "procedure": "Traceability follows the assigned project's existing rules; no new benchmark-specific canon is invented." },
+    { "id": "L3-D01", "category": "scope", "maxPoints": 4, "scoring": "review", "procedure": "Loading, empty, actions, refresh and rename flows remain usable." },
+    { "id": "L3-D02", "category": "scope", "maxPoints": 3, "scoring": "review", "procedure": "Field and clear action have label, keyboard/focus semantics and clear RU/EN states." },
+    { "id": "L3-D03", "category": "scope", "maxPoints": 3, "scoring": "review", "procedure": "Query remains local presentation state and is absent from logs, storage and external calls." }
+  ]
+}

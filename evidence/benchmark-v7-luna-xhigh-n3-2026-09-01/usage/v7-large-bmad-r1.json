@@ -1,0 +1,25 @@
+{
+  "aggregation": "sum_per_record",
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "billing": {
+    "estimatedTaskCostUsd": 0.79394304,
+    "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+    "reasoningIncludedInOutput": true
+  },
+  "cacheWriteInputTokens": 0,
+  "cachedInputTokens": 15954432,
+  "capturedAt": "2026-09-02T07:22:42.228Z",
+  "inputTokens": 17533518,
+  "outputTokens": 132531,
+  "reasoningOutputTokens": 0,
+  "redacted": true,
+  "schemaVersion": 1,
+  "source": {
+    "recordsObserved": 56,
+    "sessionSha256": "c8df6957a5e9cb0754e81951f6fd6a063633558680994642bd860a795c5b9d93",
+    "taskId": "01a060a9-e9b2-77c3-b553-47882dc9d541"
+  },
+  "totalTokens": 17666049,
+  "uncachedInputTokens": 1579086,
+  "usageObjects": 56
+}

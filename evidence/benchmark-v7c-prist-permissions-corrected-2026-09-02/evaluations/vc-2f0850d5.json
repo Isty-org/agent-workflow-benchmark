@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "blindId": "vc-2f0850d5",
+  "scenario": "new",
+  "phase": "first_pass",
+  "evaluatorVersion": "v7c-uniform-1",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "setupCommit": "dfa76a19d7a747d83236ed3db9fa91497075c238",
+  "workspaceCommit": "dfa76a19d7a747d83236ed3db9fa91497075c238",
+  "workspaceTree": "3f0180b5697756b2c1b71cb1ff90acf0aa815e04",
+  "firstPassContentFingerprint": "7adc007e26d66b4f8e754b7bd207e1ebb92f952eb271133f18db3800d168a8d4",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "46782bf0372a887455f8987e9c1b8278ef6e6933924277fd19da70c3564e5f70",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "46782bf0372a887455f8987e9c1b8278ef6e6933924277fd19da70c3564e5f70",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "46782bf0372a887455f8987e9c1b8278ef6e6933924277fd19da70c3564e5f70",
+      "passed": false
+    }
+  ],
+  "checkReceiptSha256": "3b0c295c7c95979102277f76332336c1f5b3cb6740467fb5a519fce03dd0d890",
+  "checks": [
+    {
+      "id": "N3-A01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; accessible title/author form adds a visible book",
+        "repetition 2: pass; accessible title/author form adds a visible book",
+        "repetition 3: pass; accessible title/author form adds a visible book"
+      ]
+    },
+    {
+      "id": "N3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: fail; three requested Russian states are visible; locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    61 × locator resolved to hidden <option value=\"want\">Хочу прочитать</option>\u001b[22m\n",
+        "repetition 2: fail; three requested Russian states are visible; locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    61 × locator resolved to hidden <option value=\"want\">Хочу прочитать</option>\u001b[22m\n",
+        "repetition 3: fail; three requested Russian states are visible; locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    62 × locator resolved to hidden <option value=\"want\">Хочу прочитать</option>\u001b[22m\n"
+      ]
+    },
+    {
+      "id": "N3-A03",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; one book moves through reading and completed states immediately",
+        "repetition 2: pass; one book moves through reading and completed states immediately",
+        "repetition 3: pass; one book moves through reading and completed states immediately"
+      ]
+    },
+    {
+      "id": "N3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; book and status survive browser reload",
+        "repetition 2: pass; book and status survive browser reload",
+        "repetition 3: pass; book and status survive browser reload"
+      ]
+    },
+    {
+      "id": "N3-A05",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; book and status survive full application stop and restart",
+        "repetition 2: pass; book and status survive full application stop and restart",
+        "repetition 3: pass; book and status survive full application stop and restart"
+      ]
+    },
+    {
+      "id": "N3-A06",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; multiple books remain independent after one state change",
+        "repetition 2: pass; multiple books remain independent after one state change",
+        "repetition 3: pass; multiple books remain independent after one state change"
+      ]
+    },
+    {
+      "id": "N3-A07",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; empty required values create no book and expose validation",
+        "repetition 2: pass; empty required values create no book and expose validation",
+        "repetition 3: pass; empty required values create no book and expose validation"
+      ]
+    },
+    {
+      "id": "N3-A08",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; primary product copy and controls are Russian",
+        "repetition 2: pass; primary product copy and controls are Russian",
+        "repetition 3: pass; primary product copy and controls are Russian"
+      ]
+    },
+    {
+      "id": "N3-B01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: fail; direct project test command",
+        "repetition 2: fail; direct project test command",
+        "repetition 3: fail; direct project test command"
+      ]
+    },
+    {
+      "id": "N3-B02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: fail; documented build or type/package check",
+        "repetition 2: fail; documented build or type/package check",
+        "repetition 3: fail; documented build or type/package check"
+      ]
+    },
+    {
+      "id": "N3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; real local start and Chromium smoke",
+        "repetition 2: pass; real local start and Chromium smoke",
+        "repetition 3: pass; real local start and Chromium smoke"
+      ]
+    },
+    {
+      "id": "N3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "vc-2f0850d5-a2: app.js:44 — состояние книг хранится в одном массиве books",
+        "vc-2f0850d5-a2: app.js:99 — отдельная функция persistBooks отвечает за сохранение",
+        "vc-2f0850d5-a2: app.js:124 — отдельная функция render отвечает за отображение",
+        "vc-2f0850d5-b: app.js:44-74 — состояние книг загружается через отдельную функцию загрузки из localStorage.",
+        "vc-2f0850d5-b: app.js:99-107 — запись состояния вынесена в persistBooks.",
+        "vc-2f0850d5-b: app.js:124-185 — рендеринг интерфейса отделён от хранения состояния."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-2f0850d5-a2: app.js:83 — книга представлена единым объектом с полем status",
+        "vc-2f0850d5-a2: app.js:234 — смена статуса изменяет status найденной книги",
+        "vc-2f0850d5-a2: app.js:126 — списки строятся фильтрацией того же массива books",
+        "vc-2f0850d5-b: app.js:6-27 — статусы описаны единым каталогом с идентификаторами и подписями.",
+        "vc-2f0850d5-b: app.js:155-165 — списки и счётчики строятся из book.status.",
+        "vc-2f0850d5-b: app.js:234-243 — перенос изменяет status той же книги, сохраняет и повторно отображает состояние."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-2f0850d5-a2: README.md:7 — README содержит раздел запуска, но не описывает тесты",
+        "vc-2f0850d5-a2: README.md:15 — альтернативная инструкция также содержит только запуск HTTP-сервера",
+        "vc-2f0850d5-b: README.md:7-25 — описан локальный запуск, раздел или команда для прямых тестов отсутствует.",
+        "vc-2f0850d5-b: app.js:268-314 — присутствует только runtime-обвязка формы, поиска и localStorage без тестового слоя."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-2f0850d5-a2: app.js:4 — ключ хранения имеет явную версию v1",
+        "vc-2f0850d5-a2: app.js:76 — отдельная normalizeBook задаёт границу обработки данных",
+        "vc-2f0850d5-a2: app.js:6 — статусы описаны конфигурационным массивом",
+        "vc-2f0850d5-b: app.js:4-27 — используется версионированный ключ хранения и централизованный каталог статусов.",
+        "vc-2f0850d5-b: app.js:76-89 — нормализация поддерживает стабильные id, createdAt и значения по умолчанию.",
+        "vc-2f0850d5-b: app.js:132-165,208-216 — отображение и выбор статуса работают через итерацию по каталогу."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "status": "partial",
+      "pointsAwarded": 1,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-2f0850d5-a2: README.md:7 — описан локальный запуск без Docker",
+        "vc-2f0850d5-a2: README.md:9 — указано требование Python 3",
+        "vc-2f0850d5-a2: README.md:15 — описан запуск через python -m http.server",
+        "vc-2f0850d5-b: README.md:7-25 — точно описаны Python 3, start.bat, локальный HTTP-сервер и адрес запуска.",
+        "vc-2f0850d5-b: README.md:7-25 — инструкции по установке, тестированию и сборке отсутствуют."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-2f0850d5-a2: app.js:268 — реализовано добавление книги",
+        "vc-2f0850d5-a2: app.js:234 — реализован перенос между статусами",
+        "vc-2f0850d5-a2: app.js:297 — поиск ограничен библиотекой книг",
+        "vc-2f0850d5-b: index.html:74-98 — форма принимает название, автора и статус на русском языке.",
+        "vc-2f0850d5-b: app.js:234-255 — реализованы перенос и удаление книг.",
+        "vc-2f0850d5-b: app.js:60-107 — состояние хранится в localStorage.",
+        "vc-2f0850d5-b: start.bat:1-13 — предусмотрен запуск без Docker."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-2f0850d5-a2: index.html:74 — поля формы имеют связанные label",
+        "vc-2f0850d5-a2: index.html:111 — поле поиска имеет доступное имя и кнопку очистки",
+        "vc-2f0850d5-a2: app.js:172 — предусмотрены пустые состояния и сообщение об отсутствии результатов",
+        "vc-2f0850d5-a2: app.js:275 — предусмотрена обработка незаполненных полей с возвратом фокуса",
+        "vc-2f0850d5-b: index.html:74-98 — у основных полей есть явные подписи, required и status-сообщение.",
+        "vc-2f0850d5-b: index.html:111-122,app.js:208-226 — поиск, очистка поиска и действия карточки имеют доступные подписи.",
+        "vc-2f0850d5-b: styles.css:64-70 — задан заметный focus-visible контур.",
+        "vc-2f0850d5-b: app.js:162-184,275-277 — предусмотрены пустые состояния, сообщения об ошибках и возврат фокуса."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-2f0850d5-a2: app.js:99 — сохранение выполняется только через window.localStorage",
+        "vc-2f0850d5-a2: index.html:12 — подключается локальный styles.css",
+        "vc-2f0850d5-a2: index.html:13 — подключается локальный app.js",
+        "vc-2f0850d5-a2: README.md:5 — явно указано локальное хранение в браузере",
+        "vc-2f0850d5-b: app.js:4,60-107 — приложение использует локальный ключ localStorage и не содержит внешнего сервиса хранения.",
+        "vc-2f0850d5-b: index.html:12-13 — подключаются только локальные styles.css и app.js.",
+        "vc-2f0850d5-b: start.bat:12-13 — используется локальный Python HTTP-сервер."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "vc-2f0850d5-a2",
+      "total": 24,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js:44 — состояние книг хранится в одном массиве books",
+            "app.js:99 — отдельная функция persistBooks отвечает за сохранение",
+            "app.js:124 — отдельная функция render отвечает за отображение"
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "app.js:83 — книга представлена единым объектом с полем status",
+            "app.js:234 — смена статуса изменяет status найденной книги",
+            "app.js:126 — списки строятся фильтрацией того же массива books"
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "README.md:7 — README содержит раздел запуска, но не описывает тесты",
+            "README.md:15 — альтернативная инструкция также содержит только запуск HTTP-сервера"
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js:4 — ключ хранения имеет явную версию v1",
+            "app.js:76 — отдельная normalizeBook задаёт границу обработки данных",
+            "app.js:6 — статусы описаны конфигурационным массивом"
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md:7 — описан локальный запуск без Docker",
+            "README.md:9 — указано требование Python 3",
+            "README.md:15 — описан запуск через python -m http.server"
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "app.js:268 — реализовано добавление книги",
+            "app.js:234 — реализован перенос между статусами",
+            "app.js:297 — поиск ограничен библиотекой книг"
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html:74 — поля формы имеют связанные label",
+            "index.html:111 — поле поиска имеет доступное имя и кнопку очистки",
+            "app.js:172 — предусмотрены пустые состояния и сообщение об отсутствии результатов",
+            "app.js:275 — предусмотрена обработка незаполненных полей с возвратом фокуса"
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js:99 — сохранение выполняется только через window.localStorage",
+            "index.html:12 — подключается локальный styles.css",
+            "index.html:13 — подключается локальный app.js",
+            "README.md:5 — явно указано локальное хранение в браузере"
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "vc-2f0850d5-b",
+      "total": 24,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js:44-74 — состояние книг загружается через отдельную функцию загрузки из localStorage.",
+            "app.js:99-107 — запись состояния вынесена в persistBooks.",
+            "app.js:124-185 — рендеринг интерфейса отделён от хранения состояния."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "app.js:6-27 — статусы описаны единым каталогом с идентификаторами и подписями.",
+            "app.js:155-165 — списки и счётчики строятся из book.status.",
+            "app.js:234-243 — перенос изменяет status той же книги, сохраняет и повторно отображает состояние."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "README.md:7-25 — описан локальный запуск, раздел или команда для прямых тестов отсутствует.",
+            "app.js:268-314 — присутствует только runtime-обвязка формы, поиска и localStorage без тестового слоя."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js:4-27 — используется версионированный ключ хранения и централизованный каталог статусов.",
+            "app.js:76-89 — нормализация поддерживает стабильные id, createdAt и значения по умолчанию.",
+            "app.js:132-165,208-216 — отображение и выбор статуса работают через итерацию по каталогу."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md:7-25 — точно описаны Python 3, start.bat, локальный HTTP-сервер и адрес запуска.",
+            "README.md:7-25 — инструкции по установке, тестированию и сборке отсутствуют."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "index.html:74-98 — форма принимает название, автора и статус на русском языке.",
+            "app.js:234-255 — реализованы перенос и удаление книг.",
+            "app.js:60-107 — состояние хранится в localStorage.",
+            "start.bat:1-13 — предусмотрен запуск без Docker."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html:74-98 — у основных полей есть явные подписи, required и status-сообщение.",
+            "index.html:111-122,app.js:208-226 — поиск, очистка поиска и действия карточки имеют доступные подписи.",
+            "styles.css:64-70 — задан заметный focus-visible контур.",
+            "app.js:162-184,275-277 — предусмотрены пустые состояния, сообщения об ошибках и возврат фокуса."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js:4,60-107 — приложение использует локальный ключ localStorage и не содержит внешнего сервиса хранения.",
+            "index.html:12-13 — подключаются только локальные styles.css и app.js.",
+            "start.bat:12-13 — используется локальный Python HTTP-сервер."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 44,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 6,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 14,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "rawScore": 74,
+  "totalScore": 69,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "missing-direct-tests",
+      "summary": "В проекте отсутствуют прямые тесты для добавления книги, смены статуса и восстановления данных.",
+      "evidence": [
+        "app.js:268 — добавление реализовано обработчиком формы без тестового слоя",
+        "app.js:234 — переход статуса реализован обработчиком изменения select без прямых тестов",
+        "README.md:7 — документация описывает запуск, но не тестовый сценарий"
+      ],
+      "reviewers": [
+        "vc-2f0850d5-a2",
+        "vc-2f0850d5-b"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "incomplete-readme-lifecycle",
+      "summary": "README описывает локальный запуск, но не фиксирует отсутствие или способ выполнения install, test и build шагов.",
+      "evidence": [
+        "README.md:7 — присутствует только раздел запуска без Docker",
+        "README.md:15 — приведена только альтернативная команда запуска",
+        "README.md:25 — описана остановка сервера без разделов тестирования и сборки"
+      ],
+      "reviewers": [
+        "vc-2f0850d5-a2"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "incomplete-readme-workflow",
+      "summary": "README точно описывает локальный старт, при этом не фиксирует порядок установки, тестирования и сборки.",
+      "evidence": [
+        "README.md:7-25 — указаны Python 3, start.bat и python -m http.server; инструкции install/test/build отсутствуют."
+      ],
+      "reviewers": [
+        "vc-2f0850d5-b"
+      ]
+    }
+  ],
+  "provenance": "frozen_v7",
+  "originalFrozenCheck": null,
+  "blind": true
+}

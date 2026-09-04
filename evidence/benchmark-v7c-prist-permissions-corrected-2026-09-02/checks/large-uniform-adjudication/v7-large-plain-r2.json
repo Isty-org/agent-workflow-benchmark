@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 3,
+  "blindId": "vz-7c4571",
+  "scenario": "large",
+  "checkedAt": "2026-09-02T14:53:02.136Z",
+  "workspaceCommit": "b8ac717030c8191093e478479ce39943bdc4420a",
+  "workspaceTree": "e3e99a0675f6ddcf19f0181b3b5e20f6e8e0edfc",
+  "stateFingerprint": "8075c332d584cc03dccb800923bd6fa556f08ea951e74db86a21ebcb3e35b786",
+  "scratchIsolated": true,
+  "projectedHarnessFiles": [
+    "specs/BOARD.md (scratch-only neutral repository-root marker)",
+    "tests/IsTranscribe.Desktop.Tests/BenchmarkHiddenSearchTests.cs"
+  ],
+  "setup": [],
+  "repetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "8075c332d584cc03dccb800923bd6fa556f08ea951e74db86a21ebcb3e35b786",
+      "results": [
+        {
+          "name": "desktop-tests",
+          "required": true,
+          "command": [
+            "dotnet",
+            "test",
+            "tests/IsTranscribe.Desktop.Tests/IsTranscribe.Desktop.Tests.csproj",
+            "--configuration",
+            "Release",
+            "--nologo",
+            "--filter",
+            "FullyQualifiedName!~BenchmarkHiddenSearchTests"
+          ],
+          "startedAt": "2026-09-02T14:45:37.525Z",
+          "completedAt": "2026-09-02T14:47:11.159Z",
+          "durationMs": 93635,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "a419a02332b0efed3058714fe2bd1b12983bfebee0ad34662f4735794a0f98c6",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Восстановлен C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\IsTranscribe.Transcription.Local.csproj (за 153 мс).\n  Восстановлен C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\IsTranscribe.Core.csproj (за 153 мс).\n  Восстановлен C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\IsTranscribe.Persistence.csproj (за 2,01 с).\n  Восстановлен C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\IsTranscribe.Application.csproj (за 2,01 с).\n  Восстановлен C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\IsTranscribe.Desktop.csproj (за 2,1 с).\n  Восстановлен C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\IsTranscribe.Desktop.Tests.csproj (за 2,11 с).\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n  IsTranscribe.Desktop.Tests -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll\nТестовый запуск для C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll (.NETCoreApp,Version=v10.0)\nОбщее количество тестовых файлов (1), соответствующих указанному шаблону.\n\nПройден!   : не пройдено     0, пройдено   155, пропущено     0, всего   155, длительность 1 s. - IsTranscribe.Desktop.Tests.dll (net10.0)\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "desktop-build",
+          "required": true,
+          "command": [
+            "dotnet",
+            "build",
+            "src/IsTranscribe.Desktop/IsTranscribe.Desktop.csproj",
+            "--configuration",
+            "Release",
+            "--nologo"
+          ],
+          "startedAt": "2026-09-02T14:47:11.160Z",
+          "completedAt": "2026-09-02T14:47:21.297Z",
+          "durationMs": 10137,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "4087e7e00a6264bdf0137f13de2aa8e2555319e3a8d1d18965c64cb200a56916",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Все проекты обновлены для восстановления.\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n\nСборка успешно завершена.\n    Предупреждений: 0\n    Ошибок: 0\n\nПрошло времени 00:00:09.43\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-search",
+          "required": true,
+          "command": [
+            "dotnet",
+            "test",
+            "tests/IsTranscribe.Desktop.Tests/IsTranscribe.Desktop.Tests.csproj",
+            "--configuration",
+            "Release",
+            "--nologo",
+            "--filter",
+            "FullyQualifiedName~BenchmarkHiddenSearchTests",
+            "--logger",
+            "console;verbosity=normal"
+          ],
+          "startedAt": "2026-09-02T14:47:21.297Z",
+          "completedAt": "2026-09-02T14:47:46.023Z",
+          "durationMs": 24725,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "619c5092c49354884a3a621b82d48b5f9638ab0a97464d286144b72678164c22",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Все проекты обновлены для восстановления.\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n  IsTranscribe.Desktop.Tests -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll\nТестовый запуск для C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll (.NETCoreApp,Version=v10.0)\nОбщее количество тестовых файлов (1), соответствующих указанному шаблону.\n[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 10.0.11)\n[xUnit.net 00:00:00.19]   Discovering: IsTranscribe.Desktop.Tests\n[xUnit.net 00:00:00.35]   Discovered:  IsTranscribe.Desktop.Tests\n[xUnit.net 00:00:00.36]   Starting:    IsTranscribe.Desktop.Tests\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A02_application_search_is_case_insensitive_even_with_a_custom_title [144 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A07_active_query_survives_snapshot_refresh_and_filters_new_data [71 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A01_title_search_is_case_insensitive [18 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A03_results_update_for_each_query_change_without_submit [59 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A04_empty_query_restores_the_original_capped_order [54 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A05_zero_matches_have_a_localized_state_distinct_from_empty_history [32 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A08_rename_refreshes_membership_without_clearing_query [42 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A06_clear_action_is_named_and_keyboard_accessible [10 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A09_filtered_items_retain_existing_actions [26 ms]\n[xUnit.net 00:00:00.99]   Finished:    IsTranscribe.Desktop.Tests\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A10_ru_en_resources_and_language_change_cover_search_clear_and_no_results [50 ms]\n\nТестовый запуск выполнен.\nВсего тестов: 10\n     Пройдено: 10\n Общее время: 2,2101 Секунды\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "visual-smoke",
+          "required": true,
+          "command": [
+            "dotnet",
+            "run",
+            "--project",
+            "tools/IsTranscribe.VisualReview/IsTranscribe.VisualReview.csproj",
+            "--configuration",
+            "Release",
+            "--",
+            "--output",
+            "C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\visual-review"
+          ],
+          "startedAt": "2026-09-02T14:47:46.023Z",
+          "completedAt": "2026-09-02T14:49:47.309Z",
+          "durationMs": 121286,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "2c925fd0ed0e77f7737e086396da9b298223a58b915a27473bf948bc636eea47",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Rendered 162 screens (142 canonical + 20 edge-case).\nCreated 18 contact sheets.\nVisual review: C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\visual-review\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "dotnet-build-server-shutdown",
+          "required": false,
+          "command": [
+            "dotnet",
+            "build-server",
+            "shutdown"
+          ],
+          "startedAt": "2026-09-02T14:49:47.309Z",
+          "completedAt": "2026-09-02T14:49:48.429Z",
+          "durationMs": 1120,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "ad3297e0e8f7ee8dcb179eb558e8052b4854ff38a88c8f924e03d13b2e7d0dcb",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Завершается работа Сервер MSBuild...\nЗавершается работа Сервер компилятора VB или C#...\nРабота Сервер компилятора VB или C# завершена.\nРабота Сервер MSBuild завершена.\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "L3-A01",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A02",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A03",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A04",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A05",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A06",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A07",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A08",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A09",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A10",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-B01",
+          "passed": true,
+          "evidence": "desktop tests plus harness-owned search tests"
+        },
+        {
+          "id": "L3-B02",
+          "passed": true,
+          "evidence": "desktop project build"
+        },
+        {
+          "id": "L3-B03",
+          "passed": true,
+          "evidence": "Avalonia headless render/load smoke"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "8075c332d584cc03dccb800923bd6fa556f08ea951e74db86a21ebcb3e35b786",
+      "results": [
+        {
+          "name": "desktop-tests",
+          "required": true,
+          "command": [
+            "dotnet",
+            "test",
+            "tests/IsTranscribe.Desktop.Tests/IsTranscribe.Desktop.Tests.csproj",
+            "--configuration",
+            "Release",
+            "--nologo",
+            "--filter",
+            "FullyQualifiedName!~BenchmarkHiddenSearchTests"
+          ],
+          "startedAt": "2026-09-02T14:49:48.431Z",
+          "completedAt": "2026-09-02T14:50:11.196Z",
+          "durationMs": 22765,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "1f5d469b9bfc9dee1bfa7b85a96bedeb6ccc83eab7453975c058d7f35e4cf90b",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Все проекты обновлены для восстановления.\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n  IsTranscribe.Desktop.Tests -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll\nТестовый запуск для C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll (.NETCoreApp,Version=v10.0)\nОбщее количество тестовых файлов (1), соответствующих указанному шаблону.\n\nПройден!   : не пройдено     0, пройдено   155, пропущено     0, всего   155, длительность 974 ms. - IsTranscribe.Desktop.Tests.dll (net10.0)\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "desktop-build",
+          "required": true,
+          "command": [
+            "dotnet",
+            "build",
+            "src/IsTranscribe.Desktop/IsTranscribe.Desktop.csproj",
+            "--configuration",
+            "Release",
+            "--nologo"
+          ],
+          "startedAt": "2026-09-02T14:50:11.196Z",
+          "completedAt": "2026-09-02T14:50:22.054Z",
+          "durationMs": 10858,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "5b327d1ca36fea0ca3f6b6dae9edd0ead08593c75e04b410d96395c59de7ae39",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Все проекты обновлены для восстановления.\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n\nСборка успешно завершена.\n    Предупреждений: 0\n    Ошибок: 0\n\nПрошло времени 00:00:10.21\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-search",
+          "required": true,
+          "command": [
+            "dotnet",
+            "test",
+            "tests/IsTranscribe.Desktop.Tests/IsTranscribe.Desktop.Tests.csproj",
+            "--configuration",
+            "Release",
+            "--nologo",
+            "--filter",
+            "FullyQualifiedName~BenchmarkHiddenSearchTests",
+            "--logger",
+            "console;verbosity=normal"
+          ],
+          "startedAt": "2026-09-02T14:50:22.054Z",
+          "completedAt": "2026-09-02T14:50:45.110Z",
+          "durationMs": 23056,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e016fb3f629ea710cbfb0a4f8a65c00bee4af6886c1f7d721e35cea471d3f092",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Все проекты обновлены для восстановления.\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n  IsTranscribe.Desktop.Tests -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll\nТестовый запуск для C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll (.NETCoreApp,Version=v10.0)\nОбщее количество тестовых файлов (1), соответствующих указанному шаблону.\n[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 10.0.11)\n[xUnit.net 00:00:00.21]   Discovering: IsTranscribe.Desktop.Tests\n[xUnit.net 00:00:00.43]   Discovered:  IsTranscribe.Desktop.Tests\n[xUnit.net 00:00:00.45]   Starting:    IsTranscribe.Desktop.Tests\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A02_application_search_is_case_insensitive_even_with_a_custom_title [175 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A07_active_query_survives_snapshot_refresh_and_filters_new_data [64 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A01_title_search_is_case_insensitive [23 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A03_results_update_for_each_query_change_without_submit [77 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A04_empty_query_restores_the_original_capped_order [56 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A05_zero_matches_have_a_localized_state_distinct_from_empty_history [31 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A08_rename_refreshes_membership_without_clearing_query [40 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A06_clear_action_is_named_and_keyboard_accessible [45 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A09_filtered_items_retain_existing_actions [28 ms]\n[xUnit.net 00:00:01.22]   Finished:    IsTranscribe.Desktop.Tests\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A10_ru_en_resources_and_language_change_cover_search_clear_and_no_results [54 ms]\n\nТестовый запуск выполнен.\nВсего тестов: 10\n     Пройдено: 10\n Общее время: 2,7657 Секунды\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "visual-smoke",
+          "required": true,
+          "command": [
+            "dotnet",
+            "run",
+            "--project",
+            "tools/IsTranscribe.VisualReview/IsTranscribe.VisualReview.csproj",
+            "--configuration",
+            "Release",
+            "--",
+            "--output",
+            "C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\visual-review"
+          ],
+          "startedAt": "2026-09-02T14:50:45.111Z",
+          "completedAt": "2026-09-02T14:51:25.247Z",
+          "durationMs": 40135,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "2c925fd0ed0e77f7737e086396da9b298223a58b915a27473bf948bc636eea47",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Rendered 162 screens (142 canonical + 20 edge-case).\nCreated 18 contact sheets.\nVisual review: C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\visual-review\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "dotnet-build-server-shutdown",
+          "required": false,
+          "command": [
+            "dotnet",
+            "build-server",
+            "shutdown"
+          ],
+          "startedAt": "2026-09-02T14:51:25.247Z",
+          "completedAt": "2026-09-02T14:51:25.990Z",
+          "durationMs": 743,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "ad3297e0e8f7ee8dcb179eb558e8052b4854ff38a88c8f924e03d13b2e7d0dcb",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Завершается работа Сервер MSBuild...\nЗавершается работа Сервер компилятора VB или C#...\nРабота Сервер компилятора VB или C# завершена.\nРабота Сервер MSBuild завершена.\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "L3-A01",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A02",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A03",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A04",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A05",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A06",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A07",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A08",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A09",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A10",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-B01",
+          "passed": true,
+          "evidence": "desktop tests plus harness-owned search tests"
+        },
+        {
+          "id": "L3-B02",
+          "passed": true,
+          "evidence": "desktop project build"
+        },
+        {
+          "id": "L3-B03",
+          "passed": true,
+          "evidence": "Avalonia headless render/load smoke"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "8075c332d584cc03dccb800923bd6fa556f08ea951e74db86a21ebcb3e35b786",
+      "results": [
+        {
+          "name": "desktop-tests",
+          "required": true,
+          "command": [
+            "dotnet",
+            "test",
+            "tests/IsTranscribe.Desktop.Tests/IsTranscribe.Desktop.Tests.csproj",
+            "--configuration",
+            "Release",
+            "--nologo",
+            "--filter",
+            "FullyQualifiedName!~BenchmarkHiddenSearchTests"
+          ],
+          "startedAt": "2026-09-02T14:51:25.991Z",
+          "completedAt": "2026-09-02T14:51:46.961Z",
+          "durationMs": 20970,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "cbdc995e88b3b56d6db4b9dd50c6fdb9fa6e0ba1a9156fdc2ffc4409b9c9ca7d",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Все проекты обновлены для восстановления.\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n  IsTranscribe.Desktop.Tests -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll\nТестовый запуск для C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll (.NETCoreApp,Version=v10.0)\nОбщее количество тестовых файлов (1), соответствующих указанному шаблону.\n\nПройден!   : не пройдено     0, пройдено   155, пропущено     0, всего   155, длительность 931 ms. - IsTranscribe.Desktop.Tests.dll (net10.0)\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "desktop-build",
+          "required": true,
+          "command": [
+            "dotnet",
+            "build",
+            "src/IsTranscribe.Desktop/IsTranscribe.Desktop.csproj",
+            "--configuration",
+            "Release",
+            "--nologo"
+          ],
+          "startedAt": "2026-09-02T14:51:46.962Z",
+          "completedAt": "2026-09-02T14:51:58.088Z",
+          "durationMs": 11127,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "86c12de82194c7018712d152bcf0fc18969e7dd78ae58e504d1eead1d2c14908",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Все проекты обновлены для восстановления.\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n\nСборка успешно завершена.\n    Предупреждений: 0\n    Ошибок: 0\n\nПрошло времени 00:00:10.54\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-search",
+          "required": true,
+          "command": [
+            "dotnet",
+            "test",
+            "tests/IsTranscribe.Desktop.Tests/IsTranscribe.Desktop.Tests.csproj",
+            "--configuration",
+            "Release",
+            "--nologo",
+            "--filter",
+            "FullyQualifiedName~BenchmarkHiddenSearchTests",
+            "--logger",
+            "console;verbosity=normal"
+          ],
+          "startedAt": "2026-09-02T14:51:58.088Z",
+          "completedAt": "2026-09-02T14:52:21.455Z",
+          "durationMs": 23367,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "ed26e7175b521c26b7cd4ab639b3d03f970165b8b42aa2af76a7f2a8f9afa901",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "  Определение проектов для восстановления...\n  Все проекты обновлены для восстановления.\n  IsTranscribe.Transcription.Local -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Transcription.Local\\bin\\Release\\net10.0\\IsTranscribe.Transcription.Local.dll\n  IsTranscribe.Core -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Core\\bin\\Release\\net10.0\\IsTranscribe.Core.dll\n  IsTranscribe.Persistence -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Persistence\\bin\\Release\\net10.0\\IsTranscribe.Persistence.dll\n  IsTranscribe.Application -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Application\\bin\\Release\\net10.0\\IsTranscribe.Application.dll\n  IsTranscribe.Desktop -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\src\\IsTranscribe.Desktop\\bin\\Release\\net10.0\\IsTranscribe.Desktop.UI.dll\n  IsTranscribe.Desktop.Tests -> C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll\nТестовый запуск для C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\workspace\\tests\\IsTranscribe.Desktop.Tests\\bin\\Release\\net10.0\\IsTranscribe.Desktop.Tests.dll (.NETCoreApp,Version=v10.0)\nОбщее количество тестовых файлов (1), соответствующих указанному шаблону.\n[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 10.0.11)\n[xUnit.net 00:00:00.16]   Discovering: IsTranscribe.Desktop.Tests\n[xUnit.net 00:00:00.31]   Discovered:  IsTranscribe.Desktop.Tests\n[xUnit.net 00:00:00.33]   Starting:    IsTranscribe.Desktop.Tests\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A02_application_search_is_case_insensitive_even_with_a_custom_title [114 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A07_active_query_survives_snapshot_refresh_and_filters_new_data [55 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A01_title_search_is_case_insensitive [17 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A03_results_update_for_each_query_change_without_submit [54 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A04_empty_query_restores_the_original_capped_order [44 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A05_zero_matches_have_a_localized_state_distinct_from_empty_history [27 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A08_rename_refreshes_membership_without_clearing_query [25 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A06_clear_action_is_named_and_keyboard_accessible [10 ms]\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A09_filtered_items_retain_existing_actions [19 ms]\n[xUnit.net 00:00:00.85]   Finished:    IsTranscribe.Desktop.Tests\n  Пройден IsTranscribe.Desktop.Tests.BenchmarkHiddenSearchTests.L3_A10_ru_en_resources_and_language_change_cover_search_clear_and_no_results [35 ms]\n\nТестовый запуск выполнен.\nВсего тестов: 10\n     Пройдено: 10\n Общее время: 2,0287 Секунды\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "visual-smoke",
+          "required": true,
+          "command": [
+            "dotnet",
+            "run",
+            "--project",
+            "tools/IsTranscribe.VisualReview/IsTranscribe.VisualReview.csproj",
+            "--configuration",
+            "Release",
+            "--",
+            "--output",
+            "C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\visual-review"
+          ],
+          "startedAt": "2026-09-02T14:52:21.456Z",
+          "completedAt": "2026-09-02T14:53:01.286Z",
+          "durationMs": 39838,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "2c925fd0ed0e77f7737e086396da9b298223a58b915a27473bf948bc636eea47",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Rendered 162 screens (142 canonical + 20 edge-case).\nCreated 18 contact sheets.\nVisual review: C:\\Users\\nikit\\AppData\\Local\\Temp\\benchmark-v7c-adjudicated-kPJ2qw\\visual-review\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "dotnet-build-server-shutdown",
+          "required": false,
+          "command": [
+            "dotnet",
+            "build-server",
+            "shutdown"
+          ],
+          "startedAt": "2026-09-02T14:53:01.286Z",
+          "completedAt": "2026-09-02T14:53:01.974Z",
+          "durationMs": 688,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "ad3297e0e8f7ee8dcb179eb558e8052b4854ff38a88c8f924e03d13b2e7d0dcb",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Завершается работа Сервер MSBuild...\nЗавершается работа Сервер компилятора VB или C#...\nРабота Сервер компилятора VB или C# завершена.\nРабота Сервер MSBuild завершена.\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "L3-A01",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A02",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A03",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A04",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A05",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A06",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A07",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A08",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A09",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-A10",
+          "passed": true,
+          "evidence": "harness-owned xUnit behavior check passed"
+        },
+        {
+          "id": "L3-B01",
+          "passed": true,
+          "evidence": "desktop tests plus harness-owned search tests"
+        },
+        {
+          "id": "L3-B02",
+          "passed": true,
+          "evidence": "desktop project build"
+        },
+        {
+          "id": "L3-B03",
+          "passed": true,
+          "evidence": "Avalonia headless render/load smoke"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "statePreserved": true
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-4291c908-a",
+  "blindId": "vc-4291c908",
+  "scenario": "large",
+  "checks": [
+    {
+      "id": "L3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:56 — запрос хранится в presentation state MainWindowViewModel.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318 — setter запроса обновляет только локальные свойства и производную коллекцию.",
+        "src/IsTranscribe.Application/Runtime/IApplicationRuntime.cs:18 — runtime contract не содержит поискового состояния."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:764 — RecentRecordings строится из snapshot.RecentRecordings.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818 — FilteredRecentRecordings вычисляется из RecentRecordings.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:592 — производная коллекция обновляется при применении snapshot."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:296 — прямой тест покрывает поисковый запрос, совпадение по названию и приложению, no-results и очистку.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:232 — отдельный ViewModel-тест покрывает переименование записи.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:268 — отдельный тест покрывает смену языка, однако поисковое обновление после refresh и accessibility-поведение поиска напрямую не проверяются."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:29 — задан MaximumRecentItems равный 5.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:766 — snapshot ограничивается MaximumRecentItems с сохранением порядка.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:770 — удалённые элементы dispose-ятся, существующие обновляются и перемещаются."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:18 — используются существующие ссылки spec:// FEAT-013 и связанные спецификации.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:16 — UI ссылается на существующую спецификацию primary-window.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:9 — тесты используют существующие FEAT-013 и localization traceability-ссылки."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:325 — поле поиска показывается для заполненного списка.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:344 — пустое состояние сохраняется отдельно.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:358 — no-results состояние содержит объяснение и действие очистки.",
+        "src/IsTranscribe.Application/ApplicationRuntime.cs:1609 — rename публикует обновлённый recent snapshot."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:328 — ввод обновляет RecentSearchQuery по мере изменения текста.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:330 — поле имеет локализованное accessibility name.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:337 — clear action имеет команду, accessibility name и tooltip.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:93 — RU-строки поля, очистки и no-results определены.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:93 — EN-строки поля, очистки и no-results определены."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318 — запрос существует как локальное свойство MainWindowViewModel.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:816 — фильтрация выполняется в памяти по RecentRecordings.",
+        "src/IsTranscribe.Application/Runtime/ApplicationRuntimeSnapshot.cs:14 — runtime snapshot не содержит поискового запроса."
+      ]
+    }
+  ],
+  "total": 28,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "search-coverage-gap",
+      "summary": "Поисковый сценарий имеет прямое покрытие ввода и очистки, однако отсутствуют отдельные проверки refresh и переименования при активном фильтре, локализованного поиска и accessibility-состояний.",
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:296 — единственный поисковый тест проверяет ввод, совпадения, no-results и очистку.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:268 — language test относится к пользовательскому названию записи и не проверяет локализацию поискового интерфейса.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:358 — no-results блок не имеет отдельного accessibility-теста."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:33:08.000Z",
+  "durationMs": 446610,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

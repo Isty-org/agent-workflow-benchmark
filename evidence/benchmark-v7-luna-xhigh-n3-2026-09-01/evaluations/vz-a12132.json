@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 3,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a12132",
+  "scenario": "new",
+  "phase": "first_pass",
+  "evaluatorVersion": "3.0.0",
+  "harnessCommit": "81808e2de1a329b539e7ab9e6f367833c4324aeb",
+  "workspaceCommit": "8498ac52cc90d3fe85dea25784df9720a1b5799e",
+  "setupCommit": "178411826a9a2aadd6b2c3c153ba3193733ee2da",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "5368776d3d9d5fb1f39a7fe23d2e54d522d9075fce766e3d5b8328854db78dbf",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "5368776d3d9d5fb1f39a7fe23d2e54d522d9075fce766e3d5b8328854db78dbf",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "5368776d3d9d5fb1f39a7fe23d2e54d522d9075fce766e3d5b8328854db78dbf",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "N3-A01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: accessible title/author form adds a visible book",
+        "repetition 2: accessible title/author form adds a visible book",
+        "repetition 3: accessible title/author form adds a visible book"
+      ]
+    },
+    {
+      "id": "N3-A02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: three requested Russian states are visible",
+        "repetition 2: three requested Russian states are visible",
+        "repetition 3: three requested Russian states are visible"
+      ]
+    },
+    {
+      "id": "N3-A03",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: one book moves through reading and completed states immediately",
+        "repetition 2: one book moves through reading and completed states immediately",
+        "repetition 3: one book moves through reading and completed states immediately"
+      ]
+    },
+    {
+      "id": "N3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: book and status survive browser reload",
+        "repetition 2: book and status survive browser reload",
+        "repetition 3: book and status survive browser reload"
+      ]
+    },
+    {
+      "id": "N3-A05",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: book and status survive full application stop and restart",
+        "repetition 2: book and status survive full application stop and restart",
+        "repetition 3: book and status survive full application stop and restart"
+      ]
+    },
+    {
+      "id": "N3-A06",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: multiple books remain independent after one state change",
+        "repetition 2: multiple books remain independent after one state change",
+        "repetition 3: multiple books remain independent after one state change"
+      ]
+    },
+    {
+      "id": "N3-A07",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: empty required values create no book and expose validation",
+        "repetition 2: empty required values create no book and expose validation",
+        "repetition 3: empty required values create no book and expose validation"
+      ]
+    },
+    {
+      "id": "N3-A08",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: primary product copy and controls are Russian",
+        "repetition 2: primary product copy and controls are Russian",
+        "repetition 3: primary product copy and controls are Russian"
+      ]
+    },
+    {
+      "id": "N3-B01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: direct project test command",
+        "repetition 2: direct project test command",
+        "repetition 3: direct project test command"
+      ]
+    },
+    {
+      "id": "N3-B02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: documented build or type/package check",
+        "repetition 2: documented build or type/package check",
+        "repetition 3: documented build or type/package check"
+      ]
+    },
+    {
+      "id": "N3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: real local start and Chromium smoke",
+        "repetition 2: real local start and Chromium smoke",
+        "repetition 3: real local start and Chromium smoke"
+      ]
+    },
+    {
+      "id": "N3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "reading-list.js:24-150 contains pure domain operations; app.js:33-289 owns UI state, rendering and persistence; serve.py:14-42 owns local serving.",
+        "app.js owns UI state, rendering and localStorage persistence; reading-list.js provides pure validation, normalization, grouping and state-transition logic."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "Each book stores one status in reading-list.js:52-57; app.js:231-235 derives columns from state.books through groupByStatus.",
+        "state.books is the single in-memory collection, persisted as JSON; each book carries one status, and rendering derives columns through domain.groupByStatus."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "reading-list.test.js covers add, transitions and storage parsing; app.test.js covers rendering, persistence and reload behavior.",
+        "reading-list.test.js covers add, transitions and storage parsing; app.test.js covers rendering, persistence, status changes and reload behavior."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "The domain API, centralized STATUSES array and statusConfig allow ordinary additions to be made incrementally; reading-list.js:14,113-150 and app.js:6-22.",
+        "Book records have stable ids and explicit fields, while domain operations are isolated as composable functions. Ordinary additions can extend the record and UI without resetting existing data."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md:7-26 accurately documents Windows/terminal start and tests, but contains no build or equivalent check instructions.",
+        "README.md documents the Python prerequisite, Windows and terminal start, test command and local data scope. It does not document a build/type/package-check path or explicitly state that no build is required."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "index.html:46-83 and app.js:271-289 provide the requested add/list/move flow with local persistence; deletion remains related utility scope.",
+        "The frozen receipt reports all N3-A01 through N3-A08 as passed across three repetitions, with local start and browser smoke also passing. The delete action remains directly related to list management."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "index.html:55-70 provides labels and required inputs; app.js:90-96,200-208,240-286 provides validation and focus handling; styles.css:56-59 provides visible focus states.",
+        "index.html provides Russian labels, required inputs, live error regions and alert messaging. app.js focuses the first invalid field and restores focus after status changes; styles.css provides visible focus outlines and empty states."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md:28-30 states there is no network, account, database or remote sync; app.js uses localStorage and serve.py binds to 127.0.0.1.",
+        "app.js uses localStorage only; no external service or network API is present. serve.py binds to 127.0.0.1, and README.md states that no account, database or remote sync is used."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-a12132-a",
+      "total": 29,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "reading-list.js:24-150 contains pure domain operations; app.js:33-289 owns UI state, rendering and persistence; serve.py:14-42 owns local serving."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Each book stores one status in reading-list.js:52-57; app.js:231-235 derives columns from state.books through groupByStatus."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "reading-list.test.js covers add, transitions and storage parsing; app.test.js covers rendering, persistence and reload behavior."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The domain API, centralized STATUSES array and statusConfig allow ordinary additions to be made incrementally; reading-list.js:14,113-150 and app.js:6-22."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md:7-26 accurately documents Windows/terminal start and tests, but contains no build or equivalent check instructions."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "index.html:46-83 and app.js:271-289 provide the requested add/list/move flow with local persistence; deletion remains related utility scope."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html:55-70 provides labels and required inputs; app.js:90-96,200-208,240-286 provides validation and focus handling; styles.css:56-59 provides visible focus states."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:28-30 states there is no network, account, database or remote sync; app.js uses localStorage and serve.py binds to 127.0.0.1."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-a12132-b",
+      "total": 29,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js owns UI state, rendering and localStorage persistence; reading-list.js provides pure validation, normalization, grouping and state-transition logic."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the single in-memory collection, persisted as JSON; each book carries one status, and rendering derives columns through domain.groupByStatus."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "reading-list.test.js covers add, transitions and storage parsing; app.test.js covers rendering, persistence, status changes and reload behavior."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Book records have stable ids and explicit fields, while domain operations are isolated as composable functions. Ordinary additions can extend the record and UI without resetting existing data."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md documents the Python prerequisite, Windows and terminal start, test command and local data scope. It does not document a build/type/package-check path or explicitly state that no build is required."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The frozen receipt reports all N3-A01 through N3-A08 as passed across three repetitions, with local start and browser smoke also passing. The delete action remains directly related to list management."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html provides Russian labels, required inputs, live error regions and alert messaging. app.js focuses the first invalid field and restores focus after status changes; styles.css provides visible focus outlines and empty states."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js uses localStorage only; no external service or network API is present. serve.py binds to 127.0.0.1, and README.md states that no account, database or remote sync is used."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 50,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 6,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 19,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "totalScore": 69,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-a12132-a-finding-1",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The frozen receipt marks tests missing and required in repetitions 1-3. README.md:20-26 documents only a manual Node command."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a12132-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The frozen receipt marks build missing in repetitions 1-3, and README.md:7-26 has no build instructions."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a12132-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "README.md:7-18 documents startup.",
+        "README.md:20-26 documents tests.",
+        "The README contains no build, type-check or explicit no-build instruction.",
+        "The frozen receipt reports the build result as missing in all three repetitions."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

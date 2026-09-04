@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 3,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a03601",
+  "scenario": "small",
+  "phase": "first_pass",
+  "evaluatorVersion": "3.0.0",
+  "harnessCommit": "10065386fb43e22c2065d6a1049af29f7a10a139",
+  "workspaceCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+  "setupCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "3dda4245e914c61f601a8ef3649106bee7ec3cabec47058a889e2a28c6b210a9",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "3dda4245e914c61f601a8ef3649106bee7ec3cabec47058a889e2a28c6b210a9",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "3dda4245e914c61f601a8ef3649106bee7ec3cabec47058a889e2a28c6b210a9",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "S3-A01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 9,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A04",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A05",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A06",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A07",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A08",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A09",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A10",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: npm test",
+        "repetition 2: npm test",
+        "repetition 3: npm test"
+      ]
+    },
+    {
+      "id": "S3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: npm run build",
+        "repetition 2: npm run build",
+        "repetition 3: npm run build"
+      ]
+    },
+    {
+      "id": "S3-B03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: real PostgreSQL integration and hidden API harness",
+        "repetition 2: real PostgreSQL integration and hidden API harness",
+        "repetition 3: real PostgreSQL integration and hidden API harness"
+      ]
+    },
+    {
+      "id": "S3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "outbound-validation.ts owns method-boundary validation, and registration-service.ts:523 invokes it before delivery creation. The route accepts only a generic JSON object and the worker does not duplicate validation.",
+        "Validation is isolated in src/lib/outbound-validation.ts and invoked at registration-service.ts:523 before delivery creation."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "status": "partial",
+      "pointsAwarded": 3,
+      "maxPoints": 4,
+      "evidence": [
+        "The default allowlist is centralized in config.ts:27 and resolved in registration-service.ts:113-115; method-specific schemas are centralized in outbound-validation.ts, while bot-routes.ts and delivery-service.ts remain generic.",
+        "The route and worker are generic, but the allowlist is defined in config.ts while schemas are separately dispatched in outbound-validation.ts; there is no single registry joining methods, schemas, and policy."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "outbound-validation.test.ts covers edit/delete validation and send payload handling; gateway.integration.test.ts:257-424 covers validation, queueing, delivery, duplicate reuse, and conflict handling.",
+        "outbound-validation.test.ts covers payload validation; gateway.integration.test.ts:257-423 covers validation, queueing, duplicate reuse, and conflict behavior."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "A new allowed method can be added through the allowlist configuration and, when needed, a local schema plus switch case in outbound-validation.ts; the route and worker use method/payload generically.",
+        "Generic route/worker support makes additions localized, but a schema-backed method requires separate changes to the allowlist configuration and outbound-validation.ts switch."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md:106-156 documents the client endpoints, three methods, payload examples, validation errors, idempotency responses, queue-first 202/PENDING behavior, and status polling. FEAT-104 also documents retry and error behavior.",
+        "README.md:106-156 documents routes, methods, payloads, idempotency, and status flow; FEAT-104-outbound-delivery.md:80-110 documents the API errors and validation contract."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "app.ts:42-47 preserves the existing route surfaces; bot-routes.ts retains registration, action, and delivery-status endpoints, while delivery-service.ts keeps the shared queue, retry, pacing, and status lifecycle.",
+        "Existing application auth, queue-first responses, status polling, retry handling, rate pacing, and endpoints remain present in bot-routes.ts, registration-service.ts, and delivery-service.ts."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "errors.ts:19-37 and 54-60 preserve stable code/message/details/requestId fields, with generic handling for unknown failures. public-models.ts:10-35 omits encrypted bot and secret fields.",
+        "errors.ts:24-37 and 54-60 preserve code/message/requestId fields, but database errors expose Prisma meta through the public details field at lines 28-34."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "The default allowlist contains only sendMessage, editMessageText, and deleteMessage. registration-service.ts:113-115 intersects application configuration with the global allowlist; no wildcard dispatch is present.",
+        "config.ts:27 defaults to exactly the three required methods; registration-service.ts:113-116 intersects application permissions with the global allowlist before enforcement."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-a03601-a",
+      "total": 30,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "outbound-validation.ts owns method-boundary validation, and registration-service.ts:523 invokes it before delivery creation. The route accepts only a generic JSON object and the worker does not duplicate validation."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The default allowlist is centralized in config.ts:27 and resolved in registration-service.ts:113-115; method-specific schemas are centralized in outbound-validation.ts, while bot-routes.ts and delivery-service.ts remain generic."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "outbound-validation.test.ts covers edit/delete validation and send payload handling; gateway.integration.test.ts:257-424 covers validation, queueing, delivery, duplicate reuse, and conflict handling."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "A new allowed method can be added through the allowlist configuration and, when needed, a local schema plus switch case in outbound-validation.ts; the route and worker use method/payload generically."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:106-156 documents the client endpoints, three methods, payload examples, validation errors, idempotency responses, queue-first 202/PENDING behavior, and status polling. FEAT-104 also documents retry and error behavior."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "app.ts:42-47 preserves the existing route surfaces; bot-routes.ts retains registration, action, and delivery-status endpoints, while delivery-service.ts keeps the shared queue, retry, pacing, and status lifecycle."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "errors.ts:19-37 and 54-60 preserve stable code/message/details/requestId fields, with generic handling for unknown failures. public-models.ts:10-35 omits encrypted bot and secret fields."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The default allowlist contains only sendMessage, editMessageText, and deleteMessage. registration-service.ts:113-115 intersects application configuration with the global allowlist; no wildcard dispatch is present."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-a03601-b",
+      "total": 26,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "Validation is isolated in src/lib/outbound-validation.ts and invoked at registration-service.ts:523 before delivery creation."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The route and worker are generic, but the allowlist is defined in config.ts while schemas are separately dispatched in outbound-validation.ts; there is no single registry joining methods, schemas, and policy."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "outbound-validation.test.ts covers payload validation; gateway.integration.test.ts:257-423 covers validation, queueing, duplicate reuse, and conflict behavior."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Generic route/worker support makes additions localized, but a schema-backed method requires separate changes to the allowlist configuration and outbound-validation.ts switch."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:106-156 documents routes, methods, payloads, idempotency, and status flow; FEAT-104-outbound-delivery.md:80-110 documents the API errors and validation contract."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Existing application auth, queue-first responses, status polling, retry handling, rate pacing, and endpoints remain present in bot-routes.ts, registration-service.ts, and delivery-service.ts."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "errors.ts:24-37 and 54-60 preserve code/message/requestId fields, but database errors expose Prisma meta through the public details field at lines 28-34."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "config.ts:27 defaults to exactly the three required methods; registration-service.ts:113-116 intersects application permissions with the global allowlist before enforcement."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 0,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 14,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 19,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "totalScore": 43,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-a03601-a-finding-1",
+      "severity": "note",
+      "title": "sendMessage has no method-specific payload validation",
+      "evidence": [
+        "src/lib/outbound-validation.ts:74-80 and src/routes/bot-routes.ts:37,98 allow an empty object to be queued as a sendMessage delivery."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a03601-b-finding-1",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/lib/outbound-validation.ts:74-80."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a03601-b-finding-2",
+      "severity": "minor",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/config.ts:27 and src/lib/outbound-validation.ts:7-82."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a03601-b-finding-3",
+      "severity": "minor",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/lib/errors.ts:28-34 and 54-60."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

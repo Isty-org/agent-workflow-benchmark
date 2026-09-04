@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-4c5e5c27-a",
+  "blindId": "vc-4c5e5c27",
+  "scenario": "small",
+  "checks": [
+    {
+      "id": "S3-C01",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/routes/bot-routes.ts:27 — boundary validates registration and action parameters.",
+        "src/routes/bot-routes.ts:37 — boundary only applies a generic record schema to payloads."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "pointsAwarded": 1,
+      "evidence": [
+        "src/config.ts:7 — default allowlist is centralized.",
+        "src/routes/bot-routes.ts:37 — no method-specific schemas exist at the action boundary.",
+        "src/services/registration-service.ts:112 — admission resolves the allowlist separately from payload validation."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:255 — integration coverage queues edit and delete actions.",
+        "test/integration/gateway.integration.test.ts:318 — duplicate and idempotency-conflict behavior is tested.",
+        "test/integration/gateway.integration.test.ts:302 — no invalid-payload validation case is covered in this action test."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "pointsAwarded": 1,
+      "evidence": [
+        "src/config.ts:7 — adding a default action requires editing the allowlist.",
+        "src/services/telegram-service.ts:99 — the adapter accepts arbitrary method strings without a registry schema."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "README.md:106 — client endpoints and authentication are documented.",
+        "README.md:122 — send payload is documented.",
+        "README.md:137 — edit payload is documented.",
+        "README.md:147 — delete payload is documented.",
+        "README.md:131 — queue and status flow are documented.",
+        "README.md:156 — idempotency behavior is documented.",
+        "README.md:158 — stable error envelope is documented."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/routes/bot-routes.ts:92 — existing authenticated action endpoint is preserved.",
+        "src/routes/bot-routes.ts:111 — new requests retain HTTP 202 queue-first behavior.",
+        "src/routes/bot-routes.ts:115 — delivery status endpoint is preserved.",
+        "src/services/delivery-service.ts:513 — retry scheduling remains in outbound delivery processing.",
+        "src/services/delivery-service.ts:605 — worker drain remains responsible for outbound processing.",
+        "src/services/delivery-service.ts:119 — Telegram dispatch pacing remains implemented."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/lib/errors.ts:5 — AppError retains stable code, statusCode and message fields.",
+        "src/lib/errors.ts:54 — responses expose code, message, details and requestId.",
+        "src/lib/errors.ts:28 — database error details expose Prisma meta information.",
+        "src/services/delivery-service.ts:554 — Telegram error descriptions are persisted for public delivery status."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/config.ts:7 — default allowlist contains only sendMessage, editMessageText and deleteMessage.",
+        "src/services/registration-service.ts:493 — outbound admission checks the effective allowlist.",
+        "src/services/admin-service.ts:29 — application allowlists are rejected when they contain unsupported entries."
+      ]
+    }
+  ],
+  "total": 18,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "generic-action-passthrough",
+      "summary": "The versioned action endpoint accepts any object payload and forwards it without method-specific validation; malformed edit or delete requests reach Telegram and fail only during delivery.",
+      "evidence": [
+        "src/routes/bot-routes.ts:37 — action payload uses z.record(z.unknown()).",
+        "src/services/registration-service.ts:487 — admission accepts a generic ActionInput.",
+        "src/services/delivery-service.ts:477 — worker forwards the stored action and payload directly to Telegram."
+      ]
+    },
+    {
+      "severity": "major",
+      "rootCauseId": "missing-action-registry",
+      "summary": "There is no shared registry combining supported actions, schemas and allowlist; the route, admission service and worker rely on generic strings and payloads.",
+      "evidence": [
+        "src/config.ts:7 — allowlist is a string array only.",
+        "src/routes/bot-routes.ts:29 — route permits any non-empty action name.",
+        "src/services/telegram-service.ts:99 — adapter accepts arbitrary method strings."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "validation-test-gap",
+      "summary": "The direct test suite covers successful queueing and idempotency for edit/delete, while action validation has no dedicated negative unit or integration coverage.",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:255 — edit/delete queue and idempotency scenario.",
+        "test/integration/gateway.integration.test.ts:329 — idempotency conflict assertion.",
+        "test/telegram-service.test.ts:10 — unit tests cover Telegram helpers rather than outbound action validation."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "internal-error-details-exposed",
+      "summary": "The stable error envelope is present, but some responses can expose internal database metadata or raw upstream error descriptions through details and delivery fields.",
+      "evidence": [
+        "src/lib/errors.ts:28 — Prisma meta is copied into client-facing details.",
+        "src/services/delivery-service.ts:554 — upstream error description is persisted.",
+        "src/lib/public-models.ts:49 — lastError is returned in the public delivery model."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:29:22.000Z",
+  "durationMs": 235992,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

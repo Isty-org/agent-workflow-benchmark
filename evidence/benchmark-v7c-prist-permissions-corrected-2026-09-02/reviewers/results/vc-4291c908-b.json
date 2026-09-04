@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-4291c908-b",
+  "blindId": "vc-4291c908",
+  "scenario": "large",
+  "checks": [
+    {
+      "id": "L3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-331 — запрос хранится в presentation state и обновляет локальную фильтрацию.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:86-88 — очистка запроса выполняется локальной командой."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:555-592 — snapshot сохраняется как последнее состояние и передаётся в reconciliation.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:816-825 — видимая коллекция строится как производная от RecentRecordings."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:296-333 — прямой тест покрывает поиск по названию и приложению, no-results и очистку.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:232-293 — прямые тесты покрывают rename и смену языка.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:327-340 — accessibility wiring присутствует, но отдельной прямой UI-проверки search refresh и accessibility нет."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:764-768 — применяется MaximumRecentItems и сохраняется порядок snapshot.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:770-809 — stale items удаляются с Dispose, существующие обновляются, порядок синхронизируется."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:15-27 — используются существующие FEAT-013, FEAT-010.A и связанные спецификации.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:8-12 — тесты привязаны к существующим spec anchors.",
+        "specs/modules/app/FEAT-013-minimal-desktop-experience.md:152-159 — существующие правила recent recordings используются без нового benchmark-specific canon."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:344-379 — empty, no-results и populated states разведены и остаются доступными.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:764-813 — snapshot refresh обновляет элементы и текущую фильтрацию.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:391-397 — rename action сохраняет существующий flow."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:327-332 — поле имеет RU/EN placeholder, двустороннюю привязку и accessibility name.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:333-340 — clear action имеет command, видимость, automation name и tooltip.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:93-97 — локализованы поле, очистка и no-results state.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:93-97 — локализованы поле, очистка и no-results state."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-330 — query является локальным свойством MainWindowViewModel.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:816-825 — фильтрация не вызывает runtime, storage, logging или external API."
+      ]
+    }
+  ],
+  "total": 28,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "missing-search-refresh-a11y-tests",
+      "summary": "Прямые тесты покрывают основной query/clear flow, rename и смену языка, однако отдельные проверки сохранения результата при snapshot refresh и UI accessibility semantics для поиска отсутствуют.",
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:296-333 — search-specific тест покрывает ввод, фильтрацию, no-results и clear.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:327-340 — accessibility wiring реализован в XAML без прямого UI-теста."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:33:24.000Z",
+  "durationMs": 443885,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

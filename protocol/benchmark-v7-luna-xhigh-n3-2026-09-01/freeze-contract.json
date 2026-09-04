@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "state": "draft",
+  "freezeRequires": [
+    "exact WI-131 deployed stage release commit, image and workflow bundle",
+    "fresh browser-free Luna/xhigh canary receipt for every setup lineage",
+    "fresh source-integrity, inventory and fingerprint receipts",
+    "green V7 self-tests and evaluator self-test",
+    "all prompts, answer bank, contracts, schemas, pricing and scripts hashed",
+    "zero measured task records before dispatch"
+  ],
+  "immutableAfterFreeze": [
+    "manifest matrix and run/blind identifiers",
+    "scenario prompts and common launch envelope",
+    "answer bank and reviewer/adjudicator instructions",
+    "evaluator contracts, hidden test IDs, weights and harness code",
+    "setup identities, source commits, setup commits, trees and fingerprints",
+    "provider pricing snapshot and content-lock hash"
+  ],
+  "mutableBeforeFreeze": [
+    "Prist release fields gated by WI-131",
+    "setup/canary receipts while no measured task has been dispatched",
+    "draft control progress and verification receipts"
+  ],
+  "postDispatchForbidden": [
+    "changing frozen inputs",
+    "editing a measured implementation",
+    "sending hints, status prompts, repair turns or acceleration requests",
+    "reusing a completed checkout or task",
+    "opening browser/UI for setup, canary or measured agents"
+  ],
+  "matrix": {
+    "scenarios": ["new-project", "small-project", "large-project"],
+    "conditions": ["plain", "bmad", "prist", "classic-spec"],
+    "replicasPerCell": 3,
+    "totalMeasuredTasks": 36,
+    "oneFirstPass": true,
+    "repairTurns": 0,
+    "maxInfrastructureRetries": 1,
+    "maxClarifications": 2
+  },
+  "stageGate": {
+    "workItem": "WI-131",
+    "stage": "https://prist.isty.ist",
+    "requiredReleaseFields": ["releaseCommit", "image", "workflowBundle"],
+    "requiredBefore": ["hostedProjects", "connections", "kitInstall", "canaries", "finalFreeze", "dispatch"]
+  },
+  "lockAlgorithm": "sha256 over LF-normalized bytes of the ordered frozen-input file list"
+}

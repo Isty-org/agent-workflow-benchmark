@@ -1,0 +1,43 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a9c42c",
+  "conditionVisibleInWorkspace": false,
+  "createdAt": "2026-09-02T06:59:12.554Z",
+  "destinationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-a9c42c",
+  "excludedPaths": [
+    ".git"
+  ],
+  "executableProductContentChanged": false,
+  "includedFileHashes": [
+    {
+      "path": "app.js",
+      "sha256": "56a1070cda55766f9f990f8ca3fd05daf29d9439a5895267082eb9b62081d782"
+    },
+    {
+      "path": "index.html",
+      "sha256": "200ba780f52c211859f2a0a0259e209b46681f44038f801557def3c31389bf5c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "2efd29bd97a5da37d21289fa5e7aa8ee988360ff1911a5a2f302303c266d8141"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "31e624049dc4b96a2f0731eae46f3e6e5678d60ffa50bb1a7ad2e28ee62e1475"
+    }
+  ],
+  "includedPaths": [
+    "README.md",
+    "app.js",
+    "index.html",
+    "styles.css"
+  ],
+  "methodMetadataVisibleInWorkspace": false,
+  "runId": "v7-new-plain-r2",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "sourceWorkspaceCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "sourceWorkspacePath": "redacted",
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false
+}

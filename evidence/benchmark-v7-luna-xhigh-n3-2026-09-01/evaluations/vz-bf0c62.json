@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 3,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-bf0c62",
+  "scenario": "new",
+  "phase": "first_pass",
+  "evaluatorVersion": "3.0.0",
+  "harnessCommit": "81808e2de1a329b539e7ab9e6f367833c4324aeb",
+  "workspaceCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "setupCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "f0b50fa3b01fa7a67f58ed3186d4cfc7f09b405d897a7b45d84086cda9178b88",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "f0b50fa3b01fa7a67f58ed3186d4cfc7f09b405d897a7b45d84086cda9178b88",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "f0b50fa3b01fa7a67f58ed3186d4cfc7f09b405d897a7b45d84086cda9178b88",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "N3-A01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "N3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "N3-A03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "N3-A04",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "N3-A05",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "N3-A06",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "N3-A07",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "N3-A08",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "N3-B01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: direct project test command",
+        "repetition 2: direct project test command",
+        "repetition 3: direct project test command"
+      ]
+    },
+    {
+      "id": "N3-B02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: documented build or type/package check",
+        "repetition 2: documented build or type/package check",
+        "repetition 3: documented build or type/package check"
+      ]
+    },
+    {
+      "id": "N3-B03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: real local start and Chromium smoke",
+        "repetition 2: real local start and Chromium smoke",
+        "repetition 3: real local start and Chromium smoke"
+      ]
+    },
+    {
+      "id": "N3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "src/app.js separates in-memory state, rendering, event handlers, and the localStorage adapter.",
+        "src/index.html contains presentation markup and form/list containers; src/styles.css contains visual and layout rules.",
+        "src/app.js owns application state, event handlers, rendering, and a separate storage adapter with read/write methods."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "state.books is the single rendered collection; statuses are derived through getSortedBooks and persisted through one storage adapter in src/app.js.",
+        "state.books is the single in-memory collection, and each book carries one status from VALID_STATUSES.",
+        "render derives columns by filtering state.books, while persistBooks serializes the same collection to localStorage under my-reading-list.books.v1."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "No direct product test files or test recipe are present; the objective receipt reports tests missing in all three repetitions.",
+        "The normalized workspace contains no test files or test command.",
+        "The frozen receipt reports tests missing with reason no test recipe discovered in all three repetitions."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "The versioned localStorage key and normalization boundary support future changes, but the implementation is concentrated in src/app.js and normalizeBook reconstructs only the current fixed fields.",
+        "Book has a stable record shape with id, title, author, status, and createdAt, and persistence is isolated behind storage.read/write.",
+        "The data specification documents a versioned localStorage key and a separate adapter path for future format changes."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "status": "partial",
+      "pointsAwarded": 1,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md clearly documents Python setup and local start, but provides no test or build command; specs/common/PROP-002-STACK.md states that build is absent.",
+        "README documents Python 3, start.ps1/start.bat, manual http.server startup, the loopback URL, and that Docker and dependencies are unnecessary.",
+        "README contains no test command and does not state a build command or explicit no-build procedure; the frozen receipt reports tests and build missing."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "src/index.html and src/app.js cover adding books, three Russian states, transitions, local persistence, and a focused reading-list scope. README.md documents local startup without Docker.",
+        "The implementation covers adding books, three reading states, status changes, local persistence/recovery, and delete confirmation.",
+        "The documented scope excludes accounts, cloud sync, server API, catalog lookup, covers, and import/export, keeping the product focused."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "src/index.html provides visible labels and empty/loading states; src/app.js provides focus management, aria-invalid, aria-describedby, Russian validation messages, and keyboard-operable select/button controls.",
+        "The UI provides explicit labels, keyboard controls, aria-describedby/aria-invalid validation, and aria-live feedback.",
+        "Visible focus styles, responsive layout, loading state, per-column empty states, storage errors, and post-submit focus handling are implemented."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "Persistence uses only browser localStorage in src/app.js; start.ps1 and start.bat bind the server to 127.0.0.1; no secrets, external services, or unsafe permissions are present.",
+        "The application uses localStorage only for book data; no secrets, network calls, external services, or unsafe permissions appear in the product files.",
+        "The start scripts serve static files through Python bound to 127.0.0.1, and README states Docker and external dependencies are unnecessary."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-bf0c62-a",
+      "total": 23,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/app.js separates in-memory state, rendering, event handlers, and the localStorage adapter."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the single rendered collection; statuses are derived through getSortedBooks and persisted through one storage adapter in src/app.js."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No direct product test files or test recipe are present; the objective receipt reports tests missing in all three repetitions."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The versioned localStorage key and normalization boundary support future changes, but the implementation is concentrated in src/app.js and normalizeBook reconstructs only the current fixed fields."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md clearly documents Python setup and local start, but provides no test or build command; specs/common/PROP-002-STACK.md states that build is absent."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/index.html and src/app.js cover adding books, three Russian states, transitions, local persistence, and a focused reading-list scope. README.md documents local startup without Docker."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/index.html provides visible labels and empty/loading states; src/app.js provides focus management, aria-invalid, aria-describedby, Russian validation messages, and keyboard-operable select/button controls."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Persistence uses only browser localStorage in src/app.js; start.ps1 and start.bat bind the server to 127.0.0.1; no secrets, external services, or unsafe permissions are present."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-bf0c62-b",
+      "total": 24,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/index.html contains presentation markup and form/list containers; src/styles.css contains visual and layout rules.",
+            "src/app.js owns application state, event handlers, rendering, and a separate storage adapter with read/write methods."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the single in-memory collection, and each book carries one status from VALID_STATUSES.",
+            "render derives columns by filtering state.books, while persistBooks serializes the same collection to localStorage under my-reading-list.books.v1."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "The normalized workspace contains no test files or test command.",
+            "The frozen receipt reports tests missing with reason no test recipe discovered in all three repetitions."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Book has a stable record shape with id, title, author, status, and createdAt, and persistence is isolated behind storage.read/write.",
+            "The data specification documents a versioned localStorage key and a separate adapter path for future format changes."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README documents Python 3, start.ps1/start.bat, manual http.server startup, the loopback URL, and that Docker and dependencies are unnecessary.",
+            "README contains no test command and does not state a build command or explicit no-build procedure; the frozen receipt reports tests and build missing."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The implementation covers adding books, three reading states, status changes, local persistence/recovery, and delete confirmation.",
+            "The documented scope excludes accounts, cloud sync, server API, catalog lookup, covers, and import/export, keeping the product focused."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The UI provides explicit labels, keyboard controls, aria-describedby/aria-invalid validation, and aria-live feedback.",
+            "Visible focus styles, responsive layout, loading state, per-column empty states, storage errors, and post-submit focus handling are implemented."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The application uses localStorage only for book data; no secrets, network calls, external services, or unsafe permissions appear in the product files.",
+            "The start scripts serve static files through Python bound to 127.0.0.1, and README states Docker and external dependencies are unnecessary."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 0,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 0,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 14,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "totalScore": 24,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-bf0c62-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The workspace file inventory has no test files; the objective receipt reports no test recipe discovered in repetitions 1, 2, and 3."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-bf0c62-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "README.md lines 5-21 cover Python and local start; no test/build commands are documented."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-bf0c62-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/app.js defines fixed VALID_STATUSES and normalizeBook; schema versioning is described in specs/common/PROP-001-DATA.md."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-bf0c62-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-bf0c62-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

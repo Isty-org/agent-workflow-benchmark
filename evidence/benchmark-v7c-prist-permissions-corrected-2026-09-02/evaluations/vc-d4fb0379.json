@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "blindId": "vc-d4fb0379",
+  "scenario": "small",
+  "phase": "first_pass",
+  "evaluatorVersion": "v7c-uniform-1",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "setupCommit": "997c38d69480212a099093a4355bbfda249262cc",
+  "workspaceCommit": "c2289b8eb7b4dbf8d0828103fc23756b6108922e",
+  "workspaceTree": "3d43610abf076902a78c8039d401bad99700f94c",
+  "firstPassContentFingerprint": "98ce8ace0d2e439b9d47c6c3b2b8c68fea47db9f0d2c0c55e70eb59ab4996703",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "55d390192698d610f5e484414f498ddb89cafe4818221a128dc082bd90de7766",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "55d390192698d610f5e484414f498ddb89cafe4818221a128dc082bd90de7766",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "55d390192698d610f5e484414f498ddb89cafe4818221a128dc082bd90de7766",
+      "passed": false
+    }
+  ],
+  "checkReceiptSha256": "c27fafd8d181d14ccb5e73701279edaaf3b62ece210063f1700e066164c9ad28",
+  "checks": [
+    {
+      "id": "S3-A01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; three explicit methods accepted; unknown method keeps machine error",
+        "repetition 2: pass; three explicit methods accepted; unknown method keeps machine error",
+        "repetition 3: pass; three explicit methods accepted; unknown method keeps machine error"
+      ]
+    },
+    {
+      "id": "S3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 9,
+      "evidence": [
+        "repetition 1: fail; invalid payload rejected for each supported method before persistence; expected 4xx, got 202",
+        "repetition 2: fail; invalid payload rejected for each supported method before persistence; expected 4xx, got 202",
+        "repetition 3: fail; invalid payload rejected for each supported method before persistence; expected 4xx, got 202"
+      ]
+    },
+    {
+      "id": "S3-A03",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; sendMessage remains queue-first 202/PENDING",
+        "repetition 2: pass; sendMessage remains queue-first 202/PENDING",
+        "repetition 3: pass; sendMessage remains queue-first 202/PENDING"
+      ]
+    },
+    {
+      "id": "S3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; editMessageText is queued and dispatched with unchanged method/payload",
+        "repetition 2: pass; editMessageText is queued and dispatched with unchanged method/payload",
+        "repetition 3: pass; editMessageText is queued and dispatched with unchanged method/payload"
+      ]
+    },
+    {
+      "id": "S3-A05",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; deleteMessage is queued and dispatched with unchanged method/payload",
+        "repetition 2: pass; deleteMessage is queued and dispatched with unchanged method/payload",
+        "repetition 3: pass; deleteMessage is queued and dispatched with unchanged method/payload"
+      ]
+    },
+    {
+      "id": "S3-A06",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; missing Idempotency-Key keeps stable error and persists nothing",
+        "repetition 2: pass; missing Idempotency-Key keeps stable error and persists nothing",
+        "repetition 3: pass; missing Idempotency-Key keeps stable error and persists nothing"
+      ]
+    },
+    {
+      "id": "S3-A07",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; identical retry returns the existing delivery",
+        "repetition 2: pass; identical retry returns the existing delivery",
+        "repetition 3: pass; identical retry returns the existing delivery"
+      ]
+    },
+    {
+      "id": "S3-A08",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; conflicting reuse of an idempotency key is rejected without mutation",
+        "repetition 2: pass; conflicting reuse of an idempotency key is rejected without mutation",
+        "repetition 3: pass; conflicting reuse of an idempotency key is rejected without mutation"
+      ]
+    },
+    {
+      "id": "S3-A09",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: pass; authentication and registration isolation cover new methods",
+        "repetition 2: pass; authentication and registration isolation cover new methods",
+        "repetition 3: pass; authentication and registration isolation cover new methods"
+      ]
+    },
+    {
+      "id": "S3-A10",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: pass; new methods use the existing retry and retry-after policy",
+        "repetition 2: pass; new methods use the existing retry and retry-after policy",
+        "repetition 3: pass; new methods use the existing retry and retry-after policy"
+      ]
+    },
+    {
+      "id": "S3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; npm test",
+        "repetition 2: pass; npm test",
+        "repetition 3: pass; npm test"
+      ]
+    },
+    {
+      "id": "S3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; npm run build",
+        "repetition 2: pass; npm run build",
+        "repetition 3: pass; npm run build"
+      ]
+    },
+    {
+      "id": "S3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; real PostgreSQL integration and hidden API harness",
+        "repetition 2: pass; real PostgreSQL integration and hidden API harness",
+        "repetition 3: pass; real PostgreSQL integration and hidden API harness"
+      ]
+    },
+    {
+      "id": "S3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "vc-d4fb0379-a: src/services/registration-service.ts:91-104,558-572 — отдельный валидатор payload вызывается до создания delivery.",
+        "vc-d4fb0379-a: src/routes/bot-routes.ts:92-105 — versioned action boundary передаёт запрос в submitOutboundAction.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:91 — проверка outbound payload выделена в отдельную экспортируемую функцию validateOutboundActionPayload.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:572 — payload проверяется до поиска регистрации и создания записи в очереди."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-d4fb0379-a: src/services/registration-service.ts:36-104 — схемы и literal-ветвление валидатора находятся отдельно от allowlist.",
+        "vc-d4fb0379-a: src/config.ts:23-24,36-40,74 — allowlist задаётся и парсится отдельной строковой конфигурацией.",
+        "vc-d4fb0379-a: src/routes/bot-routes.ts:37-38; src/services/delivery-service.ts:477-480 — route и worker не дублируют method-specific contract.",
+        "vc-d4fb0379-b: src/config.ts:23 — перечень разрешённых Telegram-операций задан отдельно в конфигурации.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:46 — схема editMessageText объявлена внутри registration-service.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:84 — схема deleteMessage объявлена отдельно от allowlist.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:95 — выбор схемы реализован самостоятельной цепочкой условий.",
+        "vc-d4fb0379-b: src/routes/bot-routes.ts:99 — маршрут использует общий record-контракт и передаёт предметную проверку сервису.",
+        "vc-d4fb0379-b: src/services/delivery-service.ts:477 — worker выполняет сохранённую операцию через общий callMethod без копирования схем payload."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-d4fb0379-a: test/outbound-action.test.ts:7-74 — unit-тесты покрывают валидные и невалидные edit/delete payloads.",
+        "vc-d4fb0379-a: test/integration/gateway.integration.test.ts:215-379 — integration-тест покрывает queue/status, validation и idempotent duplicates для send/edit/delete.",
+        "vc-d4fb0379-b: test/outbound-action.test.ts:7 — unit-тест проверяет допустимый payload редактирования.",
+        "vc-d4fb0379-b: test/outbound-action.test.ts:41 — unit-тест проверяет отклонение неполных целей редактирования.",
+        "vc-d4fb0379-b: test/outbound-action.test.ts:57 — unit-тест покрывает валидацию удаления.",
+        "vc-d4fb0379-b: test/integration/gateway.integration.test.ts:215 — integration-тест ставит исходящую операцию в очередь и проверяет PENDING.",
+        "vc-d4fb0379-b: test/integration/gateway.integration.test.ts:260 — integration-тест проверяет возврат существующей delivery для повторного идемпотентного запроса.",
+        "vc-d4fb0379-b: test/integration/gateway.integration.test.ts:277 — integration-тест подтверждает отклонение невалидного редактирования до очереди.",
+        "vc-d4fb0379-b: test/integration/gateway.integration.test.ts:328 — integration-тест проверяет идемпотентный повтор редактирования.",
+        "vc-d4fb0379-b: test/integration/gateway.integration.test.ts:346 — integration-тест проводит удаление через очередь и worker."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "status": "partial",
+      "pointsAwarded": 1,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-d4fb0379-a: src/config.ts:23-24 — имя метода можно добавить через comma-separated allowlist.",
+        "vc-d4fb0379-a: src/services/registration-service.ts:95-103 — method-specific schema добавляется отдельной conditional-веткой, единого registry нет.",
+        "vc-d4fb0379-b: src/config.ts:23 — расширение стандартного набора требует изменения конфигурационного списка.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:95 — предметная схема подключается отдельной веткой по строковому имени.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:103 — все прочие разрешённые операции получают только общий record-контракт, единого расширяемого реестра схем нет."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-d4fb0379-a: README.md:106-158 — описаны action endpoints, payload examples, idempotency, queue и status flow.",
+        "vc-d4fb0379-a: HOWTOSETUP.md:713-790 — описаны edit/delete, inline_message_id, VALIDATION_ERROR и delivery statuses.",
+        "vc-d4fb0379-a: specs/modules/gateway/FEAT-102-delivery-and-retries.md:54-91 — зафиксированы payload constraints, stable error codes, retries и delivery fields.",
+        "vc-d4fb0379-b: README.md:115 — документация указывает версионированный action endpoint и endpoint чтения delivery.",
+        "vc-d4fb0379-b: README.md:120 — перечислены стандартный allowlist и проверка payload.",
+        "vc-d4fb0379-b: README.md:131 — приведён payload редактирования.",
+        "vc-d4fb0379-b: README.md:141 — приведён payload удаления.",
+        "vc-d4fb0379-b: README.md:150 — описано сохранение Telegram-ошибок и общий контракт очереди и повторов.",
+        "vc-d4fb0379-b: README.md:152 — описаны HTTP-ответы для новой и повторной delivery и чтение итогового статуса.",
+        "vc-d4fb0379-b: HOWTOSETUP.md:740 — описаны inline-редактирование и VALIDATION_ERROR до постановки в очередь.",
+        "vc-d4fb0379-b: HOWTOSETUP.md:784 — перечислены все состояния outbound delivery.",
+        "vc-d4fb0379-b: src/lib/errors.ts:54 — фактическая структура error.code, error.message, details и requestId не зафиксирована в README как полноценный контракт."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-d4fb0379-a: src/routes/bot-routes.ts:49-127 — сохранены auth-protected registration, action и delivery endpoints.",
+        "vc-d4fb0379-a: src/services/registration-service.ts:594-640 — сохраняются queue-first PENDING и idempotency duplicate/conflict.",
+        "vc-d4fb0379-a: src/services/delivery-service.ts:45-135,437-621 — сохранены due processing, stale-lock reclaim, retry, pacing и retry_after backoff.",
+        "vc-d4fb0379-b: src/routes/bot-routes.ts:50 — существующие list, status, connect, refresh и disconnect endpoints сохранены под application-auth.",
+        "vc-d4fb0379-b: src/routes/bot-routes.ts:95 — общий action endpoint продолжает использовать requireApplicationAuth.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:595 — новые действия создают durable delivery со статусом PENDING.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:607 — дубликаты разрешаются через существующую уникальную запись и payload hash.",
+        "vc-d4fb0379-b: src/services/delivery-service.ts:513 — Telegram network, 429 и 5xx ошибки проходят через общую retry-политику.",
+        "vc-d4fb0379-b: src/services/delivery-service.ts:525 — повтор сохраняет RETRY, число попыток и nextRetryAt.",
+        "vc-d4fb0379-b: src/services/delivery-service.ts:605 — общий worker выбирает и обрабатывает due outbound deliveries.",
+        "vc-d4fb0379-b: src/services/delivery-service.ts:129 — rate-limit и retry_after влияют на общий Telegram dispatch backoff."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-d4fb0379-a: src/lib/errors.ts:5-25,37-60 — публичная ошибка содержит стабильные code/message/status envelope.",
+        "vc-d4fb0379-a: src/lib/errors.ts:28-35,54-60 — Prisma meta передаётся в client-visible details и может раскрывать внутренние constraint metadata.",
+        "vc-d4fb0379-b: src/lib/errors.ts:54 — публичные ошибки стабильно содержат code и message.",
+        "vc-d4fb0379-b: src/lib/errors.ts:37 — неизвестные исключения преобразуются в нейтральный INTERNAL_ERROR.",
+        "vc-d4fb0379-b: src/lib/public-models.ts:38 — публичная delivery не включает bot token или зашифрованные секреты.",
+        "vc-d4fb0379-b: src/lib/errors.ts:28 — Prisma constraint error преобразуется отдельно.",
+        "vc-d4fb0379-b: src/lib/errors.ts:33 — Prisma error.meta помещается в публичные details, поэтому внутренние сведения хранилища могут попасть клиенту."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-d4fb0379-a: src/config.ts:23-24 — default allowlist ограничен sendMessage, editMessageText и deleteMessage.",
+        "vc-d4fb0379-a: src/services/registration-service.ts:564-570 — action допускается только при exact membership в effective allowlist.",
+        "vc-d4fb0379-a: src/services/admin-service.ts:29-39 — application allowlist ограничен global list, однако global list не проверяется по известному registry.",
+        "vc-d4fb0379-b: src/config.ts:23 — стандартный allowlist ограничен sendMessage, editMessageText и deleteMessage.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:183 — application allowlist пересекается с глобальным allowlist.",
+        "vc-d4fb0379-b: src/services/registration-service.ts:566 — запрос отклоняется с OUTBOUND_METHOD_NOT_ALLOWED, если операция отсутствует в эффективном allowlist.",
+        "vc-d4fb0379-b: src/services/admin-service.ts:29 — при создании приложения unsupported элементы allowlist выявляются и отклоняются."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "vc-d4fb0379-a",
+      "total": 24,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/services/registration-service.ts:91-104,558-572 — отдельный валидатор payload вызывается до создания delivery.",
+            "src/routes/bot-routes.ts:92-105 — versioned action boundary передаёт запрос в submitOutboundAction."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/services/registration-service.ts:36-104 — схемы и literal-ветвление валидатора находятся отдельно от allowlist.",
+            "src/config.ts:23-24,36-40,74 — allowlist задаётся и парсится отдельной строковой конфигурацией.",
+            "src/routes/bot-routes.ts:37-38; src/services/delivery-service.ts:477-480 — route и worker не дублируют method-specific contract."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "test/outbound-action.test.ts:7-74 — unit-тесты покрывают валидные и невалидные edit/delete payloads.",
+            "test/integration/gateway.integration.test.ts:215-379 — integration-тест покрывает queue/status, validation и idempotent duplicates для send/edit/delete."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "src/config.ts:23-24 — имя метода можно добавить через comma-separated allowlist.",
+            "src/services/registration-service.ts:95-103 — method-specific schema добавляется отдельной conditional-веткой, единого registry нет."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:106-158 — описаны action endpoints, payload examples, idempotency, queue и status flow.",
+            "HOWTOSETUP.md:713-790 — описаны edit/delete, inline_message_id, VALIDATION_ERROR и delivery statuses.",
+            "specs/modules/gateway/FEAT-102-delivery-and-retries.md:54-91 — зафиксированы payload constraints, stable error codes, retries и delivery fields."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/routes/bot-routes.ts:49-127 — сохранены auth-protected registration, action и delivery endpoints.",
+            "src/services/registration-service.ts:594-640 — сохраняются queue-first PENDING и idempotency duplicate/conflict.",
+            "src/services/delivery-service.ts:45-135,437-621 — сохранены due processing, stale-lock reclaim, retry, pacing и retry_after backoff."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/lib/errors.ts:5-25,37-60 — публичная ошибка содержит стабильные code/message/status envelope.",
+            "src/lib/errors.ts:28-35,54-60 — Prisma meta передаётся в client-visible details и может раскрывать внутренние constraint metadata."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/config.ts:23-24 — default allowlist ограничен sendMessage, editMessageText и deleteMessage.",
+            "src/services/registration-service.ts:564-570 — action допускается только при exact membership в effective allowlist.",
+            "src/services/admin-service.ts:29-39 — application allowlist ограничен global list, однако global list не проверяется по известному registry."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "vc-d4fb0379-b",
+      "total": 24,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/services/registration-service.ts:91 — проверка outbound payload выделена в отдельную экспортируемую функцию validateOutboundActionPayload.",
+            "src/services/registration-service.ts:572 — payload проверяется до поиска регистрации и создания записи в очереди."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/config.ts:23 — перечень разрешённых Telegram-операций задан отдельно в конфигурации.",
+            "src/services/registration-service.ts:46 — схема editMessageText объявлена внутри registration-service.",
+            "src/services/registration-service.ts:84 — схема deleteMessage объявлена отдельно от allowlist.",
+            "src/services/registration-service.ts:95 — выбор схемы реализован самостоятельной цепочкой условий.",
+            "src/routes/bot-routes.ts:99 — маршрут использует общий record-контракт и передаёт предметную проверку сервису.",
+            "src/services/delivery-service.ts:477 — worker выполняет сохранённую операцию через общий callMethod без копирования схем payload."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "test/outbound-action.test.ts:7 — unit-тест проверяет допустимый payload редактирования.",
+            "test/outbound-action.test.ts:41 — unit-тест проверяет отклонение неполных целей редактирования.",
+            "test/outbound-action.test.ts:57 — unit-тест покрывает валидацию удаления.",
+            "test/integration/gateway.integration.test.ts:215 — integration-тест ставит исходящую операцию в очередь и проверяет PENDING.",
+            "test/integration/gateway.integration.test.ts:260 — integration-тест проверяет возврат существующей delivery для повторного идемпотентного запроса.",
+            "test/integration/gateway.integration.test.ts:277 — integration-тест подтверждает отклонение невалидного редактирования до очереди.",
+            "test/integration/gateway.integration.test.ts:328 — integration-тест проверяет идемпотентный повтор редактирования.",
+            "test/integration/gateway.integration.test.ts:346 — integration-тест проводит удаление через очередь и worker."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "src/config.ts:23 — расширение стандартного набора требует изменения конфигурационного списка.",
+            "src/services/registration-service.ts:95 — предметная схема подключается отдельной веткой по строковому имени.",
+            "src/services/registration-service.ts:103 — все прочие разрешённые операции получают только общий record-контракт, единого расширяемого реестра схем нет."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md:115 — документация указывает версионированный action endpoint и endpoint чтения delivery.",
+            "README.md:120 — перечислены стандартный allowlist и проверка payload.",
+            "README.md:131 — приведён payload редактирования.",
+            "README.md:141 — приведён payload удаления.",
+            "README.md:150 — описано сохранение Telegram-ошибок и общий контракт очереди и повторов.",
+            "README.md:152 — описаны HTTP-ответы для новой и повторной delivery и чтение итогового статуса.",
+            "HOWTOSETUP.md:740 — описаны inline-редактирование и VALIDATION_ERROR до постановки в очередь.",
+            "HOWTOSETUP.md:784 — перечислены все состояния outbound delivery.",
+            "src/lib/errors.ts:54 — фактическая структура error.code, error.message, details и requestId не зафиксирована в README как полноценный контракт."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/routes/bot-routes.ts:50 — существующие list, status, connect, refresh и disconnect endpoints сохранены под application-auth.",
+            "src/routes/bot-routes.ts:95 — общий action endpoint продолжает использовать requireApplicationAuth.",
+            "src/services/registration-service.ts:595 — новые действия создают durable delivery со статусом PENDING.",
+            "src/services/registration-service.ts:607 — дубликаты разрешаются через существующую уникальную запись и payload hash.",
+            "src/services/delivery-service.ts:513 — Telegram network, 429 и 5xx ошибки проходят через общую retry-политику.",
+            "src/services/delivery-service.ts:525 — повтор сохраняет RETRY, число попыток и nextRetryAt.",
+            "src/services/delivery-service.ts:605 — общий worker выбирает и обрабатывает due outbound deliveries.",
+            "src/services/delivery-service.ts:129 — rate-limit и retry_after влияют на общий Telegram dispatch backoff."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/lib/errors.ts:54 — публичные ошибки стабильно содержат code и message.",
+            "src/lib/errors.ts:37 — неизвестные исключения преобразуются в нейтральный INTERNAL_ERROR.",
+            "src/lib/public-models.ts:38 — публичная delivery не включает bot token или зашифрованные секреты.",
+            "src/lib/errors.ts:28 — Prisma constraint error преобразуется отдельно.",
+            "src/lib/errors.ts:33 — Prisma error.meta помещается в публичные details, поэтому внутренние сведения хранилища могут попасть клиенту."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/config.ts:23 — стандартный allowlist ограничен sendMessage, editMessageText и deleteMessage.",
+            "src/services/registration-service.ts:183 — application allowlist пересекается с глобальным allowlist.",
+            "src/services/registration-service.ts:566 — запрос отклоняется с OUTBOUND_METHOD_NOT_ALLOWED, если операция отсутствует в эффективном allowlist.",
+            "src/services/admin-service.ts:29 — при создании приложения unsupported элементы allowlist выявляются и отклоняются."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 41,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 20,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 16,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 9,
+      "maxPoints": 10
+    }
+  },
+  "rawScore": 86,
+  "totalScore": 69,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "split-action-contract",
+      "summary": "Поддерживаемые методы не представлены единым registry: имена находятся в конфигурации, схемы — в literal conditional-ветках, а остальные методы проходят через generic schema.",
+      "evidence": [
+        "src/config.ts:23-24 — allowlist хранится как свободная строка.",
+        "src/services/registration-service.ts:36-104 — schemas и method dispatch реализованы отдельно, включая generic fallback."
+      ],
+      "reviewers": [
+        "vc-d4fb0379-a"
+      ]
+    },
+    {
+      "severity": "major",
+      "rootCauseId": "arbitrary-method-config",
+      "summary": "При изменении OUTBOUND_METHOD_ALLOWLIST можно включить произвольное имя Telegram-метода, после чего generic worker передаст его upstream без schema/registry-проверки.",
+      "evidence": [
+        "src/config.ts:36-40,74 — значения allowlist принимаются без проверки against known methods.",
+        "src/services/registration-service.ts:89-103 — неизвестный method получает generic record schema.",
+        "src/services/delivery-service.ts:477-480 — worker вызывает current.action напрямую через generic callMethod."
+      ],
+      "reviewers": [
+        "vc-d4fb0379-a"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "public-prisma-details",
+      "summary": "Обработчик ошибок возвращает Prisma meta клиенту, раскрывая внутренние сведения о database constraint.",
+      "evidence": [
+        "src/lib/errors.ts:28-35 — meta включается в AppError.details.",
+        "src/lib/errors.ts:54-60 — details сериализуется в публичный error response."
+      ],
+      "reviewers": [
+        "vc-d4fb0379-a"
+      ]
+    },
+    {
+      "severity": "major",
+      "rootCauseId": "fragmented-outbound-registry",
+      "summary": "Allowlist и схемы payload не объединены в единый реестр: имена хранятся в конфигурации, схемы и их выбор — в отдельных объявлениях и условиях.",
+      "evidence": [
+        "src/config.ts:23 — стандартный allowlist задан строкой конфигурации.",
+        "src/services/registration-service.ts:46 — схема editMessageText объявлена отдельно.",
+        "src/services/registration-service.ts:84 — схема deleteMessage объявлена отдельно.",
+        "src/services/registration-service.ts:95 — соответствие операции схеме поддерживается ручными условиями.",
+        "src/services/registration-service.ts:103 — новая разрешённая операция без отдельной ветки получает лишь общий record-контракт."
+      ],
+      "reviewers": [
+        "vc-d4fb0379-b"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "orm-metadata-in-public-error",
+      "summary": "Обработчик database constraint errors возвращает клиенту Prisma meta через публичное поле details.",
+      "evidence": [
+        "src/lib/errors.ts:28 — PrismaClientKnownRequestError обрабатывается как публичная AppError.",
+        "src/lib/errors.ts:33 — error.meta сохраняется в details.",
+        "src/lib/errors.ts:58 — details без дополнительной фильтрации отправляется в HTTP-ответе."
+      ],
+      "reviewers": [
+        "vc-d4fb0379-b"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "incomplete-error-contract-docs",
+      "summary": "Документация перечисляет отдельные машинные коды, однако полностью не описывает стабильную структуру публичной ошибки.",
+      "evidence": [
+        "README.md:25 — заявлены machine-readable error responses без структуры ответа.",
+        "HOWTOSETUP.md:740 — указан VALIDATION_ERROR для невалидного payload.",
+        "README.md:158 — указан IDEMPOTENCY_CONFLICT.",
+        "src/lib/errors.ts:54 — реализация возвращает вложенный объект с code, message, details и requestId."
+      ],
+      "reviewers": [
+        "vc-d4fb0379-b"
+      ]
+    }
+  ],
+  "provenance": "frozen_v7",
+  "originalFrozenCheck": null,
+  "blind": true
+}

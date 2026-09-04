@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-42c2c4",
+  "scenario": "small",
+  "workspaceCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+  "setupCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "reviewPasses": [
+    {
+      "reviewerId": "retry-review-a",
+      "total": 24,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/routes/bot-routes.ts:37-88 defines action payload validation separately from persistence, and src/routes/bot-routes.ts:143-155 applies it before submitOutboundAction."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The worker uses the stored action generically in src/services/delivery-service.ts:495-504, but method schemas are duplicated between src/routes/bot-routes.ts:41-72 and src/routes/istina-compat-routes.ts:37-74."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:91-251 and :253-365 cover queueing and successful duplicate reuse; the supplied unit tests cover Telegram/retry helpers, with no route tests for invalid payloads, missing keys, or conflicting idempotency payloads."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "The worker can dispatch configured extensions generically via src/services/delivery-service.ts:500-504 and src/config.ts:23, but adding a validated method requires extending hard-coded route conditionals and duplicated compatibility schemas."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:118-166 documents methods, payloads, queue/status flow and idempotency; specs/common/PROP-006-API.md sections 2, 5 and 6 plus specs/modules/gateway/FEAT-104-outbound-delivery.md sections 5-8 document the error envelope, error codes, retries and status lifecycle."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Application auth and scoped status access remain in src/routes/bot-routes.ts:101-176; queue/idempotency is preserved in src/services/registration-service.ts:488-568; retry, retry_after and pacing remain in src/services/delivery-service.ts:460-610."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/lib/errors.ts:19-61 provides stable code/message/details/requestId fields; src/lib/public-models.ts:10-53 omits encrypted credentials and request payloads, while Telegram error persistence is limited to structured upstream fields in src/services/delivery-service.ts:169-186."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/config.ts:23 defaults the allowlist to sendMessage, editMessageText and deleteMessage; src/services/registration-service.ts:113-116 intersects application and global allowlists and :494-500 rejects methods outside the effective allowlist."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "retry-review-b",
+      "total": 23,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/routes/bot-routes.ts:41-88 defines action payload schemas and validateKnownActionPayload; src/routes/bot-routes.ts:143-155 applies validation before idempotency handling and submitOutboundAction."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The worker forwards current.action and current.requestPayload generically in src/services/delivery-service.ts:495-504, and allowlist enforcement is centralized in src/services/registration-service.ts:494-500. However, action schemas are duplicated in src/routes/bot-routes.ts:41-88 and src/routes/istina-compat-routes.ts:37-74."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:253-365 covers successful edit/delete queueing and duplicate idempotency; direct unit tests cover crypto, retry and Telegram helpers in test/crypto.test.ts, test/retry.test.ts and test/telegram-service.test.ts, with no direct action-validation cases visible."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Generic worker dispatch requires no method-specific change in src/services/delivery-service.ts:495-504, and the global allowlist is configurable in src/config.ts:23-24. Adding a validated method still requires route-specific schema/branch changes in src/routes/bot-routes.ts:41-88 and duplicated compatibility definitions in src/routes/istina-compat-routes.ts:37-74."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md:106-166 documents routes, payload examples, allowlist, idempotency and status flow. README.md:24-25 only states that errors are machine-readable and does not document the error object or the relevant error codes; the implemented shape is in src/lib/errors.ts:54-60."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Authorization remains on client routes in src/routes/bot-routes.ts:101-150; queue-first PENDING creation is in src/services/registration-service.ts:523-533; status remains scoped in src/services/registration-service.ts:571-594; retry and rate-limit behavior remains in src/services/delivery-service.ts:478-566 and src/services/delivery-service.ts:119-135."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Stable error.code/message/details/requestId fields are emitted by src/lib/errors.ts:40-61. Canonical public models omit encrypted credentials in src/lib/public-models.ts:10-53, and compatibility routes strip bot_token before queueing in src/routes/istina-compat-routes.ts:367-395."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The default allowlist contains only sendMessage, editMessageText and deleteMessage in src/config.ts:23-24; application allowlists reject unsupported methods in src/services/admin-service.ts:29-39; runtime methods are intersected with the global allowlist in src/services/registration-service.ts:113-115."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "RC-ACTION-SCHEMA-DUPLICATION",
+      "severity": "note",
+      "title": "Action contracts are duplicated across route layers",
+      "evidence": [
+        "The normal action schemas and method dispatch conditionals are in src/routes/bot-routes.ts:41-88, while separate overlapping schemas for the same Telegram actions are in src/routes/istina-compat-routes.ts:37-74. This makes method additions require coordinated edits across route layers instead of one registry/schema extension."
+      ],
+      "affectedCheckIds": [
+        "S3-C02",
+        "S3-C04"
+      ]
+    },
+    {
+      "rootCauseId": "RC-NEGATIVE-PATH-COVERAGE",
+      "severity": "note",
+      "title": "Negative-path coverage is missing for the new action boundary",
+      "evidence": [
+        "The integration tests exercise successful queueing, delivery and one same-payload duplicate path in test/integration/gateway.integration.test.ts:253-365, while the unit tests in test/telegram-service.test.ts and test/retry.test.ts cover helpers only. There are no direct tests for action validation failures, missing Idempotency-Key, or conflicting payload reuse."
+      ],
+      "affectedCheckIds": [
+        "S3-C03"
+      ]
+    },
+    {
+      "rootCauseId": "RC-DOC-ERROR-CONTRACT",
+      "severity": "note",
+      "title": "The API error contract is underdocumented",
+      "evidence": [
+        "README.md:24-25 identifies machine-readable errors but does not show the error JSON shape or document validation, missing-idempotency and idempotency-conflict codes. The actual response fields are implemented in src/lib/errors.ts:54-60."
+      ],
+      "affectedCheckIds": [
+        "S3-C05"
+      ]
+    }
+  ],
+  "blind": true,
+  "retry": "retry-1"
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "createdAt": "2026-09-02T14:12:24.953Z",
+  "runId": "v7c-new-prist-r2",
+  "blindId": "vc-2f0850d5",
+  "scenario": "new-project",
+  "sourceWorkspaceCommit": "dfa76a19d7a747d83236ed3db9fa91497075c238",
+  "sourceWorkspaceTree": "3f0180b5697756b2c1b71cb1ff90acf0aa815e04",
+  "sourceContentFingerprint": "7adc007e26d66b4f8e754b7bd207e1ebb92f952eb271133f18db3800d168a8d4",
+  "sourceWorkspacePath": "redacted",
+  "destinationPath": "evidence/benchmark-v7c-prist-permissions-corrected-2026-09-02/review-inputs/vc-2f0850d5",
+  "includedPaths": [
+    ".gitignore",
+    "README.md",
+    "app.js",
+    "index.html",
+    "specs",
+    "specs/SPEC-MAP.md",
+    "specs/common",
+    "specs/common/main.md",
+    "specs/common/structure.md",
+    "specs/modules",
+    "specs/modules/reading-list",
+    "specs/modules/reading-list/FEAT-001-reading-list.md",
+    "start.bat",
+    "styles.css"
+  ],
+  "excludedPaths": [
+    ".agents",
+    ".claude",
+    ".codex",
+    ".git",
+    ".mcp.json",
+    ".prist",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "includedFileHashes": [
+    {
+      "path": ".gitignore",
+      "sha256": "ad7bbe6fad48ca47ccdd68ab3bf5c217980998b9e0a2cb18cab1f992aa5fe5a4"
+    },
+    {
+      "path": "app.js",
+      "sha256": "18246d4c529bd6c657aa274d990bd2ef46a4d8bd2b02db5b3c529d670469e8ce"
+    },
+    {
+      "path": "index.html",
+      "sha256": "50d33938a420a79ab80363cb64061d29f6f6151bab9bfbb8a6de9cfce026eda3"
+    },
+    {
+      "path": "README.md",
+      "sha256": "618575806ad4f293bde04e56c1350c2aeeb78c0f7e660ca9a1287dac7eae51cf"
+    },
+    {
+      "path": "specs/common/main.md",
+      "sha256": "aee2cf5efcee19c77661cf35be27e35d264b79ccbac36307aba82c60d969dddb"
+    },
+    {
+      "path": "specs/common/structure.md",
+      "sha256": "ca8806cdcbdd43c12099d914ca8da7407a1a8345dbc5779a8726dd0319886be4"
+    },
+    {
+      "path": "specs/modules/reading-list/FEAT-001-reading-list.md",
+      "sha256": "beac5c875321e52e012a396c34ca5c283b2e150373ad5e249410b378e71a0096"
+    },
+    {
+      "path": "specs/SPEC-MAP.md",
+      "sha256": "24bde4a11531a94eb69f0498ae6c85a818902939a7f327528acf5a5fd54b58ac"
+    },
+    {
+      "path": "start.bat",
+      "sha256": "2a75a7b5469f7a368500a8cbb6d4f71094c496e291118206e765173a92f4d899"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "3818cfd6b5e5722d55836d19b3964cb26263fe236eb2d8830ee40f8293434326"
+    }
+  ],
+  "conditionVisibleInWorkspace": false,
+  "methodMetadataVisibleInWorkspace": false,
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false,
+  "credentialsVisibleInWorkspace": false,
+  "executableProductContentChanged": false
+}

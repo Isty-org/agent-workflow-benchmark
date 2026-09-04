@@ -1,0 +1,502 @@
+{
+  "schemaVersion": 3,
+  "blindId": "vz-1520e6",
+  "scenario": "new",
+  "checkedAt": "2026-09-02T13:56:55.518Z",
+  "workspaceCommit": "714b0c5dd4a4870e92825fe0392d9aefc1d943a4",
+  "workspaceTree": "4c66caa4e3f25b32fc47332c1043fa40225f34f8",
+  "stateFingerprint": "e58815371317ab649a7991d2ed61c5131995beb00b13c233a7fdc377bb986c86",
+  "scratchIsolated": true,
+  "projectedHarnessFiles": [],
+  "setup": [],
+  "repetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "e58815371317ab649a7991d2ed61c5131995beb00b13c233a7fdc377bb986c86",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T13:54:37.123Z",
+          "completedAt": "2026-09-02T13:54:37.858Z",
+          "durationMs": 735,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "ba2b3259a32c4f95eaedce1546dc58317912e1b4886862c138985739223de22f",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> my-reading-list@1.0.0 test\n> node --test\n\n✔ создаёт книгу с очищенными полями и статусом по умолчанию (1.6378ms)\n✔ добавляет и переносит книги между всеми статусами (0.5409ms)\n✔ сохраняет и восстанавливает список из локального хранилища (0.5555ms)\n✔ удаляет только книгу с указанным идентификатором (2.7623ms)\n✔ отбрасывает повреждённые данные при загрузке с понятной ошибкой (0.8808ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 195.8223\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "package.json has neither build nor typecheck script",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T13:54:37.859Z",
+          "completedAt": "2026-09-02T13:55:23.341Z",
+          "durationMs": 45482,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "839960cc77247eb38ac86ef7c89b7bac2bea3ab824ae9f26f9c78d346b90da75",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":false,\"evidence\":\"three requested Russian states are visible\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\\u001b[22m\\n\\u001b[2m    62 × locator resolved to hidden <option value=\\\"to-read\\\">Хочу прочитать</option>\\u001b[22m\\n\"},{\"id\":\"N3-A01\",\"passed\":true,\"evidence\":\"accessible title/author form adds a visible book\"},{\"id\":\"N3-A03\",\"passed\":true,\"evidence\":\"one book moves through reading and completed states immediately\"},{\"id\":\"N3-A04\",\"passed\":true,\"evidence\":\"book and status survive browser reload\"},{\"id\":\"N3-A05\",\"passed\":true,\"evidence\":\"book and status survive full application stop and restart\"},{\"id\":\"N3-A06\",\"passed\":true,\"evidence\":\"multiple books remain independent after one state change\"},{\"id\":\"N3-A07\",\"passed\":true,\"evidence\":\"empty required values create no book and expose validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":true,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": true,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": false,
+                "evidence": "three requested Russian states are visible",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    62 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n"
+              },
+              {
+                "id": "N3-A01",
+                "passed": true,
+                "evidence": "accessible title/author form adds a visible book"
+              },
+              {
+                "id": "N3-A03",
+                "passed": true,
+                "evidence": "one book moves through reading and completed states immediately"
+              },
+              {
+                "id": "N3-A04",
+                "passed": true,
+                "evidence": "book and status survive browser reload"
+              },
+              {
+                "id": "N3-A05",
+                "passed": true,
+                "evidence": "book and status survive full application stop and restart"
+              },
+              {
+                "id": "N3-A06",
+                "passed": true,
+                "evidence": "multiple books remain independent after one state change"
+              },
+              {
+                "id": "N3-A07",
+                "passed": true,
+                "evidence": "empty required values create no book and expose validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": true,
+          "evidence": "accessible title/author form adds a visible book"
+        },
+        {
+          "id": "N3-A02",
+          "passed": false,
+          "evidence": "three requested Russian states are visible",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    62 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n"
+        },
+        {
+          "id": "N3-A03",
+          "passed": true,
+          "evidence": "one book moves through reading and completed states immediately"
+        },
+        {
+          "id": "N3-A04",
+          "passed": true,
+          "evidence": "book and status survive browser reload"
+        },
+        {
+          "id": "N3-A05",
+          "passed": true,
+          "evidence": "book and status survive full application stop and restart"
+        },
+        {
+          "id": "N3-A06",
+          "passed": true,
+          "evidence": "multiple books remain independent after one state change"
+        },
+        {
+          "id": "N3-A07",
+          "passed": true,
+          "evidence": "empty required values create no book and expose validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": true,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "e58815371317ab649a7991d2ed61c5131995beb00b13c233a7fdc377bb986c86",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T13:55:23.341Z",
+          "completedAt": "2026-09-02T13:55:24.134Z",
+          "durationMs": 793,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "0081d984bbf284808a6519371122b6f2030f38233bb1edf66f59eadecf1bf8ff",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> my-reading-list@1.0.0 test\n> node --test\n\n✔ создаёт книгу с очищенными полями и статусом по умолчанию (2.3078ms)\n✔ добавляет и переносит книги между всеми статусами (0.5749ms)\n✔ сохраняет и восстанавливает список из локального хранилища (0.548ms)\n✔ удаляет только книгу с указанным идентификатором (2.3563ms)\n✔ отбрасывает повреждённые данные при загрузке с понятной ошибкой (0.6446ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 148.8014\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "package.json has neither build nor typecheck script",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T13:55:24.134Z",
+          "completedAt": "2026-09-02T13:56:06.181Z",
+          "durationMs": 42047,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "9589bd45d56c027a26c2bb410cf70b74850b2294cf2ec8b3fa81b09d5f2c0782",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":false,\"evidence\":\"three requested Russian states are visible\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\\u001b[22m\\n\\u001b[2m    61 × locator resolved to hidden <option value=\\\"to-read\\\">Хочу прочитать</option>\\u001b[22m\\n\"},{\"id\":\"N3-A01\",\"passed\":true,\"evidence\":\"accessible title/author form adds a visible book\"},{\"id\":\"N3-A03\",\"passed\":true,\"evidence\":\"one book moves through reading and completed states immediately\"},{\"id\":\"N3-A04\",\"passed\":true,\"evidence\":\"book and status survive browser reload\"},{\"id\":\"N3-A05\",\"passed\":true,\"evidence\":\"book and status survive full application stop and restart\"},{\"id\":\"N3-A06\",\"passed\":true,\"evidence\":\"multiple books remain independent after one state change\"},{\"id\":\"N3-A07\",\"passed\":true,\"evidence\":\"empty required values create no book and expose validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":true,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": true,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": false,
+                "evidence": "three requested Russian states are visible",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    61 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n"
+              },
+              {
+                "id": "N3-A01",
+                "passed": true,
+                "evidence": "accessible title/author form adds a visible book"
+              },
+              {
+                "id": "N3-A03",
+                "passed": true,
+                "evidence": "one book moves through reading and completed states immediately"
+              },
+              {
+                "id": "N3-A04",
+                "passed": true,
+                "evidence": "book and status survive browser reload"
+              },
+              {
+                "id": "N3-A05",
+                "passed": true,
+                "evidence": "book and status survive full application stop and restart"
+              },
+              {
+                "id": "N3-A06",
+                "passed": true,
+                "evidence": "multiple books remain independent after one state change"
+              },
+              {
+                "id": "N3-A07",
+                "passed": true,
+                "evidence": "empty required values create no book and expose validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": true,
+          "evidence": "accessible title/author form adds a visible book"
+        },
+        {
+          "id": "N3-A02",
+          "passed": false,
+          "evidence": "three requested Russian states are visible",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    61 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n"
+        },
+        {
+          "id": "N3-A03",
+          "passed": true,
+          "evidence": "one book moves through reading and completed states immediately"
+        },
+        {
+          "id": "N3-A04",
+          "passed": true,
+          "evidence": "book and status survive browser reload"
+        },
+        {
+          "id": "N3-A05",
+          "passed": true,
+          "evidence": "book and status survive full application stop and restart"
+        },
+        {
+          "id": "N3-A06",
+          "passed": true,
+          "evidence": "multiple books remain independent after one state change"
+        },
+        {
+          "id": "N3-A07",
+          "passed": true,
+          "evidence": "empty required values create no book and expose validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": true,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "e58815371317ab649a7991d2ed61c5131995beb00b13c233a7fdc377bb986c86",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T13:56:06.181Z",
+          "completedAt": "2026-09-02T13:56:08.615Z",
+          "durationMs": 2434,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "96836f60ea8d2503b90d349aae430a5566f01c8fc1779256af032bd0e8e7c85d",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> my-reading-list@1.0.0 test\n> node --test\n\n✔ создаёт книгу с очищенными полями и статусом по умолчанию (3.291ms)\n✔ добавляет и переносит книги между всеми статусами (0.6133ms)\n✔ сохраняет и восстанавливает список из локального хранилища (1.2049ms)\n✔ удаляет только книгу с указанным идентификатором (7.3457ms)\n✔ отбрасывает повреждённые данные при загрузке с понятной ошибкой (2.3757ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 448.7599\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "package.json has neither build nor typecheck script",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T13:56:08.615Z",
+          "completedAt": "2026-09-02T13:56:55.229Z",
+          "durationMs": 46613,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "839960cc77247eb38ac86ef7c89b7bac2bea3ab824ae9f26f9c78d346b90da75",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":false,\"evidence\":\"three requested Russian states are visible\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\\u001b[22m\\n\\u001b[2m    62 × locator resolved to hidden <option value=\\\"to-read\\\">Хочу прочитать</option>\\u001b[22m\\n\"},{\"id\":\"N3-A01\",\"passed\":true,\"evidence\":\"accessible title/author form adds a visible book\"},{\"id\":\"N3-A03\",\"passed\":true,\"evidence\":\"one book moves through reading and completed states immediately\"},{\"id\":\"N3-A04\",\"passed\":true,\"evidence\":\"book and status survive browser reload\"},{\"id\":\"N3-A05\",\"passed\":true,\"evidence\":\"book and status survive full application stop and restart\"},{\"id\":\"N3-A06\",\"passed\":true,\"evidence\":\"multiple books remain independent after one state change\"},{\"id\":\"N3-A07\",\"passed\":true,\"evidence\":\"empty required values create no book and expose validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":true,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": true,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": false,
+                "evidence": "three requested Russian states are visible",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    62 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n"
+              },
+              {
+                "id": "N3-A01",
+                "passed": true,
+                "evidence": "accessible title/author form adds a visible book"
+              },
+              {
+                "id": "N3-A03",
+                "passed": true,
+                "evidence": "one book moves through reading and completed states immediately"
+              },
+              {
+                "id": "N3-A04",
+                "passed": true,
+                "evidence": "book and status survive browser reload"
+              },
+              {
+                "id": "N3-A05",
+                "passed": true,
+                "evidence": "book and status survive full application stop and restart"
+              },
+              {
+                "id": "N3-A06",
+                "passed": true,
+                "evidence": "multiple books remain independent after one state change"
+              },
+              {
+                "id": "N3-A07",
+                "passed": true,
+                "evidence": "empty required values create no book and expose validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": true,
+          "evidence": "accessible title/author form adds a visible book"
+        },
+        {
+          "id": "N3-A02",
+          "passed": false,
+          "evidence": "three requested Russian states are visible",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    62 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n"
+        },
+        {
+          "id": "N3-A03",
+          "passed": true,
+          "evidence": "one book moves through reading and completed states immediately"
+        },
+        {
+          "id": "N3-A04",
+          "passed": true,
+          "evidence": "book and status survive browser reload"
+        },
+        {
+          "id": "N3-A05",
+          "passed": true,
+          "evidence": "book and status survive full application stop and restart"
+        },
+        {
+          "id": "N3-A06",
+          "passed": true,
+          "evidence": "multiple books remain independent after one state change"
+        },
+        {
+          "id": "N3-A07",
+          "passed": true,
+          "evidence": "empty required values create no book and expose validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": true,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "statePreserved": true
+}

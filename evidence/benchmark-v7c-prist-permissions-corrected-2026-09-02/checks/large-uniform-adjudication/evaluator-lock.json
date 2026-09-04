@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "lockedAt": "2026-09-02T14:45:32.299Z",
+  "defect": "DEFECT-001-large-no-results-regex",
+  "files": {
+    "evaluator/harness-v7/large-search.hidden.cs": "fbbc0a20c30c9a3e4edd1aa01cc84f9da51132a95c7574057c5d1e8a6ff61bec",
+    "evaluator/scripts/run-checks-v7.mjs": "34e3aab39f9b7495d8c5533e61d55793eb4d171f0d5586d466f6f4abbfec1158",
+    "evaluator/harness-v7c-adjudicated/large-search-overlay.mjs": "df533b8b3f8e7117983d9ac1194575d1a76cedf79f5588b4f69521f51f6547ad",
+    "evaluator/scripts/run-checks-v7c-adjudicated.mjs": "01ff3aaedfccab9d59655402ba180a3f81c1b7b66846a0520fc471aa1b0ee41f"
+  }
+}

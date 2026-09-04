@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "condition": "prist",
+  "activationBeforeProductEdit": [
+    "read AGENTS.md and the project-local spec-driven-work skill",
+    "use the hosted project context and semantic resolve operation",
+    "create or claim one WorkItem and start it",
+    "load work context before implementation"
+  ],
+  "completion": [
+    "record governed canon action and verification evidence",
+    "complete the hosted WorkItem or record an explicit ordinary runtime failure"
+  ],
+  "origin": "https://prist.isty.ist"
+}
+

@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "runId": "v7-new-plain-r1",
+  "scope": "Fresh execution of frozen objective evaluator on verified exported first-pass content",
+  "command": "python scripts/run_checks.py --run v7-new-plain-r1 --output work/qa-objective-new-plain-r1.json",
+  "runnerExitCode": 1,
+  "runnerExitMeaning": "Expected product-test failures; receipt produced successfully",
+  "productPassed": false,
+  "repetitions": [
+    {
+      "repetition": 1,
+      "matchesFrozenOutcomes": true,
+      "changed": []
+    },
+    {
+      "repetition": 2,
+      "matchesFrozenOutcomes": true,
+      "changed": []
+    },
+    {
+      "repetition": 3,
+      "matchesFrozenOutcomes": true,
+      "changed": []
+    }
+  ],
+  "statePreserved": true,
+  "scratchIsolated": true
+}

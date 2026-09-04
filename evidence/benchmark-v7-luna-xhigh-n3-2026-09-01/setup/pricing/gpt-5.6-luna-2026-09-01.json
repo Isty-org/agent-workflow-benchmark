@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-01T16:30:00Z",
+  "model": "gpt-5.6-luna",
+  "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+  "currency": "USD",
+  "perMillionTokens": {
+    "uncachedInput": 0.2,
+    "cachedInput": 0.02,
+    "cacheWriteInput": 0.25,
+    "outputIncludingReasoning": 1.2
+  },
+  "longContext": {
+    "thresholdInputTokensPerRequest": 272000,
+    "inputMultiplier": 2,
+    "outputMultiplier": 1.5
+  },
+  "notes": [
+    "Cache writes are billed at 1.25 times the uncached input rate.",
+    "Historical setup sessions used a 258400-token context window, below the long-context threshold.",
+    "Reasoning output tokens are included in output tokens and are not billed twice."
+  ]
+}

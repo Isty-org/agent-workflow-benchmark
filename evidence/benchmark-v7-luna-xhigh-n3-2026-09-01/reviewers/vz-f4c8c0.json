@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-f4c8c0",
+  "scenario": "new",
+  "workspaceCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "setupCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-f4c8c0-a",
+      "total": 21,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js separates state (24-28), persistence (80-109), rendering (286-296), and UI mutations (332-386)."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the single collection; status is stored on each book, rendered from it, mutated by moveBook, and serialized to localStorage (app.js:101-109, 215-225, 375-385)."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "The objective receipt reports the required direct test command as missing in all three repetitions."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "STATUS_META and the book object provide centralized extension points (app.js:3-22, 344-350). There is no migration path; isValidBook requires the current schema, so future required fields could invalidate existing local data (app.js:69-78)."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README documents Windows and macOS/Linux local start commands and explains that Docker, build, and package installation are unnecessary (README.md:5-23). It does not document a test command; the receipt also reports no test or build command."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The source and README cover the requested shelves, movement, local persistence, and local start, with adjacent search/delete features. Readiness is incomplete because the receipt shows the add control was not found and the dependent flows failed in all three repetitions."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Inputs have labels and placeholders, focus-visible styles cover interactive controls, and dialog opening focuses the title field (index.html:211-225; styles.css:56-64; app.js:298-309). Empty, search, and storage states have Russian messages, but invalid form data returns without explicit feedback (app.js:340-342), and the add path was not operable in the receipt."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Persistence uses only browser localStorage (app.js:1, 80-109). The package contains only local HTML, CSS, and JavaScript references, with no external service or permission requirement (index.html:1-10)."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-f4c8c0-b",
+      "total": 25,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js separates state, localStorage load/save, rendering, and event handlers."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the single array of book records, including each book's status; rendering derives shelf membership from it."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No direct test files or test command are present; the receipt confirms tests are missing."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The flat book model, STATUS_META map, filtering, and render functions provide extension points for ordinary list features."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README accurately documents local start and that installation/build are unnecessary, but provides no test instructions."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Source covers the requested list, three states, movement, local persistence, Russian UI, and Docker-free start; added search, deletion, and statistics remain related scope."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Form labels, Russian accessible names, focus-visible styling, native dialog controls, shelf empty states, and storage-error messaging are present."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js persists only book data in localStorage; index.html loads only local CSS/JS and no external service or permission is used."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-f4c8c0-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The objective receipt reports “title control was not found by accessible name or placeholder” in all three repetitions, preventing add, movement, reload, restart, and validation scenarios."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-f4c8c0-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The objective receipt marks the required tests result as missing in every repetition."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-f4c8c0-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "README.md documents local start and the absence of build/package installation, but provides no test procedure; the receipt also reports missing test and build commands."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-f4c8c0-a-finding-4",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "addBook returns immediately for missing or invalid values without setting an error message or focusing the invalid field (app.js:340-342)."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-f4c8c0-a-finding-5",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The storage key is versioned as v1, but loadBooks rejects any stored record that does not satisfy the current required fields (app.js:1, 69-98)."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-f4c8c0-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The objective receipt records the same title-control lookup failure in repetitions 1–3."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-f4c8c0-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The receipt marks tests and build as missing in all repetitions; README omits a test command."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-72bc2fed-b",
+  "blindId": "vc-72bc2fed",
+  "scenario": "new",
+  "checks": [
+    {
+      "id": "N3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/lib/readingList.js:43-84 — доменные операции и валидация вынесены в чистые функции.",
+        "src/main.jsx:18-61 — App управляет состоянием и синхронизацией localStorage.",
+        "src/main.jsx:219-285 — отдельные UI-компоненты отвечают за колонки, карточки и пустые состояния."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/main.jsx:63-70 — счётчики и прогресс вычисляются из единого массива books.",
+        "src/main.jsx:195-204 — колонки строятся через booksByStatus из того же массива.",
+        "src/lib/readingList.js:75-79 — переход изменяет status конкретной книги в исходном списке."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "test/readingList.test.js:13-20 — прямой тест создания книги.",
+        "test/readingList.test.js:23-34 — прямой тест перехода между статусами.",
+        "test/readingList.test.js:37-46 — прямой тест восстановления и очистки данных persistence-слоя; запись в localStorage отдельно не проверяется."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/lib/readingList.js:5-27 — статусы централизованы в расширяемой конфигурации.",
+        "src/lib/readingList.js:33-53 — книга имеет стабильный id, status и createdAt, а чтение нормализует старые записи.",
+        "src/main.jsx:67-70 — производные представления строятся из модели книги."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "pointsAwarded": 2,
+      "evidence": [
+        "package.json:7-10 — определены команды dev, build и test.",
+        "README.md:5-21 — описаны установка, локальный запуск, сборка и preview; команда npm test не документирована."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/main.jsx:72-95 — реализованы добавление, перемещение и удаление книг.",
+        "src/main.jsx:195-205 — отображаются три требуемые колонки статусов.",
+        "src/main.jsx:39-46 — изменения сохраняются локально."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/main.jsx:153-178 — поля имеют видимые label, клавиатурную submit-навигацию и сообщение валидации role=alert.",
+        "src/main.jsx:247-267 — кнопка удаления и select имеют доступные aria-label.",
+        "src/main.jsx:273-285 — для пустых колонок есть русские пояснения.",
+        "src/main.jsx:182 — ошибки storage выводятся через role=status; ошибка первоначального чтения очищается первым effect."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/main.jsx:39-45 — сохраняется только JSON списка книг в localStorage.",
+        "src/styles.css:1 — подключается внешний Google Fonts ресурс, создающий сетевую зависимость оформления.",
+        "src/main.jsx:20-21 — приложение использует локальное хранилище без разрешений и секретов."
+      ]
+    }
+  ],
+  "total": 26,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "read-error-cleared",
+      "summary": "Ошибка чтения localStorage может исчезнуть сразу после первого рендера.",
+      "evidence": [
+        "src/main.jsx:32-33 — сообщение об ошибке читается в отдельный state.",
+        "src/main.jsx:39-45 — первый effect записывает пустой список и очищает storageNotice даже после ошибки чтения."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "persistence-boundary-untested",
+      "summary": "Прямые тесты проверяют parseBooks, но не полный цикл записи в localStorage и восстановления после перезапуска.",
+      "evidence": [
+        "test/readingList.test.js:36-46 — проверяется только нормализация входного массива.",
+        "src/main.jsx:39-45 — сериализация и запись выполняются в UI-слое без прямого теста."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "readme-omits-test",
+      "summary": "README не содержит команды запуска тестов.",
+      "evidence": [
+        "package.json:10 — команда npm test существует.",
+        "README.md:9-21 — описаны install, dev, build и preview, тестовый запуск отсутствует."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "remote-font-import",
+      "summary": "Стили запрашивают шрифты у Google Fonts, поэтому при офлайн-запуске возникает внешний сетевой запрос.",
+      "evidence": [
+        "src/styles.css:1 — @import обращается к fonts.googleapis.com."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:27:05.000Z",
+  "durationMs": 126519,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

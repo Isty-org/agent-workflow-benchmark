@@ -1,0 +1,289 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-bf0c62",
+  "branch": "v7/be8c9d1dae8",
+  "capturedAt": "2026-09-02T10:39:07.763Z",
+  "condition": "classic-spec",
+  "cost": {
+    "activationCanaryUsd": 0,
+    "baselineCanonUsd": 0,
+    "externalEvaluationUsd": 0,
+    "fullCycleUsd": 3.12769884,
+    "lateChangeTaskUsd": 3.12769884,
+    "methodInstallUsd": 0,
+    "organizerProvisioningUsd": 0,
+    "taskOnlyUsd": 3.12769884
+  },
+  "fidelity": {
+    "evidencePath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/lifecycle/v7-new-classic-r3.json",
+    "status": "pending"
+  },
+  "interventions": {
+    "answers": [],
+    "clarifications": 0,
+    "repairTurns": 0
+  },
+  "quality": {
+    "evaluationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/checks/v7-new-classic-r3.json",
+    "findings": [],
+    "officialScore": null,
+    "rawScore": null
+  },
+  "replica": 3,
+  "runId": "v7-new-classic-r3",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "setup": {
+    "commit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+    "fingerprint": "",
+    "lineageId": "v7-new-classic-spec",
+    "tree": "45b1c1edfba49650eb37d7308d3ba8cf56c476f9"
+  },
+  "snapshot": {
+    "fileHashes": [
+      {
+        "path": ".agentsignore",
+        "sha256": "10374b5c0e810c3f9127fe7cd377f0abfebf8be50771a4fe3e8740fa2a1dea30"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "77f1157cbcbc80cecea1ad203592ccb656a544cd26e7a5007d54bf8e1f83026e"
+      },
+      {
+        "path": ".human/README.spec-workflow.md",
+        "sha256": "2aef7109e85776ab02f9bf647929f338675991fbd7871f43e66da9131064aa70"
+      },
+      {
+        "path": ".human/adopt-existing-project-agent.md",
+        "sha256": "1a07c8ae5551560129c75ec49cbd761aef91e44e0c307f35f5e93084e1f15ca9"
+      },
+      {
+        "path": ".human/adopt-existing-project-human.md",
+        "sha256": "b52de5d5b19d1777956d4e70359578a4ddd4dce83e5aabbc10aa01cac3bcf422"
+      },
+      {
+        "path": ".human/how-it-works.md",
+        "sha256": "c34db56239caef13de83e3905993e24ab9e20a6f2546bf7e5fd7b8fe27d64d47"
+      },
+      {
+        "path": ".human/shortcuts.md.template",
+        "sha256": "b443b92c77ac971d3063a453e664db90632af19ebc7689751fa0ca5c19e93c10"
+      },
+      {
+        "path": ".human/start-project-instruction.md",
+        "sha256": "7f5e1d476d93398fbfc6ded64002347db5bb09208d913cadcf3231195f48089e"
+      },
+      {
+        "path": ".human/templates/AGENTS.md",
+        "sha256": "186f02aa0037564620c419e02e703c5a8228c9780fd902f3f4cf300837a51449"
+      },
+      {
+        "path": ".human/templates/CLAUDE.md",
+        "sha256": "186f02aa0037564620c419e02e703c5a8228c9780fd902f3f4cf300837a51449"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "186f02aa0037564620c419e02e703c5a8228c9780fd902f3f4cf300837a51449"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "186f02aa0037564620c419e02e703c5a8228c9780fd902f3f4cf300837a51449"
+      },
+      {
+        "path": "README.md",
+        "sha256": "5093f51d54bd4dadc821f249c8c15f547c5171c30cd49b4f9bb38b9e57fd9e4e"
+      },
+      {
+        "path": "specs/.me",
+        "sha256": "d8e2b935e0825d7cc97d9b5261bb52932be391b4cbd3a86fdb6b52fd8718958c"
+      },
+      {
+        "path": "specs/.me.template",
+        "sha256": "5d833421c378db40f52b8b6ac5d88af1f44c630786d9c73336a6e6950afbe28e"
+      },
+      {
+        "path": "specs/BOARD.md",
+        "sha256": "8930e9245b183a7aab1bec5ff8057e29e6a78bdd4b5be1f23b5bac05fe1b459f"
+      },
+      {
+        "path": "specs/SPEC-MAP.md",
+        "sha256": "c7f555261f63644d96a3c3b68c75601c33ad231b62e69315ab77e735b57326d4"
+      },
+      {
+        "path": "specs/TECHDEBT.md",
+        "sha256": "1e250c275d19f37a78e8805e688f1ea6bfe21b519e202bd0c77cced4dcde75c1"
+      },
+      {
+        "path": "specs/WAL.md",
+        "sha256": "711355df5b0601b336a79a3d099b8634f084889a357166d9d416e042c604ee0a"
+      },
+      {
+        "path": "specs/common/PROP-000.md",
+        "sha256": "d9539f0621b4b8829dabd9f490c001f2d132f7451c0eddaba79cb3517d136eb2"
+      },
+      {
+        "path": "specs/common/PROP-001-DATA.md",
+        "sha256": "c23771742d7512c040e10d94e5f0ccde3f3b8f3eb034b96829d9feea1a856ce4"
+      },
+      {
+        "path": "specs/common/PROP-002-STACK.md",
+        "sha256": "4304acce6b75b7816862739e815af4b94ac96aa8ac307cba2666b540598a9b52"
+      },
+      {
+        "path": "specs/common/PROP-003-UI.md",
+        "sha256": "64378e4ff83d32e40887bd7a826b03938e3e510e1fee2aba16f1ae2db98c19ab"
+      },
+      {
+        "path": "specs/common/PROP-004-PRODUCT.md",
+        "sha256": "d7e0153020a6eb76ded3b1fca8c2829036ca1941dd893812d88ac6408cb6e447"
+      },
+      {
+        "path": "specs/common/PROP-005-RUNTIME.md",
+        "sha256": "4b0ac80699742d4d5932415928f4589d0bb4310ded1a039b2432ff1fb0871fa7"
+      },
+      {
+        "path": "specs/common/PROP-006-API.md",
+        "sha256": "ba25569e4167b16a7eea6054a6a44f3be539aaa1e0941221483213836a30f7ba"
+      },
+      {
+        "path": "specs/common/main.md",
+        "sha256": "8bfabffcd24bc529d6d91d8bfecaa51d0f99b0fb35b345ee813afb2abe03c6ff"
+      },
+      {
+        "path": "specs/common/structure.md",
+        "sha256": "21c4763ba4dd0f0dea5e0ee337a38f3d7ae67a5899d1de38e7d9241c49bde71a"
+      },
+      {
+        "path": "specs/examples/FEAT-900-account-lifecycle.example.md",
+        "sha256": "1cec559d9a6528d958bae86512ca4c66c4d24ea34c37ba21d4d8189a8c9d35f8"
+      },
+      {
+        "path": "specs/examples/FEAT-901-example-product-capability.md",
+        "sha256": "2b660760a7d056b033abb77e47eccb92f2b2cdc9196c9ebe1eb00d8a644abca6"
+      },
+      {
+        "path": "specs/examples/INFRA-900-example-runtime-baseline.md",
+        "sha256": "6f5cf245344b49ab3ee851b2523376d01a1ed47528f533e321b974ee57c372aa"
+      },
+      {
+        "path": "specs/modules/web/FEAT-001-reading-list.md",
+        "sha256": "ddb08c04282a2619ee844fa9ac2c60e20df9835bf42240ee357afcef6b5a6c67"
+      },
+      {
+        "path": "specs/protocols/BOARD-PROTOCOL.md",
+        "sha256": "d8bc6eacd844010b66986ecff998c4f81b536bfea4035e19e9024dd4905a2db9"
+      },
+      {
+        "path": "specs/protocols/BOOT.md",
+        "sha256": "652ae2483d9014cee7de6ccd74b53185b0de8c1661b50a3ceeb3ea290c2111c3"
+      },
+      {
+        "path": "specs/protocols/SPEC-AUTHORING-PROTOCOL.md",
+        "sha256": "af3bd5bd0c0db6c8438b4d6dd505e510926a444d0e0e1db002c86e081c7a074a"
+      },
+      {
+        "path": "specs/protocols/SPEC-PROTOCOL.md",
+        "sha256": "813ecb5dab42c7ab4db50c92674bc0ec9619e159c50e7f41500bc7528e424f12"
+      },
+      {
+        "path": "specs/protocols/TECHDEBT-PROTOCOL.md",
+        "sha256": "6a4c73c4559425130943c3276f60131ca1671b7d173a4b8145cb82b9f1859675"
+      },
+      {
+        "path": "specs/protocols/WAL-PROTOCOL.md",
+        "sha256": "90d41e4a3888948276417b22326d6683703baa76f249f7cc48635307621854af"
+      },
+      {
+        "path": "specs/protocols/WORK-ITEM-PROTOCOL.md",
+        "sha256": "ad00c415edc345a6b1cf85183c9864c055c4608981cb5a52b6efc7a8652f9765"
+      },
+      {
+        "path": "specs/work/README.md",
+        "sha256": "58eb75ea920f922d5e191da1da1667f1ead4b3a9f24c3e291fee8d923972dfee"
+      },
+      {
+        "path": "specs/work/archive/2026/WI-001-reading-list.md",
+        "sha256": "5388e16568eb0a93508239473fefd329ee0c342e624f21be9231832440d4c5b5"
+      },
+      {
+        "path": "src/app.js",
+        "sha256": "10b33adf18406cd85974981a950f05150ce4ca8ef22ba3c6f77980867a837417"
+      },
+      {
+        "path": "src/index.html",
+        "sha256": "23270880a4126e9db1fd787be9ef21226e7aa68f5cb53cd72e4ef7c752963cf3"
+      },
+      {
+        "path": "src/styles.css",
+        "sha256": "817c861d57456e3b01b707eaa6ae94b6050d8541a2ca43b8912d5412ca7f91d8"
+      },
+      {
+        "path": "start.bat",
+        "sha256": "c0c533d285b79b725262fe90a5b2e65be270edf7c16971125044af2f2f081b1f"
+      },
+      {
+        "path": "start.ps1",
+        "sha256": "fbbf45829bedb6398537e78a4835e0a0309f917f25c3810d9c8b28dbb9f102ac"
+      }
+    ],
+    "head": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+    "immutableCopyPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/first-pass/v7-new-classic-r3-204cf3ab0d7cc4b9d0cf6eba09b235e4855e66998b2284baa356bbf3bea2c531.bundle",
+    "status": "M README.md\n M specs/BOARD.md\n M specs/SPEC-MAP.md\n M specs/common/PROP-001-DATA.md\n M specs/common/PROP-002-STACK.md\n M specs/common/PROP-003-UI.md\n M specs/common/PROP-004-PRODUCT.md\n M specs/common/PROP-005-RUNTIME.md\n M specs/common/PROP-006-API.md\n M specs/common/main.md\n M specs/common/structure.md\n D specs/modules/core/PROP-100-core-module.md\n?? specs/modules/web/\n?? specs/work/archive/\n?? src/\n?? start.bat\n?? start.ps1",
+    "tree": "45b1c1edfba49650eb37d7308d3ba8cf56c476f9"
+  },
+  "snapshotId": "204cf3ab0d7cc4b9d0cf6eba09b235e4855e66998b2284baa356bbf3bea2c531",
+  "task": {
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "hostId": "local",
+    "infrastructureRetryIndex": 0,
+    "repairTurns": 0,
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "taskId": "01a0608f-0382-7e42-ba4a-cd7e6608d761"
+  },
+  "timing": {
+    "agentActiveMs": 4074624,
+    "humanWaitingMs": 0,
+    "taskElapsedMs": 4074624
+  },
+  "usability": {
+    "automaticDiscovery": false,
+    "browserUsed": false,
+    "clarifications": 0,
+    "methodErrors": 0,
+    "methodOperations": 0,
+    "terminalLifecycle": false,
+    "timeToFirstProductEditMs": 0
+  },
+  "usage": {
+    "aggregation": "sum_per_record",
+    "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+    "billing": {
+      "estimatedTaskCostUsd": 3.12769884,
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "reasoningIncludedInOutput": true
+    },
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 42001152,
+    "capturedAt": "2026-09-02T07:22:40.308Z",
+    "inputTokens": 44831385,
+    "outputTokens": 1434691,
+    "reasoningOutputTokens": 0,
+    "redacted": true,
+    "schemaVersion": 1,
+    "source": {
+      "recordsObserved": 68,
+      "sessionSha256": "7ed99f01cfd516ef66794419dfa994f653440dc332a0b09ccb37536755480baf",
+      "taskId": "01a0608f-0382-7e42-ba4a-cd7e6608d761"
+    },
+    "totalTokens": 46266076,
+    "uncachedInputTokens": 2830233,
+    "usageObjects": 68
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Final answer and first-pass snapshot are present; objective outcome is recorded separately."
+  }
+}

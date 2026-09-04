@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 3,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a2b788",
+  "scenario": "new",
+  "phase": "first_pass",
+  "evaluatorVersion": "3.0.0",
+  "harnessCommit": "81808e2de1a329b539e7ab9e6f367833c4324aeb",
+  "workspaceCommit": "178411826a9a2aadd6b2c3c153ba3193733ee2da",
+  "setupCommit": "178411826a9a2aadd6b2c3c153ba3193733ee2da",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "a224f942ccf0af940354316941c1f68aa177b4ce84cc2890fbb94ac63e6a3b2e",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "a224f942ccf0af940354316941c1f68aa177b4ce84cc2890fbb94ac63e6a3b2e",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "a224f942ccf0af940354316941c1f68aa177b4ce84cc2890fbb94ac63e6a3b2e",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "N3-A01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: accessible title/author form adds a visible book",
+        "repetition 2: accessible title/author form adds a visible book",
+        "repetition 3: accessible title/author form adds a visible book"
+      ]
+    },
+    {
+      "id": "N3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: three requested Russian states are visible",
+        "repetition 2: three requested Russian states are visible",
+        "repetition 3: three requested Russian states are visible"
+      ]
+    },
+    {
+      "id": "N3-A03",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: one book moves through reading and completed states immediately",
+        "repetition 2: one book moves through reading and completed states immediately",
+        "repetition 3: one book moves through reading and completed states immediately"
+      ]
+    },
+    {
+      "id": "N3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: book and status survive browser reload",
+        "repetition 2: book and status survive browser reload",
+        "repetition 3: book and status survive browser reload"
+      ]
+    },
+    {
+      "id": "N3-A05",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: book and status survive full application stop and restart",
+        "repetition 2: book and status survive full application stop and restart",
+        "repetition 3: book and status survive full application stop and restart"
+      ]
+    },
+    {
+      "id": "N3-A06",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: multiple books remain independent after one state change",
+        "repetition 2: multiple books remain independent after one state change",
+        "repetition 3: multiple books remain independent after one state change"
+      ]
+    },
+    {
+      "id": "N3-A07",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: empty required values create no book and expose validation",
+        "repetition 2: empty required values create no book and expose validation",
+        "repetition 3: empty required values create no book and expose validation"
+      ]
+    },
+    {
+      "id": "N3-A08",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: primary product copy and controls are Russian",
+        "repetition 2: primary product copy and controls are Russian",
+        "repetition 3: primary product copy and controls are Russian"
+      ]
+    },
+    {
+      "id": "N3-B01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: direct project test command",
+        "repetition 2: direct project test command",
+        "repetition 3: direct project test command"
+      ]
+    },
+    {
+      "id": "N3-B02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: documented build or type/package check",
+        "repetition 2: documented build or type/package check",
+        "repetition 3: documented build or type/package check"
+      ]
+    },
+    {
+      "id": "N3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: real local start and Chromium smoke",
+        "repetition 2: real local start and Chromium smoke",
+        "repetition 3: real local start and Chromium smoke"
+      ]
+    },
+    {
+      "id": "N3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-a2b788/app.js:22-42 separates DOM references and application state; app.js:76-107 contains persistence; app.js:203-227 handles derived rendering.",
+        "index.html defines the UI structure and labels; app.js owns state, rendering, and event handling; server.mjs only serves local static files.",
+        "app.js separates loadBooks/saveBooks localStorage operations from UI rendering and interaction handlers."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "state.books is the authoritative collection; filtering and rendering derive from it (app.js:38-42, 109-123, 203-227), while status changes update the same objects before persistence (app.js:275-289).",
+        "state.books is the central collection, with each book carrying a single status field in app.js:38-42 and app.js:67-73.",
+        "Counts, columns, transitions, and persistence all derive from or update the same state.books records."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "status": "partial",
+      "pointsAwarded": 1,
+      "maxPoints": 4,
+      "evidence": [
+        "package.json:7-9 defines only npm start. The supplied objective receipt reports the required test command as missing in all three repetitions; no direct test files are present in the normalized workspace.",
+        "The frozen receipt reports add, transition, reload, and restart checks passing in all three repetitions.",
+        "The normalized workspace contains no project test files and package.json exposes only a start script, so there is no project-owned direct test suite."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "Books use a structured record with id, title, author, status, and createdAt (app.js:54-73); statuses are centralized in STATUSES/statusMeta (app.js:1-20), and filtering/search are already isolated from persistence (app.js:109-123, 313-321).",
+        "The normalized book shape and status metadata are centralized, allowing additions without resetting stored books.",
+        "Future fields would require updating normalizeBook, rendering, and hard-coded status structures, so extensibility is only partial."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "status": "partial",
+      "pointsAwarded": 1,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md:5-19 accurately documents Node.js, local start, URL, stopping, and storage. It does not document install, test, build, or type/package checks.",
+        "README documents Node.js 18+, npm start, the local URL, stopping the service, and local storage.",
+        "package.json has no test, build, or typecheck scripts, and README provides no corresponding procedures; the receipt marks those checks missing."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "index.html:145-180 contains the three requested visible board columns; app.js:244-289 implements adding and status movement; the receipt records successful add, movement, reload, restart, multiple-book, validation, and Russian-copy checks. Search and delete remain related reading-list features.",
+        "index.html contains visible sections titled Хочу прочитать, Читаю, and Прочитано.",
+        "The frozen receipt reports add, state movement, reload persistence, restart persistence, and independent multiple-book behavior passing in all three repetitions."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "Inputs have labels and required attributes (index.html:43-52); visible focus styling covers buttons, inputs, and selects (styles.css:57-62); native controls provide the keyboard path; empty states are rendered per status (app.js:185-200); validation focuses the missing field and announces an understandable message (app.js:250-253, index.html:60).",
+        "Inputs have Russian labels and required attributes; app.js provides Russian validation feedback and focuses the missing field.",
+        "CSS defines visible keyboard focus styles, while the form message, toast, and empty-state regions provide status and error feedback."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "Persistence uses a localStorage key without secrets or permissions (app.js:1, 76-106); the server binds to 127.0.0.1 (server.mjs:5, 37). styles.css:1 imports Google Fonts, creating a nonessential external network dependency.",
+        "app.js stores only book data in browser localStorage; server.mjs is a loopback static server with no credentials, permissions, or external data API.",
+        "The stylesheet has system-font fallbacks, so the optional remote font import is not required for product operation."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-a2b788-a",
+      "total": 23,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-a2b788/app.js:22-42 separates DOM references and application state; app.js:76-107 contains persistence; app.js:203-227 handles derived rendering."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the authoritative collection; filtering and rendering derive from it (app.js:38-42, 109-123, 203-227), while status changes update the same objects before persistence (app.js:275-289)."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "package.json:7-9 defines only npm start. The supplied objective receipt reports the required test command as missing in all three repetitions; no direct test files are present in the normalized workspace."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Books use a structured record with id, title, author, status, and createdAt (app.js:54-73); statuses are centralized in STATUSES/statusMeta (app.js:1-20), and filtering/search are already isolated from persistence (app.js:109-123, 313-321)."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md:5-19 accurately documents Node.js, local start, URL, stopping, and storage. It does not document install, test, build, or type/package checks."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "index.html:145-180 contains the three requested visible board columns; app.js:244-289 implements adding and status movement; the receipt records successful add, movement, reload, restart, multiple-book, validation, and Russian-copy checks. Search and delete remain related reading-list features."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Inputs have labels and required attributes (index.html:43-52); visible focus styling covers buttons, inputs, and selects (styles.css:57-62); native controls provide the keyboard path; empty states are rendered per status (app.js:185-200); validation focuses the missing field and announces an understandable message (app.js:250-253, index.html:60)."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Persistence uses a localStorage key without secrets or permissions (app.js:1, 76-106); the server binds to 127.0.0.1 (server.mjs:5, 37). styles.css:1 imports Google Fonts, creating a nonessential external network dependency."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-a2b788-b",
+      "total": 25,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "index.html defines the UI structure and labels; app.js owns state, rendering, and event handling; server.mjs only serves local static files.",
+            "app.js separates loadBooks/saveBooks localStorage operations from UI rendering and interaction handlers."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the central collection, with each book carrying a single status field in app.js:38-42 and app.js:67-73.",
+            "Counts, columns, transitions, and persistence all derive from or update the same state.books records."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The frozen receipt reports add, transition, reload, and restart checks passing in all three repetitions.",
+            "The normalized workspace contains no project test files and package.json exposes only a start script, so there is no project-owned direct test suite."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The normalized book shape and status metadata are centralized, allowing additions without resetting stored books.",
+            "Future fields would require updating normalizeBook, rendering, and hard-coded status structures, so extensibility is only partial."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README documents Node.js 18+, npm start, the local URL, stopping the service, and local storage.",
+            "package.json has no test, build, or typecheck scripts, and README provides no corresponding procedures; the receipt marks those checks missing."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "index.html contains visible sections titled Хочу прочитать, Читаю, and Прочитано.",
+            "The frozen receipt reports add, state movement, reload persistence, restart persistence, and independent multiple-book behavior passing in all three repetitions."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Inputs have Russian labels and required attributes; app.js provides Russian validation feedback and focuses the missing field.",
+            "CSS defines visible keyboard focus styles, while the form message, toast, and empty-state regions provide status and error feedback."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js stores only book data in browser localStorage; server.mjs is a loopback static server with no credentials, permissions, or external data API.",
+            "The stylesheet has system-font fallbacks, so the optional remote font import is not required for product operation."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 44,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 6,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 15,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "totalScore": 75,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-a2b788-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "package.json:7-9 contains only the start script; the supplied receipt marks tests missing in all three repetitions."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a2b788-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "README.md:5-19 documents start and storage but contains no install, test, build, or type/package-check instructions."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a2b788-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "styles.css:1 uses a Google Fonts @import; styles.css:42 provides a fallback font family."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a2b788-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a2b788-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a2b788-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a2b788-b-finding-4",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

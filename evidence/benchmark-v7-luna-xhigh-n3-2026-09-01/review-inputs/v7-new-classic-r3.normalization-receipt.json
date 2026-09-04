@@ -1,0 +1,175 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-bf0c62",
+  "conditionVisibleInWorkspace": false,
+  "createdAt": "2026-09-02T06:59:13.844Z",
+  "destinationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-bf0c62",
+  "excludedPaths": [
+    ".git",
+    ".human",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "specs/examples/FEAT-900-account-lifecycle.example.md",
+    "specs/protocols/BOARD-PROTOCOL.md",
+    "specs/protocols/BOOT.md",
+    "specs/protocols/SPEC-AUTHORING-PROTOCOL.md",
+    "specs/protocols/SPEC-PROTOCOL.md",
+    "specs/protocols/TECHDEBT-PROTOCOL.md",
+    "specs/protocols/WAL-PROTOCOL.md",
+    "specs/protocols/WORK-ITEM-PROTOCOL.md",
+    "specs/work/README.md",
+    "specs/work/archive"
+  ],
+  "executableProductContentChanged": false,
+  "includedFileHashes": [
+    {
+      "path": ".agentsignore",
+      "sha256": "10374b5c0e810c3f9127fe7cd377f0abfebf8be50771a4fe3e8740fa2a1dea30"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "77f1157cbcbc80cecea1ad203592ccb656a544cd26e7a5007d54bf8e1f83026e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "5093f51d54bd4dadc821f249c8c15f547c5171c30cd49b4f9bb38b9e57fd9e4e"
+    },
+    {
+      "path": "specs/.me",
+      "sha256": "d8e2b935e0825d7cc97d9b5261bb52932be391b4cbd3a86fdb6b52fd8718958c"
+    },
+    {
+      "path": "specs/.me.template",
+      "sha256": "5d833421c378db40f52b8b6ac5d88af1f44c630786d9c73336a6e6950afbe28e"
+    },
+    {
+      "path": "specs/BOARD.md",
+      "sha256": "8930e9245b183a7aab1bec5ff8057e29e6a78bdd4b5be1f23b5bac05fe1b459f"
+    },
+    {
+      "path": "specs/common/main.md",
+      "sha256": "8bfabffcd24bc529d6d91d8bfecaa51d0f99b0fb35b345ee813afb2abe03c6ff"
+    },
+    {
+      "path": "specs/common/PROP-000.md",
+      "sha256": "d9539f0621b4b8829dabd9f490c001f2d132f7451c0eddaba79cb3517d136eb2"
+    },
+    {
+      "path": "specs/common/PROP-001-DATA.md",
+      "sha256": "c23771742d7512c040e10d94e5f0ccde3f3b8f3eb034b96829d9feea1a856ce4"
+    },
+    {
+      "path": "specs/common/PROP-002-STACK.md",
+      "sha256": "4304acce6b75b7816862739e815af4b94ac96aa8ac307cba2666b540598a9b52"
+    },
+    {
+      "path": "specs/common/PROP-003-UI.md",
+      "sha256": "64378e4ff83d32e40887bd7a826b03938e3e510e1fee2aba16f1ae2db98c19ab"
+    },
+    {
+      "path": "specs/common/PROP-004-PRODUCT.md",
+      "sha256": "d7e0153020a6eb76ded3b1fca8c2829036ca1941dd893812d88ac6408cb6e447"
+    },
+    {
+      "path": "specs/common/PROP-005-RUNTIME.md",
+      "sha256": "4b0ac80699742d4d5932415928f4589d0bb4310ded1a039b2432ff1fb0871fa7"
+    },
+    {
+      "path": "specs/common/PROP-006-API.md",
+      "sha256": "ba25569e4167b16a7eea6054a6a44f3be539aaa1e0941221483213836a30f7ba"
+    },
+    {
+      "path": "specs/common/structure.md",
+      "sha256": "21c4763ba4dd0f0dea5e0ee337a38f3d7ae67a5899d1de38e7d9241c49bde71a"
+    },
+    {
+      "path": "specs/examples/FEAT-901-example-product-capability.md",
+      "sha256": "2b660760a7d056b033abb77e47eccb92f2b2cdc9196c9ebe1eb00d8a644abca6"
+    },
+    {
+      "path": "specs/examples/INFRA-900-example-runtime-baseline.md",
+      "sha256": "6f5cf245344b49ab3ee851b2523376d01a1ed47528f533e321b974ee57c372aa"
+    },
+    {
+      "path": "specs/modules/web/FEAT-001-reading-list.md",
+      "sha256": "ddb08c04282a2619ee844fa9ac2c60e20df9835bf42240ee357afcef6b5a6c67"
+    },
+    {
+      "path": "specs/SPEC-MAP.md",
+      "sha256": "c7f555261f63644d96a3c3b68c75601c33ad231b62e69315ab77e735b57326d4"
+    },
+    {
+      "path": "specs/TECHDEBT.md",
+      "sha256": "1e250c275d19f37a78e8805e688f1ea6bfe21b519e202bd0c77cced4dcde75c1"
+    },
+    {
+      "path": "specs/WAL.md",
+      "sha256": "711355df5b0601b336a79a3d099b8634f084889a357166d9d416e042c604ee0a"
+    },
+    {
+      "path": "src/app.js",
+      "sha256": "10b33adf18406cd85974981a950f05150ce4ca8ef22ba3c6f77980867a837417"
+    },
+    {
+      "path": "src/index.html",
+      "sha256": "23270880a4126e9db1fd787be9ef21226e7aa68f5cb53cd72e4ef7c752963cf3"
+    },
+    {
+      "path": "src/styles.css",
+      "sha256": "817c861d57456e3b01b707eaa6ae94b6050d8541a2ca43b8912d5412ca7f91d8"
+    },
+    {
+      "path": "start.bat",
+      "sha256": "c0c533d285b79b725262fe90a5b2e65be270edf7c16971125044af2f2f081b1f"
+    },
+    {
+      "path": "start.ps1",
+      "sha256": "fbbf45829bedb6398537e78a4835e0a0309f917f25c3810d9c8b28dbb9f102ac"
+    }
+  ],
+  "includedPaths": [
+    ".agentsignore",
+    ".gitignore",
+    "README.md",
+    "specs",
+    "specs/.me",
+    "specs/.me.template",
+    "specs/BOARD.md",
+    "specs/SPEC-MAP.md",
+    "specs/TECHDEBT.md",
+    "specs/WAL.md",
+    "specs/common",
+    "specs/common/PROP-000.md",
+    "specs/common/PROP-001-DATA.md",
+    "specs/common/PROP-002-STACK.md",
+    "specs/common/PROP-003-UI.md",
+    "specs/common/PROP-004-PRODUCT.md",
+    "specs/common/PROP-005-RUNTIME.md",
+    "specs/common/PROP-006-API.md",
+    "specs/common/main.md",
+    "specs/common/structure.md",
+    "specs/examples",
+    "specs/examples/FEAT-901-example-product-capability.md",
+    "specs/examples/INFRA-900-example-runtime-baseline.md",
+    "specs/modules",
+    "specs/modules/core",
+    "specs/modules/web",
+    "specs/modules/web/FEAT-001-reading-list.md",
+    "specs/protocols",
+    "specs/work",
+    "src",
+    "src/app.js",
+    "src/index.html",
+    "src/styles.css",
+    "start.bat",
+    "start.ps1"
+  ],
+  "methodMetadataVisibleInWorkspace": false,
+  "runId": "v7-new-classic-r3",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "sourceWorkspaceCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "sourceWorkspacePath": "redacted",
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false
+}

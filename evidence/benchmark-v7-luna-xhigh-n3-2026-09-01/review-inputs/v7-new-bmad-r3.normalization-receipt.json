@@ -1,0 +1,88 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a12132",
+  "conditionVisibleInWorkspace": false,
+  "createdAt": "2026-09-02T06:59:12.848Z",
+  "destinationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-a12132",
+  "excludedPaths": [
+    ".agents",
+    ".git",
+    "_bmad",
+    "_bmad-output"
+  ],
+  "executableProductContentChanged": false,
+  "includedFileHashes": [
+    {
+      "path": "__pycache__/serve.cpython-312.pyc",
+      "sha256": "d7ad41aa2cc1ad39abd3a8d8f39812367f99be5693e06017d7ef3d7ae530f1a4"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "6763d1f0ab9cc988044e11ca10b7191bb42857b0814da48dc6812acb06b6e67f"
+    },
+    {
+      "path": "app.js",
+      "sha256": "27a7843e4e7c3dc15797dedf89f27944a10781e448a2681425dd24dca429d666"
+    },
+    {
+      "path": "app.test.js",
+      "sha256": "fe1e6d4c31b62f88b17abdeb19cc7f09cf52fc71a9abad0a8ac1555fe33f430a"
+    },
+    {
+      "path": "docs/project-context.md",
+      "sha256": "8d7506015fe12b7a7e8e66fd7d1d124030cad4b1d2081096e35f9bf1c14779b9"
+    },
+    {
+      "path": "index.html",
+      "sha256": "02851c500eec07c78d752644b75da01137c501d335b2c41968fd4019a820195f"
+    },
+    {
+      "path": "reading-list.js",
+      "sha256": "b9492fe1d521a2d9e84389e828af09646bcf59d13b300c328d12f8423fe56ab8"
+    },
+    {
+      "path": "reading-list.test.js",
+      "sha256": "d1996bfea142f453bf102216cc215fc3238c5ac50c9c7eb861510b683146b2d0"
+    },
+    {
+      "path": "README.md",
+      "sha256": "dba697564773ae1a16d0f85ff2b0880c8858a13c9c3a876c635a7fa1d2e7bc0e"
+    },
+    {
+      "path": "serve.py",
+      "sha256": "4697e806f318080656c5bb762294ae9f3964312589703d166d0612d0fd3ba398"
+    },
+    {
+      "path": "start.bat",
+      "sha256": "1e05d776f60b3c4038aedeb6cb3d0b39c805f024a4bac928d7c649db78f8161c"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "9ea8fbad8c4077b797beada857b3acc49772d98cfff7dba8380950d893fe79b6"
+    }
+  ],
+  "includedPaths": [
+    ".gitignore",
+    "README.md",
+    "__pycache__",
+    "__pycache__/serve.cpython-312.pyc",
+    "app.js",
+    "app.test.js",
+    "docs",
+    "docs/project-context.md",
+    "index.html",
+    "reading-list.js",
+    "reading-list.test.js",
+    "serve.py",
+    "start.bat",
+    "styles.css"
+  ],
+  "methodMetadataVisibleInWorkspace": false,
+  "runId": "v7-new-bmad-r3",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "sourceWorkspaceCommit": "8498ac52cc90d3fe85dea25784df9720a1b5799e",
+  "sourceWorkspacePath": "redacted",
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false
+}

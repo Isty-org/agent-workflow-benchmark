@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 3,
+  "blindId": "vz-e230e5",
+  "scenario": "new",
+  "checkedAt": "2026-09-02T06:54:41.644Z",
+  "workspaceCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "workspaceTree": "45b1c1edfba49650eb37d7308d3ba8cf56c476f9",
+  "stateFingerprint": "124697f220491076eb274470c3b43def223c07e6df455066640134b4bfe619e5",
+  "scratchIsolated": true,
+  "projectedHarnessFiles": [],
+  "setup": [],
+  "repetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "124697f220491076eb274470c3b43def223c07e6df455066640134b4bfe619e5",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T06:49:13.792Z",
+          "completedAt": "2026-09-02T06:49:14.515Z",
+          "durationMs": 723,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e94c895e5950aa5ecd11e4ff850edef04eeb9d23773c6ad03a484d63e4e9b230",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> reading-list-local@1.0.0 test\n> node --test\n\n✔ добавляет книгу в начало списка со статусом want (3.2041ms)\n✔ отклоняет пустые и слишком длинные поля (1.0618ms)\n✔ переносит книгу в новый статус и обновляет время изменения (0.2748ms)\n✔ группирует книги по статусу и показывает новые первыми (0.2889ms)\n✔ сохраняет и восстанавливает книги из localStorage-контракта (0.4034ms)\n✔ не ломает запуск при повреждённых сохранённых данных (0.157ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 222.1379\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "package.json has neither build nor typecheck script",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T06:49:14.515Z",
+          "completedAt": "2026-09-02T06:51:03.321Z",
+          "durationMs": 108793,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "ca4b3b671c0e4d15829865bf3ca7d4978370debf483739982738edfb4fd1af19",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":false,\"evidence\":\"accessible title/author form adds a visible book\",\"error\":\"locator.waitFor: Timeout 5000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A03\",\"passed\":false,\"evidence\":\"one book moves through reading and completed states immediately\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A04\",\"passed\":false,\"evidence\":\"book and status survive browser reload\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A05\",\"passed\":false,\"evidence\":\"book and status survive full application stop and restart\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A06\",\"passed\":false,\"evidence\":\"multiple books remain independent after one state change\",\"error\":\"locator.waitFor: Timeout 5000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A07\",\"passed\":false,\"evidence\":\"empty required values create no book and expose validation\",\"error\":\"invalid submission lacked understandable validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":false,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": false,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": false,
+                "evidence": "accessible title/author form adds a visible book",
+                "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A03",
+                "passed": false,
+                "evidence": "one book moves through reading and completed states immediately",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A04",
+                "passed": false,
+                "evidence": "book and status survive browser reload",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A05",
+                "passed": false,
+                "evidence": "book and status survive full application stop and restart",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A06",
+                "passed": false,
+                "evidence": "multiple books remain independent after one state change",
+                "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A07",
+                "passed": false,
+                "evidence": "empty required values create no book and expose validation",
+                "error": "invalid submission lacked understandable validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "accessible title/author form adds a visible book",
+          "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "one book moves through reading and completed states immediately",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "book and status survive browser reload",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "book and status survive full application stop and restart",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "multiple books remain independent after one state change",
+          "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "empty required values create no book and expose validation",
+          "error": "invalid submission lacked understandable validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "124697f220491076eb274470c3b43def223c07e6df455066640134b4bfe619e5",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T06:51:03.321Z",
+          "completedAt": "2026-09-02T06:51:03.788Z",
+          "durationMs": 466,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d0fa48c1d8a411889623af898617931e5819b3991dc27b45431ab827416cd481",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> reading-list-local@1.0.0 test\n> node --test\n\n✔ добавляет книгу в начало списка со статусом want (2.9637ms)\n✔ отклоняет пустые и слишком длинные поля (1.1155ms)\n✔ переносит книгу в новый статус и обновляет время изменения (0.3692ms)\n✔ группирует книги по статусу и показывает новые первыми (0.2682ms)\n✔ сохраняет и восстанавливает книги из localStorage-контракта (0.3203ms)\n✔ не ломает запуск при повреждённых сохранённых данных (0.1247ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 106.3641\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "package.json has neither build nor typecheck script",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T06:51:03.788Z",
+          "completedAt": "2026-09-02T06:52:51.930Z",
+          "durationMs": 108143,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "ca4b3b671c0e4d15829865bf3ca7d4978370debf483739982738edfb4fd1af19",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":false,\"evidence\":\"accessible title/author form adds a visible book\",\"error\":\"locator.waitFor: Timeout 5000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A03\",\"passed\":false,\"evidence\":\"one book moves through reading and completed states immediately\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A04\",\"passed\":false,\"evidence\":\"book and status survive browser reload\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A05\",\"passed\":false,\"evidence\":\"book and status survive full application stop and restart\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A06\",\"passed\":false,\"evidence\":\"multiple books remain independent after one state change\",\"error\":\"locator.waitFor: Timeout 5000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A07\",\"passed\":false,\"evidence\":\"empty required values create no book and expose validation\",\"error\":\"invalid submission lacked understandable validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":false,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": false,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": false,
+                "evidence": "accessible title/author form adds a visible book",
+                "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A03",
+                "passed": false,
+                "evidence": "one book moves through reading and completed states immediately",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A04",
+                "passed": false,
+                "evidence": "book and status survive browser reload",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A05",
+                "passed": false,
+                "evidence": "book and status survive full application stop and restart",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A06",
+                "passed": false,
+                "evidence": "multiple books remain independent after one state change",
+                "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A07",
+                "passed": false,
+                "evidence": "empty required values create no book and expose validation",
+                "error": "invalid submission lacked understandable validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "accessible title/author form adds a visible book",
+          "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "one book moves through reading and completed states immediately",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "book and status survive browser reload",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "book and status survive full application stop and restart",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "multiple books remain independent after one state change",
+          "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "empty required values create no book and expose validation",
+          "error": "invalid submission lacked understandable validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "124697f220491076eb274470c3b43def223c07e6df455066640134b4bfe619e5",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T06:52:51.930Z",
+          "completedAt": "2026-09-02T06:52:52.375Z",
+          "durationMs": 444,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "5fc36e5b81d6a63fd9d840bb9708fc7ab47dd56883b4903cee1a1358d9da3932",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> reading-list-local@1.0.0 test\n> node --test\n\n✔ добавляет книгу в начало списка со статусом want (2.3186ms)\n✔ отклоняет пустые и слишком длинные поля (0.8614ms)\n✔ переносит книгу в новый статус и обновляет время изменения (0.1953ms)\n✔ группирует книги по статусу и показывает новые первыми (0.2164ms)\n✔ сохраняет и восстанавливает книги из localStorage-контракта (0.3005ms)\n✔ не ломает запуск при повреждённых сохранённых данных (0.1188ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 101.2578\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "package.json has neither build nor typecheck script",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T06:52:52.375Z",
+          "completedAt": "2026-09-02T06:54:41.411Z",
+          "durationMs": 109036,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "ca4b3b671c0e4d15829865bf3ca7d4978370debf483739982738edfb4fd1af19",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":false,\"evidence\":\"accessible title/author form adds a visible book\",\"error\":\"locator.waitFor: Timeout 5000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A03\",\"passed\":false,\"evidence\":\"one book moves through reading and completed states immediately\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A04\",\"passed\":false,\"evidence\":\"book and status survive browser reload\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A05\",\"passed\":false,\"evidence\":\"book and status survive full application stop and restart\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A06\",\"passed\":false,\"evidence\":\"multiple books remain independent after one state change\",\"error\":\"locator.waitFor: Timeout 5000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A07\",\"passed\":false,\"evidence\":\"empty required values create no book and expose validation\",\"error\":\"invalid submission lacked understandable validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":false,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": false,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": false,
+                "evidence": "accessible title/author form adds a visible book",
+                "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A03",
+                "passed": false,
+                "evidence": "one book moves through reading and completed states immediately",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A04",
+                "passed": false,
+                "evidence": "book and status survive browser reload",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A05",
+                "passed": false,
+                "evidence": "book and status survive full application stop and restart",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A06",
+                "passed": false,
+                "evidence": "multiple books remain independent after one state change",
+                "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A07",
+                "passed": false,
+                "evidence": "empty required values create no book and expose validation",
+                "error": "invalid submission lacked understandable validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "accessible title/author form adds a visible book",
+          "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "one book moves through reading and completed states immediately",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "book and status survive browser reload",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "book and status survive full application stop and restart",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "multiple books remain independent after one state change",
+          "error": "locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Пикник на обочине', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "empty required values create no book and expose validation",
+          "error": "invalid submission lacked understandable validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "statePreserved": true
+}

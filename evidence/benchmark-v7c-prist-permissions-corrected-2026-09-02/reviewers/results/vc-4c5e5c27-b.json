@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-4c5e5c27-b",
+  "blindId": "vc-4c5e5c27",
+  "scenario": "small",
+  "checks": [
+    {
+      "id": "S3-C01",
+      "pointsAwarded": 0,
+      "evidence": [
+        "src/routes/bot-routes.ts:37-38 — payload проверяется только как z.record(z.unknown()).",
+        "src/services/registration-service.ts:493-517 — перед постановкой в очередь проверяются allowlist и registration, без action-specific validation."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "pointsAwarded": 1,
+      "evidence": [
+        "src/config.ts:7-11 — default allowlist определён централизованно.",
+        "src/routes/bot-routes.ts:27-37 — route contract не содержит method schemas.",
+        "src/services/delivery-service.ts:477-481 — worker передаёт action и payload generic-образом."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:255-383 — покрыты queueing, duplicate и conflict для edit/delete.",
+        "test/telegram-service.test.ts:10-43 — unit-тесты покрывают webhook ownership и retry classification, без action validation."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "pointsAwarded": 1,
+      "evidence": [
+        "src/config.ts:7-11 — добавление имени в default allowlist локально.",
+        "src/routes/bot-routes.ts:37-38 — отсутствует registry/schema extension для payload contract."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "README.md:90-173 — документированы routes, три действия, payloads, queue-first flow, idempotency и error envelope.",
+        "HOWTOSETUP.md:746-812 — приведены примеры редактирования, удаления, ошибок и delivery states."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/routes/bot-routes.ts:92-123 — сохранены Bearer auth, action admission и delivery status endpoint.",
+        "src/services/delivery-service.ts:45-115 — сохранены due/retry/stale-lock filters.",
+        "src/services/delivery-service.ts:472-589 — сохранены worker dispatch, rate-limit backoff, retry и terminal failure handling."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/lib/errors.ts:54-60 — публичный envelope содержит стабильные code, message, details и requestId.",
+        "src/lib/errors.ts:28-34 — Database constraint details включают raw Prisma code и meta."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/config.ts:7-11 — default allowlist ограничен sendMessage, editMessageText и deleteMessage.",
+        "src/services/registration-service.ts:112-115 — application allowlist пересекается с глобальным allowlist.",
+        "src/services/registration-service.ts:493-499 — недопустимое имя отклоняется с OUTBOUND_METHOD_NOT_ALLOWED."
+      ]
+    }
+  ],
+  "total": 16,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "missing-action-validation",
+      "summary": "Versioned action ingress принимает любой объект и ставит его в очередь без проверки обязательных полей и типов конкретного действия.",
+      "evidence": [
+        "src/routes/bot-routes.ts:37-38 — payload schema generic.",
+        "src/services/registration-service.ts:493-517 — submitOutboundAction не выполняет action-specific validation."
+      ]
+    },
+    {
+      "severity": "major",
+      "rootCauseId": "missing-contract-registry",
+      "summary": "Нет единого registry, связывающего разрешённые имена действий с их payload schemas; route и worker работают с generic method/payload.",
+      "evidence": [
+        "src/config.ts:7-11 — хранится только список имён.",
+        "src/routes/bot-routes.ts:27-37 — отсутствуют schemas для действий.",
+        "src/services/delivery-service.ts:477-481 — worker вызывает Telegram generic-методом."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "validation-tests-absent",
+      "summary": "Тесты покрывают queueing и idempotency, однако не проверяют отказ на malformed action payload.",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:255-383 — проверки edit/delete queue и idempotency.",
+        "test/telegram-service.test.ts:10-43 — unit suite не содержит action validation cases."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "raw-error-details",
+      "summary": "Общий error mapper возвращает Prisma meta в публичном details-поле, что раскрывает внутренние детали реализации.",
+      "evidence": [
+        "src/lib/errors.ts:28-34 — формируется details с error.code и error.meta.",
+        "src/lib/errors.ts:54-60 — mapped details отправляются клиенту."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:29:58.000Z",
+  "durationMs": 265966,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

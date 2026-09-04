@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "blindId": "vc-f2787e27",
+  "scenario": "new",
+  "phase": "first_pass",
+  "evaluatorVersion": "v7c-uniform-1",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "setupCommit": "714b0c5dd4a4870e92825fe0392d9aefc1d943a4",
+  "workspaceCommit": "714b0c5dd4a4870e92825fe0392d9aefc1d943a4",
+  "workspaceTree": "4c66caa4e3f25b32fc47332c1043fa40225f34f8",
+  "firstPassContentFingerprint": "6c824072eadd254005c72dba311ceb9ff986cc0a030fc1a684dd5b6344a80a4e",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "e58815371317ab649a7991d2ed61c5131995beb00b13c233a7fdc377bb986c86",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "e58815371317ab649a7991d2ed61c5131995beb00b13c233a7fdc377bb986c86",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "e58815371317ab649a7991d2ed61c5131995beb00b13c233a7fdc377bb986c86",
+      "passed": false
+    }
+  ],
+  "checkReceiptSha256": "8d8ae93458a20c9edd911e7a2dab434ecabc3278ccdb1e0db92285bbaf710d96",
+  "checks": [
+    {
+      "id": "N3-A01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; accessible title/author form adds a visible book",
+        "repetition 2: pass; accessible title/author form adds a visible book",
+        "repetition 3: pass; accessible title/author form adds a visible book"
+      ]
+    },
+    {
+      "id": "N3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: fail; three requested Russian states are visible; locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    62 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n",
+        "repetition 2: fail; three requested Russian states are visible; locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    61 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n",
+        "repetition 3: fail; three requested Russian states are visible; locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Хочу прочитать', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    62 × locator resolved to hidden <option value=\"to-read\">Хочу прочитать</option>\u001b[22m\n"
+      ]
+    },
+    {
+      "id": "N3-A03",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; one book moves through reading and completed states immediately",
+        "repetition 2: pass; one book moves through reading and completed states immediately",
+        "repetition 3: pass; one book moves through reading and completed states immediately"
+      ]
+    },
+    {
+      "id": "N3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; book and status survive browser reload",
+        "repetition 2: pass; book and status survive browser reload",
+        "repetition 3: pass; book and status survive browser reload"
+      ]
+    },
+    {
+      "id": "N3-A05",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; book and status survive full application stop and restart",
+        "repetition 2: pass; book and status survive full application stop and restart",
+        "repetition 3: pass; book and status survive full application stop and restart"
+      ]
+    },
+    {
+      "id": "N3-A06",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; multiple books remain independent after one state change",
+        "repetition 2: pass; multiple books remain independent after one state change",
+        "repetition 3: pass; multiple books remain independent after one state change"
+      ]
+    },
+    {
+      "id": "N3-A07",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; empty required values create no book and expose validation",
+        "repetition 2: pass; empty required values create no book and expose validation",
+        "repetition 3: pass; empty required values create no book and expose validation"
+      ]
+    },
+    {
+      "id": "N3-A08",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; primary product copy and controls are Russian",
+        "repetition 2: pass; primary product copy and controls are Russian",
+        "repetition 3: pass; primary product copy and controls are Russian"
+      ]
+    },
+    {
+      "id": "N3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; direct project test command",
+        "repetition 2: pass; direct project test command",
+        "repetition 3: pass; direct project test command"
+      ]
+    },
+    {
+      "id": "N3-B02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: fail; documented build or type/package check",
+        "repetition 2: fail; documented build or type/package check",
+        "repetition 3: fail; documented build or type/package check"
+      ]
+    },
+    {
+      "id": "N3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; real local start and Chromium smoke",
+        "repetition 2: pass; real local start and Chromium smoke",
+        "repetition 3: pass; real local start and Chromium smoke"
+      ]
+    },
+    {
+      "id": "N3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "vc-f2787e27-a: src/library.js:28-48 — загрузка и сохранение выделены в отдельный модуль.",
+        "vc-f2787e27-a: public/app.js:14-21 — состояние и DOM-ссылки находятся в UI-модуле.",
+        "vc-f2787e27-a: public/app.js:136-183 — отрисовка и пользовательские действия централизованы в UI-модуле.",
+        "vc-f2787e27-b: src/library.js:28-48 — загрузка и сохранение локального состояния вынесены в отдельный модуль.",
+        "vc-f2787e27-b: public/app.js:14-22 — UI хранит прикладное состояние и ссылки на элементы интерфейса.",
+        "vc-f2787e27-b: public/app.js:76-82 — commit координирует изменение состояния и persistence.",
+        "vc-f2787e27-b: public/app.js:136-140 — render отвечает за отображение состояния."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-f2787e27-a: src/library.js:50-66 — книга хранит status как единое поле, переходы выполняются через moveBook.",
+        "vc-f2787e27-a: public/app.js:124-133 — разделы строятся фильтрацией единого state.books.",
+        "vc-f2787e27-a: public/app.js:76-82 — после изменения сохраняется тот же источник состояния.",
+        "vc-f2787e27-b: src/library.js:18-25 — книга описана единой структурой с одним полем status.",
+        "vc-f2787e27-b: public/app.js:14 — единый массив state.books является состоянием приложения.",
+        "vc-f2787e27-b: public/app.js:124-132 — списки строятся фильтрацией этого массива по status."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-f2787e27-a: test/library.test.mjs:37-45 — прямой тест добавления и переходов между статусами.",
+        "vc-f2787e27-a: test/library.test.mjs:47-53 — прямой тест сохранения и восстановления из локального хранилища.",
+        "vc-f2787e27-b: test/library.test.mjs:37-45 — прямой тест добавления и переходов между статусами.",
+        "vc-f2787e27-b: test/library.test.mjs:47-53 — прямой тест сохранения и восстановления из хранилища."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-f2787e27-a: src/library.js:3-11 — статусы и их порядок заданы централизованными структурами.",
+        "vc-f2787e27-a: src/library.js:59-74 — операции над коллекцией выделены в небольшие чистые функции.",
+        "vc-f2787e27-a: src/library.js:18-25 — модель допускает дополнительные поля книги при проверке существующих обязательных полей.",
+        "vc-f2787e27-b: src/library.js:50-60 — создание и добавление книги изолированы от UI.",
+        "vc-f2787e27-b: src/library.js:63-74 — переходы, удаление и подсчёты представлены отдельными операциями.",
+        "vc-f2787e27-b: src/library.js:18-25 — проверяются обязательные поля, дополнительные поля записи не запрещены."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-f2787e27-a: README.md:5-13 — описаны требование к Node.js и локальный запуск.",
+        "vc-f2787e27-a: README.md:33-39 — описан запуск тестов.",
+        "vc-f2787e27-a: package.json:7-10 — определены только start и test; отдельные шаги установки и сборки в README не объяснены.",
+        "vc-f2787e27-b: README.md:5-13 — описаны требование Node.js и локальный запуск.",
+        "vc-f2787e27-b: README.md:33-39 — описан запуск тестов.",
+        "vc-f2787e27-b: package.json:7-10 — доступны только scripts start и test; инструкции по установке и build отсутствуют."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-f2787e27-a: public/index.html:28-58 — добавление книги с названием, автором и статусом.",
+        "vc-f2787e27-a: public/app.js:161-183 — перенос и удаление книг.",
+        "vc-f2787e27-a: public/app.js:124-133 — отображение трёх требуемых списков по статусам.",
+        "vc-f2787e27-b: public/index.html:36-58 — добавление книги с названием, автором и начальным статусом.",
+        "vc-f2787e27-b: public/app.js:161-183 — перенос и удаление книг реализованы через UI.",
+        "vc-f2787e27-b: server.mjs:56-60 — приложение запускается локальным HTTP-сервером."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-f2787e27-a: public/index.html:36-57 — у полей есть видимые подписи и последовательный нативный путь формы.",
+        "vc-f2787e27-a: public/styles.css:39-42 — предусмотрен видимый focus-visible для клавиатурной навигации.",
+        "vc-f2787e27-a: public/app.js:90-97 и public/index.html:89-95 — есть понятные пустые и ошибочные состояния с действием очистки.",
+        "vc-f2787e27-b: public/index.html:38-57 — у полей есть русские label, required и понятная последовательность формы.",
+        "vc-f2787e27-b: public/app.js:146-149 — ошибка заполнения показывает сообщение и возвращает фокус в незаполненное поле.",
+        "vc-f2787e27-b: public/app.js:90-96 — для пустых разделов предусмотрены отдельные понятные состояния.",
+        "vc-f2787e27-b: public/index.html:89-95 — предусмотрено сообщение об ошибке хранилища и очистка данных.",
+        "vc-f2787e27-b: public/styles.css:39-42 — видимый focus-visible для кнопок, полей и select."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-f2787e27-a: src/library.js:3 и 45-48 — локально сохраняются только данные книг в localStorage.",
+        "vc-f2787e27-a: server.mjs:11-12 и 56-59 — сервер по умолчанию слушает loopback-адрес 127.0.0.1.",
+        "vc-f2787e27-a: package.json:7-10 — используются только локальные Node.js-команды без внешних сервисов и зависимостей.",
+        "vc-f2787e27-b: src/library.js:3,28-48 — данные сохраняются только в localStorage под локальным ключом.",
+        "vc-f2787e27-b: package.json:7-10 — отсутствуют зависимости и внешние сервисы.",
+        "vc-f2787e27-b: server.mjs:11-12 — сервер по умолчанию слушает loopback-адрес 127.0.0.1."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "vc-f2787e27-a",
+      "total": 29,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/library.js:28-48 — загрузка и сохранение выделены в отдельный модуль.",
+            "public/app.js:14-21 — состояние и DOM-ссылки находятся в UI-модуле.",
+            "public/app.js:136-183 — отрисовка и пользовательские действия централизованы в UI-модуле."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/library.js:50-66 — книга хранит status как единое поле, переходы выполняются через moveBook.",
+            "public/app.js:124-133 — разделы строятся фильтрацией единого state.books.",
+            "public/app.js:76-82 — после изменения сохраняется тот же источник состояния."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "test/library.test.mjs:37-45 — прямой тест добавления и переходов между статусами.",
+            "test/library.test.mjs:47-53 — прямой тест сохранения и восстановления из локального хранилища."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/library.js:3-11 — статусы и их порядок заданы централизованными структурами.",
+            "src/library.js:59-74 — операции над коллекцией выделены в небольшие чистые функции.",
+            "src/library.js:18-25 — модель допускает дополнительные поля книги при проверке существующих обязательных полей."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md:5-13 — описаны требование к Node.js и локальный запуск.",
+            "README.md:33-39 — описан запуск тестов.",
+            "package.json:7-10 — определены только start и test; отдельные шаги установки и сборки в README не объяснены."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "public/index.html:28-58 — добавление книги с названием, автором и статусом.",
+            "public/app.js:161-183 — перенос и удаление книг.",
+            "public/app.js:124-133 — отображение трёх требуемых списков по статусам."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "public/index.html:36-57 — у полей есть видимые подписи и последовательный нативный путь формы.",
+            "public/styles.css:39-42 — предусмотрен видимый focus-visible для клавиатурной навигации.",
+            "public/app.js:90-97 и public/index.html:89-95 — есть понятные пустые и ошибочные состояния с действием очистки."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/library.js:3 и 45-48 — локально сохраняются только данные книг в localStorage.",
+            "server.mjs:11-12 и 56-59 — сервер по умолчанию слушает loopback-адрес 127.0.0.1.",
+            "package.json:7-10 — используются только локальные Node.js-команды без внешних сервисов и зависимостей."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "vc-f2787e27-b",
+      "total": 28,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/library.js:28-48 — загрузка и сохранение локального состояния вынесены в отдельный модуль.",
+            "public/app.js:14-22 — UI хранит прикладное состояние и ссылки на элементы интерфейса.",
+            "public/app.js:76-82 — commit координирует изменение состояния и persistence.",
+            "public/app.js:136-140 — render отвечает за отображение состояния."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/library.js:18-25 — книга описана единой структурой с одним полем status.",
+            "public/app.js:14 — единый массив state.books является состоянием приложения.",
+            "public/app.js:124-132 — списки строятся фильтрацией этого массива по status."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "test/library.test.mjs:37-45 — прямой тест добавления и переходов между статусами.",
+            "test/library.test.mjs:47-53 — прямой тест сохранения и восстановления из хранилища."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/library.js:50-60 — создание и добавление книги изолированы от UI.",
+            "src/library.js:63-74 — переходы, удаление и подсчёты представлены отдельными операциями.",
+            "src/library.js:18-25 — проверяются обязательные поля, дополнительные поля записи не запрещены."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md:5-13 — описаны требование Node.js и локальный запуск.",
+            "README.md:33-39 — описан запуск тестов.",
+            "package.json:7-10 — доступны только scripts start и test; инструкции по установке и build отсутствуют."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "public/index.html:36-58 — добавление книги с названием, автором и начальным статусом.",
+            "public/app.js:161-183 — перенос и удаление книг реализованы через UI.",
+            "server.mjs:56-60 — приложение запускается локальным HTTP-сервером."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "public/index.html:38-57 — у полей есть русские label, required и понятная последовательность формы.",
+            "public/app.js:146-149 — ошибка заполнения показывает сообщение и возвращает фокус в незаполненное поле.",
+            "public/app.js:90-96 — для пустых разделов предусмотрены отдельные понятные состояния.",
+            "public/index.html:89-95 — предусмотрено сообщение об ошибке хранилища и очистка данных.",
+            "public/styles.css:39-42 — видимый focus-visible для кнопок, полей и select."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/library.js:3,28-48 — данные сохраняются только в localStorage под локальным ключом.",
+            "package.json:7-10 — отсутствуют зависимости и внешние сервисы.",
+            "server.mjs:11-12 — сервер по умолчанию слушает loopback-адрес 127.0.0.1."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 44,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 14,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 19,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "rawScore": 87,
+  "totalScore": 87,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "readme-missing-install-build",
+      "summary": "README не содержит явного объяснения шага установки и отсутствия шага сборки.",
+      "evidence": [
+        "README.md:5-39 — описаны запуск и тесты, отдельные инструкции по установке и сборке отсутствуют.",
+        "package.json:7-10 — скрипт сборки не определён, поэтому README стоит явно объяснить, что сборка и установка зависимостей не требуются."
+      ],
+      "reviewers": [
+        "vc-f2787e27-a"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "readme-lifecycle-gap",
+      "summary": "README не описывает установку и сборку, а package.json не содержит build-скрипта.",
+      "evidence": [
+        "README.md:33-39 — описаны только проверки через npm test.",
+        "package.json:7-10 — определены только start и test scripts."
+      ],
+      "reviewers": [
+        "vc-f2787e27-b"
+      ]
+    }
+  ],
+  "provenance": "frozen_v7",
+  "originalFrozenCheck": null,
+  "blind": true
+}

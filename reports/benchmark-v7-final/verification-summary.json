@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "verifiedAt": "2026-09-02T15:14:33.015Z",
+  "matrixRows": 36,
+  "exactModelReasoning": true,
+  "firstPassOnly": true,
+  "browserUsed": false,
+  "objectiveRepetitionsPerRow": 3,
+  "blindReviewPasses": 18,
+  "secretScan": "pass",
+  "sourceIntegrityFiles": 2349
+}

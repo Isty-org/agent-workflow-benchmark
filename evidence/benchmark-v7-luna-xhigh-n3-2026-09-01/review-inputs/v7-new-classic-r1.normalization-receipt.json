@@ -1,0 +1,197 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-e230e5",
+  "conditionVisibleInWorkspace": false,
+  "createdAt": "2026-09-02T06:59:13.852Z",
+  "destinationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-e230e5",
+  "excludedPaths": [
+    ".git",
+    ".human",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "specs/examples/FEAT-900-account-lifecycle.example.md",
+    "specs/protocols/BOARD-PROTOCOL.md",
+    "specs/protocols/BOOT.md",
+    "specs/protocols/SPEC-AUTHORING-PROTOCOL.md",
+    "specs/protocols/SPEC-PROTOCOL.md",
+    "specs/protocols/TECHDEBT-PROTOCOL.md",
+    "specs/protocols/WAL-PROTOCOL.md",
+    "specs/protocols/WORK-ITEM-PROTOCOL.md",
+    "specs/work/README.md",
+    "specs/work/archive"
+  ],
+  "executableProductContentChanged": false,
+  "includedFileHashes": [
+    {
+      "path": ".agentsignore",
+      "sha256": "10374b5c0e810c3f9127fe7cd377f0abfebf8be50771a4fe3e8740fa2a1dea30"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "77f1157cbcbc80cecea1ad203592ccb656a544cd26e7a5007d54bf8e1f83026e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "381ed8b1d65796fdfff7dfd4448f0fd1ae71666abd711ef84231a5b2de704421"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8d827269d37423c323d277aafd853b9c0f4440673e3417f30bac3fd2c74fa3e3"
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "012a506a52422a2313803ff83e53b1e34b941349906ed1f0b76d7ebe80ef3a60"
+    },
+    {
+      "path": "specs/.me",
+      "sha256": "d8e2b935e0825d7cc97d9b5261bb52932be391b4cbd3a86fdb6b52fd8718958c"
+    },
+    {
+      "path": "specs/.me.template",
+      "sha256": "5d833421c378db40f52b8b6ac5d88af1f44c630786d9c73336a6e6950afbe28e"
+    },
+    {
+      "path": "specs/BOARD.md",
+      "sha256": "2f1243a5c45aae14c4b29b8b5bdb4d47aca6d70e5484590375580e25356e36f9"
+    },
+    {
+      "path": "specs/common/main.md",
+      "sha256": "ab05fc96d9880d386b8992cc204176029a24eb41887b2704a2d2e9db7cfc0c58"
+    },
+    {
+      "path": "specs/common/PROP-000.md",
+      "sha256": "d9539f0621b4b8829dabd9f490c001f2d132f7451c0eddaba79cb3517d136eb2"
+    },
+    {
+      "path": "specs/common/PROP-001-DATA.md",
+      "sha256": "432a4884f8e715a98d7f6a87ce6b159b0a4dc47126f7d83e5d3b6edbcc01b121"
+    },
+    {
+      "path": "specs/common/PROP-002-STACK.md",
+      "sha256": "656a733dd1b854701964a85a1d81a9333567ac47ad975c8474eb6a84a32f32ae"
+    },
+    {
+      "path": "specs/common/PROP-003-UI.md",
+      "sha256": "61036a307dd5a3c6379f0606f42f3fb80fa4b5c6084c27f017b69cba2184e5ea"
+    },
+    {
+      "path": "specs/common/PROP-004-PRODUCT.md",
+      "sha256": "216efe63e12b6ada3c7d7ccde5b0ac3e142767923113e748fc64fe670a9ea8c3"
+    },
+    {
+      "path": "specs/common/PROP-005-RUNTIME.md",
+      "sha256": "f8a121dd48ba3ee2df65c8f234888123aedde11acb49ac3d0333b78108556f50"
+    },
+    {
+      "path": "specs/common/PROP-006-API.md",
+      "sha256": "8a6566eece6ad1a93b26c03a2dd37711b4cb259e2ea0fac358720b25736e3679"
+    },
+    {
+      "path": "specs/common/structure.md",
+      "sha256": "e88ead45233db1a4da8fd7018e0451562b9500a4fb1ac67eb4475ea95ae70fb7"
+    },
+    {
+      "path": "specs/examples/FEAT-901-example-product-capability.md",
+      "sha256": "2b660760a7d056b033abb77e47eccb92f2b2cdc9196c9ebe1eb00d8a644abca6"
+    },
+    {
+      "path": "specs/examples/INFRA-900-example-runtime-baseline.md",
+      "sha256": "6f5cf245344b49ab3ee851b2523376d01a1ed47528f533e321b974ee57c372aa"
+    },
+    {
+      "path": "specs/modules/core/FEAT-001-reading-list.md",
+      "sha256": "78d3f6dc47e809e98a3fe3cb41f43a8d3f707ae6185e725e2aacb89d0019938c"
+    },
+    {
+      "path": "specs/modules/core/PROP-100-core-module.md",
+      "sha256": "e203fde54865b3d919e527d1278bb642e68d6420d5fe5d529c01a6bd4ea1492d"
+    },
+    {
+      "path": "specs/SPEC-MAP.md",
+      "sha256": "199dd990b6965dbebbcb42c1fc3df1cf0c4b5fd5dc87348972d47f078bd73207"
+    },
+    {
+      "path": "specs/TECHDEBT.md",
+      "sha256": "1e250c275d19f37a78e8805e688f1ea6bfe21b519e202bd0c77cced4dcde75c1"
+    },
+    {
+      "path": "specs/WAL.md",
+      "sha256": "711355df5b0601b336a79a3d099b8634f084889a357166d9d416e042c604ee0a"
+    },
+    {
+      "path": "src/app/app.js",
+      "sha256": "20bc23e995178195c81b5995cdc0148fdf7f893e3ecbf1b51af9f67e4355f142"
+    },
+    {
+      "path": "src/app/index.html",
+      "sha256": "b88bc145f52981d4d9f6382e40218005b0b58dca5f2f01c613569c97cf95de50"
+    },
+    {
+      "path": "src/app/styles.css",
+      "sha256": "adada16b806b298a1455f9a08652bc30d9aecd66eb1be310ad351855c5179229"
+    },
+    {
+      "path": "src/core/reading-list.js",
+      "sha256": "d459b9afe95f64d2a0c354bbfc7e5c2aaf0a4125914abda873daeac3b99a7a20"
+    },
+    {
+      "path": "src/core/storage.js",
+      "sha256": "312c00cbc8b464564baa75bdedb4313e871f7edff9b1524796275a8cb5b84a43"
+    },
+    {
+      "path": "tests/reading-list.test.js",
+      "sha256": "f11e459960c784b08b3317b9b4a2de10f867165b88859348c4d1e79708eb2543"
+    }
+  ],
+  "includedPaths": [
+    ".agentsignore",
+    ".gitignore",
+    "README.md",
+    "package.json",
+    "server.mjs",
+    "specs",
+    "specs/.me",
+    "specs/.me.template",
+    "specs/BOARD.md",
+    "specs/SPEC-MAP.md",
+    "specs/TECHDEBT.md",
+    "specs/WAL.md",
+    "specs/common",
+    "specs/common/PROP-000.md",
+    "specs/common/PROP-001-DATA.md",
+    "specs/common/PROP-002-STACK.md",
+    "specs/common/PROP-003-UI.md",
+    "specs/common/PROP-004-PRODUCT.md",
+    "specs/common/PROP-005-RUNTIME.md",
+    "specs/common/PROP-006-API.md",
+    "specs/common/main.md",
+    "specs/common/structure.md",
+    "specs/examples",
+    "specs/examples/FEAT-901-example-product-capability.md",
+    "specs/examples/INFRA-900-example-runtime-baseline.md",
+    "specs/modules",
+    "specs/modules/core",
+    "specs/modules/core/FEAT-001-reading-list.md",
+    "specs/modules/core/PROP-100-core-module.md",
+    "specs/protocols",
+    "specs/work",
+    "src",
+    "src/app",
+    "src/app/app.js",
+    "src/app/index.html",
+    "src/app/styles.css",
+    "src/core",
+    "src/core/reading-list.js",
+    "src/core/storage.js",
+    "tests",
+    "tests/reading-list.test.js"
+  ],
+  "methodMetadataVisibleInWorkspace": false,
+  "runId": "v7-new-classic-r1",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "sourceWorkspaceCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "sourceWorkspacePath": "redacted",
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-5cba40d9-b",
+  "blindId": "vc-5cba40d9",
+  "scenario": "large",
+  "checks": [
+    {
+      "id": "L3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:56 — запрос хранится в состоянии MainWindowViewModel.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-331 — setter выполняет только локальную фильтрацию и уведомления."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Application/ApplicationRuntime.cs:1912-1921 — RecentRecordings формируются из persisted session snapshot.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:764-812 — коллекция элементов reconciles из snapshot.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:816-832 — видимая коллекция является фильтрованной производной."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "pointsAwarded": 1,
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:819-873 — покрыты фильтрация, очистка и состояние отсутствия результатов.",
+        "tests/IsTranscribe.Desktop.Tests/AccessibilityLiveTextBlockTests.cs:13-26 — accessibility-тест относится только к live text blocks, без search UI."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:29 — сохранён MaximumRecentItems.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:766-808 — сохраняются порядок, обновление экземпляров и перемещение элементов.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:777-778 — удалённые элементы освобождаются."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "pointsAwarded": 1,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:18-21 — используются существующие ссылки FEAT-013 и FEAT-010.A.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:317 — search property привязан к FEAT-015 root.",
+        "specs/modules/app/FEAT-015-cloud-transcription-groq-openrouter.md:54-64 — semantic search явно указан вне scope.",
+        "specs/modules/app/FEAT-004-recordings-home-and-artifact-access.md:60-72 — существующие правила задают source/order и отсутствие поиска в MVP."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:529-537 — snapshot refresh обновляет presentation state.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:764-812 — refresh сохраняет item lifecycle и фильтрацию.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:386-405 — предусмотрены no-result и populated states.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:100 — loading copy существует, но не используется MainWindow."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:350-363 — поле имеет placeholder, AutomationProperties.Name, live binding и именованный clear action.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:386-401 — no-result state содержит понятное описание и локализованную кнопку очистки.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:93-97 — английские состояния поиска.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:93-97 — русские состояния поиска."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-331 — query setter не обращается к runtime.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:816-832 — поиск ограничен локальной коллекцией.",
+        "src/IsTranscribe.Application/ApplicationRuntime.cs:1912-1921 — runtime loader не принимает и не сохраняет search query."
+      ]
+    }
+  ],
+  "total": 24,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "search-test-coverage-gap",
+      "summary": "Тесты поиска покрывают только прямую фильтрацию, очистку и no-result state; отсутствуют проверки сохранения запроса при refresh/rename, локализации search copy и accessibility search controls.",
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:819-873 — feature-specific tests ограничены двумя сценариями.",
+        "tests/IsTranscribe.Desktop.Tests/AccessibilityLiveTextBlockTests.cs:13-26 — проверяется только общий live-region helper."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "search-traceability-mismatch",
+      "summary": "Search помечен ссылкой на FEAT-015 root, который описывает cloud transcription и исключает semantic search; подходящая traceability должна опираться на recent-recordings canon.",
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:317 — ссылка на FEAT-015 root.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:817-819 — та же ссылка используется для теста поиска.",
+        "specs/modules/app/FEAT-015-cloud-transcription-groq-openrouter.md:54-64 — semantic search вне scope."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "recent-loading-not-rendered",
+      "summary": "Loading copy объявлен, но recent panel не отображает loading state и при начальном пустом snapshot показывает обычное empty состояние.",
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:41-42 — ViewModel начинается в busy-состоянии.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:152 — ShowBusyIndicator вычисляется.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:372-384 — empty panel зависит только от HasRecentRecordings.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:100 — loading resource не имеет binding."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:35:14.000Z",
+  "durationMs": 541871,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

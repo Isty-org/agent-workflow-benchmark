@@ -1,0 +1,940 @@
+{
+  "schemaVersion": 3,
+  "blindId": "vz-a5cc8c",
+  "scenario": "small",
+  "checkedAt": "2026-09-02T14:37:37.132Z",
+  "workspaceCommit": "7aa7aea2532399409d172643c4820a383c98dc4c",
+  "workspaceTree": "06d3ac8baf3d4dbd03b9f6baecdb3070b00ab0ae",
+  "stateFingerprint": "c1aadc3931510617cad7aef4753fab276f7fabb58a0401be23dca64f9480ade8",
+  "scratchIsolated": true,
+  "projectedHarnessFiles": [
+    "docker-compose.integration.yml (scratch-only port/name isolation)"
+  ],
+  "setup": [
+    {
+      "name": "dependency-install",
+      "command": [
+        "npm",
+        "ci"
+      ],
+      "startedAt": "2026-09-02T14:35:44.984Z",
+      "completedAt": "2026-09-02T14:35:58.604Z",
+      "durationMs": 13620,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "spawnError": null,
+      "stdoutSha256": "560b9951d36a5145d33969f9e69c6c8f51bd35c6bc1f23dbb45ab9a0c214af3c",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdoutTail": "\nadded 192 packages, and audited 193 packages in 13s\n\n41 packages are looking for funding\n  run `npm fund` for details\n\n10 vulnerabilities (1 low, 8 high, 1 critical)\n\nTo address all issues, run:\n  npm audit fix\n\nRun `npm audit` for details.\n",
+      "stderrTail": "",
+      "structuredOutput": null
+    },
+    {
+      "name": "prisma-generate",
+      "command": [
+        "npm",
+        "run",
+        "prisma:generate"
+      ],
+      "startedAt": "2026-09-02T14:35:58.604Z",
+      "completedAt": "2026-09-02T14:36:02.004Z",
+      "durationMs": 3399,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "spawnError": null,
+      "stdoutSha256": "57667e072ddd6cb8963485fc14324b680483d90b11af9e9b6fd94d6240aa4b43",
+      "stderrSha256": "0822f4f822f38305f840bcba28ed0cfe25592bb8b91c60b38b12a1d813e19e62",
+      "stdoutTail": "\n> telegram-gateway@0.1.0 prisma:generate\n> prisma generate\n\nPrisma schema loaded from prisma/schema.prisma\n\n✔ Generated Prisma Client (v6.19.3) to ./node_modules/@prisma/client in 609ms\n\nStart by importing your Prisma Client (See: https://pris.ly/d/importing-client)\n\nTip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints\n\n",
+      "stderrTail": "┌─────────────────────────────────────────────────────────┐\n│  Update available 6.19.3 -> 8.0.0-rc.12                 │\n│                                                         │\n│  This is a major update - please follow the guide at    │\n│  https://pris.ly/d/major-version-upgrade                │\n│                                                         │\n│  Run the following to update                            │\n│    npm i --save-dev prisma@latest                       │\n│    npm i @prisma/client@latest                          │\n└─────────────────────────────────────────────────────────┘\n",
+      "structuredOutput": null
+    }
+  ],
+  "repetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "c1aadc3931510617cad7aef4753fab276f7fabb58a0401be23dca64f9480ade8",
+      "results": [
+        {
+          "name": "unit-tests",
+          "required": true,
+          "command": [
+            "npm",
+            "test"
+          ],
+          "startedAt": "2026-09-02T14:36:02.015Z",
+          "completedAt": "2026-09-02T14:36:04.934Z",
+          "durationMs": 2919,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "f41d43c8f11af6895ab1196f92b7afb372b7770b405cf95fa89268ebb09e0759",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 test\n> vitest run\n\n\n RUN  v3.2.4 /tmp/benchmark-v7-checks-7f2tCA/workspace\n\n ✓ test/retry.test.ts (3 tests) 5ms\n ✓ test/telegram-service.test.ts (2 tests) 5ms\n ✓ test/crypto.test.ts (3 tests) 10ms\n ↓ test/integration/gateway.integration.test.ts (9 tests | 9 skipped)\n\n Test Files  3 passed | 1 skipped (4)\n      Tests  8 passed | 9 skipped (17)\n   Start at  17:36:02\n   Duration  1.74s (transform 748ms, setup 0ms, collect 1.70s, tests 20ms, environment 1ms, prepare 598ms)\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T14:36:04.935Z",
+          "completedAt": "2026-09-02T14:36:14.817Z",
+          "durationMs": 9883,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "184a528de0ec8da5e774b405ed956bc0933a5c955fbdc9ba941b3268a8aa6a2e",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 build\n> tsc -p tsconfig.json\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-db-up",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v7-vz-a5cc8c",
+            "-f",
+            "docker-compose.integration.yml",
+            "up",
+            "-d",
+            "--wait"
+          ],
+          "startedAt": "2026-09-02T14:36:14.818Z",
+          "completedAt": "2026-09-02T14:36:21.546Z",
+          "durationMs": 6728,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "2ef56f5d3aa677183783db83b9eeb93d327246b435db18b725c22e3d9e6ceb33",
+          "stdoutTail": "",
+          "stderrTail": " Network benchmark-v7-vz-a5cc8c_default  Creating\n Network benchmark-v7-vz-a5cc8c_default  Created\n Container benchmark-v3-vz-a5cc8c-postgres  Creating\n Container benchmark-v3-vz-a5cc8c-postgres  Created\n Container benchmark-v3-vz-a5cc8c-postgres  Starting\n Container benchmark-v3-vz-a5cc8c-postgres  Started\n Container benchmark-v3-vz-a5cc8c-postgres  Waiting\n Container benchmark-v3-vz-a5cc8c-postgres  Healthy\n",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-migrate",
+          "required": true,
+          "command": [
+            "npm",
+            "exec",
+            "--",
+            "prisma",
+            "migrate",
+            "deploy"
+          ],
+          "startedAt": "2026-09-02T14:36:21.547Z",
+          "completedAt": "2026-09-02T14:36:24.482Z",
+          "durationMs": 2936,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d59bd1f8bb83eeac80218eac7e81e3d5203a1381f145a7c58a97d8e9ad28d0a6",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Prisma schema loaded from prisma/schema.prisma\nDatasource \"db\": PostgreSQL database \"telegram_gateway_integration\", schema \"public\" at \"localhost:37804\"\n\n1 migration found in prisma/migrations\n\nApplying migration `20260420202800_init`\n\nThe following migration(s) have been applied:\n\nmigrations/\n  └─ 20260420202800_init/\n    └─ migration.sql\n      \nAll migrations have been successfully applied.\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-tests",
+          "required": true,
+          "command": [
+            "npm",
+            "run",
+            "test:integration"
+          ],
+          "startedAt": "2026-09-02T14:36:24.483Z",
+          "completedAt": "2026-09-02T14:36:30.301Z",
+          "durationMs": 5817,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d32dc217503e9f55c747f162703b4d2c995468b62b18e8b43364ea6a9abb6972",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "tatusCode\":409,\"name\":\"AppError\"},\"code\":\"IDEMPOTENCY_CONFLICT\",\"requestId\":\"req-3\",\"msg\":\"Existing idempotency key was used with different payload.\"}\n{\"level\":30,\"time\":1788359788793,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-3\",\"res\":{\"statusCode\":409},\"responseTime\":11.289220809936523,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359788793,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-4\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/55820a9b-d478-4d5d-90d1-eb934783c7a7/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359788803,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-4\",\"res\":{\"statusCode\":202},\"responseTime\":9.568037986755371,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359789289,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/validate\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359789290,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"err\":{\"type\":\"AppError\",\"message\":\"Missing X-Gateway-Client-Id header.\",\"stack\":\"AppError: Missing X-Gateway-Client-Id header.\\n    at extractHeader (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:48:11)\\n    at requireIstinaCompatAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:58:20)\\n    at Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:181:11)\\n    at preHandlerCallbackInner (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:168:24)\\n    at preHandlerCallback (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:134:5)\\n    at validationCompleted (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:124:5)\\n    at preValidationCallback (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:101:5)\\n    at handler (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:78:7)\\n    at onDone (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/content-type-parser.js:229:5)\\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-1\",\"msg\":\"Missing X-Gateway-Client-Id header.\"}\n{\"level\":30,\"time\":1788359789300,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":401},\"responseTime\":10.738513946533203,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359789317,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/validate\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359789321,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"err\":{\"type\":\"AppError\",\"message\":\"Gateway service credentials are invalid.\",\"stack\":\"AppError: Gateway service credentials are invalid.\\n    at requireIstinaCompatAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:73:11)\\n    at Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:181:5)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-2\",\"msg\":\"Gateway service credentials are invalid.\"}\n{\"level\":30,\"time\":1788359789321,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"res\":{\"statusCode\":401},\"responseTime\":3.9390780925750732,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359789488,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/set-webhook\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359789536,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":200},\"responseTime\":47.396320104599,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359789814,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/messages/send\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359789851,\"pid\":1925168,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":200},\"responseTime\":36.13467812538147,\"msg\":\"request completed\"}\n ✓ test/integration/gateway.integration.test.ts (9 tests) 2264ms\n   ✓ gateway integration > serves the minimal admin UI and lets admin create a service  399ms\n   ✓ gateway integration > queues outbound actions, sends them via worker, and exposes delivery status  403ms\n\n Test Files  1 passed (1)\n      Tests  9 passed (9)\n   Start at  17:36:26\n   Duration  3.33s (transform 343ms, setup 0ms, collect 693ms, tests 2.26s, environment 0ms, prepare 104ms)\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-api",
+          "required": true,
+          "command": [
+            "npm",
+            "exec",
+            "--",
+            "tsx",
+            "<harness>/small-api.hidden.ts"
+          ],
+          "startedAt": "2026-09-02T14:36:30.309Z",
+          "completedAt": "2026-09-02T14:36:33.867Z",
+          "durationMs": 3559,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "321353fdb052629639cfff3167a85e264fad3fd26076aa510378a87f0005819d",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "f2f8a943/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359793531,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-c\",\"res\":{\"statusCode\":202},\"responseTime\":11.099367141723633,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359793532,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/f16cca89-4d82-47da-ade0-35b0f2f8a943/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359793542,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"err\":{\"type\":\"AppError\",\"message\":\"Existing idempotency key was used with different payload.\",\"stack\":\"AppError: Existing idempotency key was used with different payload.\\n    at submitOutboundAction (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/services/registration-service.ts:550:15)\\n    at async Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/bot-routes.ts:100:22)\",\"code\":\"IDEMPOTENCY_CONFLICT\",\"statusCode\":409,\"name\":\"AppError\"},\"code\":\"IDEMPOTENCY_CONFLICT\",\"requestId\":\"req-d\",\"msg\":\"Existing idempotency key was used with different payload.\"}\n{\"level\":30,\"time\":1788359793548,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"res\":{\"statusCode\":409},\"responseTime\":16.15073013305664,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359793669,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/4b2c5df3-a062-49c9-b25d-6d7bdeef5092/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359793672,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"err\":{\"type\":\"AppError\",\"message\":\"Application token is invalid.\",\"stack\":\"AppError: Application token is invalid.\\n    at Object.requireApplicationAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/plugins/auth.ts:62:11)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-e\",\"msg\":\"Application token is invalid.\"}\n{\"level\":30,\"time\":1788359793673,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"res\":{\"statusCode\":401},\"responseTime\":3.9303479194641113,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359793674,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/5e1cc0ba-4335-4dd3-bb24-2ca89a7e999c/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359793680,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"err\":{\"type\":\"AppError\",\"message\":\"Registration was not found.\",\"stack\":\"AppError: Registration was not found.\\n    at submitOutboundAction (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/services/registration-service.ts:510:11)\\n    at async Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/bot-routes.ts:100:22)\",\"code\":\"REGISTRATION_NOT_FOUND\",\"statusCode\":404,\"name\":\"AppError\"},\"code\":\"REGISTRATION_NOT_FOUND\",\"requestId\":\"req-f\",\"msg\":\"Registration was not found.\"}\n{\"level\":30,\"time\":1788359793681,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"res\":{\"statusCode\":404},\"responseTime\":7.007107973098755,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359793755,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-g\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/55477ba3-f13f-4191-a443-029500b094c4/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359793769,\"pid\":1925676,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-g\",\"res\":{\"statusCode\":202},\"responseTime\":13.247205018997192,\"msg\":\"request completed\"}\n{\"schemaVersion\":3,\"scenario\":\"small\",\"checks\":[{\"id\":\"S3-A01\",\"passed\":true,\"evidence\":\"three explicit methods accepted; unknown method keeps machine error\"},{\"id\":\"S3-A02\",\"passed\":false,\"evidence\":\"invalid payload rejected for each supported method before persistence\",\"error\":\"expected 4xx, got 202\"},{\"id\":\"S3-A03\",\"passed\":true,\"evidence\":\"sendMessage remains queue-first 202/PENDING\"},{\"id\":\"S3-A04\",\"passed\":true,\"evidence\":\"editMessageText is queued and dispatched with unchanged method/payload\"},{\"id\":\"S3-A05\",\"passed\":true,\"evidence\":\"deleteMessage is queued and dispatched with unchanged method/payload\"},{\"id\":\"S3-A06\",\"passed\":true,\"evidence\":\"missing Idempotency-Key keeps stable error and persists nothing\"},{\"id\":\"S3-A07\",\"passed\":true,\"evidence\":\"identical retry returns the existing delivery\"},{\"id\":\"S3-A08\",\"passed\":true,\"evidence\":\"conflicting reuse of an idempotency key is rejected without mutation\"},{\"id\":\"S3-A09\",\"passed\":true,\"evidence\":\"authentication and registration isolation cover new methods\"},{\"id\":\"S3-A10\",\"passed\":true,\"evidence\":\"new methods use the existing retry and retry-after policy\"}],\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "small",
+            "passed": false,
+            "smoke": null,
+            "checks": [
+              {
+                "id": "S3-A01",
+                "passed": true,
+                "evidence": "three explicit methods accepted; unknown method keeps machine error"
+              },
+              {
+                "id": "S3-A02",
+                "passed": false,
+                "evidence": "invalid payload rejected for each supported method before persistence",
+                "error": "expected 4xx, got 202"
+              },
+              {
+                "id": "S3-A03",
+                "passed": true,
+                "evidence": "sendMessage remains queue-first 202/PENDING"
+              },
+              {
+                "id": "S3-A04",
+                "passed": true,
+                "evidence": "editMessageText is queued and dispatched with unchanged method/payload"
+              },
+              {
+                "id": "S3-A05",
+                "passed": true,
+                "evidence": "deleteMessage is queued and dispatched with unchanged method/payload"
+              },
+              {
+                "id": "S3-A06",
+                "passed": true,
+                "evidence": "missing Idempotency-Key keeps stable error and persists nothing"
+              },
+              {
+                "id": "S3-A07",
+                "passed": true,
+                "evidence": "identical retry returns the existing delivery"
+              },
+              {
+                "id": "S3-A08",
+                "passed": true,
+                "evidence": "conflicting reuse of an idempotency key is rejected without mutation"
+              },
+              {
+                "id": "S3-A09",
+                "passed": true,
+                "evidence": "authentication and registration isolation cover new methods"
+              },
+              {
+                "id": "S3-A10",
+                "passed": true,
+                "evidence": "new methods use the existing retry and retry-after policy"
+              }
+            ]
+          }
+        },
+        {
+          "name": "integration-db-down",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v7-vz-a5cc8c",
+            "-f",
+            "docker-compose.integration.yml",
+            "down",
+            "-v"
+          ],
+          "startedAt": "2026-09-02T14:36:33.873Z",
+          "completedAt": "2026-09-02T14:36:35.106Z",
+          "durationMs": 1233,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "0eee690b2fa4c23bdc2f72e67541349069a10971ba628d77c687833d431ccee9",
+          "stdoutTail": "",
+          "stderrTail": " Container benchmark-v3-vz-a5cc8c-postgres  Stopping\n Container benchmark-v3-vz-a5cc8c-postgres  Stopped\n Container benchmark-v3-vz-a5cc8c-postgres  Removing\n Container benchmark-v3-vz-a5cc8c-postgres  Removed\n Network benchmark-v7-vz-a5cc8c_default  Removing\n Network benchmark-v7-vz-a5cc8c_default  Removed\n",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "S3-A01",
+          "passed": true,
+          "evidence": "three explicit methods accepted; unknown method keeps machine error"
+        },
+        {
+          "id": "S3-A02",
+          "passed": false,
+          "evidence": "invalid payload rejected for each supported method before persistence",
+          "error": "expected 4xx, got 202"
+        },
+        {
+          "id": "S3-A03",
+          "passed": true,
+          "evidence": "sendMessage remains queue-first 202/PENDING"
+        },
+        {
+          "id": "S3-A04",
+          "passed": true,
+          "evidence": "editMessageText is queued and dispatched with unchanged method/payload"
+        },
+        {
+          "id": "S3-A05",
+          "passed": true,
+          "evidence": "deleteMessage is queued and dispatched with unchanged method/payload"
+        },
+        {
+          "id": "S3-A06",
+          "passed": true,
+          "evidence": "missing Idempotency-Key keeps stable error and persists nothing"
+        },
+        {
+          "id": "S3-A07",
+          "passed": true,
+          "evidence": "identical retry returns the existing delivery"
+        },
+        {
+          "id": "S3-A08",
+          "passed": true,
+          "evidence": "conflicting reuse of an idempotency key is rejected without mutation"
+        },
+        {
+          "id": "S3-A09",
+          "passed": true,
+          "evidence": "authentication and registration isolation cover new methods"
+        },
+        {
+          "id": "S3-A10",
+          "passed": true,
+          "evidence": "new methods use the existing retry and retry-after policy"
+        },
+        {
+          "id": "S3-B01",
+          "passed": true,
+          "evidence": "npm test"
+        },
+        {
+          "id": "S3-B02",
+          "passed": true,
+          "evidence": "npm run build"
+        },
+        {
+          "id": "S3-B03",
+          "passed": true,
+          "evidence": "real PostgreSQL integration and hidden API harness"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "c1aadc3931510617cad7aef4753fab276f7fabb58a0401be23dca64f9480ade8",
+      "results": [
+        {
+          "name": "unit-tests",
+          "required": true,
+          "command": [
+            "npm",
+            "test"
+          ],
+          "startedAt": "2026-09-02T14:36:35.108Z",
+          "completedAt": "2026-09-02T14:36:37.486Z",
+          "durationMs": 2378,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e0763009978d53ff2059714ac3b089c0993822659500a350ff48e89d0ae75a7c",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 test\n> vitest run\n\n\n RUN  v3.2.4 /tmp/benchmark-v7-checks-7f2tCA/workspace\n\n ✓ test/crypto.test.ts (3 tests) 12ms\n ✓ test/telegram-service.test.ts (2 tests) 4ms\n ✓ test/retry.test.ts (3 tests) 5ms\n ↓ test/integration/gateway.integration.test.ts (9 tests | 9 skipped)\n\n Test Files  3 passed | 1 skipped (4)\n      Tests  8 passed | 9 skipped (17)\n   Start at  17:36:35\n   Duration  1.31s (transform 566ms, setup 0ms, collect 1.21s, tests 20ms, environment 1ms, prepare 649ms)\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T14:36:37.486Z",
+          "completedAt": "2026-09-02T14:36:45.915Z",
+          "durationMs": 8429,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "184a528de0ec8da5e774b405ed956bc0933a5c955fbdc9ba941b3268a8aa6a2e",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 build\n> tsc -p tsconfig.json\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-db-up",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v7-vz-a5cc8c",
+            "-f",
+            "docker-compose.integration.yml",
+            "up",
+            "-d",
+            "--wait"
+          ],
+          "startedAt": "2026-09-02T14:36:45.915Z",
+          "completedAt": "2026-09-02T14:36:52.500Z",
+          "durationMs": 6585,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "2ef56f5d3aa677183783db83b9eeb93d327246b435db18b725c22e3d9e6ceb33",
+          "stdoutTail": "",
+          "stderrTail": " Network benchmark-v7-vz-a5cc8c_default  Creating\n Network benchmark-v7-vz-a5cc8c_default  Created\n Container benchmark-v3-vz-a5cc8c-postgres  Creating\n Container benchmark-v3-vz-a5cc8c-postgres  Created\n Container benchmark-v3-vz-a5cc8c-postgres  Starting\n Container benchmark-v3-vz-a5cc8c-postgres  Started\n Container benchmark-v3-vz-a5cc8c-postgres  Waiting\n Container benchmark-v3-vz-a5cc8c-postgres  Healthy\n",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-migrate",
+          "required": true,
+          "command": [
+            "npm",
+            "exec",
+            "--",
+            "prisma",
+            "migrate",
+            "deploy"
+          ],
+          "startedAt": "2026-09-02T14:36:52.501Z",
+          "completedAt": "2026-09-02T14:36:55.726Z",
+          "durationMs": 3226,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d59bd1f8bb83eeac80218eac7e81e3d5203a1381f145a7c58a97d8e9ad28d0a6",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Prisma schema loaded from prisma/schema.prisma\nDatasource \"db\": PostgreSQL database \"telegram_gateway_integration\", schema \"public\" at \"localhost:37804\"\n\n1 migration found in prisma/migrations\n\nApplying migration `20260420202800_init`\n\nThe following migration(s) have been applied:\n\nmigrations/\n  └─ 20260420202800_init/\n    └─ migration.sql\n      \nAll migrations have been successfully applied.\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-tests",
+          "required": true,
+          "command": [
+            "npm",
+            "run",
+            "test:integration"
+          ],
+          "startedAt": "2026-09-02T14:36:55.727Z",
+          "completedAt": "2026-09-02T14:37:01.210Z",
+          "durationMs": 5483,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "3dc111357d1633a3228633f1ce69d8f35f0434b017080b284a59340c984323c9",
+          "stderrSha256": "0822f4f822f38305f840bcba28ed0cfe25592bb8b91c60b38b12a1d813e19e62",
+          "stdoutTail": "7-checks-7f2tCA/workspace/src/routes/bot-routes.ts:100:22)\",\"code\":\"IDEMPOTENCY_CONFLICT\",\"statusCode\":409,\"name\":\"AppError\"},\"code\":\"IDEMPOTENCY_CONFLICT\",\"requestId\":\"req-3\",\"msg\":\"Existing idempotency key was used with different payload.\"}\n{\"level\":30,\"time\":1788359819876,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-3\",\"res\":{\"statusCode\":409},\"responseTime\":11.086528062820435,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359819876,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-4\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/1964c11a-a5ef-44f3-869e-9e0a3b658c9b/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359819883,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-4\",\"res\":{\"statusCode\":202},\"responseTime\":6.190867185592651,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359820178,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/validate\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359820180,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"err\":{\"type\":\"AppError\",\"message\":\"Missing X-Gateway-Client-Id header.\",\"stack\":\"AppError: Missing X-Gateway-Client-Id header.\\n    at extractHeader (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:48:11)\\n    at requireIstinaCompatAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:58:20)\\n    at Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:181:11)\\n    at preHandlerCallbackInner (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:168:24)\\n    at preHandlerCallback (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:134:5)\\n    at validationCompleted (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:124:5)\\n    at preValidationCallback (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:101:5)\\n    at handler (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:78:7)\\n    at onDone (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/content-type-parser.js:229:5)\\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-1\",\"msg\":\"Missing X-Gateway-Client-Id header.\"}\n{\"level\":30,\"time\":1788359820192,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":401},\"responseTime\":13.905393123626709,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359820206,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/validate\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359820210,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"err\":{\"type\":\"AppError\",\"message\":\"Gateway service credentials are invalid.\",\"stack\":\"AppError: Gateway service credentials are invalid.\\n    at requireIstinaCompatAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:73:11)\\n    at Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:181:5)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-2\",\"msg\":\"Gateway service credentials are invalid.\"}\n{\"level\":30,\"time\":1788359820210,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"res\":{\"statusCode\":401},\"responseTime\":3.139219045639038,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359820353,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/set-webhook\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359820380,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":200},\"responseTime\":27.114166975021362,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359820691,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/messages/send\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359820723,\"pid\":1929511,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":200},\"responseTime\":31.334980010986328,\"msg\":\"request completed\"}\n ✓ test/integration/gateway.integration.test.ts (9 tests) 1879ms\n   ✓ gateway integration > queues outbound actions, sends them via worker, and exposes delivery status  308ms\n\n Test Files  1 passed (1)\n      Tests  9 passed (9)\n   Start at  17:36:58\n   Duration  2.87s (transform 354ms, setup 0ms, collect 626ms, tests 1.88s, environment 0ms, prepare 95ms)\n\n",
+          "stderrTail": "┌─────────────────────────────────────────────────────────┐\n│  Update available 6.19.3 -> 8.0.0-rc.12                 │\n│                                                         │\n│  This is a major update - please follow the guide at    │\n│  https://pris.ly/d/major-version-upgrade                │\n│                                                         │\n│  Run the following to update                            │\n│    npm i --save-dev prisma@latest                       │\n│    npm i @prisma/client@latest                          │\n└─────────────────────────────────────────────────────────┘\n",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-api",
+          "required": true,
+          "command": [
+            "npm",
+            "exec",
+            "--",
+            "tsx",
+            "<harness>/small-api.hidden.ts"
+          ],
+          "startedAt": "2026-09-02T14:37:01.211Z",
+          "completedAt": "2026-09-02T14:37:04.507Z",
+          "durationMs": 3296,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "50c3c8f5467a44a8d090021f705b827935d68df392fa8b87f5694d88b77959b1",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "1637128/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359824186,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-c\",\"res\":{\"statusCode\":202},\"responseTime\":11.761227130889893,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359824187,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/78d285df-0d92-4e60-b472-1a90e1637128/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359824198,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"err\":{\"type\":\"AppError\",\"message\":\"Existing idempotency key was used with different payload.\",\"stack\":\"AppError: Existing idempotency key was used with different payload.\\n    at submitOutboundAction (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/services/registration-service.ts:550:15)\\n    at async Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/bot-routes.ts:100:22)\",\"code\":\"IDEMPOTENCY_CONFLICT\",\"statusCode\":409,\"name\":\"AppError\"},\"code\":\"IDEMPOTENCY_CONFLICT\",\"requestId\":\"req-d\",\"msg\":\"Existing idempotency key was used with different payload.\"}\n{\"level\":30,\"time\":1788359824199,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"res\":{\"statusCode\":409},\"responseTime\":11.243538856506348,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359824291,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/0cdca413-6f34-47cf-ac36-191cc42b6ee1/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359824294,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"err\":{\"type\":\"AppError\",\"message\":\"Application token is invalid.\",\"stack\":\"AppError: Application token is invalid.\\n    at Object.requireApplicationAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/plugins/auth.ts:62:11)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-e\",\"msg\":\"Application token is invalid.\"}\n{\"level\":30,\"time\":1788359824295,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"res\":{\"statusCode\":401},\"responseTime\":3.5328328609466553,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359824296,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/69997958-e76c-4436-9c87-af074e7bb88a/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359824301,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"err\":{\"type\":\"AppError\",\"message\":\"Registration was not found.\",\"stack\":\"AppError: Registration was not found.\\n    at submitOutboundAction (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/services/registration-service.ts:510:11)\\n    at async Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/bot-routes.ts:100:22)\",\"code\":\"REGISTRATION_NOT_FOUND\",\"statusCode\":404,\"name\":\"AppError\"},\"code\":\"REGISTRATION_NOT_FOUND\",\"requestId\":\"req-f\",\"msg\":\"Registration was not found.\"}\n{\"level\":30,\"time\":1788359824302,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"res\":{\"statusCode\":404},\"responseTime\":6.473252058029175,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359824368,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-g\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/68158697-058a-418d-a12e-6f3e55cc57e3/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359824379,\"pid\":1930010,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-g\",\"res\":{\"statusCode\":202},\"responseTime\":10.263957977294922,\"msg\":\"request completed\"}\n{\"schemaVersion\":3,\"scenario\":\"small\",\"checks\":[{\"id\":\"S3-A01\",\"passed\":true,\"evidence\":\"three explicit methods accepted; unknown method keeps machine error\"},{\"id\":\"S3-A02\",\"passed\":false,\"evidence\":\"invalid payload rejected for each supported method before persistence\",\"error\":\"expected 4xx, got 202\"},{\"id\":\"S3-A03\",\"passed\":true,\"evidence\":\"sendMessage remains queue-first 202/PENDING\"},{\"id\":\"S3-A04\",\"passed\":true,\"evidence\":\"editMessageText is queued and dispatched with unchanged method/payload\"},{\"id\":\"S3-A05\",\"passed\":true,\"evidence\":\"deleteMessage is queued and dispatched with unchanged method/payload\"},{\"id\":\"S3-A06\",\"passed\":true,\"evidence\":\"missing Idempotency-Key keeps stable error and persists nothing\"},{\"id\":\"S3-A07\",\"passed\":true,\"evidence\":\"identical retry returns the existing delivery\"},{\"id\":\"S3-A08\",\"passed\":true,\"evidence\":\"conflicting reuse of an idempotency key is rejected without mutation\"},{\"id\":\"S3-A09\",\"passed\":true,\"evidence\":\"authentication and registration isolation cover new methods\"},{\"id\":\"S3-A10\",\"passed\":true,\"evidence\":\"new methods use the existing retry and retry-after policy\"}],\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "small",
+            "passed": false,
+            "smoke": null,
+            "checks": [
+              {
+                "id": "S3-A01",
+                "passed": true,
+                "evidence": "three explicit methods accepted; unknown method keeps machine error"
+              },
+              {
+                "id": "S3-A02",
+                "passed": false,
+                "evidence": "invalid payload rejected for each supported method before persistence",
+                "error": "expected 4xx, got 202"
+              },
+              {
+                "id": "S3-A03",
+                "passed": true,
+                "evidence": "sendMessage remains queue-first 202/PENDING"
+              },
+              {
+                "id": "S3-A04",
+                "passed": true,
+                "evidence": "editMessageText is queued and dispatched with unchanged method/payload"
+              },
+              {
+                "id": "S3-A05",
+                "passed": true,
+                "evidence": "deleteMessage is queued and dispatched with unchanged method/payload"
+              },
+              {
+                "id": "S3-A06",
+                "passed": true,
+                "evidence": "missing Idempotency-Key keeps stable error and persists nothing"
+              },
+              {
+                "id": "S3-A07",
+                "passed": true,
+                "evidence": "identical retry returns the existing delivery"
+              },
+              {
+                "id": "S3-A08",
+                "passed": true,
+                "evidence": "conflicting reuse of an idempotency key is rejected without mutation"
+              },
+              {
+                "id": "S3-A09",
+                "passed": true,
+                "evidence": "authentication and registration isolation cover new methods"
+              },
+              {
+                "id": "S3-A10",
+                "passed": true,
+                "evidence": "new methods use the existing retry and retry-after policy"
+              }
+            ]
+          }
+        },
+        {
+          "name": "integration-db-down",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v7-vz-a5cc8c",
+            "-f",
+            "docker-compose.integration.yml",
+            "down",
+            "-v"
+          ],
+          "startedAt": "2026-09-02T14:37:04.508Z",
+          "completedAt": "2026-09-02T14:37:05.725Z",
+          "durationMs": 1217,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "0eee690b2fa4c23bdc2f72e67541349069a10971ba628d77c687833d431ccee9",
+          "stdoutTail": "",
+          "stderrTail": " Container benchmark-v3-vz-a5cc8c-postgres  Stopping\n Container benchmark-v3-vz-a5cc8c-postgres  Stopped\n Container benchmark-v3-vz-a5cc8c-postgres  Removing\n Container benchmark-v3-vz-a5cc8c-postgres  Removed\n Network benchmark-v7-vz-a5cc8c_default  Removing\n Network benchmark-v7-vz-a5cc8c_default  Removed\n",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "S3-A01",
+          "passed": true,
+          "evidence": "three explicit methods accepted; unknown method keeps machine error"
+        },
+        {
+          "id": "S3-A02",
+          "passed": false,
+          "evidence": "invalid payload rejected for each supported method before persistence",
+          "error": "expected 4xx, got 202"
+        },
+        {
+          "id": "S3-A03",
+          "passed": true,
+          "evidence": "sendMessage remains queue-first 202/PENDING"
+        },
+        {
+          "id": "S3-A04",
+          "passed": true,
+          "evidence": "editMessageText is queued and dispatched with unchanged method/payload"
+        },
+        {
+          "id": "S3-A05",
+          "passed": true,
+          "evidence": "deleteMessage is queued and dispatched with unchanged method/payload"
+        },
+        {
+          "id": "S3-A06",
+          "passed": true,
+          "evidence": "missing Idempotency-Key keeps stable error and persists nothing"
+        },
+        {
+          "id": "S3-A07",
+          "passed": true,
+          "evidence": "identical retry returns the existing delivery"
+        },
+        {
+          "id": "S3-A08",
+          "passed": true,
+          "evidence": "conflicting reuse of an idempotency key is rejected without mutation"
+        },
+        {
+          "id": "S3-A09",
+          "passed": true,
+          "evidence": "authentication and registration isolation cover new methods"
+        },
+        {
+          "id": "S3-A10",
+          "passed": true,
+          "evidence": "new methods use the existing retry and retry-after policy"
+        },
+        {
+          "id": "S3-B01",
+          "passed": true,
+          "evidence": "npm test"
+        },
+        {
+          "id": "S3-B02",
+          "passed": true,
+          "evidence": "npm run build"
+        },
+        {
+          "id": "S3-B03",
+          "passed": true,
+          "evidence": "real PostgreSQL integration and hidden API harness"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "c1aadc3931510617cad7aef4753fab276f7fabb58a0401be23dca64f9480ade8",
+      "results": [
+        {
+          "name": "unit-tests",
+          "required": true,
+          "command": [
+            "npm",
+            "test"
+          ],
+          "startedAt": "2026-09-02T14:37:05.725Z",
+          "completedAt": "2026-09-02T14:37:09.000Z",
+          "durationMs": 3275,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "1422f55876785fe50f531fcc11689be3dffc2385984d406f279aae73b8392dea",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 test\n> vitest run\n\n\n RUN  v3.2.4 /tmp/benchmark-v7-checks-7f2tCA/workspace\n\n ✓ test/retry.test.ts (3 tests) 14ms\n ✓ test/crypto.test.ts (3 tests) 10ms\n ✓ test/telegram-service.test.ts (2 tests) 5ms\n ↓ test/integration/gateway.integration.test.ts (9 tests | 9 skipped)\n\n Test Files  3 passed | 1 skipped (4)\n      Tests  8 passed | 9 skipped (17)\n   Start at  17:37:06\n   Duration  1.91s (transform 839ms, setup 0ms, collect 1.81s, tests 30ms, environment 1ms, prepare 904ms)\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T14:37:09.001Z",
+          "completedAt": "2026-09-02T14:37:17.763Z",
+          "durationMs": 8763,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "184a528de0ec8da5e774b405ed956bc0933a5c955fbdc9ba941b3268a8aa6a2e",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 build\n> tsc -p tsconfig.json\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-db-up",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v7-vz-a5cc8c",
+            "-f",
+            "docker-compose.integration.yml",
+            "up",
+            "-d",
+            "--wait"
+          ],
+          "startedAt": "2026-09-02T14:37:17.766Z",
+          "completedAt": "2026-09-02T14:37:24.405Z",
+          "durationMs": 6639,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "2ef56f5d3aa677183783db83b9eeb93d327246b435db18b725c22e3d9e6ceb33",
+          "stdoutTail": "",
+          "stderrTail": " Network benchmark-v7-vz-a5cc8c_default  Creating\n Network benchmark-v7-vz-a5cc8c_default  Created\n Container benchmark-v3-vz-a5cc8c-postgres  Creating\n Container benchmark-v3-vz-a5cc8c-postgres  Created\n Container benchmark-v3-vz-a5cc8c-postgres  Starting\n Container benchmark-v3-vz-a5cc8c-postgres  Started\n Container benchmark-v3-vz-a5cc8c-postgres  Waiting\n Container benchmark-v3-vz-a5cc8c-postgres  Healthy\n",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-migrate",
+          "required": true,
+          "command": [
+            "npm",
+            "exec",
+            "--",
+            "prisma",
+            "migrate",
+            "deploy"
+          ],
+          "startedAt": "2026-09-02T14:37:24.406Z",
+          "completedAt": "2026-09-02T14:37:27.544Z",
+          "durationMs": 3138,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d59bd1f8bb83eeac80218eac7e81e3d5203a1381f145a7c58a97d8e9ad28d0a6",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "Prisma schema loaded from prisma/schema.prisma\nDatasource \"db\": PostgreSQL database \"telegram_gateway_integration\", schema \"public\" at \"localhost:37804\"\n\n1 migration found in prisma/migrations\n\nApplying migration `20260420202800_init`\n\nThe following migration(s) have been applied:\n\nmigrations/\n  └─ 20260420202800_init/\n    └─ migration.sql\n      \nAll migrations have been successfully applied.\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-tests",
+          "required": true,
+          "command": [
+            "npm",
+            "run",
+            "test:integration"
+          ],
+          "startedAt": "2026-09-02T14:37:27.545Z",
+          "completedAt": "2026-09-02T14:37:33.553Z",
+          "durationMs": 6009,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e89db8a70ce56d61b92453f0922b6c79c3515a71a8c52b63ad0e2990e4a8ebd6",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "tusCode\":409,\"name\":\"AppError\"},\"code\":\"IDEMPOTENCY_CONFLICT\",\"requestId\":\"req-3\",\"msg\":\"Existing idempotency key was used with different payload.\"}\n{\"level\":30,\"time\":1788359852265,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-3\",\"res\":{\"statusCode\":409},\"responseTime\":11.013508081436157,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359852266,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-4\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/33308b13-c4e2-4d72-b7b2-0eb5f57178ce/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359852274,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-4\",\"res\":{\"statusCode\":202},\"responseTime\":8.017040967941284,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359852603,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/validate\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359852605,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"err\":{\"type\":\"AppError\",\"message\":\"Missing X-Gateway-Client-Id header.\",\"stack\":\"AppError: Missing X-Gateway-Client-Id header.\\n    at extractHeader (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:48:11)\\n    at requireIstinaCompatAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:58:20)\\n    at Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:181:11)\\n    at preHandlerCallbackInner (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:168:24)\\n    at preHandlerCallback (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:134:5)\\n    at validationCompleted (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:124:5)\\n    at preValidationCallback (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:101:5)\\n    at handler (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/handle-request.js:78:7)\\n    at onDone (/tmp/benchmark-v7-checks-7f2tCA/workspace/node_modules/fastify/lib/content-type-parser.js:229:5)\\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-1\",\"msg\":\"Missing X-Gateway-Client-Id header.\"}\n{\"level\":30,\"time\":1788359852608,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":401},\"responseTime\":3.9240190982818604,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359852628,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/validate\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359852632,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"err\":{\"type\":\"AppError\",\"message\":\"Gateway service credentials are invalid.\",\"stack\":\"AppError: Gateway service credentials are invalid.\\n    at requireIstinaCompatAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:73:11)\\n    at Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/istina-compat-routes.ts:181:5)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-2\",\"msg\":\"Gateway service credentials are invalid.\"}\n{\"level\":30,\"time\":1788359852633,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-2\",\"res\":{\"statusCode\":401},\"responseTime\":5.20620584487915,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359852776,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/bots/set-webhook\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359852814,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":200},\"responseTime\":37.457175970077515,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359853174,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"req\":{\"method\":\"POST\",\"url\":\"/api/v1/messages/send\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359853200,\"pid\":1933893,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-1\",\"res\":{\"statusCode\":200},\"responseTime\":26.683011054992676,\"msg\":\"request completed\"}\n ✓ test/integration/gateway.integration.test.ts (9 tests) 2085ms\n   ✓ gateway integration > serves the minimal admin UI and lets admin create a service  469ms\n   ✓ gateway integration > queues outbound actions, sends them via worker, and exposes delivery status  349ms\n\n Test Files  1 passed (1)\n      Tests  9 passed (9)\n   Start at  17:37:30\n   Duration  3.29s (transform 393ms, setup 0ms, collect 714ms, tests 2.09s, environment 0ms, prepare 117ms)\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-api",
+          "required": true,
+          "command": [
+            "npm",
+            "exec",
+            "--",
+            "tsx",
+            "<harness>/small-api.hidden.ts"
+          ],
+          "startedAt": "2026-09-02T14:37:33.554Z",
+          "completedAt": "2026-09-02T14:37:35.914Z",
+          "durationMs": 2360,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "da732b7c7a25d6080f7a27580a0965382fa8d74234b26003308a4f04c994ad38",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "3e06a71998/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359855638,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-c\",\"res\":{\"statusCode\":202},\"responseTime\":7.701026916503906,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359855639,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/a2f1bca9-5999-47dc-a68d-8e3e06a71998/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359855659,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"err\":{\"type\":\"AppError\",\"message\":\"Existing idempotency key was used with different payload.\",\"stack\":\"AppError: Existing idempotency key was used with different payload.\\n    at submitOutboundAction (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/services/registration-service.ts:550:15)\\n    at async Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/bot-routes.ts:100:22)\",\"code\":\"IDEMPOTENCY_CONFLICT\",\"statusCode\":409,\"name\":\"AppError\"},\"code\":\"IDEMPOTENCY_CONFLICT\",\"requestId\":\"req-d\",\"msg\":\"Existing idempotency key was used with different payload.\"}\n{\"level\":30,\"time\":1788359855660,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-d\",\"res\":{\"statusCode\":409},\"responseTime\":20.776567935943604,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359855723,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/e7eb6dee-4afb-4624-80bc-11a265368e9d/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359855726,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"err\":{\"type\":\"AppError\",\"message\":\"Application token is invalid.\",\"stack\":\"AppError: Application token is invalid.\\n    at Object.requireApplicationAuth (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/plugins/auth.ts:62:11)\",\"code\":\"UNAUTHORIZED_APPLICATION\",\"statusCode\":401,\"name\":\"AppError\"},\"code\":\"UNAUTHORIZED_APPLICATION\",\"requestId\":\"req-e\",\"msg\":\"Application token is invalid.\"}\n{\"level\":30,\"time\":1788359855733,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-e\",\"res\":{\"statusCode\":401},\"responseTime\":9.822343111038208,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359855734,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/18b9f6c8-cc81-442a-8a29-7b4344851711/actions/deleteMessage\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":50,\"time\":1788359855738,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"err\":{\"type\":\"AppError\",\"message\":\"Registration was not found.\",\"stack\":\"AppError: Registration was not found.\\n    at submitOutboundAction (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/services/registration-service.ts:510:11)\\n    at async Object.<anonymous> (/tmp/benchmark-v7-checks-7f2tCA/workspace/src/routes/bot-routes.ts:100:22)\",\"code\":\"REGISTRATION_NOT_FOUND\",\"statusCode\":404,\"name\":\"AppError\"},\"code\":\"REGISTRATION_NOT_FOUND\",\"requestId\":\"req-f\",\"msg\":\"Registration was not found.\"}\n{\"level\":30,\"time\":1788359855739,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-f\",\"res\":{\"statusCode\":404},\"responseTime\":4.697087049484253,\"msg\":\"request completed\"}\n{\"level\":30,\"time\":1788359855802,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-g\",\"req\":{\"method\":\"POST\",\"url\":\"/v1/bots/a4f1ffb6-c5b9-4e83-a13a-d606ed3e0b25/actions/editMessageText\",\"host\":\"localhost:80\",\"remoteAddress\":\"127.0.0.1\"},\"msg\":\"incoming request\"}\n{\"level\":30,\"time\":1788359855810,\"pid\":1934303,\"hostname\":\"neverest23.fvds.ru\",\"reqId\":\"req-g\",\"res\":{\"statusCode\":202},\"responseTime\":7.386991024017334,\"msg\":\"request completed\"}\n{\"schemaVersion\":3,\"scenario\":\"small\",\"checks\":[{\"id\":\"S3-A01\",\"passed\":true,\"evidence\":\"three explicit methods accepted; unknown method keeps machine error\"},{\"id\":\"S3-A02\",\"passed\":false,\"evidence\":\"invalid payload rejected for each supported method before persistence\",\"error\":\"expected 4xx, got 202\"},{\"id\":\"S3-A03\",\"passed\":true,\"evidence\":\"sendMessage remains queue-first 202/PENDING\"},{\"id\":\"S3-A04\",\"passed\":true,\"evidence\":\"editMessageText is queued and dispatched with unchanged method/payload\"},{\"id\":\"S3-A05\",\"passed\":true,\"evidence\":\"deleteMessage is queued and dispatched with unchanged method/payload\"},{\"id\":\"S3-A06\",\"passed\":true,\"evidence\":\"missing Idempotency-Key keeps stable error and persists nothing\"},{\"id\":\"S3-A07\",\"passed\":true,\"evidence\":\"identical retry returns the existing delivery\"},{\"id\":\"S3-A08\",\"passed\":true,\"evidence\":\"conflicting reuse of an idempotency key is rejected without mutation\"},{\"id\":\"S3-A09\",\"passed\":true,\"evidence\":\"authentication and registration isolation cover new methods\"},{\"id\":\"S3-A10\",\"passed\":true,\"evidence\":\"new methods use the existing retry and retry-after policy\"}],\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "small",
+            "passed": false,
+            "smoke": null,
+            "checks": [
+              {
+                "id": "S3-A01",
+                "passed": true,
+                "evidence": "three explicit methods accepted; unknown method keeps machine error"
+              },
+              {
+                "id": "S3-A02",
+                "passed": false,
+                "evidence": "invalid payload rejected for each supported method before persistence",
+                "error": "expected 4xx, got 202"
+              },
+              {
+                "id": "S3-A03",
+                "passed": true,
+                "evidence": "sendMessage remains queue-first 202/PENDING"
+              },
+              {
+                "id": "S3-A04",
+                "passed": true,
+                "evidence": "editMessageText is queued and dispatched with unchanged method/payload"
+              },
+              {
+                "id": "S3-A05",
+                "passed": true,
+                "evidence": "deleteMessage is queued and dispatched with unchanged method/payload"
+              },
+              {
+                "id": "S3-A06",
+                "passed": true,
+                "evidence": "missing Idempotency-Key keeps stable error and persists nothing"
+              },
+              {
+                "id": "S3-A07",
+                "passed": true,
+                "evidence": "identical retry returns the existing delivery"
+              },
+              {
+                "id": "S3-A08",
+                "passed": true,
+                "evidence": "conflicting reuse of an idempotency key is rejected without mutation"
+              },
+              {
+                "id": "S3-A09",
+                "passed": true,
+                "evidence": "authentication and registration isolation cover new methods"
+              },
+              {
+                "id": "S3-A10",
+                "passed": true,
+                "evidence": "new methods use the existing retry and retry-after policy"
+              }
+            ]
+          }
+        },
+        {
+          "name": "integration-db-down",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v7-vz-a5cc8c",
+            "-f",
+            "docker-compose.integration.yml",
+            "down",
+            "-v"
+          ],
+          "startedAt": "2026-09-02T14:37:35.915Z",
+          "completedAt": "2026-09-02T14:37:37.090Z",
+          "durationMs": 1176,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "0eee690b2fa4c23bdc2f72e67541349069a10971ba628d77c687833d431ccee9",
+          "stdoutTail": "",
+          "stderrTail": " Container benchmark-v3-vz-a5cc8c-postgres  Stopping\n Container benchmark-v3-vz-a5cc8c-postgres  Stopped\n Container benchmark-v3-vz-a5cc8c-postgres  Removing\n Container benchmark-v3-vz-a5cc8c-postgres  Removed\n Network benchmark-v7-vz-a5cc8c_default  Removing\n Network benchmark-v7-vz-a5cc8c_default  Removed\n",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "S3-A01",
+          "passed": true,
+          "evidence": "three explicit methods accepted; unknown method keeps machine error"
+        },
+        {
+          "id": "S3-A02",
+          "passed": false,
+          "evidence": "invalid payload rejected for each supported method before persistence",
+          "error": "expected 4xx, got 202"
+        },
+        {
+          "id": "S3-A03",
+          "passed": true,
+          "evidence": "sendMessage remains queue-first 202/PENDING"
+        },
+        {
+          "id": "S3-A04",
+          "passed": true,
+          "evidence": "editMessageText is queued and dispatched with unchanged method/payload"
+        },
+        {
+          "id": "S3-A05",
+          "passed": true,
+          "evidence": "deleteMessage is queued and dispatched with unchanged method/payload"
+        },
+        {
+          "id": "S3-A06",
+          "passed": true,
+          "evidence": "missing Idempotency-Key keeps stable error and persists nothing"
+        },
+        {
+          "id": "S3-A07",
+          "passed": true,
+          "evidence": "identical retry returns the existing delivery"
+        },
+        {
+          "id": "S3-A08",
+          "passed": true,
+          "evidence": "conflicting reuse of an idempotency key is rejected without mutation"
+        },
+        {
+          "id": "S3-A09",
+          "passed": true,
+          "evidence": "authentication and registration isolation cover new methods"
+        },
+        {
+          "id": "S3-A10",
+          "passed": true,
+          "evidence": "new methods use the existing retry and retry-after policy"
+        },
+        {
+          "id": "S3-B01",
+          "passed": true,
+          "evidence": "npm test"
+        },
+        {
+          "id": "S3-B02",
+          "passed": true,
+          "evidence": "npm run build"
+        },
+        {
+          "id": "S3-B03",
+          "passed": true,
+          "evidence": "real PostgreSQL integration and hidden API harness"
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "statePreserved": true
+}

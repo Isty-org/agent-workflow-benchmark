@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "blindId": "vz-c6dbd0",
+  "scenario": "large",
+  "phase": "first_pass",
+  "evaluatorVersion": "v7c-uniform-1",
+  "contractSha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455",
+  "setupCommit": "8e143aac954d2611414dd4b8da564e66c599e431",
+  "workspaceCommit": "593464a93f5f0fc1fc69bae7845a4aaa795eec3a",
+  "workspaceTree": "c536fbdd4c92ebe3b5433ac91531c6524db5266a",
+  "firstPassContentFingerprint": null,
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "c23a6c6f1115cf9cbb0400270a2767af6d99d2de6e4278f390d65b48d786b141",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "c23a6c6f1115cf9cbb0400270a2767af6d99d2de6e4278f390d65b48d786b141",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "c23a6c6f1115cf9cbb0400270a2767af6d99d2de6e4278f390d65b48d786b141",
+      "passed": false
+    }
+  ],
+  "checkReceiptSha256": "ba99be54a3e3ec792413ca232d3c900688b1b77e812617cc6a9c7420f8d43844",
+  "checks": [
+    {
+      "id": "L3-A01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 7,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A04",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A05",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A06",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A07",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A08",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A09",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A10",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: fail; harness-owned xUnit behavior check passed",
+        "repetition 2: fail; harness-owned xUnit behavior check passed",
+        "repetition 3: fail; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-B01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: fail; desktop tests plus harness-owned search tests",
+        "repetition 2: fail; desktop tests plus harness-owned search tests",
+        "repetition 3: fail; desktop tests plus harness-owned search tests"
+      ]
+    },
+    {
+      "id": "L3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; desktop project build",
+        "repetition 2: pass; desktop project build",
+        "repetition 3: pass; desktop project build"
+      ]
+    },
+    {
+      "id": "L3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; Avalonia headless render/load smoke",
+        "repetition 2: pass; Avalonia headless render/load smoke",
+        "repetition 3: pass; Avalonia headless render/load smoke"
+      ]
+    },
+    {
+      "id": "L3-C01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "v7-review-vz-c6dbd0-a: No query or search state exists in MainWindowViewModel.cs; MainWindow.axaml has no search field, clear action, or filter binding. IApplicationRuntime.cs exposes recent rename/remove operations but no search boundary.",
+        "v7-review-vz-c6dbd0-b: No query, filter, or clear state exists in src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:27-105.",
+        "v7-review-vz-c6dbd0-b: src/IsTranscribe.Desktop/Views/MainWindow.axaml:318-340 contains only the recent title, empty state, and unfiltered ItemsControl."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "v7-review-vz-c6dbd0-a: ApplicationRuntimeSnapshot.cs exposes RecentRecordings. ApplicationRuntime.cs loads recent rows from persistence, while MainWindowViewModel.cs passes snapshot.RecentRecordings into ReconcileRecentRecordings, which derives the visible collection coherently.",
+        "v7-review-vz-c6dbd0-b: ApplicationRuntimeSnapshot.RecentRecordings is consumed by ApplySnapshotCore at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:522-559.",
+        "v7-review-vz-c6dbd0-b: ReconcileRecentRecordings derives the visible collection from the snapshot, preserves identity/order, and updates or removes items at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:731-779."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "status": "partial",
+      "pointsAwarded": 1,
+      "maxPoints": 4,
+      "evidence": [
+        "v7-review-vz-c6dbd0-a: MainWindowViewModelTests.cs covers rename, existing actions, and general language changes, but contains no query, search refresh, search localization, or search accessibility tests. The frozen receipt reports hidden-search exitCode 1 in all three repetitions.",
+        "v7-review-vz-c6dbd0-b: Existing direct tests cover rename and user-owned title localization at tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:232-293.",
+        "v7-review-vz-c6dbd0-b: No direct query, live-filter refresh, clear, no-results, or search accessibility tests are present."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "v7-review-vz-c6dbd0-a: MainWindowViewModel.cs defines MaximumRecentItems as 5, applies Take(MaximumRecentItems), preserves SessionId order, moves updated items, and disposes removed items. These protections exist for the unfiltered list; no search implementation exercises them.",
+        "v7-review-vz-c6dbd0-b: MaximumRecentItems is 5 and snapshot input is capped with Take at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:29 and 731-734.",
+        "v7-review-vz-c6dbd0-b: Existing item lifecycle preserves updates, ordering, and disposal at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:737-779; no search-derived collection exists to verify search preservation."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "v7-review-vz-c6dbd0-a: Relevant existing code uses the project’s spec:// traceability anchors, including FEAT-013 recent-recording anchors in MainWindowViewModel.cs, ApplicationRuntime.cs, and MeetingSessionRepository.cs. No new benchmark-specific canon is present.",
+        "v7-review-vz-c6dbd0-b: Existing code and XAML use project spec references, including recent-recordings anchors, at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:14-26 and src/IsTranscribe.Desktop/Views/MainWindow.axaml:12-13.",
+        "v7-review-vz-c6dbd0-b: docs/architecture.md documents following @spec links and the ownership map; no benchmark-specific canon is present in the normalized workspace."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "status": "partial",
+      "pointsAwarded": 3,
+      "maxPoints": 4,
+      "evidence": [
+        "v7-review-vz-c6dbd0-a: MainWindow.axaml provides empty-state, item actions, refresh-driven snapshot reconciliation, and rename flows. String.Recent.Loading exists in both catalogs, but the recent section has no binding for loading and switches only between empty and populated states.",
+        "v7-review-vz-c6dbd0-b: Empty and populated recent states are present at src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-340, with existing item actions in the template.",
+        "v7-review-vz-c6dbd0-b: Snapshot refresh and rename routing are implemented at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:496-559 and 731-779; existing action and rename tests are at tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:192-293.",
+        "v7-review-vz-c6dbd0-b: String.Recent.Loading exists in both catalogs at lines 95, but no loading control references it."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "v7-review-vz-c6dbd0-a: No search field or clear action exists in MainWindow.axaml, and neither localization catalog contains search-field, clear, or no-results resources.",
+        "v7-review-vz-c6dbd0-b: MainWindow.axaml has no search TextBox, Watermark, clear control, or search accessibility name.",
+        "v7-review-vz-c6dbd0-b: Strings.en.axaml:91-104 and Strings.ru.axaml:91-104 contain no search, clear, or no-results resources."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "v7-review-vz-c6dbd0-a: No query property or search path exists, so presentation-only query behavior and exclusion from logs, storage, and external calls cannot be demonstrated.",
+        "v7-review-vz-c6dbd0-b: No query property or local search state exists in the inspected desktop code, and IApplicationRuntime exposes no search operation.",
+        "v7-review-vz-c6dbd0-b: Because query state is absent, its presentation-only lifetime and exclusion from logs, storage, and external calls cannot be demonstrated."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-c6dbd0-a",
+      "total": 13,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No query or search state exists in MainWindowViewModel.cs; MainWindow.axaml has no search field, clear action, or filter binding. IApplicationRuntime.cs exposes recent rename/remove operations but no search boundary."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "ApplicationRuntimeSnapshot.cs exposes RecentRecordings. ApplicationRuntime.cs loads recent rows from persistence, while MainWindowViewModel.cs passes snapshot.RecentRecordings into ReconcileRecentRecordings, which derives the visible collection coherently."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 1,
+          "evidence": [
+            "MainWindowViewModelTests.cs covers rename, existing actions, and general language changes, but contains no query, search refresh, search localization, or search accessibility tests. The frozen receipt reports hidden-search exitCode 1 in all three repetitions."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModel.cs defines MaximumRecentItems as 5, applies Take(MaximumRecentItems), preserves SessionId order, moves updated items, and disposes removed items. These protections exist for the unfiltered list; no search implementation exercises them."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Relevant existing code uses the project’s spec:// traceability anchors, including FEAT-013 recent-recording anchors in MainWindowViewModel.cs, ApplicationRuntime.cs, and MeetingSessionRepository.cs. No new benchmark-specific canon is present."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindow.axaml provides empty-state, item actions, refresh-driven snapshot reconciliation, and rename flows. String.Recent.Loading exists in both catalogs, but the recent section has no binding for loading and switches only between empty and populated states."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No search field or clear action exists in MainWindow.axaml, and neither localization catalog contains search-field, clear, or no-results resources."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No query property or search path exists, so presentation-only query behavior and exclusion from logs, storage, and external calls cannot be demonstrated."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-c6dbd0-b",
+      "total": 13,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No query, filter, or clear state exists in src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:27-105.",
+            "src/IsTranscribe.Desktop/Views/MainWindow.axaml:318-340 contains only the recent title, empty state, and unfiltered ItemsControl."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "ApplicationRuntimeSnapshot.RecentRecordings is consumed by ApplySnapshotCore at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:522-559.",
+            "ReconcileRecentRecordings derives the visible collection from the snapshot, preserves identity/order, and updates or removes items at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:731-779."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 1,
+          "evidence": [
+            "Existing direct tests cover rename and user-owned title localization at tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:232-293.",
+            "No direct query, live-filter refresh, clear, no-results, or search accessibility tests are present."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MaximumRecentItems is 5 and snapshot input is capped with Take at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:29 and 731-734.",
+            "Existing item lifecycle preserves updates, ordering, and disposal at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:737-779; no search-derived collection exists to verify search preservation."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Existing code and XAML use project spec references, including recent-recordings anchors, at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:14-26 and src/IsTranscribe.Desktop/Views/MainWindow.axaml:12-13.",
+            "docs/architecture.md documents following @spec links and the ownership map; no benchmark-specific canon is present in the normalized workspace."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Empty and populated recent states are present at src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-340, with existing item actions in the template.",
+            "Snapshot refresh and rename routing are implemented at src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:496-559 and 731-779; existing action and rename tests are at tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:192-293.",
+            "String.Recent.Loading exists in both catalogs at lines 95, but no loading control references it."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "MainWindow.axaml has no search TextBox, Watermark, clear control, or search accessibility name.",
+            "Strings.en.axaml:91-104 and Strings.ru.axaml:91-104 contain no search, clear, or no-results resources."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No query property or local search state exists in the inspected desktop code, and IApplicationRuntime exposes no search operation.",
+            "Because query state is absent, its presentation-only lifetime and exclusion from logs, storage, and external calls cannot be demonstrated."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 0,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 12,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 10,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 3,
+      "maxPoints": 10
+    }
+  },
+  "rawScore": 25,
+  "totalScore": 25,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-c6dbd0-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-c6dbd0-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-c6dbd0-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-c6dbd0-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-c6dbd0-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-c6dbd0-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "provenance": "supplemental_uniform_adjudication_reusing_frozen_blind_review",
+  "originalFrozenCheck": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/checks/v7-large-bmad-r2.json",
+  "blind": true
+}

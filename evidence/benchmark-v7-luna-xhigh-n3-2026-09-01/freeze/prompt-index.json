@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "status": "draft",
+  "envelope": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/envelope.md",
+  "prompts": {
+    "new-project": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/prompts/new.md",
+    "small-project": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/prompts/small.md",
+    "large-project": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/prompts/large.md"
+  },
+  "naturalUserEnvelope": true,
+  "forbiddenMetadata": [
+    "condition",
+    "runId",
+    "blindId",
+    "benchmark purpose",
+    "evaluator criteria",
+    "implementation hints"
+  ]
+}

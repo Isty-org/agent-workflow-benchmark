@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 3,
+  "scenario": "new",
+  "title": "Personal reading list",
+  "checks": [
+    { "id": "N3-A01", "category": "functional", "maxPoints": 8, "scoring": "binary", "procedure": "Through the UI add a book with title and author; both values are visible after save." },
+    { "id": "N3-A02", "category": "functional", "maxPoints": 6, "scoring": "binary", "procedure": "The UI exposes the three requested product states in Russian." },
+    { "id": "N3-A03", "category": "functional", "maxPoints": 8, "scoring": "binary", "procedure": "Move one book through all three states; every transition is reflected immediately." },
+    { "id": "N3-A04", "category": "functional", "maxPoints": 6, "scoring": "binary", "procedure": "Books and states survive a browser reload." },
+    { "id": "N3-A05", "category": "functional", "maxPoints": 8, "scoring": "binary", "procedure": "Books and states survive full application stop and restart." },
+    { "id": "N3-A06", "category": "functional", "maxPoints": 5, "scoring": "binary", "procedure": "Multiple books remain independent and ordered coherently after one state change." },
+    { "id": "N3-A07", "category": "functional", "maxPoints": 4, "scoring": "binary", "procedure": "Missing required values do not create an invalid book and produce understandable feedback." },
+    { "id": "N3-A08", "category": "functional", "maxPoints": 5, "scoring": "binary", "procedure": "Primary UI, actions, states and user messages are Russian." },
+    { "id": "N3-B01", "category": "regression", "maxPoints": 8, "scoring": "binary", "procedure": "The project test command and direct product tests pass in all three frozen repetitions." },
+    { "id": "N3-B02", "category": "regression", "maxPoints": 6, "scoring": "binary", "procedure": "The documented build or equivalent type/package check passes." },
+    { "id": "N3-B03", "category": "regression", "maxPoints": 6, "scoring": "binary", "procedure": "The documented local start works without Docker and a real browser smoke loads the product." },
+    { "id": "N3-C01", "category": "architecture", "maxPoints": 6, "scoring": "review", "procedure": "UI, application state and persistence have clear responsibilities." },
+    { "id": "N3-C02", "category": "architecture", "maxPoints": 4, "scoring": "review", "procedure": "A book and its status have one coherent source of truth." },
+    { "id": "N3-C03", "category": "architecture", "maxPoints": 4, "scoring": "review", "procedure": "Direct tests cover add, state transition and persistence." },
+    { "id": "N3-C04", "category": "architecture", "maxPoints": 3, "scoring": "review", "procedure": "The design can accept ordinary future list features without data reset or broad rewrite." },
+    { "id": "N3-C05", "category": "architecture", "maxPoints": 3, "scoring": "review", "procedure": "README accurately explains install, test, build and local start." },
+    { "id": "N3-D01", "category": "scope", "maxPoints": 4, "scoring": "review", "procedure": "The requested ready minimum is complete without unrelated product scope." },
+    { "id": "N3-D02", "category": "scope", "maxPoints": 3, "scoring": "review", "procedure": "Labels, focus, keyboard path and empty/error states are usable." },
+    { "id": "N3-D03", "category": "scope", "maxPoints": 3, "scoring": "review", "procedure": "Local storage contains no secrets and requires no unsafe permissions or external service." }
+  ]
+}
+

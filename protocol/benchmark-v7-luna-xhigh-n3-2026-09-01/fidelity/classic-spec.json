@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "condition": "classic-spec",
+  "activationBeforeProductEdit": [
+    "read AGENTS.md and the project-local spec-driven-work skill",
+    "resolve the request through repository canon and SPEC-MAP",
+    "create or claim the repository WorkItem when the workflow requires tracked work"
+  ],
+  "completion": [
+    "record canon action and verification evidence",
+    "bring the repository WorkItem and board state to the workflow-defined completed state"
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 3,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-626a27",
+  "scenario": "small",
+  "phase": "first_pass",
+  "evaluatorVersion": "3.0.0",
+  "harnessCommit": "10065386fb43e22c2065d6a1049af29f7a10a139",
+  "workspaceCommit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+  "setupCommit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "f1bf85c4670afad974c5d137862e56e5765ea7c554ba022c1459b298551cc8b4",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "f1bf85c4670afad974c5d137862e56e5765ea7c554ba022c1459b298551cc8b4",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "f1bf85c4670afad974c5d137862e56e5765ea7c554ba022c1459b298551cc8b4",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "S3-A01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 9,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A04",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A05",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A06",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A07",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A08",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A09",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A10",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: npm test",
+        "repetition 2: npm test",
+        "repetition 3: npm test"
+      ]
+    },
+    {
+      "id": "S3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: npm run build",
+        "repetition 2: npm run build",
+        "repetition 3: npm run build"
+      ]
+    },
+    {
+      "id": "S3-B03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: real PostgreSQL integration and hidden API harness",
+        "repetition 2: real PostgreSQL integration and hidden API harness",
+        "repetition 3: real PostgreSQL integration and hidden API harness"
+      ]
+    },
+    {
+      "id": "S3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "Validation is centralized in src/lib/outbound-actions.ts:58-71 and called before delivery creation in src/services/registration-service.ts:500-508.",
+        "Validation is centralized in src/lib/outbound-actions.ts and invoked by submitOutboundAction before registration lookup and delivery creation in src/services/registration-service.ts."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "The method registry is defined in src/lib/outbound-actions.ts:3-7, reused by src/config.ts:5 and src/config.ts:25-26; routes and workers forward generic method/payload values without duplicating schemas.",
+        "The primary action route and worker are generic, and the default allowlist is centralized in src/lib/outbound-actions.ts. The compatibility facade duplicates chat/message schemas in src/routes/istina-compat-routes.ts."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "Unit coverage exists in test/outbound-actions.test.ts:5-59. Integration coverage exercises queueing, validation, duplicate idempotency and conflicts in test/integration/gateway.integration.test.ts:253-411, with send/status coverage at lines 91-251.",
+        "Unit tests cover payload validation in test/outbound-actions.test.ts. Integration tests cover validation, queueing, delivery, duplicate idempotency, and conflicts in test/integration/gateway.integration.test.ts."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "Adding a default method is localized to the registry in src/lib/outbound-actions.ts:3-7; method-specific validation can be added in the same module, while src/services/delivery-service.ts:477-481 already dispatches generic methods.",
+        "The primary route, submit service, and worker are method-generic. Adding an allowed method is localized to the registry/configuration and its schema branch in src/lib/outbound-actions.ts."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md:115-156 documents the action endpoints, supported methods, payload examples, validation errors, idempotency behavior, queue-first responses and delivery-status polling.",
+        "README.md and HOWTOSETUP.md document all three methods, payload examples, inline edit targets, validation errors, idempotency behavior, queue-first statuses, retries, and delivery polling."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "Application auth remains on bot routes in src/routes/bot-routes.ts:49-123; queue-first submission is implemented at src/services/registration-service.ts:494-577; status polling is preserved at lines 579-602; retry and dispatch pacing remain in src/services/delivery-service.ts:455-591.",
+        "Application authentication and tenant/application scoping remain in src/plugins/auth.ts and src/services/registration-service.ts. Queue-first responses, delivery status polling, retry handling, rate-limit pacing, and existing bot endpoints remain present."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "The stable error envelope with code, message, details and requestId is implemented in src/lib/errors.ts:40-61. However, database errors expose Prisma code/meta at src/lib/errors.ts:28-34, and several Telegram mapping paths return raw provider error messages in src/services/registration-service.ts:84-92 and src/routes/istina-compat-routes.ts:181-185.",
+        "src/lib/errors.ts preserves the stable error.code/error.message/details/requestId envelope and public models omit bot tokens. Public delivery responses expose lastError and telegramResponse, which are populated from raw Error.message or upstream Telegram details in src/services/delivery-service.ts."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "The default registry contains only sendMessage, editMessageText and deleteMessage in src/lib/outbound-actions.ts:3-7. Submission checks the resolved allowlist before queueing in src/services/registration-service.ts:500-508.",
+        "The default allowlist contains only sendMessage, editMessageText, and deleteMessage. Application allowlists are intersected with the configured global list, and unsupported provisioning methods are rejected in src/services/admin-service.ts."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-626a27-a",
+      "total": 29,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "Validation is centralized in src/lib/outbound-actions.ts:58-71 and called before delivery creation in src/services/registration-service.ts:500-508."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The method registry is defined in src/lib/outbound-actions.ts:3-7, reused by src/config.ts:5 and src/config.ts:25-26; routes and workers forward generic method/payload values without duplicating schemas."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Unit coverage exists in test/outbound-actions.test.ts:5-59. Integration coverage exercises queueing, validation, duplicate idempotency and conflicts in test/integration/gateway.integration.test.ts:253-411, with send/status coverage at lines 91-251."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Adding a default method is localized to the registry in src/lib/outbound-actions.ts:3-7; method-specific validation can be added in the same module, while src/services/delivery-service.ts:477-481 already dispatches generic methods."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:115-156 documents the action endpoints, supported methods, payload examples, validation errors, idempotency behavior, queue-first responses and delivery-status polling."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Application auth remains on bot routes in src/routes/bot-routes.ts:49-123; queue-first submission is implemented at src/services/registration-service.ts:494-577; status polling is preserved at lines 579-602; retry and dispatch pacing remain in src/services/delivery-service.ts:455-591."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The stable error envelope with code, message, details and requestId is implemented in src/lib/errors.ts:40-61. However, database errors expose Prisma code/meta at src/lib/errors.ts:28-34, and several Telegram mapping paths return raw provider error messages in src/services/registration-service.ts:84-92 and src/routes/istina-compat-routes.ts:181-185."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The default registry contains only sendMessage, editMessageText and deleteMessage in src/lib/outbound-actions.ts:3-7. Submission checks the resolved allowlist before queueing in src/services/registration-service.ts:500-508."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-626a27-b",
+      "total": 28,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "Validation is centralized in src/lib/outbound-actions.ts and invoked by submitOutboundAction before registration lookup and delivery creation in src/services/registration-service.ts."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The primary action route and worker are generic, and the default allowlist is centralized in src/lib/outbound-actions.ts. The compatibility facade duplicates chat/message schemas in src/routes/istina-compat-routes.ts."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Unit tests cover payload validation in test/outbound-actions.test.ts. Integration tests cover validation, queueing, delivery, duplicate idempotency, and conflicts in test/integration/gateway.integration.test.ts."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The primary route, submit service, and worker are method-generic. Adding an allowed method is localized to the registry/configuration and its schema branch in src/lib/outbound-actions.ts."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md and HOWTOSETUP.md document all three methods, payload examples, inline edit targets, validation errors, idempotency behavior, queue-first statuses, retries, and delivery polling."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Application authentication and tenant/application scoping remain in src/plugins/auth.ts and src/services/registration-service.ts. Queue-first responses, delivery status polling, retry handling, rate-limit pacing, and existing bot endpoints remain present."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/lib/errors.ts preserves the stable error.code/error.message/details/requestId envelope and public models omit bot tokens. Public delivery responses expose lastError and telegramResponse, which are populated from raw Error.message or upstream Telegram details in src/services/delivery-service.ts."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The default allowlist contains only sendMessage, editMessageText, and deleteMessage. Application allowlists are intersected with the configured global list, and unsupported provisioning methods are rejected in src/services/admin-service.ts."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 0,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 14,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 20,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 9,
+      "maxPoints": 10
+    }
+  },
+  "totalScore": 43,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-626a27-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/lib/errors.ts:28-34",
+        "src/services/registration-service.ts:84-92",
+        "src/routes/istina-compat-routes.ts:181-185"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-626a27-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-626a27-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

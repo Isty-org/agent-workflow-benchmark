@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-d4fb0379-a",
+  "blindId": "vc-d4fb0379",
+  "scenario": "small",
+  "checks": [
+    {
+      "id": "S3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/services/registration-service.ts:91-104,558-572 — отдельный валидатор payload вызывается до создания delivery.",
+        "src/routes/bot-routes.ts:92-105 — versioned action boundary передаёт запрос в submitOutboundAction."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/services/registration-service.ts:36-104 — схемы и literal-ветвление валидатора находятся отдельно от allowlist.",
+        "src/config.ts:23-24,36-40,74 — allowlist задаётся и парсится отдельной строковой конфигурацией.",
+        "src/routes/bot-routes.ts:37-38; src/services/delivery-service.ts:477-480 — route и worker не дублируют method-specific contract."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "pointsAwarded": 4,
+      "evidence": [
+        "test/outbound-action.test.ts:7-74 — unit-тесты покрывают валидные и невалидные edit/delete payloads.",
+        "test/integration/gateway.integration.test.ts:215-379 — integration-тест покрывает queue/status, validation и idempotent duplicates для send/edit/delete."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "pointsAwarded": 1,
+      "evidence": [
+        "src/config.ts:23-24 — имя метода можно добавить через comma-separated allowlist.",
+        "src/services/registration-service.ts:95-103 — method-specific schema добавляется отдельной conditional-веткой, единого registry нет."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "README.md:106-158 — описаны action endpoints, payload examples, idempotency, queue и status flow.",
+        "HOWTOSETUP.md:713-790 — описаны edit/delete, inline_message_id, VALIDATION_ERROR и delivery statuses.",
+        "specs/modules/gateway/FEAT-102-delivery-and-retries.md:54-91 — зафиксированы payload constraints, stable error codes, retries и delivery fields."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/routes/bot-routes.ts:49-127 — сохранены auth-protected registration, action и delivery endpoints.",
+        "src/services/registration-service.ts:594-640 — сохраняются queue-first PENDING и idempotency duplicate/conflict.",
+        "src/services/delivery-service.ts:45-135,437-621 — сохранены due processing, stale-lock reclaim, retry, pacing и retry_after backoff."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/lib/errors.ts:5-25,37-60 — публичная ошибка содержит стабильные code/message/status envelope.",
+        "src/lib/errors.ts:28-35,54-60 — Prisma meta передаётся в client-visible details и может раскрывать внутренние constraint metadata."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/config.ts:23-24 — default allowlist ограничен sendMessage, editMessageText и deleteMessage.",
+        "src/services/registration-service.ts:564-570 — action допускается только при exact membership в effective allowlist.",
+        "src/services/admin-service.ts:29-39 — application allowlist ограничен global list, однако global list не проверяется по известному registry."
+      ]
+    }
+  ],
+  "total": 24,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "split-action-contract",
+      "summary": "Поддерживаемые методы не представлены единым registry: имена находятся в конфигурации, схемы — в literal conditional-ветках, а остальные методы проходят через generic schema.",
+      "evidence": [
+        "src/config.ts:23-24 — allowlist хранится как свободная строка.",
+        "src/services/registration-service.ts:36-104 — schemas и method dispatch реализованы отдельно, включая generic fallback."
+      ]
+    },
+    {
+      "severity": "major",
+      "rootCauseId": "arbitrary-method-config",
+      "summary": "При изменении OUTBOUND_METHOD_ALLOWLIST можно включить произвольное имя Telegram-метода, после чего generic worker передаст его upstream без schema/registry-проверки.",
+      "evidence": [
+        "src/config.ts:36-40,74 — значения allowlist принимаются без проверки against known methods.",
+        "src/services/registration-service.ts:89-103 — неизвестный method получает generic record schema.",
+        "src/services/delivery-service.ts:477-480 — worker вызывает current.action напрямую через generic callMethod."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "public-prisma-details",
+      "summary": "Обработчик ошибок возвращает Prisma meta клиенту, раскрывая внутренние сведения о database constraint.",
+      "evidence": [
+        "src/lib/errors.ts:28-35 — meta включается в AppError.details.",
+        "src/lib/errors.ts:54-60 — details сериализуется в публичный error response."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:31:59.000Z",
+  "durationMs": 403020,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-7e960c",
+  "scenario": "large",
+  "workspaceCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+  "setupCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+  "contractSha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-7e960c-a",
+      "total": 28,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "MainWindowViewModel.cs:324-345,824-840 owns query and filtering; filtering performs local collection updates only. IApplicationRuntime.cs:16-20,124-136 exposes no search or query-persistence API."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "ApplicationRuntimeSnapshot.cs:14-20 is the recent-recordings source. MainWindowViewModel.cs:770-820 reconciles snapshot data into stable item ViewModels, then derives FilteredRecentRecordings from that collection."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:232-290 covers query, reset, no-results and language changes; lines 292-353 cover rename and localization. LocalizationResourceContractTests.cs:98-143 checks bilingual references. There is no direct test for active-query snapshot refresh, active-query rename membership, or UI focus/accessibility semantics."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindowViewModel.cs:29 caps at five items; lines 770-820 preserve snapshot order, move existing items by SessionId, dispose removed items and insert new items; lines 824-840 derive filtered order without reordering."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Changed code references the existing FEAT-013 recent-recordings anchor in MainWindowViewModel.cs:318-323,381,1222-1227 and MainWindow.axaml:325. The project uses the established @spec convention and the existing FEAT-013 specification defines the search behavior."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindow.axaml:348-507 retains distinct empty, no-results and populated states with rename, transcription, open-folder, open-file and remove actions. MainWindowViewModel.cs:770-840 reapplies filtering after snapshot reconciliation, including rename-driven updates."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindow.axaml:330-340 gives the field a localized placeholder and AutomationProperties.Name; the clear button has a localized name, tooltip and command. Lines 362-379 provide a localized reset action in the no-results state. Strings.ru.axaml and Strings.en.axaml:91-96 provide both language states."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "RecentSearchQuery and FilteredRecentRecordings occur in the desktop ViewModel/XAML and tests only. MainWindowViewModel.cs:324-336,824-840 performs presentation-only filtering, with no logging, storage, runtime mutation or external call."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-7e960c-b",
+      "total": 27,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "RecentSearchQuery and filtering are confined to MainWindowViewModel.cs:324-345 and :824-840; no query field exists in the runtime snapshot or runtime interface."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "ReconcileRecentRecordings derives RecentRecordings from the runtime snapshot, while FilteredRecentRecordings is rebuilt from that collection; item Apply updates search text from display title, raw source and localized source (MainWindowViewModel.cs:770-840, :1169-1177)."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:233-290 covers basic title/application filtering, reset, no-results and language changes; separate rename coverage exists at :293-325. No direct search-specific refresh, active-query rename-membership, or UI accessibility test is present."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MaximumRecentItems is 5 and ReconcileRecentRecordings applies Take(MaximumRecentItems), preserves snapshot order, reuses items by SessionId, disposes removed items, and refreshes the filtered derivation (MainWindowViewModel.cs:29, :770-840)."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The change uses existing FEAT-013 and FEAT-010.A spec references in MainWindowViewModel.cs, MainWindow.axaml and MainWindowViewModelTests.cs; README.md:18 documents the existing @spec traceability rule."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Empty, filtered no-results, rename and row actions are represented in MainWindow.axaml:348-381 and :383-501; runtime snapshot refresh and rename delegation remain wired in MainWindowViewModel.cs:535-598 and :381-384. The loading presentation is incomplete."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The TextBox has a localized placeholder and AutomationProperties.Name, the clear Button has localized AutomationProperties.Name and tooltip, and the no-results reset action is named (MainWindow.axaml:330-340, :362-379). RU/EN resources exist at Strings.ru.axaml:93-96 and Strings.en.axaml:93-96."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The query is an in-memory MainWindowViewModel property and only rebuilds FilteredRecentRecordings; repository/runtime APIs expose no search-query parameter or persistence field (MainWindowViewModel.cs:324-345, :824-840; ApplicationRuntimeSnapshot.cs:14-22; IApplicationRuntime.cs:18-20)."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-7e960c-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-7e960c-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-7e960c-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

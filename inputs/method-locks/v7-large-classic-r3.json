@@ -1,0 +1,39 @@
+{
+  "blind": {
+    "reviewerId": null,
+    "reviewerWorkspace": null
+  },
+  "blindId": "vz-7e960c",
+  "branch": "v7/bc53d40d73e",
+  "condition": "classic-spec",
+  "firstPassOnly": true,
+  "productCanonPolicy": "reuse_v3_byte_for_byte_no_regeneration_no_future_task",
+  "productCanonSourceCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+  "productCanonSourceTree": "a62324590cc8f9c998baba32dc9a0137d8c59f2c",
+  "replica": 3,
+  "runId": "v7-large-classic-r3",
+  "scenario": "large-project",
+  "setup": {
+    "exactStageRevision": null,
+    "hostedProjectId": null,
+    "kind": "frozen_v3_setup_commit",
+    "setupCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+    "setupFingerprint": "4f898c44af29c8a0b9352cc9a1636346d8b3ed1c4b7677c8c1acbb1ff7d75e7d",
+    "setupTree": "a62324590cc8f9c998baba32dc9a0137d8c59f2c",
+    "status": "ready_for_measured_execution"
+  },
+  "setupLineageId": "v7-large-classic-spec",
+  "sourceBaselineCommit": "54bcb6c9cdf8b2a763285f1b187913c0c6507b8c",
+  "sourceBaselineTree": "5f7d90b06735388fab69dba1cf817f9d00cbd5eb",
+  "sourceV3SetupCell": "v3-large-classic-r1",
+  "sourceV3SetupCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+  "sourceV3SetupFingerprint": "4f898c44af29c8a0b9352cc9a1636346d8b3ed1c4b7677c8c1acbb1ff7d75e7d",
+  "sourceV3SetupTree": "a62324590cc8f9c998baba32dc9a0137d8c59f2c",
+  "status": "ready_for_dispatch",
+  "task": {
+    "dispatchedAt": null,
+    "hostId": null,
+    "taskId": null,
+    "workspace": null
+  }
+}

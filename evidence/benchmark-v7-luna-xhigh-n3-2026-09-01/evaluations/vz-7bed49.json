@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 3,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-7bed49",
+  "scenario": "small",
+  "phase": "first_pass",
+  "evaluatorVersion": "3.0.0",
+  "harnessCommit": "10065386fb43e22c2065d6a1049af29f7a10a139",
+  "workspaceCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+  "setupCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "42eaa99ed2f66e4c3fa9b7d78845287ee027e0790665e8edf07f8d05e8574cbc",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "42eaa99ed2f66e4c3fa9b7d78845287ee027e0790665e8edf07f8d05e8574cbc",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "42eaa99ed2f66e4c3fa9b7d78845287ee027e0790665e8edf07f8d05e8574cbc",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "S3-A01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 9,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A04",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A05",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A06",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A07",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A08",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A09",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A10",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: npm test",
+        "repetition 2: npm test",
+        "repetition 3: npm test"
+      ]
+    },
+    {
+      "id": "S3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: npm run build",
+        "repetition 2: npm run build",
+        "repetition 3: npm run build"
+      ]
+    },
+    {
+      "id": "S3-B03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: real PostgreSQL integration and hidden API harness",
+        "repetition 2: real PostgreSQL integration and hidden API harness",
+        "repetition 3: real PostgreSQL integration and hidden API harness"
+      ]
+    },
+    {
+      "id": "S3-C01",
+      "status": "partial",
+      "pointsAwarded": 5,
+      "maxPoints": 6,
+      "evidence": [
+        "Method-specific Zod schemas and validateOutboundPayload form a recognizable boundary in src/services/registration-service.ts:39-104, and validation occurs before creation at lines 594-600. Coverage is incomplete because sendMessage has no method schema.",
+        "Method-specific validation is isolated in validateOutboundPayload at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/src/services/registration-service.ts:39-105 and runs before delivery creation at lines 594-609."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 4,
+      "evidence": [
+        "The route and worker remain generic at src/routes/bot-routes.ts:97-116 and src/services/delivery-service.ts:477-481. The contract has two sources: the allowlist is defined in src/config.ts:23 while schemas are selected by conditionals in src/services/registration-service.ts:95-104.",
+        "The route and worker keep generic contracts at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/src/routes/bot-routes.ts:27-37 and src/services/delivery-service.ts:477-480. However, the allowlist comes from free-form configuration at src/config.ts:23, while method schemas are separate constants and branches in src/services/registration-service.ts:39-104; there is no unified method registry."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 4,
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:95-420 covers queueing, edit/delete validation and idempotency. Direct unit files cover crypto, retry and Telegram helpers; none directly exercise outbound action validation, queueing or idempotency, and invalid sendMessage is absent.",
+        "The integration test covers queueing, worker delivery, validation, duplicate reuse and conflict handling at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/test/integration/gateway.integration.test.ts:95-365 and 371-420. Direct unit tests cover retry and Telegram transport, but do not directly test outbound validation, queueing or idempotency."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "status": "partial",
+      "pointsAwarded": 1,
+      "maxPoints": 3,
+      "evidence": [
+        "There is no unified method registry. A validated method extension requires coordinated edits to src/config.ts:23 and the conditional validator in src/services/registration-service.ts:95-104; merely allowlisting a method causes its payload to bypass method validation.",
+        "Adding a method does not require route or worker changes, but there is no registry/schema extension point. The allowlist is configured separately at src/config.ts:23 and method validation requires another branch in src/services/registration-service.ts:95-104."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md:108-166 documents authentication, all three methods, request payload examples, Idempotency-Key, 202/200 behavior, VALIDATION_ERROR and delivery polling. specs/modules/gateway/FEAT-106-message-mutations.md supplies detailed constraints and terminal status behavior.",
+        "README.md:106-166 documents the action route, methods, payload examples, validation, idempotency, 202/200 behavior and status polling. HOWTOSETUP.md:695-809 adds curl examples, failure guidance, retry/status states and allowlist configuration."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "The existing authenticated versioned route, shared PENDING delivery model, status endpoint and generic worker/retry path remain in use. The objective receipt also records all unit and build repetitions passing.",
+        "Application authentication and registration scoping remain enforced by the route pre-handler and service queries at src/routes/bot-routes.ts:97-128 and src/services/registration-service.ts:578-592,654-665. Queue-first 202/PENDING behavior is at lines 597-645; retry, retry_after and dispatch pacing remain in src/services/delivery-service.ts:455-590."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "src/lib/errors.ts:54-60 consistently returns code, message, details and requestId. Public delivery output in src/lib/public-models.ts:38-53 contains operational delivery fields and no credentials; the reviewed new error details expose field or method information only.",
+        "The stable machine-readable envelope with code, message, details and requestId is preserved at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/src/lib/errors.ts:40-62. New action errors use stable AppError codes and do not include bot tokens."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "src/services/registration-service.ts:570-576 requires membership in the effective allowlist. src/services/admin-service.ts:29-36 rejects application allowlist entries outside the configured global set.",
+        "The default allowlist contains only sendMessage, editMessageText and deleteMessage at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/src/config.ts:23, and submissions are rejected when absent from the effective allowlist at src/services/registration-service.ts:570-576."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-7bed49-a",
+      "total": 22,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Method-specific Zod schemas and validateOutboundPayload form a recognizable boundary in src/services/registration-service.ts:39-104, and validation occurs before creation at lines 594-600. Coverage is incomplete because sendMessage has no method schema."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The route and worker remain generic at src/routes/bot-routes.ts:97-116 and src/services/delivery-service.ts:477-481. The contract has two sources: the allowlist is defined in src/config.ts:23 while schemas are selected by conditionals in src/services/registration-service.ts:95-104."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:95-420 covers queueing, edit/delete validation and idempotency. Direct unit files cover crypto, retry and Telegram helpers; none directly exercise outbound action validation, queueing or idempotency, and invalid sendMessage is absent."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "There is no unified method registry. A validated method extension requires coordinated edits to src/config.ts:23 and the conditional validator in src/services/registration-service.ts:95-104; merely allowlisting a method causes its payload to bypass method validation."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:108-166 documents authentication, all three methods, request payload examples, Idempotency-Key, 202/200 behavior, VALIDATION_ERROR and delivery polling. specs/modules/gateway/FEAT-106-message-mutations.md supplies detailed constraints and terminal status behavior."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The existing authenticated versioned route, shared PENDING delivery model, status endpoint and generic worker/retry path remain in use. The objective receipt also records all unit and build repetitions passing."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/lib/errors.ts:54-60 consistently returns code, message, details and requestId. Public delivery output in src/lib/public-models.ts:38-53 contains operational delivery fields and no credentials; the reviewed new error details expose field or method information only."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/services/registration-service.ts:570-576 requires membership in the effective allowlist. src/services/admin-service.ts:29-36 rejects application allowlist entries outside the configured global set."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-7bed49-b",
+      "total": 24,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "Method-specific validation is isolated in validateOutboundPayload at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/src/services/registration-service.ts:39-105 and runs before delivery creation at lines 594-609."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The route and worker keep generic contracts at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/src/routes/bot-routes.ts:27-37 and src/services/delivery-service.ts:477-480. However, the allowlist comes from free-form configuration at src/config.ts:23, while method schemas are separate constants and branches in src/services/registration-service.ts:39-104; there is no unified method registry."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The integration test covers queueing, worker delivery, validation, duplicate reuse and conflict handling at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/test/integration/gateway.integration.test.ts:95-365 and 371-420. Direct unit tests cover retry and Telegram transport, but do not directly test outbound validation, queueing or idempotency."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "Adding a method does not require route or worker changes, but there is no registry/schema extension point. The allowlist is configured separately at src/config.ts:23 and method validation requires another branch in src/services/registration-service.ts:95-104."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:106-166 documents the action route, methods, payload examples, validation, idempotency, 202/200 behavior and status polling. HOWTOSETUP.md:695-809 adds curl examples, failure guidance, retry/status states and allowlist configuration."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Application authentication and registration scoping remain enforced by the route pre-handler and service queries at src/routes/bot-routes.ts:97-128 and src/services/registration-service.ts:578-592,654-665. Queue-first 202/PENDING behavior is at lines 597-645; retry, retry_after and dispatch pacing remain in src/services/delivery-service.ts:455-590."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The stable machine-readable envelope with code, message, details and requestId is preserved at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/src/lib/errors.ts:40-62. New action errors use stable AppError codes and do not include bot tokens."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The default allowlist contains only sendMessage, editMessageText and deleteMessage at C:/Users/nikit/devdev/prist-benchmark-control/evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-7bed49/src/config.ts:23, and submissions are rejected when absent from the effective allowlist at src/services/registration-service.ts:570-576."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 0,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 14,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 13,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "totalScore": 37,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-7bed49-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/routes/bot-routes.ts:37 accepts any object; src/services/registration-service.ts:95-104 returns sendMessage payloads unchanged; delivery creation follows at lines 594-610."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-7bed49-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The direct test files cover crypto, retry and Telegram helper behavior. test/integration/gateway.integration.test.ts:371-419 checks invalid editMessageText and deleteMessage payloads only."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-7bed49-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/config.ts:23 and src/services/registration-service.ts:39-104."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-7bed49-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:95-420 contains the relevant scenarios; direct unit tests do not cover registration-service action behavior."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-7bed49-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/services/registration-service.ts:95-104."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

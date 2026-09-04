@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-9c8087",
+  "scenario": "new",
+  "workspaceCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "setupCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-9c8087-a",
+      "total": 22,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 5,
+          "evidence": [
+            "Responsibilities are separated into focused rendering, state-transition, normalization, and persistence functions. They remain collected in one global browser script, which modestly limits isolation."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The books array is the coherent in-memory source of truth; every book carries one validated status, and persistence serializes the same records."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No direct tests cover adding, transitions, or persistence, and no test command exists."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Stable ids, a versioned storage key, normalized records, and centralized status metadata support ordinary extensions. normalizeBook() reconstructs a fixed field set and there is no explicit schema migration path."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README accurately documents the Node prerequisite, dependency-free local start, URL, persistence behavior, Docker absence, and syntax-check command. It provides no actual test or build workflow."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The requested personal reading-list scope is present, with only closely related additions such as counts, progress, deletion, and reset."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Inputs have explicit labels, native controls provide a complete keyboard path, interactive elements have visible focus treatment, validation moves focus appropriately, and each column has a Russian empty state."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Storage contains only book records in localStorage. The application has no dependencies, credentials, remote services, elevated permissions, or external runtime calls."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-9c8087-b",
+      "total": 24,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js owns application state, persistence, rendering, and event handlers; index.html defines the interface; server.js serves static files. loadBooks/saveBooks isolate localStorage access, while render/renderBoard handle DOM updates."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The single books array is initialized from loadBooks. Each book carries its status, renderBoard derives columns from that array, and addBook/moveBook/removeBook/resetBooks update the same records before saveBooks persists them."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "package.json contains only start and check scripts; check runs node --check on app.js and server.js. The normalized workspace contains no direct product test suite. The receipt’s hidden-browser checks are harness checks rather than project-owned direct tests."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The data model is centralized in normalizeBook, statuses are centralized in STATUS_META, and board rendering is data-driven. Extending persisted book fields requires edits because normalizeBook reconstructs a fixed field set and STORAGE_KEY is v1 without migration handling."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md accurately documents Node.js 18+, npm start, the local URL, stopping the server, localStorage, absence of dependencies/Docker, and npm run check. It does not explicitly document an install or build step; package.json exposes no install/build workflow."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "index.html and app.js implement title/author entry, the three visible Russian state headings, status changes, local persistence, validation, and Russian user messages. The extra summary, progress, delete, reset, and toast features remain within reading-list scope."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Inputs and the status selector have associated labels, native controls provide a keyboard path, styles.css defines focus treatment, app.js focuses the missing required field and exposes role=alert feedback, and createEmptyState supplies usable empty-column messages."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Persistence uses one localStorage key for book data. The supplied project is a local Node static server with no external service integration, credentials, secrets, or unsafe permissions."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-9c8087-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "package.json contains start and syntax-check scripts only; the workspace has no test files, and the frozen receipt reports the required test command missing in every repetition."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-9c8087-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The check script runs node --check against two files. The frozen receipt consistently classifies build/typecheck as missing, and README documents no build procedure."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-9c8087-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The storage key is versioned, while normalizeBook() rebuilds only the current fixed fields. Future persisted fields require coordinated normalization changes."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-9c8087-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-9c8087-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-9c8087-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

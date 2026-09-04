@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-71b802",
+  "scenario": "large",
+  "workspaceCommit": "54bcb6c9cdf8b2a763285f1b187913c0c6507b8c",
+  "setupCommit": "54bcb6c9cdf8b2a763285f1b187913c0c6507b8c",
+  "contractSha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-71b802-a",
+      "total": 28,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "RecentSearchQuery and filtering are local MainWindowViewModel state; the setter performs no runtime or persistence call (MainWindowViewModel.cs:313-325, 814-831)."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "RecentRecordings is derived from snapshot.RecentRecordings through _allRecentRecordings and ApplyRecentFilter (MainWindowViewModel.cs:761-831)."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:233-268 covers title/app filtering, no matches, and clear. Direct coverage for refresh, rename under an active query, and search-specific accessibility/localization is absent; localization tests are generic (LocalizationResourceContractTests.cs:51-160)."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MaximumRecentItems is five, snapshot order is preserved, removed items are disposed, and filtered rows reuse the same item ViewModels (MainWindowViewModel.cs:29, 761-810)."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Existing @spec annotations are retained on the presentation ViewModel and its tests (MainWindowViewModel.cs:17-25; MainWindowViewModelTests.cs:8-12)."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "XAML retains history-empty, filtered-empty, row actions, and item presentation states; snapshot and rename flows are reconciled in MainWindowViewModel.cs:761-831."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Search field and clear button have localized DynamicResource text, automation names, tooltip semantics, and standard focusable controls (MainWindow.axaml:334-350; Strings.ru.axaml:91-96; Strings.en.axaml:91-96)."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The query appears only in MainWindowViewModel presentation state and XAML binding; filtering does not call runtime persistence or external services (MainWindowViewModel.cs:313-325, 814-831)."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-71b802-b",
+      "total": 28,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "MainWindowViewModel.cs:57,313-325 stores query only in presentation state and filters locally.",
+            "Workspace search found no runtime, persistence, logging, or external-call usage of RecentSearchQuery."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindowViewModel.cs:526-590 applies ApplicationRuntimeSnapshot.",
+            "MainWindowViewModel.cs:761-829 derives the visible collection from snapshot.RecentRecordings and the local query."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:233-268 covers query, zero matches, clear, and restore.",
+            "MainWindowViewModelTests.cs:271-331 covers rename and language change.",
+            "No visible direct product test covers runtime snapshot refresh or clear-control accessibility; the frozen hidden-search run fails in all three repetitions during resource discovery."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindowViewModel.cs:29 and 761-810 enforce MaximumRecentItems, preserve snapshot order, and reconcile item lifecycle.",
+            "Removed items are disposed at MainWindowViewModel.cs:767-775."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindowViewModel.cs and ApplicationRuntime.cs use the project's existing spec:// traceability comments.",
+            "No benchmark-specific method, condition, or canonical traceability scheme appears in the normalized product files."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindow.axaml:353-505 keeps empty, no-results, item actions, and filtered collection states distinct.",
+            "MainWindowViewModel.cs:526-590 and 761-831 preserve refresh and rename behavior.",
+            "The objective receipt reports visual-smoke exitCode 0 in all three repetitions."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindow.axaml:335-350 provides a named search field, dynamic placeholder, named clear button, tooltip, and command binding.",
+            "Strings.ru.axaml and Strings.en.axaml:91-96 provide matching RU/EN field, clear, and no-results copy."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "RecentSearchQuery is referenced only by MainWindow.axaml, MainWindowViewModel.cs, and desktop tests.",
+            "No storage, logging, runtime mutation, or external-call path consumes the query."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-71b802-a-finding-1",
+      "severity": "note",
+      "title": "Search harness fails before behavior execution",
+      "evidence": [
+        "Objective receipt repetitions 1-3 report hidden-search exitCode 1 with 'A bilingual no-results resource was not found'."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-71b802-a-finding-2",
+      "severity": "note",
+      "title": "Direct feature-test coverage is incomplete",
+      "evidence": [
+        "MainWindowViewModelTests.cs:233-268 contains the only search-focused ViewModel test; LocalizationResourceContractTests.cs:51-160 provides catalog-wide checks."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-71b802-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The objective receipt reports hidden-search exitCode 1 in repetitions 1, 2, and 3.",
+        "The reported failure is 'A bilingual no-results resource was not found'.",
+        "The product contains Search.Empty RU/EN resources and corresponding DynamicResource bindings, but the exact hidden matching rule is unavailable within the blind package."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-71b802-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "Visible desktop tests cover query, clear behavior, rename, and language change.",
+        "No visible direct test asserts active-query refresh behavior or clear-control accessibility metadata."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

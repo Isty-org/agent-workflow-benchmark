@@ -1,0 +1,461 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-7bed49",
+  "branch": "v7/b1f1f2c5984",
+  "capturedAt": "2026-09-02T10:39:20.091Z",
+  "condition": "classic-spec",
+  "cost": {
+    "activationCanaryUsd": 0,
+    "baselineCanonUsd": 0,
+    "externalEvaluationUsd": 0,
+    "fullCycleUsd": 8.02524736,
+    "lateChangeTaskUsd": 8.02524736,
+    "methodInstallUsd": 0,
+    "organizerProvisioningUsd": 0,
+    "taskOnlyUsd": 8.02524736
+  },
+  "fidelity": {
+    "evidencePath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/lifecycle/v7-small-classic-r1.json",
+    "status": "pending"
+  },
+  "interventions": {
+    "answers": [],
+    "clarifications": 0,
+    "repairTurns": 0
+  },
+  "quality": {
+    "evaluationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/checks/v7-small-classic-r1.json",
+    "findings": [],
+    "officialScore": null,
+    "rawScore": null
+  },
+  "replica": 1,
+  "runId": "v7-small-classic-r1",
+  "scenario": "small-project",
+  "schemaVersion": 1,
+  "setup": {
+    "commit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+    "fingerprint": "",
+    "lineageId": "v7-small-classic-spec",
+    "tree": "50e740dfcba9591c8add0905b4b8c93972df1b9f"
+  },
+  "snapshot": {
+    "fileHashes": [
+      {
+        "path": ".agentsignore",
+        "sha256": "10374b5c0e810c3f9127fe7cd377f0abfebf8be50771a4fe3e8740fa2a1dea30"
+      },
+      {
+        "path": ".env.example",
+        "sha256": "fe0ff575a653daa194b86973d40746d9b514ae087f9db6f9c04f896550d0829a"
+      },
+      {
+        "path": ".gitattributes",
+        "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "33642bc0e4d67bef9c488d52a06273a3a7aeb691c74b15f4978ab68cdaab9795"
+      },
+      {
+        "path": ".human/README.spec-workflow.md",
+        "sha256": "2aef7109e85776ab02f9bf647929f338675991fbd7871f43e66da9131064aa70"
+      },
+      {
+        "path": ".human/adopt-existing-project-agent.md",
+        "sha256": "1a07c8ae5551560129c75ec49cbd761aef91e44e0c307f35f5e93084e1f15ca9"
+      },
+      {
+        "path": ".human/adopt-existing-project-human.md",
+        "sha256": "b52de5d5b19d1777956d4e70359578a4ddd4dce83e5aabbc10aa01cac3bcf422"
+      },
+      {
+        "path": ".human/how-it-works.md",
+        "sha256": "c34db56239caef13de83e3905993e24ab9e20a6f2546bf7e5fd7b8fe27d64d47"
+      },
+      {
+        "path": ".human/shortcuts.md.template",
+        "sha256": "b443b92c77ac971d3063a453e664db90632af19ebc7689751fa0ca5c19e93c10"
+      },
+      {
+        "path": ".human/start-project-instruction.md",
+        "sha256": "7f5e1d476d93398fbfc6ded64002347db5bb09208d913cadcf3231195f48089e"
+      },
+      {
+        "path": ".human/templates/AGENTS.md",
+        "sha256": "186f02aa0037564620c419e02e703c5a8228c9780fd902f3f4cf300837a51449"
+      },
+      {
+        "path": ".human/templates/CLAUDE.md",
+        "sha256": "186f02aa0037564620c419e02e703c5a8228c9780fd902f3f4cf300837a51449"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "186f02aa0037564620c419e02e703c5a8228c9780fd902f3f4cf300837a51449"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "186f02aa0037564620c419e02e703c5a8228c9780fd902f3f4cf300837a51449"
+      },
+      {
+        "path": "HOWTOSETUP.md",
+        "sha256": "deb1e610d75cbbfcf20c8b9b57b7602022f81f17cd6ac5e144b4fec6aaaddcc0"
+      },
+      {
+        "path": "README.md",
+        "sha256": "38253c33bca450ffe15cd980eb60715373b0e1c3d267f753092f8b768eb7a2cc"
+      },
+      {
+        "path": "TZ-telegram-gateway-service.md",
+        "sha256": "a029212636edf90554cde5e4da5575cfdd352fd231046a131972fde7e044a133"
+      },
+      {
+        "path": "docker-compose.integration.yml",
+        "sha256": "d3820047c3c7709110adcc43995405180f52592cfce639095c3c255000f2790f"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "691975948578e32747ab7564f1b801ae83ddcee2e500c57c3602bd7d4cd0c84c"
+      },
+      {
+        "path": "package.json",
+        "sha256": "22c7be5a404b7d5998e80f195199f75d8adce0f5eed22ac80203df95c2e1be5b"
+      },
+      {
+        "path": "prisma/migrations/20260420202800_init/migration.sql",
+        "sha256": "d9fe79f8b9cfd6b743c5c1630016a9d0818c3ddd48e7f0cc019fcec504918b80"
+      },
+      {
+        "path": "prisma/migrations/migration_lock.toml",
+        "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7"
+      },
+      {
+        "path": "prisma/schema.prisma",
+        "sha256": "6c2c9c6e7c846286e250d462840d981f7ce1f0d69022af155216efe632dc2d04"
+      },
+      {
+        "path": "scripts/run-integration-tests.js",
+        "sha256": "c64e221d2dbd393e3037d23501c31749b06369390ee2d35a09aef5360241ace5"
+      },
+      {
+        "path": "specs/.me",
+        "sha256": "d8e2b935e0825d7cc97d9b5261bb52932be391b4cbd3a86fdb6b52fd8718958c"
+      },
+      {
+        "path": "specs/.me.template",
+        "sha256": "5d833421c378db40f52b8b6ac5d88af1f44c630786d9c73336a6e6950afbe28e"
+      },
+      {
+        "path": "specs/BOARD.md",
+        "sha256": "7009025e1ef9fe20db85fb7ea2ce3d1708bd43eb5c4633904a11cfb070a203cf"
+      },
+      {
+        "path": "specs/SPEC-MAP.md",
+        "sha256": "a6770eb6341ac2f5cce1baffcb5a4f6c197d53fbdeb239a6cdb4878d4aab8756"
+      },
+      {
+        "path": "specs/TECHDEBT.md",
+        "sha256": "a8e590fb7722811568cbb0b98a72294d46a9cf2225805d50479ba66b2359020c"
+      },
+      {
+        "path": "specs/WAL.md",
+        "sha256": "c7ead861e3476772b65204db8a0aa75d54c727ed39bcc2c121d498de159fd812"
+      },
+      {
+        "path": "specs/WORKFLOW.md",
+        "sha256": "47efcd3b15f57b6b711e15bc8b59202e61ce4b93642d162f8aaba1cd557836be"
+      },
+      {
+        "path": "specs/common/PROP-000.md",
+        "sha256": "b1d2c67c225c0fceaee43d1e283082e8dd8a14bdc415e8faccc84fed5a74d421"
+      },
+      {
+        "path": "specs/common/PROP-001-DATA.md",
+        "sha256": "12837612c1930129cc290a00e4d46056bb432342364eaa896b115dea81154235"
+      },
+      {
+        "path": "specs/common/PROP-002-STACK.md",
+        "sha256": "cd558eefbca26c65ef54764c1e2650f49214e006201041a70f33ba1ff36fadb4"
+      },
+      {
+        "path": "specs/common/PROP-003-UI.md",
+        "sha256": "0b0ac741982d5112ff48713af19401f1237b4277b3b488f1c1466cc04d0d5b5b"
+      },
+      {
+        "path": "specs/common/PROP-004-PRODUCT.md",
+        "sha256": "cf21dd564d9a680eb1f03277370bbdb9fa84f286107457cc9dcc6665083c2c5b"
+      },
+      {
+        "path": "specs/common/PROP-005-RUNTIME.md",
+        "sha256": "49d4ef6b6bf78fd47160b29571a06d3ae16c756aebf71912208f6ff1fc10d375"
+      },
+      {
+        "path": "specs/common/PROP-006-API.md",
+        "sha256": "e99092c806e1851d1efa9330fb3e73f87d3b408b70094e7f8fc1291548b2ce2f"
+      },
+      {
+        "path": "specs/common/main.md",
+        "sha256": "572cfccbcd1ae0fc16284d213723bbd09d58c256a28f63a9d58289bf3669ec96"
+      },
+      {
+        "path": "specs/common/structure.md",
+        "sha256": "83878dc279955feda06a3997cb696cd93024c65d384ca8a649e270a2bc93633d"
+      },
+      {
+        "path": "specs/examples/FEAT-900-account-lifecycle.example.md",
+        "sha256": "1cec559d9a6528d958bae86512ca4c66c4d24ea34c37ba21d4d8189a8c9d35f8"
+      },
+      {
+        "path": "specs/examples/FEAT-901-example-product-capability.md",
+        "sha256": "2b660760a7d056b033abb77e47eccb92f2b2cdc9196c9ebe1eb00d8a644abca6"
+      },
+      {
+        "path": "specs/examples/INFRA-900-example-runtime-baseline.md",
+        "sha256": "6f5cf245344b49ab3ee851b2523376d01a1ed47528f533e321b974ee57c372aa"
+      },
+      {
+        "path": "specs/modules/gateway/FEAT-101-admin-control-plane.md",
+        "sha256": "a4492f30b3ee633801aa93d8a2118efd760c7ec3b03865c0281558ab63231707"
+      },
+      {
+        "path": "specs/modules/gateway/FEAT-102-bot-registration.md",
+        "sha256": "8ca420b8f57db603d27225dd4a6437626ca70e528536828877953c723324d386"
+      },
+      {
+        "path": "specs/modules/gateway/FEAT-103-inbound-relay.md",
+        "sha256": "294da521ac41b427854e07271d3c3fb31d9142cfdb77af14a6f26716461def3f"
+      },
+      {
+        "path": "specs/modules/gateway/FEAT-104-outbound-delivery.md",
+        "sha256": "9b872ace9016cd345ab73c8806b6bcc5892ff0efc9c4431ff8c26bd87328126b"
+      },
+      {
+        "path": "specs/modules/gateway/FEAT-105-istina-compatibility.md",
+        "sha256": "c2e1a3f979ec8a8677750bc0196c0cc74e7419a1082021a58b62b26ed4491de6"
+      },
+      {
+        "path": "specs/modules/gateway/FEAT-106-message-mutations.md",
+        "sha256": "7beaa1094645265d5d4eecd3a44074d6b01054ae39378e379c80e2d721718a2d"
+      },
+      {
+        "path": "specs/modules/gateway/INFRA-101-deployment-baseline.md",
+        "sha256": "9df8fb06b470de4199ae10d5820a2602a14c341b7cab095fb1ed4d31830bd1e3"
+      },
+      {
+        "path": "specs/modules/gateway/PROP-100-gateway-module.md",
+        "sha256": "e6cfc2523823dbf538a748488d7c3c4e13d0e2e1553825bc09a49e61dd6214d4"
+      },
+      {
+        "path": "specs/protocols/BOARD-PROTOCOL.md",
+        "sha256": "d8bc6eacd844010b66986ecff998c4f81b536bfea4035e19e9024dd4905a2db9"
+      },
+      {
+        "path": "specs/protocols/BOOT.md",
+        "sha256": "652ae2483d9014cee7de6ccd74b53185b0de8c1661b50a3ceeb3ea290c2111c3"
+      },
+      {
+        "path": "specs/protocols/SPEC-AUTHORING-PROTOCOL.md",
+        "sha256": "af3bd5bd0c0db6c8438b4d6dd505e510926a444d0e0e1db002c86e081c7a074a"
+      },
+      {
+        "path": "specs/protocols/SPEC-PROTOCOL.md",
+        "sha256": "813ecb5dab42c7ab4db50c92674bc0ec9619e159c50e7f41500bc7528e424f12"
+      },
+      {
+        "path": "specs/protocols/TECHDEBT-PROTOCOL.md",
+        "sha256": "6a4c73c4559425130943c3276f60131ca1671b7d173a4b8145cb82b9f1859675"
+      },
+      {
+        "path": "specs/protocols/WAL-PROTOCOL.md",
+        "sha256": "90d41e4a3888948276417b22326d6683703baa76f249f7cc48635307621854af"
+      },
+      {
+        "path": "specs/protocols/WORK-ITEM-PROTOCOL.md",
+        "sha256": "ad00c415edc345a6b1cf85183c9864c055c4608981cb5a52b6efc7a8652f9765"
+      },
+      {
+        "path": "specs/work/README.md",
+        "sha256": "58eb75ea920f922d5e191da1da1667f1ead4b3a9f24c3e291fee8d923972dfee"
+      },
+      {
+        "path": "specs/work/archive/2026/WI-001-repository-baseline.md",
+        "sha256": "e023caf03c515a8d90507c271f0efc2cebc3eb364864a836271342c2f0ea03b5"
+      },
+      {
+        "path": "specs/work/archive/2026/WI-002-message-mutations.md",
+        "sha256": "391a69faf438014f281ad774dc878a7659ebc4b697cc83b3ff2225969a51afd7"
+      },
+      {
+        "path": "src/app.ts",
+        "sha256": "7ea27b7a8789a9f03eae8a5b48c2082cea91242768b84000b0f949f1ebde3145"
+      },
+      {
+        "path": "src/config.ts",
+        "sha256": "bd092ea65c6e3c2177bff631c1baa3b98d67d03634c6a5ca58c7904e685afb79"
+      },
+      {
+        "path": "src/fastify.d.ts",
+        "sha256": "12bf4921bdb6ade9c5cdb9049992536f99d6a99e308582c86c82429a5df8319e"
+      },
+      {
+        "path": "src/lib/crypto.ts",
+        "sha256": "6d6e009de21c4c7e24790fe362d6733faf4f58b2ccf08b5363480817e05a895b"
+      },
+      {
+        "path": "src/lib/errors.ts",
+        "sha256": "6d2761a4e7dfeb11e19852d4f2fc25dde452ed9900dafaed96c9f17dd8686e99"
+      },
+      {
+        "path": "src/lib/metrics.ts",
+        "sha256": "05697b8a4e6b2e006b741f7af5cc211a9d8dd7bef4fb32532fd892be1cf326f3"
+      },
+      {
+        "path": "src/lib/public-models.ts",
+        "sha256": "7322f3da93c692ef8cff703d4ebb0a4ee8a0e3126675c4a29d26738fc886d02b"
+      },
+      {
+        "path": "src/lib/retry.ts",
+        "sha256": "9b018eba730529b2ad50123fd8128f6c3c2b76f96bff9c38770871e6b520a9a3"
+      },
+      {
+        "path": "src/plugins/auth.ts",
+        "sha256": "95d1e84a47a968d645b593f361119f06b29c2d375704194677d5b6d530356a44"
+      },
+      {
+        "path": "src/routes/admin-routes.ts",
+        "sha256": "5c4c9386ff7fc3d57af7ee562bc261d984cefc65ad14d5b54947281b23536bc0"
+      },
+      {
+        "path": "src/routes/admin-ui-routes.ts",
+        "sha256": "10a24c6f9869300083ea373900a1a280bc67c7401af08658cab8db88070a4e95"
+      },
+      {
+        "path": "src/routes/bot-routes.ts",
+        "sha256": "e63ea1e6a88e4b3938886689b253f28b38e63af582f7c5e97a4ab1ad1b72162a"
+      },
+      {
+        "path": "src/routes/health-routes.ts",
+        "sha256": "2cc977c082d2f3408e28663a6856014302f6ff1eb66151d17ef6c67681496b4d"
+      },
+      {
+        "path": "src/routes/ingress-routes.ts",
+        "sha256": "e40f23c0cf2456f21e91c06185ab13d6644f4bc2a7f0f53329ee5e10023b0b49"
+      },
+      {
+        "path": "src/routes/istina-compat-routes.ts",
+        "sha256": "dc02f27f2846c686e5f6fc7d9c484cb8a4454351f6d9d5f09f74d99d59d48cf0"
+      },
+      {
+        "path": "src/server.ts",
+        "sha256": "021b64b70445b29546b27802af8d4ada34f2bfc2722e687fc5b7c06bea9c35dd"
+      },
+      {
+        "path": "src/services/admin-service.ts",
+        "sha256": "4ac0e2be86682408dcb33fe7357842cb57617b1293c327e97eac02fbfb58fab4"
+      },
+      {
+        "path": "src/services/audit-service.ts",
+        "sha256": "151e0e62aaaaeff632f6f5adbcd085a91c38ce2ed6519fb89455a60f0dc61276"
+      },
+      {
+        "path": "src/services/delivery-service.ts",
+        "sha256": "f73f17604175d4d67591dd8fc4952d77308401564752938983f3b6500baa6b02"
+      },
+      {
+        "path": "src/services/registration-service.ts",
+        "sha256": "1ad69080a63933c8f0b2b4a69274f58a96a6c3d6b6a3d6137a22c7d2ea0d2bca"
+      },
+      {
+        "path": "src/services/telegram-service.ts",
+        "sha256": "f11c6855378acc44a77b36a8e2b8004a91f5440eb3ccdd2c7502128facd911bd"
+      },
+      {
+        "path": "src/services/worker-service.ts",
+        "sha256": "645420d123c5ae4e0277b150b4068539247a399fb704bc668c88ac335917ba48"
+      },
+      {
+        "path": "test/crypto.test.ts",
+        "sha256": "e7400aee3e955431dc337c49e090a9da2efb672efb1010f201f585cc2f008103"
+      },
+      {
+        "path": "test/integration/gateway.integration.test.ts",
+        "sha256": "ca8f1d6e6f9da4e14de0f9ccc340707fa3c1be751def4ea3688e14bcd5b9a07b"
+      },
+      {
+        "path": "test/integration/test-helpers.ts",
+        "sha256": "00251037a904f622bcbb2fa5e8f4cabed4f25c61c3ffb8b6455d17cc9d57c40e"
+      },
+      {
+        "path": "test/retry.test.ts",
+        "sha256": "bb8a5a945ae8ea70c954b145d43bbeb2a7ca0017a67e99b7c4f544b4f451e9b2"
+      },
+      {
+        "path": "test/telegram-service.test.ts",
+        "sha256": "bb1b97da18f7947a31e4ead88e519b5d2f94c4e4fed33a0139814f86cff34bda"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "a200a0b15cb5af3a8195833e2478b2740ceafe464b047dc860395a61d3e995b8"
+      }
+    ],
+    "head": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+    "immutableCopyPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/first-pass/v7-small-classic-r1-da18fca8e36539e9e5e4257f61414b6dae015e410ff8ebd079921ba452125231.bundle",
+    "status": "M .env.example\n M HOWTOSETUP.md\n M README.md\n M TZ-telegram-gateway-service.md\n M specs/BOARD.md\n M specs/SPEC-MAP.md\n M specs/common/PROP-002-STACK.md\n M src/config.ts\n M src/routes/bot-routes.ts\n M src/services/registration-service.ts\n M test/integration/gateway.integration.test.ts\n M test/integration/test-helpers.ts\n?? specs/modules/gateway/FEAT-106-message-mutations.md\n?? specs/work/archive/2026/WI-002-message-mutations.md",
+    "tree": "50e740dfcba9591c8add0905b4b8c93972df1b9f"
+  },
+  "snapshotId": "da18fca8e36539e9e5e4257f61414b6dae015e410ff8ebd079921ba452125231",
+  "task": {
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "hostId": "local",
+    "infrastructureRetryIndex": 0,
+    "repairTurns": 0,
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "taskId": "01a06091-937c-7301-97fc-8a0a6e3eedbb"
+  },
+  "timing": {
+    "agentActiveMs": 4317311,
+    "humanWaitingMs": 0,
+    "taskElapsedMs": 4317311
+  },
+  "usability": {
+    "automaticDiscovery": false,
+    "browserUsed": false,
+    "clarifications": 0,
+    "methodErrors": 0,
+    "methodOperations": 0,
+    "terminalLifecycle": false,
+    "timeToFirstProductEditMs": 0
+  },
+  "usage": {
+    "aggregation": "sum_per_record",
+    "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+    "billing": {
+      "estimatedTaskCostUsd": 8.02524736,
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "reasoningIncludedInOutput": true
+    },
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 230582528,
+    "capturedAt": "2026-09-02T07:22:41.591Z",
+    "inputTokens": 239683844,
+    "outputTokens": 1327778,
+    "reasoningOutputTokens": 0,
+    "redacted": true,
+    "schemaVersion": 1,
+    "source": {
+      "recordsObserved": 142,
+      "sessionSha256": "7c8b3875d1c8b5fea65cb96f33fe522587980c5f4edffe067ccfb3cf27dd9240",
+      "taskId": "01a06091-937c-7301-97fc-8a0a6e3eedbb"
+    },
+    "totalTokens": 241011622,
+    "uncachedInputTokens": 9101316,
+    "usageObjects": 142
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Final answer and first-pass snapshot are present; objective outcome is recorded separately."
+  }
+}

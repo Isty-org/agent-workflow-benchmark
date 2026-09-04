@@ -1,0 +1,625 @@
+{
+  "schemaVersion": 3,
+  "blindId": "vz-b075b0",
+  "scenario": "small",
+  "checkedAt": "2026-09-02T06:54:58.396Z",
+  "workspaceCommit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+  "workspaceTree": "97a99b1427c4a86352b256f3711e2e272fa2fc5e",
+  "stateFingerprint": "3d962c26e6305bb9f5a1c30b3ff3d6e427268b2e742b7fd22efd8483406434f9",
+  "scratchIsolated": true,
+  "projectedHarnessFiles": [
+    "docker-compose.integration.yml (scratch-only port/name isolation)"
+  ],
+  "setup": [
+    {
+      "name": "dependency-install",
+      "command": [
+        "npm.cmd",
+        "ci"
+      ],
+      "startedAt": "2026-09-02T06:53:28.513Z",
+      "completedAt": "2026-09-02T06:54:05.115Z",
+      "durationMs": 36602,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "spawnError": null,
+      "stdoutSha256": "41312e791cb069f9a5ce21a901d95a5ef87b395a7b2f2150a1bb9dd53812c9a9",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdoutTail": "\nadded 143 packages, and audited 144 packages in 35s\n\n41 packages are looking for funding\n  run `npm fund` for details\n\n10 vulnerabilities (1 low, 8 high, 1 critical)\n\nTo address all issues, run:\n  npm audit fix\n\nRun `npm audit` for details.\n",
+      "stderrTail": "",
+      "structuredOutput": null
+    },
+    {
+      "name": "prisma-generate",
+      "command": [
+        "npm.cmd",
+        "run",
+        "prisma:generate"
+      ],
+      "startedAt": "2026-09-02T06:54:05.115Z",
+      "completedAt": "2026-09-02T06:54:08.874Z",
+      "durationMs": 3759,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "spawnError": null,
+      "stdoutSha256": "9114a139c5f8383458e3644134c7de6252518530fc1c6ed721528b77e8a8535b",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdoutTail": "\n> telegram-gateway@0.1.0 prisma:generate\n> prisma generate\n\nPrisma schema loaded from prisma\\schema.prisma\n\n✔ Generated Prisma Client (v6.19.3) to .\\node_modules\\@prisma\\client in 171ms\n\nStart by importing your Prisma Client (See: https://pris.ly/d/importing-client)\n\nTip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate\n\n",
+      "stderrTail": "",
+      "structuredOutput": null
+    }
+  ],
+  "repetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "3d962c26e6305bb9f5a1c30b3ff3d6e427268b2e742b7fd22efd8483406434f9",
+      "results": [
+        {
+          "name": "unit-tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T06:54:08.875Z",
+          "completedAt": "2026-09-02T06:54:19.181Z",
+          "durationMs": 10306,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d8da57680b50abefcfd98d7aba76f6d82e3958019fefab5d96dd39ccac7c9da0",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 test\n> vitest run\n\n\n RUN  v3.2.4 C:/Users/nikit/AppData/Local/Temp/benchmark-v7-checks-lmm5Wy/workspace\n\n ✓ test/crypto.test.ts (3 tests) 8ms\n ✓ test/retry.test.ts (3 tests) 5ms\n ✓ test/telegram-service.test.ts (2 tests) 4ms\n ↓ test/integration/gateway.integration.test.ts (10 tests | 10 skipped)\n\n Test Files  3 passed | 1 skipped (4)\n      Tests  8 passed | 10 skipped (18)\n   Start at  03:54:12\n   Duration  6.42s (transform 1.47s, setup 0ms, collect 5.96s, tests 17ms, environment 1ms, prepare 3.77s)\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T06:54:19.181Z",
+          "completedAt": "2026-09-02T06:54:29.055Z",
+          "durationMs": 9873,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "184a528de0ec8da5e774b405ed956bc0933a5c955fbdc9ba941b3268a8aa6a2e",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 build\n> tsc -p tsconfig.json\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-db-up",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v3-vz-b075b0",
+            "-f",
+            "docker-compose.integration.yml",
+            "up",
+            "-d",
+            "--wait"
+          ],
+          "startedAt": "2026-09-02T06:54:29.055Z",
+          "completedAt": "2026-09-02T06:54:29.662Z",
+          "durationMs": 607,
+          "exitCode": 1,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "0a8fd35a517db4bb044dc3505b78ddba58a65924865aa2b5765256388a38e3a9",
+          "stdoutTail": "",
+          "stderrTail": "unable to get image 'postgres:16-alpine': error during connect: Get \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/images/postgres:16-alpine/json\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-migrate",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-db-up",
+          "exitCode": null
+        },
+        {
+          "name": "integration-tests",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-migrate",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-api",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-migrate",
+          "exitCode": null
+        },
+        {
+          "name": "integration-db-down",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v3-vz-b075b0",
+            "-f",
+            "docker-compose.integration.yml",
+            "down",
+            "-v"
+          ],
+          "startedAt": "2026-09-02T06:54:29.662Z",
+          "completedAt": "2026-09-02T06:54:30.261Z",
+          "durationMs": 599,
+          "exitCode": 1,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "a51c4ffbb0c9c87bc645302860edf84480732b97d4cc01e19155072f1e66080d",
+          "stdoutTail": "",
+          "stderrTail": "error during connect: Get \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/containers/json?all=1&filters=%7B%22label%22%3A%7B%22com.docker.compose.config-hash%22%3Atrue%2C%22com.docker.compose.oneoff%3DFalse%22%3Atrue%2C%22com.docker.compose.project%3Dbenchmark-v3-vz-b075b0%22%3Atrue%7D%7D\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "S3-A01",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A02",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A03",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A04",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A05",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A06",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A07",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A08",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A09",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A10",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-B01",
+          "passed": true,
+          "evidence": "npm test"
+        },
+        {
+          "id": "S3-B02",
+          "passed": true,
+          "evidence": "npm run build"
+        },
+        {
+          "id": "S3-B03",
+          "passed": false,
+          "evidence": "real PostgreSQL integration and hidden API harness"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "3d962c26e6305bb9f5a1c30b3ff3d6e427268b2e742b7fd22efd8483406434f9",
+      "results": [
+        {
+          "name": "unit-tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T06:54:30.262Z",
+          "completedAt": "2026-09-02T06:54:36.243Z",
+          "durationMs": 5981,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "44778f3a549fac25ecc63c954fd40c6e1d8edc95eecccb0c3d4420aa8d68e773",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 test\n> vitest run\n\n\n RUN  v3.2.4 C:/Users/nikit/AppData/Local/Temp/benchmark-v7-checks-lmm5Wy/workspace\n\n ✓ test/retry.test.ts (3 tests) 5ms\n ✓ test/crypto.test.ts (3 tests) 10ms\n ✓ test/telegram-service.test.ts (2 tests) 6ms\n ↓ test/integration/gateway.integration.test.ts (10 tests | 10 skipped)\n\n Test Files  3 passed | 1 skipped (4)\n      Tests  8 passed | 10 skipped (18)\n   Start at  03:54:32\n   Duration  3.62s (transform 1.62s, setup 0ms, collect 3.18s, tests 21ms, environment 2ms, prepare 1.95s)\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T06:54:36.244Z",
+          "completedAt": "2026-09-02T06:54:41.828Z",
+          "durationMs": 5584,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "184a528de0ec8da5e774b405ed956bc0933a5c955fbdc9ba941b3268a8aa6a2e",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 build\n> tsc -p tsconfig.json\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-db-up",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v3-vz-b075b0",
+            "-f",
+            "docker-compose.integration.yml",
+            "up",
+            "-d",
+            "--wait"
+          ],
+          "startedAt": "2026-09-02T06:54:41.828Z",
+          "completedAt": "2026-09-02T06:54:42.302Z",
+          "durationMs": 474,
+          "exitCode": 1,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "0a8fd35a517db4bb044dc3505b78ddba58a65924865aa2b5765256388a38e3a9",
+          "stdoutTail": "",
+          "stderrTail": "unable to get image 'postgres:16-alpine': error during connect: Get \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/images/postgres:16-alpine/json\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-migrate",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-db-up",
+          "exitCode": null
+        },
+        {
+          "name": "integration-tests",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-migrate",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-api",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-migrate",
+          "exitCode": null
+        },
+        {
+          "name": "integration-db-down",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v3-vz-b075b0",
+            "-f",
+            "docker-compose.integration.yml",
+            "down",
+            "-v"
+          ],
+          "startedAt": "2026-09-02T06:54:42.302Z",
+          "completedAt": "2026-09-02T06:54:42.728Z",
+          "durationMs": 426,
+          "exitCode": 1,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "a51c4ffbb0c9c87bc645302860edf84480732b97d4cc01e19155072f1e66080d",
+          "stdoutTail": "",
+          "stderrTail": "error during connect: Get \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/containers/json?all=1&filters=%7B%22label%22%3A%7B%22com.docker.compose.config-hash%22%3Atrue%2C%22com.docker.compose.oneoff%3DFalse%22%3Atrue%2C%22com.docker.compose.project%3Dbenchmark-v3-vz-b075b0%22%3Atrue%7D%7D\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "S3-A01",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A02",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A03",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A04",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A05",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A06",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A07",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A08",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A09",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A10",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-B01",
+          "passed": true,
+          "evidence": "npm test"
+        },
+        {
+          "id": "S3-B02",
+          "passed": true,
+          "evidence": "npm run build"
+        },
+        {
+          "id": "S3-B03",
+          "passed": false,
+          "evidence": "real PostgreSQL integration and hidden API harness"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "3d962c26e6305bb9f5a1c30b3ff3d6e427268b2e742b7fd22efd8483406434f9",
+      "results": [
+        {
+          "name": "unit-tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T06:54:42.728Z",
+          "completedAt": "2026-09-02T06:54:46.841Z",
+          "durationMs": 4113,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "aefe576630e67860f621b9a6c902ea6944a635014e92a3f54e67a0ba3b3c1c72",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 test\n> vitest run\n\n\n RUN  v3.2.4 C:/Users/nikit/AppData/Local/Temp/benchmark-v7-checks-lmm5Wy/workspace\n\n ✓ test/crypto.test.ts (3 tests) 11ms\n ✓ test/retry.test.ts (3 tests) 6ms\n ✓ test/telegram-service.test.ts (2 tests) 6ms\n ↓ test/integration/gateway.integration.test.ts (10 tests | 10 skipped)\n\n Test Files  3 passed | 1 skipped (4)\n      Tests  8 passed | 10 skipped (18)\n   Start at  03:54:43\n   Duration  2.67s (transform 1.18s, setup 0ms, collect 2.49s, tests 23ms, environment 2ms, prepare 1.55s)\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T06:54:46.842Z",
+          "completedAt": "2026-09-02T06:54:56.155Z",
+          "durationMs": 9313,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "184a528de0ec8da5e774b405ed956bc0933a5c955fbdc9ba941b3268a8aa6a2e",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> telegram-gateway@0.1.0 build\n> tsc -p tsconfig.json\n\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-db-up",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v3-vz-b075b0",
+            "-f",
+            "docker-compose.integration.yml",
+            "up",
+            "-d",
+            "--wait"
+          ],
+          "startedAt": "2026-09-02T06:54:56.155Z",
+          "completedAt": "2026-09-02T06:54:57.284Z",
+          "durationMs": 1129,
+          "exitCode": 1,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "0a8fd35a517db4bb044dc3505b78ddba58a65924865aa2b5765256388a38e3a9",
+          "stdoutTail": "",
+          "stderrTail": "unable to get image 'postgres:16-alpine': error during connect: Get \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/images/postgres:16-alpine/json\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n",
+          "structuredOutput": null
+        },
+        {
+          "name": "integration-migrate",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-db-up",
+          "exitCode": null
+        },
+        {
+          "name": "integration-tests",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-migrate",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-api",
+          "skipped": true,
+          "required": true,
+          "reason": "required step failed: integration-migrate",
+          "exitCode": null
+        },
+        {
+          "name": "integration-db-down",
+          "required": true,
+          "command": [
+            "docker",
+            "compose",
+            "-p",
+            "benchmark-v3-vz-b075b0",
+            "-f",
+            "docker-compose.integration.yml",
+            "down",
+            "-v"
+          ],
+          "startedAt": "2026-09-02T06:54:57.284Z",
+          "completedAt": "2026-09-02T06:54:58.125Z",
+          "durationMs": 842,
+          "exitCode": 1,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderrSha256": "a51c4ffbb0c9c87bc645302860edf84480732b97d4cc01e19155072f1e66080d",
+          "stdoutTail": "",
+          "stderrTail": "error during connect: Get \"http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/containers/json?all=1&filters=%7B%22label%22%3A%7B%22com.docker.compose.config-hash%22%3Atrue%2C%22com.docker.compose.oneoff%3DFalse%22%3Atrue%2C%22com.docker.compose.project%3Dbenchmark-v3-vz-b075b0%22%3Atrue%7D%7D\": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.\n",
+          "structuredOutput": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "S3-A01",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A02",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A03",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A04",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A05",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A06",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A07",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A08",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A09",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-A10",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "S3-B01",
+          "passed": true,
+          "evidence": "npm test"
+        },
+        {
+          "id": "S3-B02",
+          "passed": true,
+          "evidence": "npm run build"
+        },
+        {
+          "id": "S3-B03",
+          "passed": false,
+          "evidence": "real PostgreSQL integration and hidden API harness"
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "statePreserved": true
+}

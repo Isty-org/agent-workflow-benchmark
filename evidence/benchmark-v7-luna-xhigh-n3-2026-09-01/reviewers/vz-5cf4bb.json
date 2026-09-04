@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-5cf4bb",
+  "scenario": "new",
+  "workspaceCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "setupCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-5cf4bb-a",
+      "total": 25,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "index.html owns markup, styles.css owns presentation, app.js owns state/rendering/persistence, and server.js owns static runtime."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "app.js keeps books in one state.books array; status is one field used for filtering, rendering, transitions and localStorage persistence."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "tests/server.test.js covers server routes only; it has no direct tests for add, status transition or localStorage persistence."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js centralizes status metadata and generic column/card rendering; the versioned JSON book model can accept ordinary list fields without reset."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md documents Node 18, start, test and no-install setup; no build or type/package check is documented, matching the missing package script."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "FEAT-001 and the implementation cover the requested local list, three statuses, add/move/delete and persistence without external product scope."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html provides labels and native controls; styles.css provides focus states and skip link; app.js provides Russian empty, validation and storage-error states."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js uses localStorage only; package.json has no dependencies; server.js binds to 127.0.0.1 and no external service or secret is present."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-5cf4bb-b",
+      "total": 24,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js separates state, rendering, persistence, validation, and event handling; index.html owns structure; styles.css owns presentation; server.js serves static files only."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "app.js:40-44 stores books in one state.books collection. Rendering reads book.status, and movement mutates that same object before saving it to localStorage."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "tests/server.test.js:43-61 covers health, static page/CSS delivery, and 404 handling only. No direct project test covers adding a book, changing status, or localStorage persistence."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Central STATUS_META/STATUS_ORDER and a simple book array make ordinary UI features localizable. However app.js:103-123 resets the entire list when any stored record is invalid, and no migration path exists for the v1 storage key."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md accurately documents Node.js, no package installation, npm start, port overrides, and npm test. package.json has no build or typecheck script, and README documents no build check."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The product implements adding books, three status lists, moving, persistence, and deletion. Additional statistics, dates, and visual decoration remain directly related to the reading-list scope; unrelated external catalogs, accounts, sync, and server databases are absent."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html provides explicit form labels, native controls, a skip link, and Russian copy. styles.css:60-66 defines visible focus states and :953-1021 provides responsive layout down to 320px. app.js supplies loading, empty, validation, storage-error, and action feedback states."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:29-33 and app.js show browser localStorage as the only durable store. server.js uses built-in Node modules, binds to 127.0.0.1, and package.json has no dependencies or external service integration."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-5cf4bb-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "package.json:7-12; README.md:35-41; objective receipt reports build.missing=true in all repetitions."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-5cf4bb-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "tests/server.test.js:43-61 checks /health, the page, CSS and a missing file; no direct application-flow tests are present."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-5cf4bb-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-5cf4bb-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-5cf4bb-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

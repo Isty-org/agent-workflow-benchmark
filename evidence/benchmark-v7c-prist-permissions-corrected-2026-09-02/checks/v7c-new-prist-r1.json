@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 3,
+  "blindId": "vz-8118bd",
+  "scenario": "new",
+  "checkedAt": "2026-09-02T13:59:30.893Z",
+  "workspaceCommit": "5c5d26d3c606da44cb55d0a6e398a508fde7d3e6",
+  "workspaceTree": "53e6cdabc74c063622678aec8d9741b2ef49d20a",
+  "stateFingerprint": "91332d0965c7611ff1ab1742e520a48061922b0a4841f9bf6cba37b163ca1d12",
+  "scratchIsolated": true,
+  "projectedHarnessFiles": [],
+  "setup": [
+    {
+      "name": "dependency-install",
+      "command": [
+        "npm.cmd",
+        "ci"
+      ],
+      "startedAt": "2026-09-02T13:57:58.850Z",
+      "completedAt": "2026-09-02T13:58:15.052Z",
+      "durationMs": 16202,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "spawnError": null,
+      "stdoutSha256": "8994984d55ba205d920335af71f715066151b4f19003beab41c9a14ec57586e2",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdoutTail": "\nadded 63 packages, and audited 64 packages in 16s\n\n7 packages are looking for funding\n  run `npm fund` for details\n\n2 vulnerabilities (1 moderate, 1 high)\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
+      "stderrTail": "",
+      "structuredOutput": null
+    }
+  ],
+  "repetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "91332d0965c7611ff1ab1742e520a48061922b0a4841f9bf6cba37b163ca1d12",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T13:58:15.056Z",
+          "completedAt": "2026-09-02T13:58:16.683Z",
+          "durationMs": 1626,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "48ccaabbf05cc001b247f166b1f385e9ab5aaa34159bfc2c5cc78e8bb7b52ab7",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> moy-spisok-chteniya@1.0.0 test\n> node --test test/readingList.test.js\n\n✔ создаёт новую книгу в статусе «Хочу прочитать» (10.1411ms)\n✔ перемещает книгу между статусами и сохраняет остальные (0.8158ms)\n✔ отбрасывает повреждённые записи при чтении локального состояния (1.0916ms)\n✔ удаляет книгу по идентификатору и строит инициалы (2.1036ms)\nℹ tests 4\nℹ suites 0\nℹ pass 4\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 454.2057\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T13:58:16.683Z",
+          "completedAt": "2026-09-02T13:58:26.458Z",
+          "durationMs": 9774,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "9ffba8a272c61574c8dfe373f1af1762c0b3eb99b04a49926dbc041b4dd10c66",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> moy-spisok-chteniya@1.0.0 build\n> vite build\n\nvite v5.4.21 building for production...\ntransforming...\n✓ 31 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.56 kB │ gzip:  0.41 kB\ndist/assets/index-CZMhCUMX.css    9.69 kB │ gzip:  3.01 kB\ndist/assets/index-BYchnl36.js   150.76 kB │ gzip: 49.06 kB\n✓ built in 6.07s\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T13:58:26.458Z",
+          "completedAt": "2026-09-02T13:58:42.632Z",
+          "durationMs": 16174,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d964d1cafce826759cd7eb4978dadd2395f4dc60015b15e937229147e99ad00c",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":true,\"evidence\":\"accessible title/author form adds a visible book\"},{\"id\":\"N3-A03\",\"passed\":true,\"evidence\":\"one book moves through reading and completed states immediately\"},{\"id\":\"N3-A04\",\"passed\":true,\"evidence\":\"book and status survive browser reload\"},{\"id\":\"N3-A05\",\"passed\":true,\"evidence\":\"book and status survive full application stop and restart\"},{\"id\":\"N3-A06\",\"passed\":true,\"evidence\":\"multiple books remain independent after one state change\"},{\"id\":\"N3-A07\",\"passed\":true,\"evidence\":\"empty required values create no book and expose validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":true,\"browserErrors\":0},\"passed\":true}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": true,
+            "smoke": {
+              "passed": true,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": true,
+                "evidence": "accessible title/author form adds a visible book"
+              },
+              {
+                "id": "N3-A03",
+                "passed": true,
+                "evidence": "one book moves through reading and completed states immediately"
+              },
+              {
+                "id": "N3-A04",
+                "passed": true,
+                "evidence": "book and status survive browser reload"
+              },
+              {
+                "id": "N3-A05",
+                "passed": true,
+                "evidence": "book and status survive full application stop and restart"
+              },
+              {
+                "id": "N3-A06",
+                "passed": true,
+                "evidence": "multiple books remain independent after one state change"
+              },
+              {
+                "id": "N3-A07",
+                "passed": true,
+                "evidence": "empty required values create no book and expose validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": true,
+          "evidence": "accessible title/author form adds a visible book"
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": true,
+          "evidence": "one book moves through reading and completed states immediately"
+        },
+        {
+          "id": "N3-A04",
+          "passed": true,
+          "evidence": "book and status survive browser reload"
+        },
+        {
+          "id": "N3-A05",
+          "passed": true,
+          "evidence": "book and status survive full application stop and restart"
+        },
+        {
+          "id": "N3-A06",
+          "passed": true,
+          "evidence": "multiple books remain independent after one state change"
+        },
+        {
+          "id": "N3-A07",
+          "passed": true,
+          "evidence": "empty required values create no book and expose validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": true,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": true,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "91332d0965c7611ff1ab1742e520a48061922b0a4841f9bf6cba37b163ca1d12",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T13:58:42.633Z",
+          "completedAt": "2026-09-02T13:58:43.763Z",
+          "durationMs": 1130,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "6061fdf6eb7770dafe61c7db7275a6403a43099df2b548c3f5bd06c90af724a2",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> moy-spisok-chteniya@1.0.0 test\n> node --test test/readingList.test.js\n\n✔ создаёт новую книгу в статусе «Хочу прочитать» (10.1216ms)\n✔ перемещает книгу между статусами и сохраняет остальные (0.509ms)\n✔ отбрасывает повреждённые записи при чтении локального состояния (0.4991ms)\n✔ удаляет книгу по идентификатору и строит инициалы (1.9508ms)\nℹ tests 4\nℹ suites 0\nℹ pass 4\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 188.5418\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T13:58:43.763Z",
+          "completedAt": "2026-09-02T13:58:47.168Z",
+          "durationMs": 3404,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "415e8eacb77c7c2c5e0f15ccc245d6887250fd9148a369d3721191065c04599b",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> moy-spisok-chteniya@1.0.0 build\n> vite build\n\nvite v5.4.21 building for production...\ntransforming...\n✓ 31 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.56 kB │ gzip:  0.41 kB\ndist/assets/index-CZMhCUMX.css    9.69 kB │ gzip:  3.01 kB\ndist/assets/index-BYchnl36.js   150.76 kB │ gzip: 49.06 kB\n✓ built in 1.31s\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T13:58:47.168Z",
+          "completedAt": "2026-09-02T13:59:04.904Z",
+          "durationMs": 17736,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d964d1cafce826759cd7eb4978dadd2395f4dc60015b15e937229147e99ad00c",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":true,\"evidence\":\"accessible title/author form adds a visible book\"},{\"id\":\"N3-A03\",\"passed\":true,\"evidence\":\"one book moves through reading and completed states immediately\"},{\"id\":\"N3-A04\",\"passed\":true,\"evidence\":\"book and status survive browser reload\"},{\"id\":\"N3-A05\",\"passed\":true,\"evidence\":\"book and status survive full application stop and restart\"},{\"id\":\"N3-A06\",\"passed\":true,\"evidence\":\"multiple books remain independent after one state change\"},{\"id\":\"N3-A07\",\"passed\":true,\"evidence\":\"empty required values create no book and expose validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":true,\"browserErrors\":0},\"passed\":true}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": true,
+            "smoke": {
+              "passed": true,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": true,
+                "evidence": "accessible title/author form adds a visible book"
+              },
+              {
+                "id": "N3-A03",
+                "passed": true,
+                "evidence": "one book moves through reading and completed states immediately"
+              },
+              {
+                "id": "N3-A04",
+                "passed": true,
+                "evidence": "book and status survive browser reload"
+              },
+              {
+                "id": "N3-A05",
+                "passed": true,
+                "evidence": "book and status survive full application stop and restart"
+              },
+              {
+                "id": "N3-A06",
+                "passed": true,
+                "evidence": "multiple books remain independent after one state change"
+              },
+              {
+                "id": "N3-A07",
+                "passed": true,
+                "evidence": "empty required values create no book and expose validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": true,
+          "evidence": "accessible title/author form adds a visible book"
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": true,
+          "evidence": "one book moves through reading and completed states immediately"
+        },
+        {
+          "id": "N3-A04",
+          "passed": true,
+          "evidence": "book and status survive browser reload"
+        },
+        {
+          "id": "N3-A05",
+          "passed": true,
+          "evidence": "book and status survive full application stop and restart"
+        },
+        {
+          "id": "N3-A06",
+          "passed": true,
+          "evidence": "multiple books remain independent after one state change"
+        },
+        {
+          "id": "N3-A07",
+          "passed": true,
+          "evidence": "empty required values create no book and expose validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": true,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": true,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "91332d0965c7611ff1ab1742e520a48061922b0a4841f9bf6cba37b163ca1d12",
+      "results": [
+        {
+          "name": "tests",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "test"
+          ],
+          "startedAt": "2026-09-02T13:59:04.904Z",
+          "completedAt": "2026-09-02T13:59:06.218Z",
+          "durationMs": 1313,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "1b4ddbb20fd9bd6e652693a1ecca6a9cb0764a80ded5631725b56697ddb0bfe5",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> moy-spisok-chteniya@1.0.0 test\n> node --test test/readingList.test.js\n\n✔ создаёт новую книгу в статусе «Хочу прочитать» (9.6376ms)\n✔ перемещает книгу между статусами и сохраняет остальные (0.4674ms)\n✔ отбрасывает повреждённые записи при чтении локального состояния (0.4631ms)\n✔ удаляет книгу по идентификатору и строит инициалы (2.473ms)\nℹ tests 4\nℹ suites 0\nℹ pass 4\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 223.6572\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "build",
+          "required": true,
+          "command": [
+            "npm.cmd",
+            "run",
+            "build"
+          ],
+          "startedAt": "2026-09-02T13:59:06.218Z",
+          "completedAt": "2026-09-02T13:59:12.256Z",
+          "durationMs": 6038,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d82c8d2f21130e8c1bf6ab7656ec7db113fd26115b8af482e1a4be242136ebd3",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "\n> moy-spisok-chteniya@1.0.0 build\n> vite build\n\nvite v5.4.21 building for production...\ntransforming...\n✓ 31 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.56 kB │ gzip:  0.41 kB\ndist/assets/index-CZMhCUMX.css    9.69 kB │ gzip:  3.01 kB\ndist/assets/index-BYchnl36.js   150.76 kB │ gzip: 49.06 kB\n✓ built in 3.17s\n",
+          "stderrTail": "",
+          "structuredOutput": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T13:59:12.256Z",
+          "completedAt": "2026-09-02T13:59:30.517Z",
+          "durationMs": 18260,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "d964d1cafce826759cd7eb4978dadd2395f4dc60015b15e937229147e99ad00c",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":true,\"evidence\":\"accessible title/author form adds a visible book\"},{\"id\":\"N3-A03\",\"passed\":true,\"evidence\":\"one book moves through reading and completed states immediately\"},{\"id\":\"N3-A04\",\"passed\":true,\"evidence\":\"book and status survive browser reload\"},{\"id\":\"N3-A05\",\"passed\":true,\"evidence\":\"book and status survive full application stop and restart\"},{\"id\":\"N3-A06\",\"passed\":true,\"evidence\":\"multiple books remain independent after one state change\"},{\"id\":\"N3-A07\",\"passed\":true,\"evidence\":\"empty required values create no book and expose validation\"},{\"id\":\"N3-A08\",\"passed\":true,\"evidence\":\"primary product copy and controls are Russian\"}],\"smoke\":{\"passed\":true,\"browserErrors\":0},\"passed\":true}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": true,
+            "smoke": {
+              "passed": true,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": true,
+                "evidence": "accessible title/author form adds a visible book"
+              },
+              {
+                "id": "N3-A03",
+                "passed": true,
+                "evidence": "one book moves through reading and completed states immediately"
+              },
+              {
+                "id": "N3-A04",
+                "passed": true,
+                "evidence": "book and status survive browser reload"
+              },
+              {
+                "id": "N3-A05",
+                "passed": true,
+                "evidence": "book and status survive full application stop and restart"
+              },
+              {
+                "id": "N3-A06",
+                "passed": true,
+                "evidence": "multiple books remain independent after one state change"
+              },
+              {
+                "id": "N3-A07",
+                "passed": true,
+                "evidence": "empty required values create no book and expose validation"
+              },
+              {
+                "id": "N3-A08",
+                "passed": true,
+                "evidence": "primary product copy and controls are Russian"
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": true,
+          "evidence": "accessible title/author form adds a visible book"
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": true,
+          "evidence": "one book moves through reading and completed states immediately"
+        },
+        {
+          "id": "N3-A04",
+          "passed": true,
+          "evidence": "book and status survive browser reload"
+        },
+        {
+          "id": "N3-A05",
+          "passed": true,
+          "evidence": "book and status survive full application stop and restart"
+        },
+        {
+          "id": "N3-A06",
+          "passed": true,
+          "evidence": "multiple books remain independent after one state change"
+        },
+        {
+          "id": "N3-A07",
+          "passed": true,
+          "evidence": "empty required values create no book and expose validation"
+        },
+        {
+          "id": "N3-A08",
+          "passed": true,
+          "evidence": "primary product copy and controls are Russian"
+        },
+        {
+          "id": "N3-B01",
+          "passed": true,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": true,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": true,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "statePreserved": true
+}

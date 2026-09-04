@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "verifiedAt": "2026-09-02T15:14:33.015Z",
+  "status": "pass",
+  "checks": {
+    "correctedPristRows": 9,
+    "validMatrixRows": 36,
+    "uniqueMeasuredTasks": 9,
+    "exactModelReasoning": true,
+    "firstPassOnly": true,
+    "browserUsed": false,
+    "lifecycleCompleted": 9,
+    "objectiveRepetitionsPerRow": 3,
+    "blindReviewPasses": 18,
+    "uniformLargeAdjudications": 12,
+    "secretScan": "pass"
+  },
+  "report": "reports/benchmark-v7c-prist-permissions-corrected-2026-09-02/first-snapshot.json",
+  "sourceIntegrityFiles": 2349
+}

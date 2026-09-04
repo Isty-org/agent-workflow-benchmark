@@ -1,0 +1,3817 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-e633c3",
+  "branch": "v7/b1650f0518e",
+  "capturedAt": "2026-09-02T10:39:37.289Z",
+  "condition": "bmad",
+  "cost": {
+    "activationCanaryUsd": 0,
+    "baselineCanonUsd": 0,
+    "externalEvaluationUsd": 0,
+    "fullCycleUsd": 0.79394304,
+    "lateChangeTaskUsd": 0.79394304,
+    "methodInstallUsd": 0,
+    "organizerProvisioningUsd": 0,
+    "taskOnlyUsd": 0.79394304
+  },
+  "fidelity": {
+    "evidencePath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/lifecycle/v7-large-bmad-r1.json",
+    "status": "pending"
+  },
+  "interventions": {
+    "answers": [],
+    "clarifications": 0,
+    "repairTurns": 0
+  },
+  "quality": {
+    "evaluationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/checks/v7-large-bmad-r1.json",
+    "findings": [],
+    "officialScore": null,
+    "rawScore": null
+  },
+  "replica": 1,
+  "runId": "v7-large-bmad-r1",
+  "scenario": "large-project",
+  "schemaVersion": 1,
+  "setup": {
+    "commit": "8e143aac954d2611414dd4b8da564e66c599e431",
+    "fingerprint": "",
+    "lineageId": "v7-large-bmad",
+    "tree": "1a210daa607555f15235cecfb4caeed14b2ae8d8"
+  },
+  "snapshot": {
+    "fileHashes": [
+      {
+        "path": ".agents/skills/bmad-advanced-elicitation/SKILL.md",
+        "sha256": "23a1f2903f6a19255e3ceae798afe48f6394694769b3b034502d174d683612b2"
+      },
+      {
+        "path": ".agents/skills/bmad-advanced-elicitation/assets/methods.csv",
+        "sha256": "d110ff5f076fb9421552b83692fde2c2d367734049169c7a55f7267a3dc7ef89"
+      },
+      {
+        "path": ".agents/skills/bmad-advanced-elicitation/customize.toml",
+        "sha256": "735a276edd51786ccfd2c3417d9a2b9dee4244a6102698981b3888f68d979ed9"
+      },
+      {
+        "path": ".agents/skills/bmad-advanced-elicitation/scripts/pick_methods.py",
+        "sha256": "60020ec4767894ea3d8707c4b61e78b679d434315be1dd29154bf64d88126fff"
+      },
+      {
+        "path": ".agents/skills/bmad-advanced-elicitation/scripts/tests/test_pick_methods.py",
+        "sha256": "610099d8494529f9203d7262567810b500552bcef006b3b6388d58da3da71978"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-analyst/SKILL.md",
+        "sha256": "99c72ea74b833743a71a8e3c54369348530525edcfae43da2d267ec27cefc8ff"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-analyst/customize.toml",
+        "sha256": "9b3e94d90784bbb24ab2c8f0563aaece48aa317554622750538e6c0e14478b37"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-architect/SKILL.md",
+        "sha256": "72a542f7cd34ebf844c26431be564040824f0c16cf060b8795eff2c9e019f003"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-architect/customize.toml",
+        "sha256": "82f0f082935f56e6fde41b007440edaa04984eb23abf26a3be7b1442baf0047a"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-dev/SKILL.md",
+        "sha256": "b980cf2c99976b5e1bd53128dc7b56bdd181ac39a57098d9b5a6bf0692db2675"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-dev/customize.toml",
+        "sha256": "f3f107f11f150f62091a792fcdf224dbf8d6c351d24e2b1d08aabb077e655feb"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-pm/SKILL.md",
+        "sha256": "7b84234262e749f22fe31032124024c8c4283ba55294916b2ec67917a3bb9fb5"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-pm/customize.toml",
+        "sha256": "086d498b0e3d0c5dd193f8347ba30fdc93efcb57bbdfaff21fb0b418dba81ba8"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-ux-designer/SKILL.md",
+        "sha256": "2ba39678706fd536a98f7afcbb3d85c3b74e24bdb86a191b330fcd7fd7e64c03"
+      },
+      {
+        "path": ".agents/skills/bmad-agent-ux-designer/customize.toml",
+        "sha256": "3df7da44945f9df34dbb3a64de086c756e6c298e73078e388e8f9a4f57cbf7ab"
+      },
+      {
+        "path": ".agents/skills/bmad-architecture/SKILL.md",
+        "sha256": "b3d8c6e5024cb9747ef1659cec8109f5bb797fd1760338e65237bb084b60fcdc"
+      },
+      {
+        "path": ".agents/skills/bmad-architecture/assets/spine-template.md",
+        "sha256": "ef4ff795624eb5439fae54a06edb389feb5a0cf79cb01ae007af51109335d198"
+      },
+      {
+        "path": ".agents/skills/bmad-architecture/customize.toml",
+        "sha256": "a6bb60a3adf976031f2870203285b1fc7a56e71e21232cd23bba544b178b5f15"
+      },
+      {
+        "path": ".agents/skills/bmad-architecture/references/headless.md",
+        "sha256": "4db2708f335c94cb024b5eba022b1e3d88b1ec61c94c4716626d9b89684f5833"
+      },
+      {
+        "path": ".agents/skills/bmad-architecture/references/reviewer-gate.md",
+        "sha256": "d32e32a3c1d59b5612b947004f3f6fef1117a13ce9f1ffa428d616e0b5d4db69"
+      },
+      {
+        "path": ".agents/skills/bmad-architecture/scripts/lint_spine.py",
+        "sha256": "040e0f1c13d31e6a21c518df943d1d7de7b75d8d98a07603b0983f3f3fb500db"
+      },
+      {
+        "path": ".agents/skills/bmad-architecture/scripts/tests/test_lint_spine.py",
+        "sha256": "e86bb9a62c5cca74ddc89c843386f2b992610fcc1792d40e03bc9cd445b77681"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/SKILL.md",
+        "sha256": "e9cb07fe86aa254f9fb7217720d77fd693bf66a0c01af8114ecdf7148159fdd1"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/assets/brain-icons.json",
+        "sha256": "a101c56e89f1d0f9e4131dfdfc19e10c746e3a61c3f92537d04a6f4897b7d331"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/assets/brain-methods.csv",
+        "sha256": "150536f3f3d56e08262b27a2abd6b36f266538e2c929ef4aaf183491da33f0eb"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/assets/brain-selector.html",
+        "sha256": "c110919a3366bd96061f050f98503e3586185e3d1df5ff8b62a5a046c571a436"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/customize.toml",
+        "sha256": "21fcbc60c78db99ca0424da192ba0942dce2189f350f77838e4d3ecd501edd1c"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/references/converge.md",
+        "sha256": "1528c32ddc64f8061fec663306f7208d2fd4d4a90e660552b8138bda7e452dc0"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/references/finalize.md",
+        "sha256": "b6074e7fb4d86ffcf899abc50b9049b4a1f6fe550917f4be7a1c7a888477e07e"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/references/headless.md",
+        "sha256": "b8ea5951199cff7e4813e06aef35683ca0658230fa015e358cacc466b1138a42"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/references/in-chat-techniques.md",
+        "sha256": "18239464e3e4f00ea9063d015d26d6b0a696b72e7e3c5be92352da6db9a3f244"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/references/mode-autonomous.md",
+        "sha256": "d815d2c7f0f8cc0cdfa7c619eaf61f59fd78142f13c69365eda257da38b97bdf"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/references/mode-facilitator.md",
+        "sha256": "1b908498d285d190859aed00c3ba5b399d7f6aa8e94d54e95456d15cd6fe6073"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/references/mode-partner.md",
+        "sha256": "caa0ed378c116def4de382f4e5a95173c6ae6cc5464f1792e7d8196360f79c8a"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/references/resume.md",
+        "sha256": "0f79535d72eefe6c55bd5ae47fe4753de8d27235cf129f10b2c596a124c26526"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/scripts/brain.py",
+        "sha256": "1c75c667fc70a85055dd19d77fb21478e190874e4a61d070c3b0971dd1bd25cc"
+      },
+      {
+        "path": ".agents/skills/bmad-brainstorming/scripts/tests/test_brain.py",
+        "sha256": "021c0b9fae8db859725312d50d8b304fff00ee7acc310699c35523e86bffbdd8"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/SKILL.md",
+        "sha256": "ea6931f8210e92f7d9cfb845040d557d4d8c02eced3acc3d77bd2fcc4fffc235"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/compile-epic-context.md",
+        "sha256": "64d13b41974cfa0dfc1de64b6fbd8365e9b99f91c7c98f0ee1a9fbd018f324ca"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/customize.toml",
+        "sha256": "eb0b39a3e24e86e9dbca98506c8384ec452c539acb690063cabab4385c82f09a"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/references/deletion-check.md",
+        "sha256": "0f1f124e4e957147e89164a272b10bedc694ad0d9ad2618c8610ac74ee9cb0da"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/review-prompts/edge-case-hunter.md",
+        "sha256": "4ccb3599ed1b8cc54876b304dc567d1b4e3e0ec5c1add34df9a2445224ac77af"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/review-prompts/verification-gap.md",
+        "sha256": "11b6bbbd4e3426a25cca81229c98971e5f20ce99638940c47c9c1484011b457a"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/spec-template.md",
+        "sha256": "5fccfa92dd632d4be646ab40f2882452189aba49db57fe3fa00fcc1806666d74"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/step-01-clarify-and-route.md",
+        "sha256": "7480db7720720212bd045793fddcb91f06091fe512e53b38127f6440c3fd96e2"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/step-02-plan.md",
+        "sha256": "a08e303c10f88dbfce88c55044757ec5059afe338793eb414e1ddb0b7c324625"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/step-03-implement.md",
+        "sha256": "f3e427c6033a26adcc327e4367db38c619527858a1175b148ec5a6f53d1bb408"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/step-04-review.md",
+        "sha256": "8e9ff909192e1d5d50f9fc071c4b5eb8830cc921200d423904a30dadca58c3e9"
+      },
+      {
+        "path": ".agents/skills/bmad-build-auto/workflow.md",
+        "sha256": "f5f538a647b2a09406b11337244d1bd74fe97e7fa85b58a990184fcb480bfd90"
+      },
+      {
+        "path": ".agents/skills/bmad-build/SKILL.md",
+        "sha256": "bce4778d8d275095ca1836733337163c1bf11a5a62e6585b951de458a5ac2c8e"
+      },
+      {
+        "path": ".agents/skills/bmad-build/compile-epic-context.md",
+        "sha256": "6793b15ae85766cee529e6b349e45f2c6ec9e3212019611c29e8c77b4dc4b924"
+      },
+      {
+        "path": ".agents/skills/bmad-build/customize.toml",
+        "sha256": "68a0134f3f9e7f4a7b077aa2dcca1c68f208701d3487482e84afbee8717efec6"
+      },
+      {
+        "path": ".agents/skills/bmad-build/references/deletion-check.md",
+        "sha256": "0f1f124e4e957147e89164a272b10bedc694ad0d9ad2618c8610ac74ee9cb0da"
+      },
+      {
+        "path": ".agents/skills/bmad-build/review-prompts/edge-case-hunter.md",
+        "sha256": "4ccb3599ed1b8cc54876b304dc567d1b4e3e0ec5c1add34df9a2445224ac77af"
+      },
+      {
+        "path": ".agents/skills/bmad-build/review-prompts/verification-gap.md",
+        "sha256": "11b6bbbd4e3426a25cca81229c98971e5f20ce99638940c47c9c1484011b457a"
+      },
+      {
+        "path": ".agents/skills/bmad-build/spec-template.md",
+        "sha256": "68d0e3b9acaa0c22ab3b0dd1dbce9d8ef9b4d16637ed5e6fbd5244528732943e"
+      },
+      {
+        "path": ".agents/skills/bmad-build/step-01-clarify-and-route.md",
+        "sha256": "0a3afcde2b1d4475250896f132fd8839cf442b3364ebfbeeace5a489042c7c7f"
+      },
+      {
+        "path": ".agents/skills/bmad-build/step-02-plan.md",
+        "sha256": "d90db50ca7a679dd42f7d1587a909d0579f24480b116d6ed82b4c7d4fe9bea66"
+      },
+      {
+        "path": ".agents/skills/bmad-build/step-03-implement.md",
+        "sha256": "3b77ca64380b2989016191f488311ff392df0ebf4f641b9898d02b01767a646f"
+      },
+      {
+        "path": ".agents/skills/bmad-build/step-04-review.md",
+        "sha256": "bcf300e2faaf413afe1a25498284baabba09681bca089e615530d0b9dc5cee72"
+      },
+      {
+        "path": ".agents/skills/bmad-build/step-05-present.md",
+        "sha256": "81e80f3fd38f8e3049afe9daf41783b86b00ac22544f7f36bd430496a12d8e46"
+      },
+      {
+        "path": ".agents/skills/bmad-build/step-oneshot.md",
+        "sha256": "e75505130a2fcc49cd71dfb36c92e76255d39fdfe8d4f735c7c9276e2917cb8a"
+      },
+      {
+        "path": ".agents/skills/bmad-build/sync-sprint-status.md",
+        "sha256": "6c9e2ec17245d2dcb796bd9a36997371a20db8e579a2f803d16064e3bc36c40b"
+      },
+      {
+        "path": ".agents/skills/bmad-build/workflow.md",
+        "sha256": "481ff00ef349a9c7845feca02bbfd5722b1e318ccabac858355da6c90c2d8a39"
+      },
+      {
+        "path": ".agents/skills/bmad-checkpoint-preview/SKILL.md",
+        "sha256": "fbc932defc41c7d9ffd107dbbccc296854b2ece76d95e9712e19d24f0a4c3606"
+      },
+      {
+        "path": ".agents/skills/bmad-checkpoint-preview/customize.toml",
+        "sha256": "1a1e0c3a8914adda3cec925eed51287e067c7f84120de64a8df53348e7b77de5"
+      },
+      {
+        "path": ".agents/skills/bmad-checkpoint-preview/generate-trail.md",
+        "sha256": "4a5936d86fbe5a85285b4535097b1e2edda8849da35586f4b588a982d7224459"
+      },
+      {
+        "path": ".agents/skills/bmad-checkpoint-preview/step-01-orientation.md",
+        "sha256": "d9e3b949c36d49a025f3535773af2b51888fe4ce616b6d6d69683a122716b1d2"
+      },
+      {
+        "path": ".agents/skills/bmad-checkpoint-preview/step-02-walkthrough.md",
+        "sha256": "66cf893f8f968ee81034e9ccd8c20415692c3a8c23a9a143c2245fe6c800acdc"
+      },
+      {
+        "path": ".agents/skills/bmad-checkpoint-preview/step-03-detail-pass.md",
+        "sha256": "d48163b9f305f15af57729a8443142e47beb6c3e977554afe12b39ee49cb9fc0"
+      },
+      {
+        "path": ".agents/skills/bmad-checkpoint-preview/step-04-testing.md",
+        "sha256": "28a56e868968ea2d18add0df8c4bccced0f94b698e218df3d45ddac072ce369c"
+      },
+      {
+        "path": ".agents/skills/bmad-checkpoint-preview/step-05-wrapup.md",
+        "sha256": "b1f04d64f0c9c9e4c051ebdd81eee1083d60c6aaca96bb5d3d85e0cbeca0143e"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/SKILL.md",
+        "sha256": "1ba6481b28c7e4b2ea0b1447e9011a9cac3ef51fdf957d09050606d2d16b196b"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/customize.toml",
+        "sha256": "4f50371c61dea41c100b137e3d2ac750b4e55bb3be55e5a62c77f527dae22f94"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/references/deletion-check.md",
+        "sha256": "0f1f124e4e957147e89164a272b10bedc694ad0d9ad2618c8610ac74ee9cb0da"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/review-prompts/edge-case-hunter.md",
+        "sha256": "4ccb3599ed1b8cc54876b304dc567d1b4e3e0ec5c1add34df9a2445224ac77af"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/review-prompts/verification-gap.md",
+        "sha256": "11b6bbbd4e3426a25cca81229c98971e5f20ce99638940c47c9c1484011b457a"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/steps/step-01-gather-context.md",
+        "sha256": "3f5a74d63a91fb385d33786b78d09bb9bca483b1ac45933b9715c9fb79b79e9d"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/steps/step-02-review.md",
+        "sha256": "3d146c060e838413f1262211cc58b06eeee1a9a86b8997efd83d0dc8c03cfa60"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/steps/step-03-triage.md",
+        "sha256": "46a9e661e8aed6a7347cd7bc0b3f7edd8e4bffcfc96b2e15895f7a8ce2517d70"
+      },
+      {
+        "path": ".agents/skills/bmad-code-review/steps/step-04-present.md",
+        "sha256": "08baa98dae5e3bd70f211d1d3ce42f14e25030f4d6b17fc18e8635644847850c"
+      },
+      {
+        "path": ".agents/skills/bmad-correct-course/SKILL.md",
+        "sha256": "507394a758e297152a806fe5529ecc54c6c2725c951bdcbbdb250622a83fa820"
+      },
+      {
+        "path": ".agents/skills/bmad-correct-course/checklist.md",
+        "sha256": "3e082b95def90ccb876e3101ce0bbaf797a0f03a9471e1347361897f27977327"
+      },
+      {
+        "path": ".agents/skills/bmad-correct-course/customize.toml",
+        "sha256": "78095d25afb5b2d4844956f61e9ac640a62d0245174fab9406e9c289f33fd84b"
+      },
+      {
+        "path": ".agents/skills/bmad-create-architecture/SKILL.md",
+        "sha256": "2d199970238a7f415aa4b9224ec01f296b4b3ee7b399f75092ed8bdd3e414be1"
+      },
+      {
+        "path": ".agents/skills/bmad-create-architecture/customize.toml",
+        "sha256": "618be49b0286f18dfb4b6bac3d96bf1cf062994fa5278cd327be9898e651b43c"
+      },
+      {
+        "path": ".agents/skills/bmad-create-epics-and-stories/SKILL.md",
+        "sha256": "6b27b0730c61309190eb7c9c84ae98b11cbfe7187941ef88f45ddc8ded850c04"
+      },
+      {
+        "path": ".agents/skills/bmad-create-epics-and-stories/customize.toml",
+        "sha256": "da9e43605bc6aec83173050b5d37ede6aebfa9a17c5959a5029681d73e744ba3"
+      },
+      {
+        "path": ".agents/skills/bmad-create-epics-and-stories/steps/step-01-validate-prerequisites.md",
+        "sha256": "7181608c1ee4e55c084c6627d68fc55a8a0b6917e489f8ac77531a0530428a30"
+      },
+      {
+        "path": ".agents/skills/bmad-create-epics-and-stories/steps/step-02-design-epics.md",
+        "sha256": "7c66987808c1f84e853fe54b7aff26d209196d450b5644704110f124a15179bc"
+      },
+      {
+        "path": ".agents/skills/bmad-create-epics-and-stories/steps/step-03-create-stories.md",
+        "sha256": "c5b787a82e4e49ed9cd9c028321ee1689f32b8cd69d89eea609b37cd3d481afc"
+      },
+      {
+        "path": ".agents/skills/bmad-create-epics-and-stories/steps/step-04-final-validation.md",
+        "sha256": "5f6033e26ed06e070dcfcefb47d648b5a266012aaed7d53f028ab3f2c0542d20"
+      },
+      {
+        "path": ".agents/skills/bmad-create-epics-and-stories/templates/epics-template.md",
+        "sha256": "a804f740155156d89661fa04e7a4264a8f712c4dc227c44fd8ae804a9b0f6b72"
+      },
+      {
+        "path": ".agents/skills/bmad-create-prd/SKILL.md",
+        "sha256": "fa8cc47fff80a19446057b0469e79ea65973ceccb71e96079bf734b34699eb69"
+      },
+      {
+        "path": ".agents/skills/bmad-create-prd/customize.toml",
+        "sha256": "0c990af4c0a755402abbef893850bd542744a8b6f36c0587c9f3fb6dab6bf5e7"
+      },
+      {
+        "path": ".agents/skills/bmad-create-story/SKILL.md",
+        "sha256": "bea46d2823aded992d90a8d6d684f7c67c0865478b01c1443ba4c3eac04bbd28"
+      },
+      {
+        "path": ".agents/skills/bmad-create-story/checklist.md",
+        "sha256": "b94e28e774c3be0288f04ea163424bece4ddead5cd3f3680d1603ed07383323a"
+      },
+      {
+        "path": ".agents/skills/bmad-create-story/customize.toml",
+        "sha256": "1204f6de064436922f2813069778eb4eaa5f1f945aa8ea5a5ffb87897a2ba8fe"
+      },
+      {
+        "path": ".agents/skills/bmad-create-story/discover-inputs.md",
+        "sha256": "dfedba6a8ea05c9a91c6d202c4b29ee3ea793d8ef77575034787ae0fef280507"
+      },
+      {
+        "path": ".agents/skills/bmad-create-story/template.md",
+        "sha256": "29ba697368d77e88e88d0e7ac78caf7a78785a7dcfc291082aa96a62948afb67"
+      },
+      {
+        "path": ".agents/skills/bmad-customize/SKILL.md",
+        "sha256": "a42086f90024013e2611503eb0224ac0e90b2aecac44a886ae0e38cfdda69511"
+      },
+      {
+        "path": ".agents/skills/bmad-customize/scripts/list_customizable_skills.py",
+        "sha256": "8787f542930b927789e7fdf12bc5a67ff08e19865903a5ad05ff2cc8fc426b66"
+      },
+      {
+        "path": ".agents/skills/bmad-customize/scripts/tests/test_list_customizable_skills.py",
+        "sha256": "24c3d384b3b5d490b7335c17866bfe0425af253ce669c32382fa88feb705934d"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/SKILL.md",
+        "sha256": "dce5f7db03094a617cc3fcae1711b1dc7ccebe379376e67216544956d375f0d2"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/assets/research.template.md",
+        "sha256": "87d7cfa85fa5036b5a309b7bfb88f7934f50bb81f3cff02d2b49b4c7345cfc38"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/customize.toml",
+        "sha256": "24d1383066034fd4fcf282279aaf0d29d21910fd1247dfe3dbad74a70e78814d"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/draft.md",
+        "sha256": "ac19b33a00ca529c3281df6076f87a833a3b11fc30915ca2c6e7590f7986b90e"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/finalize.md",
+        "sha256": "d2ba4bee615dfbca6e7725179fb5ebd856dd34a54ba3f306e25255dfd7b1d126"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/html-briefing.md",
+        "sha256": "cd3a88c1a5505fa7f1b715afc3adb34f3d64ade66f4c6b49a59f7e8cfcbe38d4"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/lifecycle.md",
+        "sha256": "2315fd9cb9223504639616b861ad593bfecb53d605efbd598ae2cf94fb6c4cdf"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/process.md",
+        "sha256": "9017d04774807a29103ea97331e555e2793f90098af65752b72f3ee09df85906"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/run.md",
+        "sha256": "8e259dc88820ac989c79620af5c37e24f00df21ac4af308ce3563c0e66c9406c"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/selection.md",
+        "sha256": "2b488c08f9550afe7fda32c2dc5d4591927afd7b9ad507fcce0ae8593c4b9d31"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/synthesis.md",
+        "sha256": "4d9ef1247ab45241f919010e94c99699abc0a6e18b5bd68fa93ae54afe59d172"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/references/verification.md",
+        "sha256": "0393ded4828fec69a4819d7236827910d641d09c3b61144c0211a9a78776fdd2"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/scripts/recon_kit.py",
+        "sha256": "8cb5187b5114b779532907383a013d40fdea1022bb9bed9a23bd8d0fdfa79e8c"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/scripts/tests/test_recon_kit.py",
+        "sha256": "1b4ddf482dd2d11a214ee2f821c35d7a8c41905b5d8d9cc69a293304bb8a1665"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/types/academic-lit.md",
+        "sha256": "514b0b7b1184cb95363dedeb0c2298a9bf5c430c74146fe2114f31780fadb325"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/types/competitive.md",
+        "sha256": "39b53df87d295fdc4388719fcdf31ad2221e64afc136e669207f46d2727a3aec"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/types/domain.md",
+        "sha256": "3a34b2e62c3589f8c8d01158357ee9fba32648c9fdfe70035bb3ca971862896b"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/types/market.md",
+        "sha256": "81ac04499da441857672e29fcd7169436a7e239e67194288ac0d526ec514cb5e"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/types/technical.md",
+        "sha256": "55f71428c70547b89d67ef0c6cdad59caeb0ee21082cd1230c05618ba8d04707"
+      },
+      {
+        "path": ".agents/skills/bmad-deep-recon/types/user-voice.md",
+        "sha256": "1831ce46e53e8c68244d28e336c5ef9e53e64f21a00b74a817b9b2924c1e8e72"
+      },
+      {
+        "path": ".agents/skills/bmad-dev-auto/SKILL.md",
+        "sha256": "1c056c69a17043bfb4b80f9e42a8ec8338fc6fa47c6ae8d5cf53f8a326966b4a"
+      },
+      {
+        "path": ".agents/skills/bmad-dev-story/SKILL.md",
+        "sha256": "8f9baf6a4643a3e9b307864eceed5aa9ddfe4e325226d70b78e0c85908ab7d5d"
+      },
+      {
+        "path": ".agents/skills/bmad-dev-story/checklist.md",
+        "sha256": "630b68c6824a8785003a65553c1f335222b17be93b1bd80524c23b38bde1d8af"
+      },
+      {
+        "path": ".agents/skills/bmad-dev-story/customize.toml",
+        "sha256": "baba9f07f653063aa94981f1413d5dd4f604931077fbfb04d9c2e397f8d33237"
+      },
+      {
+        "path": ".agents/skills/bmad-document-project/SKILL.md",
+        "sha256": "c4a09a6dc3aaaf90e12e1467b48a37416820ff351316a4eda7cda826dbb7fbd7"
+      },
+      {
+        "path": ".agents/skills/bmad-domain-research/SKILL.md",
+        "sha256": "6c873cdb44ed6444c2abfb335ad7af474fda56f4ba62c1c9c7cff42d9a243cd4"
+      },
+      {
+        "path": ".agents/skills/bmad-edit-prd/SKILL.md",
+        "sha256": "26448c4017c09ad8defa8525d9517ce681bb50222320517eaa635fa0f31989f9"
+      },
+      {
+        "path": ".agents/skills/bmad-edit-prd/customize.toml",
+        "sha256": "35cc2dfb3eda73a0ae4dc987cac58867b25c43ce5c5a1bf552e215826ede6c22"
+      },
+      {
+        "path": ".agents/skills/bmad-editorial-review-prose/SKILL.md",
+        "sha256": "153e7b0a240c3f5e49d6128ff1797aabc368618611d895f7f152e73fbcb12fab"
+      },
+      {
+        "path": ".agents/skills/bmad-editorial-review-structure/SKILL.md",
+        "sha256": "5e45da216b00aad3955a7196df6cb8e52167f441d2dcd7c064983881691bf1e8"
+      },
+      {
+        "path": ".agents/skills/bmad-editorial-review/SKILL.md",
+        "sha256": "3b939876b4977bec7f2d3ee33a8871b266f25efc72768d72868ac26ff9158cd2"
+      },
+      {
+        "path": ".agents/skills/bmad-editorial-review/customize.toml",
+        "sha256": "a5c5fed539e6543121e57cc29bb65559bb6391efc806bf8759c8e29697a94a34"
+      },
+      {
+        "path": ".agents/skills/bmad-forge-idea/SKILL.md",
+        "sha256": "a838096deb871b3482dffe6163be16104f7911698b25af5617751655fd3295c9"
+      },
+      {
+        "path": ".agents/skills/bmad-forge-idea/customize.toml",
+        "sha256": "ef5fadd1df3550cae00b1b442606bf84d187bfd55397563f143e1057430df45c"
+      },
+      {
+        "path": ".agents/skills/bmad-forge-idea/scripts/resolve_personas.py",
+        "sha256": "b3e5f2f38de013ad878d8ac9c1d4e77d555c2d665dd6c0bc16f9f567d2bbd30c"
+      },
+      {
+        "path": ".agents/skills/bmad-forge-idea/scripts/tests/test_resolve_personas.py",
+        "sha256": "1c4fa4b1d68bfbd10e4b38cad3c8286dad62345cebd08fe94a6862351b02855e"
+      },
+      {
+        "path": ".agents/skills/bmad-generate-project-context/SKILL.md",
+        "sha256": "8cc66337d465bb088831d8973a25cfb4374f1a3427638cc2fb553fad29d08f12"
+      },
+      {
+        "path": ".agents/skills/bmad-help/SKILL.md",
+        "sha256": "68a19089a0073b299c705e9afaa8d18183e78f88a185a68e9efba2e14062effc"
+      },
+      {
+        "path": ".agents/skills/bmad-market-research/SKILL.md",
+        "sha256": "b52667b85bee97ff23dd02532a2f286c72e63fd14b1afaedd6592de4d6112df6"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/SKILL.md",
+        "sha256": "de035b4e081fdd626a20114178f706ac222f519171d82b02139a7cec561a3487"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/customize.toml",
+        "sha256": "9c6ee33cd7fdd80e4adf514c3d54636d933d5250c2ddd78041c6cfe73b745bb0"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/references/create-party.md",
+        "sha256": "2f810332c36c17d14eb55717aed48f3020acf0713bb9f932479be9fbc3856e9e"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/references/mode-agent-team.md",
+        "sha256": "def759a17f4bb45463b68fb74c2b828b0a4241720b2b6cc1c9c611a1016ae9d7"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/references/mode-auto.md",
+        "sha256": "a37fd24f76dfcde385890d5c5947bb6f40ca44bea86c805d267b6ae3aab39f70"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/references/mode-subagent.md",
+        "sha256": "86161b24a0b13b8f9cb9309042e4249d8caefff8cc33728b084cd2ec22f9d2e1"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/references/party-memory.md",
+        "sha256": "800b4b4b920bb881a7b32aaabca8559a98273799b2476d83a23e290e301fb315"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/scripts/resolve_party.py",
+        "sha256": "0bed5ad2139f4412699c07d571c218470901b901ca4a72b441ec9308dbc8ce74"
+      },
+      {
+        "path": ".agents/skills/bmad-party-mode/scripts/tests/test_resolve_party.py",
+        "sha256": "bb53fe03ec3013ed96c0fb399c1948f28bcf55cb2d7727fe0189343fcaa667d5"
+      },
+      {
+        "path": ".agents/skills/bmad-prd/SKILL.md",
+        "sha256": "5c220a51dc6f25499b7f18c7104a0a981dc3d721aa63d0fba88ec3de32c3fbde"
+      },
+      {
+        "path": ".agents/skills/bmad-prd/assets/headless-schemas.md",
+        "sha256": "8d3621333a72400512bd62511bc4c73fc745711505e1f852c697ff8c5fa2de93"
+      },
+      {
+        "path": ".agents/skills/bmad-prd/assets/prd-template.md",
+        "sha256": "b6fe8fc1390b8e46961d5eb5e6f2fe6c65dca2f30623d492677672e02868f7ab"
+      },
+      {
+        "path": ".agents/skills/bmad-prd/assets/prd-validation-checklist.md",
+        "sha256": "41d9f09064772a92ec908d970618e47ba63dc86b5c5a1a21d5a2c676d3ba8e3f"
+      },
+      {
+        "path": ".agents/skills/bmad-prd/assets/validation-report-template.html",
+        "sha256": "a80becdd8205d2d7c18738855830b096172a496b96b5ca8a0820ec55c9bb8bf9"
+      },
+      {
+        "path": ".agents/skills/bmad-prd/customize.toml",
+        "sha256": "7f9a3a3503a3f758003ce2f1de59c31cc53658223e355fc76055f3140ef34e90"
+      },
+      {
+        "path": ".agents/skills/bmad-prd/references/headless.md",
+        "sha256": "4dad58ebee63933a53179016513ff94d143ce9f68e226489d390e2c36bf1d848"
+      },
+      {
+        "path": ".agents/skills/bmad-prd/references/validate.md",
+        "sha256": "19b2fa66d58cb4fef3d920cd09c81f8add4ee44dd4191bec87eaba84c2093338"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/SKILL.md",
+        "sha256": "042611ccabfdab1254e6591f6b86f81f332acb874fc2d148af5ac6dcd5a1c726"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/agents/artifact-analyzer.md",
+        "sha256": "7bdc44830f8d593346ec0ee15e36e1e431432fcc6c38b70bb861999315c9cfa4"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/agents/web-researcher.md",
+        "sha256": "6e9127bb9bd3e4b15c701e4ced9eef328769262cd34eadc221bebe954c1f3aef"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/assets/prfaq-template.md",
+        "sha256": "b27e6964f0437ab4e78c8c0ffbe5052c28e3b3ef2fc811726cbb394d5a5c7559"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/bmad-manifest.json",
+        "sha256": "9d91d2ae277b87bdfb8785df6a660788743c5cdf98cbd9fcf88c29f957324709"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/customize.toml",
+        "sha256": "8994f925bab65bd310e5ab38781286b6137f3e0c9e89f3ab8a2f480eb05e0de5"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/references/customer-faq.md",
+        "sha256": "96f8565197649c58908a1d61b6cd805fd01f57da7945ba889c18d087ad597aeb"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/references/internal-faq.md",
+        "sha256": "26eb83f844cda1ed8efb50f4703d61713ada8a64bd27eb387f759f858b5748de"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/references/press-release.md",
+        "sha256": "c406adb0e2d2cc326cbc45d0174f89d014523448ad82bc272293999d22aec596"
+      },
+      {
+        "path": ".agents/skills/bmad-prfaq/references/verdict.md",
+        "sha256": "81c06748ae2cb8e191cd282ecff83bea79532512c994fd4fffbf12c56be58a13"
+      },
+      {
+        "path": ".agents/skills/bmad-product-brief/SKILL.md",
+        "sha256": "4c15a8ec688c998eeb71957f208b5953b1ac7a5641b008b3509f1f4fcdc8e6cd"
+      },
+      {
+        "path": ".agents/skills/bmad-product-brief/assets/brief-template.md",
+        "sha256": "bb28edf75d023067551c8d417b19b8803324e7acfb2ad0c80f882e9134f4c1f1"
+      },
+      {
+        "path": ".agents/skills/bmad-product-brief/customize.toml",
+        "sha256": "50abc46f7c2e7cc7b02e2edc4aa6a237a46ea49dcc6781da5b42bd8968de39ab"
+      },
+      {
+        "path": ".agents/skills/bmad-project-context/SKILL.md",
+        "sha256": "1a276f306ed76f98ad2b04864cfe365426420d33438879ea4f0705c2a013324c"
+      },
+      {
+        "path": ".agents/skills/bmad-project-context/customize.toml",
+        "sha256": "9bf8a3aa919832cd8932853da550fcaebd06a9e13c0cde453f4379d8327f9c0f"
+      },
+      {
+        "path": ".agents/skills/bmad-project-context/references/best-practices.md",
+        "sha256": "ded4ad303ea7a62c2c55a8673085cb4deeaf8306a68ebcc09fa2c308589fbf9b"
+      },
+      {
+        "path": ".agents/skills/bmad-project-context/references/template.md",
+        "sha256": "c8b9a1fc165996614504bb9c90c5b1c6c808a8d483e36a4d250d79f62fda6fa1"
+      },
+      {
+        "path": ".agents/skills/bmad-qa-generate-e2e-tests/SKILL.md",
+        "sha256": "4aad390d3f063efb8783637a0f72b993135ec2acb810693d3146a161172057c8"
+      },
+      {
+        "path": ".agents/skills/bmad-qa-generate-e2e-tests/checklist.md",
+        "sha256": "b58f810aeb1040c2f6758c88aa133afce72f8cc178d3d97ff0fbaa3d943057dc"
+      },
+      {
+        "path": ".agents/skills/bmad-qa-generate-e2e-tests/customize.toml",
+        "sha256": "04a99926b2d79318b927434c7344dc666f143026ed99c7fcc0d6e3d68263ae66"
+      },
+      {
+        "path": ".agents/skills/bmad-quick-dev/SKILL.md",
+        "sha256": "23bb1434e03693152311b8e79570bb8a042eb39f57615cc4d0df15b72f29b113"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/SKILL.md",
+        "sha256": "8da5b53055afa76cf88135f186d35a6cb95bab1096ed96022354846dc788d26a"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/customize.toml",
+        "sha256": "ff6fdda35fa4b7d9c2dcb4ffc3e06e56de9a588d4e4e6908379bc16a904d4225"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/references/acceptance-verdict.md",
+        "sha256": "09a65007c39af83e01e039331c252e6e670b134cd5e2a4b5e05ac9d9fb7e37f1"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/references/aggregate-views.md",
+        "sha256": "5b278afce4a53692d8715b4af178e4233da0876921dc3154b5763d056cb5ff0b"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/references/evidence-gathering.md",
+        "sha256": "575bace78d7c03c48d86a209dd664f7dd22295a222b75e6d6298894cb7b7ce00"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/references/retro-document.md",
+        "sha256": "de8164664cd2be7f73b8ba5552e9e0f58816d2a7c4be8efc7715461846bb7001"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/references/team-discussion.md",
+        "sha256": "a9c504c436038c7e47d08322413aa3c213d2859b36ae30e873cb8c60fd9e008e"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/scripts/git_evidence.py",
+        "sha256": "6e08688d2943217b61e784c7df3508aa1502d7cecf53ea7cd530944c431c91b6"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/scripts/sprint_status.py",
+        "sha256": "a697eecd53cd9177657aee4cfdb2eab06d7d81f3e855b096cfe0482a74c50ebe"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/scripts/tests/fixtures/sprint-status-template.yaml",
+        "sha256": "64b1a937e1fe03b8b8d158e3b1caeb89e7d51692a56c16038e2af091decc553a"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/scripts/tests/test_git_evidence.py",
+        "sha256": "0abfc8fad338830fc2db656d3ccc500631b0ea7a2ab87d853c13a6bbd46ff13c"
+      },
+      {
+        "path": ".agents/skills/bmad-retrospective/scripts/tests/test_sprint_status.py",
+        "sha256": "23da16cca54904a256fcf88fd8f912c3f6091ea343768c241bbd2aeebbca2af3"
+      },
+      {
+        "path": ".agents/skills/bmad-review-adversarial-general/SKILL.md",
+        "sha256": "ca1d05a05eb41ec446abd862e9afe4a88b9188a3bb93bc3e70ca68ecb8740619"
+      },
+      {
+        "path": ".agents/skills/bmad-review-edge-case-hunter/SKILL.md",
+        "sha256": "f9db1d7f58c5e3f7586c10c920d4dd9d6c6d6e2dff5cd49110ec1edb387937a1"
+      },
+      {
+        "path": ".agents/skills/bmad-review-verification-gap/SKILL.md",
+        "sha256": "4ee67cc3d7355ba05d195797cb2d57d45f9046ee31781f2d133ff3484cfb53ae"
+      },
+      {
+        "path": ".agents/skills/bmad-review/SKILL.md",
+        "sha256": "144e6c46d9157f7a88722c56139cd78c12903b1283ed84dd9c2b1f5dfa7673c1"
+      },
+      {
+        "path": ".agents/skills/bmad-review/customize.toml",
+        "sha256": "38470c888a809ee030dc11d38868bb1ac5c1d547f06d218b711be5df53385c00"
+      },
+      {
+        "path": ".agents/skills/bmad-review/references/editorial-common.md",
+        "sha256": "f0cdc72ea345b2c5dc3001477b3dfcc909ca11b78f7db8865b6763d18ffc66c8"
+      },
+      {
+        "path": ".agents/skills/bmad-review/references/lens-adversarial.md",
+        "sha256": "7c5ce97ab2f3ecb96ceb6aa76417f68c1b7df535edd3cc51666d8e1216e6e557"
+      },
+      {
+        "path": ".agents/skills/bmad-review/references/lens-edge-case-hunter.md",
+        "sha256": "f2709e3adb40943ea0f19d0797be379caf0875eaef9a55081dc1e170e8288b68"
+      },
+      {
+        "path": ".agents/skills/bmad-review/references/lens-prose.md",
+        "sha256": "4cbcb1eaea8567d272f5db7c6cdfd74ed5a8aae6831053cb2f01cbfc2cb98b98"
+      },
+      {
+        "path": ".agents/skills/bmad-review/references/lens-structure.md",
+        "sha256": "98c08221f517133e57ef6325013935360c3365ebd7dcb8411b2050d7df507ee3"
+      },
+      {
+        "path": ".agents/skills/bmad-review/references/lens-verification-gap.md",
+        "sha256": "e7123d81171eeeee1b3782d13d94c2988969fe357dd71949131a5eb97803e2c6"
+      },
+      {
+        "path": ".agents/skills/bmad-review/references/structure-models.md",
+        "sha256": "f84f85070e1af75f2482757aba9d37d69d805a20826d185527e598f2ba6b9292"
+      },
+      {
+        "path": ".agents/skills/bmad-review/scripts/tests/test_word_metrics.py",
+        "sha256": "3b5a285d3c9f611b3cda8c9c1d52d6b214c1f72e6e64a94ea5b0e220db5a8765"
+      },
+      {
+        "path": ".agents/skills/bmad-review/scripts/word_metrics.py",
+        "sha256": "fb45007a7f3cfc18d13ee8bd4787facdaae297570193bc769456297dd33da78b"
+      },
+      {
+        "path": ".agents/skills/bmad-spec/SKILL.md",
+        "sha256": "5b5680dbf01dbfc5b4a5485e70f20ea48ac21a1d6137c4ea2ff704262dcc45d2"
+      },
+      {
+        "path": ".agents/skills/bmad-spec/assets/headless-schemas.md",
+        "sha256": "83afb3614716db2347d83586a67b9c524492dd50db5282436ccb35c99fb5f08a"
+      },
+      {
+        "path": ".agents/skills/bmad-spec/assets/spec-template.md",
+        "sha256": "4b3a032c045fdd0903933446fc07f93e879997f28a0294ed4344da71192b20ee"
+      },
+      {
+        "path": ".agents/skills/bmad-spec/assets/stories-schema.md",
+        "sha256": "4f8137c00e2710288354a4466d1cfb90704f4b2a04bd3b63924218fd589cc6a9"
+      },
+      {
+        "path": ".agents/skills/bmad-spec/customize.toml",
+        "sha256": "a89e0f53f9b6386c281dd0158a21801a6b16f122085fd68b0220cd403c18f830"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/SKILL.md",
+        "sha256": "6ed5dd51be5d6a807c7e6af0542bff609fe69e84b67025ed7aa3fd9ae1ccb36d"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/customize.toml",
+        "sha256": "f7bde2f792e8604f26122ee792c5493e270710296044b07680db7d90e886caf3"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/references/fix-sprint-status.md",
+        "sha256": "0406c31b70da33e2a354d9785f43d8f9918f4b923d0aac2ebd1e3707ebad5806"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/references/generate-tracking.md",
+        "sha256": "4dbf7aca26d0e6e893f288fc5e6158dbbcd65f77bbaf95e941ca705abceb1741"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/references/readiness-gate.md",
+        "sha256": "7d58ea61fafe3c1d8218203abc7512e322ca384c78d9e71829df55dfabe1245b"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/references/status-view.md",
+        "sha256": "c3547e221ebf6e55c874e2ada3e8c18198835213c76f0bb2e0e64150aac355ab"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/references/validate.md",
+        "sha256": "ac680fa0a0f945a9bc0fc89ca709b2a8e6bc3b2617cd0d3d730378c4b5edd86d"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/scripts/sprint_plan.py",
+        "sha256": "4c30f62c261599fc1da3fd319ea6ce5092aa0332221cedee1763a1040627e6bc"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/scripts/tests/test_sprint_plan.py",
+        "sha256": "f1c3b640e156946b0a234e233807b2a3983cb0d3f2d13dbb9830fbe0c67e5238"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-planning/sprint-status-template.yaml",
+        "sha256": "64b1a937e1fe03b8b8d158e3b1caeb89e7d51692a56c16038e2af091decc553a"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-status/SKILL.md",
+        "sha256": "95e695ce9665c6b3d617d41b0581bc30de6288263609a910559a97b26eb49e78"
+      },
+      {
+        "path": ".agents/skills/bmad-sprint-status/customize.toml",
+        "sha256": "96261fd227befaa4685b0a5091d3e85299d4ae8e4404176b42f5ef2e2fb501bd"
+      },
+      {
+        "path": ".agents/skills/bmad-technical-research/SKILL.md",
+        "sha256": "d8e6177fc03c3d815642bdf6b54b83ef37874e73118d89112f155dbda14afbfa"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/SKILL.md",
+        "sha256": "6475c8171bf7346964234bd35994b9d5518102dc245768c660e4dacd1e6b50fd"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/color-themes.md",
+        "sha256": "ccb6e4ef47a196476cf9392d788938ad3ca8d07b9ce095b7c092dcb4e06735f0"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/design-directions.md",
+        "sha256": "eab73b948da76a27abc908e1e7d6b124e8ff0362e6dd1990f7e60b9541cbcb98"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/design-example-editorial.md",
+        "sha256": "a659166845b1a4ed3f9aef942c5935537a97382b10303684fbb78ed86265870e"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/design-example-mobile.md",
+        "sha256": "a93fb9f114f2e83af0c961c0d7909b3859fc80bcd713715517cd639a53a0372a"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/design-example-shadcn.md",
+        "sha256": "25e0dfb2bb21483973a8f0a6ed650288b3dc2ae5ed02aa0f091bb9b6b0b39fc0"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/excalidraw-wireframe.md",
+        "sha256": "660bbcdebff50cd044a3752eda43f3cb303aca4b0f521b55a270da93b89ddb18"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/experience-example-mobile.md",
+        "sha256": "f8cd54c92193cd8c34a472df9c212ac7330976f6a115b729721dcb60034dc4f0"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/experience-example-shadcn.md",
+        "sha256": "d6ca16e87b768e8b41f352c02ee08af21d7cdac04ca21e6ae1556864b4d27590"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/headless-schemas.md",
+        "sha256": "e3a773dde85286f1a6f6dd8b26fc17e09ccea96f6257dfe7fb436353cd79242d"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/key-screens.md",
+        "sha256": "ff1c5060673dd595edd61e76806bae876264ec6895c2eaadf8a6190785bf5f7b"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/assets/validation-report-template.html",
+        "sha256": "8656945636fabe96624f8ef8fce931b073b5aecbe42d490584c1d5c7f31e1353"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/customize.toml",
+        "sha256": "61f8bfbb020beb159b8da570ed416b02ec4a9ba3709aa0d08b417648d85328d8"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/references/creative-tools.md",
+        "sha256": "e281292d7c0fdecdbb67ca9b7d95d4bed803626ba5edfd8dcc99146fcaa118e6"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/references/design-md-spec.md",
+        "sha256": "d04d5f663607aba3f3181e818ae33856e6caf5e560dcb16fa64ed80b7cf3d590"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/references/headless.md",
+        "sha256": "8da7e23d269b1644f45b5104a243a6a27fd8d075aebb95d9b7752f0d143f0f5d"
+      },
+      {
+        "path": ".agents/skills/bmad-ux/references/validate.md",
+        "sha256": "7c2189d9ac1585d9408b6ed0346ba564869e7db89dba8f81044db3431cfcee65"
+      },
+      {
+        "path": ".agents/skills/bmad-validate-prd/SKILL.md",
+        "sha256": "16bff9ed7ec003add9c56818575f613380925782bd4ef0cc0804ed34a074eeaf"
+      },
+      {
+        "path": ".agents/skills/bmad-validate-prd/customize.toml",
+        "sha256": "bfb3c8af5b81b2cdb9bb84f844f1b0dafc40d8c283effa6ad48db966b9446cef"
+      },
+      {
+        "path": ".gitattributes",
+        "sha256": "4dc7684c9a0e3c50c04a88b8a0b20a71bd0433672504f1bad7460536f424a57c"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "87f4ee55598cf02f4b42170662dd9716c61c6db63e4c44dd0ca1089b484fabe7"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "3b0a9e45455961afb58e4a7da796295438a41e5a29fa0ced9c572850232bee09"
+      },
+      {
+        "path": "Directory.Build.props",
+        "sha256": "a11ffa6188bc0be79e6cf6db592ba6352d1724e6c60b59685c674f00d29eaaf3"
+      },
+      {
+        "path": "README.md",
+        "sha256": "d4ca9666448519f7791a516e9ba59e5858298bc6ea28979d7a3cfe6d9b64550d"
+      },
+      {
+        "path": "_bmad-output/implementation-artifacts/spec-recent-recordings-search.md",
+        "sha256": "372483f277185915ac9e8177a3061bd5621f424daa6e26694c8d53d4d964efea"
+      },
+      {
+        "path": "_bmad/_config/bmad-help.csv",
+        "sha256": "2df90028f0d0425a11117dcf45b7825a4d62a44d97472bb903a5b1bfc5c4d86d"
+      },
+      {
+        "path": "_bmad/_config/files-manifest.csv",
+        "sha256": "ce99a1c8720ae1a2ef0f77362ded92f10f5fb7ef0ba02325530c4e4187b615eb"
+      },
+      {
+        "path": "_bmad/_config/manifest.yaml",
+        "sha256": "9e29bea11680af94fb17be8952dde621066e46e93bafb38273cc56b5cc01533a"
+      },
+      {
+        "path": "_bmad/_config/skill-manifest.csv",
+        "sha256": "53c438914da37714208268ad102ef52d275e507ab21a6c0bce68fbcaa95cc0bd"
+      },
+      {
+        "path": "_bmad/bmm/config.yaml",
+        "sha256": "bf38e2aaced58e15b9edb5cb53165b1f6af7bbdbceb8286f808db07ba71c192c"
+      },
+      {
+        "path": "_bmad/bmm/module-help.csv",
+        "sha256": "fe1f3c778d5d909d5858e0d13f2a7d4d18f40180de05a3c4fa7a5470dabeb945"
+      },
+      {
+        "path": "_bmad/bmm/v6-shims/README.md",
+        "sha256": "05315a8e369f5ebb9e615c1a33fd2b3f85eb92a9455c974cdc7ec7d3ea0d10bf"
+      },
+      {
+        "path": "_bmad/config.toml",
+        "sha256": "0b45affd6b186725536daf4cee40a53be3f5ed2fbe3ee8afcadde87388a2ba1e"
+      },
+      {
+        "path": "_bmad/core/config.yaml",
+        "sha256": "6f9262b64e44ee55e730b2bc7c6c978e183e981c0d7c8b10dd3ae83b892d007e"
+      },
+      {
+        "path": "_bmad/core/module-help.csv",
+        "sha256": "3d5feb19c1750d35676530c746a5c71e8959616f3c32fb161847971611d81b6b"
+      },
+      {
+        "path": "_bmad/core/v6-shims/README.md",
+        "sha256": "017900bb03baeddc0262041a6aa85bce744e8c45991dcde32ef042f9bc2a32b2"
+      },
+      {
+        "path": "_bmad/custom/.gitignore",
+        "sha256": "973b03a33f142c22cf9b65be285bebadd85790b6b55be04637d2f8c716f58fab"
+      },
+      {
+        "path": "_bmad/custom/config.toml",
+        "sha256": "282448b98150c60241fe840cdd3fa1aba22982a43f08efd8d8c2d7ac0c2b8199"
+      },
+      {
+        "path": "_bmad/render/.gitignore",
+        "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+      },
+      {
+        "path": "_bmad/scripts/config_utils.py",
+        "sha256": "48afe2bc18a29201e343cce3703be1e70df9c83ee74eeb68e57ef8ef42e8c651"
+      },
+      {
+        "path": "_bmad/scripts/memlog.py",
+        "sha256": "3b00f82ca33dc4227f715123b939514ee35c4f9c71150c894c3d8185df1b48df"
+      },
+      {
+        "path": "_bmad/scripts/render_skill.py",
+        "sha256": "8496d0d8b449d64c21b42a9aab3b13fc8a813a430c0695ffd84ad75bb1da7942"
+      },
+      {
+        "path": "_bmad/scripts/resolve_config.py",
+        "sha256": "fc78866fd42862d486d4346d2b35705f916a19e6c07bb474f8add25c71734a8e"
+      },
+      {
+        "path": "_bmad/scripts/resolve_customization.py",
+        "sha256": "9b5124e0b781823a015a19d6cf5db52bbc34b6bab41c036fd1b3d464c2a137cd"
+      },
+      {
+        "path": "artifacts/design/FEAT-013/FEAT-013 Design Directions.html",
+        "sha256": "7cba2bb73b77703f99a7f8a87615e524c122445a947628f1e354ae292305c2e8"
+      },
+      {
+        "path": "design-qa.md",
+        "sha256": "e3ce17bfa27f8bbaaf8c59f0c3177213d5deb6196825c43331377fa6c33ae274"
+      },
+      {
+        "path": "docs/README.md",
+        "sha256": "cbfd13430dd00b06d55f72ce1f34a004c542a96023317434d7ff4c24f863116e"
+      },
+      {
+        "path": "docs/architecture.md",
+        "sha256": "9ba739f688ae74faac3b003974a7ec13a7c2748adbc428de3c9476bd98571e8c"
+      },
+      {
+        "path": "docs/canon-inventory.md",
+        "sha256": "8380c4d8f300b732e019beb44df37d478f18a796681aff2a5e0ea9e66d6bb6b4"
+      },
+      {
+        "path": "docs/product-canon.md",
+        "sha256": "28a213c6eaaf88e626d12c44e8817ec7e82707be726905f19f968a1c8f0d1fd2"
+      },
+      {
+        "path": "docs/project-context.md",
+        "sha256": "bd2506983c9890980664a06421100c113687084bc93874c5967cc0a60fe7eb8b"
+      },
+      {
+        "path": "eng/build-macos-lame.sh",
+        "sha256": "a307886b407bdea7cf998675457383d749de1ab74483a9487ca1c5b3639b7bc0"
+      },
+      {
+        "path": "eng/build-macos-release.sh",
+        "sha256": "2d9e33365695509e10e7c98f6595a4a5cf4d8b6b8e6c194c8903c83abf195ca7"
+      },
+      {
+        "path": "eng/bundle-macos-native-dependencies.sh",
+        "sha256": "403f30bf6ff24842d4e9b5334626dcf4639c66642885f33e362a31c6c34cf9eb"
+      },
+      {
+        "path": "eng/generate-macos-third-party-notices.sh",
+        "sha256": "2f904ae37377d1000bff8d7fbd823f540c7d14ab81d77caa086e8f256a5f545c"
+      },
+      {
+        "path": "eng/test-macos-release.sh",
+        "sha256": "f92b78058e13762d312d063d937aa868dbeecf2986bfd24e7aefbf29963a2a04"
+      },
+      {
+        "path": "eng/transcription/Build-WhisperNative.ps1",
+        "sha256": "5ddf9172ced6f78e215dee559d38f42527521d280395d9647144e84cbe3d0ba0"
+      },
+      {
+        "path": "eng/transcription/Compose-LocalTranscriptionPayload.ps1",
+        "sha256": "1b58ada99b4d3120d5998d0ee372721313b5ad13daaf2111015307257f2c6972"
+      },
+      {
+        "path": "eng/transcription/Fetch-WhisperSource.ps1",
+        "sha256": "1b8bc83eb6eacf24288738df07cb4ac11b16c33013dcc663ad73cb94b27f6677"
+      },
+      {
+        "path": "eng/transcription/Inspect-WhisperNative.ps1",
+        "sha256": "3655b47dc27d4daf6518a67b6a59368e53b0fad79bc58930343c32c2cfb93b23"
+      },
+      {
+        "path": "eng/transcription/Test-LocalTranscriptionPayload.ps1",
+        "sha256": "c8a9b1760512b7922a6d65c10d92dce93b9541fc40e46bea9f12074257a7b8e7"
+      },
+      {
+        "path": "eng/transcription/Test-WhisperNativeSupplyChain.ps1",
+        "sha256": "62fa4b43cf686caf3100da86972baf60632048ce49bc83380942a4538f9447f1"
+      },
+      {
+        "path": "eng/transcription/WhisperSupplyChain.psm1",
+        "sha256": "10d15130510d3248a96bc3ced47819f8076d8a313a07ebccc9f40c5b0a875e20"
+      },
+      {
+        "path": "eng/verify-macos-boundary.ps1",
+        "sha256": "4a2ba4c931216ca09ee6114ad590d5e8b068fe45b47e6ad5e15d645d2eadf37a"
+      },
+      {
+        "path": "eng/verify-macos-release.sh",
+        "sha256": "0ddf9363d687ab8be94648a9c32e08e5deb6e975d43462b0f3565d7528f3878d"
+      },
+      {
+        "path": "eng/verify-windows-boundary.ps1",
+        "sha256": "5879c0cd3fa0854508e0cd9ff41b61b2d919abe07b526e18f268fe32d3deb57a"
+      },
+      {
+        "path": "global.json",
+        "sha256": "1497bda77ac26a91600f9eaa9d733be95a970961816c63738a4aafe1dc9c14e3"
+      },
+      {
+        "path": "isTranscribe.Legacy.sln",
+        "sha256": "1c38d8f19a431194074a42b47407ee9be75001c89572206c554efc910ed7ec5c"
+      },
+      {
+        "path": "isTranscribe.macos.slnf",
+        "sha256": "f1bd1dde0079157e99da29afd544c97ae63174a05ab6a96941ec7435da8d1652"
+      },
+      {
+        "path": "isTranscribe.sln",
+        "sha256": "1ed77d007689346c44b8168e1a99f4c77beaa71a1db15eb522d856d623565ec2"
+      },
+      {
+        "path": "meeting_capture_tz_v1_1.md",
+        "sha256": "23dc4938d6da093264158aca1f496bb349735dd3996422eb4e4151c3160ebfc9"
+      },
+      {
+        "path": "native/whisper/CMakeLists.txt",
+        "sha256": "3aa5b7b45b03b2fbdd0933a32ae07c0d2762bcca7845aa5d5a91083921b24089"
+      },
+      {
+        "path": "native/whisper/exports/macos.exports",
+        "sha256": "9432bb3ef5f85edc29c664c35967a290ced45d0a2432130c4bf36b0a9fecd229"
+      },
+      {
+        "path": "native/whisper/exports/windows.def",
+        "sha256": "8c01286adf2300a576d86d7bc5e4865fd3ef9981783e855f99feb041fc68ea8a"
+      },
+      {
+        "path": "native/whisper/include/istranscribe_whisper_v1.h",
+        "sha256": "d02f24c72e67712d2cd6b7aa518068529d0114fc2a2bc88f6db7a01a0d4b53d3"
+      },
+      {
+        "path": "native/whisper/licenses/openai-whisper-LICENSE.txt",
+        "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d"
+      },
+      {
+        "path": "native/whisper/licenses/whisper.cpp-LICENSE.txt",
+        "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+      },
+      {
+        "path": "native/whisper/patches/0001-primary-backend-introspection.inc",
+        "sha256": "1454dafbd55dda3a9ac64fc7941b41e4f98ea6eff012badf1d6834247b4e0f22"
+      },
+      {
+        "path": "native/whisper/runtime-manifest.v1.json",
+        "sha256": "fe37a0d085edaab7925c25f8e62514fe714dda4c66cfe3f2c48e2bea191d2feb"
+      },
+      {
+        "path": "native/whisper/src/istranscribe_whisper_v1.cpp",
+        "sha256": "af664631bac30b56fe45827900a6fae086813105a7c4cd8084a24d8724856ab9"
+      },
+      {
+        "path": "packaging/macos/FIRST-LAUNCH.txt",
+        "sha256": "3e58cb7585f112ff27e2fcc4ac1725d5724f90b4723787b7c695fb3cebccd1ed"
+      },
+      {
+        "path": "packaging/macos/Info.plist",
+        "sha256": "2ccf878aa22fe687a22dd652662065882eca3973bc9702a54e0a732ef75c3a8b"
+      },
+      {
+        "path": "packaging/macos/Publish-MacOSLocalRuntime.ps1",
+        "sha256": "387a5a34f8511a281e81de18faf03c76313078683c4ac3d83251106884bb00d5"
+      },
+      {
+        "path": "packaging/macos/README.md",
+        "sha256": "acc9a71d05ed94fba4678d49ebc83cbd7c40396c9f60d60c257cfd7985479cd8"
+      },
+      {
+        "path": "packaging/macos/isTranscribe.entitlements",
+        "sha256": "f227d798274c67b00c60f45a27c8d990c4095923d136b99aed0987724eab93c9"
+      },
+      {
+        "path": "packaging/macos/licenses/SourceGear-SQLite.txt",
+        "sha256": "96fb6106fd7d85ab95b971385d77deb6f42155a26f054174e41b2b7b527117fd"
+      },
+      {
+        "path": "packaging/macos/native-library-allowlist.txt",
+        "sha256": "7569c9395fbdc38f8e08022f519bb2ded6205bebda48f504d2c646da8c177cad"
+      },
+      {
+        "path": "packaging/macos/third-party-notice-policy.json",
+        "sha256": "304b30d9d66976c61f6f54ee4c3931a67ceefa91aa4cd51376776260bbcd5c39"
+      },
+      {
+        "path": "packaging/windows/Build-InstallerBundle.ps1",
+        "sha256": "2310055be0e9dbe9e9fe86ed806dc1ec86689107c103a7e0ebeed747a426978e"
+      },
+      {
+        "path": "packaging/windows/Build-WindowsRelease.ps1",
+        "sha256": "c7ca4a3bad87a4e5e14eca0762a69f3c1f6d97661fbd61c29f00ac32bb377226"
+      },
+      {
+        "path": "packaging/windows/Install-IsTranscribe.cmd",
+        "sha256": "6f24e95bfde8706b07d35bde2177b3be0d435cdc780d050ada63cc709ffcd32e"
+      },
+      {
+        "path": "packaging/windows/Install-IsTranscribe.ps1",
+        "sha256": "28660a41c46a5f7832372ae41e2f0cdbfd75c9081240180d1cd766bbfe6d4c0a"
+      },
+      {
+        "path": "packaging/windows/Invoke-LocalWindowsDevelopmentTrust.ps1",
+        "sha256": "77b4736d5f4a72d00cf4f992409af32f2448cd581f7d48d318da11174edfa4e7"
+      },
+      {
+        "path": "packaging/windows/Invoke-LocalWindowsReleaseLifecycle.ps1",
+        "sha256": "b5c2b5ed1a891e4c22de39120a02f181eb0ae0c3ece989c329ed5da107929622"
+      },
+      {
+        "path": "packaging/windows/New-ThirdPartyNotices.ps1",
+        "sha256": "c62aeedb07d4cdb6d6b68ba1fa2419c04318e8fe90f81b353b5f31bfe782e23c"
+      },
+      {
+        "path": "packaging/windows/New-WindowsAcceptanceKit.ps1",
+        "sha256": "20dd8694d4be4efacc895c4dc55f85dc689b0a872a76d5d1bf609a01fbc90e2e"
+      },
+      {
+        "path": "packaging/windows/New-WindowsSandboxAcceptance.ps1",
+        "sha256": "608466f44a4f2d62dc4d6a11b38e8135ebe6be58ddd979d88051cad5090b6b80"
+      },
+      {
+        "path": "packaging/windows/README.md",
+        "sha256": "0551b5af88b9d06d9be2594b54be9c800ae348c804d0ea18298f98a7f01a3ad3"
+      },
+      {
+        "path": "packaging/windows/Set-LocalDevelopmentCertificateTrust.ps1",
+        "sha256": "811f05d2f37db40b4fc0478a6dc10769dfd83e4d3120ac425df7d6b3a2271852"
+      },
+      {
+        "path": "packaging/windows/Test-ThirdPartyNoticeDeterminism.ps1",
+        "sha256": "c46bc531c4e06c5e1c97bdaf9f63da1cb8fabc1221ec39ffd22e48a1311700c0"
+      },
+      {
+        "path": "packaging/windows/Test-WindowsReleaseArtifact.ps1",
+        "sha256": "c96d94132bcdd4d3bdeec31873cc57db4ab26ebfe7be173cdd391e6817461fbe"
+      },
+      {
+        "path": "packaging/windows/Test-WindowsReleaseLifecycle.ps1",
+        "sha256": "0a3e6616d07cd830750ac8a8057799a81a6fba6581a4a4961a45459e5b11b87e"
+      },
+      {
+        "path": "packaging/windows/Test-WindowsStoreSubmissionArtifact.ps1",
+        "sha256": "acf071280869200e3d05abf0d1b1adf86e368bbf6f59e3a411215d0241cc0113"
+      },
+      {
+        "path": "packaging/windows/Test-WindowsStoreSubmissionMetadata.ps1",
+        "sha256": "6744c0a2ee2e6242c6f7e76b8eb5b2457280b4261f0180c9bb728ac51506e018"
+      },
+      {
+        "path": "packaging/windows/Uninstall-IsTranscribe.ps1",
+        "sha256": "0a4f9b6cc86f8bdcbac079c6d17aa9d83aaca4173b7a9bc8a430ab44207b832c"
+      },
+      {
+        "path": "packaging/windows/WindowsSdkTools.csproj",
+        "sha256": "b1e13e52ee469292672373b097f62bbefadc47ba75fe067242e01d712996a19d"
+      },
+      {
+        "path": "packaging/windows/msix/AppxManifest.template.xml",
+        "sha256": "86da8d1c2b258ca1ba9ec0df904ed5af8c9798d71df108fd20df1518c6df8358"
+      },
+      {
+        "path": "packaging/windows/msix/Assets/Square150x150Logo.png",
+        "sha256": "eeb76802bb062ff2bf0de7b729199f7cb0b9cbb286cf6bbdccbfdb987d43df46"
+      },
+      {
+        "path": "packaging/windows/msix/Assets/Square310x310Logo.png",
+        "sha256": "f4e33934cbeb1693205aee30ab5dc4c27f207ac634303c9824d058616f9f7388"
+      },
+      {
+        "path": "packaging/windows/msix/Assets/Square44x44Logo.png",
+        "sha256": "a4d70fa9a29c027876dc78b740e92bb66abf5d7912a9dbb4592839a634827f5f"
+      },
+      {
+        "path": "packaging/windows/msix/Assets/StoreLogo.png",
+        "sha256": "5486440ae3f3e803ffc131b07baf0f88b5c3037a1f4d6c5031eb40588f8d7186"
+      },
+      {
+        "path": "packaging/windows/msix/Assets/Wide310x150Logo.png",
+        "sha256": "cee976273698a4599208761d5454e8b567197b27003275ed0157fd8c67529fb3"
+      },
+      {
+        "path": "packaging/windows/notices/licenses/Apache-2.0.txt",
+        "sha256": "05cca4a19d337471637fff3a7f5f02b5253d102576051ecc5ef29c4dcbc2085e"
+      },
+      {
+        "path": "packaging/windows/notices/licenses/MIT.txt",
+        "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+      },
+      {
+        "path": "packaging/windows/notices/licenses/OFL-1.1.txt",
+        "sha256": "d51a17f9e5c361f339bb47c358dc2c5ce4508e57dbd377c689d632aac52aea85"
+      },
+      {
+        "path": "packaging/windows/notices/overrides/Avalonia.Fonts.Inter-12.1.0.txt",
+        "sha256": "179757b6110318629a5431500308540e4787de0170cf3c38bf15709abf3ce9e4"
+      },
+      {
+        "path": "packaging/windows/notices/overrides/Microsoft.Windows.SDK.NET.Ref-10.0.26100.84.txt",
+        "sha256": "63791b426dd55a545b543db57af38cca8d9a19d349eefc52acb1980da46c074c"
+      },
+      {
+        "path": "packaging/windows/notices/third-party-notice-policy.json",
+        "sha256": "e5425134c04f09fe4c8fffa8e7c76c851ace3dc6d62eff9d678e90807e2e43be"
+      },
+      {
+        "path": "packaging/windows/packages.lock.json",
+        "sha256": "63b4412d2dd8301a30f280b46f9b5d41d1e23cb305e98d790bd291f618314b3f"
+      },
+      {
+        "path": "packaging/windows/portable-kit/Invoke-AcceptanceKit.ps1",
+        "sha256": "53dd42587c45e4ab80a3a9cde66f8f3505ced42077ba215d8479c4568103ae5d"
+      },
+      {
+        "path": "packaging/windows/portable-kit/New-WindowsSandboxConfiguration.ps1",
+        "sha256": "d2eb8abe888bd5ec7dba79d9544025d71dd511f82588f3231fc5771a53a88880"
+      },
+      {
+        "path": "packaging/windows/portable-kit/README-FIRST.txt",
+        "sha256": "69e86be862d98219eb6e41ebdd604a432c848ea2528aa1fee0cc073734c4222c"
+      },
+      {
+        "path": "packaging/windows/portable-kit/Run-Clean-VM-Lifecycle.cmd",
+        "sha256": "8219480a49cbbeac49936019a70cd4186a1f05f1adc12ecbcc6745da21522630"
+      },
+      {
+        "path": "packaging/windows/portable-kit/Run-Clean-VM-Preflight.cmd",
+        "sha256": "eee795804a8c1629c14ab85948e0a77ffb480faf0274ac8773ca0427c9ca8375"
+      },
+      {
+        "path": "packaging/windows/portable-kit/Run-Windows-Sandbox.cmd",
+        "sha256": "e7842f94addc77463d15210af4e64dad13a783762cc62f73a47be4a8ccb772d8"
+      },
+      {
+        "path": "packaging/windows/portable-kit/TEST_ONLY_DO_NOT_DISTRIBUTE.txt",
+        "sha256": "9e26085f5eafb790fdc22ef32ef632e0cd3bd7a548c9bf9422a602e7e1e34941"
+      },
+      {
+        "path": "packaging/windows/portable-kit/Test-AcceptanceKit.ps1",
+        "sha256": "1771c377de728b737bcb12774e6a684932f66dbe7a548e0da1db5b9765c91e17"
+      },
+      {
+        "path": "packaging/windows/portable-kit/docs/CLEAN-VM-CHECKLIST.md",
+        "sha256": "a9ba6bc10b598f55f271fea36b9033dbf5786b37ba08beb3550b640d3a72e7ce"
+      },
+      {
+        "path": "packaging/windows/portable-kit/docs/COVERAGE.md",
+        "sha256": "98154ef7c836b7f1dfe5a07f744d5c51f0bc9c0ad93c0ef21cd2656475e2814e"
+      },
+      {
+        "path": "packaging/windows/portable-kit/sandbox/Run-In-Sandbox.cmd",
+        "sha256": "8ab0a6da668bd6354bc8c04d6740207456e5f06fed64a3649984af503b0a5790"
+      },
+      {
+        "path": "packaging/windows/release-identity-policy.json",
+        "sha256": "2a9661bd1e58c573a25f94bdc38f3bb2f6be0879b697a5229f54c3acc89c7dde"
+      },
+      {
+        "path": "packaging/windows/store-identity.template.json",
+        "sha256": "765580258c292a7353b9e4ec7a78139b1a209b72c3fcf44eac4f89f7d615c133"
+      },
+      {
+        "path": "packaging/windows/store-submission-metadata.template.json",
+        "sha256": "966a8cbbc180b979bbfe53292cdca3c4d07f02d59973700c54454cd9e2ce09c7"
+      },
+      {
+        "path": "packaging/windows/store/privacy-policy.template.md",
+        "sha256": "237867cbd630c65ad97acf0a3c3a5939b359cbd250723c8f8568baa66f71b8bb"
+      },
+      {
+        "path": "packaging/windows/windows-sandbox/Invoke-WindowsSandboxAcceptance.ps1",
+        "sha256": "c93107127a170c5732abe32764a68284041fec34fd8f3883f07a537866833381"
+      },
+      {
+        "path": "packaging/windows/windows-sandbox/README.txt",
+        "sha256": "f93067d68b77c60c946dbc0d0a7715adb21a8d998c3f48db45e433f48e5ae726"
+      },
+      {
+        "path": "packaging/windows/windows-sandbox/Run-IsTranscribe-Installer-Acceptance.cmd",
+        "sha256": "4a79e19a881a65ef8fab67f52b3fb3cebb3379dbdcc2680800a9336cff73ced8"
+      },
+      {
+        "path": "specs/BOARD.md",
+        "sha256": "1d6529579a279745a0925086a8512f588a69b13728eaeeadcfae5305b260e619"
+      },
+      {
+        "path": "specs/SPEC-MAP.md",
+        "sha256": "76ca773c59315c2ac572c389c186dc215154d43df6489fc4d3b2670fb71e17fa"
+      },
+      {
+        "path": "specs/common/PROP-000.md",
+        "sha256": "e5b9ab588f71a5576e3e2abe045827ee9da50d4d7034222edb221f6f2b159c86"
+      },
+      {
+        "path": "specs/common/PROP-001-product-canon.md",
+        "sha256": "b55706f3bdb1a0a1db020f17484d89ccc334e584f1688370841505c96cd13878"
+      },
+      {
+        "path": "specs/common/PROP-002-app-shell-and-settings.md",
+        "sha256": "ded8ff9087e567bdf9589cb26c6276c9cd13de1bab656a2a729bab95473e7cc8"
+      },
+      {
+        "path": "specs/common/PROP-003-audio-capture-and-device-observation.md",
+        "sha256": "60e8d00c28a2270486d92036a744b36665cfdd092650baafffb3b90c1c2515ba"
+      },
+      {
+        "path": "specs/common/PROP-004-meeting-session-and-data-model.md",
+        "sha256": "59cbc29a37b9d36582eb44b80eb8c1b88e603afd4ca10594a666058654c08111"
+      },
+      {
+        "path": "specs/common/PROP-005-local-runtime-and-operations.md",
+        "sha256": "ae6331fe29c94788951b99e7b41fc466e471d9f189685ee7521eac89c90ef9d6"
+      },
+      {
+        "path": "specs/common/PROP-006-release-v2-product-canon.md",
+        "sha256": "73baac2afff7f7fc5ba8d929e2fa96763625c3a685ee7ab061ece4dfaf39f265"
+      },
+      {
+        "path": "specs/common/main.md",
+        "sha256": "feea894c86a307f0e6094b4fe07b7bcb75abdab7b7119549506c21f7db0991d2"
+      },
+      {
+        "path": "specs/common/structure.md",
+        "sha256": "f370950495e37f011ebb2fea175bf194e5db4ceaad8270b23922e7a2128c6c75"
+      },
+      {
+        "path": "specs/evidence-schemas/feat-011-live-v1.schema.json",
+        "sha256": "f6506171f8ea0eaa0664f989cbfe1be4776f7c9ff18a536125a4a4b7512fa752"
+      },
+      {
+        "path": "specs/modules/app/FEAT-001-first-run-setup-and-settings.md",
+        "sha256": "a6fdf06a8af829147db34174eed80dec1fead9d9bb3f49da090f715a72786e12"
+      },
+      {
+        "path": "specs/modules/app/FEAT-002-automatic-detection-and-session-lifecycle.md",
+        "sha256": "1b9134293ce21b3eb9c98823f18f9034aba4b372f25b806819a324044f695fd5"
+      },
+      {
+        "path": "specs/modules/app/FEAT-003-manual-recording-controls-and-tray.md",
+        "sha256": "c0a402e11a06d431a1615479146bfbf35e14106883ab75055d4a64bcef383476"
+      },
+      {
+        "path": "specs/modules/app/FEAT-004-recordings-home-and-artifact-access.md",
+        "sha256": "2ab67d78bafd672ad050801634c3a2588aa5175c18ed36df9689acd62589187a"
+      },
+      {
+        "path": "specs/modules/app/FEAT-005-application-rules-and-discovery.md",
+        "sha256": "d227fb680a5a4d4149eb79267bef6a7b4837856ebcad92edd6b673edb36b34d5"
+      },
+      {
+        "path": "specs/modules/app/FEAT-006-fireworks-transcription-and-markdown-export.md",
+        "sha256": "bbf17e1f9a24c31cea45e894ce0ae7ff214253844ec8faf69cc557244f8bb20e"
+      },
+      {
+        "path": "specs/modules/app/FEAT-007-device-aware-recording-continuity.md",
+        "sha256": "cf1818ce8d4ef26bbf4d030f15642e09010321f565a57c8ed6ab5b8711a15b70"
+      },
+      {
+        "path": "specs/modules/app/FEAT-008-modern-ui-design-system.md",
+        "sha256": "ab0ae1c5c1c56ee333e87c4c11532bf2ae570aefd097110ac3bc2fc274dd87a2"
+      },
+      {
+        "path": "specs/modules/app/FEAT-009-settings-ux-simplification.md",
+        "sha256": "0a9a63175c5ab76cdc39ea82aa3aeacd1ac5715eed0094688934f60c0abc02d1"
+      },
+      {
+        "path": "specs/modules/app/FEAT-010-russian-localization.md",
+        "sha256": "4d422a3c9ab7ebd15a401a2239851762cfc6fc0a0bde01fd30005a77d309fb5a"
+      },
+      {
+        "path": "specs/modules/app/FEAT-010.A-release-v2-localization.md",
+        "sha256": "09b0f25fa09dbf4bc2601d459e6454517804c41fd63f9084102cb545b797b900"
+      },
+      {
+        "path": "specs/modules/app/FEAT-011-meeting-detection-v2.md",
+        "sha256": "ac2c6c2ab241a35bb083a4cc76ae6439a54fb6e047af8e8082e794a9cf90e631"
+      },
+      {
+        "path": "specs/modules/app/FEAT-011.A-consent-aware-windows-validation.md",
+        "sha256": "ae43eb831b65b08892f62d8a25c9034d001eb5be2b509a4c52febe8567a8cba3"
+      },
+      {
+        "path": "specs/modules/app/FEAT-012-recording-artifact-pipeline-v2.md",
+        "sha256": "bf3f384fd674b4168dca899cf44bbb331f223a110a721a19d4364a8c8f2faaa8"
+      },
+      {
+        "path": "specs/modules/app/FEAT-012.A-royalty-cleared-mp3-artifact.md",
+        "sha256": "be7a79ec29d8c75e871d9c8b18a408d067e7c9dc144097403bc9a4cb398398de"
+      },
+      {
+        "path": "specs/modules/app/FEAT-013-minimal-desktop-experience.md",
+        "sha256": "b9abe9f568c3b8e3cfd586549a609ff94f34a7a0893597ac54f257ce0e3bfe6f"
+      },
+      {
+        "path": "specs/modules/app/FEAT-013.A-floating-recording-widget.md",
+        "sha256": "c02df0eee01365c0f562f5c4ebb10f56eed0f08ebe4918c1eb5e26ec085a9620"
+      },
+      {
+        "path": "specs/modules/app/FEAT-014-transcription-extension-seam.md",
+        "sha256": "d785f0905aeca4855c51486785b6164453a094088fa2961f2b3e41cbeb6808fc"
+      },
+      {
+        "path": "specs/modules/app/FEAT-015-cloud-transcription-groq-openrouter.md",
+        "sha256": "5cb400ecb1922856a631c0688dc006d3a45e12f5be260868acd8f152aba41b89"
+      },
+      {
+        "path": "specs/modules/app/FEAT-016-local-whisper-transcription.md",
+        "sha256": "f45ffe4e0de4f78d6f95ca7275be6bce9d0adb5a43a32ac6484211898e8afab5"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-001-windows-desktop-host-baseline.md",
+        "sha256": "b436512cf70a9d4ddb4ba1fb6593b13f979da8b4539ee9c6b519a1145f4a7667"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-002-local-persistence-and-secret-storage.md",
+        "sha256": "a0e4dd0f86950eefbc3963e05aae8a972573dbd70db9d8a09a3eeec36c989173"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-003-windows-audio-capture-foundation.md",
+        "sha256": "25ce9ae2e6a597906564839cffe11937f10a2b0e1e9596b1fc06101eb2751325"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-004-diagnostics-jobs-and-recovery.md",
+        "sha256": "ed9c9069706918cb42c8a579c61fc3a73a2c3a4c23c1a089e946baca6629dd6c"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-005-windows-installer-and-shell-integration.md",
+        "sha256": "71e650743fa005d534aa8b7e5a98c6490a8d2b1fdb5a316fd1629c0aea4f85f0"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-005.A-production-windows-x64-installer.md",
+        "sha256": "3e2a7aea2c96001ddc8e95960ee2f31176d8eafb62480b91346dfc5e6df895dd"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-005.B-store-signed-windows-distribution.md",
+        "sha256": "1da174a5accec08714f8ec0e2e59e7660637c72392794cfa72b8e2eb1c0c1299"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-005.C-deterministic-third-party-notices.md",
+        "sha256": "07d2a0e3dda12d696796d1dae553dc2dcc436ed56b53eac013c4355f112bc416"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-007-cross-platform-core-and-avalonia-shell.md",
+        "sha256": "fd8800e069780ef8c3c441739e0cd7ca3f233162a0d879313d568c5ff7342088"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-008-release-hardening-and-windows-acceptance.md",
+        "sha256": "260b1a29363ef71dcba22193b336f97b0d0c894ba708f85a893bf6d98e0a875b"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-009-cross-platform-repository-boundaries.md",
+        "sha256": "fa8fa95ecefdfc415faaa5648484addaaacbbf141c792f1ba6ef0b751becfd4e"
+      },
+      {
+        "path": "specs/modules/platform/INFRA-010-macos-platform-parity-and-dmg.md",
+        "sha256": "e2e910ae1e166db3780cc9c1ca4d27a23ed9df5f941750eeb0d064d1578b33db"
+      },
+      {
+        "path": "src/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "path": "src/IsTranscribe.App.MacOS/IsTranscribe.App.MacOS.csproj",
+        "sha256": "22e953bd0cac005987664d1c4239fceac757d5887b9ae9351a2730ff6e62ebd5"
+      },
+      {
+        "path": "src/IsTranscribe.App.MacOS/Program.cs",
+        "sha256": "fdb15a7774987beb48d9d2deeb89c97f44c128e568c5d683d5d1dd3fe6ab88be"
+      },
+      {
+        "path": "src/IsTranscribe.App.Windows/IsTranscribe.App.Windows.csproj",
+        "sha256": "160fd401a78ffb9999e55c30fda0ae573b6289678e7ac248ff93bff37f96d5f5"
+      },
+      {
+        "path": "src/IsTranscribe.App.Windows/Program.cs",
+        "sha256": "f85bbae139affd9f1e70fc01cc95180e393dca3d8204f60df205cf9b2288ce49"
+      },
+      {
+        "path": "src/IsTranscribe.App.Windows/packages.lock.json",
+        "sha256": "efdadbf78f9f1b8e639d02d851d33e610ef8855ce7743fd03a851bfa23e4cba0"
+      },
+      {
+        "path": "src/IsTranscribe.App/App.xaml",
+        "sha256": "9bc42e6c66e3df62119d8b5a265cb851b87f03667a9c1149028aa74dede8a15c"
+      },
+      {
+        "path": "src/IsTranscribe.App/App.xaml.cs",
+        "sha256": "f60d56b5b353718f2dabf8f623afed4a9de45c2e99a2e1ab0387ae69c3d56116"
+      },
+      {
+        "path": "src/IsTranscribe.App/AutomaticRecording/AutomaticPromptService.cs",
+        "sha256": "a23847635ffdbd443cf9af1ee2fe42de0ede5a8e758bbcc9c5fccdb1133a5f6e"
+      },
+      {
+        "path": "src/IsTranscribe.App/AutomaticRecording/AutomaticRecordingCoordinator.cs",
+        "sha256": "7fe5e2b17115acb5346aefd1f6353e41cc0eb95e38e0991781726005655edf79"
+      },
+      {
+        "path": "src/IsTranscribe.App/Configuration/ApplicationDiscoveryDefaults.cs",
+        "sha256": "0d38ae17d87cfbda65272db4e9d6e2d2e77bbf5f2975a1b410d6f71a4884ddaf"
+      },
+      {
+        "path": "src/IsTranscribe.App/Configuration/CapabilityAwareSettingsSanitizer.cs",
+        "sha256": "832adaf2e04ce00a06bcd4de2d98ac4f1a57887bf7498993433ccdc0be792523"
+      },
+      {
+        "path": "src/IsTranscribe.App/Configuration/ConfigurationContracts.cs",
+        "sha256": "c78b90d1e905d3e6844ce27cd73f709051e11fc0e5a818496bea5fc4d846adee"
+      },
+      {
+        "path": "src/IsTranscribe.App/Configuration/WizardApplicationStepModel.cs",
+        "sha256": "e71d4da26de31f0ad3fa6b1f4697fa047e69db1632d362fe2e0141c76f6e1113"
+      },
+      {
+        "path": "src/IsTranscribe.App/Hosting/DesktopHostApplication.cs",
+        "sha256": "58132edcad14b08913b506f8d06d96f861411771b6340af30eeff0a4b4e06fa4"
+      },
+      {
+        "path": "src/IsTranscribe.App/Hosting/LaunchArguments.cs",
+        "sha256": "ef2d029901ad29a5412378cbbb4828195fbb13c1cccfe69bb6f3024053e1e33e"
+      },
+      {
+        "path": "src/IsTranscribe.App/IsTranscribe.App.csproj",
+        "sha256": "76e9210d1941f05db1984f22404c3ff851689ec218a0c6f307c060d5637ff018"
+      },
+      {
+        "path": "src/IsTranscribe.App/Lifecycle/GlobalHotkeyRuntimeManager.cs",
+        "sha256": "ba15cab4522fd4c4ff4b6621aea4a88944aa106aa843d6f17aaf158c2af01e23"
+      },
+      {
+        "path": "src/IsTranscribe.App/Lifecycle/TrayIconController.cs",
+        "sha256": "3e8bd18c2101e4917bd244a1b3bbfed91dd721cc0f0e1d0b4f3a30ec8de4ebd6"
+      },
+      {
+        "path": "src/IsTranscribe.App/ManualControls/ManualControlGateway.cs",
+        "sha256": "e781c899e8ad1c676a1e174252db2bce053cceb2b6d6f4159c8859514c07a666"
+      },
+      {
+        "path": "src/IsTranscribe.App/Properties/AssemblyInfo.cs",
+        "sha256": "1234326b02b10f787819b3b8bf351d4373ad6599c9acb628887fb9dfef4ffa85"
+      },
+      {
+        "path": "src/IsTranscribe.App/README.md",
+        "sha256": "b09de565c4a8fa38b4fbc0c0fc14f07ee674f266bf9e2c1b5c50cc8de48c74f3"
+      },
+      {
+        "path": "src/IsTranscribe.App/SingleInstance/NamedPipeSingleInstanceManager.cs",
+        "sha256": "12a156b5c3a8183ccd93538d7f84249747cd56200d3a6a30a4f3b91fcbad872b"
+      },
+      {
+        "path": "src/IsTranscribe.App/Strings/LocExtension.cs",
+        "sha256": "f26b7c74fbf83757f1c7be70c51ea079cc1a3d503e5af40c4a5398b1e12220f5"
+      },
+      {
+        "path": "src/IsTranscribe.App/Strings/LocalizationManager.cs",
+        "sha256": "3f5cb898bb3211a14ba2fef73439483c3790560371ebce03c3ee907dfabea9b0"
+      },
+      {
+        "path": "src/IsTranscribe.App/Strings/Strings.resx",
+        "sha256": "4c936af557917ce0fd55d94e0192b2fd84a55725fc2ac952b64617e43c275368"
+      },
+      {
+        "path": "src/IsTranscribe.App/Strings/Strings.ru.resx",
+        "sha256": "c5ad4ea0e079edd2ea83c6332efb535a264836fe5d020acc780151cdaca4bbbb"
+      },
+      {
+        "path": "src/IsTranscribe.App/Themes/AppColors.xaml",
+        "sha256": "44a768439b64b1b9d4d5d1af39af0a4b2dc9feb76b5612f7a84b1fe1311d8415"
+      },
+      {
+        "path": "src/IsTranscribe.App/Themes/AppSpacing.xaml",
+        "sha256": "c2641fb436501a3aab53271e54244faf95734a39d93b0b575b5f4ac90b7e2829"
+      },
+      {
+        "path": "src/IsTranscribe.App/Themes/AppTypography.xaml",
+        "sha256": "3b76039ead96fab45b045feac4dcbcb4d108735d02b3d98ee0ef30125675b6ae"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/BlockedStartupWindow.xaml",
+        "sha256": "0b2ce4c0cee40fdc85495790ea6bd1364af0f1bac96336673aea2d80bba49c26"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/BlockedStartupWindow.xaml.cs",
+        "sha256": "227deb6c5199d73b9a4bdbe755ef43c7ee828748a6953347a64dcc2cb045c7ed"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/ConfigurationUiModels.cs",
+        "sha256": "ba963a5d3e4172a9c5c69dce9a3e970893f3329027d239290d1684aa2e9c1038"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/FireworksApiKeyProbe.cs",
+        "sha256": "5282002e335588050d09597de655375ab1bea26f1b6c08c687033b11c4b7a72a"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/FirstRunWizardWindow.xaml",
+        "sha256": "ad548cfdc2f7188a3e0da3e065b946687b2e27185d927fffcd3cc5d06c5110a1"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/FirstRunWizardWindow.xaml.cs",
+        "sha256": "98e974d268466586cdc5fc3a9c084516a4842410153e4c6b5527dc7b9371895d"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/GlobalHotkeyProbe.cs",
+        "sha256": "9d765f13b27c9b3921e08a54a48b8bd1d2ea7860c67f0f60b0547a91e44f83dd"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/InstalledMeetingAppCatalog.cs",
+        "sha256": "24a509a65a497c319afe8892af0c5b7cef05501e3b103feb25e96380d01443aa"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/MainShellWindow.Events.cs",
+        "sha256": "29cac62e73d6d8ced62182bd3186e9ecd45b28123caea7406541336a6239fd24"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/MainShellWindow.SettingsHandlers.cs",
+        "sha256": "d1c88cd7ddf48b3b7cd6e211df16b111c563df48ff25c45b9ecb5928331d4559"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/MainShellWindow.xaml",
+        "sha256": "091ced58da46aebe9b46cadc57398ee5801961519be1c9583c24c154b84dde35"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/MainShellWindow.xaml.cs",
+        "sha256": "38a88cf74480e252e63b0b51d673ea62c7c07895726afcf57c6e278241d71e13"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/ManualApplicationRuleWindow.xaml",
+        "sha256": "a97eef3eb95bdd1a41dbed6138ed1882e65f6e2c70456944811f417a73a06382"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/ManualApplicationRuleWindow.xaml.cs",
+        "sha256": "3fb5b7f2c21ee835e1268556161bc0d253ca9d0455913869e7433283a8a3a6f2"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/RecoveryWindow.xaml",
+        "sha256": "e79ba269ce8f6b7f0c5423b0c3789e73359d0680adf72f8308c13c6934d905cb"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/RecoveryWindow.xaml.cs",
+        "sha256": "65a960e885fad53aa5eb0946ca58e8a1720497728a7614adac4a4a1e5c06b127"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/RunningProcessPickerWindow.xaml",
+        "sha256": "3174993cacda29a1db353d40dd6ed9feacea632b5cb2edb6c624344dee316bee"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/RunningProcessPickerWindow.xaml.cs",
+        "sha256": "875052573c9b8bcd90165c818ab3a48dd6fae2ce2df17c8949f3c203184b8010"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/SingleValuePromptWindow.xaml",
+        "sha256": "727fd7d4e2d8f3693b1aa2eddf67a38d4c09e06670a0ba5596e034f9f4b53058"
+      },
+      {
+        "path": "src/IsTranscribe.App/Windows/SingleValuePromptWindow.xaml.cs",
+        "sha256": "9cc2efd43fe11541023b9e4bea9d672fb1ed75c1a62a160c8e2de8aa21106a55"
+      },
+      {
+        "path": "src/IsTranscribe.Application/ApplicationRuntime.cs",
+        "sha256": "e291d6d3ea7cd1306656feef8793d31505c2748407336cda7dd61000e03b934d"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Diagnostics/BootstrapFileLogger.cs",
+        "sha256": "a877028893612aa8d076fa4a251d88c1c022e1f5791ea879795d6ec9243adce1"
+      },
+      {
+        "path": "src/IsTranscribe.Application/IsTranscribe.Application.csproj",
+        "sha256": "8ce056fe0fcf9a66b09b1de94c2186aa8b38fd9359a3093abd01a15037a070ee"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Platform/IApplicationPlatformRuntimeAdapter.cs",
+        "sha256": "b7c9c575124c5d1908b767570cd56566b8c3c065ac55243ea0195cda83ff3410"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Platform/PlatformServiceContracts.cs",
+        "sha256": "d5b9cb36f151a8696fa94fdce6c44f75899936e1598f8db3f526337a1ee1acdc"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Properties/AssemblyInfo.cs",
+        "sha256": "de71455f721b3d743a0e899135194da5a97b95807f87f92944839d3314fa84f8"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Recording/AudioArtifactEncodingContracts.cs",
+        "sha256": "60afc79ac62bd359993c13d4a0308839f1d69f3e2eb726f3926472672bf55c9f"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Recovery/RecoveryLaunchDecision.cs",
+        "sha256": "ad44dba3f4460567d0fd236d8352a01322f6470a96de5955cc6a54a604f9ea6d"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Recovery/SqliteRecoveryCoordinator.cs",
+        "sha256": "2177d8bb4d22892ef4c5348b5c406dbde22e96bfe12f695d4e976c376d50e65a"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Runtime/ApplicationActivityState.cs",
+        "sha256": "d77f05197d930b174564cd58081894950b8e621b48ea69f9daa9b8b4b38e17e7"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Runtime/ApplicationRuntimeSnapshot.cs",
+        "sha256": "239255a9847000675e960f7e151e9f13501cf4ed7ca8c6fc5e6f4c5e9ef74c4b"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Runtime/IApplicationRuntime.cs",
+        "sha256": "e99ec1562f5ccd8e09ca1d0bce399a28f5db73f8ac5e80d1b18e090f707f07e9"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Runtime/RuntimeUserSettings.cs",
+        "sha256": "8ce2f430dd553648e6f5fc30122b0f204161a040bcdf7c37272545a28d13b356"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Settings/ReleaseV2SettingsMigration.cs",
+        "sha256": "313d6f8493a81e1b0cae2b832386b85687617a7aac35d7d73d504946334eba40"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/AudioChunkPlanner.cs",
+        "sha256": "329abdcccfe61b913f0c2d025983967656e45b5b9886e1c6db00fa7f3d3d8389"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Local/LocalModelRetentionCoordinator.cs",
+        "sha256": "2b49428982ff36feb6f4479ccb02c1bb08a9c246ef475cae5a656ec10d9c7bab"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Local/LocalTranscriptionResourcePolicy.cs",
+        "sha256": "68a31eb64e9a8941a61e939762d294543533e953c5af2312e32b2df1f045f796"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Local/LocalTranscriptionRuntimeOptions.cs",
+        "sha256": "4b2f7aabf118a48333cf441aad4ee225d4ff4bb558fdddf7a58cd997acfffdbb"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Local/LocalTranscriptionServices.cs",
+        "sha256": "2967f833c6fd2c4c8b7b62ace5afec4215d0ef620b35d29c960053328d75df74"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Local/LocalWhisperModelActivationVerifier.cs",
+        "sha256": "9249bdbc4fd8ed360f0deaa2f005ea908fcc689ca3464d8ef77325eb048f2d63"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Local/LocalWhisperTranscriptionEngine.cs",
+        "sha256": "d6024273ce2e24b49b8161d311c73329b57a6f6937ce339d46d9b60076d25b69"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Local/LocalWorkerClient.cs",
+        "sha256": "be4e6555a244cfdf3ddf73093fa1fe84997b8d986402c39274f3017fc6df86df"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/ManagedAudioChunkMaterializer.cs",
+        "sha256": "e24ee0167c4192cc247bec602cc06046fad4f04e6f8b666dd0549e95c2357e6a"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/PlatformAudioChunkDecoder.cs",
+        "sha256": "879b60befaf4a0fbe49f63725b488afba8f091012fde5f1cfe389a5cbae6b312"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Remote/GroqTranscriptionEngine.cs",
+        "sha256": "b454d973004034d0af90f0c65643d7983fc4fa33ae78a62c280d8ce1ec97da08"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Remote/OpenRouterTranscriptionEngine.cs",
+        "sha256": "9eef97eace8f7de0ac8ff4015aa30186f126edbde9da80e54e875835b607952d"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Remote/RemoteTranscriptionDisclosureCatalog.cs",
+        "sha256": "bab13954dd738cde8818668ae641db8d2dd15eae6c5645337aa7640740508f44"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Remote/RemoteTranscriptionHttp.cs",
+        "sha256": "65625d72b1d29f83a206471261eb4b535045cb764bb8b2047a77c69f06405545"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/Remote/RemoteTranscriptionSecrets.cs",
+        "sha256": "bdb0350f7a6412020a5d370dd7eba0f64b6079b3dd9b80b9b52f5c933cec998b"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/TranscriptArtifacts.cs",
+        "sha256": "40809a1c26ac9bd3edd505d37cbdc555143a202255becf475b67e45658fad2a0"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/TranscriptMerger.cs",
+        "sha256": "1e6de275485f3288dafc9feac0c9881375afe1ee33df10bb9d5425b644febb14"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/TranscriptionChunkResultStore.cs",
+        "sha256": "4732b7fbdaeac72b9d68dfc500f335d11ad71832cd064fb4576a0726adf4b415"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/TranscriptionEngineRegistry.cs",
+        "sha256": "449f045792e40831ea2b16983c72b9b4398640202f16ab38d72838d4944882d5"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/TranscriptionJobEnqueuer.cs",
+        "sha256": "4ac698d71b125e8bd19dda03b4eef03b5dd2d2ae91bd77da030a5beb415dc02b"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/TranscriptionQueueWorker.cs",
+        "sha256": "4179985d53731debc396e91e720abad8b4addbc6164a8b98d7fa3e7e796db1eb"
+      },
+      {
+        "path": "src/IsTranscribe.Application/Transcription/TranscriptionRetryPolicy.cs",
+        "sha256": "0867315a4d55c5d2f8c0b46c44ac08c8c8bdc910b90f8e31d67d5f17c50ad32e"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Audio/AudioCaptureContracts.cs",
+        "sha256": "f0e2853b08f3f9f361b044aef1557c70a1f0d208653639273d6d189716da5d0c"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Audio/AudioPlatformContracts.cs",
+        "sha256": "ad6d99d51e1e153235b3f8fd74bbc628118a019449d36ea1447be1e8306bffdc"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingAppProfile.cs",
+        "sha256": "18eeb904b9434eabad26d79e91d432c54af36a7f009caa60a904aa914ae20e0e"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingAudioObservationEligibilityPolicy.cs",
+        "sha256": "456eb73b44f3d93bfdb6c1cdcf4b27c9738f66d7fe92c009784e107ad108d488"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingConfidenceScorer.cs",
+        "sha256": "dee8e09acdc2a173511a2ffe4ff65fbfe111e94e8fa8af339ae0a58088ea3695"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingDetectionCoordinator.cs",
+        "sha256": "4cfcc39b0c2c56365d76d3b74b93f50309f387a8fadb786f76964cc37263afcc"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingDetectionEngine.cs",
+        "sha256": "3d576a9d7f51e7b5f3faab4a43d530e9f2052761b8c9995bc899d4313a82f818"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingDetectionReplayRecord.cs",
+        "sha256": "fd8e3ca6b21f17ab3169296e740a4d2462b506edab4895a2ce4d524a9e24d1e2"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingDetectionReplayRunner.cs",
+        "sha256": "150bdda7651cd7952b6cf8097fd05546378b9eed7b13963ae1c2d703702574be"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingEvidence.cs",
+        "sha256": "f4143f066f2435e6dffb2666f3731689f9fdbbf28b6ecaf22febd5c2effa480a"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingObservationAssembler.cs",
+        "sha256": "02d1db315f88a215f14a46b3207e24e93296215cbac5ad69fc87105bc1e75a94"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingObservationFrame.cs",
+        "sha256": "0bad528f95bfbb8b436a88a2eef4dc0e3f174c203473efe6cc08bfa4c89b2d36"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingProfileRegistry.cs",
+        "sha256": "8052e434e0ccf130f8be0ca5ee69eb26848952f3e3dcfb685dbbe243eaacffb9"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/MeetingSignalProviderContracts.cs",
+        "sha256": "0e845516cfd626dd69f0bd0d04c0b7031e8936e4802f8b257e6216b438d65362"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Detection/SpeechActivityEstimator.cs",
+        "sha256": "f76368b9615543d45608d56606debb72f8cfcefba74c53c8c6fc6eec5b7744a0"
+      },
+      {
+        "path": "src/IsTranscribe.Core/IsTranscribe.Core.csproj",
+        "sha256": "bcb1fc09acc98bbedcfc3b5c6a2b734711e593ea2ad5b9e4a589074dae466cc3"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Platform/IApplicationInstanceCoordinator.cs",
+        "sha256": "e5c4a0feb2e6b619fcb98ee1064500a8a1313f92cc2343ec39a503c1032c10a7"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Platform/IAutostartService.cs",
+        "sha256": "ed6a2d156c09828d86d82fc7fcb50f63970f6f2e2ddf7c04d79c731c4169113b"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Platform/IPlatformDescriptor.cs",
+        "sha256": "b27c070610f029f73846219074ef4aeea4aefc3fc41853ef60a5e866040ebc66"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Runtime/RecentRecordingTitle.cs",
+        "sha256": "cb7719a7ca6d1ff11ac7264784e20a110eb74f335b905e246b2f7574ee84f4b8"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Settings/ReleaseV2Settings.cs",
+        "sha256": "05ac7c8770467354706585bcae8a4795a8992af86a6987d2852b30c2bcde5cd5"
+      },
+      {
+        "path": "src/IsTranscribe.Core/Transcription/TranscriptionContracts.cs",
+        "sha256": "e114dab838fe0b159ad627bfbac5d08e0490fe3f262f514e22ba378ef19d9757"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/App.axaml",
+        "sha256": "dc73fe8ad5e913ab0e227596f0c4f982b6b95a95db2382c5a54b2a2748747ee6"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/App.axaml.cs",
+        "sha256": "c259b66eb6e231132ea53569a210f1ad1b56a4117e053a591ec1ddfca0ba9806"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Assets/isTranscribe.ico",
+        "sha256": "5c5f5937301d6d1ce322c69972af275fef0870b373afd8e36857ff9584cb1161"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Assets/isTranscribe.png",
+        "sha256": "a1414620feb360de6494c5662cfca569773c59090318d6ae1c481c1431d032d0"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Assets/isTranscribe.svg",
+        "sha256": "1df7458512434588fde5daa55b88ab2bc3f8cfc8e8f001ccdc583390930302f2"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/DesktopComposition.cs",
+        "sha256": "1ad594ebdbea6626b0f79c5777c4e4cb5742fbf30c7e596d31e0895c1952e6c9"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/EarlyApplicationInstanceBootstrap.cs",
+        "sha256": "cd9dc3864d43645333dc8a8f3232628044221ef522d8efc20e1e78f3cbe9c6fd"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/IsTranscribe.Desktop.csproj",
+        "sha256": "ac451c0d5bbc3ba35aff4880eb0293175ced79961cc0ce90eb1bacf98964fc25"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Localization/AssemblyInfo.cs",
+        "sha256": "a5ab904ff24d625218ba2c203584eb79d4dddf4f27b071471e06c689fc5f0ad5"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Localization/ILocalizationService.cs",
+        "sha256": "c52ac6a68c65463e878485ef6c02a6bf14480297ec24b3c7919158cbee6ecbb1"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Localization/LocalizationService.cs",
+        "sha256": "b2ee5061a1612f58b3f7f40dd1704ab5d27699fdb0f508315e90830499be496d"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Localization/MeetingSourceLabelLocalizer.cs",
+        "sha256": "bf290caca75d59bff712cf1417bc992711e3140bdf3b2b6b34aa6f11014802ea"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml",
+        "sha256": "a02893a8971ab71a8b24d398aaf56bc3ff1266e990752ecceaabfa9ba1506ea5"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml",
+        "sha256": "8d51273ff94a5fb9699e76d6a897a82ebe6071ae7c1e3ab8deda32412466ee27"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Localization/UiLanguage.cs",
+        "sha256": "93a2f41a877d7e4b4cd358a65815c57f9a592fbcee8cf539fd3d2b6fe0c29d18"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/AskPromptController.cs",
+        "sha256": "c074a196bedef6ef6b0a44b0d94eef4415c2770a9e37c0e76f1dac7037eeb20a"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/ForegroundScreenLocator.cs",
+        "sha256": "585780aadadbeb64adeaa4ea15e329bff905b48b15e2d259b36038c4d325ff36"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/IAskPromptSurface.cs",
+        "sha256": "9ed1a090cbbb04be0162632125645323453efd9ed6c50edb52421680cf6697f8"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/IDesktopShell.cs",
+        "sha256": "bf6527c993b7c4287115c2bc7bcf6f57f00ae1abfb35ee57524ca8efa280d821"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/IRecordingOverlaySurface.cs",
+        "sha256": "4fd554751d0f9d47a3746928910046fc0c5d47afff5ec0dc905b96cc097553ff"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/PassiveNotificationController.cs",
+        "sha256": "f3a4fb1815aa2df6bbe99bb0dc03d618715f75cda5eb540b22813be11768f3a8"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/RecordingOverlayController.cs",
+        "sha256": "8f11222a47d7a6d8c72b47f3a7a93b2606c04db93b86aa99540fcf26912abeea"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/RecordingOverlayPlacement.cs",
+        "sha256": "39bbc2c001b673689f97d4e41a012d8ca75b0187258f90fab412bbb87b0b0e6a"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/TrayStateIconFactory.cs",
+        "sha256": "2abac043baf8cc3a050099cdbe2369cba81a5358fea9286d846869fe5eb84ab6"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Services/WindowPlacementStore.cs",
+        "sha256": "34bf87e15ad6e59271eee842e75c57a991176f4c44e3c90996168b99f3c50f43"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Theming/CalmInstrumentThemeService.cs",
+        "sha256": "62181da18690bfd4b300d5368e65f66ee781701c84c30ebc31116de958375a13"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Theming/IThemeService.cs",
+        "sha256": "a74dc0630bb43abc250c3290b99e2c4bae151137177ca8d150299a2dd5846f33"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Theming/Resources/CalmInstrument.axaml",
+        "sha256": "ffc93d8944e47b9cb36bc7dbf95b2dc945e3d8eac0b0ac70a23b465a52242bfc"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Theming/UiThemeMode.cs",
+        "sha256": "35c39cbfdcfdc01e627e4384d88fbceca8ed0bc2084f7ebfb031537c744ba8ef"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/ViewModels/AskPromptViewModel.cs",
+        "sha256": "f805d884f82f44590f5936dcae71a273b1e7048f91a713456403d3a15df57d4a"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/ViewModels/ConfirmationDialogViewModel.cs",
+        "sha256": "97a40259e1889c1c09363f211ef6ea436d5ac0e9047d25d6af32a831e98ed7db"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/ViewModels/DiagnosticsViewModel.cs",
+        "sha256": "d50aa7c4ac6508f67eb208b489ceda863fd3f6ef57124469cfd22e8f29c409cb"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs",
+        "sha256": "579786f2ef400662dca6b6756654e8049947018acdd36939be64612d87f9f44f"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/ViewModels/PassiveNotificationViewModel.cs",
+        "sha256": "1f6397f807b77a8b8b739521b6b7612112e67ce24f73b178498e0833fa577a16"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/ViewModels/RenameRecordingDialogViewModel.cs",
+        "sha256": "c9539ddb441ae6fae2f6b95a4461f2e9e66f2faf9eeda5ed5dd2495aa3985f20"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/ViewModels/SettingsViewModel.cs",
+        "sha256": "6f76df7e6ff2f200590f85bce4efaaeac514ffa8448c019439a02dec159a1d00"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/ViewModels/SetupViewModel.cs",
+        "sha256": "4e71fede111a86d6f2ccb7d815146609e253cd8212113c3e1f2d7790df1c740e"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/AccessibilityLiveRegion.cs",
+        "sha256": "d5935816d6c19aef39bfd8ee542ab12f28483689060f9551455d7230e6872cb4"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/AccessibilityLiveTextBlock.cs",
+        "sha256": "5982c428ef99a949d0843914543d7a47df5d74ba2f368a1e630094de9236f47e"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/AskPromptWindow.axaml",
+        "sha256": "fd72fe1cdae03a559cd38c74c17fed875f908187d9b5d5a6b0831439611f6ff7"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/AskPromptWindow.axaml.cs",
+        "sha256": "b6ec9abd3cc1c29bb9b82230299032041dafc11a17c4dfb88e80b7bf7e57d721"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/ConfirmationDialog.axaml",
+        "sha256": "dc1d2c907627a067ec8dbfcab7e006c9f446b9390b34aa048fdcf42833947b72"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/ConfirmationDialog.axaml.cs",
+        "sha256": "f1f3d76d016c9ae24133cb156649d607f2779211e9147bef727d99921af3f671"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/DiagnosticsWindow.axaml",
+        "sha256": "3c441e013e8bb644c71ef927d3bfe18b9c3e728a49ec9c061c8c067dfa5add3b"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/DiagnosticsWindow.axaml.cs",
+        "sha256": "3058f0631c693485a2f87ea677690316f8101c91c650d06a123b8c0c9c0553a7"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/HelpWindow.axaml",
+        "sha256": "292e8dc4eb11b21731a6d1a327520696e0ded5e1f150929a8a7363dfa5f52dc4"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/HelpWindow.axaml.cs",
+        "sha256": "b48efe95edf8c521056a0cc1f09c3a2db8ea8bcda66b085eeb6035377d4715fd"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/MainWindow.axaml",
+        "sha256": "546c43ecd13678606e9729c7afe9c8bae737baea8ec8019df6e37c28e810a50c"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/MainWindow.axaml.cs",
+        "sha256": "513cefd87e1f4748326f5a5cbb3d683983205beff333f58e36519d27afd6d9f6"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/PassiveNotificationWindow.axaml",
+        "sha256": "02311059a6693a569202e51eef9174db3a1004f267a4254fa992effce24c8be5"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/PassiveNotificationWindow.axaml.cs",
+        "sha256": "ee100eb79802bd98de2ab10a4cb744675f46e8009488a7191b372ca70ea9745e"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/PrivacyPolicyWindow.axaml",
+        "sha256": "1fec636272e25d704f2943e6f1101b6eb47c871824e63770383fa55e44a8032f"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/PrivacyPolicyWindow.axaml.cs",
+        "sha256": "e3a45741eadf9dacf42a4e15a2d2b2d6bd078b48805ec3a53fb3d444e37a89bf"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/RecordingOverlayWindow.axaml",
+        "sha256": "641ec898d211dad7ca5b39d078e15368d13c200e6679c6812c8f8212bf73b105"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/RecordingOverlayWindow.axaml.cs",
+        "sha256": "307f9b96b1b80d79d9cf30cb925a52406a11e09a2ff597b1f8c5b3c7bbf8574a"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/RenameRecordingDialog.axaml",
+        "sha256": "1fb7c9708fb9e3eea2b4d58d27f0e57898a8ad18146aac371ee5ad5de54f0ef1"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/RenameRecordingDialog.axaml.cs",
+        "sha256": "f1419dccc874bf8ddb2eef2c75ff241bfeb28663708c0b8b7e6e5be309f60b6c"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/SettingsWindow.axaml",
+        "sha256": "05424fc0ce0839959640387b1ac16c0753d3a045cf32069f2b91705a6822931f"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/SettingsWindow.axaml.cs",
+        "sha256": "5f10d20125e396cd63c6ebfee149c94aff34a7d345a1543950158521b99a6676"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/SetupWindow.axaml",
+        "sha256": "6c666621588dce104d020f83cc76ec0918e7bf4371643c31edf4383553976021"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/Views/SetupWindow.axaml.cs",
+        "sha256": "31b88a16e82e7b31854b50df1461589ac0da1c1ae2a495c7bd4fbcd2408e1861"
+      },
+      {
+        "path": "src/IsTranscribe.Desktop/app.manifest",
+        "sha256": "c3ded5b245f485a10e4aba177d5f313438e157d0b899d248b44ba55812c4b5f7"
+      },
+      {
+        "path": "src/IsTranscribe.Host/IsTranscribe.Host.csproj",
+        "sha256": "fa3add096957e7e11bacb170f0c0214b6ed53226bbebde3ab956ec606e43d24a"
+      },
+      {
+        "path": "src/IsTranscribe.Host/Properties/AssemblyInfo.cs",
+        "sha256": "9a0fb16590f086ddbdb45d8b7aacfcc5a6e3a29fbb863544ed0dcabc9e79529c"
+      },
+      {
+        "path": "src/IsTranscribe.Host/Routing/HostLaunchContext.cs",
+        "sha256": "0fd702600d2516dc2195b38270b209137fa0b792c464cb8616d3ae50fe754dae"
+      },
+      {
+        "path": "src/IsTranscribe.Host/Routing/StartupRoutingDecision.cs",
+        "sha256": "555ccae89e5e16dc38e8bf8fe7386682784e415d4b63a6eeeb46aa55212c49de"
+      },
+      {
+        "path": "src/IsTranscribe.Host/Routing/StartupSurfaceRouter.cs",
+        "sha256": "4e349aee25f548905238e9b9e3eb14e3e71bd1aae6581664bd9d7c20622146af"
+      },
+      {
+        "path": "src/IsTranscribe.Host/Transcription/FireworksTranscriptionProvider.cs",
+        "sha256": "d30dfe72317bcf23bf6a3afb11022619ed15d5c2d205cc9c8b353f536f0282c9"
+      },
+      {
+        "path": "src/IsTranscribe.Host/Transcription/TranscriptionBackgroundWorker.cs",
+        "sha256": "31db3fddc2338afea159c21864ac9d5761a2a5c1011eb88542bb017d232a6baf"
+      },
+      {
+        "path": "src/IsTranscribe.Host/Transcription/TranscriptionContracts.cs",
+        "sha256": "df85cf58c21c464325f079ed0aa5fdf5595fb189914f8fe55a94af9baa2c526b"
+      },
+      {
+        "path": "src/IsTranscribe.Host/Transcription/TranscriptionMarkdownRenderer.cs",
+        "sha256": "0ab675a498b2f798eb1c7a7f204f20ead238bc545fd00e8793a17a04b3218016"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/IsTranscribe.Persistence.csproj",
+        "sha256": "3d2192948031709680de471aa6e9bb2f76eda40958d35c57a3f6859d4b4b019c"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/AppRuleRepository.cs",
+        "sha256": "8c7d7bfafaca46e129bd90dce2c6e8ce1bc1c8d0af241ab55dd14f0fb457815b"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/ArtifactPathResolver.cs",
+        "sha256": "6f79e14d37739033c8ad0df4a05cd84f724b4d96644e4474b53010119ad880b7"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/AtomicFileWriter.cs",
+        "sha256": "20e4cddcda7dce5a8cdf5f947d2fcf7249fe639702417460f3a796d4d0d1abef"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/LegacyStorageLayoutMigrator.cs",
+        "sha256": "5077007f2e5b15713f60cd43a88d4e919686692e7399217160e5e3d5eb348fb7"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/MeetingSessionRepository.cs",
+        "sha256": "690267ec764aefa68343f8cce9d0a928ffa808ce24f284dde1f895e14a43b492"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/Migrations/001_initial_schema.sql",
+        "sha256": "cc9768974927c4ad53bc86b34e5a28c6b0ea7a5d999ea7feaae2c3b6c8c49c38"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/Migrations/002_infra004_operational_columns.sql",
+        "sha256": "18354b7985065ed3ce05ead761eca5339443209a1fc1cafee87d22e697a4edd1"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/Migrations/003_app_rule_priority_index.sql",
+        "sha256": "cefea5ba3075e5b414286d0abda3d3b65e90087268abc98bd79cf698e6c432df"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/Migrations/004_feat012_artifact_checkpoints.sql",
+        "sha256": "489a49d24af86c54bae62cd95313276b3de181bba172d7b1221005dae87f71e7"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/Migrations/005_feat014_transcription_deactivation.sql",
+        "sha256": "f9a278b707b62e949036982c4e4333de0eb658217225c52619ebecac2c0a172e"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/Migrations/006_feat013_recent_recording_display_title.sql",
+        "sha256": "731ffa3ec07622de9d5a0549716923828882d7967bb75fb24038ff89ddcbbe4e"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/Migrations/007_feat015_remote_transcription.sql",
+        "sha256": "3049e89fd4b3e73e83c336670a108c08c3c01295a50821b419cb005a09c49c62"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/Migrations/008_feat016_local_whisper.sql",
+        "sha256": "eefebc682a4ca12d36c31b1cd4a658d5c6ba0a4d39892072ecb4f9ae78170d8c"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/PersistenceBootstrapper.cs",
+        "sha256": "1e75557bb078b0d4fe49d284faa3008a644d8353614cc4ca8b9a6339b32c4465"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/SqliteDatabaseInitializer.cs",
+        "sha256": "8b29ee95945ffc14b63dd3eee7d18e9141a64ee3688b6393238623db39bd2dd3"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/TranscriptionJobRecords.cs",
+        "sha256": "f5dee16112cc207041ed30e909ee03731a93e58aee75c672141bc7392d459d8f"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/TranscriptionJobRepository.cs",
+        "sha256": "746dc68c40cea809ca3aef83db3a067859d286794e0bb71cc8b688430c6fa4f9"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Persistence/TranscriptionSessionContextReader.cs",
+        "sha256": "c927a079998fd977f4ee899e7a9d6041ab837f0d6784961b2b4f3dd67976ca6a"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Secrets/AppSecrets.cs",
+        "sha256": "1ce19d0a1392fa7f4f43457d01b70340fd610295e03c4e7aa24d99f219d117c9"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Secrets/DpapiSecretStore.cs",
+        "sha256": "01e06dc23287c95069e5c9ab88ebc3ac2e2072c0fdcece0c808f8b942b2441af"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Settings/ApplicationSettings.cs",
+        "sha256": "2644d460e0f0105ca6e86f14fcac1c9dc2d7aebbf568e790b0cb3bac3c8bc504"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Settings/ApplicationSettingsValidator.cs",
+        "sha256": "d3819a2be1d111e19537eac99f455556e8078c986e2408ec4d24cabfa914aae3"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Settings/BootstrapSettingsSnapshot.cs",
+        "sha256": "bc3d25f913ce5f44425417188e4983433d249a3aa1165b9699e54ab925695ba6"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Settings/JsonApplicationSettingsStore.cs",
+        "sha256": "463e06292e634df1be404da744132bb0fb61c0f03a0ab5fa4e95afbc55849ab1"
+      },
+      {
+        "path": "src/IsTranscribe.Persistence/Settings/LocalAppPaths.cs",
+        "sha256": "ee5256b03e4af63accb048406e6160acb1d4b3419b958e7289d60bab80dc3619"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/Audio/Transcription/MacOSAudioToolboxChunkDecoder.cs",
+        "sha256": "818939963e2aceb60897cbf8d9608f69ab3583569925bf343051e1c5214c837d"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/IsTranscribe.Platform.MacOS.csproj",
+        "sha256": "49226e6c6fd16d66dca11fbc555464aa62b8fa18a2d0c7c786f661f6550fcd63"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/LocalTranscription/MacOSLocalTranscriptionComposition.cs",
+        "sha256": "88ae43b3007627c97b853e4ffa337d56f81894b8ae773facfca88310b844847c"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/LocalTranscription/MacOSLocalTranscriptionResourcePolicy.cs",
+        "sha256": "8acc0fbd3c9b6efae48c9efc6afe6dd97708b280d77d25b939802b81abfafc93"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSApplicationInstanceCoordinator.cs",
+        "sha256": "e9cc6203257f7d1c8042fbc5420c6de81795238c9c7f57d5408373ad0fb56e5c"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSAudioCaptureSession.cs",
+        "sha256": "1a05600dc54df90795abd36d780d9dbc0209b8c9371f2970fa07abdf81b2bf66"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSAudioNative.cs",
+        "sha256": "fc33457c2cd8e6fe8b7a9832afceccf9cf063ac0417b4100723b98dcfc0c8c6c"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSAudioPlatform.cs",
+        "sha256": "1e1063fffb81cd61713f03113081f1f32065ba15a0197c6a4510b7ca567263fd"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSAutostartService.cs",
+        "sha256": "1d765944d8defc34590619b6b6ad552256da0e3673926a12b77ef38bdf9264b2"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSMeetingNative.cs",
+        "sha256": "1fb0862cf1768aa2178caf39c9f5c0edd2495a08102d8c107750d0633eaf1ebb"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSMeetingSpeechActivityProvider.cs",
+        "sha256": "570100afd2debf92a54dacc2aac82c378c1809e7868d1c41d36e2c240debd2e4"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSMp3Encoder.cs",
+        "sha256": "9e08a88f141a82dd1318bdeb05ad97c2a22a5c65b493b8e0553da20c8a423ab8"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSPcmStream.cs",
+        "sha256": "3e56709795b0bc231d2832beb401a7c76a8a5114f5bfe141ca02a122c87bde85"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSPlatformAdapter.cs",
+        "sha256": "fd45c6b60c4434df7be6715adc05f8ac5c0bd54ec5a678ae05a81b08874c22fd"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSRecordingArtifactDeletionService.cs",
+        "sha256": "4588126a3a77b2351d0a94b626ad2f0e711b9982b03476af6307a266172e8e6d"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSRecordingSessionCoordinator.cs",
+        "sha256": "e5502c9a781d7fec2f66617f06fffb6f9f0426fed8d1588ba99e2a1632ddf3f2"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSSystemServices.cs",
+        "sha256": "daab31b0943f7cf2b4b6b1e087a0930003743ad7b05b43f6e2800258ac52ccdc"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSWaveArtifacts.cs",
+        "sha256": "f2ccb57fca2cce71419d268266b9beb29a755c21e3265bb59fe90af98346423d"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/MacOSWindowEvidenceProvider.cs",
+        "sha256": "57fac4cb31048df618b52385aed1e92f1cbc12bb6a6b444bfa569b4db73dc379"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/Native/istranscribe_audio.m",
+        "sha256": "5959e424601904781d5e206a8779e715097c9ad91f98e91b01a45f0394829f99"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/Properties/AssemblyInfo.cs",
+        "sha256": "a0a8d6da92cc240fe49f6cb2b57d296ae09570746bba50f3a0c5ff2e24c1163f"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.MacOS/Secrets/MacOSKeychainSecretVault.cs",
+        "sha256": "9be09eec88a68f12e59ee432553a3d58875c94bdf65e2c80c6c4ed1c65bda687"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/AudioCompressor.cs",
+        "sha256": "79ba03f0aef5a7c3824171893cd7e801c9cc8f3784702d00aa0b8734939e81d7"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/AudioFoundationCapabilitySnapshot.cs",
+        "sha256": "602cd6c0d547fbe503a80407b57bc5d415fec29263be41c650b21afacae07f6a"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Bootstrap/AudioFoundationBackgroundServicesCoordinator.cs",
+        "sha256": "25dbe990ded93528bff67e083f2c63f907c0aaf41325906816b90a132c550e1e"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/AudioCaptureAdapterFactory.cs",
+        "sha256": "3556297a5becfe0a424d460bba7d79033558c5349d39b501923f0d29a158ae5f"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/AudioCaptureContracts.cs",
+        "sha256": "1e459e7001d464a704f31f13d881cebcbef2d4d38cccc10a12ddc2111ea96419"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/AudioCaptureFailureClassifier.cs",
+        "sha256": "8f6965bd2a1adabf7510f48c3d0c415172eab7cd7302e9483baec656f0751560"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/AudioMixArtifactBuilder.cs",
+        "sha256": "4d6c871cd57bd1c06c40549617b508c7cbb850b5373ff121c9482bd9ee9e2f52"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/AudioRecorderEngine.cs",
+        "sha256": "7f4ace80c2000fc93034ef1f96b8557c94da4066fedc39e1b43b98bb9346883b"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/AudioRecorderSession.cs",
+        "sha256": "51f50bb2123c8f674bd7705e73b288ad72dba27c0618e83652380eb6856b9b5f"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/BufferedWaveArtifactWriter.cs",
+        "sha256": "c5cfc527822e9fa1af4d33f9c0718a6a1a034b8dc098327b087524163803c5a1"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/CaptureAdapterLifecycleArbiter.cs",
+        "sha256": "8303ddc14789642fc3a7a0e1907bb67797b0548194df26e283a6281568fdee4f"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/CaptureStopCompletion.cs",
+        "sha256": "98e009a1020dcf3a02b7530adbff0638d80910e29a0947d02206115e45b86567"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/IAudioCaptureAdapter.cs",
+        "sha256": "9075865e38c43fecd8f53172fea2de079d6d1911b6578054f00d8fb00b655085"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/IAudioRecorderEngine.cs",
+        "sha256": "1c60848911f3128e02fa2daa7f0f7429bbd83f3aa559f8d6411946a4cfadf563"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/ProcessLoopbackAudioClientActivator.cs",
+        "sha256": "369d0f702afee520c9113b1182218bb9b73ac9571789c2dad6de92488c9c8a45"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/ProcessLoopbackCaptureAdapter.cs",
+        "sha256": "b97495122fedd0fbd864a56e84d791899dbabd336e7eafcc24f6f9745fe7c2b7"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/WasapiCaptureAdapterBase.cs",
+        "sha256": "1896c9a175721871a88ac657ba963040d2c579a146dec1048edc954eeace5aea"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/WasapiDeviceLoopbackCaptureAdapter.cs",
+        "sha256": "842865579207914d96511b609e7603f90bd839d0ab64450d6706c62cb35f4fc7"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/WasapiMicrophoneCaptureAdapter.cs",
+        "sha256": "cc5d32ff1b8b3105a11a9f8a49283f1dfc58b54a905f725cc5967911c2822d1a"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/WaveArtifactConcatenator.cs",
+        "sha256": "6cf3e76a8a634c69094a5fa1e5cf24c9baf317e01db173b5766965452b2262f6"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Capture/WaveArtifactRepair.cs",
+        "sha256": "d9599bd082b47ace8876cdbf9e2ca99659ec434fbd5757444e97b01865f7be3d"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Devices/AudioDeviceSnapshot.cs",
+        "sha256": "75dc104fa1842db90a428f369ab62ef4039affcb89dc1c18ce44c0c298c524a4"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Devices/IAudioDeviceManager.cs",
+        "sha256": "13465a344cd65e64ae8265dac507a4585a28361ecc0fa408c2e72db515a9f198"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Devices/WindowsAudioDeviceManager.cs",
+        "sha256": "3436ccfab25ca27bbc50da64a0e6f3790daaec911eea132282691071a252f19e"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Encoding/WindowsMediaFoundationMp3Encoder.cs",
+        "sha256": "868378f069a06d7a35eb969fbac5ff2d8ae889a4c212b02b36925926c142bb33"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Finalization/RecordingSourceManifestStore.cs",
+        "sha256": "28ba63e16942bc201ae125c4b588d320549d0a5930263f78cb1d5b08d3ba9e96"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Finalization/WindowsRecordingArtifactFinalizer.cs",
+        "sha256": "b63a05ee5990d7f46686145a6b9911806f6c2c995151d97d004659ebe305eb68"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Prebuffer/AudioPrebuffer.cs",
+        "sha256": "3a6d50b80c73132a6fb65daa01d40424be77f3fa170516d218c25a9e3f95c2b8"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Processes/IProcessWatcher.cs",
+        "sha256": "5ba0820878483fb743e40a87d4024d6a23916cf967f56f0f00ffac497256f143"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Processes/ObservedProcessSnapshot.cs",
+        "sha256": "006ddf21a6a92f369b276087f5bd0f87924a6f5000a9019bdd1b6d750e0bfd45"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Processes/ProcessDisplayNameResolver.cs",
+        "sha256": "5fa116fa63baa26eb7447a7dfee6d8f6e73506864350c3eb7ec094e8cfb1225d"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Processes/ProcessTreeSnapshotBuilder.cs",
+        "sha256": "7a4029a72e387155e9e6a49390dc20743b0e1743a8df982b05a68674068e59d4"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Processes/RunningAudioProcessCatalog.cs",
+        "sha256": "d85f4f5b7656db98fb6c2c00f08546145dd3a4a8d841c4cc4aaec92b8ad36fc7"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Processes/WindowsProcessWatcher.cs",
+        "sha256": "38a6585764427fae144f4fc39684dfb93d64e05fd6fe57fd6b735e081fe4e81d"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Recording/RecordingArtifactDeletionService.cs",
+        "sha256": "0e05a011aacbce09cb5121811ab0d1f04eaf2c3053dd573939d633182a3a1de5"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Recording/WindowsRecordingSessionCoordinator.cs",
+        "sha256": "c547e65fc2ab5d8acb6dc7f6686b253737bf2304eb87b6ed55ed816d75917c81"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Sessions/AudioSessionSnapshotCollector.cs",
+        "sha256": "35bc9e18d41a813629a95cb310c71d22e78c1708bd31a13ea45ff8068d2831d9"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Sessions/AudioSignalObservationSnapshot.cs",
+        "sha256": "8af41b3dd311b0dee72ba80e7cca6b1a302606b2574e6f85987eeb0f24c5635a"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Sessions/IAudioSessionWatcher.cs",
+        "sha256": "168fac185f00a52af2eabd8b9f81d4e740bf80ecbbd8110cd50c75d17037e08d"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Sessions/WindowsAudioSessionWatcher.cs",
+        "sha256": "cf3bc710da82faba2ba26d3787d60891f051790575a72b34556e85e60dda05f6"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Transcription/OggOpusRangeWaveProvider.cs",
+        "sha256": "ccf5f8d8e824f5cf43a9b56de63b0a022fe47f06cf5dcc8a354a580e5978caca"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Transcription/TimestampAwareMediaFoundationReader.cs",
+        "sha256": "c803987229db5da5ed53928fca856075ee264370435eb0c17e5611bf531ec6d6"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Audio/Transcription/WindowsMediaFoundationAudioChunkDecoder.cs",
+        "sha256": "cec0e854924e29562e11ef6026d85931edd9c5d3e193b2343958ff12b7b810c2"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Capabilities/HostCapabilitySnapshot.cs",
+        "sha256": "5c16ea46cc0d734bac067b1c4a9acc1ac385778bed5b3a31ebfb747893c5a72a"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Capabilities/HostOperatingSystemDetector.cs",
+        "sha256": "cf415ad879c90bcb1a99a3027e22ea35d11d20d4875341b29c9017764ce42140"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Capabilities/IHostCapabilityAssessor.cs",
+        "sha256": "2cd495c75021d53299d35a215ef2a19af009bd7ae5d8a3d670797b38198a860c"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Capabilities/WindowsCapabilityAssessor.cs",
+        "sha256": "2669ce7accb5afed8a21b3f49d7dad08bce96c850b90e039830c1bc2b0439e1f"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/IsTranscribe.Platform.Windows.csproj",
+        "sha256": "10159c6fcbcd1ab2eaa6677ed6fb0d4f6ad58ccf4d36f707059256cff7924710"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/LegacyBootstrap/ActivationMessage.cs",
+        "sha256": "0bdcc048e085894326b77de10fa2c5319873a67c9f014b28532bc8083557ae9e"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/LegacyBootstrap/AppIdentity.cs",
+        "sha256": "d14298d1788695983451adc82a30d52f23cc1e538c15058d112f865ea7b02a01"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/LegacyBootstrap/IBackgroundServicesCoordinator.cs",
+        "sha256": "d5f505df5a61a820f82f7c760c647a1ee3c96ce1e4c19dc51b491b16d01383de"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/LegacyBootstrap/OperationalBackgroundServicesCoordinator.cs",
+        "sha256": "665f32c9dbc99c238d1e8d11ae59b391cd4cb1b371be01126642a1d9bd081cb4"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/LocalTranscription/WindowsLocalTranscriptionComposition.cs",
+        "sha256": "ba257e9a78799ba1b2e68c707f920d46c20a44a295d12138f5aaa5a54af7fd3e"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/LocalTranscription/WindowsLocalTranscriptionResourcePolicy.cs",
+        "sha256": "6f236cef36d85f38b98af6672a1bf2595e77231314c19d0d80400c3d0596235f"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/MeetingConversationAlternationTracker.cs",
+        "sha256": "31c0d2aec80ff7de7422a43602c1e2b5f5bc13292ce9deff80643f685cdcffdd"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/PackagedWindowsAutostartMigrationService.cs",
+        "sha256": "dd49a20f7610f6d4510172b0d05207470eb26f7baf0c6183d67aa99777743b6f"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Properties/AssemblyInfo.cs",
+        "sha256": "bf01186e50b08cfd54251d91f2372d5ab182324f102257382a8600e3594753f9"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Secrets/DpapiSecretProtector.cs",
+        "sha256": "3f3e2a652b06318ba2192bb25c00e9838606040e40184c6263374e4d3a56614f"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/Secrets/DpapiSecretVault.cs",
+        "sha256": "a2bfc659dda4b1d4766815cc90d3e2dcff0570160db34f7ae5d638061d2d5528"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsApplicationInstanceCoordinator.cs",
+        "sha256": "42aa944d9e6947aa767c3f4da2fe0b55b2f6eb1dd9530c2401b1e861a919ef73"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsApplicationPlatformRuntimeAdapter.cs",
+        "sha256": "239a4b54c28c1504e76ee2fddde3da8472a80e75b79294361e9a922cf546a767"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsAudioCaptureSession.cs",
+        "sha256": "d86ce401c2c1efc88adc05fada380de79dbefba3e9aa4072dd241a09799481f2"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsAudioPlatform.cs",
+        "sha256": "3a083614ca5dcb8b8f965edf571f058ab834e8e87e27c77c5f8a286450589457"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsAudioSampleDecoder.cs",
+        "sha256": "05522803d21930cf5f954e9252fd06923a22610219ad022f74a0f9b7b6b0d929"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsAutostartServiceFactory.cs",
+        "sha256": "ac1df3c38372f4f538b8c441b5089eabee1a6caa9976322a380ad8f78ca6d996"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsDetectionModeConfiguration.cs",
+        "sha256": "7ccef1e1f8dea9b4723e8078a00074b8b1d467d30a8db8c010a8964c688adb24"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsMeetingSpeechActivityProvider.cs",
+        "sha256": "b67650643f0ce673dce922c79b093ca7fdf781b6bf9dd61f7d053372038629ee"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsPackageIdentityDetector.cs",
+        "sha256": "d47dd97440f6f8db0870eb1aef0d56a8fb93b886b2ac761fdcb1aa30f554ba57"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsPlatformDescriptor.cs",
+        "sha256": "e00b6e4df8931c11f5b6edb3f006b4355b6dcef63a4ed943c600bdc867e64233"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsPlatformShell.cs",
+        "sha256": "5ed3edb6a1ce34f5419432bbc19f2d09553a6146dd8cd164c23362d3af6b0458"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsRunKeyAutostartService.cs",
+        "sha256": "aa91d8786ab7f2dadd129fcbdcb70a4412c4cb693a19bb58beea94e591603a3d"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsStartupTaskAutostartService.cs",
+        "sha256": "b451a4cf48f796a856eb80906356f871577477f16d3a19046c143604f286a715"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsUiAutomationControlReader.cs",
+        "sha256": "c86675df4ddb56d9a2864296fdb60c9b6b0cfb3a76eb9b64cffe9609251b0598"
+      },
+      {
+        "path": "src/IsTranscribe.Platform.Windows/WindowsWindowEvidenceProvider.cs",
+        "sha256": "e94e45a35b0939d9d0385460638e9c43d23f9c469d7cb54e6e477027e8bd04c5"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/IsTranscribe.Transcription.Local.csproj",
+        "sha256": "df43002412555e203edcab0ec7d77fb63e6e17415776d211b5cd9a85bf5488d5"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Models/GgmlModelHeaderVerifier.cs",
+        "sha256": "18c69a40892f3064738602fbbc7d1250f6cf2ec35c03400c5eee355a5fc1c3fd"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Models/PhysicalModelStorageProbe.cs",
+        "sha256": "06617b0a50429110c31cbb63e545f36af7c889f84691f17cca0e98d1681303be"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Models/PhysicalModelStoreFileMutator.cs",
+        "sha256": "ef542c5fd04bae0cd1ed8789fb0c48d1816b48a18bab6a4fa691f51115429fe7"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Models/WhisperModelCatalog.cs",
+        "sha256": "b1ae4e6821aa2219e80d0b2d69ca56d37e71ec47c20a2551977dc27324c118a7"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Models/WhisperModelStorageLayout.cs",
+        "sha256": "61f661ddec6a226930591850813435a139eb85d3721771a858455116b523c391"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Models/WhisperModelStore.cs",
+        "sha256": "08ed188e7a6195f56a1ba32c80b045c8c6ae6b7226c29d1c1cc6ee6522beaf51"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Models/WhisperModelStoreContracts.cs",
+        "sha256": "50feb41e1893ab5eba52648528f511b51845fc8bd0eed6dd4e5ce7e442187253"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Models/whisper-model-catalog.v1.json",
+        "sha256": "a4835988a542a385a770b2a2ca91a2f0afb9d54a8af2810943867a1722ce0994"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Protocol/WorkerProtocol.cs",
+        "sha256": "0b383478df22e468b61c2a78fb88be81e65c2a2024a2de9f6d963cc41145f719"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Protocol/WorkerProtocolCodec.cs",
+        "sha256": "6b81cf9a1dca4e386cb77534bb8aa452dfc7fa5223953e38d11a97da6e15e92f"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Protocol/WorkerProtocolSchema.cs",
+        "sha256": "9875662d0e982a59ac932bf0ef355f194578979249632460087b6abd3875b318"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Protocol/WorkerProtocolSessions.cs",
+        "sha256": "f1cb7048c71f392a55a2ebc318588a466ec131935c150a3059b7c08eb49feed0"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Worker/LocalWorkerCoordinator.cs",
+        "sha256": "1de073bb08c759cfa93df94932d11d27fd535386e874d812a4401e2c0656a1af"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Worker/LocalWorkerRuntimeContract.cs",
+        "sha256": "6dbb7225216160e99d64a4276788e816a1c2be5674b69bb0265156d9e82bd815"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Local/Worker/WorkerProcessLauncher.cs",
+        "sha256": "c1f68558fb01cf1355f4972cce3a3d34ec3cc3967999680deda904880fb90c76"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/IsTranscribe.Transcription.Worker.csproj",
+        "sha256": "1f165a1aebbef79743fa1632e160d0d5c70de3438f2926811ad3c478d64a60d7"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Program.cs",
+        "sha256": "77f812102b4f769a3fa001658e9a9c0975b64b2835ab8b4ce09c553a5b3e9751"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Properties/AssemblyInfo.cs",
+        "sha256": "4a7209a53237a5384668c346189be3d34c5b4bfb23c7f0db419db1a2cdfaec13"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Runtime/LocalInferenceContracts.cs",
+        "sha256": "f0f90f4df05556f31a6dcd9c53d1e87125cfe3480e74c90e0ea4db07202a2b83"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Runtime/LocalTranscriptionWorkerHost.cs",
+        "sha256": "487b430ed08ca45f7a86d2abd8e58f400ab372f5f12f0c9504304e58d2dda0f0"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Runtime/Native/NativeWhisperAbi.cs",
+        "sha256": "53d99527f4189b8b546a8727573fd576b0d4f97f93923dcfdc39a71621c7181a"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Runtime/Native/NativeWhisperBackend.cs",
+        "sha256": "027c95ce048da51295b5454004cef895fab3dbe5639b627547aa122d0ff8f0b3"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Runtime/Native/NativeWhisperLibrary.cs",
+        "sha256": "9f721f4eec550f8dcc2278aa23fe99f96fc9baab075325dadc97f4496ea00bc9"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Runtime/Native/NormalizedWaveReader.cs",
+        "sha256": "fc4df6749aef80afd896e2a1eacf5e9a14bec2846b42b010aec418e0f7cc6190"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Runtime/ParentProcessMonitor.cs",
+        "sha256": "b703ce2ee12a2d4b06b00e4d13eb260913b438c4c800412db60da0566a48fa01"
+      },
+      {
+        "path": "src/IsTranscribe.Transcription.Worker/Runtime/WorkerChildPipeConnection.cs",
+        "sha256": "7c310ed30f3ec3dbae3c795152961d3d72ddbb1bb5315556278c43e0fde76fd1"
+      },
+      {
+        "path": "tests/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "path": "tests/IsTranscribe.App.Tests/AutomaticRecordingCoordinatorTests.cs",
+        "sha256": "eacde30fbeb299175fbc6ff6cd5356e52e4c56659632531fd0af9e9761c53a74"
+      },
+      {
+        "path": "tests/IsTranscribe.App.Tests/CapabilityAwareSettingsSanitizerTests.cs",
+        "sha256": "2b95b2925e61b982a215a5bbda883a1f9f14049c3a840508a456d02d580ded89"
+      },
+      {
+        "path": "tests/IsTranscribe.App.Tests/IsTranscribe.App.Tests.csproj",
+        "sha256": "fb3b7a2debbaeeceb092113d2b6cc10d250a65ba34b7e82df3fe8c0bb050673c"
+      },
+      {
+        "path": "tests/IsTranscribe.App.Tests/ManualControlGatewayDeviceContinuityTests.cs",
+        "sha256": "db256bc1d5c1df1de6413af394cafdf837166e7c24a858a6460f08366003fdca"
+      },
+      {
+        "path": "tests/IsTranscribe.App.Tests/WizardApplicationStepModelTests.cs",
+        "sha256": "18a81a44359b03afce42cf22941d56e748f82251df9f028256e0c2ceeee39477"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/ActiveMeetingContinuityTests.cs",
+        "sha256": "174ae13a4a1f9b410e62bddf35fa554b476965dcc318eaae33b855ac74e3cb12"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/ApplicationBoundaryTests.cs",
+        "sha256": "6f9837cffcf2777b63d3248d399aa0e00fb4c237607ce426e402ccf82ce4ec06"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/ApplicationRuntimeTranscriptionProjectionTests.cs",
+        "sha256": "6b06794203e1c902c7a4fe8f60c974e1a6ccc6e523c54f86d7745123b2eeab92"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/ApplicationRuntimeTranscriptionSafetyTests.cs",
+        "sha256": "d147b59e267afdeb004d6c11a826ac9204e78fbea4c4c91968cab9d833a56e01"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/AudioChunkPlannerTests.cs",
+        "sha256": "9147ec63d0a3198bc841976b1b98437413140a8dbc8d9efaa17c062b5acfa931"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/GroqTranscriptionEngineTests.cs",
+        "sha256": "2c5c423ebda248dff28fb91e5f6ec9923fafe1c123a3761b1927080aefb8853a"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/IsTranscribe.Application.Tests.csproj",
+        "sha256": "f2bedca157f109832e01917104d7089fa94e8606490e904115f4f9068cbb9266"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/LocalWhisperApplicationIntegrationTests.cs",
+        "sha256": "eed7a64512477bb58da398a438c3a01bcdb4cc0107bc1dd9cb56d2f921547486"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/ManagedAudioChunkMaterializerTests.cs",
+        "sha256": "0c43891f7ee5c9938d28b1c21f885e1aad4f6a86e7f6077743fd5121e1c23fae"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/OpenRouterTranscriptionEngineTests.cs",
+        "sha256": "1cc0457e50a35391da8bff1f9bc96399e8f4db4f663485c8ddc8858084e1c99d"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/ReleaseV2SettingsMigrationTests.cs",
+        "sha256": "a1adda5a96b34b8760e2d3dfe6435e769a5abbc64c28864eb9afc4d5b888feb3"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/TranscriptArtifactMaterializerTests.cs",
+        "sha256": "72843a911ae8740c1d05e020682cc7c8bd5f388ff986e4c818fede5d84e6fdc5"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/TranscriptMergerTests.cs",
+        "sha256": "db4db3b659524ada9b7d0a8d53bad029e1af5a9575fe0c7430d86566e874c82d"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/TranscriptionChunkResultStoreTests.cs",
+        "sha256": "07ca1890b46f8a3dfdf2e3a1baee65c59efdd15ebe10868eeee134f1c9bf8b00"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/TranscriptionEngineRegistryTests.cs",
+        "sha256": "b18338fa5f0a44face59ebd8a124c9f4b363b4e8b337c4fd5eb740ddf5f39770"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/TranscriptionJobEnqueuerTests.cs",
+        "sha256": "83a538bdf38187ff567b1c416a8a1a65f88c833708587184c9174eaf8154a5e1"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/TranscriptionQueueWorkerEndToEndTests.cs",
+        "sha256": "7863a6e8a6746ff0311c5381bf752ae728ca2bde377dcab69222cecc4f2f008e"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/TranscriptionQueueWorkerSafetyRegressionTests.cs",
+        "sha256": "804e8cd091cdb617e4e1a81af89bd4185d18392cd995c0407b7786936967317b"
+      },
+      {
+        "path": "tests/IsTranscribe.Application.Tests/TranscriptionRetryPolicyTests.cs",
+        "sha256": "16aa3255ce0162fd097a35cf481e83313fb64a56bd4215cc0486b045a9c95b91"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/ApplicationRuntimeDestructiveActionContractTests.cs",
+        "sha256": "ff7ec9881d39939b48235eab4163587bdf5397cfe7f93728632d2d2354b9741c"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/IsTranscribe.Core.Tests.csproj",
+        "sha256": "d9a8f2cfc0955117268cdb3661eeed8c2a9ff408a86eadf8d34676ca7621c154"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/MeetingConfidenceScorerTests.cs",
+        "sha256": "05f3051dfafcc77c80a139908354b1bb7167442a3a3214cfed0ca1ff04c0e313"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/MeetingDetectionCoordinatorTests.cs",
+        "sha256": "81340e063b07082fd85ac00867ecc020b6a358489a8ae3133ecb3a85ed5411ce"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/MeetingDetectionEngineTests.cs",
+        "sha256": "18a8aed712036aa048effa25a642d171fae541c1901fab2acb27db78299d6f2b"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/MeetingDetectionReplayRunnerTests.cs",
+        "sha256": "d2662b99681124afc4337203e5c6c96ebdd1250c42c26c5a2cb145a9eb651cf0"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/MeetingObservationAssemblerTests.cs",
+        "sha256": "42878829fb9c1a5dcde9cb880400d228a43621905c9c6d3d650cef081f0f76bc"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/RecentRecordingRenameContractTests.cs",
+        "sha256": "1bb6ee80419001452ab5bec997b1799a4ee03943ca216716a2ca1ac4a8508bfe"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/ReleaseV2SettingsTests.cs",
+        "sha256": "6cc83c8ae1661694357b14aba320b68f38104df6950a7f3aa4c573c22a7024ac"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/RuntimeCapabilitySnapshotTests.cs",
+        "sha256": "60af765dd3b8ad5ffcd27e71895fee2561235788dae9f3fdd09f97b23a62c4ea"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/SpeechActivityEstimatorTests.cs",
+        "sha256": "7838f78222fadcec505a35aad9accf02290e9bf98515b325ec80ad341fe9ae74"
+      },
+      {
+        "path": "tests/IsTranscribe.Core.Tests/TranscriptionContractsTests.cs",
+        "sha256": "49ea0ca8fc49981c155388be3cbc66510d52372b690a54655bd0efe40b9924dc"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/AccessibilityLiveTextBlockTests.cs",
+        "sha256": "2ed7b4d32b79a8930dbddaf5487bc6a4d5be57d9bafab2f8921be203bc67087b"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/AskPromptTests.cs",
+        "sha256": "f84b6cb462c8c63b3504fdf7dcfefb69bf441a2ae93eaf0e5e0f519465d35296"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/ConfirmationDialogViewModelTests.cs",
+        "sha256": "c03edc1daeac614e7635a888d6c68bef67f5fcc10eaa1cc391cdae7a0b3caf31"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/DiagnosticsViewModelTests.cs",
+        "sha256": "ca124a0c45971762f859ec05db2250607fd5704b0cfc9a7faf0c1db403e69431"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/EarlyApplicationInstanceBootstrapTests.cs",
+        "sha256": "be23be0d629d3c536d46c5d33261f28ab53f7f9aa0578294f1d903f611d466fe"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/GlobalUsings.cs",
+        "sha256": "50436eb3a60162e0cfad749eddfb06f8908f821a90ca44532df946a53e071359"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/IsTranscribe.Desktop.Tests.csproj",
+        "sha256": "8d7f4b7fcb7b5a58e7bf2c1156575101593425f249b784cafdd825f243f5bca9"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/LocalizationResourceContractTests.cs",
+        "sha256": "b664030b8403649204376030ebfea1822ec200f5191e652f9d2eaad26ffa2162"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs",
+        "sha256": "87238a8c56fabab49f0c9c803ff43da292991106044305de3eba8f861e339a11"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/PassiveNotificationTests.cs",
+        "sha256": "c83cb9cd424361955d4debca3cf40d10dc8d925e5075151ed32b41680bf35c58"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/PlatformPermissionOptionViewModelTests.cs",
+        "sha256": "a7f2118f55eabaf559ce267a007414efe47cf10e650d093f5faf6c817c8d02f9"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/RecordingOverlayControllerTests.cs",
+        "sha256": "e3284f79f76a6d96c1249a0b363cd6d52fa8ac142d0a0609e5bbcc532f79e876"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/RecordingOverlayPlacementTests.cs",
+        "sha256": "e7b9e079df8eb590fb7c9d78f986a8f96f0cc7cac0ed71a7219f82d1a29dca86"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/ReleaseV2UsabilityFlowTests.cs",
+        "sha256": "0065b118721f3c045cf4d8376396c7b727cd660c8a06239d448540102ba90bb0"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/RenameRecordingDialogViewModelTests.cs",
+        "sha256": "cbbf51b980b637ddcbeaaacb69abef85dca259808254bf1fb9d34a5179fa0c00"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/SettingsViewModelTests.cs",
+        "sha256": "490f3a01d84c6d1d02b0e6cfcda94fa98f4b055655495ce2ab0485a35a7b0b74"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/SetupViewModelTests.cs",
+        "sha256": "db0e87ca77527992f1d5f59050b0ae8843d9b5ce04526226957d8e6cf8e48b69"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/TestDoubles.cs",
+        "sha256": "1e026a874c97fe4d756b3d22c45e5c0bbcdedf2c31b9292400485ec43cbd72a4"
+      },
+      {
+        "path": "tests/IsTranscribe.Desktop.Tests/WindowPlacementStoreTests.cs",
+        "sha256": "17f2f72283ea694e079801a3c610526a91f24d762e2d8ade1472bfcb90666b8c"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/ActivationMessageSerializerTests.cs",
+        "sha256": "8a7aa6537e77a607c15edaf34094aeda091a2ea27b6968077540d86e51fb4cd2"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/AppRuleRepositoryTests.cs",
+        "sha256": "7ea3f98eceb014e2bf1000c9642ad0b9e025d6655a95d8aaa62e281285189464"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/ArtifactPathResolverTests.cs",
+        "sha256": "b3d76bc5be11bfc1f884ed3a42653914d52eb6d2b5d9ce1a57db0d33165227d7"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/AudioCaptureRequestTests.cs",
+        "sha256": "2821a178da894f060c3e3ffea2d2cae4500ef65a6640edb53916a89c520426ad"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/AudioFoundationCapabilitySnapshotTests.cs",
+        "sha256": "c8a92e45ea4fb6a1f870c87b462af67d4caaeeeaaa23b6f87f916fda36b9c6b3"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/AudioMixArtifactBuilderTests.cs",
+        "sha256": "410f4203fbcc9f53cdb6360a9342a2f5d9d23a8f20f5ab2f12825d4d106d9714"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/AudioPrebufferTests.cs",
+        "sha256": "3562728377e57743acd1d28720800b1356978eea3621556dbccfb48e109402e0"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/AudioRecorderEngineTests.cs",
+        "sha256": "15b41c431592a2d2360973aa588f4a1ead2a123aee364354213d7e93f2529184"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/AudioSessionSnapshotCollectorTests.cs",
+        "sha256": "4fe2c5962257e5947ec8f55416030bb170f03a1898018632a92e24c3ae6e9565"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/BootstrapFileLoggerTests.cs",
+        "sha256": "8aca03a561b132fc87405c6743e7757afc79807c70da09911932a16f4635d637"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/BufferedWaveArtifactWriterTests.cs",
+        "sha256": "a241cc252a400df0b4321da44be614924fefb03531246464b397f7f852d3dc1f"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/CaptureAdapterLifecycleArbiterTests.cs",
+        "sha256": "859aae0b1a970c8d3827582fc5143cc9e429cc5e42902c6affbb0d04a233c7ef"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/DpapiSecretStoreTests.cs",
+        "sha256": "2f2780624267c29d2aa6e0a408e5e127110c65e383ea24c908c8b29e717bca66"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/IsTranscribe.Host.Tests.csproj",
+        "sha256": "da8391c8dcf41253788a2fac470bcab168f8cbc49e0b76f07b1adfcc0c09100a"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/JsonApplicationSettingsStoreTests.cs",
+        "sha256": "b537b62622fea132ab1bb9e89310a9381b2abe74658b434f6b2232732c8114f4"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/MeetingSessionRepositoryTests.cs",
+        "sha256": "e12f5c94cfdb2ed8f004c97c0e0714010abe8219cd2a20d94ce63facb2d128de"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/PersistenceBootstrapperTests.cs",
+        "sha256": "7f20e0143730452f3ed2b24fd888cfe4e5cec2d9d861152c9a270e99983b5dd4"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/ProcessDisplayNameResolverTests.cs",
+        "sha256": "a08eb3e3efe0d5b5bd69e14a56558f833ad6519ab559b542ae298f74b168d7b6"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/ProcessTreeSnapshotBuilderTests.cs",
+        "sha256": "e6c01c8b30c84b0b021ea88f04fb2aa56a05c9290e812bfe0a12cef3ab61fb91"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/SqliteDatabaseInitializerTests.cs",
+        "sha256": "6c2aaad4a3de74afce1c147e01457f8b9311bf3143982bfa5761ff52874e7fab"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/SqliteRecoveryCoordinatorTests.cs",
+        "sha256": "6e0d6a5f2d5ccca82d6b7002d90285b447f3fba64615b8077bd244d1d3b7f07e"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/StartupSurfaceRouterTests.cs",
+        "sha256": "bb35cf86a5da2f9772d30325d37afaf8f071ff00d4429d723ca6bdfe3821bcb2"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/TranscriptionBackgroundWorkerTests.cs",
+        "sha256": "d41df9a1ee9e264a363830c9ca1ed160ba9b0599902c68c56689507dc483bf84"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/WaveArtifactConcatenatorTests.cs",
+        "sha256": "c2f2d3b80299555ce8b950ada45af9a350eab8b7d75d1c0ebbd3c1bda50bec23"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/WaveArtifactRepairTests.cs",
+        "sha256": "71b2f958aab342f8f0e9e891323ab1fa491dc48eda914cb37c75a0dd68514829"
+      },
+      {
+        "path": "tests/IsTranscribe.Host.Tests/WindowsCapabilityAssessorTests.cs",
+        "sha256": "489df8b304249442ac0f727d4991398f3f2533cc29c4022d28f1cc765936786a"
+      },
+      {
+        "path": "tests/IsTranscribe.Persistence.Tests/IsTranscribe.Persistence.Tests.csproj",
+        "sha256": "33fd317e066c0a50d0ad44c4fbcac570adccaf59a8e05f57892c8246072bc7b5"
+      },
+      {
+        "path": "tests/IsTranscribe.Persistence.Tests/LocalTranscriptionMigrationTests.cs",
+        "sha256": "3f68303a7e7c7a0fae1a63ec1e53c1041c06722e7c1e7050b4c87f4bc0de3848"
+      },
+      {
+        "path": "tests/IsTranscribe.Persistence.Tests/MeetingSessionTranscriptionProjectionTests.cs",
+        "sha256": "1a3b85ec504a53ce29e64335305f1df8886523dbb33c19887a6ee02bb7a54d94"
+      },
+      {
+        "path": "tests/IsTranscribe.Persistence.Tests/PersistenceBoundaryTests.cs",
+        "sha256": "e2e0600dde03a8b8e1632029557df6304384de8ab780ca5f89ebc14a3dfff835"
+      },
+      {
+        "path": "tests/IsTranscribe.Persistence.Tests/ReleaseV2TranscriptionSettingsTests.cs",
+        "sha256": "18f0c57ab4888d853f8775a47ae2be32c4ff27007cac8bbd8540918f7ff93301"
+      },
+      {
+        "path": "tests/IsTranscribe.Persistence.Tests/TranscriptionJobRepositoryTests.cs",
+        "sha256": "446542d359b077ec4a6c59a279a6cebf2eb4290050bb2b223705bc27f393e7cb"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.ContractTests/IsTranscribe.Platform.ContractTests.csproj",
+        "sha256": "06915455134e941e666d4b52377dd4af5c7e1f4db5dc494e2e8373a9e45a64e3"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.ContractTests/PlatformAdapterContractTests.cs",
+        "sha256": "dd8b403ae0c14405f0134854b3201d8cf86bf6986b8d0897596257e6f24c6aa2"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/IsTranscribe.Platform.MacOS.Tests.csproj",
+        "sha256": "39ce793535091895758c386ff8ecc3eb3d9bee9a9f7cd27f7fd31d96c435c618"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSAudioPlatformTests.cs",
+        "sha256": "3a8ba2fdfa8aefaed413ad88ebc65e034977bdb5e73be334bb70cf5287b14a61"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSAudioToolboxChunkDecoderTests.cs",
+        "sha256": "ed6b4fefb49fa79681c50e135463e3eda8e62883ed8009adb273cd7e39a69acc"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSBoundaryTests.cs",
+        "sha256": "0a7a2e672ea5cfb548c37bfc93ed0d4205c5d232b217522dacab3e7c9abf017e"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSKeychainSecretVaultTests.cs",
+        "sha256": "cbe9f5b3058a417fa850b55a40f2c89aba7039567390e8cf2e0faebf84b169e1"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSLocalTranscriptionCompositionTests.cs",
+        "sha256": "80dce5b5b029c41e11b1865f1d8a9c0ae6707533e1bcb0160925183d95b1a6ee"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSLocalTranscriptionResourcePolicyTests.cs",
+        "sha256": "bcf3ae00b22271afa470c56b2acf929b3af220e93750eb7a3876b27379c1ef18"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSMeetingDetectionTests.cs",
+        "sha256": "8abe4321ce885e62b46498f1884bb481afc2aa0ea2abeaa61512de305b816055"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSMp3EncoderTests.cs",
+        "sha256": "3c9ad79bae80d44fa5fd6b39afe7991ad3bb60823a595f65bb5ed633c6379ab5"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSRecordingArtifactDeletionTests.cs",
+        "sha256": "22772c0a159ecbd1dfa60d70c51b0569e6012b8e8ddef032e2a9ac2bfd69506d"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSRecordingRecoveryTests.cs",
+        "sha256": "cd40e95a32f9d38268ec2bae9e1a592c683f7fdb58e7e03e407421779233ed6f"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.MacOS.Tests/MacOSSystemIntegrationTests.cs",
+        "sha256": "b16262f8b260f538e1b0abc1767a32268a7a09be944d64c1059a379e8f8eb7b4"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/AcceptanceOptionsTests.cs",
+        "sha256": "9807754d311fd6545f3379de0a9f36dda7bcd8f39b4f25a087ef64f1b711ce55"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/ApplicationRuntimeCompatibility.cs",
+        "sha256": "01b7842dfef06f6b54b8be3690cf23c00a5a1f2d9cea88e3d93c69882722d03d"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/CompatibilityEvidenceIndexTests.cs",
+        "sha256": "9a60d1ac5816cacb249ee1725d174733942387760db04134521c9e7b64dcb715"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/DetectionAcceptanceEvidenceTests.cs",
+        "sha256": "7b0f3a3a3f32526b884ea0f39388cfe023ac15673b1846c11efb0ff664137023"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/DpapiSecretVaultTests.cs",
+        "sha256": "56ef7c31085f960e8ce7c6ce0f5885e3cfc40f0b8238a9846b435abd92bf1ebb"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/Fixtures/Audio/piecewise.flac",
+        "sha256": "84dee33f13fcf3e288340115c43e33a72624d4c1172cc3fa5a91a8db43c08534"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/Fixtures/Audio/piecewise.m4a",
+        "sha256": "91890688811108d5561c1661eaa9f8402682dcae5861d7ddfdb7e9cf284310fb"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/Fixtures/Audio/piecewise.mp3",
+        "sha256": "44b52ab88975d09f2a6053ce09ad9a05f9bf10610af339f3217be6f0ae481020"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/Fixtures/Audio/piecewise.mp4",
+        "sha256": "28364eb0f336af1aab4bdb302daadf7e0b7be7487d03d49f50b56ae579d56ed7"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/Fixtures/Audio/piecewise.ogg",
+        "sha256": "6c89259cca96f8fdada2ebfde18c138e5070d01208cb811e689adfb469e0c802"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/Fixtures/Audio/piecewise.wav",
+        "sha256": "737281fd06a94262a3f866947fd252a23bcaa39bd7c8b731e2c91952e72a2e62"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/IsTranscribe.Platform.Windows.Tests.csproj",
+        "sha256": "7accbb19624486b683d032f3b58686512fb75bd11bdd7914604fa3d3f60f10b5"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/LocalTranscriptionPackageCompositionContractTests.cs",
+        "sha256": "124d0b3e0b019229221af85382513f8268bcf6b0b583a29da7c49a4b99f37755"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/LocalWindowsReleaseLifecycleContractTests.cs",
+        "sha256": "38635bc429c2cc3394e2ca7867270792af2d7b5ebe5b6a5340dbbaaeddab3807"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/PackagedWindowsAutostartMigrationServiceTests.cs",
+        "sha256": "99a3f8a86a8e493f73896afa9b515ecdd170b7b0b2831c58469faf44246b706e"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/Properties/AssemblyInfo.cs",
+        "sha256": "d0a7e398af01a1e81f7f05944d8c430d18e1076902b6be8859dba23d00904e21"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/ReleaseV2CompositionTests.cs",
+        "sha256": "82225174d776691b64c6d1bde2b01101e75ce960c88b29a28e2376025e2baf07"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/ReleaseV2SettingsMigrationTests.cs",
+        "sha256": "2fbfbf61bc6bb354ace5d6ae9da124212fea1a5665757f4f360a3443856563a3"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/TestAutostartService.cs",
+        "sha256": "9853ca0e9b685e24023ce493de09f25443d09e422f9ad79e2a0896171de2f274"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsAcceptanceKitContractTests.cs",
+        "sha256": "bfbe7daecfeda562ec14716448ffe4e7256ccaa5970c7912b671a8a7d91d9f97"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsApplicationInstanceCoordinatorTests.cs",
+        "sha256": "5e363f41196f29d7b4770e07b81f3afb3a79041527b461cd964fe91c5f0ca6ed"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsDetectionModeConfigurationTests.cs",
+        "sha256": "285f67b165f88bd9fe00706083ce366ad0ffad15fc6d2b9a215fa7e15d06d95f"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsDetectionPipelineFixtureTests.cs",
+        "sha256": "ebfd87165a08b323276676fa04cdbeb39e237a38a5d6e9ffb2d82015efa666c3"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsLocalTranscriptionCompositionTests.cs",
+        "sha256": "cef5f3b4577cd43d0f940f6fa50fb98b7597220c8b7d5b450db6643b2e45a143"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsLocalTranscriptionResourcePolicyTests.cs",
+        "sha256": "e7978f3aebcd674906bc007479af9e96c72bf26f1723fbb79c1c3332b96f1207"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsMediaFoundationAudioChunkDecoderTests.cs",
+        "sha256": "d3e2fe8a0289cfeb38ec0f7f1c90b8593eba4406ac64fd3c2d50f983af41f0f3"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsMediaFoundationMp3EncoderTests.cs",
+        "sha256": "c5df0e2893154c3678131d9cd10e95ed1eb7ab1864e1e35cc02bd2cf1a8d165c"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsMeetingSpeechActivityProviderTests.cs",
+        "sha256": "dbc241c4d6f5723450477cf5e8199ee7794d73bfb9b6018e3d0058892cb150cf"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsPackageContractTests.cs",
+        "sha256": "d85acab2060365e0a192b2a08ddf3a4466b260fbd44b68ef7312cbe09a24af4a"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsPlatformAdapterContractTests.cs",
+        "sha256": "fc9612cc7573f0d8619b9bae9671cf7af72147656b49b4fad4ca1e83bd9949dc"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsPlatformShellTests.cs",
+        "sha256": "266b9f1e08824ef73b70c453b5b07c4f2ac5c4b8e69941e0de805f207debc888"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsRecordingArtifactFinalizerTests.cs",
+        "sha256": "c576188c83b522d65f1cacd316baee7f9dd92d31153cf60560e9ffd8e9e2b85d"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsRecordingSessionCoordinatorTests.cs",
+        "sha256": "717d2ceb890273d04c12b4bd5d973e6695c4ada2023d6109b1fbb48c43792408"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsReleaseLifecycleHarnessContractTests.cs",
+        "sha256": "30d58f78bb8ea53ebc7fa9512518e37f55236c8ca7d15756132324072d53e2df"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsReleaseV2CapabilityRuntimeTests.cs",
+        "sha256": "065022ac5a70f14cd8b507865456bbbdc4da4ba2cccea472bbd344d74c56852c"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsReleaseV2DetectionRuntimeTests.cs",
+        "sha256": "9976a2110675d4e44e554f6963ad80f305454781caa8584d13dbdc154208ffce"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsRunKeyAutostartServiceTests.cs",
+        "sha256": "bf8d2c3793bb612a1da7e56fb414a67eb261113e43a32d59dbdf4cb2aca57e03"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsSandboxAcceptanceContractTests.cs",
+        "sha256": "18af6f1be6b6b62e121e651be452c832a8043e0db33c9a4a12d69ba200d9d2fa"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsStartupTaskAutostartServiceTests.cs",
+        "sha256": "9cb0991b6b9181de5df68f23d29ca2eb1b389270357c9b3198bb9760c81c35e7"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsStoreListingScreenshotToolingContractTests.cs",
+        "sha256": "0cafb73e70016607ab2afbe1b0e1d4507e406906fd55ef2e0d0695fb441215c6"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsStoreSubmissionMetadataContractTests.cs",
+        "sha256": "f8909e20d7c47a5c847c966cfb62786d9233ba10ee5cf0a655e3f0fe1745c442"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsStoreSubmissionToolingContractTests.cs",
+        "sha256": "146963b0482de7b5615dccb3a33486926bdfee48346ee77863224f724b02c779"
+      },
+      {
+        "path": "tests/IsTranscribe.Platform.Windows.Tests/WindowsWindowEvidenceMatcherTests.cs",
+        "sha256": "37066f3b0c67b8923c3d01e78864a64a8daf97a3ba5f85e82f1ae6134051fe0c"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Local.Tests/IsTranscribe.Transcription.Local.Tests.csproj",
+        "sha256": "588232d0f6c57ad54e216b1dbdbb869ca0402e12a6561d03afa1988a82b9195a"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Local.Tests/WhisperModelCatalogTests.cs",
+        "sha256": "74739addf687b066b63c688097e5abd97975ef6a19302101983221729666faef"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Local.Tests/WhisperModelStoreTests.cs",
+        "sha256": "55d1a4b9c6cb2b065139c5adaffc967ceef1db50c92164df1fefb2e40eb82ea6"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/IsTranscribe.Transcription.Worker.Tests.csproj",
+        "sha256": "a8b1660671dce0f72e2bf6b2ecd7bb239d1aae5dcc9b8e1bbf09bf6a3fa886f0"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/LocalTranscriptionWorkerHostTests.cs",
+        "sha256": "04a75151076f1ee98ae68b3b76c7c420ca418b242abdac0885e819973bd9018c"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/LocalWorkerCoordinatorTests.cs",
+        "sha256": "857a38ebf1a4f7e61148ea745297f8cfeef54bec49ecb27a7e5e017351d698d2"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/NativeWhisperBackendTests.cs",
+        "sha256": "f166d2d5bd13cf92d0bcb809de819f91fbc18c1483f66df2a72e15b0598c68d1"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/NativeWhisperRealModelAcceptanceTests.cs",
+        "sha256": "cc123f147b3f97f0e0bda4e2864f6f970723d8060839c31e8c6c74756bd31d75"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/Support/ConnectedWorkerPipes.cs",
+        "sha256": "355f94fb77e4b9a69f19c166598e3fe01ddea53121c422f0ee01446896acf5d1"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/Support/FakeNativeWhisperRuntime.cs",
+        "sha256": "4c4c437158e1e3c989b1f108c0e081443d9b8813d8b7c34246389e660133f21b"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/Support/InProcessWorkerLauncher.cs",
+        "sha256": "4c059bb3b7920786d1552052831db6c99b212b5eb4be2eabbaea53e7c0bc27fb"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/Support/NativeBackendTestDirectory.cs",
+        "sha256": "30448b4df09ba2659ac7c381a26fb7e54f1e09823d79bdad9da4c56159456c06"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/Support/TestPipeFactory.cs",
+        "sha256": "350e9669c382ad0db43c13e59dfd9d54f564305e054af355dcfbc54ce4777c63"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/Support/WorkerLifecycleCollection.cs",
+        "sha256": "8914fe3c1f5159f8e92f641990cba2de5902b726feda87c1d969c2484d7bc603"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/Support/WorkerTestData.cs",
+        "sha256": "e487f68b492f114473f00f9e21112b97b8b3badcb1373ed74a243e0e597272b1"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/WorkerProtocolCodecTests.cs",
+        "sha256": "5dea57a96d0a730a1a846cc836c7ccab1a611f16ec6312f8aba0f749b255d51b"
+      },
+      {
+        "path": "tests/IsTranscribe.Transcription.Worker.Tests/WorkerProtocolSessionTests.cs",
+        "sha256": "d29d9b8d69c8931799339bf3f0d8a6dd1b41cf2e6782f9ff557cb84ecf2c207c"
+      },
+      {
+        "path": "tools/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "path": "tools/IsTranscribe.AudioSmoke/IsTranscribe.AudioSmoke.csproj",
+        "sha256": "12325fd8a9ec1956f4d373127b4247a492ce8b3f504dc7a5ffb0c324ceb9b336"
+      },
+      {
+        "path": "tools/IsTranscribe.AudioSmoke/Program.cs",
+        "sha256": "21c865913b73582cbb736ea9dc768e16f7248f3f24244c1b03892a9e012524cf"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/AcceptanceInstrumentation.cs",
+        "sha256": "69e85ef4fc3d29a99caa491af5ec7eb5bc7bb755c25a2e70d4fc6b63d1b8c0c5"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/AcceptanceOptions.cs",
+        "sha256": "b90dfd256bf312645f5a62a8d7ada5d6214290510746aac32ed73412eeec2ca1"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/AcceptanceRunner.cs",
+        "sha256": "1f981e06e0f7794b4789fb1677a79a69f4cf8ea4e0e7b569b10a7081e699fc6c"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/BuildFingerprint.cs",
+        "sha256": "6f6d8c9771175ed3aac06c58644acc929bd6bbc71cbf213c400cc2a13aca0488"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/ClientProcessDiscovery.cs",
+        "sha256": "8b9b5bf06510f50a7a05af2d440f77da586f66e95f76504f6b84652c9f71062f"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/CompatibilityEvidenceIndexBuilder.cs",
+        "sha256": "f6fe8753ac6a530b17dc91aa75afadbef830f97e180c0ad2e352ce4b8e393ecc"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/EvidenceArtifactWriter.cs",
+        "sha256": "28f0796aedf3d36c5b910720fb5d45c8a757cb1c7abf5861f3818c3f3411773b"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/IsTranscribe.DetectionAcceptance.csproj",
+        "sha256": "53fc7e23ffcc8807d7ce4fb18c5d8608a3d33aa2bfa0a70581bc9f95764663b0"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/LiveEvidence.cs",
+        "sha256": "97cfd000cc24c82e4b9191d2551354cfc804d5628281f45f7e7443571f87973d"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/LiveEvidenceMatrixBuilder.cs",
+        "sha256": "7280472e9397378a11796f4684cc6a9602db2cd6a9a23df82d872acc5aa5476b"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/LiveEvidenceValidator.cs",
+        "sha256": "c3429c382a87405f10d3fe57f7ca6c6092e7c24f5a79d950d821b1bb4b7abf74"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/LogPrivacyInspector.cs",
+        "sha256": "104aa90f1ea49163d3629ad3cb990332c92fc9a738e989a1102324e4bef64940"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/Program.cs",
+        "sha256": "deb02ccbe10d6c6b03f3cc52693d68e8e81e4e486c97e942c4c025e2f917d957"
+      },
+      {
+        "path": "tools/IsTranscribe.DetectionAcceptance/Properties/AssemblyInfo.cs",
+        "sha256": "63558302bc30a4c82561a0095a56add88c7d66aec17ba4a2a7d08b271643ffeb"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/CanonicalScenarioCatalog.cs",
+        "sha256": "3a208dc0b0ad1aa13a6badbe4fd8a86f88a731eed5fefe9a355445910ca7ea4c"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/ContactSheetWriter.cs",
+        "sha256": "dc8d210f1f5a413173b5c623b044770f1f84b7147038619afb9e1c279fcd4273"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/EdgeCaseScenarioCatalog.cs",
+        "sha256": "5ee187beaaa874b8875bda5aac90f2952af8603802a4f43ce64d01a90b51053f"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/IsTranscribe.VisualReview.csproj",
+        "sha256": "92435e4d4562da3cae82df79de4f7f61847717648e1dd21fcd3e64309be87e3d"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/Program.cs",
+        "sha256": "547a86e767504cb0998896adfe3718a4d2c541b2c9794ff5048f5a33cb9ba4f6"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/ReviewApplication.axaml",
+        "sha256": "cc92404315d59da4e8ae48a3acf7f3643167493a398207fe38b8a4dc92d8b05b"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/ReviewApplication.axaml.cs",
+        "sha256": "962796f4fd5af2684a4855d27aa1b2a899cf405bd0d68cd63ec8482fc1ca4c97"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/ReviewCommandLine.cs",
+        "sha256": "67d2815bf4c3d0c2fb860c4abeb4b608e18f45ba8370473085ec2a3535c29f43"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/ReviewDoubles.cs",
+        "sha256": "7d66b96c8a794d06643b968081c291c1b5763cb94a975d92f47ede52d6e16e5d"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/StoreListingScreenshotRunner.cs",
+        "sha256": "b32f7fcbd78a825a28e9f8508d07c3dd6aeb51d7cf62e95321907e08820ff83d"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/StoreListingScreenshotValidator.cs",
+        "sha256": "bff086ed7d847a6050d98c47ec323b2897f0bc656e82a6daf288bc6de9dea445"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/TokenContrastValidator.cs",
+        "sha256": "1724d7f4f94760ca947c9636e163e7a0bb705bbdd82669cb4d82b77c8ce28a4b"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/VisualArtifactValidator.cs",
+        "sha256": "934eaabc55277c994e2bf1f9f88e389e4e927b146787489f3340d04c98958f60"
+      },
+      {
+        "path": "tools/IsTranscribe.VisualReview/VisualReviewRunner.cs",
+        "sha256": "51d0b01354bad20e0fa66be701ca2fbd593da3fdf5b7b46a8fa563a2108969e5"
+      },
+      {
+        "path": "tools/installer/Build-WindowsRelease.ps1",
+        "sha256": "6c680324f8aff31cd24a904c6aef686d50cbcab42072da3876a2afe551ca61a7"
+      },
+      {
+        "path": "tools/installer/README.md",
+        "sha256": "3b1bfbc1341f0c9f4a11b0896f7cf99f63608988e39596461448534503351d11"
+      }
+    ],
+    "head": "8e143aac954d2611414dd4b8da564e66c599e431",
+    "immutableCopyPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/first-pass/v7-large-bmad-r1-b6209f7698a397819290dcc8d3d847a6f641550a0722535f815a62ee8845338c.bundle",
+    "status": "?? _bmad-output/",
+    "tree": "1a210daa607555f15235cecfb4caeed14b2ae8d8"
+  },
+  "snapshotId": "b6209f7698a397819290dcc8d3d847a6f641550a0722535f815a62ee8845338c",
+  "task": {
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "hostId": "local",
+    "infrastructureRetryIndex": 0,
+    "repairTurns": 0,
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "taskId": "01a060a9-e9b2-77c3-b553-47882dc9d541"
+  },
+  "timing": {
+    "agentActiveMs": 2010697,
+    "humanWaitingMs": 0,
+    "taskElapsedMs": 2010697
+  },
+  "usability": {
+    "automaticDiscovery": false,
+    "browserUsed": false,
+    "clarifications": 0,
+    "methodErrors": 0,
+    "methodOperations": 0,
+    "terminalLifecycle": false,
+    "timeToFirstProductEditMs": 0
+  },
+  "usage": {
+    "aggregation": "sum_per_record",
+    "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+    "billing": {
+      "estimatedTaskCostUsd": 0.79394304,
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "reasoningIncludedInOutput": true
+    },
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 15954432,
+    "capturedAt": "2026-09-02T07:22:42.228Z",
+    "inputTokens": 17533518,
+    "outputTokens": 132531,
+    "reasoningOutputTokens": 0,
+    "redacted": true,
+    "schemaVersion": 1,
+    "source": {
+      "recordsObserved": 56,
+      "sessionSha256": "c8df6957a5e9cb0754e81951f6fd6a063633558680994642bd860a795c5b9d93",
+      "taskId": "01a060a9-e9b2-77c3-b553-47882dc9d541"
+    },
+    "totalTokens": 17666049,
+    "uncachedInputTokens": 1579086,
+    "usageObjects": 56
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Final answer and first-pass snapshot are present; objective outcome is recorded separately."
+  }
+}

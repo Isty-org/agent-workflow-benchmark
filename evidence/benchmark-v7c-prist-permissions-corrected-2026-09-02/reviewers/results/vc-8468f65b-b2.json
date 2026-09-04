@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-8468f65b-b2",
+  "blindId": "vc-8468f65b",
+  "scenario": "small",
+  "checks": [
+    {
+      "id": "S3-C01",
+      "pointsAwarded": 0,
+      "evidence": [
+        "src/routes/bot-routes.ts:37 — payload проверяется только как z.record(z.unknown()), method-specific validation отсутствует.",
+        "src/services/registration-service.ts:498 — admission проверяет allowlist, но не валидирует payload метода."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "pointsAwarded": 0,
+      "evidence": [
+        "src/config.ts:24 — allowlist задана строковой конфигурацией, отдельного registry со схемами нет.",
+        "src/services/delivery-service.ts:483 — worker вызывает generic method/payload без общего action contract."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:291 — интеграционный тест покрывает queue flow для edit/delete.",
+        "test/integration/gateway.integration.test.ts:361 — проверяется duplicate edit с тем же idempotency key.",
+        "test/integration/gateway.integration.test.ts:412 — проверяется отказ неизвестного метода; тестов method-specific payload validation нет."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "pointsAwarded": 0,
+      "evidence": [
+        "src/telegram-service.ts:112 — generic callMethod принимает произвольные method и payload.",
+        "src/config.ts:24 — добавление метода сводится к строковому allowlist без registry/schema extension."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "README.md:120 — документированы три метода и общий queue-first contract.",
+        "README.md:131 — приведён payload editMessageText.",
+        "README.md:141 — приведён payload deleteMessage.",
+        "HOWTOSETUP.md:792 — описан status flow.",
+        "HOWTOSETUP.md:813 — описаны FAILED, Telegram errors и idempotency conflict."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/routes/bot-routes.ts:94 — action endpoint сохраняет application auth preHandler.",
+        "src/services/registration-service.ts:525 — новая outbound action сначала создаёт durable delivery.",
+        "src/services/delivery-service.ts:461 — сохранён dispatch pacing.",
+        "src/services/delivery-service.ts:520 — сохранён retry policy для Telegram.",
+        "src/routes/bot-routes.ts:116 — сохранён status polling endpoint."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/lib/errors.ts:54 — публичная ошибка сохраняет code, message, details и requestId.",
+        "src/lib/errors.ts:28 — Prisma error meta передаётся в публичные details и может раскрывать внутренние данные.",
+        "src/lib/public-models.ts:40 — outbound public model не возвращает bot token."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/config.ts:24 — default allowlist содержит только sendMessage, editMessageText и deleteMessage.",
+        "src/services/registration-service.ts:115 — application allowlist пересекается с global allowlist.",
+        "test/integration/gateway.integration.test.ts:412 — forwardMessage отклоняется как OUTBOUND_METHOD_NOT_ALLOWED."
+      ]
+    }
+  ],
+  "total": 14,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "missing-action-registry",
+      "summary": "У versioned action boundary отсутствует единый registry со схемами: malformed edit/delete payloads принимаются в очередь, а worker передаёт generic method/payload напрямую в Telegram.",
+      "evidence": [
+        "src/routes/bot-routes.ts:37 — generic z.record(z.unknown()) не описывает обязательные и типизированные поля методов.",
+        "src/services/registration-service.ts:498 — проверяется только наличие метода в allowlist.",
+        "src/services/delivery-service.ts:483 — worker вызывает Telegram method без повторной контрактной валидации."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "action-validation-test-gap",
+      "summary": "Тесты покрывают успешную постановку edit/delete в очередь и duplicate path, но не покрывают обязательные поля, типы payload и idempotency conflict для новых действий.",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:291 — сценарий использует только валидные payloads.",
+        "test/integration/gateway.integration.test.ts:361 — проверяется только duplicate с идентичным payload.",
+        "test/telegram-service.test.ts:12 — unit tests относятся к webhook ownership и Telegram retry helpers."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "public-database-error-details",
+      "summary": "Публичный error envelope стабилен, но DATABASE_CONSTRAINT_ERROR раскрывает Prisma code и meta через details.",
+      "evidence": [
+        "src/lib/errors.ts:28 — в AppError передаются database code и meta.",
+        "src/lib/errors.ts:54 — details отправляются клиенту в HTTP error response."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:39:26.000Z",
+  "durationMs": 329651,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "threadId": "01a0628a-6f2e-7dd3-ba15-0ce405617f8e",
+  "processValidity": "accepted_with_unconsumed_child_creation_anomaly",
+  "processAnomalies": {
+    "createThreadCalled": true,
+    "childOutputConsumed": false,
+    "codexAppCalls": [
+      "create_thread"
+    ]
+  }
+}
+

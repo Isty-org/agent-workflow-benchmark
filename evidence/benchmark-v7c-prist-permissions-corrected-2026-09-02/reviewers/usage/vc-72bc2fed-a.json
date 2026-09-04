@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-72bc2fed-a",
+  "taskId": "01a06282-2d4c-7c53-b8e0-97f18856a43c",
+  "actualModel": "gpt-5.6-luna",
+  "actualReasoning": "xhigh",
+  "inputTokens": 218788,
+  "uncachedInputTokens": 31908,
+  "cachedInputTokens": 186880,
+  "cacheWriteInputTokens": 0,
+  "outputTokens": 7339,
+  "reasoningOutputTokens": 5688,
+  "totalTokens": 226127,
+  "costUsd": 0.018926,
+  "sessionSha256": "478254c689a928976360492e0e0f76188eff57cbfb3e37000a710347733d9bfa",
+  "redacted": true
+}

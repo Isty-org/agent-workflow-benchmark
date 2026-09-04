@@ -1,0 +1,129 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-9c8087",
+  "branch": "v7/b6fce6dfaf9",
+  "capturedAt": "2026-09-02T10:39:03.994Z",
+  "condition": "plain",
+  "cost": {
+    "activationCanaryUsd": 0,
+    "baselineCanonUsd": 0,
+    "externalEvaluationUsd": 0,
+    "fullCycleUsd": 0.42385148,
+    "lateChangeTaskUsd": 0.42385148,
+    "methodInstallUsd": 0,
+    "organizerProvisioningUsd": 0,
+    "taskOnlyUsd": 0.42385148
+  },
+  "fidelity": {
+    "evidencePath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/lifecycle/v7-new-plain-r3.json",
+    "status": "pending"
+  },
+  "interventions": {
+    "answers": [],
+    "clarifications": 0,
+    "repairTurns": 0
+  },
+  "quality": {
+    "evaluationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/checks/v7-new-plain-r3.json",
+    "findings": [],
+    "officialScore": null,
+    "rawScore": null
+  },
+  "replica": 3,
+  "runId": "v7-new-plain-r3",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "setup": {
+    "commit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+    "fingerprint": "",
+    "lineageId": "v7-new-plain",
+    "tree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+  },
+  "snapshot": {
+    "fileHashes": [
+      {
+        "path": "README.md",
+        "sha256": "e167bf02d00a98eb995977a6130aa29d36a3fd05b6914b8d85bcfecf94c146b1"
+      },
+      {
+        "path": "app.js",
+        "sha256": "203db3555996a5bb5930092550b40e16b3c6ff3d5c901dabbb7b0777f15546a6"
+      },
+      {
+        "path": "index.html",
+        "sha256": "b32c88722a659caf2b668ac91885fb051d0ecf9ef411461aa831eb9194abdb12"
+      },
+      {
+        "path": "package.json",
+        "sha256": "d604158463cd8bfc20c6986d68c144a4c3ada564f509adde94a5af94dda2a796"
+      },
+      {
+        "path": "server.js",
+        "sha256": "a3a6cd21620041e6b50efa371743c38a204f9c6b345fec91005ac871fd0d4313"
+      },
+      {
+        "path": "styles.css",
+        "sha256": "8e1e31c40af1e98f5cbd8c03d35c51168fa453136708e14f85ef6271c0b63bb5"
+      }
+    ],
+    "head": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+    "immutableCopyPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/first-pass/v7-new-plain-r3-8fb203838d7c19f8d2bb0f28aa7ca844437b2fade85fba25b74a9072aa93a1e6.bundle",
+    "status": "?? README.md\n?? app.js\n?? index.html\n?? package.json\n?? server.js\n?? styles.css",
+    "tree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+  },
+  "snapshotId": "8fb203838d7c19f8d2bb0f28aa7ca844437b2fade85fba25b74a9072aa93a1e6",
+  "task": {
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "hostId": "local",
+    "infrastructureRetryIndex": 0,
+    "repairTurns": 0,
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "taskId": "01a0608e-4f5e-72b1-88ae-63f65dbc5667"
+  },
+  "timing": {
+    "agentActiveMs": 2006772,
+    "humanWaitingMs": 0,
+    "taskElapsedMs": 2006772
+  },
+  "usability": {
+    "automaticDiscovery": false,
+    "browserUsed": false,
+    "clarifications": 0,
+    "methodErrors": 0,
+    "methodOperations": 0,
+    "terminalLifecycle": false,
+    "timeToFirstProductEditMs": 0
+  },
+  "usage": {
+    "aggregation": "sum_per_record",
+    "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+    "billing": {
+      "estimatedTaskCostUsd": 0.42385148,
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "reasoningIncludedInOutput": true
+    },
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 5704704,
+    "capturedAt": "2026-09-02T07:22:39.429Z",
+    "inputTokens": 6157969,
+    "outputTokens": 182587,
+    "reasoningOutputTokens": 0,
+    "redacted": true,
+    "schemaVersion": 1,
+    "source": {
+      "recordsObserved": 32,
+      "sessionSha256": "81b257f235fb657e8e5c17f69f5166d4f5b1201dcf3f4d7deeb4a7512c85e0d3",
+      "taskId": "01a0608e-4f5e-72b1-88ae-63f65dbc5667"
+    },
+    "totalTokens": 6340556,
+    "uncachedInputTokens": 453265,
+    "usageObjects": 32
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Final answer and first-pass snapshot are present; objective outcome is recorded separately."
+  }
+}

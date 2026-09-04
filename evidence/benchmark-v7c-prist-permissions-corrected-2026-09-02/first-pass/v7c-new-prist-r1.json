@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "runId": "v7c-new-prist-r1",
+  "blindId": "vc-72bc2fed",
+  "scenario": "new-project",
+  "condition": "prist",
+  "replica": 1,
+  "task": {
+    "taskId": "01a06255-8d3b-7791-9b54-ca4c0be7d1bd",
+    "turnId": "01a06255-9295-7890-993d-3bf4ebee8671",
+    "hostId": "local",
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "repairTurns": 0
+  },
+  "setup": {
+    "commit": "5c5d26d3c606da44cb55d0a6e398a508fde7d3e6",
+    "tree": "53e6cdabc74c063622678aec8d9741b2ef49d20a",
+    "fingerprint": "bedff71c77daa923d56c0eb4891f3469988b7d1ba6f024b7c3e92b94fa592eeb",
+    "hostedProjectId": "project_38e01a83-d244-44fe-900c-09e7423ab006",
+    "hostedConnectionId": "connection_1f5bc9df-a9ca-479b-89b8-2377b0e1d22e"
+  },
+  "timing": {
+    "dispatchAt": "2026-09-02T13:36:09.000Z",
+    "taskStart": "2026-09-02T13:36:10.000Z",
+    "firstActivityAt": "2026-09-02T13:36:10.000Z",
+    "lastActivityAt": "2026-09-02T13:57:06.000Z",
+    "finalResponseAt": "2026-09-02T13:57:06.000Z",
+    "taskElapsedMs": 1257000,
+    "agentActiveMs": 1256075,
+    "humanWaitingMs": 0,
+    "externalChecksMs": null
+  },
+  "snapshot": {
+    "head": "5c5d26d3c606da44cb55d0a6e398a508fde7d3e6",
+    "tree": "53e6cdabc74c063622678aec8d9741b2ef49d20a",
+    "status": "M .gitignore\n?? README.md\n?? index.html\n?? package-lock.json\n?? package.json\n?? specs/SPEC-MAP.md\n?? specs/common/main.md\n?? specs/common/structure.md\n?? specs/modules/reading-list/FEAT-001-reading-list.md\n?? src/lib/readingList.js\n?? src/main.jsx\n?? src/styles.css\n?? test/readingList.test.js\n?? vite.config.js",
+    "contentFingerprint": "4c92c34fa7e77bbd7d97ca0444a04f5171db7b688ceb5f937744e0b5c071db71",
+    "files": {
+      ".agents/skills/spec-driven-work/SKILL.md": "9485e9dcba786b6b2bf19f3f2b275017c3925894645ffe5bd7640fb9c8bfc548",
+      ".agents/skills/spec-driven-work/agents/openai.yaml": "7ecdda658c1bba182d774af8a7489da58fa83d253a2d09e0bbb2c6e4f35a1793",
+      ".agents/skills/spec-driven-work/fixtures/parallel-context-scenarios.json": "a0922228cad25722c1ea1d63bfec7fe52bd0b316952c56bcacb09d2fa16ff540",
+      ".agents/skills/spec-driven-work/references/change-flow.md": "2bccbf14ea531285a52fd14b3a95384e44fc35c6094c7bcf6b7eddce6b9e6a2a",
+      ".agents/skills/spec-driven-work/references/full-canon-adaptation.md": "8595a02b6bb06ec214087b292d2dcc6543d0b3a12abd63660f790f5a8583ec33",
+      ".agents/skills/spec-driven-work/references/parallel-work.md": "51851ec3731a5b5ec82529ff4392ef2db69b2d2e9baef4aa93a3eecd30cd9f19",
+      ".agents/skills/spec-driven-work/references/service-lifecycle.md": "016183faf8ae215b3d03be0b750883ba31a3901fbf48cc7db01e54f589aec888",
+      ".agents/skills/spec-driven-work/references/setup-recovery.md": "e7dd0a5cee975b5f12cd8371885f96ace7e206abef0915f07769e38b7669a509",
+      ".agents/skills/spec-driven-work/references/specification-authoring.md": "54f1a4fc618609cce847e004829a4200f1eacd47e22191f84c0f61f7a430ed7d",
+      ".agents/skills/spec-driven-work/references/specification-lifecycle.md": "de08064b93ef297c6522b0744d81e99b43a82cafde9ddd88f6f33f73d18e6ae0",
+      ".agents/skills/spec-driven-work/references/work-items.md": "90b35d3a7dc5d6887083720d1458d2ad72cb45eccdf22b850fbc9bed8a9bae0b",
+      ".agents/skills/spec-driven-work/scripts/check-workflow.mjs": "a4065c9c7568664c2885ae388ab250dc930bd0e7af674697bce8d4427f11fefc",
+      ".agents/skills/spec-driven-work/scripts/instruction-reconciliation.json": "d203cb0f9bb5c5a75982bbb1dedce47b52377c1aea10b089097b7257a230dbe2",
+      ".agents/skills/spec-driven-work/scripts/portable-change-driver.mjs": "921246e727fa5f43446ca054270cb9380105e20d71f8fea38b3ac91c1760d954",
+      ".agents/skills/spec-driven-work/scripts/prepare-isolated-checkout.mjs": "d9e7e52a87ee3f3068e41c3eba5beb6a76bb72660c841201beefd17cb5b0fd98",
+      ".agents/skills/spec-driven-work/scripts/prist-mcp-stdio.mjs": "7c81cd24379aba38548dddf9fd7648727e2997b0d521ca0fe4aaabfe3d067513",
+      ".agents/skills/spec-driven-work/scripts/prist-onboarding.mjs": "39b3860a897ea3932b6d364732055207d345cab346c871427e01779c8d16b3b8",
+      ".agents/skills/spec-driven-work/scripts/prist-worktree-bootstrap.mjs": "e6a53bb6f2d5fa577256a4d80c1237e63f8d1cb6d0a0b1b092bc1c01b5f49723",
+      ".agents/skills/spec-driven-work/scripts/repository-inventory.mjs": "d6c9f95ff8227d3ba3cd34fddf566263f8ebcf01e754a811a0cf7cc09f8f034a",
+      ".agents/skills/spec-driven-work/scripts/sync-spec-space.mjs": "78165b4ce0aacbcf526d60a02734d2bc6bee47bac261222efca443c169c7fd4c",
+      ".agents/skills/spec-driven-work/scripts/traceability-audit.mjs": "236a453eda6019edc4baf586fb2a51823a6fce06d71e4f577fd4e775fbd1500e",
+      ".claude/skills/spec-driven-work/SKILL.md": "9485e9dcba786b6b2bf19f3f2b275017c3925894645ffe5bd7640fb9c8bfc548",
+      ".claude/skills/spec-driven-work/agents/openai.yaml": "7ecdda658c1bba182d774af8a7489da58fa83d253a2d09e0bbb2c6e4f35a1793",
+      ".claude/skills/spec-driven-work/fixtures/parallel-context-scenarios.json": "a0922228cad25722c1ea1d63bfec7fe52bd0b316952c56bcacb09d2fa16ff540",
+      ".claude/skills/spec-driven-work/references/change-flow.md": "2bccbf14ea531285a52fd14b3a95384e44fc35c6094c7bcf6b7eddce6b9e6a2a",
+      ".claude/skills/spec-driven-work/references/full-canon-adaptation.md": "8595a02b6bb06ec214087b292d2dcc6543d0b3a12abd63660f790f5a8583ec33",
+      ".claude/skills/spec-driven-work/references/parallel-work.md": "51851ec3731a5b5ec82529ff4392ef2db69b2d2e9baef4aa93a3eecd30cd9f19",
+      ".claude/skills/spec-driven-work/references/service-lifecycle.md": "016183faf8ae215b3d03be0b750883ba31a3901fbf48cc7db01e54f589aec888",
+      ".claude/skills/spec-driven-work/references/setup-recovery.md": "e7dd0a5cee975b5f12cd8371885f96ace7e206abef0915f07769e38b7669a509",
+      ".claude/skills/spec-driven-work/references/specification-authoring.md": "54f1a4fc618609cce847e004829a4200f1eacd47e22191f84c0f61f7a430ed7d",
+      ".claude/skills/spec-driven-work/references/specification-lifecycle.md": "de08064b93ef297c6522b0744d81e99b43a82cafde9ddd88f6f33f73d18e6ae0",
+      ".claude/skills/spec-driven-work/references/work-items.md": "90b35d3a7dc5d6887083720d1458d2ad72cb45eccdf22b850fbc9bed8a9bae0b",
+      ".claude/skills/spec-driven-work/scripts/check-workflow.mjs": "a4065c9c7568664c2885ae388ab250dc930bd0e7af674697bce8d4427f11fefc",
+      ".claude/skills/spec-driven-work/scripts/instruction-reconciliation.json": "d203cb0f9bb5c5a75982bbb1dedce47b52377c1aea10b089097b7257a230dbe2",
+      ".claude/skills/spec-driven-work/scripts/portable-change-driver.mjs": "921246e727fa5f43446ca054270cb9380105e20d71f8fea38b3ac91c1760d954",
+      ".claude/skills/spec-driven-work/scripts/prepare-isolated-checkout.mjs": "d9e7e52a87ee3f3068e41c3eba5beb6a76bb72660c841201beefd17cb5b0fd98",
+      ".claude/skills/spec-driven-work/scripts/prist-mcp-stdio.mjs": "7c81cd24379aba38548dddf9fd7648727e2997b0d521ca0fe4aaabfe3d067513",
+      ".claude/skills/spec-driven-work/scripts/prist-onboarding.mjs": "39b3860a897ea3932b6d364732055207d345cab346c871427e01779c8d16b3b8",
+      ".claude/skills/spec-driven-work/scripts/repository-inventory.mjs": "d6c9f95ff8227d3ba3cd34fddf566263f8ebcf01e754a811a0cf7cc09f8f034a",
+      ".claude/skills/spec-driven-work/scripts/sync-spec-space.mjs": "78165b4ce0aacbcf526d60a02734d2bc6bee47bac261222efca443c169c7fd4c",
+      ".claude/skills/spec-driven-work/scripts/traceability-audit.mjs": "236a453eda6019edc4baf586fb2a51823a6fce06d71e4f577fd4e775fbd1500e",
+      ".codex/config.toml": "5eb1b0e7c99e4ae9d81673c534014121957b9972b819dce4bba67afc1337736b",
+      ".gitignore": "d33f680e8fa105f2d137796901ce3522ed49baab8ccc7530709f4f7560bb442a",
+      ".mcp.json": "d8e397af03b5b032f21d0aa967086f0c78b33c87b76f2e9898ae0a144df7de02",
+      ".prist/connection.json": "b16747ff457a5e3d805ef464d34ffb96ee4668440310e32afc525513106e77cc",
+      ".prist/recovery/entrypoints/AGENTS.before-prist.md": "9d9289b5a0cc723eb7c6c15f6fd7999f2ea427a5f9ad44feacf4e28f08e51cd3",
+      ".prist/recovery/entrypoints/CLAUDE.before-prist.md": "46dc571810d473a4bcf01f33f99fb26d994ddbcad1f7328aaf96a3dc5f44f233",
+      ".prist/recovery/entrypoints/manifest.json": "144c0b7ecb908d1be2f21cdd1c7f2fb443e8135b7183e37d881bae192feb5eae",
+      ".prist/repository-setup-receipt.json": "fe2fd415689d2eb49206620869ce69ac3b313a871bf318d7cb59db1a9d11deff",
+      ".prist/workflow.json": "fe2fd415689d2eb49206620869ce69ac3b313a871bf318d7cb59db1a9d11deff",
+      "AGENTS.md": "ad68b241366592e6d54e7d756f390e9156d37399fe2902ec5804da7b763d690b",
+      "CLAUDE.md": "35363df35a219b51146680f35fa5687082c8112398c9e8c4be35a30d727f86d9",
+      "README.md": "bb80aaf90a191e1d13463554047d01f9a244154bc12eac2652ca918a189c1084",
+      "dist/assets/index-BYchnl36.js": "314fd14129a79ef78bf053847112cd93fc712306fc9bb993f8983c8457e67a4a",
+      "dist/assets/index-CZMhCUMX.css": "7be5708519f6227521200414b1f3ff26f39b93df57113b2f39230b83a0510f4c",
+      "dist/index.html": "72cd2de396e77ca17db584247bc66047c33785c236d9be59eaf9d410fe9f9b3a",
+      "index.html": "e5b3a28799f62a1fbc0926b8f422e65ad1b854ff96bc0771e2587893bd99bfc6",
+      "package-lock.json": "d70abf1736205ad4b25319bbc5ca10efcfcf8708284b066fac8e10762e06da21",
+      "package.json": "177ab51c527da57690d3a2a5d46d5aeaff5ba1f08a40d74661babbcfe2fb6f59",
+      "specs/SPEC-MAP.md": "330684e50373327adfdce1e16012708b82ae7ac337be3e472a89b1f728b4dbdd",
+      "specs/common/main.md": "612a224f53df26d7234daed7f235c20476efb98620f34c082d13f7dd52baf59c",
+      "specs/common/structure.md": "3ce8548a3094857c13a42611f4758294acbe8107d303013421c544f2f7331522",
+      "specs/modules/reading-list/FEAT-001-reading-list.md": "7b66e33aff1c4e4949f72e6d8df13f365e89fbc8104b422b2e0276d941ec3d00",
+      "src/lib/readingList.js": "a66a5f18df36fa6c136ef40ade303ae2217b07039fc0baba8128abce3d6f3b2c",
+      "src/main.jsx": "5b0d60eb25f12ba6acbdee800a867e413cbcb1f69af30c1a99ca9fb23bfb9f1a",
+      "src/styles.css": "2ee4a2b47e8703b179053dcd0a4f5ce4b67493a53de908617693e0bb45042167",
+      "test/readingList.test.js": "b3cb5f7f27bd86f8a34d7804c00a0af04070cac52278ec2c58db89cd520e94be",
+      "vite.config.js": "aca9ff8edf6a56caed9be5c50ae6ad8e855b70c1bdd344697f5700f56872484b"
+    }
+  },
+  "capturedAt": "2026-09-02T13:57:33.083Z",
+  "firstPassFrozen": true,
+  "interventions": {
+    "clarifications": 0,
+    "answers": 0,
+    "repairTurns": 0
+  },
+  "usage": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+    "runId": "v7c-new-prist-r1",
+    "capturedAt": "2026-09-02T13:57:42.120Z",
+    "source": {
+      "taskId": "01a06255-8d3b-7791-9b54-ca4c0be7d1bd",
+      "turnId": "01a06255-9295-7890-993d-3bf4ebee8671",
+      "sessionSha256": "3403fb9d9e02528f8ff615023824b6ef062ffb28a2da2ed61856ac0a42044126"
+    },
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "inputTokens": 8841374,
+    "uncachedInputTokens": 194206,
+    "cachedInputTokens": 8647168,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 45701,
+    "reasoningOutputTokens": 18025,
+    "totalTokens": 8887075,
+    "toolCounts": {
+      "exec": 93
+    },
+    "billing": {
+      "currency": "USD",
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "pricingSha256": "2a71067b2a0d65782d7b1cc8d7a0415b322425c9c6db719306bee8f9ae8da634",
+      "estimatedTaskCostUsd": 0.26662576,
+      "reasoningIncludedInOutput": true
+    },
+    "redacted": true,
+    "privacy": {
+      "transcriptCopied": false,
+      "toolInputsCopied": false,
+      "toolOutputsCopied": false,
+      "credentialsCopied": false,
+      "rateLimitDataCopied": false
+    }
+  },
+  "checks": {
+    "path": "checks/v7c-new-prist-r1.json",
+    "repetitions": 3,
+    "provenance": "frozen_v7"
+  },
+  "evaluation": {
+    "path": "evaluations/vc-72bc2fed.json",
+    "rawScore": 96,
+    "officialScore": 96,
+    "reviewPasses": 2
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Corrected setup preflight passed; exact Luna xhigh first pass preserved; product failures remain valid; objective checks repeated three times; blind review complete."
+  },
+  "privacy": {
+    "browserUsed": false,
+    "credentialsCopied": false,
+    "transcriptCopied": false,
+    "rawToolPayloadsCopied": false,
+    "credentialFilesStoredAsHashesOnly": true,
+    "webSearchObserved": false
+  },
+  "safeToolSummary": {
+    "itemCount": 202,
+    "commandExecution": {
+      "count": 70,
+      "durationMs": 243828,
+      "completed": 66,
+      "failed": 4
+    },
+    "mcpToolCall": {
+      "count": 0,
+      "durationMs": 0,
+      "completed": 0,
+      "failed": 0
+    },
+    "fileChange": {
+      "count": 11
+    },
+    "webSearch": {
+      "count": 0
+    },
+    "contextCompaction": {
+      "count": 0
+    }
+  },
+  "lifecycle": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+    "runId": "v7c-new-prist-r1",
+    "blindId": "vc-72bc2fed",
+    "capturedAt": "2026-09-02T14:19:10.764Z",
+    "projectId": "project_38e01a83-d244-44fe-900c-09e7423ab006",
+    "connectionId": "connection_1f5bc9df-a9ca-479b-89b8-2377b0e1d22e",
+    "operationCounts": {
+      "connection_ready": 3,
+      "finish": 6,
+      "project_context": 7,
+      "setup_context": 10,
+      "start": 5,
+      "sync_spec_snapshot": 1
+    },
+    "activations": [
+      {
+        "route": "tracked",
+        "status": "completed",
+        "closedAt": "2026-09-02T13:56:46.606Z",
+        "revision": 9,
+        "createdAt": "2026-09-02T13:38:44.368Z",
+        "updatedAt": "2026-09-02T13:56:46.606Z",
+        "workRunId": "run_5ce3a75e3bb1c8888e394854bb717516",
+        "workItemId": "WI-001",
+        "activationId": "activation_8d7fc9d89376e677f13fa35ca9dbdb55",
+        "changeStreamId": "stream_e9d7702f58481d6f1fb91b3247a331a1"
+      }
+    ],
+    "workRuns": [
+      {
+        "status": "completed",
+        "endedAt": "2026-09-02T13:56:46.605+00:00",
+        "version": 3,
+        "startedAt": "2026-09-02T13:39:00.36+00:00",
+        "workRunId": "run_5ce3a75e3bb1c8888e394854bb717516",
+        "workItemId": "WI-001",
+        "releaseReason": null,
+        "changeStreamId": "stream_e9d7702f58481d6f1fb91b3247a331a1",
+        "lastActivityAt": "2026-09-02T13:56:46.605+00:00"
+      }
+    ],
+    "changeStreams": [
+      {
+        "status": "integrated",
+        "version": 4,
+        "createdAt": "2026-09-02T13:39:00.36+00:00",
+        "updatedAt": "2026-09-02T13:56:46.605+00:00",
+        "workItemId": "WI-001",
+        "discardedAt": null,
+        "integratedAt": "2026-09-02T13:56:46.605+00:00",
+        "changeStreamId": "stream_e9d7702f58481d6f1fb91b3247a331a1"
+      }
+    ],
+    "auditGroups": [
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:10:22.145735+00:00",
+        "firstAt": "2026-09-02T13:10:22.145735+00:00",
+        "eventType": "connection_created",
+        "operation": null
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:10:32.558897+00:00",
+        "firstAt": "2026-09-02T13:10:32.558897+00:00",
+        "eventType": "connection_activated",
+        "operation": null
+      },
+      {
+        "count": 10,
+        "lastAt": "2026-09-02T13:28:00.606445+00:00",
+        "firstAt": "2026-09-02T13:10:33.413428+00:00",
+        "eventType": "operation_authorized",
+        "operation": "setup_context"
+      },
+      {
+        "count": 3,
+        "lastAt": "2026-09-02T13:12:57.995449+00:00",
+        "firstAt": "2026-09-02T13:10:41.876531+00:00",
+        "eventType": "operation_authorized",
+        "operation": "connection_ready"
+      },
+      {
+        "count": 2,
+        "lastAt": "2026-09-02T13:12:47.024277+00:00",
+        "firstAt": "2026-09-02T13:10:41.877768+00:00",
+        "eventType": "connection_blocked",
+        "operation": null
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:12:57.997039+00:00",
+        "firstAt": "2026-09-02T13:12:57.997039+00:00",
+        "eventType": "connection_ready",
+        "operation": null
+      },
+      {
+        "count": 7,
+        "lastAt": "2026-09-02T13:28:00.313994+00:00",
+        "firstAt": "2026-09-02T13:12:59.722398+00:00",
+        "eventType": "operation_authorized",
+        "operation": "project_context"
+      },
+      {
+        "count": 5,
+        "lastAt": "2026-09-02T13:54:42.699914+00:00",
+        "firstAt": "2026-09-02T13:38:44.365939+00:00",
+        "eventType": "operation_authorized",
+        "operation": "start"
+      },
+      {
+        "count": 6,
+        "lastAt": "2026-09-02T13:56:46.595036+00:00",
+        "firstAt": "2026-09-02T13:49:01.001397+00:00",
+        "eventType": "operation_authorized",
+        "operation": "finish"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:55:55.537592+00:00",
+        "firstAt": "2026-09-02T13:55:55.537592+00:00",
+        "eventType": "operation_authorized",
+        "operation": "sync_spec_snapshot"
+      }
+    ],
+    "fidelity": {
+      "engaged": true,
+      "completed": true,
+      "status": "completed",
+      "residualActiveWorkRuns": 0,
+      "residualActiveChangeStreams": 0
+    },
+    "privacy": {
+      "transcriptCopied": false,
+      "originalRequestCopied": false,
+      "credentialsCopied": false,
+      "auditDetailsCopied": false
+    }
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 3,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-e230e5",
+  "scenario": "new",
+  "phase": "first_pass",
+  "evaluatorVersion": "3.0.0",
+  "harnessCommit": "81808e2de1a329b539e7ab9e6f367833c4324aeb",
+  "workspaceCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "setupCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "124697f220491076eb274470c3b43def223c07e6df455066640134b4bfe619e5",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "124697f220491076eb274470c3b43def223c07e6df455066640134b4bfe619e5",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "124697f220491076eb274470c3b43def223c07e6df455066640134b4bfe619e5",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "N3-A01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: accessible title/author form adds a visible book",
+        "repetition 2: accessible title/author form adds a visible book",
+        "repetition 3: accessible title/author form adds a visible book"
+      ]
+    },
+    {
+      "id": "N3-A02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: three requested Russian states are visible",
+        "repetition 2: three requested Russian states are visible",
+        "repetition 3: three requested Russian states are visible"
+      ]
+    },
+    {
+      "id": "N3-A03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: one book moves through reading and completed states immediately",
+        "repetition 2: one book moves through reading and completed states immediately",
+        "repetition 3: one book moves through reading and completed states immediately"
+      ]
+    },
+    {
+      "id": "N3-A04",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: book and status survive browser reload",
+        "repetition 2: book and status survive browser reload",
+        "repetition 3: book and status survive browser reload"
+      ]
+    },
+    {
+      "id": "N3-A05",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: book and status survive full application stop and restart",
+        "repetition 2: book and status survive full application stop and restart",
+        "repetition 3: book and status survive full application stop and restart"
+      ]
+    },
+    {
+      "id": "N3-A06",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: multiple books remain independent after one state change",
+        "repetition 2: multiple books remain independent after one state change",
+        "repetition 3: multiple books remain independent after one state change"
+      ]
+    },
+    {
+      "id": "N3-A07",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: empty required values create no book and expose validation",
+        "repetition 2: empty required values create no book and expose validation",
+        "repetition 3: empty required values create no book and expose validation"
+      ]
+    },
+    {
+      "id": "N3-A08",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: primary product copy and controls are Russian",
+        "repetition 2: primary product copy and controls are Russian",
+        "repetition 3: primary product copy and controls are Russian"
+      ]
+    },
+    {
+      "id": "N3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: direct project test command",
+        "repetition 2: direct project test command",
+        "repetition 3: direct project test command"
+      ]
+    },
+    {
+      "id": "N3-B02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: documented build or type/package check",
+        "repetition 2: documented build or type/package check",
+        "repetition 3: documented build or type/package check"
+      ]
+    },
+    {
+      "id": "N3-B03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: real local start and Chromium smoke",
+        "repetition 2: real local start and Chromium smoke",
+        "repetition 3: real local start and Chromium smoke"
+      ]
+    },
+    {
+      "id": "N3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "src/core/reading-list.js contains domain operations, src/core/storage.js contains persistence, and src/app/app.js owns UI state/rendering and event handling.",
+        "UI state, rendering and event handling are isolated in src/app/app.js; pure book operations are in src/core/reading-list.js; localStorage access is isolated in src/core/storage.js."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "app.js uses state.books as the in-memory source; book status is a single field and storage.js persists the same complete array.",
+        "state.books is the single in-memory collection; each book carries its status; grouping, progress, rendering and persistence derive from that same collection."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "tests/reading-list.test.js directly covers addBook, moveBook, saveBooks, and loadBooks.",
+        "tests/reading-list.test.js directly covers add at lines 24-38, state transition at lines 51-65, and save/load persistence at lines 78-91. The frozen receipt reports all six direct tests passing in all three repetitions."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "Domain, storage, and UI responsibilities are separated; statuses are centralized in STATUS_ORDER/STATUS_LABELS and storage uses an explicit v1 key.",
+        "Stable book IDs, explicit status constants, timestamps and pure operations provide extension points for ordinary list features. The versioned storage key reading-list.books.v1 keeps future schema work bounded."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md accurately documents Node 18+, npm start, npm test, and localhost usage; it does not document a build or typecheck path.",
+        "README.md accurately documents Node 18+, npm start, the local URL, npm test and localStorage behavior. It does not explicitly document installation or state that no build/typecheck step exists; package.json has only start and test scripts."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 4,
+      "evidence": [
+        "The source covers the requested fields, three states, local persistence, and local start without external product scope, but the objective browser receipt shows the ready minimum is not usable through the primary add flow.",
+        "Scope is tightly bounded to the requested reading-list MVP, with no unrelated product surface. However, the frozen receipt reports N3-A01 and N3-A03 through N3-A06 failing in all three repetitions, so the ready minimum is not demonstrated end to end."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "index.html provides explicit labels, skip navigation, empty states, and alert containers; styles.css provides visible focus; the objective receipt nevertheless reports failed validation feedback.",
+        "index.html provides associated labels and a skip link; styles.css provides visible focus states; app.js provides aria-invalid, aria-describedby, inline errors and empty states. Full credit is withheld because the frozen browser receipt reports N3-A07 validation feedback as not understandable."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md describes browser localStorage only, with no accounts, external APIs, database, Docker, or unsafe permissions; source uses localStorage and a localhost server.",
+        "storage.js uses only the reading-list.books.v1 localStorage key; the product has no external service calls, secrets or unsafe permissions. package.json has no runtime dependencies and README explicitly excludes accounts, APIs, databases and Docker."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-e230e5-a",
+      "total": 26,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/core/reading-list.js contains domain operations, src/core/storage.js contains persistence, and src/app/app.js owns UI state/rendering and event handling."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "app.js uses state.books as the in-memory source; book status is a single field and storage.js persists the same complete array."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "tests/reading-list.test.js directly covers addBook, moveBook, saveBooks, and loadBooks."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Domain, storage, and UI responsibilities are separated; statuses are centralized in STATUS_ORDER/STATUS_LABELS and storage uses an explicit v1 key."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md accurately documents Node 18+, npm start, npm test, and localhost usage; it does not document a build or typecheck path."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The source covers the requested fields, three states, local persistence, and local start without external product scope, but the objective browser receipt shows the ready minimum is not usable through the primary add flow."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "index.html provides explicit labels, skip navigation, empty states, and alert containers; styles.css provides visible focus; the objective receipt nevertheless reports failed validation feedback."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md describes browser localStorage only, with no accounts, external APIs, database, Docker, or unsafe permissions; source uses localStorage and a localhost server."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-e230e5-b",
+      "total": 25,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "UI state, rendering and event handling are isolated in src/app/app.js; pure book operations are in src/core/reading-list.js; localStorage access is isolated in src/core/storage.js."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the single in-memory collection; each book carries its status; grouping, progress, rendering and persistence derive from that same collection."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "tests/reading-list.test.js directly covers add at lines 24-38, state transition at lines 51-65, and save/load persistence at lines 78-91. The frozen receipt reports all six direct tests passing in all three repetitions."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Stable book IDs, explicit status constants, timestamps and pure operations provide extension points for ordinary list features. The versioned storage key reading-list.books.v1 keeps future schema work bounded."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md accurately documents Node 18+, npm start, the local URL, npm test and localStorage behavior. It does not explicitly document installation or state that no build/typecheck step exists; package.json has only start and test scripts."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 1,
+          "evidence": [
+            "Scope is tightly bounded to the requested reading-list MVP, with no unrelated product surface. However, the frozen receipt reports N3-A01 and N3-A03 through N3-A06 failing in all three repetitions, so the ready minimum is not demonstrated end to end."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "index.html provides associated labels and a skip link; styles.css provides visible focus states; app.js provides aria-invalid, aria-describedby, inline errors and empty states. Full credit is withheld because the frozen browser receipt reports N3-A07 validation feedback as not understandable."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "storage.js uses only the reading-list.books.v1 localStorage key; the product has no external service calls, secrets or unsafe permissions. package.json has no runtime dependencies and README explicitly excludes accounts, APIs, databases and Docker."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 11,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 8,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 19,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 7,
+      "maxPoints": 10
+    }
+  },
+  "totalScore": 45,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-e230e5-a-finding-1",
+      "severity": "critical",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The objective receipt records the same exact-title timeout across all three repetitions and hidden-browser smoke failure."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e230e5-a-finding-2",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The receipt reports \"invalid submission lacked understandable validation\" in all repetitions, despite intended field-error elements in index.html and validation handling in app.js."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e230e5-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The objective receipt marks the required build check missing; README.md documents start and test but no build/equivalent verification."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e230e5-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "Across all three repetitions, N3-A01 timed out waiting for the exact submitted title, and N3-A03 through N3-A06 failed downstream on the same missing book."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e230e5-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The frozen receipt reports N3-A07 as failed because invalid submission lacked understandable validation; app.js contains intended field-error rendering at lines 180-193."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e230e5-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "package.json has neither build nor typecheck, and the frozen receipt marks the build check missing; README documents start and test but not the build expectation."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

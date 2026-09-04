@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-c6fad81e-a",
+  "blindId": "vc-c6fad81e",
+  "scenario": "large",
+  "checks": [
+    {
+      "id": "L3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333 — поисковый запрос хранится в состоянии MainWindowViewModel и фильтрует локальную коллекцию.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:87-89 — очистка запроса не вызывает runtime или persistence API."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:556-593 — последние записи берутся из ApplicationRuntimeSnapshot.RecentRecordings.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:765-836 — RecentRecordings строится как фильтрованное представление snapshot-derived коллекции."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:295-377 — прямые ViewModel-тесты покрывают ввод, очистку и состояние без результатов.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:233-265 — прямой тест покрывает запрос переименования и сохранение через runtime.",
+        "tests/IsTranscribe.Desktop.Tests/LocalizationResourceContractTests.cs:98-115 — проверяется наличие XAML-ресурсов в обоих языках; отдельных тестов refresh-поиска и UI accessibility для поиска нет."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:29,765-768 — применяется MaximumRecentItems до фильтрации.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:782-813,818-833 — сохраняются порядок snapshot и жизненный цикл item ViewModel, включая Dispose удалённых элементов.",
+        "src/IsTranscribe.Persistence/Persistence/MeetingSessionRepository.cs:260-262 — исходная выборка упорядочена по started_at DESC и id DESC."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:18-25,317-318 — используются существующие spec://-ссылки FEAT-013 для primary window и recent recordings.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:8-12,295-297 — тесты привязаны к существующим спецификациям.",
+        "specs/modules/app/FEAT-013-minimal-desktop-experience.md:152-160 — изменение укладывается в существующий раздел Recent Recordings."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:530-538,765-836 — snapshot refresh повторно согласует элементы и применяет текущий фильтр.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:342-370 — разделяет пустое состояние, пустой результат поиска и список результатов.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:383-394 — существующий rename action остаётся доступным на элементах списка."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:326-338 — TextBox имеет binding с обновлением по каждому изменению, automation label и отдельную focusable Button для очистки с automation name и tooltip.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:91-97 — русские подписи поиска, очистки и состояния без результатов.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:91-97 — английские подписи поиска, очистки и состояния без результатов."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333 — query является локальным presentation state.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — фильтрация работает только над локальными ViewModel-коллекциями и не меняет snapshot или runtime."
+      ]
+    }
+  ],
+  "total": 28,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "search-test-coverage-gap",
+      "summary": "Новая ветка поиска проверена только на уровне ViewModel для ввода, очистки и пустого результата; нет прямого теста фильтра после SnapshotChanged и нет UI-теста automation/focus для поля и clear action.",
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:295-377 — покрыты query, clear и no-results.",
+        "tests/IsTranscribe.Desktop.Tests/LocalizationResourceContractTests.cs:98-115 — проверяются ресурсы, но не поведение MainWindow UI и accessibility."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:33:13.000Z",
+  "durationMs": 446334,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

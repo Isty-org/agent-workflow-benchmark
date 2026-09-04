@@ -1,0 +1,7 @@
+/release-assets/
+/work/
+/node_modules/
+__pycache__/
+*.pyc
+/evaluator/.harness-*/
+/evaluator/scripts/.run-checks-*.mjs

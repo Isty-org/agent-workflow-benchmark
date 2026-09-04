@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v7-blind-review-record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "benchmarkId", "blindId", "scenario", "workspaceCommit", "setupCommit", "contractSha256", "reviewPasses", "findings", "blind"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "benchmarkId": {"const": "benchmark-v7-luna-xhigh-n3-2026-09-01"},
+    "blindId": {"type": "string", "pattern": "^vz-[0-9a-f]{6}$"},
+    "scenario": {"enum": ["new", "small", "large"]},
+    "workspaceCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "setupCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "contractSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "reviewPasses": {"type": "array", "minItems": 2, "maxItems": 3},
+    "findings": {"type": "array"},
+    "blind": {"const": true}
+  }
+}

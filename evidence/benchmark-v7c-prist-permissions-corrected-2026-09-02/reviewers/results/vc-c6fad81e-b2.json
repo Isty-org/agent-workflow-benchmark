@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-c6fad81e-b2",
+  "blindId": "vc-c6fad81e",
+  "scenario": "large",
+  "checks": [
+    {
+      "id": "L3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:57,87-89,318-333 — query and clear command are presentation state; setter only reapplies the local filter and does not call runtime persistence."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:593,765-816 — recent snapshots are reconciled into the internal collection.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — visible RecentRecordings is derived by filtering the reconciled collection."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:297-377 — direct ViewModel tests cover query changes, clear behavior, and no-results state.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:232-293 — direct tests cover rename dispatch and user-owned title behavior across language changes."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:767-810 — snapshot order is preserved, limited by MaximumRecentItems, and removed items are disposed.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — filtering preserves the source order and item instances."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "specs/common/structure.md:20-28 — existing code ownership maps desktop presentation to app specifications and tests.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:18-24,317 — implementation uses existing FEAT-013 recent-recordings traceability.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:8-12,295-296 — tests use the same existing specification anchors."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:318-494 — recent search, empty, no-results, list, rename, open, and remove states remain wired.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:530-545,765-816 — runtime snapshot refreshes reconcile recent items and preserve the active query.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:375-381 — rename remains routed through the runtime."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-339 — field updates on every text change and the clear button is a focusable Button with automation name and tooltip.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:91-97 — English field, clear, and no-results copy exists.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:91-97 — Russian field, clear, and no-results copy exists."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333,818-837 — query is held and consumed only in local presentation filtering.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:327-337 — UI binds the query to the ViewModel and clear command; no runtime or persistence binding is present."
+      ]
+    }
+  ],
+  "total": 27,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "search-test-gaps",
+      "summary": "Direct coverage does not verify an active query surviving a runtime snapshot refresh or the search field and clear button's automation semantics.",
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:297-377 — tests cover typing, clearing, and no results but do not publish a refreshed snapshot while a query is active.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-339 — automation properties are present, but no direct MainWindow UI test exercises them."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "recent-loading-unwired",
+      "summary": "The recent-recordings loading copy is defined but the MainWindow recent section has no loading-state binding, so initialization can present the ordinary empty state while data is still loading.",
+      "evidence": [
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:100 — loading copy is defined.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:100 — Russian loading copy is defined.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-370 — recent visibility is driven by HasRecentRecordings and search predicates; no loading resource or ShowBusyIndicator is used."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:39:43.000Z",
+  "durationMs": 343356,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "threadId": "01a0628a-7bb8-7861-800e-384702f6e7dd",
+  "processValidity": "accepted_with_unconsumed_child_creation_anomaly",
+  "processAnomalies": {
+    "createThreadCalled": true,
+    "childOutputConsumed": false,
+    "codexAppCalls": [
+      "create_thread"
+    ]
+  }
+}
+

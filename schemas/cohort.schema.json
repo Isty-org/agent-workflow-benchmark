@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Final selected first-pass cohort",
+  "type": "object",
+  "required": ["schemaVersion", "cohortId", "scenarios", "methods", "repetitionsPerCell", "measuredTasks", "lineageCounts", "rows"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "scenarios": { "const": 3 },
+    "methods": { "const": 4 },
+    "repetitionsPerCell": { "const": 3 },
+    "measuredTasks": { "const": 36 },
+    "rows": {
+      "type": "array", "minItems": 36, "maxItems": 36,
+      "items": {
+        "type": "object",
+        "required": ["runId", "taskId", "sourceSeries", "sourceAttempt", "sourceHashAlgorithm", "scenario", "condition", "replica", "result", "references", "methodLock"],
+        "properties": {
+          "condition": { "enum": ["plain", "bmad", "classic-spec", "prist"] },
+          "scenario": { "enum": ["new-project", "small-project", "large-project"] },
+          "replica": { "enum": [1, 2, 3] },
+          "sourceHashAlgorithm": { "enum": ["sha256-bytes", "sha256-node-utf8-replacement-lf"] }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-b075b0",
+  "scenario": "small",
+  "workspaceCommit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+  "setupCommit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-b075b0-a",
+      "total": 20,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Action-boundary validation is separated into parseActionPayload and Zod schemas, but sendMessage has no method-specific validation (src/routes/bot-routes.ts:37-64,120-130)."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 1,
+          "evidence": [
+            "Allowlist configuration lives in config/admin service while method schemas and dispatch selection live in bot-routes; there is no single method registry. The worker is generic (src/config.ts:23,37-43,74; src/routes/bot-routes.ts:41-64; src/services/delivery-service.ts:477-480)."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Integration tests cover queueing, new methods, validation, and idempotency (test/integration/gateway.integration.test.ts:253-363,365-484), but action-specific direct unit coverage and invalid sendMessage coverage are absent."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "The worker needs no change for another generic method, but adding a validated method requires separate allowlist and route-schema edits because no registry/schema extension point exists (src/config.ts:23,74; src/routes/bot-routes.ts:41-64)."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README documents methods, payloads, queue/status flow, idempotency, and error envelopes (README.md:112-166), but its blanket invalid-payload claim is false for sendMessage; .env.example also lists only sendMessage at line 19."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Existing auth, queue-first responses, status polling, retry scheduling, rate-limit pacing, and endpoints remain wired through the existing routes and services (src/app.ts:23-47; src/routes/bot-routes.ts:77-155; src/services/delivery-service.ts:437-520)."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Errors preserve code, message, details, and requestId; public registration/delivery models do not expose bot tokens (src/lib/errors.ts:19-61; src/lib/public-models.ts:7-52)."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The code default is limited to the three requested methods and application lists are intersected with it, but OUTBOUND_METHOD_ALLOWLIST accepts arbitrary configured names and can broaden the supported set (src/config.ts:23,37-43,74; src/services/registration-service.ts:112-115)."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-b075b0-b",
+      "total": 18,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "bot-routes.ts:56-65 isolates method-boundary payload parsing, and the route invokes it before submitOutboundAction at line 126."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "Method names are in config.ts:23 while schemas and method dispatch cases are separately hard-coded in bot-routes.ts:41-64. There is no shared registry."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "gateway.integration.test.ts covers new-method queueing, Telegram payloads, validation, and idempotency. There are no direct unit tests for the action boundary, and the integration suite was unavailable at runtime."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The worker is generic, and route-specific extension is localized to bot-routes.ts. Adding a method still requires separate allowlist configuration and a switch/schema change because no central registry exists."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md and HOWTOSETUP.md document all three routes, payload examples, queue/status behavior, errors, and idempotency. The stated 400 validation behavior is inaccurate for v1 sendMessage because its method-specific schema is absent."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Existing bot, delivery-status, authentication, queue, retry, pacing, and ingress routes remain registered in app.ts:42-47. The new methods use the existing submission and worker paths."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 1,
+          "evidence": [
+            "errors.ts:54-60 preserves the standard code/message/details/requestId envelope. Prisma error details expose code/meta at errors.ts:28-34, and several Telegram mappings propagate raw error.message values."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "config.ts:23 accepts arbitrary method names in OUTBOUND_METHOD_ALLOWLIST, while bot-routes.ts:62-64 passes unknown allowlisted methods through with the raw payload. No registry constrains the allowlist to supported Telegram methods."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-b075b0-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/routes/bot-routes.ts:37,56-64; src/services/registration-service.ts:517-530"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-b075b0-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/config.ts:23,37-43,74; src/routes/bot-routes.ts:41-64; src/services/registration-service.ts:112-115"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-b075b0-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "bot-routes.ts:37-64 returns unvalidated payloads for sendMessage. config.ts:23 permits arbitrary allowlist entries, and no shared method registry links supported methods, schemas, and permissions."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-b075b0-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "errors.ts:28-34 includes Prisma meta data in public details; Telegram error mapping and delivery persistence also retain raw error.message values."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

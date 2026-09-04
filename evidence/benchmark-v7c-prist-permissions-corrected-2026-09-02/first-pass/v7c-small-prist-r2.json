@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "runId": "v7c-small-prist-r2",
+  "blindId": "vc-4c5e5c27",
+  "scenario": "small-project",
+  "condition": "prist",
+  "replica": 2,
+  "task": {
+    "taskId": "01a06255-ce35-7361-920c-f0e0534c1f20",
+    "turnId": "01a06255-d51a-7390-9f70-c5813dacdc49",
+    "hostId": "local",
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "repairTurns": 0
+  },
+  "setup": {
+    "commit": "f9aa3292fd19c712a20bb8103927a130b08768bb",
+    "tree": "3e3a670b6d14c477c44eeb72ddf31759d1e4b555",
+    "fingerprint": "1ad364ff45f58386a2fd1f11ef0152bc2c735f1659052685b06b212e06c36cdf",
+    "hostedProjectId": "project_5ce124be-0ee2-4069-88a4-b57f902e9264",
+    "hostedConnectionId": "connection_eff3b4a7-1527-4ce8-ab88-63b9102badb9"
+  },
+  "timing": {
+    "dispatchAt": "2026-09-02T13:36:25.000Z",
+    "taskStart": "2026-09-02T13:36:27.000Z",
+    "firstActivityAt": "2026-09-02T13:36:27.000Z",
+    "lastActivityAt": "2026-09-02T13:57:10.000Z",
+    "finalResponseAt": "2026-09-02T13:57:10.000Z",
+    "taskElapsedMs": 1245000,
+    "agentActiveMs": 1243001,
+    "humanWaitingMs": 0,
+    "externalChecksMs": null
+  },
+  "snapshot": {
+    "head": "f9aa3292fd19c712a20bb8103927a130b08768bb",
+    "tree": "3e3a670b6d14c477c44eeb72ddf31759d1e4b555",
+    "status": "M .env.example\n M HOWTOSETUP.md\n M README.md\n M specs/modules/gateway/FEAT-102-delivery-and-retries.md\n M src/config.ts\n M test/integration/gateway.integration.test.ts\n M test/integration/test-helpers.ts",
+    "contentFingerprint": "a25a8f2399c726569d81049bad39c14081a87d137531675e3927bd85691bf013",
+    "files": {
+      ".agents/skills/spec-driven-work/SKILL.md": "9485e9dcba786b6b2bf19f3f2b275017c3925894645ffe5bd7640fb9c8bfc548",
+      ".agents/skills/spec-driven-work/agents/openai.yaml": "7ecdda658c1bba182d774af8a7489da58fa83d253a2d09e0bbb2c6e4f35a1793",
+      ".agents/skills/spec-driven-work/fixtures/parallel-context-scenarios.json": "a0922228cad25722c1ea1d63bfec7fe52bd0b316952c56bcacb09d2fa16ff540",
+      ".agents/skills/spec-driven-work/references/change-flow.md": "2bccbf14ea531285a52fd14b3a95384e44fc35c6094c7bcf6b7eddce6b9e6a2a",
+      ".agents/skills/spec-driven-work/references/full-canon-adaptation.md": "8595a02b6bb06ec214087b292d2dcc6543d0b3a12abd63660f790f5a8583ec33",
+      ".agents/skills/spec-driven-work/references/parallel-work.md": "51851ec3731a5b5ec82529ff4392ef2db69b2d2e9baef4aa93a3eecd30cd9f19",
+      ".agents/skills/spec-driven-work/references/service-lifecycle.md": "016183faf8ae215b3d03be0b750883ba31a3901fbf48cc7db01e54f589aec888",
+      ".agents/skills/spec-driven-work/references/setup-recovery.md": "e7dd0a5cee975b5f12cd8371885f96ace7e206abef0915f07769e38b7669a509",
+      ".agents/skills/spec-driven-work/references/specification-authoring.md": "54f1a4fc618609cce847e004829a4200f1eacd47e22191f84c0f61f7a430ed7d",
+      ".agents/skills/spec-driven-work/references/specification-lifecycle.md": "de08064b93ef297c6522b0744d81e99b43a82cafde9ddd88f6f33f73d18e6ae0",
+      ".agents/skills/spec-driven-work/references/work-items.md": "90b35d3a7dc5d6887083720d1458d2ad72cb45eccdf22b850fbc9bed8a9bae0b",
+      ".agents/skills/spec-driven-work/scripts/check-workflow.mjs": "a4065c9c7568664c2885ae388ab250dc930bd0e7af674697bce8d4427f11fefc",
+      ".agents/skills/spec-driven-work/scripts/instruction-reconciliation.json": "d203cb0f9bb5c5a75982bbb1dedce47b52377c1aea10b089097b7257a230dbe2",
+      ".agents/skills/spec-driven-work/scripts/portable-change-driver.mjs": "921246e727fa5f43446ca054270cb9380105e20d71f8fea38b3ac91c1760d954",
+      ".agents/skills/spec-driven-work/scripts/prepare-isolated-checkout.mjs": "d9e7e52a87ee3f3068e41c3eba5beb6a76bb72660c841201beefd17cb5b0fd98",
+      ".agents/skills/spec-driven-work/scripts/prist-mcp-stdio.mjs": "7c81cd24379aba38548dddf9fd7648727e2997b0d521ca0fe4aaabfe3d067513",
+      ".agents/skills/spec-driven-work/scripts/prist-onboarding.mjs": "39b3860a897ea3932b6d364732055207d345cab346c871427e01779c8d16b3b8",
+      ".agents/skills/spec-driven-work/scripts/prist-worktree-bootstrap.mjs": "e6a53bb6f2d5fa577256a4d80c1237e63f8d1cb6d0a0b1b092bc1c01b5f49723",
+      ".agents/skills/spec-driven-work/scripts/repository-inventory.mjs": "d6c9f95ff8227d3ba3cd34fddf566263f8ebcf01e754a811a0cf7cc09f8f034a",
+      ".agents/skills/spec-driven-work/scripts/sync-spec-space.mjs": "78165b4ce0aacbcf526d60a02734d2bc6bee47bac261222efca443c169c7fd4c",
+      ".agents/skills/spec-driven-work/scripts/traceability-audit.mjs": "236a453eda6019edc4baf586fb2a51823a6fce06d71e4f577fd4e775fbd1500e",
+      ".claude/skills/spec-driven-work/SKILL.md": "9485e9dcba786b6b2bf19f3f2b275017c3925894645ffe5bd7640fb9c8bfc548",
+      ".claude/skills/spec-driven-work/agents/openai.yaml": "7ecdda658c1bba182d774af8a7489da58fa83d253a2d09e0bbb2c6e4f35a1793",
+      ".claude/skills/spec-driven-work/fixtures/parallel-context-scenarios.json": "a0922228cad25722c1ea1d63bfec7fe52bd0b316952c56bcacb09d2fa16ff540",
+      ".claude/skills/spec-driven-work/references/change-flow.md": "2bccbf14ea531285a52fd14b3a95384e44fc35c6094c7bcf6b7eddce6b9e6a2a",
+      ".claude/skills/spec-driven-work/references/full-canon-adaptation.md": "8595a02b6bb06ec214087b292d2dcc6543d0b3a12abd63660f790f5a8583ec33",
+      ".claude/skills/spec-driven-work/references/parallel-work.md": "51851ec3731a5b5ec82529ff4392ef2db69b2d2e9baef4aa93a3eecd30cd9f19",
+      ".claude/skills/spec-driven-work/references/service-lifecycle.md": "016183faf8ae215b3d03be0b750883ba31a3901fbf48cc7db01e54f589aec888",
+      ".claude/skills/spec-driven-work/references/setup-recovery.md": "e7dd0a5cee975b5f12cd8371885f96ace7e206abef0915f07769e38b7669a509",
+      ".claude/skills/spec-driven-work/references/specification-authoring.md": "54f1a4fc618609cce847e004829a4200f1eacd47e22191f84c0f61f7a430ed7d",
+      ".claude/skills/spec-driven-work/references/specification-lifecycle.md": "de08064b93ef297c6522b0744d81e99b43a82cafde9ddd88f6f33f73d18e6ae0",
+      ".claude/skills/spec-driven-work/references/work-items.md": "90b35d3a7dc5d6887083720d1458d2ad72cb45eccdf22b850fbc9bed8a9bae0b",
+      ".claude/skills/spec-driven-work/scripts/check-workflow.mjs": "a4065c9c7568664c2885ae388ab250dc930bd0e7af674697bce8d4427f11fefc",
+      ".claude/skills/spec-driven-work/scripts/instruction-reconciliation.json": "d203cb0f9bb5c5a75982bbb1dedce47b52377c1aea10b089097b7257a230dbe2",
+      ".claude/skills/spec-driven-work/scripts/portable-change-driver.mjs": "921246e727fa5f43446ca054270cb9380105e20d71f8fea38b3ac91c1760d954",
+      ".claude/skills/spec-driven-work/scripts/prepare-isolated-checkout.mjs": "d9e7e52a87ee3f3068e41c3eba5beb6a76bb72660c841201beefd17cb5b0fd98",
+      ".claude/skills/spec-driven-work/scripts/prist-mcp-stdio.mjs": "7c81cd24379aba38548dddf9fd7648727e2997b0d521ca0fe4aaabfe3d067513",
+      ".claude/skills/spec-driven-work/scripts/prist-onboarding.mjs": "39b3860a897ea3932b6d364732055207d345cab346c871427e01779c8d16b3b8",
+      ".claude/skills/spec-driven-work/scripts/repository-inventory.mjs": "d6c9f95ff8227d3ba3cd34fddf566263f8ebcf01e754a811a0cf7cc09f8f034a",
+      ".claude/skills/spec-driven-work/scripts/sync-spec-space.mjs": "78165b4ce0aacbcf526d60a02734d2bc6bee47bac261222efca443c169c7fd4c",
+      ".claude/skills/spec-driven-work/scripts/traceability-audit.mjs": "236a453eda6019edc4baf586fb2a51823a6fce06d71e4f577fd4e775fbd1500e",
+      ".codex/config.toml": "844c4a8ec935506f181870f8bcf01203386a5e0ef4e04a4221820570822eb92f",
+      ".env.example": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      ".gitattributes": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      ".gitignore": "972a86918aa489f06174eeac70f0effc59263ab6ea1213125958c23ba3d5e806",
+      ".mcp.json": "d8e397af03b5b032f21d0aa967086f0c78b33c87b76f2e9898ae0a144df7de02",
+      ".prist/connection.json": "f11b90d12902f8ec90090d385b4205b5f4ce4090b0a9e94d698e23d54e0e60d1",
+      ".prist/recovery/entrypoints/AGENTS.before-prist.md": "9d9289b5a0cc723eb7c6c15f6fd7999f2ea427a5f9ad44feacf4e28f08e51cd3",
+      ".prist/recovery/entrypoints/CLAUDE.before-prist.md": "46dc571810d473a4bcf01f33f99fb26d994ddbcad1f7328aaf96a3dc5f44f233",
+      ".prist/recovery/entrypoints/manifest.json": "fae65ab64b5217cb0f0f0a8e545929848e5ab73e8202472f32806165391267f6",
+      ".prist/repository-setup-receipt.json": "9b9b1b4fbff92b72723ed5124f052ad15414221eebdd5ef579d9e5ef9459f51e",
+      ".prist/workflow.json": "9b9b1b4fbff92b72723ed5124f052ad15414221eebdd5ef579d9e5ef9459f51e",
+      "AGENTS.md": "ad68b241366592e6d54e7d756f390e9156d37399fe2902ec5804da7b763d690b",
+      "CLAUDE.md": "35363df35a219b51146680f35fa5687082c8112398c9e8c4be35a30d727f86d9",
+      "HOWTOSETUP.md": "d5d19674d31d701537c0a712155ee1b19ff429bb810e54e896b38d2dd26a104e",
+      "README.md": "3ee4acdf1aa8020e10655f5c37b8065e44c64c3cd80649a1ad409b9efe76964a",
+      "TZ-telegram-gateway-service.md": "f3f84f959357c44fe8d7b913e6d30e0af8976383283eb5cf25f9f5e84a57cc9b",
+      "dist/src/app.js": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "dist/src/config.js": "58df7045765525543a3912cc51e6fbf9942e92eebe7b82dbd43e75b4c5a5bc72",
+      "dist/src/lib/crypto.js": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "dist/src/lib/errors.js": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "dist/src/lib/metrics.js": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "dist/src/lib/public-models.js": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "dist/src/lib/retry.js": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "dist/src/plugins/auth.js": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "dist/src/routes/admin-routes.js": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "dist/src/routes/admin-ui-routes.js": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "dist/src/routes/bot-routes.js": "d081dcac9a72c4dc020f6f4b06b820fd08ba425c6dd121b1b07f1b580bfc18b6",
+      "dist/src/routes/health-routes.js": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "dist/src/routes/ingress-routes.js": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "dist/src/routes/istina-compat-routes.js": "db64c618bd252d0fd0e349cf417af26474ba2e0e895fba2b04928cb7d79f8451",
+      "dist/src/server.js": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "dist/src/services/admin-service.js": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "dist/src/services/audit-service.js": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "dist/src/services/delivery-service.js": "1aa3809e3b70a84145f80f31fb81468676e446f984084b1c53165c1a3578e8d0",
+      "dist/src/services/registration-service.js": "d29eacab7fe963042306df87026c9e18646627221a7fefadc870372cc036e901",
+      "dist/src/services/telegram-service.js": "e84f14074851f61fabcf8e6306ac0d8d38a556f77f1bf9c4e45cb6844d4aabc3",
+      "dist/src/services/worker-service.js": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "dist/test/crypto.test.js": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "dist/test/integration/gateway.integration.test.js": "44d752fc546ace13125be068215cf62b188693db73f134a37f958b1ba9666f28",
+      "dist/test/integration/test-helpers.js": "fdf8790606fd789ab47264f0259d47404dcd15022d5b8302e224602e5f249dc9",
+      "dist/test/retry.test.js": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "dist/test/telegram-service.test.js": "fa0f5d263084ce32238b3629062c443219ea609805c5e1451a3b1e9eaa425349",
+      "docker-compose.integration.yml": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "package-lock.json": "e13615ab44afc8ffa21f3b2c81aea6e801bb2d4f825cb299ce9327f5a016df76",
+      "package.json": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "prisma/migrations/20260420202800_init/migration.sql": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "prisma/migrations/migration_lock.toml": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "prisma/schema.prisma": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "scripts/run-integration-tests.js": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "specs/SPEC-MAP.md": "1354b9d16f328d91500afdd6e9d48497099a4202e6f9ffcc3a60bc4d6a00fb63",
+      "specs/common/PROP-001-product-boundary.md": "3bd1210c7a869c629a1a47632b7bcfcbf0446d3f9dc19f1760fa7ff4bf97b26f",
+      "specs/common/main.md": "bf3d64e337eac6c585c3f7fdeccc5c5e11ed7c177ae0690530123005b812d675",
+      "specs/common/structure.md": "3d7292260b8388c0a720e66aa81396a47bee3e092095bf09e664add04b3d4274",
+      "specs/modules/gateway/FEAT-101-bot-registration.md": "6073827862545973f3fb8a02437cffcd513c2a645cf55cdb4828273162a8230f",
+      "specs/modules/gateway/FEAT-102-delivery-and-retries.md": "69965e1e5f7727dd1f021386f3efd731e8216d372fe4ebf81506906e08e1d1ed",
+      "specs/modules/gateway/FEAT-103-admin-and-compatibility.md": "de6c561c49229b49af74074da8c5cfbde16ebefe8a261ad79e402a661b0d539e",
+      "specs/modules/gateway/INFRA-101-runtime-and-security.md": "5d9d95f44f691f7c54aa27bf7bd3711d035e6dd6d5aa17e857490a796cca59f8",
+      "src/app.ts": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "src/config.ts": "c742cd78d3962b74c9229d899e9b3d33272c530a61c0770c2a7d22ff64ad22c3",
+      "src/fastify.d.ts": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "src/lib/crypto.ts": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "src/lib/errors.ts": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "src/lib/metrics.ts": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "src/lib/public-models.ts": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "src/lib/retry.ts": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "src/plugins/auth.ts": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "src/routes/admin-routes.ts": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "src/routes/admin-ui-routes.ts": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "src/routes/bot-routes.ts": "1c31823cc1f279d2daa571167af7a6d901a45efca08e329d5c8a1c7f972e27ad",
+      "src/routes/health-routes.ts": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "src/routes/ingress-routes.ts": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "src/routes/istina-compat-routes.ts": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "src/server.ts": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "src/services/admin-service.ts": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "src/services/audit-service.ts": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "src/services/delivery-service.ts": "fce9e5cbfc8b3c7b489cb4bcf3a79696cf2b62092f55845d8a77c293a12666cc",
+      "src/services/registration-service.ts": "b26c8eee2d2c94b7ff5c72d23132f4fc5f886fe050e16892956105c5c456e588",
+      "src/services/telegram-service.ts": "4800d43ed81081e20183f6ca2ea6bae05f7df555e7108af974d21a3f3f3a3fe9",
+      "src/services/worker-service.ts": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "test/crypto.test.ts": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "test/integration/gateway.integration.test.ts": "00e6e99cae08a36133eaee1b31413419723fb6fb43d97438d0caed52ed5fcf39",
+      "test/integration/test-helpers.ts": "3925ecf17314f31d9b050b31ecfc6d76f2dedbf11d43adda95bbcf6a9be382ca",
+      "test/retry.test.ts": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "test/telegram-service.test.ts": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "tsconfig.json": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c"
+    }
+  },
+  "capturedAt": "2026-09-02T13:58:28.152Z",
+  "firstPassFrozen": true,
+  "interventions": {
+    "clarifications": 0,
+    "answers": 0,
+    "repairTurns": 0
+  },
+  "usage": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+    "runId": "v7c-small-prist-r2",
+    "capturedAt": "2026-09-02T13:58:40.235Z",
+    "source": {
+      "taskId": "01a06255-ce35-7361-920c-f0e0534c1f20",
+      "turnId": "01a06255-d51a-7390-9f70-c5813dacdc49",
+      "sessionSha256": "05c8cb6aeb3db082e596646cf9706b6cb0b61a5b3a60e202e619305e896723ff"
+    },
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "inputTokens": 12621758,
+    "uncachedInputTokens": 246718,
+    "cachedInputTokens": 12375040,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 36805,
+    "reasoningOutputTokens": 16669,
+    "totalTokens": 12658563,
+    "toolCounts": {
+      "exec": 99
+    },
+    "billing": {
+      "currency": "USD",
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "pricingSha256": "2a71067b2a0d65782d7b1cc8d7a0415b322425c9c6db719306bee8f9ae8da634",
+      "estimatedTaskCostUsd": 0.3410104,
+      "reasoningIncludedInOutput": true
+    },
+    "redacted": true,
+    "privacy": {
+      "transcriptCopied": false,
+      "toolInputsCopied": false,
+      "toolOutputsCopied": false,
+      "credentialsCopied": false,
+      "rateLimitDataCopied": false
+    }
+  },
+  "checks": {
+    "path": "checks/server-runs-attempt2/v7c-small-prist-r2.json",
+    "repetitions": 3,
+    "provenance": "frozen_v7"
+  },
+  "evaluation": {
+    "path": "evaluations/vc-4c5e5c27.json",
+    "rawScore": 78,
+    "officialScore": 69,
+    "reviewPasses": 2
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Corrected setup preflight passed; exact Luna xhigh first pass preserved; product failures remain valid; objective checks repeated three times; blind review complete."
+  },
+  "privacy": {
+    "browserUsed": false,
+    "credentialsCopied": false,
+    "transcriptCopied": false,
+    "rawToolPayloadsCopied": false,
+    "credentialFilesStoredAsHashesOnly": true,
+    "webSearchObserved": false
+  },
+  "safeToolSummary": {
+    "itemCount": 201,
+    "commandExecution": {
+      "count": 61,
+      "durationMs": 325142,
+      "completed": 57,
+      "failed": 4
+    },
+    "mcpToolCall": {
+      "count": 1,
+      "durationMs": 1079,
+      "completed": 1,
+      "failed": 0
+    },
+    "fileChange": {
+      "count": 11
+    },
+    "webSearch": {
+      "count": 0
+    },
+    "contextCompaction": {
+      "count": 0
+    }
+  },
+  "lifecycle": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+    "runId": "v7c-small-prist-r2",
+    "blindId": "vc-4c5e5c27",
+    "capturedAt": "2026-09-02T14:19:25.315Z",
+    "projectId": "project_5ce124be-0ee2-4069-88a4-b57f902e9264",
+    "connectionId": "connection_eff3b4a7-1527-4ce8-ab88-63b9102badb9",
+    "operationCounts": {
+      "connection_ready": 2,
+      "finish": 6,
+      "project_context": 6,
+      "refresh_activation": 1,
+      "resume_change": 1,
+      "setup_context": 6,
+      "start": 1,
+      "sync_spec_snapshot": 2
+    },
+    "activations": [
+      {
+        "route": "tracked",
+        "status": "completed",
+        "closedAt": "2026-09-02T13:56:14.252Z",
+        "revision": 7,
+        "createdAt": "2026-09-02T13:38:59.828Z",
+        "updatedAt": "2026-09-02T13:56:14.252Z",
+        "workRunId": "run_1f621269e31b844295711358069862bc",
+        "workItemId": "WI-001",
+        "activationId": "activation_6b0f2d2396ef92f02475b531e8dec4b7",
+        "changeStreamId": "stream_b5b31c3207b12ead0065ff110d44efce"
+      }
+    ],
+    "workRuns": [
+      {
+        "status": "completed",
+        "endedAt": "2026-09-02T13:56:14.251+00:00",
+        "version": 3,
+        "startedAt": "2026-09-02T13:38:59.845+00:00",
+        "workRunId": "run_1f621269e31b844295711358069862bc",
+        "workItemId": "WI-001",
+        "releaseReason": null,
+        "changeStreamId": "stream_b5b31c3207b12ead0065ff110d44efce",
+        "lastActivityAt": "2026-09-02T13:56:14.251+00:00"
+      }
+    ],
+    "changeStreams": [
+      {
+        "status": "integrated",
+        "version": 3,
+        "createdAt": "2026-09-02T13:38:59.845+00:00",
+        "updatedAt": "2026-09-02T13:56:14.25+00:00",
+        "workItemId": "WI-001",
+        "discardedAt": null,
+        "integratedAt": "2026-09-02T13:56:14.25+00:00",
+        "changeStreamId": "stream_b5b31c3207b12ead0065ff110d44efce"
+      }
+    ],
+    "auditGroups": [
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:21:30.065094+00:00",
+        "firstAt": "2026-09-02T13:21:30.065094+00:00",
+        "eventType": "connection_created",
+        "operation": null
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:21:33.174995+00:00",
+        "firstAt": "2026-09-02T13:21:33.174995+00:00",
+        "eventType": "connection_activated",
+        "operation": null
+      },
+      {
+        "count": 6,
+        "lastAt": "2026-09-02T13:28:46.251689+00:00",
+        "firstAt": "2026-09-02T13:21:34.041507+00:00",
+        "eventType": "operation_authorized",
+        "operation": "setup_context"
+      },
+      {
+        "count": 2,
+        "lastAt": "2026-09-02T13:21:53.548117+00:00",
+        "firstAt": "2026-09-02T13:21:43.032846+00:00",
+        "eventType": "operation_authorized",
+        "operation": "connection_ready"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:21:43.034558+00:00",
+        "firstAt": "2026-09-02T13:21:43.034558+00:00",
+        "eventType": "connection_blocked",
+        "operation": null
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:21:53.549721+00:00",
+        "firstAt": "2026-09-02T13:21:53.549721+00:00",
+        "eventType": "connection_ready",
+        "operation": null
+      },
+      {
+        "count": 6,
+        "lastAt": "2026-09-02T13:28:45.958602+00:00",
+        "firstAt": "2026-09-02T13:21:55.508566+00:00",
+        "eventType": "operation_authorized",
+        "operation": "project_context"
+      },
+      {
+        "count": 2,
+        "lastAt": "2026-09-02T13:28:44.473062+00:00",
+        "firstAt": "2026-09-02T13:21:56.294894+00:00",
+        "eventType": "operation_authorized",
+        "operation": "sync_spec_snapshot"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:38:59.826304+00:00",
+        "firstAt": "2026-09-02T13:38:59.826304+00:00",
+        "eventType": "operation_authorized",
+        "operation": "start"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:39:32.990032+00:00",
+        "firstAt": "2026-09-02T13:39:32.990032+00:00",
+        "eventType": "operation_authorized",
+        "operation": "resume_change"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:39:33.287151+00:00",
+        "firstAt": "2026-09-02T13:39:33.287151+00:00",
+        "eventType": "operation_authorized",
+        "operation": "refresh_activation"
+      },
+      {
+        "count": 6,
+        "lastAt": "2026-09-02T13:56:14.238521+00:00",
+        "firstAt": "2026-09-02T13:52:20.00141+00:00",
+        "eventType": "operation_authorized",
+        "operation": "finish"
+      }
+    ],
+    "fidelity": {
+      "engaged": true,
+      "completed": true,
+      "status": "completed",
+      "residualActiveWorkRuns": 0,
+      "residualActiveChangeStreams": 0
+    },
+    "privacy": {
+      "transcriptCopied": false,
+      "originalRequestCopied": false,
+      "credentialsCopied": false,
+      "auditDetailsCopied": false
+    }
+  }
+}

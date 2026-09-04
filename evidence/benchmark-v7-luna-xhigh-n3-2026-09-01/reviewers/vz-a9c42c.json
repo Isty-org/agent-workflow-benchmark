@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a9c42c",
+  "scenario": "new",
+  "workspaceCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "setupCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-a9c42c-a",
+      "total": 25,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "index.html contains structure, styles.css contains presentation, and app.js separates state, rendering, loading and saving responsibilities."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "app.js keeps title, author and status on one books array; render derives all columns from that array and transitions mutate the same record."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "The normalized workspace contains no direct test files or test command; behavioral coverage exists only in the frozen external receipt."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js uses extensible book records with id, title, author, status and createdAt, plus isolated status labels and rendering functions."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md accurately documents local start, browser URL, stopping, and no Docker/build requirement, but omits explicit install and test instructions."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The requested add, three states, transitions, local persistence, Russian UI and no-Docker start are present; deletion and progress summary remain related list features."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html provides labels and accessible names; styles.css defines visible focus states; app.js provides empty states, validation, live status messages and focus management."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js stores only book data in localStorage and requests no permissions or backend service; Google Fonts are optional with system-font fallback documented in README.md."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-a9c42c-b",
+      "total": 24,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js разделяет загрузку/сохранение, состояние books и render; index.html отвечает за форму и три области списков."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Единый массив books хранит записи; render выводит группы из book.status, а переход изменяет тот же объект и сохраняет его через localStorage."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "В нормализованном workspace нет прямых тестов. В objective receipt результат tests помечен missing=true во всех трёх повторах."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Модель книги централизована и содержит стабильные id, title, author, status и createdAt; статусы и их подписи вынесены в константы app.js."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md точно описывает локальный запуск через python -m http.server, отсутствие Docker, сборки и зависимостей. Отдельные инструкции по тестам отсутствуют; build-проверка также отсутствует в receipt."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "index.html и app.js покрывают добавление книги, три русских статуса, переносы и локальное сохранение; дополнительные удаление, счётчики и прогресс относятся к списку чтения."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Есть видимые label, aria-label, focus-visible стили, native keyboard controls, aria-invalid, live-сообщения и пустые состояния. После изменения статуса render заменяет карточки без восстановления фокуса."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js хранит только записи книг в localStorage; секреты, разрешения и API отсутствуют. Google Fonts подключается опционально, с системным fallback согласно README.md."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-a9c42c-a-finding-1",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a9c42c-a-finding-2",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a9c42c-a-finding-3",
+      "severity": "minor",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a9c42c-b-finding-1",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [
+        "objective receipt v7-new-plain-r2.json отмечает tests.missing=true во всех трёх повторениях; workspace содержит только README.md, index.html, app.js и styles.css."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a9c42c-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "objective receipt отмечает build.missing=true во всех трёх повторениях."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a9c42c-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "README.md содержит разделы запуска и возможностей, но не содержит test-инструкции или явного указания об отсутствии тестов."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a9c42c-b-finding-4",
+      "severity": "minor",
+      "title": "Reviewer finding",
+      "evidence": [
+        "app.js:255-257 изменяет status, вызывает saveBooks и затем render; восстановление фокуса отсутствует."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

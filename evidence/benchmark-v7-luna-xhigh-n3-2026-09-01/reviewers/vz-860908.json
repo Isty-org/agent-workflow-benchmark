@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-860908",
+  "scenario": "small",
+  "workspaceCommit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+  "setupCommit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-860908-a",
+      "total": 12,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/routes/bot-routes.ts:37-38 defines only z.record(z.unknown()); src/services/registration-service.ts:493-499 validates allowlisting but performs no method-specific payload validation."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "Allowlist parsing is in src/config.ts:36-40,74; application allowlist handling is duplicated separately in src/services/admin-service.ts:29-39 and src/services/registration-service.ts:112-115. No shared method registry or schemas exist."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:190-251 covers sendMessage queueing and identical-payload idempotency. No validation tests, conflict tests, or edit/delete tests exist; direct unit tests cover only crypto, retry, and Telegram helpers."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "Generic dispatch in src/services/delivery-service.ts:472-481 and the generic route in src/routes/bot-routes.ts:92-113 make dispatch extensible, but there is no registry or method schema to extend."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md:118-133 and HOWTOSETUP.md:700-761 document sendMessage, idempotency, queueing, and status polling only. Edit/delete methods, payloads, and method-specific errors are undocumented."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Authentication and scoped access remain attached to action/status routes in src/routes/bot-routes.ts:92-124; queue-first responses remain 202/200 at lines 106-111; retry, retry_after, pacing, and status transitions remain generic in src/services/delivery-service.ts:455-590."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Stable error code/message/details/requestId fields are emitted by src/lib/errors.ts:40-61, and tokens are omitted from public registration models. However, src/services/registration-service.ts:68-78 and src/routes/istina-compat-routes.ts:100-113 propagate upstream error messages, while src/lib/public-models.ts:38-53 exposes lastError and telegramResponse."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Application methods are constrained to the configured global list by src/services/admin-service.ts:29-39 and src/services/registration-service.ts:112-115. The global list itself accepts arbitrary strings via src/config.ts:23,36-40, with no fixed supported-method registry."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-860908-b",
+      "total": 12,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/routes/bot-routes.ts:37-38 uses only z.record(z.unknown()) for action payloads.",
+            "src/routes/bot-routes.ts:97-103 forwards the generic payload without method-specific validation."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/config.ts:23-24 defines only a string allowlist with default sendMessage.",
+            "No versioned registry or schemas for sendMessage, editMessageText, or deleteMessage are present.",
+            "src/services/worker-service.ts and src/services/delivery-service.ts dispatch the stored action generically."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 1,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:91-251 covers sendMessage queueing, status polling, and duplicate idempotency.",
+            "No tests cover method-specific validation, editMessageText, or deleteMessage."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "src/services/registration-service.ts:112-115 centralizes allowlist filtering.",
+            "src/services/delivery-service.ts:472-481 dispatches any stored action generically.",
+            "There is no method registry or schema extension point; adding methods would be a configuration-only allowlist change without payload contracts."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md:120-133 and HOWTOSETUP.md:694-773 document sendMessage, idempotency, queueing, and status polling.",
+            "Documentation does not cover editMessageText, deleteMessage, or method-specific payload and validation errors."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/routes/bot-routes.ts:49-126 preserves authenticated bot, action, and delivery endpoints.",
+            "src/services/registration-service.ts:501-506 enforces tenant/application registration scope.",
+            "src/services/registration-service.ts:517-567 preserves queue-first creation and idempotency behavior.",
+            "src/services/delivery-service.ts:119-135 and 437-590 preserve dispatch pacing, retry, and delivery status processing."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/lib/errors.ts:54-60 consistently returns code, message, details, and requestId.",
+            "src/lib/public-models.ts:10-35 excludes encrypted bot tokens from public registration output.",
+            "src/lib/errors.ts:28-35 exposes Prisma error meta, and src/services/registration-service.ts:77-85 forwards some upstream error messages."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/services/registration-service.ts:493-498 rejects methods outside the configured allowlist.",
+            "src/services/admin-service.ts:29-39 rejects application allowlist entries unsupported by the configured global allowlist.",
+            "No wildcard or unrestricted method path is present."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-860908-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/routes/bot-routes.ts:37-38",
+        "src/services/registration-service.ts:493-499"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-860908-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/config.ts:23",
+        ".env.example:19",
+        "README.md:24,120",
+        "HOWTOSETUP.md:341,364"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-860908-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:91-251",
+        "test/telegram-service.test.ts:10-44",
+        "test/retry.test.ts:5-42"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-860908-a-finding-4",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/services/registration-service.ts:68-78",
+        "src/lib/public-models.ts:38-53"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-860908-b-finding-1",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/routes/bot-routes.ts:27-38",
+        "src/services/registration-service.ts:487-499"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-860908-b-finding-2",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:91-251",
+        "README.md:120-133",
+        "HOWTOSETUP.md:694-773"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-860908-b-finding-3",
+      "severity": "minor",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/lib/errors.ts:28-35",
+        "src/services/registration-service.ts:68-85"
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

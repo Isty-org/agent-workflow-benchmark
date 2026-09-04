@@ -1,0 +1,49 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-860908",
+  "condition": "bmad",
+  "dispatch": {
+    "allowed": false,
+    "dispatchedAt": null,
+    "hostId": null,
+    "reason": "Final V7 freeze and fresh V7 canary are pending.",
+    "taskId": null
+  },
+  "project": {
+    "environment": "worktree",
+    "projectId": "4c35b890-98ac-4ab2-9428-d1bf1c2fd514",
+    "projectName": "agent-benchmark-polygon",
+    "startingBranch": "v7/ba9917af238"
+  },
+  "prompt": {
+    "agentReceives": [
+      "envelope",
+      "verbatim_scenario_prompt"
+    ],
+    "envelopePath": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/envelope.md",
+    "envelopeSha256": "f76e39a9b9951a2f0093fbbf137fbf67b0c57f353662cbaec5f1e7694546f578",
+    "scenarioPath": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/prompts/small.md",
+    "scenarioSha256": "ee50a8845b935acebd0181391b4875f7a1e8607b1f265853b28ddc548dc50db2"
+  },
+  "replica": 1,
+  "runId": "v7-small-bmad-r1",
+  "scenario": "small-project",
+  "schemaVersion": 2,
+  "setup": {
+    "commit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+    "fingerprint": "e94003725faef868c4642afd3cd81e9f438227b42e9c3c540e63104eae3146cd",
+    "lineageId": "v7-small-bmad",
+    "state": "canary_pending",
+    "tree": "4ad6d71d7078fea33534a8d55021c9257cc15d62"
+  },
+  "taskPolicy": {
+    "browserAllowed": false,
+    "firstPasses": 1,
+    "maxClarifications": 2,
+    "maxInfrastructureRetries": 1,
+    "model": "gpt-5.6-luna",
+    "reasoning": "xhigh",
+    "repairTurns": 0
+  },
+  "visibility": "organizer_only"
+}

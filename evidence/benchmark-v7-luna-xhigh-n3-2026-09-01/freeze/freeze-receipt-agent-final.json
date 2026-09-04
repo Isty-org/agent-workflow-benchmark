@@ -1,0 +1,24 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blocker": null,
+  "canaries": {
+    "passed": true,
+    "recorded": 18,
+    "required": 18
+  },
+  "checkedAt": "2026-09-02T05:17:08.256Z",
+  "contentLock": "46865a2b501cfe6df7b15b46e55b763c19fdc4f742ed9a1e510a703c5a7c72b4",
+  "frozen": true,
+  "measuredTaskPolicy": {
+    "created": 0,
+    "dispatchAllowed": true,
+    "total": 36
+  },
+  "releaseGate": {
+    "exactReleaseEvidencePresent": true,
+    "passed": true,
+    "workItem": "WI-131"
+  },
+  "schemaVersion": 1,
+  "status": "frozen"
+}

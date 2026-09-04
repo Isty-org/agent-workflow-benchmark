@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-5cba40d9-a",
+  "blindId": "vc-5cba40d9",
+  "scenario": "large",
+  "checks": [
+    {
+      "id": "L3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-331 — запрос хранится в MainWindow presentation state; setter вызывает только локальную фильтрацию и обновление command state.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:816-833 — фильтрация работает по локальной коллекции и не вызывает runtime."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Application/Runtime/ApplicationRuntimeSnapshot.cs:14-22 — RecentRecordings является частью runtime snapshot.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:592-593,764-829 — snapshot передаётся в reconciliation, а видимая коллекция выводится из _allRecentRecordings."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "pointsAwarded": 1,
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:817-873 — два прямых теста покрывают фильтрацию по названию/приложению, очистку и no-result state.",
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:233-293 — rename и language-switch тесты существуют отдельно, но не проверяют взаимодействие с активным поиском.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:350-368 — search UI accessibility semantics не покрыты прямым UI-тестом."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:29 — MaximumRecentItems задан равным 5.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:764-809 — применяется Take(5), сохраняется порядок snapshot, удалённые item ViewModel освобождаются через Dispose.",
+        "src/IsTranscribe.Persistence/Persistence/MeetingSessionRepository.cs:260-265 — исходный recent snapshot упорядочен по started_at DESC."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "pointsAwarded": 1,
+      "evidence": [
+        "specs/common/PROP-000.md:41-42 — проект требует полные существующие spec://...#anchor для изменённого spec-owned кода.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:317-318; src/IsTranscribe.Desktop/Views/MainWindow.axaml:338-342; tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:817-819 — search помечен FEAT-015#root.",
+        "specs/modules/app/FEAT-015-cloud-transcription-groq-openrouter.md:35-64 — FEAT-015 посвящён cloud transcription и объявляет semantic search out of scope; recent recordings принадлежат specs/modules/app/FEAT-013-minimal-desktop-experience.md:152-159."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:529-592 — runtime snapshot refresh проходит через ApplySnapshot и reconciliation.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:339-406 — предусмотрены search, обычный empty state и no-result state с reset action.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:405-523 — отфильтрованные записи сохраняют rename, open, transcript и remove actions."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:350-368 — TextBox обновляет query по мере ввода, имеет localized placeholder и AutomationProperties.Name; clear Button имеет command, AutomationProperties.Name и tooltip.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:91-97 — RU title, label, placeholder, empty state и clear copy.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:91-97 — EN title, label, placeholder, empty state и clear copy."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-331 — query setter не вызывает persistence или runtime API.",
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:816-833 — запрос используется только для локального построения RecentRecordings."
+      ]
+    }
+  ],
+  "total": 25,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "search-test-coverage-gap",
+      "summary": "Поиск проверен только на query/clear и no-result сценариях; отсутствуют прямые проверки refresh, rename при активном запросе, локализации активного поиска и accessibility search controls.",
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:817-873 — search-specific coverage ограничена двумя тестами.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:350-368 — accessibility contract присутствует в UI, но соответствующего прямого UI-теста нет."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "misbound-search-traceability",
+      "summary": "Search-related implementation and tests привязаны к FEAT-015#root, хотя существующий canon относит recent recordings к FEAT-013; это делает traceability вводящей в заблуждение.",
+      "evidence": [
+        "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:317-318 — FEAT-015#root указан для RecentSearchQuery.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:338-342 — FEAT-015#root указан для search UI.",
+        "specs/modules/app/FEAT-015-cloud-transcription-groq-openrouter.md:54-64 — FEAT-015 описывает cloud transcription и исключает semantic search.",
+        "specs/modules/app/FEAT-013-minimal-desktop-experience.md:152-159 — существующий anchor recent-recordings описывает соответствующий продуктовый контур."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:34:56.000Z",
+  "durationMs": 516982,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 3,
+  "blindId": "vz-bf0c62",
+  "scenario": "new",
+  "checkedAt": "2026-09-02T06:53:28.001Z",
+  "workspaceCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "workspaceTree": "45b1c1edfba49650eb37d7308d3ba8cf56c476f9",
+  "stateFingerprint": "f0b50fa3b01fa7a67f58ed3186d4cfc7f09b405d897a7b45d84086cda9178b88",
+  "scratchIsolated": true,
+  "projectedHarnessFiles": [],
+  "setup": [],
+  "repetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "f0b50fa3b01fa7a67f58ed3186d4cfc7f09b405d897a7b45d84086cda9178b88",
+      "results": [
+        {
+          "name": "tests",
+          "missing": true,
+          "required": true,
+          "reason": "no test recipe discovered",
+          "exitCode": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "no build recipe discovered",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "missing": true,
+          "required": true,
+          "reason": "no runnable web application discovered",
+          "exitCode": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A02",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A08",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-B01",
+          "passed": false,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "f0b50fa3b01fa7a67f58ed3186d4cfc7f09b405d897a7b45d84086cda9178b88",
+      "results": [
+        {
+          "name": "tests",
+          "missing": true,
+          "required": true,
+          "reason": "no test recipe discovered",
+          "exitCode": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "no build recipe discovered",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "missing": true,
+          "required": true,
+          "reason": "no runnable web application discovered",
+          "exitCode": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A02",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A08",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-B01",
+          "passed": false,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "f0b50fa3b01fa7a67f58ed3186d4cfc7f09b405d897a7b45d84086cda9178b88",
+      "results": [
+        {
+          "name": "tests",
+          "missing": true,
+          "required": true,
+          "reason": "no test recipe discovered",
+          "exitCode": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "no build recipe discovered",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "missing": true,
+          "required": true,
+          "reason": "no runnable web application discovered",
+          "exitCode": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A02",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-A08",
+          "passed": false,
+          "evidence": "harness did not emit this check"
+        },
+        {
+          "id": "N3-B01",
+          "passed": false,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "statePreserved": true
+}

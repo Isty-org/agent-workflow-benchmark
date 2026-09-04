@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3,
+  "scenario": "small",
+  "title": "Telegram Gateway edit and delete actions",
+  "checks": [
+    { "id": "S3-A01", "category": "functional", "maxPoints": 6, "scoring": "binary", "procedure": "Allowlist accepts sendMessage, editMessageText and deleteMessage and rejects unknown methods with the existing machine-readable error shape." },
+    { "id": "S3-A02", "category": "functional", "maxPoints": 9, "scoring": "binary", "procedure": "Invalid payload for each supported method is rejected before delivery creation with machine-readable details." },
+    { "id": "S3-A03", "category": "functional", "maxPoints": 5, "scoring": "binary", "procedure": "Valid sendMessage preserves the queue-first 202/PENDING contract." },
+    { "id": "S3-A04", "category": "functional", "maxPoints": 6, "scoring": "binary", "procedure": "Valid editMessageText is queued and the worker calls Telegram with the original method and payload." },
+    { "id": "S3-A05", "category": "functional", "maxPoints": 6, "scoring": "binary", "procedure": "Valid deleteMessage is queued and the worker calls Telegram with the original method and payload." },
+    { "id": "S3-A06", "category": "functional", "maxPoints": 4, "scoring": "binary", "procedure": "Missing Idempotency-Key preserves the existing error and creates no delivery." },
+    { "id": "S3-A07", "category": "functional", "maxPoints": 4, "scoring": "binary", "procedure": "A repeat with the same key, method and identical payload returns the existing delivery." },
+    { "id": "S3-A08", "category": "functional", "maxPoints": 4, "scoring": "binary", "procedure": "Conflicting reuse of a key remains an error and does not mutate the original delivery." },
+    { "id": "S3-A09", "category": "functional", "maxPoints": 3, "scoring": "binary", "procedure": "Application auth and tenant/registration isolation cover submission and status for new methods." },
+    { "id": "S3-A10", "category": "functional", "maxPoints": 3, "scoring": "binary", "procedure": "Retry, retry-after and rate-limit behavior for new methods use the existing delivery policy." },
+    { "id": "S3-B01", "category": "regression", "maxPoints": 8, "scoring": "binary", "procedure": "npm test and direct unit tests pass in all three frozen repetitions." },
+    { "id": "S3-B02", "category": "regression", "maxPoints": 6, "scoring": "binary", "procedure": "npm run build passes." },
+    { "id": "S3-B03", "category": "regression", "maxPoints": 6, "scoring": "binary", "procedure": "The integration suite with real persistence passes." },
+    { "id": "S3-C01", "category": "architecture", "maxPoints": 6, "scoring": "review", "procedure": "Validation is a distinct responsibility at the versioned action boundary." },
+    { "id": "S3-C02", "category": "architecture", "maxPoints": 4, "scoring": "review", "procedure": "Method schemas and allowlist have one source; route and worker do not duplicate the contract." },
+    { "id": "S3-C03", "category": "architecture", "maxPoints": 4, "scoring": "review", "procedure": "Direct unit and integration tests cover validation, queueing and idempotency." },
+    { "id": "S3-C04", "category": "architecture", "maxPoints": 3, "scoring": "review", "procedure": "Adding another allowed Telegram method is a local registry/schema extension." },
+    { "id": "S3-C05", "category": "architecture", "maxPoints": 3, "scoring": "review", "procedure": "README/API documentation accurately covers methods, payloads, errors, idempotency and status flow." },
+    { "id": "S3-D01", "category": "scope", "maxPoints": 4, "scoring": "review", "procedure": "Existing auth, queue-first, status polling, retry, rate-limit and endpoints are preserved." },
+    { "id": "S3-D02", "category": "scope", "maxPoints": 3, "scoring": "review", "procedure": "Errors keep stable code/message fields and expose no tokens or internals." },
+    { "id": "S3-D03", "category": "scope", "maxPoints": 3, "scoring": "review", "procedure": "The allowlist is not broadened to arbitrary Telegram methods." }
+  ]
+}

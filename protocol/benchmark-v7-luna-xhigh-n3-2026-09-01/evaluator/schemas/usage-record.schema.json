@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v7-redacted-usage-record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "source", "inputTokens", "uncachedInputTokens", "cachedInputTokens", "cacheWriteInputTokens", "outputTokens", "reasoningOutputTokens", "totalTokens", "aggregation", "usageObjects", "billing", "redacted"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "source": {"type": "object", "additionalProperties": false, "required": ["taskId", "sessionSha256", "recordsObserved"], "properties": {"taskId": {"type": "string"}, "sessionSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "recordsObserved": {"type": "integer", "minimum": 0}}},
+    "inputTokens": {"type": "integer", "minimum": 0},
+    "uncachedInputTokens": {"type": "integer", "minimum": 0},
+    "cachedInputTokens": {"type": "integer", "minimum": 0},
+    "cacheWriteInputTokens": {"type": "integer", "minimum": 0},
+    "outputTokens": {"type": "integer", "minimum": 0},
+    "reasoningOutputTokens": {"type": "integer", "minimum": 0},
+    "totalTokens": {"type": "integer", "minimum": 0},
+    "aggregation": {"enum": ["latest_cumulative", "sum_per_record"]},
+    "usageObjects": {"type": "integer", "minimum": 1},
+    "billing": {"type": "object", "additionalProperties": false, "required": ["pricingSnapshot", "estimatedTaskCostUsd", "reasoningIncludedInOutput"], "properties": {"pricingSnapshot": {"type": "string"}, "estimatedTaskCostUsd": {"type": "number", "minimum": 0}, "reasoningIncludedInOutput": {"const": true}}},
+    "redacted": {"const": true}
+  }
+}

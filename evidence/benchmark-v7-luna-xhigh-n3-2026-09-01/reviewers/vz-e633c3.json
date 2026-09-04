@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-e633c3",
+  "scenario": "large",
+  "workspaceCommit": "8e143aac954d2611414dd4b8da564e66c599e431",
+  "setupCommit": "8e143aac954d2611414dd4b8da564e66c599e431",
+  "contractSha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-e633c3-a",
+      "total": 11,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No search presentation state exists in MainWindowViewModel.cs, so its persistence boundary cannot be demonstrated."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindowViewModel.cs stores the runtime snapshot and ReconcileRecentRecordings derives the visible capped collection from snapshot.RecentRecordings."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "Existing tests cover baseline recent-recording behavior, but no direct query, clear or no-results tests are present."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 0,
+          "evidence": [
+            "The baseline reconciler preserves the cap, order and item lifecycle, but no search-derived collection exists to satisfy this check."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Existing @spec links in MainWindowViewModel.cs and MainWindow.axaml follow the FEAT-013 and localization canon; no new benchmark-specific canon is visible."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Existing loading/runtime, empty, populated, action, snapshot-refresh and rename flows remain represented in MainWindow.axaml and MainWindowViewModel.cs; desktop tests and visual smoke pass."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "The search field and clear action, including RU/EN labels and focus semantics, are absent."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No query state exists, so there is no local presentation-state implementation to verify."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-e633c3-b",
+      "total": 14,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No search presentation state was implemented, so there is no implementation to assess for runtime-persistence isolation."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindowViewModel stores the runtime snapshot and derives the visible collection through ReconcileRecentRecordings(snapshot.RecentRecordings)."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 1,
+          "evidence": [
+            "Existing tests cover recent-item rename and language behavior, but no direct query, search-refresh, search-localization, clear, or accessibility tests are present."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The existing reconciliation preserves MaximumRecentItems, snapshot order, item reuse, movement, and disposal. No search derivation exists to preserve those properties under filtering."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Existing code uses project @spec traceability and introduces no benchmark-specific canon or new external boundary."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Existing loading, empty-history, snapshot refresh, rename, and item-action flows remain implemented; the standard suite and load/render smoke pass."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No search field or clear action exists, so label, focus, keyboard, and RU/EN state requirements are unmet."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No query exists as local presentation state; consequently there is no implemented query path to verify against logs, storage, or external calls."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-e633c3-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "MainWindow.axaml:318-464 contains only the recent title, empty state and ItemsControl. MainWindowViewModel.cs:105 and 731-780 expose and reconcile only the source collection. RU/EN dictionaries contain no search-specific resources. The frozen receipt reports hidden-search failure in all three repetitions."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e633c3-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The normalized desktop test tree contains baseline recent-recording and localization tests, with no direct query, clear or no-results coverage."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e633c3-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "MainWindowViewModel.cs exposes RecentRecordings and HasRecentRecordings but no query, clear command, filtered collection, or no-results state.",
+        "MainWindow.axaml binds ItemsControl directly to RecentRecordings and contains only the empty-history branch."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e633c3-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "Strings.en.axaml and Strings.ru.axaml contain recent-list, empty-history, and accessibility entries without search-field, clear, or no-results entries.",
+        "The objective receipt reports a bilingual search resource lookup failure."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-e633c3-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "MainWindowViewModelTests.cs covers existing recent-item actions, rename, and general language behavior, with no query or search-flow tests.",
+        "The harness-owned search suite failed all 10 checks in all three repetitions."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

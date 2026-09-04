@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.prist/benchmark/benchmark-v7-evaluation.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "benchmarkId", "blindId", "scenario", "phase", "evaluatorVersion", "contractSha256", "checkRepetitions", "checks", "reviewPasses", "categories", "totalScore", "findings", "blind"],
+  "properties": {
+    "schemaVersion": { "const": 7 },
+    "benchmarkId": { "const": "benchmark-v7-luna-xhigh-n3-2026-09-01" },
+    "blindId": { "pattern": "^vz-[0-9a-f]{6}$" },
+    "scenario": { "enum": ["new", "small", "large"] },
+    "phase": { "const": "first_pass" },
+    "evaluatorVersion": { "const": "7.0.0" },
+    "contractSha256": { "pattern": "^[0-9a-f]{64}$" },
+    "checkRepetitions": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "object" } },
+    "checks": { "type": "array" },
+    "reviewPasses": { "type": "array", "minItems": 2, "maxItems": 3 },
+    "categories": { "type": "object" },
+    "totalScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "findings": { "type": "array" },
+    "blind": { "const": true }
+  }
+}

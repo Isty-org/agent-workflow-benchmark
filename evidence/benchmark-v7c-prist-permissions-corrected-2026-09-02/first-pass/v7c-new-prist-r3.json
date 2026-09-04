@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "runId": "v7c-new-prist-r3",
+  "blindId": "vc-f2787e27",
+  "scenario": "new-project",
+  "condition": "prist",
+  "replica": 3,
+  "task": {
+    "taskId": "01a06255-998a-71f2-8bbe-cd6b9dcddfa6",
+    "turnId": "01a06255-a094-7872-8aa0-4ef0faeea59f",
+    "hostId": "local",
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "repairTurns": 0
+  },
+  "setup": {
+    "commit": "714b0c5dd4a4870e92825fe0392d9aefc1d943a4",
+    "tree": "4c66caa4e3f25b32fc47332c1043fa40225f34f8",
+    "fingerprint": "50fbacd8c973517eac82084aed836fdaecb932f86d9819043ed52fff65eefcea",
+    "hostedProjectId": "project_b1eb857a-c299-4626-b220-5bafec09aa02",
+    "hostedConnectionId": "connection_107e0f0b-513f-44c8-a03d-e92b5eed8472"
+  },
+  "timing": {
+    "dispatchAt": "2026-09-02T13:36:12.000Z",
+    "taskStart": "2026-09-02T13:36:13.000Z",
+    "firstActivityAt": "2026-09-02T13:36:13.000Z",
+    "lastActivityAt": "2026-09-02T13:53:27.000Z",
+    "finalResponseAt": "2026-09-02T13:53:27.000Z",
+    "taskElapsedMs": 1035000,
+    "agentActiveMs": 1033984,
+    "humanWaitingMs": 0,
+    "externalChecksMs": null
+  },
+  "snapshot": {
+    "head": "714b0c5dd4a4870e92825fe0392d9aefc1d943a4",
+    "tree": "4c66caa4e3f25b32fc47332c1043fa40225f34f8",
+    "status": "?? README.md\n?? package.json\n?? public/app.js\n?? public/index.html\n?? public/styles.css\n?? server.mjs\n?? specs/SPEC-MAP.md\n?? specs/common/main.md\n?? specs/common/structure.md\n?? specs/modules/reading-list/FEAT-001-reading-list.md\n?? src/library.js\n?? test/library.test.mjs",
+    "contentFingerprint": "6c824072eadd254005c72dba311ceb9ff986cc0a030fc1a684dd5b6344a80a4e",
+    "files": {
+      ".agents/skills/spec-driven-work/SKILL.md": "9485e9dcba786b6b2bf19f3f2b275017c3925894645ffe5bd7640fb9c8bfc548",
+      ".agents/skills/spec-driven-work/agents/openai.yaml": "7ecdda658c1bba182d774af8a7489da58fa83d253a2d09e0bbb2c6e4f35a1793",
+      ".agents/skills/spec-driven-work/fixtures/parallel-context-scenarios.json": "a0922228cad25722c1ea1d63bfec7fe52bd0b316952c56bcacb09d2fa16ff540",
+      ".agents/skills/spec-driven-work/references/change-flow.md": "2bccbf14ea531285a52fd14b3a95384e44fc35c6094c7bcf6b7eddce6b9e6a2a",
+      ".agents/skills/spec-driven-work/references/full-canon-adaptation.md": "8595a02b6bb06ec214087b292d2dcc6543d0b3a12abd63660f790f5a8583ec33",
+      ".agents/skills/spec-driven-work/references/parallel-work.md": "51851ec3731a5b5ec82529ff4392ef2db69b2d2e9baef4aa93a3eecd30cd9f19",
+      ".agents/skills/spec-driven-work/references/service-lifecycle.md": "016183faf8ae215b3d03be0b750883ba31a3901fbf48cc7db01e54f589aec888",
+      ".agents/skills/spec-driven-work/references/setup-recovery.md": "e7dd0a5cee975b5f12cd8371885f96ace7e206abef0915f07769e38b7669a509",
+      ".agents/skills/spec-driven-work/references/specification-authoring.md": "54f1a4fc618609cce847e004829a4200f1eacd47e22191f84c0f61f7a430ed7d",
+      ".agents/skills/spec-driven-work/references/specification-lifecycle.md": "de08064b93ef297c6522b0744d81e99b43a82cafde9ddd88f6f33f73d18e6ae0",
+      ".agents/skills/spec-driven-work/references/work-items.md": "90b35d3a7dc5d6887083720d1458d2ad72cb45eccdf22b850fbc9bed8a9bae0b",
+      ".agents/skills/spec-driven-work/scripts/check-workflow.mjs": "a4065c9c7568664c2885ae388ab250dc930bd0e7af674697bce8d4427f11fefc",
+      ".agents/skills/spec-driven-work/scripts/instruction-reconciliation.json": "d203cb0f9bb5c5a75982bbb1dedce47b52377c1aea10b089097b7257a230dbe2",
+      ".agents/skills/spec-driven-work/scripts/portable-change-driver.mjs": "921246e727fa5f43446ca054270cb9380105e20d71f8fea38b3ac91c1760d954",
+      ".agents/skills/spec-driven-work/scripts/prepare-isolated-checkout.mjs": "d9e7e52a87ee3f3068e41c3eba5beb6a76bb72660c841201beefd17cb5b0fd98",
+      ".agents/skills/spec-driven-work/scripts/prist-mcp-stdio.mjs": "7c81cd24379aba38548dddf9fd7648727e2997b0d521ca0fe4aaabfe3d067513",
+      ".agents/skills/spec-driven-work/scripts/prist-onboarding.mjs": "39b3860a897ea3932b6d364732055207d345cab346c871427e01779c8d16b3b8",
+      ".agents/skills/spec-driven-work/scripts/prist-worktree-bootstrap.mjs": "e6a53bb6f2d5fa577256a4d80c1237e63f8d1cb6d0a0b1b092bc1c01b5f49723",
+      ".agents/skills/spec-driven-work/scripts/repository-inventory.mjs": "d6c9f95ff8227d3ba3cd34fddf566263f8ebcf01e754a811a0cf7cc09f8f034a",
+      ".agents/skills/spec-driven-work/scripts/sync-spec-space.mjs": "78165b4ce0aacbcf526d60a02734d2bc6bee47bac261222efca443c169c7fd4c",
+      ".agents/skills/spec-driven-work/scripts/traceability-audit.mjs": "236a453eda6019edc4baf586fb2a51823a6fce06d71e4f577fd4e775fbd1500e",
+      ".claude/skills/spec-driven-work/SKILL.md": "9485e9dcba786b6b2bf19f3f2b275017c3925894645ffe5bd7640fb9c8bfc548",
+      ".claude/skills/spec-driven-work/agents/openai.yaml": "7ecdda658c1bba182d774af8a7489da58fa83d253a2d09e0bbb2c6e4f35a1793",
+      ".claude/skills/spec-driven-work/fixtures/parallel-context-scenarios.json": "a0922228cad25722c1ea1d63bfec7fe52bd0b316952c56bcacb09d2fa16ff540",
+      ".claude/skills/spec-driven-work/references/change-flow.md": "2bccbf14ea531285a52fd14b3a95384e44fc35c6094c7bcf6b7eddce6b9e6a2a",
+      ".claude/skills/spec-driven-work/references/full-canon-adaptation.md": "8595a02b6bb06ec214087b292d2dcc6543d0b3a12abd63660f790f5a8583ec33",
+      ".claude/skills/spec-driven-work/references/parallel-work.md": "51851ec3731a5b5ec82529ff4392ef2db69b2d2e9baef4aa93a3eecd30cd9f19",
+      ".claude/skills/spec-driven-work/references/service-lifecycle.md": "016183faf8ae215b3d03be0b750883ba31a3901fbf48cc7db01e54f589aec888",
+      ".claude/skills/spec-driven-work/references/setup-recovery.md": "e7dd0a5cee975b5f12cd8371885f96ace7e206abef0915f07769e38b7669a509",
+      ".claude/skills/spec-driven-work/references/specification-authoring.md": "54f1a4fc618609cce847e004829a4200f1eacd47e22191f84c0f61f7a430ed7d",
+      ".claude/skills/spec-driven-work/references/specification-lifecycle.md": "de08064b93ef297c6522b0744d81e99b43a82cafde9ddd88f6f33f73d18e6ae0",
+      ".claude/skills/spec-driven-work/references/work-items.md": "90b35d3a7dc5d6887083720d1458d2ad72cb45eccdf22b850fbc9bed8a9bae0b",
+      ".claude/skills/spec-driven-work/scripts/check-workflow.mjs": "a4065c9c7568664c2885ae388ab250dc930bd0e7af674697bce8d4427f11fefc",
+      ".claude/skills/spec-driven-work/scripts/instruction-reconciliation.json": "d203cb0f9bb5c5a75982bbb1dedce47b52377c1aea10b089097b7257a230dbe2",
+      ".claude/skills/spec-driven-work/scripts/portable-change-driver.mjs": "921246e727fa5f43446ca054270cb9380105e20d71f8fea38b3ac91c1760d954",
+      ".claude/skills/spec-driven-work/scripts/prepare-isolated-checkout.mjs": "d9e7e52a87ee3f3068e41c3eba5beb6a76bb72660c841201beefd17cb5b0fd98",
+      ".claude/skills/spec-driven-work/scripts/prist-mcp-stdio.mjs": "7c81cd24379aba38548dddf9fd7648727e2997b0d521ca0fe4aaabfe3d067513",
+      ".claude/skills/spec-driven-work/scripts/prist-onboarding.mjs": "39b3860a897ea3932b6d364732055207d345cab346c871427e01779c8d16b3b8",
+      ".claude/skills/spec-driven-work/scripts/repository-inventory.mjs": "d6c9f95ff8227d3ba3cd34fddf566263f8ebcf01e754a811a0cf7cc09f8f034a",
+      ".claude/skills/spec-driven-work/scripts/sync-spec-space.mjs": "78165b4ce0aacbcf526d60a02734d2bc6bee47bac261222efca443c169c7fd4c",
+      ".claude/skills/spec-driven-work/scripts/traceability-audit.mjs": "236a453eda6019edc4baf586fb2a51823a6fce06d71e4f577fd4e775fbd1500e",
+      ".codex/config.toml": "a70e53a7371144e8e36b3b3fe2ed3679b5d931a63723025130eb9d54ac074c56",
+      ".gitignore": "ad7bbe6fad48ca47ccdd68ab3bf5c217980998b9e0a2cb18cab1f992aa5fe5a4",
+      ".mcp.json": "d8e397af03b5b032f21d0aa967086f0c78b33c87b76f2e9898ae0a144df7de02",
+      ".prist/connection.json": "fcdfa1944e9f2db161fee349e8fa807e00e373d936b4ec51241832ca12fe4db5",
+      ".prist/recovery/entrypoints/AGENTS.before-prist.md": "9d9289b5a0cc723eb7c6c15f6fd7999f2ea427a5f9ad44feacf4e28f08e51cd3",
+      ".prist/recovery/entrypoints/CLAUDE.before-prist.md": "46dc571810d473a4bcf01f33f99fb26d994ddbcad1f7328aaf96a3dc5f44f233",
+      ".prist/recovery/entrypoints/manifest.json": "b4980a579c340b006aaa4cbf55191101bdd953eb598c82c34fef79acb1ddc13b",
+      ".prist/repository-setup-receipt.json": "e0cd215525c6bde07b58f57b558b2cc9a840fc590f9bc9c50324ed6f5cb1aed6",
+      ".prist/spec-sync-receipt.json": "479fd6bed5460629a4ef01fbfc03a4d4d3896b238879403f9bd8390e4d761604",
+      ".prist/workflow.json": "e0cd215525c6bde07b58f57b558b2cc9a840fc590f9bc9c50324ed6f5cb1aed6",
+      "AGENTS.md": "ad68b241366592e6d54e7d756f390e9156d37399fe2902ec5804da7b763d690b",
+      "CLAUDE.md": "35363df35a219b51146680f35fa5687082c8112398c9e8c4be35a30d727f86d9",
+      "README.md": "fc82e83d2a7ff48139e425b7459ab4bda22465615cbe900b0d3c7c40635fd64d",
+      "package.json": "7e22bbf74c71091ddd46786cf8cd61f2c79bac415ef8a3e451946f56c4e3d86a",
+      "public/app.js": "1b421ec2aa75d1485ae84085367d1704e4a2bf351a32d972cc47a33c24743938",
+      "public/index.html": "5c7f48d36e620096676a37c13ff5b2aba14fab613c344df9a90e1b4414c85b34",
+      "public/styles.css": "6d16fea635dec3d0faa6272d300bb65a20f83f7044ec9996e0d10264ae067d30",
+      "server.mjs": "354f9a028fb1dc267dc107ca02981255d1a26db9b328cdd534d35a545797a0a8",
+      "specs/SPEC-MAP.md": "3779a1d24edcb349d167d3848555eae2ed2b2893d7e2743e0bf1f643a972813b",
+      "specs/common/main.md": "a4610230979a08668b193a3e17aff1e67769b1ec4e4f9e537d63feca1052b021",
+      "specs/common/structure.md": "9bad95f04d95f9f99dfbba2806c3af1ddb185085269298afd1827155ab3dd743",
+      "specs/modules/reading-list/FEAT-001-reading-list.md": "aafc998f1f9193672a5f39c8585f2f77176ae0c78510bfee650b60d17cc5d2e1",
+      "src/library.js": "44e45e2ca05d033be6c330b6406a7ebd9eb2b25f5f7581a95745a14c4c045c23",
+      "test/library.test.mjs": "ebf9fed95047549360f9d002ea2f499f91bd9bb9fa11d906b8d7b4ff220b4f13"
+    }
+  },
+  "capturedAt": "2026-09-02T13:54:00.660Z",
+  "firstPassFrozen": true,
+  "interventions": {
+    "clarifications": 0,
+    "answers": 0,
+    "repairTurns": 0
+  },
+  "usage": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+    "runId": "v7c-new-prist-r3",
+    "capturedAt": "2026-09-02T13:54:08.367Z",
+    "source": {
+      "taskId": "01a06255-998a-71f2-8bbe-cd6b9dcddfa6",
+      "turnId": "01a06255-a094-7872-8aa0-4ef0faeea59f",
+      "sessionSha256": "5e7a0418080fdcd78e58edb47d0889571353092d577543966fabe76222f41e38"
+    },
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "inputTokens": 4304669,
+    "uncachedInputTokens": 143645,
+    "cachedInputTokens": 4161024,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 40215,
+    "reasoningOutputTokens": 15972,
+    "totalTokens": 4344884,
+    "toolCounts": {
+      "exec": 49
+    },
+    "billing": {
+      "currency": "USD",
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "pricingSha256": "2a71067b2a0d65782d7b1cc8d7a0415b322425c9c6db719306bee8f9ae8da634",
+      "estimatedTaskCostUsd": 0.16020748,
+      "reasoningIncludedInOutput": true
+    },
+    "redacted": true,
+    "privacy": {
+      "transcriptCopied": false,
+      "toolInputsCopied": false,
+      "toolOutputsCopied": false,
+      "credentialsCopied": false,
+      "rateLimitDataCopied": false
+    }
+  },
+  "checks": {
+    "path": "checks/v7c-new-prist-r3.json",
+    "repetitions": 3,
+    "provenance": "frozen_v7"
+  },
+  "evaluation": {
+    "path": "evaluations/vc-f2787e27.json",
+    "rawScore": 87,
+    "officialScore": 87,
+    "reviewPasses": 2
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Corrected setup preflight passed; exact Luna xhigh first pass preserved; product failures remain valid; objective checks repeated three times; blind review complete."
+  },
+  "privacy": {
+    "browserUsed": false,
+    "credentialsCopied": false,
+    "transcriptCopied": false,
+    "rawToolPayloadsCopied": false,
+    "credentialFilesStoredAsHashesOnly": true,
+    "webSearchObserved": false
+  },
+  "safeToolSummary": {
+    "itemCount": 127,
+    "commandExecution": {
+      "count": 39,
+      "durationMs": 162645,
+      "completed": 37,
+      "failed": 2
+    },
+    "mcpToolCall": {
+      "count": 0,
+      "durationMs": 0,
+      "completed": 0,
+      "failed": 0
+    },
+    "fileChange": {
+      "count": 6
+    },
+    "webSearch": {
+      "count": 0
+    },
+    "contextCompaction": {
+      "count": 0
+    }
+  },
+  "lifecycle": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+    "runId": "v7c-new-prist-r3",
+    "blindId": "vc-f2787e27",
+    "capturedAt": "2026-09-02T14:19:18.058Z",
+    "projectId": "project_b1eb857a-c299-4626-b220-5bafec09aa02",
+    "connectionId": "connection_107e0f0b-513f-44c8-a03d-e92b5eed8472",
+    "operationCounts": {
+      "close_activation": 1,
+      "connection_ready": 2,
+      "finish": 6,
+      "project_context": 4,
+      "resume_change": 1,
+      "setup_context": 6,
+      "start": 2,
+      "sync_spec_snapshot": 1
+    },
+    "activations": [
+      {
+        "route": "question",
+        "status": "cancelled",
+        "closedAt": "2026-09-02T13:39:22.926Z",
+        "revision": 2,
+        "createdAt": "2026-09-02T13:39:02.685Z",
+        "updatedAt": "2026-09-02T13:39:22.926Z",
+        "workRunId": null,
+        "workItemId": null,
+        "activationId": "activation_48008cc58160aa22cae28172dfb1581b",
+        "changeStreamId": null
+      },
+      {
+        "route": "tracked",
+        "status": "completed",
+        "closedAt": "2026-09-02T13:53:04.965Z",
+        "revision": 9,
+        "createdAt": "2026-09-02T13:39:39.956Z",
+        "updatedAt": "2026-09-02T13:53:04.965Z",
+        "workRunId": "run_23f5e3bdbb48f7504f01deaf1215b051",
+        "workItemId": "WI-001",
+        "activationId": "activation_66d744a2fcfb6906f98b03275d0b4f8b",
+        "changeStreamId": "stream_17889b7f82f9095d943488328b7e42ea"
+      }
+    ],
+    "workRuns": [
+      {
+        "status": "completed",
+        "endedAt": "2026-09-02T13:53:04.964+00:00",
+        "version": 3,
+        "startedAt": "2026-09-02T13:39:39.96+00:00",
+        "workRunId": "run_23f5e3bdbb48f7504f01deaf1215b051",
+        "workItemId": "WI-001",
+        "releaseReason": null,
+        "changeStreamId": "stream_17889b7f82f9095d943488328b7e42ea",
+        "lastActivityAt": "2026-09-02T13:53:04.964+00:00"
+      }
+    ],
+    "changeStreams": [
+      {
+        "status": "integrated",
+        "version": 4,
+        "createdAt": "2026-09-02T13:39:39.96+00:00",
+        "updatedAt": "2026-09-02T13:53:04.964+00:00",
+        "workItemId": "WI-001",
+        "discardedAt": null,
+        "integratedAt": "2026-09-02T13:53:04.964+00:00",
+        "changeStreamId": "stream_17889b7f82f9095d943488328b7e42ea"
+      }
+    ],
+    "auditGroups": [
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:20:18.492102+00:00",
+        "firstAt": "2026-09-02T13:20:18.492102+00:00",
+        "eventType": "connection_created",
+        "operation": null
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:20:21.979769+00:00",
+        "firstAt": "2026-09-02T13:20:21.979769+00:00",
+        "eventType": "connection_activated",
+        "operation": null
+      },
+      {
+        "count": 6,
+        "lastAt": "2026-09-02T13:28:22.151024+00:00",
+        "firstAt": "2026-09-02T13:20:22.852008+00:00",
+        "eventType": "operation_authorized",
+        "operation": "setup_context"
+      },
+      {
+        "count": 2,
+        "lastAt": "2026-09-02T13:20:41.060195+00:00",
+        "firstAt": "2026-09-02T13:20:31.06552+00:00",
+        "eventType": "operation_authorized",
+        "operation": "connection_ready"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:20:31.067163+00:00",
+        "firstAt": "2026-09-02T13:20:31.067163+00:00",
+        "eventType": "connection_blocked",
+        "operation": null
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:20:41.061615+00:00",
+        "firstAt": "2026-09-02T13:20:41.061615+00:00",
+        "eventType": "connection_ready",
+        "operation": null
+      },
+      {
+        "count": 4,
+        "lastAt": "2026-09-02T13:28:21.857493+00:00",
+        "firstAt": "2026-09-02T13:20:42.747807+00:00",
+        "eventType": "operation_authorized",
+        "operation": "project_context"
+      },
+      {
+        "count": 2,
+        "lastAt": "2026-09-02T13:39:39.954579+00:00",
+        "firstAt": "2026-09-02T13:39:02.682959+00:00",
+        "eventType": "operation_authorized",
+        "operation": "start"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:39:22.642775+00:00",
+        "firstAt": "2026-09-02T13:39:22.642775+00:00",
+        "eventType": "operation_authorized",
+        "operation": "resume_change"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:39:22.925298+00:00",
+        "firstAt": "2026-09-02T13:39:22.925298+00:00",
+        "eventType": "operation_authorized",
+        "operation": "close_activation"
+      },
+      {
+        "count": 6,
+        "lastAt": "2026-09-02T13:53:04.954906+00:00",
+        "firstAt": "2026-09-02T13:48:05.354652+00:00",
+        "eventType": "operation_authorized",
+        "operation": "finish"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:52:48.442532+00:00",
+        "firstAt": "2026-09-02T13:52:48.442532+00:00",
+        "eventType": "operation_authorized",
+        "operation": "sync_spec_snapshot"
+      }
+    ],
+    "fidelity": {
+      "engaged": true,
+      "completed": true,
+      "status": "completed",
+      "residualActiveWorkRuns": 0,
+      "residualActiveChangeStreams": 0
+    },
+    "privacy": {
+      "transcriptCopied": false,
+      "originalRequestCopied": false,
+      "credentialsCopied": false,
+      "auditDetailsCopied": false
+    }
+  }
+}

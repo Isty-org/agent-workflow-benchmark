@@ -1,0 +1,121 @@
+{
+  "cohort": {
+    "rows": 36,
+    "uniqueTasks": 36,
+    "cells": 12,
+    "repetitionsPerCell": 3,
+    "lineage": {
+      "benchmark-v7-luna-xhigh-n3-2026-09-01": 27,
+      "benchmark-v7c-prist-permissions-corrected-2026-09-02": 9
+    },
+    "sourceHashAlgorithms": {
+      "sha256-node-utf8-replacement-lf": 26,
+      "sha256-bytes": 10
+    },
+    "aggregateGroupsVerified": 12
+  },
+  "assets": {
+    "archives": 9,
+    "rawFileHashes": 32124,
+    "historicalFileHashes": 11805,
+    "credentialHashesOnly": 9,
+    "baselineGitTreesReconstructed": 36
+  },
+  "scores": {
+    "officialScoresMatched": 36,
+    "rawFieldDiscrepancies": [
+      {
+        "runId": "v7-new-bmad-r3",
+        "rawRecomputed": 85,
+        "rawReported": 69,
+        "rawFieldMatches": false,
+        "official": 69,
+        "categories": {
+          "functional": 50,
+          "regression": 6,
+          "architecture": 19,
+          "scope": 10
+        }
+      },
+      {
+        "runId": "v7-new-plain-r2",
+        "rawRecomputed": 81,
+        "rawReported": 69,
+        "rawFieldMatches": false,
+        "official": 69,
+        "categories": {
+          "functional": 50,
+          "regression": 6,
+          "architecture": 15,
+          "scope": 10
+        }
+      }
+    ]
+  },
+  "negativeDuplicateTaskRejected": true,
+  "negativeScoreMutationRejected": true,
+  "hashAlgorithmsDistinguished": true,
+  "existingDestinationRejected": true,
+  "preparedFirstPassWorktreeAndGitBlobFiles": 87,
+  "sourceFilesRechecked": 337,
+  "sourceHashMismatches": 0,
+  "status": "pass",
+  "sourceEdits": 0,
+  "publishingActions": 0,
+  "measuredTasksDispatched": 0,
+  "commands": [
+    "python scripts/verify.py",
+    "python scripts/verify.py --assets",
+    "python scripts/reevaluate.py --output work/recomputed-scores.json",
+    "python scripts/self_test.py"
+  ],
+  "notes": [
+    "26 original V7 records use UTF-8 replacement/LF historical hashes; the selected V7 replacement and nine V7C records use raw-byte hashes.",
+    "All exported payload and archive/member checksums are raw SHA-256.",
+    "Original result JSON is unchanged; two inherited raw-field discrepancies are disclosed separately."
+  ],
+  "objectiveSmoke": {
+    "status": "pass",
+    "runId": "v7-new-plain-r1",
+    "scope": "Fresh execution of frozen objective evaluator on verified exported first-pass content",
+    "command": "python scripts/run_checks.py --run v7-new-plain-r1 --output work/qa-objective-new-plain-r1.json",
+    "runnerExitCode": 1,
+    "runnerExitMeaning": "Expected product-test failures; receipt produced successfully",
+    "productPassed": false,
+    "repetitions": [
+      {
+        "repetition": 1,
+        "matchesFrozenOutcomes": true,
+        "changed": []
+      },
+      {
+        "repetition": 2,
+        "matchesFrozenOutcomes": true,
+        "changed": []
+      },
+      {
+        "repetition": 3,
+        "matchesFrozenOutcomes": true,
+        "changed": []
+      }
+    ],
+    "statePreserved": true,
+    "scratchIsolated": true
+  },
+  "objectiveSmokeGuard": "pass: all three repeated objective outcomes match the frozen receipt; evaluator exit 1 describes expected product failures",
+  "frozenInputHashesVerified": 14,
+  "uniformEvaluatorFileHashesVerified": 4,
+  "blindReviewPassesVerified": 72,
+  "resolvedAuditChecks": [
+    {
+      "check": "Raw-only comparison against historical V7 digests",
+      "resolution": "Replaced by the documented per-row historical algorithm plus independent raw SHA-256 for export files. 11,805 payload hashes and nine excluded credential hashes account for all 11,814 source files.",
+      "status": "pass"
+    },
+    {
+      "check": "Baseline archive-to-Git-tree identity",
+      "resolution": "Baselines rebuilt directly from raw Git blobs, avoiding archive newline transformations. All 36 original setup trees independently reconstructed from ZIP content.",
+      "status": "pass"
+    }
+  ]
+}

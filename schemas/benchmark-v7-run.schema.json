@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.prist/benchmark/benchmark-v7-run.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "benchmarkId", "runId", "blindId", "scenario", "condition", "status", "thread", "timing", "usage", "quality"],
+  "properties": {
+    "schemaVersion": { "const": 7 },
+    "benchmarkId": { "const": "benchmark-v7-luna-xhigh-n3-2026-09-01" },
+    "runId": { "pattern": "^v7-(new|small|large)-(plain|bmad|prist|classic)-r[123]$" },
+    "blindId": { "pattern": "^vz-[0-9a-f]{6}$" },
+    "scenario": { "enum": ["new", "small", "large"] },
+    "condition": { "enum": ["plain", "bmad", "prist", "classic-spec"] },
+    "status": { "enum": ["planned", "running", "completed_first_pass", "invalid_infrastructure", "failed"] },
+    "thread": { "type": "object", "required": ["taskId", "hostId", "model", "reasoning"], "properties": { "taskId": { "type": ["string", "null"] }, "hostId": { "type": ["string", "null"] }, "model": { "const": "gpt-5.6-luna" }, "reasoning": { "const": "xhigh" } } },
+    "timing": { "type": "object" },
+    "usage": { "type": "object" },
+    "quality": { "type": "object" }
+  }
+}

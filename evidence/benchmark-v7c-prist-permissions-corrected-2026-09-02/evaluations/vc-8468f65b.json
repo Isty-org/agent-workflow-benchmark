@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "blindId": "vc-8468f65b",
+  "scenario": "small",
+  "phase": "first_pass",
+  "evaluatorVersion": "v7c-uniform-1",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "setupCommit": "6b6e0f086a60c35d099149bfc94c80c0f82de581",
+  "workspaceCommit": "5e4e733c5bcf8537780c7a086e78ea39925ef2c5",
+  "workspaceTree": "0139ba04ed07d5fec493b24338359ee62467511e",
+  "firstPassContentFingerprint": "420ac07041d5a599f5756a7c826d304713e9e8af318985d9de46ea5c007759d7",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "1fa0e561d158dea11f32995b2ccb59004bfbd4a2028f5bc124614acaba51da3e",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "1fa0e561d158dea11f32995b2ccb59004bfbd4a2028f5bc124614acaba51da3e",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "1fa0e561d158dea11f32995b2ccb59004bfbd4a2028f5bc124614acaba51da3e",
+      "passed": false
+    }
+  ],
+  "checkReceiptSha256": "f802b4d2d3d1d80f473a5d3025f099b4e9574e88ea046ba1889c995ce3fd2e87",
+  "checks": [
+    {
+      "id": "S3-A01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; three explicit methods accepted; unknown method keeps machine error",
+        "repetition 2: pass; three explicit methods accepted; unknown method keeps machine error",
+        "repetition 3: pass; three explicit methods accepted; unknown method keeps machine error"
+      ]
+    },
+    {
+      "id": "S3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 9,
+      "evidence": [
+        "repetition 1: fail; invalid payload rejected for each supported method before persistence; expected 4xx, got 202",
+        "repetition 2: fail; invalid payload rejected for each supported method before persistence; expected 4xx, got 202",
+        "repetition 3: fail; invalid payload rejected for each supported method before persistence; expected 4xx, got 202"
+      ]
+    },
+    {
+      "id": "S3-A03",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; sendMessage remains queue-first 202/PENDING",
+        "repetition 2: pass; sendMessage remains queue-first 202/PENDING",
+        "repetition 3: pass; sendMessage remains queue-first 202/PENDING"
+      ]
+    },
+    {
+      "id": "S3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; editMessageText is queued and dispatched with unchanged method/payload",
+        "repetition 2: pass; editMessageText is queued and dispatched with unchanged method/payload",
+        "repetition 3: pass; editMessageText is queued and dispatched with unchanged method/payload"
+      ]
+    },
+    {
+      "id": "S3-A05",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; deleteMessage is queued and dispatched with unchanged method/payload",
+        "repetition 2: pass; deleteMessage is queued and dispatched with unchanged method/payload",
+        "repetition 3: pass; deleteMessage is queued and dispatched with unchanged method/payload"
+      ]
+    },
+    {
+      "id": "S3-A06",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; missing Idempotency-Key keeps stable error and persists nothing",
+        "repetition 2: pass; missing Idempotency-Key keeps stable error and persists nothing",
+        "repetition 3: pass; missing Idempotency-Key keeps stable error and persists nothing"
+      ]
+    },
+    {
+      "id": "S3-A07",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; identical retry returns the existing delivery",
+        "repetition 2: pass; identical retry returns the existing delivery",
+        "repetition 3: pass; identical retry returns the existing delivery"
+      ]
+    },
+    {
+      "id": "S3-A08",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; conflicting reuse of an idempotency key is rejected without mutation",
+        "repetition 2: pass; conflicting reuse of an idempotency key is rejected without mutation",
+        "repetition 3: pass; conflicting reuse of an idempotency key is rejected without mutation"
+      ]
+    },
+    {
+      "id": "S3-A09",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: pass; authentication and registration isolation cover new methods",
+        "repetition 2: pass; authentication and registration isolation cover new methods",
+        "repetition 3: pass; authentication and registration isolation cover new methods"
+      ]
+    },
+    {
+      "id": "S3-A10",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: pass; new methods use the existing retry and retry-after policy",
+        "repetition 2: pass; new methods use the existing retry and retry-after policy",
+        "repetition 3: pass; new methods use the existing retry and retry-after policy"
+      ]
+    },
+    {
+      "id": "S3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; npm test",
+        "repetition 2: pass; npm test",
+        "repetition 3: pass; npm test"
+      ]
+    },
+    {
+      "id": "S3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; npm run build",
+        "repetition 2: pass; npm run build",
+        "repetition 3: pass; npm run build"
+      ]
+    },
+    {
+      "id": "S3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; real PostgreSQL integration and hidden API harness",
+        "repetition 2: pass; real PostgreSQL integration and hidden API harness",
+        "repetition 3: pass; real PostgreSQL integration and hidden API harness"
+      ]
+    },
+    {
+      "id": "S3-C01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "vc-8468f65b-a: src/routes/bot-routes.ts:27-38 — payload валидируется только как generic z.record без проверки схемы метода.",
+        "vc-8468f65b-a: src/services/registration-service.ts:490-502 — boundary проверяет только allowlist, per-method validation отсутствует.",
+        "vc-8468f65b-b2: src/routes/bot-routes.ts:37 — payload проверяется только как z.record(z.unknown()), method-specific validation отсутствует.",
+        "vc-8468f65b-b2: src/services/registration-service.ts:498 — admission проверяет allowlist, но не валидирует payload метода."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-8468f65b-a: src/config.ts:23-25 — allowlist задана отдельной строкой конфигурации.",
+        "vc-8468f65b-a: src/routes/bot-routes.ts:92-104 — route передаёт generic payload без method schema.",
+        "vc-8468f65b-a: src/services/delivery-service.ts:483-487 — worker dispatch-ит persisted action/payload generic-вызовом.",
+        "vc-8468f65b-b2: src/config.ts:24 — allowlist задана строковой конфигурацией, отдельного registry со схемами нет.",
+        "vc-8468f65b-b2: src/services/delivery-service.ts:483 — worker вызывает generic method/payload без общего action contract."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-8468f65b-a: test/integration/gateway.integration.test.ts:222-288 — покрыты queueing, status polling и idempotent duplicate для sendMessage.",
+        "vc-8468f65b-a: test/integration/gateway.integration.test.ts:334-435 — покрыты queueing и duplicate для editMessageText, deleteMessage и allowlist rejection.",
+        "vc-8468f65b-a: test/telegram-service.test.ts:12-61 — unit tests покрывают helper/retry classification, но outbound validation не покрывают.",
+        "vc-8468f65b-b2: test/integration/gateway.integration.test.ts:291 — интеграционный тест покрывает queue flow для edit/delete.",
+        "vc-8468f65b-b2: test/integration/gateway.integration.test.ts:361 — проверяется duplicate edit с тем же idempotency key.",
+        "vc-8468f65b-b2: test/integration/gateway.integration.test.ts:412 — проверяется отказ неизвестного метода; тестов method-specific payload validation нет."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-8468f65b-a: src/routes/bot-routes.ts:27-30 — method принимается как произвольная строка до 64 символов.",
+        "vc-8468f65b-a: src/services/telegram-service.ts:112-114 — generic callMethod не связан с registry/schema для разрешённых методов.",
+        "vc-8468f65b-b2: src/telegram-service.ts:112 — generic callMethod принимает произвольные method и payload.",
+        "vc-8468f65b-b2: src/config.ts:24 — добавление метода сводится к строковому allowlist без registry/schema extension."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-8468f65b-a: README.md:106-158 — описаны client endpoints, три метода, payload examples, allowlist, idempotency, errors и status flow.",
+        "vc-8468f65b-a: HOWTOSETUP.md:746-813 — подробно описаны edit/delete payloads, queue statuses, delivery polling, stable errors и IDEMPOTENCY_CONFLICT.",
+        "vc-8468f65b-b2: README.md:120 — документированы три метода и общий queue-first contract.",
+        "vc-8468f65b-b2: README.md:131 — приведён payload editMessageText.",
+        "vc-8468f65b-b2: README.md:141 — приведён payload deleteMessage.",
+        "vc-8468f65b-b2: HOWTOSETUP.md:792 — описан status flow.",
+        "vc-8468f65b-b2: HOWTOSETUP.md:813 — описаны FAILED, Telegram errors и idempotency conflict."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-8468f65b-a: src/routes/bot-routes.ts:92-126 — сохранены Bearer auth, versioned action endpoint и delivery status endpoint.",
+        "vc-8468f65b-a: src/services/worker-service.ts:14-40 — сохранён периодический worker drain.",
+        "vc-8468f65b-a: src/services/delivery-service.ts:443-487 — сохранены claim, queue-first dispatch и Telegram вызов.",
+        "vc-8468f65b-a: src/services/delivery-service.ts:121-136 — сохранены dispatch pacing и retry backoff.",
+        "vc-8468f65b-a: src/services/delivery-service.ts:520-548 — сохранены retryable Telegram failures и retry state.",
+        "vc-8468f65b-b2: src/routes/bot-routes.ts:94 — action endpoint сохраняет application auth preHandler.",
+        "vc-8468f65b-b2: src/services/registration-service.ts:525 — новая outbound action сначала создаёт durable delivery.",
+        "vc-8468f65b-b2: src/services/delivery-service.ts:461 — сохранён dispatch pacing.",
+        "vc-8468f65b-b2: src/services/delivery-service.ts:520 — сохранён retry policy для Telegram.",
+        "vc-8468f65b-b2: src/routes/bot-routes.ts:116 — сохранён status polling endpoint."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-8468f65b-a: src/lib/errors.ts:19-61 — ошибки маппятся в стабильный error.code/message/details/requestId envelope.",
+        "vc-8468f65b-a: src/lib/public-models.ts:38-52 — delivery response не содержит encrypted bot token или service token.",
+        "vc-8468f65b-a: src/services/delivery-service.ts:553-571 — Telegram failure response ограничен description/errorCode/httpStatus/parameters.",
+        "vc-8468f65b-b2: src/lib/errors.ts:54 — публичная ошибка сохраняет code, message, details и requestId.",
+        "vc-8468f65b-b2: src/lib/errors.ts:28 — Prisma error meta передаётся в публичные details и может раскрывать внутренние данные.",
+        "vc-8468f65b-b2: src/lib/public-models.ts:40 — outbound public model не возвращает bot token."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-8468f65b-a: src/config.ts:23-25 — default allowlist содержит только sendMessage, editMessageText и deleteMessage.",
+        "vc-8468f65b-a: src/services/admin-service.ts:29-40 — application allowlist проверяется против разрешённого списка.",
+        "vc-8468f65b-a: src/services/registration-service.ts:496-502 — неразрешённый method отклоняется до постановки в очередь.",
+        "vc-8468f65b-a: test/integration/gateway.integration.test.ts:412-435 — проверено отклонение forwardMessage.",
+        "vc-8468f65b-b2: src/config.ts:24 — default allowlist содержит только sendMessage, editMessageText и deleteMessage.",
+        "vc-8468f65b-b2: src/services/registration-service.ts:115 — application allowlist пересекается с global allowlist.",
+        "vc-8468f65b-b2: test/integration/gateway.integration.test.ts:412 — forwardMessage отклоняется как OUTBOUND_METHOD_NOT_ALLOWED."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "vc-8468f65b-a",
+      "total": 15,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/routes/bot-routes.ts:27-38 — payload валидируется только как generic z.record без проверки схемы метода.",
+            "src/services/registration-service.ts:490-502 — boundary проверяет только allowlist, per-method validation отсутствует."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/config.ts:23-25 — allowlist задана отдельной строкой конфигурации.",
+            "src/routes/bot-routes.ts:92-104 — route передаёт generic payload без method schema.",
+            "src/services/delivery-service.ts:483-487 — worker dispatch-ит persisted action/payload generic-вызовом."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:222-288 — покрыты queueing, status polling и idempotent duplicate для sendMessage.",
+            "test/integration/gateway.integration.test.ts:334-435 — покрыты queueing и duplicate для editMessageText, deleteMessage и allowlist rejection.",
+            "test/telegram-service.test.ts:12-61 — unit tests покрывают helper/retry classification, но outbound validation не покрывают."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/routes/bot-routes.ts:27-30 — method принимается как произвольная строка до 64 символов.",
+            "src/services/telegram-service.ts:112-114 — generic callMethod не связан с registry/schema для разрешённых методов."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:106-158 — описаны client endpoints, три метода, payload examples, allowlist, idempotency, errors и status flow.",
+            "HOWTOSETUP.md:746-813 — подробно описаны edit/delete payloads, queue statuses, delivery polling, stable errors и IDEMPOTENCY_CONFLICT."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/routes/bot-routes.ts:92-126 — сохранены Bearer auth, versioned action endpoint и delivery status endpoint.",
+            "src/services/worker-service.ts:14-40 — сохранён периодический worker drain.",
+            "src/services/delivery-service.ts:443-487 — сохранены claim, queue-first dispatch и Telegram вызов.",
+            "src/services/delivery-service.ts:121-136 — сохранены dispatch pacing и retry backoff.",
+            "src/services/delivery-service.ts:520-548 — сохранены retryable Telegram failures и retry state."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/lib/errors.ts:19-61 — ошибки маппятся в стабильный error.code/message/details/requestId envelope.",
+            "src/lib/public-models.ts:38-52 — delivery response не содержит encrypted bot token или service token.",
+            "src/services/delivery-service.ts:553-571 — Telegram failure response ограничен description/errorCode/httpStatus/parameters."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/config.ts:23-25 — default allowlist содержит только sendMessage, editMessageText и deleteMessage.",
+            "src/services/admin-service.ts:29-40 — application allowlist проверяется против разрешённого списка.",
+            "src/services/registration-service.ts:496-502 — неразрешённый method отклоняется до постановки в очередь.",
+            "test/integration/gateway.integration.test.ts:412-435 — проверено отклонение forwardMessage."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "vc-8468f65b-b2",
+      "total": 14,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/routes/bot-routes.ts:37 — payload проверяется только как z.record(z.unknown()), method-specific validation отсутствует.",
+            "src/services/registration-service.ts:498 — admission проверяет allowlist, но не валидирует payload метода."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/config.ts:24 — allowlist задана строковой конфигурацией, отдельного registry со схемами нет.",
+            "src/services/delivery-service.ts:483 — worker вызывает generic method/payload без общего action contract."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:291 — интеграционный тест покрывает queue flow для edit/delete.",
+            "test/integration/gateway.integration.test.ts:361 — проверяется duplicate edit с тем же idempotency key.",
+            "test/integration/gateway.integration.test.ts:412 — проверяется отказ неизвестного метода; тестов method-specific payload validation нет."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 0,
+          "evidence": [
+            "src/telegram-service.ts:112 — generic callMethod принимает произвольные method и payload.",
+            "src/config.ts:24 — добавление метода сводится к строковому allowlist без registry/schema extension."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:120 — документированы три метода и общий queue-first contract.",
+            "README.md:131 — приведён payload editMessageText.",
+            "README.md:141 — приведён payload deleteMessage.",
+            "HOWTOSETUP.md:792 — описан status flow.",
+            "HOWTOSETUP.md:813 — описаны FAILED, Telegram errors и idempotency conflict."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/routes/bot-routes.ts:94 — action endpoint сохраняет application auth preHandler.",
+            "src/services/registration-service.ts:525 — новая outbound action сначала создаёт durable delivery.",
+            "src/services/delivery-service.ts:461 — сохранён dispatch pacing.",
+            "src/services/delivery-service.ts:520 — сохранён retry policy для Telegram.",
+            "src/routes/bot-routes.ts:116 — сохранён status polling endpoint."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/lib/errors.ts:54 — публичная ошибка сохраняет code, message, details и requestId.",
+            "src/lib/errors.ts:28 — Prisma error meta передаётся в публичные details и может раскрывать внутренние данные.",
+            "src/lib/public-models.ts:40 — outbound public model не возвращает bot token."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/config.ts:24 — default allowlist содержит только sendMessage, editMessageText и deleteMessage.",
+            "src/services/registration-service.ts:115 — application allowlist пересекается с global allowlist.",
+            "test/integration/gateway.integration.test.ts:412 — forwardMessage отклоняется как OUTBOUND_METHOD_NOT_ALLOWED."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 41,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 20,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 5,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "rawScore": 76,
+  "totalScore": 69,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "missing-outbound-method-contract",
+      "summary": "Версионированная action boundary не имеет единого registry/schema и принимает произвольный объект; malformed edit/delete payloads проходят в очередь и обнаруживаются только после вызова Telegram.",
+      "evidence": [
+        "src/routes/bot-routes.ts:27-38 — generic payload schema.",
+        "src/routes/bot-routes.ts:92-104 — route не выбирает schema по method.",
+        "src/services/registration-service.ts:490-502 — отсутствует per-method validation.",
+        "src/services/delivery-service.ts:483-487 — worker generic-диспетчеризация persisted payload."
+      ],
+      "reviewers": [
+        "vc-8468f65b-a"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "outbound-validation-test-gap",
+      "summary": "Тесты подтверждают happy-path queueing и idempotency, но не фиксируют boundary validation для обязательных полей и типов каждого Telegram method.",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:291-435 — edit/delete проверяются только на корректных payloads и unsupported method.",
+        "test/telegram-service.test.ts:12-61 — unit coverage не включает outbound action validation."
+      ],
+      "reviewers": [
+        "vc-8468f65b-a"
+      ]
+    },
+    {
+      "severity": "major",
+      "rootCauseId": "missing-action-registry",
+      "summary": "У versioned action boundary отсутствует единый registry со схемами: malformed edit/delete payloads принимаются в очередь, а worker передаёт generic method/payload напрямую в Telegram.",
+      "evidence": [
+        "src/routes/bot-routes.ts:37 — generic z.record(z.unknown()) не описывает обязательные и типизированные поля методов.",
+        "src/services/registration-service.ts:498 — проверяется только наличие метода в allowlist.",
+        "src/services/delivery-service.ts:483 — worker вызывает Telegram method без повторной контрактной валидации."
+      ],
+      "reviewers": [
+        "vc-8468f65b-b2"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "action-validation-test-gap",
+      "summary": "Тесты покрывают успешную постановку edit/delete в очередь и duplicate path, но не покрывают обязательные поля, типы payload и idempotency conflict для новых действий.",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:291 — сценарий использует только валидные payloads.",
+        "test/integration/gateway.integration.test.ts:361 — проверяется только duplicate с идентичным payload.",
+        "test/telegram-service.test.ts:12 — unit tests относятся к webhook ownership и Telegram retry helpers."
+      ],
+      "reviewers": [
+        "vc-8468f65b-b2"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "public-database-error-details",
+      "summary": "Публичный error envelope стабилен, но DATABASE_CONSTRAINT_ERROR раскрывает Prisma code и meta через details.",
+      "evidence": [
+        "src/lib/errors.ts:28 — в AppError передаются database code и meta.",
+        "src/lib/errors.ts:54 — details отправляются клиенту в HTTP error response."
+      ],
+      "reviewers": [
+        "vc-8468f65b-b2"
+      ]
+    }
+  ],
+  "provenance": "frozen_v7",
+  "originalFrozenCheck": null,
+  "blind": true
+}

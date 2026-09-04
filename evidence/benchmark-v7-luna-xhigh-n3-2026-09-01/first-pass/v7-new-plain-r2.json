@@ -1,0 +1,121 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a9c42c",
+  "branch": "v7/be1bba28fc9",
+  "capturedAt": "2026-09-02T10:39:03.763Z",
+  "condition": "plain",
+  "cost": {
+    "activationCanaryUsd": 0,
+    "baselineCanonUsd": 0,
+    "externalEvaluationUsd": 0,
+    "fullCycleUsd": 0.32615368,
+    "lateChangeTaskUsd": 0.32615368,
+    "methodInstallUsd": 0,
+    "organizerProvisioningUsd": 0,
+    "taskOnlyUsd": 0.32615368
+  },
+  "fidelity": {
+    "evidencePath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/lifecycle/v7-new-plain-r2.json",
+    "status": "pending"
+  },
+  "interventions": {
+    "answers": [],
+    "clarifications": 0,
+    "repairTurns": 0
+  },
+  "quality": {
+    "evaluationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/checks/v7-new-plain-r2.json",
+    "findings": [],
+    "officialScore": null,
+    "rawScore": null
+  },
+  "replica": 2,
+  "runId": "v7-new-plain-r2",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "setup": {
+    "commit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+    "fingerprint": "",
+    "lineageId": "v7-new-plain",
+    "tree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+  },
+  "snapshot": {
+    "fileHashes": [
+      {
+        "path": "README.md",
+        "sha256": "2efd29bd97a5da37d21289fa5e7aa8ee988360ff1911a5a2f302303c266d8141"
+      },
+      {
+        "path": "app.js",
+        "sha256": "56a1070cda55766f9f990f8ca3fd05daf29d9439a5895267082eb9b62081d782"
+      },
+      {
+        "path": "index.html",
+        "sha256": "200ba780f52c211859f2a0a0259e209b46681f44038f801557def3c31389bf5c"
+      },
+      {
+        "path": "styles.css",
+        "sha256": "31e624049dc4b96a2f0731eae46f3e6e5678d60ffa50bb1a7ad2e28ee62e1475"
+      }
+    ],
+    "head": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+    "immutableCopyPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/first-pass/v7-new-plain-r2-6d5293ab3eacf1a7c3f0c888ddf787b633bd5ba9b95122e4582cb361457cdd2c.bundle",
+    "status": "?? README.md\n?? app.js\n?? index.html\n?? styles.css",
+    "tree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+  },
+  "snapshotId": "6d5293ab3eacf1a7c3f0c888ddf787b633bd5ba9b95122e4582cb361457cdd2c",
+  "task": {
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "hostId": "local",
+    "infrastructureRetryIndex": 0,
+    "repairTurns": 0,
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "taskId": "01a0608e-42f7-7902-ad68-d3f3cbce0ce0"
+  },
+  "timing": {
+    "agentActiveMs": 2013443,
+    "humanWaitingMs": 0,
+    "taskElapsedMs": 2013443
+  },
+  "usability": {
+    "automaticDiscovery": false,
+    "browserUsed": false,
+    "clarifications": 0,
+    "methodErrors": 0,
+    "methodOperations": 0,
+    "terminalLifecycle": false,
+    "timeToFirstProductEditMs": 0
+  },
+  "usage": {
+    "aggregation": "sum_per_record",
+    "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+    "billing": {
+      "estimatedTaskCostUsd": 0.32615368,
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "reasoningIncludedInOutput": true
+    },
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 3313664,
+    "capturedAt": "2026-09-02T07:22:39.308Z",
+    "inputTokens": 3549872,
+    "outputTokens": 177199,
+    "reasoningOutputTokens": 0,
+    "redacted": true,
+    "schemaVersion": 1,
+    "source": {
+      "recordsObserved": 26,
+      "sessionSha256": "8d36bac4b29351515af8bd92242cb912d4aeea01af280410f1d2dce32641609f",
+      "taskId": "01a0608e-42f7-7902-ad68-d3f3cbce0ce0"
+    },
+    "totalTokens": 3727071,
+    "uncachedInputTokens": 236208,
+    "usageObjects": 26
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Final answer and first-pass snapshot are present; objective outcome is recorded separately."
+  }
+}

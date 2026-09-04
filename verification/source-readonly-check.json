@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "sourceFilesRechecked": 337,
+  "hashMismatches": 0,
+  "sourceHead": "c4d40f303f23f901b3f02be7261a06d9cf596505",
+  "sourceWritesPerformed": false,
+  "sourceMode": "Read-only file access and Git archive/rev-parse with GIT_OPTIONAL_LOCKS=0; no source scripts executed"
+}

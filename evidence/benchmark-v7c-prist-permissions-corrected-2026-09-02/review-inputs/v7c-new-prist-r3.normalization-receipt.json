@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "createdAt": "2026-09-02T14:12:25.447Z",
+  "runId": "v7c-new-prist-r3",
+  "blindId": "vc-f2787e27",
+  "scenario": "new-project",
+  "sourceWorkspaceCommit": "714b0c5dd4a4870e92825fe0392d9aefc1d943a4",
+  "sourceWorkspaceTree": "4c66caa4e3f25b32fc47332c1043fa40225f34f8",
+  "sourceContentFingerprint": "6c824072eadd254005c72dba311ceb9ff986cc0a030fc1a684dd5b6344a80a4e",
+  "sourceWorkspacePath": "redacted",
+  "destinationPath": "evidence/benchmark-v7c-prist-permissions-corrected-2026-09-02/review-inputs/vc-f2787e27",
+  "includedPaths": [
+    ".gitignore",
+    "README.md",
+    "package.json",
+    "public",
+    "public/app.js",
+    "public/index.html",
+    "public/styles.css",
+    "server.mjs",
+    "specs",
+    "specs/SPEC-MAP.md",
+    "specs/common",
+    "specs/common/main.md",
+    "specs/common/structure.md",
+    "specs/modules",
+    "specs/modules/reading-list",
+    "specs/modules/reading-list/FEAT-001-reading-list.md",
+    "src",
+    "src/library.js",
+    "test",
+    "test/library.test.mjs"
+  ],
+  "excludedPaths": [
+    ".agents",
+    ".claude",
+    ".codex",
+    ".git",
+    ".mcp.json",
+    ".prist",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "includedFileHashes": [
+    {
+      "path": ".gitignore",
+      "sha256": "ad7bbe6fad48ca47ccdd68ab3bf5c217980998b9e0a2cb18cab1f992aa5fe5a4"
+    },
+    {
+      "path": "package.json",
+      "sha256": "7e22bbf74c71091ddd46786cf8cd61f2c79bac415ef8a3e451946f56c4e3d86a"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "1b421ec2aa75d1485ae84085367d1704e4a2bf351a32d972cc47a33c24743938"
+    },
+    {
+      "path": "public/index.html",
+      "sha256": "5c7f48d36e620096676a37c13ff5b2aba14fab613c344df9a90e1b4414c85b34"
+    },
+    {
+      "path": "public/styles.css",
+      "sha256": "6d16fea635dec3d0faa6272d300bb65a20f83f7044ec9996e0d10264ae067d30"
+    },
+    {
+      "path": "README.md",
+      "sha256": "fc82e83d2a7ff48139e425b7459ab4bda22465615cbe900b0d3c7c40635fd64d"
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "354f9a028fb1dc267dc107ca02981255d1a26db9b328cdd534d35a545797a0a8"
+    },
+    {
+      "path": "specs/common/main.md",
+      "sha256": "a4610230979a08668b193a3e17aff1e67769b1ec4e4f9e537d63feca1052b021"
+    },
+    {
+      "path": "specs/common/structure.md",
+      "sha256": "9bad95f04d95f9f99dfbba2806c3af1ddb185085269298afd1827155ab3dd743"
+    },
+    {
+      "path": "specs/modules/reading-list/FEAT-001-reading-list.md",
+      "sha256": "aafc998f1f9193672a5f39c8585f2f77176ae0c78510bfee650b60d17cc5d2e1"
+    },
+    {
+      "path": "specs/SPEC-MAP.md",
+      "sha256": "3779a1d24edcb349d167d3848555eae2ed2b2893d7e2743e0bf1f643a972813b"
+    },
+    {
+      "path": "src/library.js",
+      "sha256": "44e45e2ca05d033be6c330b6406a7ebd9eb2b25f5f7581a95745a14c4c045c23"
+    },
+    {
+      "path": "test/library.test.mjs",
+      "sha256": "ebf9fed95047549360f9d002ea2f499f91bd9bb9fa11d906b8d7b4ff220b4f13"
+    }
+  ],
+  "conditionVisibleInWorkspace": false,
+  "methodMetadataVisibleInWorkspace": false,
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false,
+  "credentialsVisibleInWorkspace": false,
+  "executableProductContentChanged": false
+}

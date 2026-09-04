@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "verifiedEvidenceAt": "2026-09-02T15:14:33.015Z",
+  "checks": {
+    "rows": 36,
+    "cells": 12,
+    "tasksUnique": 36,
+    "repetitionsPerCell": 3,
+    "exactModelReasoning": true,
+    "firstPassOnly": true,
+    "browserUsed": false,
+    "interventions": 0,
+    "aggregateMediansRecomputed": true,
+    "cleanPublicNarrative": true
+  },
+  "artifacts": {
+    "BENCHMARK-REPORT.md": {
+      "bytes": 32940,
+      "sha256": "9992517a1f859e25f7b76347fabac687fb8b27efd8800fa804d4e835b679c3ba"
+    },
+    "BENCHMARK-REPORT.html": {
+      "bytes": 41845,
+      "sha256": "a8825664cbc07b25dcbd102a22f73df5e645d653ee5f1d92964a56f036a0088f"
+    },
+    "source-snapshot.json": {
+      "bytes": 47505,
+      "sha256": "f38bcea6bee24dc2fa4bd3f7ecb9b70304df2b6b730adebce09dc1c7937f569a"
+    },
+    "verification-summary.json": {
+      "bytes": 285,
+      "sha256": "0188792cbdc6b79cacbef72d8edb8111bcb696a426555ed891be53e393ef0ad7"
+    },
+    "PRIST-SERVICE-IMPROVEMENTS.md": {
+      "bytes": 27145,
+      "sha256": "ab0fc4d2a9f76aaecd59b54adc11be5f57849a06ced055b68b64ee87d8377040"
+    }
+  }
+}

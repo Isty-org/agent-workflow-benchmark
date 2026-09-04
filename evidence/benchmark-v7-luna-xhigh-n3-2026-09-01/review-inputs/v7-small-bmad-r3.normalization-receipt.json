@@ -1,0 +1,392 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-6e543a",
+  "conditionVisibleInWorkspace": false,
+  "createdAt": "2026-09-02T06:59:16.146Z",
+  "destinationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-6e543a",
+  "excludedPaths": [
+    ".agents",
+    ".git",
+    "AGENTS.md",
+    "_bmad",
+    "_bmad-output",
+    "node_modules"
+  ],
+  "executableProductContentChanged": false,
+  "includedFileHashes": [
+    {
+      "path": ".env.example",
+      "sha256": "fe0ff575a653daa194b86973d40746d9b514ae087f9db6f9c04f896550d0829a"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "e7441dd1340db5c21755e175a252069d53f5308f902a373012b6124767cd1c48"
+    },
+    {
+      "path": "dist/src/app.js",
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8"
+    },
+    {
+      "path": "dist/src/config.js",
+      "sha256": "aec51fd695bb5c479fbf08fe7400d860e42155a96898a7bd46d8ff3a958f1c6f"
+    },
+    {
+      "path": "dist/src/lib/crypto.js",
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5"
+    },
+    {
+      "path": "dist/src/lib/errors.js",
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee"
+    },
+    {
+      "path": "dist/src/lib/metrics.js",
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06"
+    },
+    {
+      "path": "dist/src/lib/public-models.js",
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1"
+    },
+    {
+      "path": "dist/src/lib/retry.js",
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c"
+    },
+    {
+      "path": "dist/src/plugins/auth.js",
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357"
+    },
+    {
+      "path": "dist/src/routes/admin-routes.js",
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf"
+    },
+    {
+      "path": "dist/src/routes/admin-ui-routes.js",
+      "sha256": "4866b7fe8204f7bdaa06f9f665ee722026f5dfdcefdf21a863a70ca5588035a2"
+    },
+    {
+      "path": "dist/src/routes/bot-routes.js",
+      "sha256": "9c7c5c03cfdc7482df02e0b8e34a8a7046f4defe917a261f12070a627351b8a9"
+    },
+    {
+      "path": "dist/src/routes/health-routes.js",
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed"
+    },
+    {
+      "path": "dist/src/routes/ingress-routes.js",
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec"
+    },
+    {
+      "path": "dist/src/routes/istina-compat-routes.js",
+      "sha256": "e90cfe38ecea6fb20ffd4f5ff30a8a4d829ae88cddadc366368ce49c06744ce3"
+    },
+    {
+      "path": "dist/src/server.js",
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6"
+    },
+    {
+      "path": "dist/src/services/admin-service.js",
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b"
+    },
+    {
+      "path": "dist/src/services/audit-service.js",
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499"
+    },
+    {
+      "path": "dist/src/services/delivery-service.js",
+      "sha256": "dfea43288334ef29e1d34e0397ed3ddfede0edeb6948d15f29e1e7ef4acad59a"
+    },
+    {
+      "path": "dist/src/services/registration-service.js",
+      "sha256": "e404c4f9683eb98d110beeef91f60a0f3c38cdf9f9debc6c58efbe5de89f35d3"
+    },
+    {
+      "path": "dist/src/services/telegram-service.js",
+      "sha256": "b7aa1f6b81c6e8c85eb6f61435eaae95efc387cd5db4019ffd8787ed986aa479"
+    },
+    {
+      "path": "dist/src/services/worker-service.js",
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96"
+    },
+    {
+      "path": "dist/test/config.test.js",
+      "sha256": "ee445fa68ca790e6430c9d4095ade514f80c37fed654c82e48047a584e9fc91d"
+    },
+    {
+      "path": "dist/test/crypto.test.js",
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708"
+    },
+    {
+      "path": "dist/test/integration/gateway.integration.test.js",
+      "sha256": "3f05fa5b49ad59657cfaf17812b8a9afbca16a474d16cfa54d6ea6b7d6ee6c3d"
+    },
+    {
+      "path": "dist/test/integration/test-helpers.js",
+      "sha256": "90313ba54fa99e78cd14eddf840c188612eb3e79a45eb26214a9e533e9d81ebf"
+    },
+    {
+      "path": "dist/test/retry.test.js",
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320"
+    },
+    {
+      "path": "dist/test/telegram-service.test.js",
+      "sha256": "172691e57caa0d01efcc468253ecdc321395397e320f7af4baba28e5347f1f6d"
+    },
+    {
+      "path": "docker-compose.integration.yml",
+      "sha256": "d3820047c3c7709110adcc43995405180f52592cfce639095c3c255000f2790f"
+    },
+    {
+      "path": "HOWTOSETUP.md",
+      "sha256": "8f57b7616d295b3facf4a8f8b9cd60f82bd5c414f8f6b3511b2c88ff4a71a431"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "691975948578e32747ab7564f1b801ae83ddcee2e500c57c3602bd7d4cd0c84c"
+    },
+    {
+      "path": "package.json",
+      "sha256": "22c7be5a404b7d5998e80f195199f75d8adce0f5eed22ac80203df95c2e1be5b"
+    },
+    {
+      "path": "prisma/migrations/20260420202800_init/migration.sql",
+      "sha256": "d9fe79f8b9cfd6b743c5c1630016a9d0818c3ddd48e7f0cc019fcec504918b80"
+    },
+    {
+      "path": "prisma/migrations/migration_lock.toml",
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7"
+    },
+    {
+      "path": "prisma/schema.prisma",
+      "sha256": "6c2c9c6e7c846286e250d462840d981f7ce1f0d69022af155216efe632dc2d04"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d80a20b8e1282c4c0c91381a6beb6f7408e28d8db9f5730d7d56e2c4e0d1bd6b"
+    },
+    {
+      "path": "scripts/run-integration-tests.js",
+      "sha256": "c64e221d2dbd393e3037d23501c31749b06369390ee2d35a09aef5360241ace5"
+    },
+    {
+      "path": "src/app.ts",
+      "sha256": "7ea27b7a8789a9f03eae8a5b48c2082cea91242768b84000b0f949f1ebde3145"
+    },
+    {
+      "path": "src/config.ts",
+      "sha256": "42b22e50f320cc7e94dce607119320cee2dfb02eb770f5d0db98761373a78aa0"
+    },
+    {
+      "path": "src/fastify.d.ts",
+      "sha256": "12bf4921bdb6ade9c5cdb9049992536f99d6a99e308582c86c82429a5df8319e"
+    },
+    {
+      "path": "src/lib/crypto.ts",
+      "sha256": "6d6e009de21c4c7e24790fe362d6733faf4f58b2ccf08b5363480817e05a895b"
+    },
+    {
+      "path": "src/lib/errors.ts",
+      "sha256": "6d2761a4e7dfeb11e19852d4f2fc25dde452ed9900dafaed96c9f17dd8686e99"
+    },
+    {
+      "path": "src/lib/metrics.ts",
+      "sha256": "05697b8a4e6b2e006b741f7af5cc211a9d8dd7bef4fb32532fd892be1cf326f3"
+    },
+    {
+      "path": "src/lib/public-models.ts",
+      "sha256": "7322f3da93c692ef8cff703d4ebb0a4ee8a0e3126675c4a29d26738fc886d02b"
+    },
+    {
+      "path": "src/lib/retry.ts",
+      "sha256": "9b018eba730529b2ad50123fd8128f6c3c2b76f96bff9c38770871e6b520a9a3"
+    },
+    {
+      "path": "src/plugins/auth.ts",
+      "sha256": "95d1e84a47a968d645b593f361119f06b29c2d375704194677d5b6d530356a44"
+    },
+    {
+      "path": "src/routes/admin-routes.ts",
+      "sha256": "5c4c9386ff7fc3d57af7ee562bc261d984cefc65ad14d5b54947281b23536bc0"
+    },
+    {
+      "path": "src/routes/admin-ui-routes.ts",
+      "sha256": "10a24c6f9869300083ea373900a1a280bc67c7401af08658cab8db88070a4e95"
+    },
+    {
+      "path": "src/routes/bot-routes.ts",
+      "sha256": "a1f3e97e833ba1cd296e7a5bfe5b04b2325ee9ef56bfffbfea2c675c133c9f8b"
+    },
+    {
+      "path": "src/routes/health-routes.ts",
+      "sha256": "2cc977c082d2f3408e28663a6856014302f6ff1eb66151d17ef6c67681496b4d"
+    },
+    {
+      "path": "src/routes/ingress-routes.ts",
+      "sha256": "e40f23c0cf2456f21e91c06185ab13d6644f4bc2a7f0f53329ee5e10023b0b49"
+    },
+    {
+      "path": "src/routes/istina-compat-routes.ts",
+      "sha256": "6dbaf66a985524683813bd87035349de4a4c66c083b3e1c64f669577eb99f9b1"
+    },
+    {
+      "path": "src/server.ts",
+      "sha256": "021b64b70445b29546b27802af8d4ada34f2bfc2722e687fc5b7c06bea9c35dd"
+    },
+    {
+      "path": "src/services/admin-service.ts",
+      "sha256": "4ac0e2be86682408dcb33fe7357842cb57617b1293c327e97eac02fbfb58fab4"
+    },
+    {
+      "path": "src/services/audit-service.ts",
+      "sha256": "151e0e62aaaaeff632f6f5adbcd085a91c38ce2ed6519fb89455a60f0dc61276"
+    },
+    {
+      "path": "src/services/delivery-service.ts",
+      "sha256": "2db2a70e2de42dd9fac44c11d7bd49972c802b029435eb5df6ca25cb7fef7293"
+    },
+    {
+      "path": "src/services/registration-service.ts",
+      "sha256": "dc551e2eff79dc7d293e83a554ce3d746724219eb259eee6d893194977b459a7"
+    },
+    {
+      "path": "src/services/telegram-service.ts",
+      "sha256": "346802f220ed773a1890564e7b24ea9de4c70c0ec6494a05d95e82d9ed1374d5"
+    },
+    {
+      "path": "src/services/worker-service.ts",
+      "sha256": "645420d123c5ae4e0277b150b4068539247a399fb704bc668c88ac335917ba48"
+    },
+    {
+      "path": "test/config.test.ts",
+      "sha256": "cd7619b1d3b0b2bcc3b6a9b29f9b9ba3c412f633ed2c0941e04cd219e5582e64"
+    },
+    {
+      "path": "test/crypto.test.ts",
+      "sha256": "e7400aee3e955431dc337c49e090a9da2efb672efb1010f201f585cc2f008103"
+    },
+    {
+      "path": "test/integration/gateway.integration.test.ts",
+      "sha256": "cbafcfc9c4622c8b099d3bbc5993cfbe346f05fe23e4d25aae087f1f6e0b7739"
+    },
+    {
+      "path": "test/integration/test-helpers.ts",
+      "sha256": "00251037a904f622bcbb2fa5e8f4cabed4f25c61c3ffb8b6455d17cc9d57c40e"
+    },
+    {
+      "path": "test/retry.test.ts",
+      "sha256": "bb8a5a945ae8ea70c954b145d43bbeb2a7ca0017a67e99b7c4f544b4f451e9b2"
+    },
+    {
+      "path": "test/telegram-service.test.ts",
+      "sha256": "28529f4469bb3df9750ac5d276e74c5e0df15b8abf647d8318f805a0eab2e078"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "a200a0b15cb5af3a8195833e2478b2740ceafe464b047dc860395a61d3e995b8"
+    },
+    {
+      "path": "TZ-telegram-gateway-service.md",
+      "sha256": "e8fd96090c0306523397167bb8039642aefa10c94dcbf2adf0f949b67f011a65"
+    }
+  ],
+  "includedPaths": [
+    ".env.example",
+    ".gitattributes",
+    ".gitignore",
+    "HOWTOSETUP.md",
+    "README.md",
+    "TZ-telegram-gateway-service.md",
+    "dist",
+    "dist/src",
+    "dist/src/app.js",
+    "dist/src/config.js",
+    "dist/src/lib",
+    "dist/src/lib/crypto.js",
+    "dist/src/lib/errors.js",
+    "dist/src/lib/metrics.js",
+    "dist/src/lib/public-models.js",
+    "dist/src/lib/retry.js",
+    "dist/src/plugins",
+    "dist/src/plugins/auth.js",
+    "dist/src/routes",
+    "dist/src/routes/admin-routes.js",
+    "dist/src/routes/admin-ui-routes.js",
+    "dist/src/routes/bot-routes.js",
+    "dist/src/routes/health-routes.js",
+    "dist/src/routes/ingress-routes.js",
+    "dist/src/routes/istina-compat-routes.js",
+    "dist/src/server.js",
+    "dist/src/services",
+    "dist/src/services/admin-service.js",
+    "dist/src/services/audit-service.js",
+    "dist/src/services/delivery-service.js",
+    "dist/src/services/registration-service.js",
+    "dist/src/services/telegram-service.js",
+    "dist/src/services/worker-service.js",
+    "dist/test",
+    "dist/test/config.test.js",
+    "dist/test/crypto.test.js",
+    "dist/test/integration",
+    "dist/test/integration/gateway.integration.test.js",
+    "dist/test/integration/test-helpers.js",
+    "dist/test/retry.test.js",
+    "dist/test/telegram-service.test.js",
+    "docker-compose.integration.yml",
+    "package-lock.json",
+    "package.json",
+    "prisma",
+    "prisma/migrations",
+    "prisma/migrations/20260420202800_init",
+    "prisma/migrations/20260420202800_init/migration.sql",
+    "prisma/migrations/migration_lock.toml",
+    "prisma/schema.prisma",
+    "scripts",
+    "scripts/run-integration-tests.js",
+    "src",
+    "src/app.ts",
+    "src/config.ts",
+    "src/fastify.d.ts",
+    "src/lib",
+    "src/lib/crypto.ts",
+    "src/lib/errors.ts",
+    "src/lib/metrics.ts",
+    "src/lib/public-models.ts",
+    "src/lib/retry.ts",
+    "src/plugins",
+    "src/plugins/auth.ts",
+    "src/routes",
+    "src/routes/admin-routes.ts",
+    "src/routes/admin-ui-routes.ts",
+    "src/routes/bot-routes.ts",
+    "src/routes/health-routes.ts",
+    "src/routes/ingress-routes.ts",
+    "src/routes/istina-compat-routes.ts",
+    "src/server.ts",
+    "src/services",
+    "src/services/admin-service.ts",
+    "src/services/audit-service.ts",
+    "src/services/delivery-service.ts",
+    "src/services/registration-service.ts",
+    "src/services/telegram-service.ts",
+    "src/services/worker-service.ts",
+    "test",
+    "test/config.test.ts",
+    "test/crypto.test.ts",
+    "test/integration",
+    "test/integration/gateway.integration.test.ts",
+    "test/integration/test-helpers.ts",
+    "test/retry.test.ts",
+    "test/telegram-service.test.ts",
+    "tsconfig.json"
+  ],
+  "methodMetadataVisibleInWorkspace": false,
+  "runId": "v7-small-bmad-r3",
+  "scenario": "small-project",
+  "schemaVersion": 1,
+  "sourceWorkspaceCommit": "a48487eea83a730e37f8db5b71daf57ffbee9f97",
+  "sourceWorkspacePath": "redacted",
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false
+}

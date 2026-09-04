@@ -1,0 +1,30 @@
+{
+  "scenario": "small-project",
+  "condition": "prist",
+  "replica": 3,
+  "taskId": "01a06255-e6e3-7a20-a2d2-7f6801625788",
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "firstPassOnly": true,
+  "browserUsed": false,
+  "tokens": {
+    "total": 20875795,
+    "uncachedInput": 557104,
+    "cachedInput": 20246272,
+    "outputIncludingReasoning": 72419,
+    "reasoningOutput": 31722
+  },
+  "timing": {
+    "taskElapsedMs": 2186000,
+    "agentActiveMs": 2183774
+  },
+  "costUsd": {
+    "lateChangeTask": 0.60324904,
+    "newlyIncurredSetupCanon": 0
+  },
+  "quality": {
+    "official": 69,
+    "rawBeforeSeverityCap": 76
+  },
+  "interventions": 0
+}

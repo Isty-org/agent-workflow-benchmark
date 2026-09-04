@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-8468f65b-a",
+  "blindId": "vc-8468f65b",
+  "scenario": "small",
+  "checks": [
+    {
+      "id": "S3-C01",
+      "pointsAwarded": 0,
+      "evidence": [
+        "src/routes/bot-routes.ts:27-38 — payload валидируется только как generic z.record без проверки схемы метода.",
+        "src/services/registration-service.ts:490-502 — boundary проверяет только allowlist, per-method validation отсутствует."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "pointsAwarded": 0,
+      "evidence": [
+        "src/config.ts:23-25 — allowlist задана отдельной строкой конфигурации.",
+        "src/routes/bot-routes.ts:92-104 — route передаёт generic payload без method schema.",
+        "src/services/delivery-service.ts:483-487 — worker dispatch-ит persisted action/payload generic-вызовом."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:222-288 — покрыты queueing, status polling и idempotent duplicate для sendMessage.",
+        "test/integration/gateway.integration.test.ts:334-435 — покрыты queueing и duplicate для editMessageText, deleteMessage и allowlist rejection.",
+        "test/telegram-service.test.ts:12-61 — unit tests покрывают helper/retry classification, но outbound validation не покрывают."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "pointsAwarded": 0,
+      "evidence": [
+        "src/routes/bot-routes.ts:27-30 — method принимается как произвольная строка до 64 символов.",
+        "src/services/telegram-service.ts:112-114 — generic callMethod не связан с registry/schema для разрешённых методов."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "pointsAwarded": 3,
+      "evidence": [
+        "README.md:106-158 — описаны client endpoints, три метода, payload examples, allowlist, idempotency, errors и status flow.",
+        "HOWTOSETUP.md:746-813 — подробно описаны edit/delete payloads, queue statuses, delivery polling, stable errors и IDEMPOTENCY_CONFLICT."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/routes/bot-routes.ts:92-126 — сохранены Bearer auth, versioned action endpoint и delivery status endpoint.",
+        "src/services/worker-service.ts:14-40 — сохранён периодический worker drain.",
+        "src/services/delivery-service.ts:443-487 — сохранены claim, queue-first dispatch и Telegram вызов.",
+        "src/services/delivery-service.ts:121-136 — сохранены dispatch pacing и retry backoff.",
+        "src/services/delivery-service.ts:520-548 — сохранены retryable Telegram failures и retry state."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/lib/errors.ts:19-61 — ошибки маппятся в стабильный error.code/message/details/requestId envelope.",
+        "src/lib/public-models.ts:38-52 — delivery response не содержит encrypted bot token или service token.",
+        "src/services/delivery-service.ts:553-571 — Telegram failure response ограничен description/errorCode/httpStatus/parameters."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/config.ts:23-25 — default allowlist содержит только sendMessage, editMessageText и deleteMessage.",
+        "src/services/admin-service.ts:29-40 — application allowlist проверяется против разрешённого списка.",
+        "src/services/registration-service.ts:496-502 — неразрешённый method отклоняется до постановки в очередь.",
+        "test/integration/gateway.integration.test.ts:412-435 — проверено отклонение forwardMessage."
+      ]
+    }
+  ],
+  "total": 15,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "missing-outbound-method-contract",
+      "summary": "Версионированная action boundary не имеет единого registry/schema и принимает произвольный объект; malformed edit/delete payloads проходят в очередь и обнаруживаются только после вызова Telegram.",
+      "evidence": [
+        "src/routes/bot-routes.ts:27-38 — generic payload schema.",
+        "src/routes/bot-routes.ts:92-104 — route не выбирает schema по method.",
+        "src/services/registration-service.ts:490-502 — отсутствует per-method validation.",
+        "src/services/delivery-service.ts:483-487 — worker generic-диспетчеризация persisted payload."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "outbound-validation-test-gap",
+      "summary": "Тесты подтверждают happy-path queueing и idempotency, но не фиксируют boundary validation для обязательных полей и типов каждого Telegram method.",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:291-435 — edit/delete проверяются только на корректных payloads и unsupported method.",
+        "test/telegram-service.test.ts:12-61 — unit coverage не включает outbound action validation."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:30:12.000Z",
+  "durationMs": 275443,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

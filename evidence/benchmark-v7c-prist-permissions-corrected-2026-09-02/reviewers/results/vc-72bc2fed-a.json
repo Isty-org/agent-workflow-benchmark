@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-72bc2fed-a",
+  "blindId": "vc-72bc2fed",
+  "scenario": "new",
+  "checks": [
+    {
+      "id": "N3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/main.jsx:32 — состояние книг хранится в React state.",
+        "src/main.jsx:39 — persistence выполняется отдельным effect.",
+        "src/lib/readingList.js:70 — чистая функция распределяет книги по статусу."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/main.jsx:63 — статистика вычисляется из единого массива books.",
+        "src/main.jsx:200 — колонки получают книги через booksByStatus.",
+        "src/lib/readingList.js:75 — переход меняет status существующей записи."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "test/readingList.test.js:13 — прямой тест создания книги.",
+        "test/readingList.test.js:23 — прямой тест перехода между статусами.",
+        "test/readingList.test.js:37 — тест нормализации данных при чтении persistence-состояния.",
+        "src/main.jsx:40 — фактическая запись в localStorage не покрыта прямым тестом."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/lib/readingList.js:5 — статусы описаны централизованной конфигурацией.",
+        "src/lib/readingList.js:33 — запись книги имеет расширяемые поля id, title, author, status и createdAt.",
+        "src/lib/readingList.js:70 — операции работы со списком вынесены в чистые функции."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "pointsAwarded": 2,
+      "evidence": [
+        "package.json:6 — доступны dev, build, preview и test scripts.",
+        "README.md:9 — описан install.",
+        "README.md:11 — описан локальный dev-запуск.",
+        "README.md:18 — описаны build и preview.",
+        "README.md:5-21 — команда npm test в README не описана."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/main.jsx:153 — форма добавления книги с названием и автором.",
+        "src/lib/readingList.js:5 — присутствуют три требуемых статуса.",
+        "src/main.jsx:261 — книгу можно переместить через выбор статуса.",
+        "src/main.jsx:40 — список сохраняется локально."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/main.jsx:154 — поля формы имеют видимые подписи через label.",
+        "src/main.jsx:247 — удаление имеет доступную aria-label.",
+        "src/styles.css:30 — задан видимый focus-visible для интерактивных элементов.",
+        "src/main.jsx:231 — предусмотрены пустые состояния колонок.",
+        "src/main.jsx:20-25 — ошибка повреждённого состояния формируется, но src/main.jsx:40-42 очищает уведомление после записи пустого списка."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "pointsAwarded": 2,
+      "evidence": [
+        "src/main.jsx:20 — используется browser localStorage.",
+        "src/main.jsx:40 — сохраняется только сериализованный список книг.",
+        "src/main.jsx:1-12 — приложение не использует API-клиент или разрешения.",
+        "src/styles.css:1 — при открытии запрашивается внешний Google Fonts URL."
+      ]
+    }
+  ],
+  "total": 26,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "storage-error-notice-cleared",
+      "summary": "Уведомление о повреждённом сохранённом JSON очищается первым успешным effect записи пустого списка.",
+      "evidence": [
+        "src/main.jsx:20-25 — чтение повреждённого состояния возвращает ошибку.",
+        "src/main.jsx:40-42 — effect записывает [] и сразу очищает storageNotice."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "persistence-io-untested",
+      "summary": "Тестируется нормализация persistence-данных, но прямого теста чтения и записи localStorage нет.",
+      "evidence": [
+        "test/readingList.test.js:37-46 — проверяется только parseBooks.",
+        "src/main.jsx:20 — чтение localStorage находится вне тестируемого модуля.",
+        "src/main.jsx:40 — запись localStorage находится вне тестируемого модуля."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "readme-omits-test-command",
+      "summary": "README не сообщает пользователю, как запустить тесты.",
+      "evidence": [
+        "package.json:10 — определён npm test.",
+        "README.md:5-21 — install, dev, build и preview описаны, npm test отсутствует."
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "external-font-dependency",
+      "summary": "Локальный интерфейс делает внешний запрос к Google Fonts.",
+      "evidence": [
+        "src/styles.css:1 — подключение шрифтов через https://fonts.googleapis.com."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:27:28.000Z",
+  "durationMs": 153509,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

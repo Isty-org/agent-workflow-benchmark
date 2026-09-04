@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "runId": "v7c-small-prist-r1",
+  "blindId": "vc-d4fb0379",
+  "capturedAt": "2026-09-02T14:19:21.685Z",
+  "projectId": "project_821552cc-723d-411a-b54e-cfba5e1ede97",
+  "connectionId": "connection_9177a8e4-636d-4cb8-9de1-e034a3e4c2fe",
+  "operationCounts": {
+    "connection_ready": 2,
+    "finish_change": 1,
+    "prepare_finish": 5,
+    "project_context": 6,
+    "resume_change": 5,
+    "setup_context": 6,
+    "start": 1,
+    "sync_spec_snapshot": 2,
+    "work_context": 5
+  },
+  "activations": [
+    {
+      "route": "tracked",
+      "status": "completed",
+      "closedAt": "2026-09-02T14:01:42.850Z",
+      "revision": 5,
+      "createdAt": "2026-09-02T13:39:19.544Z",
+      "updatedAt": "2026-09-02T14:01:42.850Z",
+      "workRunId": "run_52c5748307a8ac982857f331ae9756bf",
+      "workItemId": "WI-001",
+      "activationId": "activation_551a1c02cadea82cf40f17a967d9cdb1",
+      "changeStreamId": "stream_413f0875c64da1d8b9a4b9144479fe26"
+    }
+  ],
+  "workRuns": [
+    {
+      "status": "completed",
+      "endedAt": "2026-09-02T14:01:42.849+00:00",
+      "version": 3,
+      "startedAt": "2026-09-02T13:39:19.561+00:00",
+      "workRunId": "run_52c5748307a8ac982857f331ae9756bf",
+      "workItemId": "WI-001",
+      "releaseReason": null,
+      "changeStreamId": "stream_413f0875c64da1d8b9a4b9144479fe26",
+      "lastActivityAt": "2026-09-02T14:01:42.849+00:00"
+    }
+  ],
+  "changeStreams": [
+    {
+      "status": "integrated",
+      "version": 3,
+      "createdAt": "2026-09-02T13:39:19.561+00:00",
+      "updatedAt": "2026-09-02T14:01:42.849+00:00",
+      "workItemId": "WI-001",
+      "discardedAt": null,
+      "integratedAt": "2026-09-02T14:01:42.849+00:00",
+      "changeStreamId": "stream_413f0875c64da1d8b9a4b9144479fe26"
+    }
+  ],
+  "auditGroups": [
+    {
+      "count": 1,
+      "lastAt": "2026-09-02T13:20:54.326277+00:00",
+      "firstAt": "2026-09-02T13:20:54.326277+00:00",
+      "eventType": "connection_created",
+      "operation": null
+    },
+    {
+      "count": 1,
+      "lastAt": "2026-09-02T13:20:57.228361+00:00",
+      "firstAt": "2026-09-02T13:20:57.228361+00:00",
+      "eventType": "connection_activated",
+      "operation": null
+    },
+    {
+      "count": 6,
+      "lastAt": "2026-09-02T13:28:34.27431+00:00",
+      "firstAt": "2026-09-02T13:20:58.101528+00:00",
+      "eventType": "operation_authorized",
+      "operation": "setup_context"
+    },
+    {
+      "count": 2,
+      "lastAt": "2026-09-02T13:21:16.041412+00:00",
+      "firstAt": "2026-09-02T13:21:07.295903+00:00",
+      "eventType": "operation_authorized",
+      "operation": "connection_ready"
+    },
+    {
+      "count": 1,
+      "lastAt": "2026-09-02T13:21:07.29845+00:00",
+      "firstAt": "2026-09-02T13:21:07.29845+00:00",
+      "eventType": "connection_blocked",
+      "operation": null
+    },
+    {
+      "count": 1,
+      "lastAt": "2026-09-02T13:21:16.044906+00:00",
+      "firstAt": "2026-09-02T13:21:16.044906+00:00",
+      "eventType": "connection_ready",
+      "operation": null
+    },
+    {
+      "count": 6,
+      "lastAt": "2026-09-02T13:28:33.989111+00:00",
+      "firstAt": "2026-09-02T13:21:18.0335+00:00",
+      "eventType": "operation_authorized",
+      "operation": "project_context"
+    },
+    {
+      "count": 2,
+      "lastAt": "2026-09-02T13:28:32.507442+00:00",
+      "firstAt": "2026-09-02T13:21:18.838907+00:00",
+      "eventType": "operation_authorized",
+      "operation": "sync_spec_snapshot"
+    },
+    {
+      "count": 1,
+      "lastAt": "2026-09-02T13:39:19.53992+00:00",
+      "firstAt": "2026-09-02T13:39:19.53992+00:00",
+      "eventType": "operation_authorized",
+      "operation": "start"
+    },
+    {
+      "count": 5,
+      "lastAt": "2026-09-02T14:01:39.927919+00:00",
+      "firstAt": "2026-09-02T13:55:46.065759+00:00",
+      "eventType": "operation_authorized",
+      "operation": "resume_change"
+    },
+    {
+      "count": 5,
+      "lastAt": "2026-09-02T14:01:40.228311+00:00",
+      "firstAt": "2026-09-02T13:55:46.384816+00:00",
+      "eventType": "operation_authorized",
+      "operation": "work_context"
+    },
+    {
+      "count": 5,
+      "lastAt": "2026-09-02T14:01:42.263815+00:00",
+      "firstAt": "2026-09-02T13:55:53.69545+00:00",
+      "eventType": "operation_authorized",
+      "operation": "prepare_finish"
+    },
+    {
+      "count": 1,
+      "lastAt": "2026-09-02T14:01:42.842281+00:00",
+      "firstAt": "2026-09-02T14:01:42.842281+00:00",
+      "eventType": "operation_authorized",
+      "operation": "finish_change"
+    }
+  ],
+  "fidelity": {
+    "engaged": true,
+    "completed": true,
+    "status": "completed",
+    "residualActiveWorkRuns": 0,
+    "residualActiveChangeStreams": 0
+  },
+  "privacy": {
+    "transcriptCopied": false,
+    "originalRequestCopied": false,
+    "credentialsCopied": false,
+    "auditDetailsCopied": false
+  }
+}

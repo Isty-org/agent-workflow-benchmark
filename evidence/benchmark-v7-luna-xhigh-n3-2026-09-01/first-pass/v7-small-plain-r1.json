@@ -1,0 +1,269 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-b075b0",
+  "branch": "v7/b0bede8af8c",
+  "capturedAt": "2026-09-02T10:39:08.238Z",
+  "condition": "plain",
+  "cost": {
+    "activationCanaryUsd": 0,
+    "baselineCanonUsd": 0,
+    "externalEvaluationUsd": 0,
+    "fullCycleUsd": 10.077087,
+    "lateChangeTaskUsd": 10.077087,
+    "methodInstallUsd": 0,
+    "organizerProvisioningUsd": 0,
+    "taskOnlyUsd": 10.077087
+  },
+  "fidelity": {
+    "evidencePath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/lifecycle/v7-small-plain-r1.json",
+    "status": "pending"
+  },
+  "interventions": {
+    "answers": [],
+    "clarifications": 0,
+    "repairTurns": 0
+  },
+  "quality": {
+    "evaluationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/checks/v7-small-plain-r1.json",
+    "findings": [],
+    "officialScore": null,
+    "rawScore": null
+  },
+  "replica": 1,
+  "runId": "v7-small-plain-r1",
+  "scenario": "small-project",
+  "schemaVersion": 1,
+  "setup": {
+    "commit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+    "fingerprint": "",
+    "lineageId": "v7-small-plain",
+    "tree": "97a99b1427c4a86352b256f3711e2e272fa2fc5e"
+  },
+  "snapshot": {
+    "fileHashes": [
+      {
+        "path": ".env.example",
+        "sha256": "fc19daf4b9550e46b48057934a5aec5542e23260bf2ddb0fc3e333f015c85f16"
+      },
+      {
+        "path": ".gitattributes",
+        "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "56ba0501c8d41bb289aadd625f5f4005e5e3348670230ddcae4be1115755b0a0"
+      },
+      {
+        "path": "HOWTOSETUP.md",
+        "sha256": "8a6e5f7614bceb6d826add5a56d359c69173707d3b39fe4f93b7e95a1e2d3889"
+      },
+      {
+        "path": "README.md",
+        "sha256": "e8f209133d36f6760ba16e0004c370af425780e28d00d43b89d304e70d5050fe"
+      },
+      {
+        "path": "TZ-telegram-gateway-service.md",
+        "sha256": "7d3f02edb0293a9a83405f0de5a96c8023a5aa4c4fef872d9da2e21155ea7aa8"
+      },
+      {
+        "path": "docker-compose.integration.yml",
+        "sha256": "d3820047c3c7709110adcc43995405180f52592cfce639095c3c255000f2790f"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "691975948578e32747ab7564f1b801ae83ddcee2e500c57c3602bd7d4cd0c84c"
+      },
+      {
+        "path": "package.json",
+        "sha256": "22c7be5a404b7d5998e80f195199f75d8adce0f5eed22ac80203df95c2e1be5b"
+      },
+      {
+        "path": "prisma/migrations/20260420202800_init/migration.sql",
+        "sha256": "d9fe79f8b9cfd6b743c5c1630016a9d0818c3ddd48e7f0cc019fcec504918b80"
+      },
+      {
+        "path": "prisma/migrations/migration_lock.toml",
+        "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7"
+      },
+      {
+        "path": "prisma/schema.prisma",
+        "sha256": "6c2c9c6e7c846286e250d462840d981f7ce1f0d69022af155216efe632dc2d04"
+      },
+      {
+        "path": "scripts/run-integration-tests.js",
+        "sha256": "c64e221d2dbd393e3037d23501c31749b06369390ee2d35a09aef5360241ace5"
+      },
+      {
+        "path": "src/app.ts",
+        "sha256": "7ea27b7a8789a9f03eae8a5b48c2082cea91242768b84000b0f949f1ebde3145"
+      },
+      {
+        "path": "src/config.ts",
+        "sha256": "42b22e50f320cc7e94dce607119320cee2dfb02eb770f5d0db98761373a78aa0"
+      },
+      {
+        "path": "src/fastify.d.ts",
+        "sha256": "12bf4921bdb6ade9c5cdb9049992536f99d6a99e308582c86c82429a5df8319e"
+      },
+      {
+        "path": "src/lib/crypto.ts",
+        "sha256": "6d6e009de21c4c7e24790fe362d6733faf4f58b2ccf08b5363480817e05a895b"
+      },
+      {
+        "path": "src/lib/errors.ts",
+        "sha256": "6d2761a4e7dfeb11e19852d4f2fc25dde452ed9900dafaed96c9f17dd8686e99"
+      },
+      {
+        "path": "src/lib/metrics.ts",
+        "sha256": "05697b8a4e6b2e006b741f7af5cc211a9d8dd7bef4fb32532fd892be1cf326f3"
+      },
+      {
+        "path": "src/lib/public-models.ts",
+        "sha256": "7322f3da93c692ef8cff703d4ebb0a4ee8a0e3126675c4a29d26738fc886d02b"
+      },
+      {
+        "path": "src/lib/retry.ts",
+        "sha256": "9b018eba730529b2ad50123fd8128f6c3c2b76f96bff9c38770871e6b520a9a3"
+      },
+      {
+        "path": "src/plugins/auth.ts",
+        "sha256": "95d1e84a47a968d645b593f361119f06b29c2d375704194677d5b6d530356a44"
+      },
+      {
+        "path": "src/routes/admin-routes.ts",
+        "sha256": "5c4c9386ff7fc3d57af7ee562bc261d984cefc65ad14d5b54947281b23536bc0"
+      },
+      {
+        "path": "src/routes/admin-ui-routes.ts",
+        "sha256": "10a24c6f9869300083ea373900a1a280bc67c7401af08658cab8db88070a4e95"
+      },
+      {
+        "path": "src/routes/bot-routes.ts",
+        "sha256": "581c724e8afc4a2383918bb19a12ed704bd9705b7b9710c0eef6734d439b1d0c"
+      },
+      {
+        "path": "src/routes/health-routes.ts",
+        "sha256": "2cc977c082d2f3408e28663a6856014302f6ff1eb66151d17ef6c67681496b4d"
+      },
+      {
+        "path": "src/routes/ingress-routes.ts",
+        "sha256": "e40f23c0cf2456f21e91c06185ab13d6644f4bc2a7f0f53329ee5e10023b0b49"
+      },
+      {
+        "path": "src/routes/istina-compat-routes.ts",
+        "sha256": "dc02f27f2846c686e5f6fc7d9c484cb8a4454351f6d9d5f09f74d99d59d48cf0"
+      },
+      {
+        "path": "src/server.ts",
+        "sha256": "021b64b70445b29546b27802af8d4ada34f2bfc2722e687fc5b7c06bea9c35dd"
+      },
+      {
+        "path": "src/services/admin-service.ts",
+        "sha256": "4ac0e2be86682408dcb33fe7357842cb57617b1293c327e97eac02fbfb58fab4"
+      },
+      {
+        "path": "src/services/audit-service.ts",
+        "sha256": "151e0e62aaaaeff632f6f5adbcd085a91c38ce2ed6519fb89455a60f0dc61276"
+      },
+      {
+        "path": "src/services/delivery-service.ts",
+        "sha256": "f73f17604175d4d67591dd8fc4952d77308401564752938983f3b6500baa6b02"
+      },
+      {
+        "path": "src/services/registration-service.ts",
+        "sha256": "84916c5132af5928a8fe05cc708d981c1bcf4f24eb8df8bd94ac19ee589a02ab"
+      },
+      {
+        "path": "src/services/telegram-service.ts",
+        "sha256": "f11c6855378acc44a77b36a8e2b8004a91f5440eb3ccdd2c7502128facd911bd"
+      },
+      {
+        "path": "src/services/worker-service.ts",
+        "sha256": "645420d123c5ae4e0277b150b4068539247a399fb704bc668c88ac335917ba48"
+      },
+      {
+        "path": "test/crypto.test.ts",
+        "sha256": "e7400aee3e955431dc337c49e090a9da2efb672efb1010f201f585cc2f008103"
+      },
+      {
+        "path": "test/integration/gateway.integration.test.ts",
+        "sha256": "7bc2f904c3e4f620f53586ffe5b51f00a0018fab16b15971537cfa5bfce9c153"
+      },
+      {
+        "path": "test/integration/test-helpers.ts",
+        "sha256": "4eca7b335c6135ded51a272df1adf05ecc8bc4686f3a48a7e1f7cee5a3eeab74"
+      },
+      {
+        "path": "test/retry.test.ts",
+        "sha256": "bb8a5a945ae8ea70c954b145d43bbeb2a7ca0017a67e99b7c4f544b4f451e9b2"
+      },
+      {
+        "path": "test/telegram-service.test.ts",
+        "sha256": "bb1b97da18f7947a31e4ead88e519b5d2f94c4e4fed33a0139814f86cff34bda"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "a200a0b15cb5af3a8195833e2478b2740ceafe464b047dc860395a61d3e995b8"
+      }
+    ],
+    "head": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+    "immutableCopyPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/first-pass/v7-small-plain-r1-1894a3c3a3f623a6aacb8ec421bcfc5e99ca30d64793a6c0336ce134087ad7c5.bundle",
+    "status": "M HOWTOSETUP.md\n M README.md\n M TZ-telegram-gateway-service.md\n M src/config.ts\n M src/routes/bot-routes.ts\n M test/integration/gateway.integration.test.ts\n M test/integration/test-helpers.ts",
+    "tree": "97a99b1427c4a86352b256f3711e2e272fa2fc5e"
+  },
+  "snapshotId": "1894a3c3a3f623a6aacb8ec421bcfc5e99ca30d64793a6c0336ce134087ad7c5",
+  "task": {
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "hostId": "local",
+    "infrastructureRetryIndex": 0,
+    "repairTurns": 0,
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "taskId": "01a0608f-189d-7d53-ab24-44820ac4ff2d"
+  },
+  "timing": {
+    "agentActiveMs": 4082557,
+    "humanWaitingMs": 0,
+    "taskElapsedMs": 4082557
+  },
+  "usability": {
+    "automaticDiscovery": false,
+    "browserUsed": false,
+    "clarifications": 0,
+    "methodErrors": 0,
+    "methodOperations": 0,
+    "terminalLifecycle": false,
+    "timeToFirstProductEditMs": 0
+  },
+  "usage": {
+    "aggregation": "sum_per_record",
+    "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+    "billing": {
+      "estimatedTaskCostUsd": 10.077087,
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "reasoningIncludedInOutput": true
+    },
+    "cacheWriteInputTokens": 0,
+    "cachedInputTokens": 338076160,
+    "capturedAt": "2026-09-02T07:22:40.420Z",
+    "inputTokens": 347258469,
+    "outputTokens": 1232585,
+    "reasoningOutputTokens": 0,
+    "redacted": true,
+    "schemaVersion": 1,
+    "source": {
+      "recordsObserved": 170,
+      "sessionSha256": "0201281e9417c5773c1e521672839d8d5f2dbbfb58c23d1b4cc89b9e7db79455",
+      "taskId": "01a0608f-189d-7d53-ab24-44820ac4ff2d"
+    },
+    "totalTokens": 348491054,
+    "uncachedInputTokens": 9182309,
+    "usageObjects": 170
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Final answer and first-pass snapshot are present; objective outcome is recorded separately."
+  }
+}

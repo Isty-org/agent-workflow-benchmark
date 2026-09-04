@@ -1,0 +1,34 @@
+#!/bin/sh
+set -eu
+
+branch_name=$(git symbolic-ref --quiet --short HEAD 2>/dev/null || true)
+case "$branch_name" in
+  v3/b??????) runtime_key=${branch_name#v3/} ;;
+  *) runtime_key=$(git rev-parse HEAD 2>/dev/null || true) ;;
+esac
+
+if [ -z "$runtime_key" ]; then
+  exit 0
+fi
+common_dir=$(git rev-parse --git-common-dir)
+runtime_dir="$common_dir/v3-runtime/$runtime_key"
+
+if [ ! -d "$runtime_dir" ]; then
+  exit 0
+fi
+
+if [ -f "$runtime_dir/connection.json" ]; then
+  mkdir -p .prist
+  cp "$runtime_dir/connection.json" .prist/connection.json
+fi
+if [ -f "$runtime_dir/workflow.json" ]; then
+  mkdir -p .prist
+  cp "$runtime_dir/workflow.json" .prist/workflow.json
+fi
+if [ -f "$runtime_dir/config.toml" ]; then
+  mkdir -p .codex
+  cp "$runtime_dir/config.toml" .codex/config.toml
+fi
+if [ -f "$runtime_dir/mcp.json" ]; then
+  cp "$runtime_dir/mcp.json" .mcp.json
+fi

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "condition": "bmad",
+  "activationBeforeProductEdit": [
+    "read .agents/skills/bmad-build/SKILL.md",
+    "run _bmad/scripts/render_skill.py for bmad-build exactly once",
+    "read the rendered workflow emitted by that command"
+  ],
+  "completion": [
+    "follow the rendered build workflow",
+    "run the workflow-required checks and review",
+    "leave the workflow completion artifacts required by the installed version"
+  ]
+}
+

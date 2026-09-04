@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a12132",
+  "scenario": "new",
+  "workspaceCommit": "8498ac52cc90d3fe85dea25784df9720a1b5799e",
+  "setupCommit": "178411826a9a2aadd6b2c3c153ba3193733ee2da",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-a12132-a",
+      "total": 29,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "reading-list.js:24-150 contains pure domain operations; app.js:33-289 owns UI state, rendering and persistence; serve.py:14-42 owns local serving."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Each book stores one status in reading-list.js:52-57; app.js:231-235 derives columns from state.books through groupByStatus."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "reading-list.test.js covers add, transitions and storage parsing; app.test.js covers rendering, persistence and reload behavior."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The domain API, centralized STATUSES array and statusConfig allow ordinary additions to be made incrementally; reading-list.js:14,113-150 and app.js:6-22."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md:7-26 accurately documents Windows/terminal start and tests, but contains no build or equivalent check instructions."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "index.html:46-83 and app.js:271-289 provide the requested add/list/move flow with local persistence; deletion remains related utility scope."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html:55-70 provides labels and required inputs; app.js:90-96,200-208,240-286 provides validation and focus handling; styles.css:56-59 provides visible focus states."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:28-30 states there is no network, account, database or remote sync; app.js uses localStorage and serve.py binds to 127.0.0.1."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-a12132-b",
+      "total": 29,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "app.js owns UI state, rendering and localStorage persistence; reading-list.js provides pure validation, normalization, grouping and state-transition logic."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "state.books is the single in-memory collection, persisted as JSON; each book carries one status, and rendering derives columns through domain.groupByStatus."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 4,
+          "evidence": [
+            "reading-list.test.js covers add, transitions and storage parsing; app.test.js covers rendering, persistence, status changes and reload behavior."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Book records have stable ids and explicit fields, while domain operations are isolated as composable functions. Ordinary additions can extend the record and UI without resetting existing data."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "README.md documents the Python prerequisite, Windows and terminal start, test command and local data scope. It does not document a build/type/package-check path or explicitly state that no build is required."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "The frozen receipt reports all N3-A01 through N3-A08 as passed across three repetitions, with local start and browser smoke also passing. The delete action remains directly related to list management."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "index.html provides Russian labels, required inputs, live error regions and alert messaging. app.js focuses the first invalid field and restores focus after status changes; styles.css provides visible focus outlines and empty states."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "app.js uses localStorage only; no external service or network API is present. serve.py binds to 127.0.0.1, and README.md states that no account, database or remote sync is used."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-a12132-a-finding-1",
+      "severity": "major",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The frozen receipt marks tests missing and required in repetitions 1-3. README.md:20-26 documents only a manual Node command."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a12132-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The frozen receipt marks build missing in repetitions 1-3, and README.md:7-26 has no build instructions."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-a12132-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "README.md:7-18 documents startup.",
+        "README.md:20-26 documents tests.",
+        "The README contains no build, type-check or explicit no-build instruction.",
+        "The frozen receipt reports the build result as missing in all three repetitions."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

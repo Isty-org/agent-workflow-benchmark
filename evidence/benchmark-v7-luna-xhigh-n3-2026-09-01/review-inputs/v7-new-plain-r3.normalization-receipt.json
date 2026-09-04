@@ -1,0 +1,53 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-9c8087",
+  "conditionVisibleInWorkspace": false,
+  "createdAt": "2026-09-02T06:59:12.596Z",
+  "destinationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-9c8087",
+  "excludedPaths": [
+    ".git"
+  ],
+  "executableProductContentChanged": false,
+  "includedFileHashes": [
+    {
+      "path": "app.js",
+      "sha256": "203db3555996a5bb5930092550b40e16b3c6ff3d5c901dabbb7b0777f15546a6"
+    },
+    {
+      "path": "index.html",
+      "sha256": "b32c88722a659caf2b668ac91885fb051d0ecf9ef411461aa831eb9194abdb12"
+    },
+    {
+      "path": "package.json",
+      "sha256": "d604158463cd8bfc20c6986d68c144a4c3ada564f509adde94a5af94dda2a796"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e167bf02d00a98eb995977a6130aa29d36a3fd05b6914b8d85bcfecf94c146b1"
+    },
+    {
+      "path": "server.js",
+      "sha256": "a3a6cd21620041e6b50efa371743c38a204f9c6b345fec91005ac871fd0d4313"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "8e1e31c40af1e98f5cbd8c03d35c51168fa453136708e14f85ef6271c0b63bb5"
+    }
+  ],
+  "includedPaths": [
+    "README.md",
+    "app.js",
+    "index.html",
+    "package.json",
+    "server.js",
+    "styles.css"
+  ],
+  "methodMetadataVisibleInWorkspace": false,
+  "runId": "v7-new-plain-r3",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "sourceWorkspaceCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "sourceWorkspacePath": "redacted",
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false
+}

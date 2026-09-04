@@ -1,0 +1,4895 @@
+{
+  "schemaVersion": 1,
+  "asset": "review-inputs-small-project.zip",
+  "kind": "review-inputs",
+  "scenario": "small-project",
+  "runIds": [
+    "v7-small-bmad-r1",
+    "v7-small-bmad-r2",
+    "v7-small-bmad-r3",
+    "v7-small-classic-r1",
+    "v7-small-classic-r2",
+    "v7-small-classic-r3",
+    "v7-small-plain-r1",
+    "v7-small-plain-r2",
+    "v7-small-plain-r3",
+    "v7c-small-prist-r1",
+    "v7c-small-prist-r2",
+    "v7c-small-prist-r3"
+  ],
+  "files": [
+    {
+      "path": "v7-small-bmad-r1/.env.example",
+      "bytes": 740,
+      "sha256": "82d41636956a087d88d60e95c099aae93070624c582b701603496b0b470ebae1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/.gitignore",
+      "bytes": 120,
+      "sha256": "73a5dae1c92b9a625ce1ecbcd16fc84f4b7498f6bfc64b983440645de88eb673",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/HOWTOSETUP.md",
+      "bytes": 36430,
+      "sha256": "a255eeac87ad5fba59ddd1f8d61d4ec8cc890fdc05e2afcd2ab0cd5ab0975f0d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/README.md",
+      "bytes": 5061,
+      "sha256": "00b7e84467812beab1d05673d4b00caba3b17994c305e94ed50254d2f4dcc351",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/config.ts",
+      "bytes": 3198,
+      "sha256": "57bd22ed531ce0519004bc3c9c11c1182e68bd5107d1a5794be93e1659662b19",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/routes/bot-routes.ts",
+      "bytes": 3942,
+      "sha256": "1c31823cc1f279d2daa571167af7a6d901a45efca08e329d5c8a1c7f972e27ad",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/routes/istina-compat-routes.ts",
+      "bytes": 8721,
+      "sha256": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/services/delivery-service.ts",
+      "bytes": 17013,
+      "sha256": "fce9e5cbfc8b3c7b489cb4bcf3a79696cf2b62092f55845d8a77c293a12666cc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/services/registration-service.ts",
+      "bytes": 17231,
+      "sha256": "b26c8eee2d2c94b7ff5c72d23132f4fc5f886fe050e16892956105c5c456e588",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/services/telegram-service.ts",
+      "bytes": 4221,
+      "sha256": "4800d43ed81081e20183f6ca2ea6bae05f7df555e7108af974d21a3f3f3a3fe9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/test/integration/gateway.integration.test.ts",
+      "bytes": 20337,
+      "sha256": "98e87439d2e2bee90790ba272254694f0e88d02dfc7396aebdea3e77e28c7c75",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/test/integration/test-helpers.ts",
+      "bytes": 5579,
+      "sha256": "034335ca74afadf022d1485f18d15adab44cb694ea3766d3813d0c7d45decdf0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/test/telegram-service.test.ts",
+      "bytes": 1242,
+      "sha256": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r1/TZ-telegram-gateway-service.md",
+      "bytes": 17316,
+      "sha256": "f3f84f959357c44fe8d7b913e6d30e0af8976383283eb5cf25f9f5e84a57cc9b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/.env.example",
+      "bytes": 740,
+      "sha256": "82d41636956a087d88d60e95c099aae93070624c582b701603496b0b470ebae1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/.gitignore",
+      "bytes": 120,
+      "sha256": "73a5dae1c92b9a625ce1ecbcd16fc84f4b7498f6bfc64b983440645de88eb673",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/HOWTOSETUP.md",
+      "bytes": 36430,
+      "sha256": "a255eeac87ad5fba59ddd1f8d61d4ec8cc890fdc05e2afcd2ab0cd5ab0975f0d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/README.md",
+      "bytes": 5061,
+      "sha256": "00b7e84467812beab1d05673d4b00caba3b17994c305e94ed50254d2f4dcc351",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/config.ts",
+      "bytes": 3198,
+      "sha256": "57bd22ed531ce0519004bc3c9c11c1182e68bd5107d1a5794be93e1659662b19",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/routes/bot-routes.ts",
+      "bytes": 3942,
+      "sha256": "1c31823cc1f279d2daa571167af7a6d901a45efca08e329d5c8a1c7f972e27ad",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/routes/istina-compat-routes.ts",
+      "bytes": 8721,
+      "sha256": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/services/delivery-service.ts",
+      "bytes": 17013,
+      "sha256": "fce9e5cbfc8b3c7b489cb4bcf3a79696cf2b62092f55845d8a77c293a12666cc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/services/registration-service.ts",
+      "bytes": 17231,
+      "sha256": "b26c8eee2d2c94b7ff5c72d23132f4fc5f886fe050e16892956105c5c456e588",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/services/telegram-service.ts",
+      "bytes": 4221,
+      "sha256": "4800d43ed81081e20183f6ca2ea6bae05f7df555e7108af974d21a3f3f3a3fe9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/test/integration/gateway.integration.test.ts",
+      "bytes": 20337,
+      "sha256": "98e87439d2e2bee90790ba272254694f0e88d02dfc7396aebdea3e77e28c7c75",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/test/integration/test-helpers.ts",
+      "bytes": 5579,
+      "sha256": "034335ca74afadf022d1485f18d15adab44cb694ea3766d3813d0c7d45decdf0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/test/telegram-service.test.ts",
+      "bytes": 1242,
+      "sha256": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r2/TZ-telegram-gateway-service.md",
+      "bytes": 17316,
+      "sha256": "f3f84f959357c44fe8d7b913e6d30e0af8976383283eb5cf25f9f5e84a57cc9b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/.gitignore",
+      "bytes": 120,
+      "sha256": "73a5dae1c92b9a625ce1ecbcd16fc84f4b7498f6bfc64b983440645de88eb673",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/app.js",
+      "bytes": 2123,
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/config.js",
+      "bytes": 3432,
+      "sha256": "aec51fd695bb5c479fbf08fe7400d860e42155a96898a7bd46d8ff3a958f1c6f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/lib/crypto.js",
+      "bytes": 2578,
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/lib/errors.js",
+      "bytes": 1637,
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/lib/metrics.js",
+      "bytes": 2825,
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/lib/public-models.js",
+      "bytes": 1809,
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/lib/retry.js",
+      "bytes": 1107,
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/plugins/auth.js",
+      "bytes": 2606,
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/routes/admin-routes.js",
+      "bytes": 2827,
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/routes/admin-ui-routes.js",
+      "bytes": 24051,
+      "sha256": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/routes/bot-routes.js",
+      "bytes": 6578,
+      "sha256": "9c7c5c03cfdc7482df02e0b8e34a8a7046f4defe917a261f12070a627351b8a9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/routes/health-routes.js",
+      "bytes": 861,
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/routes/ingress-routes.js",
+      "bytes": 1296,
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/routes/istina-compat-routes.js",
+      "bytes": 12385,
+      "sha256": "e90cfe38ecea6fb20ffd4f5ff30a8a4d829ae88cddadc366368ce49c06744ce3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/server.js",
+      "bytes": 371,
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/services/admin-service.js",
+      "bytes": 9501,
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/services/audit-service.js",
+      "bytes": 505,
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/services/delivery-service.js",
+      "bytes": 18437,
+      "sha256": "dfea43288334ef29e1d34e0397ed3ddfede0edeb6948d15f29e1e7ef4acad59a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/services/registration-service.js",
+      "bytes": 18711,
+      "sha256": "e404c4f9683eb98d110beeef91f60a0f3c38cdf9f9debc6c58efbe5de89f35d3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/services/telegram-service.js",
+      "bytes": 3624,
+      "sha256": "b7aa1f6b81c6e8c85eb6f61435eaae95efc387cd5db4019ffd8787ed986aa479",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/src/services/worker-service.js",
+      "bytes": 1075,
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/test/config.test.js",
+      "bytes": 1542,
+      "sha256": "ee445fa68ca790e6430c9d4095ade514f80c37fed654c82e48047a584e9fc91d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/test/crypto.test.js",
+      "bytes": 1240,
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/test/integration/gateway.integration.test.js",
+      "bytes": 40310,
+      "sha256": "3f05fa5b49ad59657cfaf17812b8a9afbca16a474d16cfa54d6ea6b7d6ee6c3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/test/integration/test-helpers.js",
+      "bytes": 5373,
+      "sha256": "38e9b9aae7261ebbe06f601eebfdc50b6c7ac1924f3df079d7f7c76430f3871e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/test/retry.test.js",
+      "bytes": 1383,
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/dist/test/telegram-service.test.js",
+      "bytes": 1669,
+      "sha256": "172691e57caa0d01efcc468253ecdc321395397e320f7af4baba28e5347f1f6d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/HOWTOSETUP.md",
+      "bytes": 41982,
+      "sha256": "2e2b66bbb94cf0fbc7dc88a91eb016d0add73014a2eb502d1c68bfe88c9ad6d0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/README.md",
+      "bytes": 7025,
+      "sha256": "8c1e4feb9fafbd72419ef1ab15f6166815227db75f2af2c8fde7e08efccdf63e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/config.ts",
+      "bytes": 3228,
+      "sha256": "5177e3c8cb6dde2faa87fd61a8c871fce4d2f441b7727a4d95263fd08b070687",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/routes/bot-routes.ts",
+      "bytes": 6063,
+      "sha256": "27f8dc048c88d52d0d851dc716ea0011f366a0ed7756767eb449e1c8e466ca83",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/routes/istina-compat-routes.ts",
+      "bytes": 11771,
+      "sha256": "9b78f318d45227c49c898266e3c4b62bc25eb7161700b7ba2044fa8dccd12836",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/services/delivery-service.ts",
+      "bytes": 17151,
+      "sha256": "28fba3473945facb6d096100e98697a63af719a9419e668bf5135ed05efeae89",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/services/registration-service.ts",
+      "bytes": 17304,
+      "sha256": "0122c4f3882823f81f48baf613f84dab05a9e12da631902cdc95b0a73573cd03",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/services/telegram-service.ts",
+      "bytes": 4256,
+      "sha256": "4cd0ef3df06907e5314d1c08370a5a7da0a3abef0e9270fe533e1fb61f682735",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/test/config.test.ts",
+      "bytes": 1302,
+      "sha256": "cd7619b1d3b0b2bcc3b6a9b29f9b9ba3c412f633ed2c0941e04cd219e5582e64",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/test/integration/gateway.integration.test.ts",
+      "bytes": 33298,
+      "sha256": "c42d914497f5a1bf6467d71d9990947a9b4f5e0807db8fa9054e2277590d6ac6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/test/integration/test-helpers.ts",
+      "bytes": 5649,
+      "sha256": "c64842918418820be34c84815af8f0a818ac63609195b47e0da865f111f10846",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/test/telegram-service.test.ts",
+      "bytes": 1445,
+      "sha256": "dc33a6498512cd1809002e1e5c83f31d2cb7282915fb92a85f9ceafa0eb820b5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-bmad-r3/TZ-telegram-gateway-service.md",
+      "bytes": 17316,
+      "sha256": "f3f84f959357c44fe8d7b913e6d30e0af8976383283eb5cf25f9f5e84a57cc9b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/.agentsignore",
+      "bytes": 42,
+      "sha256": "7d8625a1e93b458c27a676c26476ade10ff108f0257f5193dbef6d9a35dfd8a3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/.gitignore",
+      "bytes": 71,
+      "sha256": "cbf77a6f24601a7fe9e57c0c14f1bc794d4ac22cace47e29dad80bc191de7b14",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/app.js",
+      "bytes": 2123,
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/config.js",
+      "bytes": 3549,
+      "sha256": "8abd0fee2514ce78a84a37f2e48ed0f0426cf50fb057565d4b2c4cffb5988991",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/lib/crypto.js",
+      "bytes": 2578,
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/lib/errors.js",
+      "bytes": 1637,
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/lib/metrics.js",
+      "bytes": 2825,
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/lib/public-models.js",
+      "bytes": 1809,
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/lib/retry.js",
+      "bytes": 1107,
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/plugins/auth.js",
+      "bytes": 2606,
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/routes/admin-routes.js",
+      "bytes": 2827,
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/routes/admin-ui-routes.js",
+      "bytes": 24051,
+      "sha256": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/routes/bot-routes.js",
+      "bytes": 4444,
+      "sha256": "4c7bf4657fe23c36b035fb4398e54232e74cbfb3daa19a94a8dceefcb42069e6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/routes/health-routes.js",
+      "bytes": 861,
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/routes/ingress-routes.js",
+      "bytes": 1296,
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/routes/istina-compat-routes.js",
+      "bytes": 9506,
+      "sha256": "db64c618bd252d0fd0e349cf417af26474ba2e0e895fba2b04928cb7d79f8451",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/server.js",
+      "bytes": 371,
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/services/admin-service.js",
+      "bytes": 9501,
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/services/audit-service.js",
+      "bytes": 505,
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/services/delivery-service.js",
+      "bytes": 18275,
+      "sha256": "1aa3809e3b70a84145f80f31fb81468676e446f984084b1c53165c1a3578e8d0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/services/registration-service.js",
+      "bytes": 21184,
+      "sha256": "341bb6ca9ce66618f6858ce6d35a58041fc6fc1828f49ec2c8364866d9a008ab",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/services/telegram-service.js",
+      "bytes": 3578,
+      "sha256": "e84f14074851f61fabcf8e6306ac0d8d38a556f77f1bf9c4e45cb6844d4aabc3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/src/services/worker-service.js",
+      "bytes": 1075,
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/test/crypto.test.js",
+      "bytes": 1240,
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/test/integration/gateway.integration.test.js",
+      "bytes": 30621,
+      "sha256": "c8c28f2122f9744cd12b63e0064e3274a49b9f0aae78aa46a8fe48431ea33e76",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/test/integration/test-helpers.js",
+      "bytes": 5373,
+      "sha256": "38e9b9aae7261ebbe06f601eebfdc50b6c7ac1924f3df079d7f7c76430f3871e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/test/retry.test.js",
+      "bytes": 1383,
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/dist/test/telegram-service.test.js",
+      "bytes": 1420,
+      "sha256": "fa0f5d263084ce32238b3629062c443219ea609805c5e1451a3b1e9eaa425349",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/HOWTOSETUP.md",
+      "bytes": 38550,
+      "sha256": "8cd1134afb966941956583cd643b9e25b539ec28e1c082c147112d520fa5778d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/README.md",
+      "bytes": 5782,
+      "sha256": "924efccf26699b930984eb76d94d990d933eca4f97d4fc31007e05561c6030aa",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/.me",
+      "bytes": 58,
+      "sha256": "221f533f18baccabf4eb04aab23d34d312dd68028085f5387eda125361fdb20f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/.me.template",
+      "bytes": 282,
+      "sha256": "aa70a07ef9140fa6ae1f3f695fd21d40658ec07def256be06b2b4609982940db",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/BOARD.md",
+      "bytes": 827,
+      "sha256": "74edeefe2fe439d18d87da804d0eb849e28f8f348a3e4e9ea926868c6aa2ade2",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/main.md",
+      "bytes": 4133,
+      "sha256": "a21b279b7ca834b75a6ce3bf55f9eacadbf941a000e826aaa1e6bc7909f44313",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/PROP-000.md",
+      "bytes": 9815,
+      "sha256": "059157978e3cd03e7613d91e6e3ef23f850cc4f908affa7dc41c2337bdfc01d1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/PROP-001-DATA.md",
+      "bytes": 7969,
+      "sha256": "327613ebed6e5df03c915dcdfd7ca63275eb0309c1bc3878d544aed20763471a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/PROP-002-STACK.md",
+      "bytes": 6421,
+      "sha256": "9b55863310bef8c2fa12777931d9a8ff04fef9a207cc83ca3b9236fe6d26f702",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/PROP-003-UI.md",
+      "bytes": 3636,
+      "sha256": "e80f825624f6fbc47233a38a673d31b9bb5b8802605f739fb2587f403b20a1b9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/PROP-004-PRODUCT.md",
+      "bytes": 5729,
+      "sha256": "bb20a1e984277b31b424f8efd094233fe76a20b8895fe4f4f2bcc0e093a6add2",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/PROP-005-RUNTIME.md",
+      "bytes": 5694,
+      "sha256": "845964fcd131e9f6b28f7392120ccd00969adebbae0b83c9850bf629044f96b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/PROP-006-API.md",
+      "bytes": 6395,
+      "sha256": "9a9a2fbf36ccffc05f7894361310eb0ba0f2cb6cdda6788b324b21e9dbc3dd7e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/common/structure.md",
+      "bytes": 5107,
+      "sha256": "17aef13162d093bbd1b84842ba9f9cbf8e256907c5a78240abc2b9181c807531",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/examples/FEAT-901-example-product-capability.md",
+      "bytes": 3565,
+      "sha256": "ab690b68efeb38bdc8faa1511c2c3de100f4f132281fa536b18f5724a34c9a8a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/examples/INFRA-900-example-runtime-baseline.md",
+      "bytes": 4060,
+      "sha256": "39499fc40881afa1cb126624b8d479c0995fce63e1b53d2a8131e7df65774b06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/modules/gateway/FEAT-101-admin-control-plane.md",
+      "bytes": 5718,
+      "sha256": "45be835f0200e73da023eec5081f080de01630101d613e1e3eb21de55c5b7477",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/modules/gateway/FEAT-102-bot-registration.md",
+      "bytes": 6411,
+      "sha256": "2b0457a1b796584456040bb000fcc47440314e96c46e4464488a57fa8a79c177",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/modules/gateway/FEAT-103-inbound-relay.md",
+      "bytes": 5623,
+      "sha256": "6c1a2c2af73167faf602f6f98bec27e0c96e681157b9789adcb2a47c9b13caac",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/modules/gateway/FEAT-104-outbound-delivery.md",
+      "bytes": 5620,
+      "sha256": "7373988723a5956bea7f7a31c1b4ceacd00e28c136627d772dd926343f1517d3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/modules/gateway/FEAT-105-istina-compatibility.md",
+      "bytes": 6876,
+      "sha256": "963e29edbd3c4add2bc83922abe280ef0e3ea410f761983455d5ae777e8a2861",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/modules/gateway/FEAT-106-message-mutations.md",
+      "bytes": 8441,
+      "sha256": "7beaa1094645265d5d4eecd3a44074d6b01054ae39378e379c80e2d721718a2d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/modules/gateway/INFRA-101-deployment-baseline.md",
+      "bytes": 5560,
+      "sha256": "a0ff9b93720280504eff349e2349ca51fff13d708b5ae9d4d5c9aec31c02fae1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/modules/gateway/PROP-100-gateway-module.md",
+      "bytes": 3594,
+      "sha256": "27bc8a73bd9db407026dd5a174b4e857ce7a7bab0b7ef9f6f53a9dcded71c816",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/SPEC-MAP.md",
+      "bytes": 3199,
+      "sha256": "843387e1637368bfe2d2b42cadb839af7f66f75fdaf39339f135d7465b4097cc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/TECHDEBT.md",
+      "bytes": 982,
+      "sha256": "afb54f54b9497f751825e998c0f46308cdc2716503840e61ff3636ff9669c37f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/specs/WAL.md",
+      "bytes": 242,
+      "sha256": "c67fcb35d6f0c414b582fe2607e1dc35623f216722e1838b9ac44bb89a7b73c1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/config.ts",
+      "bytes": 3344,
+      "sha256": "91ca4806ef6055b5a06f5efa11c72020cc76764145756ff396c1daeb61085ca9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/routes/bot-routes.ts",
+      "bytes": 4127,
+      "sha256": "0aae91bb4d5440fbc96c04fd8d5ebfd661d1a3a7699485e0e7351ace4806786b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/routes/istina-compat-routes.ts",
+      "bytes": 8721,
+      "sha256": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/services/delivery-service.ts",
+      "bytes": 17013,
+      "sha256": "fce9e5cbfc8b3c7b489cb4bcf3a79696cf2b62092f55845d8a77c293a12666cc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/services/registration-service.ts",
+      "bytes": 19729,
+      "sha256": "912b65488eb0fef82ff94369123b02ad157f106db60aa5f7aa9fb2be6738572e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/services/telegram-service.ts",
+      "bytes": 4221,
+      "sha256": "4800d43ed81081e20183f6ca2ea6bae05f7df555e7108af974d21a3f3f3a3fe9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/test/integration/gateway.integration.test.ts",
+      "bytes": 25556,
+      "sha256": "51795a7674328a1cb7c8aa643b0c5c016c1889629546b89f4d232c99c8dc3a56",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/test/integration/test-helpers.ts",
+      "bytes": 5649,
+      "sha256": "c64842918418820be34c84815af8f0a818ac63609195b47e0da865f111f10846",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/test/telegram-service.test.ts",
+      "bytes": 1242,
+      "sha256": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r1/TZ-telegram-gateway-service.md",
+      "bytes": 17408,
+      "sha256": "4332f5f1e809403d73a4f98a239f1b2d12847eb66c0cb3d012d81514e73211b1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/.agentsignore",
+      "bytes": 42,
+      "sha256": "7d8625a1e93b458c27a676c26476ade10ff108f0257f5193dbef6d9a35dfd8a3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/.gitignore",
+      "bytes": 71,
+      "sha256": "cbf77a6f24601a7fe9e57c0c14f1bc794d4ac22cace47e29dad80bc191de7b14",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/HOWTOSETUP.md",
+      "bytes": 37810,
+      "sha256": "e1e7dca90407cd5f869b3222e7c38e95fca8bd4eaade49b7dedef0e4ea62496b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/README.md",
+      "bytes": 5748,
+      "sha256": "f53927f858ff27cf4e7b436cf1867dcede7235c8f63e80c894ff2d5c8fc02c9b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/.me",
+      "bytes": 58,
+      "sha256": "221f533f18baccabf4eb04aab23d34d312dd68028085f5387eda125361fdb20f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/.me.template",
+      "bytes": 282,
+      "sha256": "aa70a07ef9140fa6ae1f3f695fd21d40658ec07def256be06b2b4609982940db",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/BOARD.md",
+      "bytes": 1053,
+      "sha256": "efd9131e5672469cb919c72e02c0a3b65e631526f1244a333f165e63eb04fc43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/main.md",
+      "bytes": 4133,
+      "sha256": "a21b279b7ca834b75a6ce3bf55f9eacadbf941a000e826aaa1e6bc7909f44313",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/PROP-000.md",
+      "bytes": 9815,
+      "sha256": "059157978e3cd03e7613d91e6e3ef23f850cc4f908affa7dc41c2337bdfc01d1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/PROP-001-DATA.md",
+      "bytes": 7969,
+      "sha256": "327613ebed6e5df03c915dcdfd7ca63275eb0309c1bc3878d544aed20763471a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/PROP-002-STACK.md",
+      "bytes": 6437,
+      "sha256": "46a0f833d1355766a9922db9be317d7cd6a665e15724c5b63087b87b10512cf4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/PROP-003-UI.md",
+      "bytes": 3636,
+      "sha256": "e80f825624f6fbc47233a38a673d31b9bb5b8802605f739fb2587f403b20a1b9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/PROP-004-PRODUCT.md",
+      "bytes": 5729,
+      "sha256": "bb20a1e984277b31b424f8efd094233fe76a20b8895fe4f4f2bcc0e093a6add2",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/PROP-005-RUNTIME.md",
+      "bytes": 5694,
+      "sha256": "845964fcd131e9f6b28f7392120ccd00969adebbae0b83c9850bf629044f96b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/PROP-006-API.md",
+      "bytes": 7143,
+      "sha256": "bbb3cc4dca955ffd8bdd23d04f1a94bd39c9135391b9cf1ac04a76361320b85b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/common/structure.md",
+      "bytes": 5107,
+      "sha256": "17aef13162d093bbd1b84842ba9f9cbf8e256907c5a78240abc2b9181c807531",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/examples/FEAT-901-example-product-capability.md",
+      "bytes": 3565,
+      "sha256": "ab690b68efeb38bdc8faa1511c2c3de100f4f132281fa536b18f5724a34c9a8a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/examples/INFRA-900-example-runtime-baseline.md",
+      "bytes": 4060,
+      "sha256": "39499fc40881afa1cb126624b8d479c0995fce63e1b53d2a8131e7df65774b06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/modules/gateway/FEAT-101-admin-control-plane.md",
+      "bytes": 5718,
+      "sha256": "45be835f0200e73da023eec5081f080de01630101d613e1e3eb21de55c5b7477",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/modules/gateway/FEAT-102-bot-registration.md",
+      "bytes": 6411,
+      "sha256": "2b0457a1b796584456040bb000fcc47440314e96c46e4464488a57fa8a79c177",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/modules/gateway/FEAT-103-inbound-relay.md",
+      "bytes": 5623,
+      "sha256": "6c1a2c2af73167faf602f6f98bec27e0c96e681157b9789adcb2a47c9b13caac",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/modules/gateway/FEAT-104-outbound-delivery.md",
+      "bytes": 7611,
+      "sha256": "97b00a09f80872725049579bd1c2dcd7c07790fa2287c9547cd96b46e6f7fa34",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/modules/gateway/FEAT-105-istina-compatibility.md",
+      "bytes": 6876,
+      "sha256": "963e29edbd3c4add2bc83922abe280ef0e3ea410f761983455d5ae777e8a2861",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/modules/gateway/INFRA-101-deployment-baseline.md",
+      "bytes": 5560,
+      "sha256": "a0ff9b93720280504eff349e2349ca51fff13d708b5ae9d4d5c9aec31c02fae1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/modules/gateway/PROP-100-gateway-module.md",
+      "bytes": 3594,
+      "sha256": "27bc8a73bd9db407026dd5a174b4e857ce7a7bab0b7ef9f6f53a9dcded71c816",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/SPEC-MAP.md",
+      "bytes": 3014,
+      "sha256": "0272fa13076655b540814c4622897aaa772ecfeab2e4fd2d5127bef36de7d10d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/TECHDEBT.md",
+      "bytes": 982,
+      "sha256": "afb54f54b9497f751825e998c0f46308cdc2716503840e61ff3636ff9669c37f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/specs/WAL.md",
+      "bytes": 1029,
+      "sha256": "ec0a6f05de4d5a8049d23a4d61012b11c8d74a6def4ca4a7ef8b0b9acf581eb5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/config.ts",
+      "bytes": 3343,
+      "sha256": "4f41098370113ecd49ac8a6196d5db875d8e6fbf72146a8180e6a46ef62e4175",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/lib/outbound-validation.ts",
+      "bytes": 2552,
+      "sha256": "6f9d915ad255b149b644728c3db503dab402da86d080d4d405a865cf5acccede",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/routes/bot-routes.ts",
+      "bytes": 3942,
+      "sha256": "1c31823cc1f279d2daa571167af7a6d901a45efca08e329d5c8a1c7f972e27ad",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/routes/istina-compat-routes.ts",
+      "bytes": 8721,
+      "sha256": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/services/delivery-service.ts",
+      "bytes": 17013,
+      "sha256": "fce9e5cbfc8b3c7b489cb4bcf3a79696cf2b62092f55845d8a77c293a12666cc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/services/registration-service.ts",
+      "bytes": 17568,
+      "sha256": "9f8269708068661431aadf4acede60744aefac6ef383df19d278f1921be7e00d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/services/telegram-service.ts",
+      "bytes": 4221,
+      "sha256": "4800d43ed81081e20183f6ca2ea6bae05f7df555e7108af974d21a3f3f3a3fe9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/test/integration/gateway.integration.test.ts",
+      "bytes": 25453,
+      "sha256": "35cb7be2ad940d777d2e06d3718b02b93d7b71399cf91acf0dc6cbc11742574f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/test/integration/test-helpers.ts",
+      "bytes": 5649,
+      "sha256": "c64842918418820be34c84815af8f0a818ac63609195b47e0da865f111f10846",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/test/outbound-validation.test.ts",
+      "bytes": 1582,
+      "sha256": "d50f9830fc12eb558f17b9f49b837f9b942d8a2e874bed4d7d64e57dbb6a9694",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/test/telegram-service.test.ts",
+      "bytes": 1242,
+      "sha256": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r2/TZ-telegram-gateway-service.md",
+      "bytes": 17391,
+      "sha256": "d75365d823687120866183e0f87a758657f105377218a23165a135911acc02f4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/.agentsignore",
+      "bytes": 42,
+      "sha256": "7d8625a1e93b458c27a676c26476ade10ff108f0257f5193dbef6d9a35dfd8a3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/.git",
+      "bytes": 80,
+      "sha256": "1b2fe7e7e9150e7cb66bd6096b29d545de3c6c0f048ce36eb90512652331fb3c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/.gitignore",
+      "bytes": 71,
+      "sha256": "cbf77a6f24601a7fe9e57c0c14f1bc794d4ac22cace47e29dad80bc191de7b14",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/app.js",
+      "bytes": 2123,
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/config.js",
+      "bytes": 3432,
+      "sha256": "aec51fd695bb5c479fbf08fe7400d860e42155a96898a7bd46d8ff3a958f1c6f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/lib/crypto.js",
+      "bytes": 2578,
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/lib/errors.js",
+      "bytes": 1637,
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/lib/metrics.js",
+      "bytes": 2825,
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/lib/public-models.js",
+      "bytes": 1809,
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/lib/retry.js",
+      "bytes": 1107,
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/plugins/auth.js",
+      "bytes": 2606,
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/routes/admin-routes.js",
+      "bytes": 2827,
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/routes/admin-ui-routes.js",
+      "bytes": 24051,
+      "sha256": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/routes/bot-routes.js",
+      "bytes": 5842,
+      "sha256": "3e95f8125c67feeeaf96af5ba543c96195b151783365f6a6ec36fcf6ff2be3fe",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/routes/health-routes.js",
+      "bytes": 861,
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/routes/ingress-routes.js",
+      "bytes": 1296,
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/routes/istina-compat-routes.js",
+      "bytes": 13573,
+      "sha256": "60f214867d3d179203a57c4734bfdb2bc1451070bae126bda010f3f9ed3b91f4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/server.js",
+      "bytes": 371,
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/services/admin-service.js",
+      "bytes": 9501,
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/services/audit-service.js",
+      "bytes": 505,
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/services/delivery-service.js",
+      "bytes": 18816,
+      "sha256": "ce2145f4400f0fcd6454ce3771990eaa403b7134a5f016362b110fbcf27f4b25",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/services/registration-service.js",
+      "bytes": 18651,
+      "sha256": "7abb4c054c77a2cec937167379ff8f2f5f6fca4318625b7208e05f3a0e244385",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/services/telegram-service.js",
+      "bytes": 4291,
+      "sha256": "101003c86b1e4bcd177fa30739fdb06d97d94587c5c87327cd6142b81013e566",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/src/services/worker-service.js",
+      "bytes": 1075,
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/test/crypto.test.js",
+      "bytes": 1240,
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/test/integration/gateway.integration.test.js",
+      "bytes": 32395,
+      "sha256": "b889644c8b49e6ba2e9714efff12ec1612bf8f925c3844ff47faeb601e590dbc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/test/integration/test-helpers.js",
+      "bytes": 5373,
+      "sha256": "38e9b9aae7261ebbe06f601eebfdc50b6c7ac1924f3df079d7f7c76430f3871e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/test/retry.test.js",
+      "bytes": 1383,
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/dist/test/telegram-service.test.js",
+      "bytes": 2774,
+      "sha256": "f5e742bf2aaadaa381e2e74bebe5fff81e3eafd2c31502a6b8189e0726336112",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/HOWTOSETUP.md",
+      "bytes": 36489,
+      "sha256": "4828d1acc06f7ab369dd59435e802b3528b7f2de37cc532c2f1d44fbe9023c05",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/objective-check.json",
+      "bytes": 22913,
+      "sha256": "ce8da725ea22c06a0db033b66a539d6d41110adee743c05ec787d500c8b32a41",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/README.md",
+      "bytes": 6499,
+      "sha256": "489f29f0adf79a598db4b578a4ca99c906784d5102c14161f8f4872738a77fc7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/.me",
+      "bytes": 58,
+      "sha256": "221f533f18baccabf4eb04aab23d34d312dd68028085f5387eda125361fdb20f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/.me.template",
+      "bytes": 282,
+      "sha256": "aa70a07ef9140fa6ae1f3f695fd21d40658ec07def256be06b2b4609982940db",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/BOARD.md",
+      "bytes": 667,
+      "sha256": "4a914747be514020c3d5b9db6f5a41582e94ff27a0203ed8133287c127fcd5ce",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/main.md",
+      "bytes": 4133,
+      "sha256": "a21b279b7ca834b75a6ce3bf55f9eacadbf941a000e826aaa1e6bc7909f44313",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/PROP-000.md",
+      "bytes": 9815,
+      "sha256": "059157978e3cd03e7613d91e6e3ef23f850cc4f908affa7dc41c2337bdfc01d1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/PROP-001-DATA.md",
+      "bytes": 8181,
+      "sha256": "2b9c18be6e9e57db42c5174699241c5c37fc9aaa5e1328a42ae3ba4bf0a09dc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/PROP-002-STACK.md",
+      "bytes": 6318,
+      "sha256": "3d06c72f6f2d5b5a25e434aa403081f457a4314b00a524a04cefca31bb4755fb",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/PROP-003-UI.md",
+      "bytes": 3636,
+      "sha256": "e80f825624f6fbc47233a38a673d31b9bb5b8802605f739fb2587f403b20a1b9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/PROP-004-PRODUCT.md",
+      "bytes": 5729,
+      "sha256": "bb20a1e984277b31b424f8efd094233fe76a20b8895fe4f4f2bcc0e093a6add2",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/PROP-005-RUNTIME.md",
+      "bytes": 5916,
+      "sha256": "e5dabaf7e6106b755b7dff49d0b3bfae5b149cc86c836c43d539abafb786487f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/PROP-006-API.md",
+      "bytes": 6977,
+      "sha256": "524bafde01fa375212938e8686c84387cd75ad993f20b44b5f3e92c31ed9c6ab",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/common/structure.md",
+      "bytes": 5107,
+      "sha256": "17aef13162d093bbd1b84842ba9f9cbf8e256907c5a78240abc2b9181c807531",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/examples/FEAT-901-example-product-capability.md",
+      "bytes": 3565,
+      "sha256": "ab690b68efeb38bdc8faa1511c2c3de100f4f132281fa536b18f5724a34c9a8a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/examples/INFRA-900-example-runtime-baseline.md",
+      "bytes": 4060,
+      "sha256": "39499fc40881afa1cb126624b8d479c0995fce63e1b53d2a8131e7df65774b06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/modules/gateway/FEAT-101-admin-control-plane.md",
+      "bytes": 5718,
+      "sha256": "45be835f0200e73da023eec5081f080de01630101d613e1e3eb21de55c5b7477",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/modules/gateway/FEAT-102-bot-registration.md",
+      "bytes": 6411,
+      "sha256": "2b0457a1b796584456040bb000fcc47440314e96c46e4464488a57fa8a79c177",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/modules/gateway/FEAT-103-inbound-relay.md",
+      "bytes": 5623,
+      "sha256": "6c1a2c2af73167faf602f6f98bec27e0c96e681157b9789adcb2a47c9b13caac",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/modules/gateway/FEAT-104-outbound-delivery.md",
+      "bytes": 6355,
+      "sha256": "b3d050ef923ca1e968cfcd37e5b4282938a3e79428161e6e13003cc5d82d5f5a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/modules/gateway/FEAT-105-istina-compatibility.md",
+      "bytes": 8384,
+      "sha256": "70db15ca2acfb8375e457e6b87d7d9afe4695482b767f3b4479e02733076a4be",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/modules/gateway/INFRA-101-deployment-baseline.md",
+      "bytes": 5560,
+      "sha256": "a0ff9b93720280504eff349e2349ca51fff13d708b5ae9d4d5c9aec31c02fae1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/modules/gateway/PROP-100-gateway-module.md",
+      "bytes": 3594,
+      "sha256": "27bc8a73bd9db407026dd5a174b4e857ce7a7bab0b7ef9f6f53a9dcded71c816",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/SPEC-MAP.md",
+      "bytes": 3014,
+      "sha256": "0272fa13076655b540814c4622897aaa772ecfeab2e4fd2d5127bef36de7d10d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/TECHDEBT.md",
+      "bytes": 982,
+      "sha256": "afb54f54b9497f751825e998c0f46308cdc2716503840e61ff3636ff9669c37f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/specs/WAL.md",
+      "bytes": 242,
+      "sha256": "c67fcb35d6f0c414b582fe2607e1dc35623f216722e1838b9ac44bb89a7b73c1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/config.ts",
+      "bytes": 3228,
+      "sha256": "5177e3c8cb6dde2faa87fd61a8c871fce4d2f441b7727a4d95263fd08b070687",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/routes/bot-routes.ts",
+      "bytes": 5505,
+      "sha256": "919a1ed50ff39f1f29243f41f3f46aa4774d69f8901d8e595e02c9ba8ad2c1e5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/routes/istina-compat-routes.ts",
+      "bytes": 12640,
+      "sha256": "dca6baf56e0a07da461687aa6339a971dea4b8e30b900878bdb0d9bcf43d8132",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/services/delivery-service.ts",
+      "bytes": 17550,
+      "sha256": "ffc55196ca23e6788c728f39468317d401d0181624360ce76e87991395e19ff5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/services/registration-service.ts",
+      "bytes": 17252,
+      "sha256": "277d8399541f8b0efd9cedc6cf1bc939480618c4c06b4300d1dba3414cbc0d8d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/services/telegram-service.ts",
+      "bytes": 5130,
+      "sha256": "3a5c55e45c67539c84f6d84c93af18eaae0549e7979ac57420a1a9ae3824d0b0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/test/integration/gateway.integration.test.ts",
+      "bytes": 26888,
+      "sha256": "6caa779cc7f0bbf1e44125f36c93385c34863288085a3c85b45e7917c564441d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/test/integration/test-helpers.ts",
+      "bytes": 5649,
+      "sha256": "c64842918418820be34c84815af8f0a818ac63609195b47e0da865f111f10846",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/test/telegram-service.test.ts",
+      "bytes": 2552,
+      "sha256": "8a605f20b3cb407d7b03ec144d3e679df9d71f7117c9e1765bd9ca5da82b083e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-classic-r3/TZ-telegram-gateway-service.md",
+      "bytes": 17409,
+      "sha256": "aeece9c9e2d0467149de3851d91d452a331e5a4ec0a7425964405975d638f8d5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/.env.example",
+      "bytes": 740,
+      "sha256": "82d41636956a087d88d60e95c099aae93070624c582b701603496b0b470ebae1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/.gitignore",
+      "bytes": 39,
+      "sha256": "f989ed7a0d82c39df51d9535328bf1f81e976a70647aeb80ae5c92ef676f7c4f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/app.js",
+      "bytes": 2123,
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/config.js",
+      "bytes": 3432,
+      "sha256": "aec51fd695bb5c479fbf08fe7400d860e42155a96898a7bd46d8ff3a958f1c6f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/lib/crypto.js",
+      "bytes": 2578,
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/lib/errors.js",
+      "bytes": 1637,
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/lib/metrics.js",
+      "bytes": 2825,
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/lib/public-models.js",
+      "bytes": 1809,
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/lib/retry.js",
+      "bytes": 1107,
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/plugins/auth.js",
+      "bytes": 2606,
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/routes/admin-routes.js",
+      "bytes": 2827,
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/routes/admin-ui-routes.js",
+      "bytes": 24051,
+      "sha256": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/routes/bot-routes.js",
+      "bytes": 5028,
+      "sha256": "2885547b185442713653144472a20960fc7005a5a68c889c2115dfe192584759",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/routes/health-routes.js",
+      "bytes": 861,
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/routes/ingress-routes.js",
+      "bytes": 1296,
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/routes/istina-compat-routes.js",
+      "bytes": 9506,
+      "sha256": "db64c618bd252d0fd0e349cf417af26474ba2e0e895fba2b04928cb7d79f8451",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/server.js",
+      "bytes": 371,
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/services/admin-service.js",
+      "bytes": 9501,
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/services/audit-service.js",
+      "bytes": 505,
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/services/delivery-service.js",
+      "bytes": 18275,
+      "sha256": "1aa3809e3b70a84145f80f31fb81468676e446f984084b1c53165c1a3578e8d0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/services/registration-service.js",
+      "bytes": 18626,
+      "sha256": "d29eacab7fe963042306df87026c9e18646627221a7fefadc870372cc036e901",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/services/telegram-service.js",
+      "bytes": 3578,
+      "sha256": "e84f14074851f61fabcf8e6306ac0d8d38a556f77f1bf9c4e45cb6844d4aabc3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/src/services/worker-service.js",
+      "bytes": 1075,
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/test/crypto.test.js",
+      "bytes": 1240,
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/test/integration/gateway.integration.test.js",
+      "bytes": 32729,
+      "sha256": "771ca9912d80c21d81d782c57c12f81efb8551433fa18f8942613305daf303ec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/test/integration/test-helpers.js",
+      "bytes": 5402,
+      "sha256": "6691b9075b754d5927293cdbcf24f684706a52389e773939c942ff81a101b815",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/test/retry.test.js",
+      "bytes": 1383,
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/dist/test/telegram-service.test.js",
+      "bytes": 1420,
+      "sha256": "fa0f5d263084ce32238b3629062c443219ea609805c5e1451a3b1e9eaa425349",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/HOWTOSETUP.md",
+      "bytes": 39154,
+      "sha256": "73b3b92cf81b665774e934007658315c2a71b743506d4b3aafcdda5280d9c91e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/README.md",
+      "bytes": 6392,
+      "sha256": "10cb4dd26d67a5f1d38964d6dddc76c757dd6705e4e5be46ae5cf927e76b39b9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/config.ts",
+      "bytes": 3228,
+      "sha256": "5177e3c8cb6dde2faa87fd61a8c871fce4d2f441b7727a4d95263fd08b070687",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/routes/bot-routes.ts",
+      "bytes": 4663,
+      "sha256": "37b75daf51b24345482fb54b621df62e4d1ed5bd000fc5072686820eb9c6175f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/routes/istina-compat-routes.ts",
+      "bytes": 8721,
+      "sha256": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/services/delivery-service.ts",
+      "bytes": 17013,
+      "sha256": "fce9e5cbfc8b3c7b489cb4bcf3a79696cf2b62092f55845d8a77c293a12666cc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/services/registration-service.ts",
+      "bytes": 17231,
+      "sha256": "b26c8eee2d2c94b7ff5c72d23132f4fc5f886fe050e16892956105c5c456e588",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/services/telegram-service.ts",
+      "bytes": 4221,
+      "sha256": "4800d43ed81081e20183f6ca2ea6bae05f7df555e7108af974d21a3f3f3a3fe9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/test/integration/gateway.integration.test.ts",
+      "bytes": 27398,
+      "sha256": "54f698d38fdfed4f20d56ef6911ea842a3999644e58a0cf935f1699f73a41ec6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/test/integration/test-helpers.ts",
+      "bytes": 5709,
+      "sha256": "e7b45058d22ff2d125f7b22e322493ff9663765c27b55f42925b15a3c7233708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/test/telegram-service.test.ts",
+      "bytes": 1242,
+      "sha256": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r1/TZ-telegram-gateway-service.md",
+      "bytes": 17461,
+      "sha256": "5f58f88c3eb945b07251c6997957adcfb603b7c24a730fa812015be62058a784",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/.gitignore",
+      "bytes": 39,
+      "sha256": "f989ed7a0d82c39df51d9535328bf1f81e976a70647aeb80ae5c92ef676f7c4f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/app.js",
+      "bytes": 2123,
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/config.js",
+      "bytes": 3503,
+      "sha256": "ea154bae47613a2d804b116981fb0a4cb0a8943c0a4754100c29232dabf03b41",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/lib/crypto.js",
+      "bytes": 2578,
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/lib/errors.js",
+      "bytes": 1637,
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/lib/metrics.js",
+      "bytes": 2825,
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/lib/outbound-methods.js",
+      "bytes": 354,
+      "sha256": "af81b9e22f7fd3240e36ecdaa1662242b50e4812c49bb7476db6c7ba5b1e7647",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/lib/public-models.js",
+      "bytes": 1809,
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/lib/retry.js",
+      "bytes": 1107,
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/plugins/auth.js",
+      "bytes": 2606,
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/routes/admin-routes.js",
+      "bytes": 2827,
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/routes/admin-ui-routes.js",
+      "bytes": 24051,
+      "sha256": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/routes/bot-routes.js",
+      "bytes": 4257,
+      "sha256": "d081dcac9a72c4dc020f6f4b06b820fd08ba425c6dd121b1b07f1b580bfc18b6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/routes/health-routes.js",
+      "bytes": 861,
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/routes/ingress-routes.js",
+      "bytes": 1296,
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/routes/istina-compat-routes.js",
+      "bytes": 9506,
+      "sha256": "db64c618bd252d0fd0e349cf417af26474ba2e0e895fba2b04928cb7d79f8451",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/server.js",
+      "bytes": 371,
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/services/admin-service.js",
+      "bytes": 9501,
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/services/audit-service.js",
+      "bytes": 505,
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/services/delivery-service.js",
+      "bytes": 18275,
+      "sha256": "1aa3809e3b70a84145f80f31fb81468676e446f984084b1c53165c1a3578e8d0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/services/registration-service.js",
+      "bytes": 18626,
+      "sha256": "d29eacab7fe963042306df87026c9e18646627221a7fefadc870372cc036e901",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/services/telegram-service.js",
+      "bytes": 3802,
+      "sha256": "b6eb4aca8b0255ca486d7dc5cd8b4056b7fd44072c017087567f9fd1c7145fbc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/src/services/worker-service.js",
+      "bytes": 1075,
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/test/crypto.test.js",
+      "bytes": 1240,
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/test/integration/gateway.integration.test.js",
+      "bytes": 29223,
+      "sha256": "b94b7f2d3184af6df1a1e179e83eebeddfcb059b2c38242493ee164f80975984",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/test/integration/test-helpers.js",
+      "bytes": 5437,
+      "sha256": "1b0ffd8308aa510b1e41104127c917f467f1b87d8c7b4c1673865d158c7bdaea",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/test/retry.test.js",
+      "bytes": 1383,
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/dist/test/telegram-service.test.js",
+      "bytes": 1420,
+      "sha256": "fa0f5d263084ce32238b3629062c443219ea609805c5e1451a3b1e9eaa425349",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/HOWTOSETUP.md",
+      "bytes": 39316,
+      "sha256": "8fb597012aa4f414e7d45e6ff659525d722348ea6ca74e331e4591eea204e4c4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/README.md",
+      "bytes": 6112,
+      "sha256": "0f986a1c0b73d266f8402812a85c282a23431d105fa46a5f48507757e8d2fe71",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/config.ts",
+      "bytes": 3291,
+      "sha256": "166f5ce5baf73edeaea637fac12b6d55fac7e2b8a1a3b8653f8df7ad2e8267de",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/lib/outbound-methods.ts",
+      "bytes": 196,
+      "sha256": "2586f8314c771416a63ae162e9a7aa92c18d8b04e012f608c9d9a65a83d2e175",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/routes/bot-routes.ts",
+      "bytes": 3942,
+      "sha256": "1c31823cc1f279d2daa571167af7a6d901a45efca08e329d5c8a1c7f972e27ad",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/routes/istina-compat-routes.ts",
+      "bytes": 8721,
+      "sha256": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/services/delivery-service.ts",
+      "bytes": 17013,
+      "sha256": "fce9e5cbfc8b3c7b489cb4bcf3a79696cf2b62092f55845d8a77c293a12666cc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/services/registration-service.ts",
+      "bytes": 17231,
+      "sha256": "b26c8eee2d2c94b7ff5c72d23132f4fc5f886fe050e16892956105c5c456e588",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/services/telegram-service.ts",
+      "bytes": 4507,
+      "sha256": "81a717f078faadcc224c06a352864783f53a60d7358cf1bdc480ea7434293344",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/test/integration/gateway.integration.test.ts",
+      "bytes": 24471,
+      "sha256": "1de7e8295be03211ba4018fa9b9bfbbb3b78c71ed5b53767c030b28482bd2b79",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/test/integration/test-helpers.ts",
+      "bytes": 5677,
+      "sha256": "4fd58687303f99963eb5167f22055cd13dc54a68d20e0b81b57520d455dc8ba4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/test/telegram-service.test.ts",
+      "bytes": 1242,
+      "sha256": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r2/TZ-telegram-gateway-service.md",
+      "bytes": 17440,
+      "sha256": "f849ad1c3792782b2240b578fd8184920a94efc0dd607bd892a18280d059c53c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/.gitignore",
+      "bytes": 39,
+      "sha256": "f989ed7a0d82c39df51d9535328bf1f81e976a70647aeb80ae5c92ef676f7c4f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/HOWTOSETUP.md",
+      "bytes": 38667,
+      "sha256": "4a08bd95bee0a9dcbdc9b40d033964ad4c503f772b5aa7a9dfa705444824e5c2",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/README.md",
+      "bytes": 6285,
+      "sha256": "6203b2be6d08f1a7be3936710b94653c4d97afcfc48f8b19ece9d2501d9cd1d2",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/config.ts",
+      "bytes": 3284,
+      "sha256": "86505d582c70934dd6c7e8c702c16ab40551903870bef8bdd977a8e8cf660f43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/lib/outbound-actions.ts",
+      "bytes": 1937,
+      "sha256": "aaedd8deaa86af4de5835f9460c589961113c8d6f8e19100d0a0ee38132da493",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/routes/bot-routes.ts",
+      "bytes": 3942,
+      "sha256": "1c31823cc1f279d2daa571167af7a6d901a45efca08e329d5c8a1c7f972e27ad",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/routes/istina-compat-routes.ts",
+      "bytes": 12675,
+      "sha256": "0e3d6e34c59035a2842ac5d7cc9dd148c879df2849ccd47e14e41f846783ccf5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/services/delivery-service.ts",
+      "bytes": 17065,
+      "sha256": "d3d8ba19be33d391d19353ed7e069154aa89a9ead9c768d244614cc3dae54cc5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/services/registration-service.ts",
+      "bytes": 17443,
+      "sha256": "aa1236d168071459e26846be8ffb8c98b7f333f79c5cc75448c98c4da27205f6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/services/telegram-service.ts",
+      "bytes": 4339,
+      "sha256": "6b5be402d4cef16c7f6bfdb7c823605ee26e9d9f222be0ee6dfa2552104244eb",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/test/integration/gateway.integration.test.ts",
+      "bytes": 26346,
+      "sha256": "4ddafcf29987324952cc2002daf4edb2b0543799b20079e33b44d87ecf58bc94",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/test/integration/test-helpers.ts",
+      "bytes": 5649,
+      "sha256": "c64842918418820be34c84815af8f0a818ac63609195b47e0da865f111f10846",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/test/outbound-actions.test.ts",
+      "bytes": 1439,
+      "sha256": "82bc1496cc38f1347c2def2d45cfe2a89e5f738abf979348097e76540d77b147",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/test/telegram-service.test.ts",
+      "bytes": 1722,
+      "sha256": "e20c2fdadf0833fcc7443fae3e7c37530770173057bc0b70238d98f1d0593821",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7-small-plain-r3/TZ-telegram-gateway-service.md",
+      "bytes": 17461,
+      "sha256": "5f58f88c3eb945b07251c6997957adcfb603b7c24a730fa812015be62058a784",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/.gitignore",
+      "bytes": 48,
+      "sha256": "972a86918aa489f06174eeac70f0effc59263ab6ea1213125958c23ba3d5e806",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/app.js",
+      "bytes": 2123,
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/config.js",
+      "bytes": 3432,
+      "sha256": "aec51fd695bb5c479fbf08fe7400d860e42155a96898a7bd46d8ff3a958f1c6f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/lib/crypto.js",
+      "bytes": 2578,
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/lib/errors.js",
+      "bytes": 1637,
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/lib/metrics.js",
+      "bytes": 2825,
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/lib/public-models.js",
+      "bytes": 1809,
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/lib/retry.js",
+      "bytes": 1107,
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/plugins/auth.js",
+      "bytes": 2606,
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/routes/admin-routes.js",
+      "bytes": 2827,
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/routes/admin-ui-routes.js",
+      "bytes": 24051,
+      "sha256": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/routes/bot-routes.js",
+      "bytes": 4342,
+      "sha256": "3517360ad6e71a22e077818443883ba94f3d9024f98333579c0b7659875e76af",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/routes/health-routes.js",
+      "bytes": 861,
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/routes/ingress-routes.js",
+      "bytes": 1296,
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/routes/istina-compat-routes.js",
+      "bytes": 9506,
+      "sha256": "db64c618bd252d0fd0e349cf417af26474ba2e0e895fba2b04928cb7d79f8451",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/server.js",
+      "bytes": 371,
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/services/admin-service.js",
+      "bytes": 9501,
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/services/audit-service.js",
+      "bytes": 505,
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/services/delivery-service.js",
+      "bytes": 18275,
+      "sha256": "1aa3809e3b70a84145f80f31fb81468676e446f984084b1c53165c1a3578e8d0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/services/registration-service.js",
+      "bytes": 21154,
+      "sha256": "ef4f84283dd7babb9f182ea36bb69b61aa102be9856af55405f5b66339424af9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/services/telegram-service.js",
+      "bytes": 3802,
+      "sha256": "713cd12c405cb666be4bb0bb5cf46227a4b67557153da2d45523716138d97c61",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/src/services/worker-service.js",
+      "bytes": 1075,
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/test/crypto.test.js",
+      "bytes": 1240,
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/test/integration/gateway.integration.test.js",
+      "bytes": 28773,
+      "sha256": "2bf981a9b0cbc4e5536fa12d9ce20522be8629b4f070411dbbf71b251509d016",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/test/integration/test-helpers.js",
+      "bytes": 5402,
+      "sha256": "6691b9075b754d5927293cdbcf24f684706a52389e773939c942ff81a101b815",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/test/outbound-action.test.js",
+      "bytes": 2428,
+      "sha256": "ccffd43d1040f76274e2e4ea98e5a89c88d90691237bb3282b8227a451ed3e68",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/test/retry.test.js",
+      "bytes": 1383,
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/dist/test/telegram-service.test.js",
+      "bytes": 1420,
+      "sha256": "fa0f5d263084ce32238b3629062c443219ea609805c5e1451a3b1e9eaa425349",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/HOWTOSETUP.md",
+      "bytes": 38856,
+      "sha256": "8f747799978a2d08c4c62f3eee544c42b07262c0863f19d51e67bec80889ef3b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/package-lock.json",
+      "bytes": 95736,
+      "sha256": "ce126c6bb885655b2bb12ac44d4bb879956ad69cd435324776836c9cd89978fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/README.md",
+      "bytes": 6147,
+      "sha256": "65aa603551b0c1158ef6c3f4feeea898028426f80d78a01d97b503992f83b24f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/specs/common/main.md",
+      "bytes": 5362,
+      "sha256": "bf3d64e337eac6c585c3f7fdeccc5c5e11ed7c177ae0690530123005b812d675",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/specs/common/PROP-001-product-boundary.md",
+      "bytes": 4633,
+      "sha256": "3bd1210c7a869c629a1a47632b7bcfcbf0446d3f9dc19f1760fa7ff4bf97b26f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/specs/common/structure.md",
+      "bytes": 4102,
+      "sha256": "3d7292260b8388c0a720e66aa81396a47bee3e092095bf09e664add04b3d4274",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/specs/modules/gateway/FEAT-101-bot-registration.md",
+      "bytes": 7034,
+      "sha256": "6073827862545973f3fb8a02437cffcd513c2a645cf55cdb4828273162a8230f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/specs/modules/gateway/FEAT-102-delivery-and-retries.md",
+      "bytes": 8582,
+      "sha256": "a3f315c03939235fddd86c157b17edcb3328cb7fcff2f444813bb7494f21cac3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/specs/modules/gateway/FEAT-103-admin-and-compatibility.md",
+      "bytes": 6138,
+      "sha256": "de6c561c49229b49af74074da8c5cfbde16ebefe8a261ad79e402a661b0d539e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/specs/modules/gateway/INFRA-101-runtime-and-security.md",
+      "bytes": 6481,
+      "sha256": "5d9d95f44f691f7c54aa27bf7bd3711d035e6dd6d5aa17e857490a796cca59f8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/specs/SPEC-MAP.md",
+      "bytes": 2290,
+      "sha256": "1354b9d16f328d91500afdd6e9d48497099a4202e6f9ffcc3a60bc4d6a00fb63",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/config.ts",
+      "bytes": 3368,
+      "sha256": "11f45e87d21d1bfc96243654f388976a5dfb68d791490560d5b6f4375278d9ae",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/routes/bot-routes.ts",
+      "bytes": 4023,
+      "sha256": "bf4aca58f523b3dad5099b5c3b60e8f682ac574ec70460c03c3f2160ee6d4ee1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/routes/istina-compat-routes.ts",
+      "bytes": 8721,
+      "sha256": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/services/delivery-service.ts",
+      "bytes": 17085,
+      "sha256": "d9631cd6aa9ec39e78d13e29c54838ca79f40b6e3cd26fc895301fd624eb1c0c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/services/registration-service.ts",
+      "bytes": 20040,
+      "sha256": "b22db582d4b1d2d9fed6e1eb0953077323bb3955f2c0c7733c2182bc0ca7ddf2",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/services/telegram-service.ts",
+      "bytes": 4755,
+      "sha256": "9b42867bebab43d0e9d37bd67c0ce09b6de3fca590934ab1e56bc84ecff28b2d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/test/integration/gateway.integration.test.ts",
+      "bytes": 24023,
+      "sha256": "f2f50596b1084051c8a454007e9a85bf341b85752dcfcb364e73d5eae09e5b76",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/test/integration/test-helpers.ts",
+      "bytes": 5867,
+      "sha256": "227d67e0efebfb2acfa50cb8261b7c30c6378821e2ca7ca744c1a8f7a58bf70f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/test/outbound-action.test.ts",
+      "bytes": 1920,
+      "sha256": "63fc3b59bd90ed420ed0dd968ba09f252899b6eb759521ab0936d5a5aa6195d7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/test/telegram-service.test.ts",
+      "bytes": 1242,
+      "sha256": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r1/TZ-telegram-gateway-service.md",
+      "bytes": 17901,
+      "sha256": "fd716290aa926432a67f18c3f370a8528ce88731c18bf95aa770ecd4291d5cf5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/.gitignore",
+      "bytes": 48,
+      "sha256": "972a86918aa489f06174eeac70f0effc59263ab6ea1213125958c23ba3d5e806",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/app.js",
+      "bytes": 2123,
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/config.js",
+      "bytes": 3819,
+      "sha256": "58df7045765525543a3912cc51e6fbf9942e92eebe7b82dbd43e75b4c5a5bc72",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/lib/crypto.js",
+      "bytes": 2578,
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/lib/errors.js",
+      "bytes": 1637,
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/lib/metrics.js",
+      "bytes": 2825,
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/lib/public-models.js",
+      "bytes": 1809,
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/lib/retry.js",
+      "bytes": 1107,
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/plugins/auth.js",
+      "bytes": 2606,
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/routes/admin-routes.js",
+      "bytes": 2827,
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/routes/admin-ui-routes.js",
+      "bytes": 24051,
+      "sha256": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/routes/bot-routes.js",
+      "bytes": 4257,
+      "sha256": "d081dcac9a72c4dc020f6f4b06b820fd08ba425c6dd121b1b07f1b580bfc18b6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/routes/health-routes.js",
+      "bytes": 861,
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/routes/ingress-routes.js",
+      "bytes": 1296,
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/routes/istina-compat-routes.js",
+      "bytes": 9506,
+      "sha256": "db64c618bd252d0fd0e349cf417af26474ba2e0e895fba2b04928cb7d79f8451",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/server.js",
+      "bytes": 371,
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/services/admin-service.js",
+      "bytes": 9501,
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/services/audit-service.js",
+      "bytes": 505,
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/services/delivery-service.js",
+      "bytes": 18275,
+      "sha256": "1aa3809e3b70a84145f80f31fb81468676e446f984084b1c53165c1a3578e8d0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/services/registration-service.js",
+      "bytes": 18626,
+      "sha256": "d29eacab7fe963042306df87026c9e18646627221a7fefadc870372cc036e901",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/services/telegram-service.js",
+      "bytes": 3578,
+      "sha256": "e84f14074851f61fabcf8e6306ac0d8d38a556f77f1bf9c4e45cb6844d4aabc3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/src/services/worker-service.js",
+      "bytes": 1075,
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/test/crypto.test.js",
+      "bytes": 1240,
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/test/integration/gateway.integration.test.js",
+      "bytes": 28957,
+      "sha256": "44d752fc546ace13125be068215cf62b188693db73f134a37f958b1ba9666f28",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/test/integration/test-helpers.js",
+      "bytes": 5589,
+      "sha256": "fdf8790606fd789ab47264f0259d47404dcd15022d5b8302e224602e5f249dc9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/test/retry.test.js",
+      "bytes": 1383,
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/dist/test/telegram-service.test.js",
+      "bytes": 1420,
+      "sha256": "fa0f5d263084ce32238b3629062c443219ea609805c5e1451a3b1e9eaa425349",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/HOWTOSETUP.md",
+      "bytes": 39192,
+      "sha256": "d5d19674d31d701537c0a712155ee1b19ff429bb810e54e896b38d2dd26a104e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/package-lock.json",
+      "bytes": 95728,
+      "sha256": "e13615ab44afc8ffa21f3b2c81aea6e801bb2d4f825cb299ce9327f5a016df76",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/README.md",
+      "bytes": 6372,
+      "sha256": "3ee4acdf1aa8020e10655f5c37b8065e44c64c3cd80649a1ad409b9efe76964a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/specs/common/main.md",
+      "bytes": 5362,
+      "sha256": "bf3d64e337eac6c585c3f7fdeccc5c5e11ed7c177ae0690530123005b812d675",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/specs/common/PROP-001-product-boundary.md",
+      "bytes": 4633,
+      "sha256": "3bd1210c7a869c629a1a47632b7bcfcbf0446d3f9dc19f1760fa7ff4bf97b26f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/specs/common/structure.md",
+      "bytes": 4102,
+      "sha256": "3d7292260b8388c0a720e66aa81396a47bee3e092095bf09e664add04b3d4274",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/specs/modules/gateway/FEAT-101-bot-registration.md",
+      "bytes": 7034,
+      "sha256": "6073827862545973f3fb8a02437cffcd513c2a645cf55cdb4828273162a8230f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/specs/modules/gateway/FEAT-102-delivery-and-retries.md",
+      "bytes": 8684,
+      "sha256": "69965e1e5f7727dd1f021386f3efd731e8216d372fe4ebf81506906e08e1d1ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/specs/modules/gateway/FEAT-103-admin-and-compatibility.md",
+      "bytes": 6138,
+      "sha256": "de6c561c49229b49af74074da8c5cfbde16ebefe8a261ad79e402a661b0d539e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/specs/modules/gateway/INFRA-101-runtime-and-security.md",
+      "bytes": 6481,
+      "sha256": "5d9d95f44f691f7c54aa27bf7bd3711d035e6dd6d5aa17e857490a796cca59f8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/specs/SPEC-MAP.md",
+      "bytes": 2290,
+      "sha256": "1354b9d16f328d91500afdd6e9d48497099a4202e6f9ffcc3a60bc4d6a00fb63",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/config.ts",
+      "bytes": 3559,
+      "sha256": "c742cd78d3962b74c9229d899e9b3d33272c530a61c0770c2a7d22ff64ad22c3",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/routes/bot-routes.ts",
+      "bytes": 3942,
+      "sha256": "1c31823cc1f279d2daa571167af7a6d901a45efca08e329d5c8a1c7f972e27ad",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/routes/istina-compat-routes.ts",
+      "bytes": 8721,
+      "sha256": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/services/delivery-service.ts",
+      "bytes": 17013,
+      "sha256": "fce9e5cbfc8b3c7b489cb4bcf3a79696cf2b62092f55845d8a77c293a12666cc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/services/registration-service.ts",
+      "bytes": 17231,
+      "sha256": "b26c8eee2d2c94b7ff5c72d23132f4fc5f886fe050e16892956105c5c456e588",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/services/telegram-service.ts",
+      "bytes": 4221,
+      "sha256": "4800d43ed81081e20183f6ca2ea6bae05f7df555e7108af974d21a3f3f3a3fe9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/test/integration/gateway.integration.test.ts",
+      "bytes": 24168,
+      "sha256": "00e6e99cae08a36133eaee1b31413419723fb6fb43d97438d0caed52ed5fcf39",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/test/integration/test-helpers.ts",
+      "bytes": 5861,
+      "sha256": "3925ecf17314f31d9b050b31ecfc6d76f2dedbf11d43adda95bbcf6a9be382ca",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/test/telegram-service.test.ts",
+      "bytes": 1242,
+      "sha256": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r2/TZ-telegram-gateway-service.md",
+      "bytes": 17316,
+      "sha256": "f3f84f959357c44fe8d7b913e6d30e0af8976383283eb5cf25f9f5e84a57cc9b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/.env.example",
+      "bytes": 771,
+      "sha256": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/.gitattributes",
+      "bytes": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/.gitignore",
+      "bytes": 48,
+      "sha256": "972a86918aa489f06174eeac70f0effc59263ab6ea1213125958c23ba3d5e806",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/app.js",
+      "bytes": 2123,
+      "sha256": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/config.js",
+      "bytes": 3508,
+      "sha256": "b6d1ae9af539a5098a776528803e8967dd855b54bd32a7f62c42687dc96e3357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/lib/crypto.js",
+      "bytes": 2578,
+      "sha256": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/lib/errors.js",
+      "bytes": 1637,
+      "sha256": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/lib/metrics.js",
+      "bytes": 2825,
+      "sha256": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/lib/public-models.js",
+      "bytes": 1809,
+      "sha256": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/lib/retry.js",
+      "bytes": 1107,
+      "sha256": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/plugins/auth.js",
+      "bytes": 2606,
+      "sha256": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/routes/admin-routes.js",
+      "bytes": 2827,
+      "sha256": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/routes/admin-ui-routes.js",
+      "bytes": 24051,
+      "sha256": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/routes/bot-routes.js",
+      "bytes": 4257,
+      "sha256": "d081dcac9a72c4dc020f6f4b06b820fd08ba425c6dd121b1b07f1b580bfc18b6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/routes/health-routes.js",
+      "bytes": 861,
+      "sha256": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/routes/ingress-routes.js",
+      "bytes": 1296,
+      "sha256": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/routes/istina-compat-routes.js",
+      "bytes": 9880,
+      "sha256": "3b9cc8b661494ebc243ae28b401a734599bb91d1c102d26b52a4c51420c8fcfa",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/server.js",
+      "bytes": 371,
+      "sha256": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/services/admin-service.js",
+      "bytes": 9501,
+      "sha256": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/services/audit-service.js",
+      "bytes": 505,
+      "sha256": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/services/delivery-service.js",
+      "bytes": 19142,
+      "sha256": "458ee3e20f25da8b610ee96371b88d8b9197b74490e9854b16b6c44db61ba4b0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/services/registration-service.js",
+      "bytes": 18720,
+      "sha256": "7fc2d051dd1c59924414e3d056cd4f9e115391108a46ad2e1f34cb4de8e74536",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/services/telegram-service.js",
+      "bytes": 4155,
+      "sha256": "f809d04b78a8e5001e8d2afb846b2efd36879a66639db4d44de15c2d18f8a8a9",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/src/services/worker-service.js",
+      "bytes": 1075,
+      "sha256": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/test/crypto.test.js",
+      "bytes": 1240,
+      "sha256": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/test/integration/gateway.integration.test.js",
+      "bytes": 32513,
+      "sha256": "fdb6f4d062358941953fc92e06dda9823da6110ac4402a5b86bb27a23f80d972",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/test/integration/test-helpers.js",
+      "bytes": 5589,
+      "sha256": "73705ad091e03d0e150af9084f13c78eb7b649026726d8b4346ef8d3db5f12cf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/test/retry.test.js",
+      "bytes": 1383,
+      "sha256": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/dist/test/telegram-service.test.js",
+      "bytes": 2322,
+      "sha256": "36084504b2ecf1eb0271b49e438a3bf3542717342cfb754fe89212fa6caa6e1e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/docker-compose.integration.yml",
+      "bytes": 469,
+      "sha256": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/HOWTOSETUP.md",
+      "bytes": 39356,
+      "sha256": "aaa3dc76523cc5f426c0a4ada50ab480926525ffb52a97cdd287e71d743a82db",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/package-lock.json",
+      "bytes": 95745,
+      "sha256": "3743702d963c1c55f3c51c90af83961007de372ffe3d557f6af3dc762f946645",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/package.json",
+      "bytes": 895,
+      "sha256": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/prisma/migrations/20260420202800_init/migration.sql",
+      "bytes": 7470,
+      "sha256": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/prisma/migrations/migration_lock.toml",
+      "bytes": 23,
+      "sha256": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/prisma/schema.prisma",
+      "bytes": 5622,
+      "sha256": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/README.md",
+      "bytes": 5833,
+      "sha256": "bc87d5fbc61983c8fb5c3603086d0418e8f1e5d264ea8b44bd0f4900264cf3be",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/scripts/run-integration-tests.js",
+      "bytes": 1048,
+      "sha256": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/specs/common/main.md",
+      "bytes": 5361,
+      "sha256": "d6a1e4a4a040fcb91fdc44fa0da99836ec8f212715e3ed2e9f65a26e4b4783b0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/specs/common/PROP-001-product-boundary.md",
+      "bytes": 4632,
+      "sha256": "9bf8f2115ddcd6bdc927e25b738e56273c71d655fd8894714262db31322898d6",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/specs/common/structure.md",
+      "bytes": 4102,
+      "sha256": "3d7292260b8388c0a720e66aa81396a47bee3e092095bf09e664add04b3d4274",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/specs/modules/gateway/FEAT-101-bot-registration.md",
+      "bytes": 7034,
+      "sha256": "6073827862545973f3fb8a02437cffcd513c2a645cf55cdb4828273162a8230f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/specs/modules/gateway/FEAT-102-delivery-and-retries.md",
+      "bytes": 8205,
+      "sha256": "c03353af347bf169b6ab535ddb58f5fa0255d3fd0cc7d8e51275985016814b2b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/specs/modules/gateway/FEAT-103-admin-and-compatibility.md",
+      "bytes": 6138,
+      "sha256": "de6c561c49229b49af74074da8c5cfbde16ebefe8a261ad79e402a661b0d539e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/specs/modules/gateway/INFRA-101-runtime-and-security.md",
+      "bytes": 6481,
+      "sha256": "5d9d95f44f691f7c54aa27bf7bd3711d035e6dd6d5aa17e857490a796cca59f8",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/specs/SPEC-MAP.md",
+      "bytes": 2290,
+      "sha256": "1354b9d16f328d91500afdd6e9d48497099a4202e6f9ffcc3a60bc4d6a00fb63",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/app.ts",
+      "bytes": 1815,
+      "sha256": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/config.ts",
+      "bytes": 3302,
+      "sha256": "ed2e798bc89456352720103852453d1336b0a394ed4d532bbed4fb2807c21ebf",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/fastify.d.ts",
+      "bytes": 573,
+      "sha256": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/lib/crypto.ts",
+      "bytes": 2092,
+      "sha256": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/lib/errors.ts",
+      "bytes": 1692,
+      "sha256": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/lib/metrics.ts",
+      "bytes": 2689,
+      "sha256": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/lib/public-models.ts",
+      "bytes": 1770,
+      "sha256": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/lib/retry.ts",
+      "bytes": 1095,
+      "sha256": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/plugins/auth.ts",
+      "bytes": 2705,
+      "sha256": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/routes/admin-routes.ts",
+      "bytes": 2617,
+      "sha256": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/routes/admin-ui-routes.ts",
+      "bytes": 23995,
+      "sha256": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/routes/bot-routes.ts",
+      "bytes": 3942,
+      "sha256": "1c31823cc1f279d2daa571167af7a6d901a45efca08e329d5c8a1c7f972e27ad",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/routes/health-routes.ts",
+      "bytes": 717,
+      "sha256": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/routes/ingress-routes.ts",
+      "bytes": 1191,
+      "sha256": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/routes/istina-compat-routes.ts",
+      "bytes": 9085,
+      "sha256": "1d19f9a33fe39f4dbac466263787d870f1c208af726122808e1d9801dd10759e",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/server.ts",
+      "bytes": 283,
+      "sha256": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/services/admin-service.ts",
+      "bytes": 9647,
+      "sha256": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/services/audit-service.ts",
+      "bytes": 737,
+      "sha256": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/services/delivery-service.ts",
+      "bytes": 17836,
+      "sha256": "490d907615820772862e062fe9c2dba5824053c9ebaa1a47f243db59c56e85d0",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/services/registration-service.ts",
+      "bytes": 17389,
+      "sha256": "674448c7ed29d2fc82012aead71abdfbb2a5644d63524020685dd1464e3aa109",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/services/telegram-service.ts",
+      "bytes": 4900,
+      "sha256": "6024ec84abc879c7cee250a482d917fa4d44017bbd361660746c395778650dde",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/src/services/worker-service.ts",
+      "bytes": 995,
+      "sha256": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/test/crypto.test.ts",
+      "bytes": 1044,
+      "sha256": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/test/integration/gateway.integration.test.ts",
+      "bytes": 27441,
+      "sha256": "a2d4d3e9dbeeaad32f13eb1d0a8d267e0b0bae584466da20c7386ccda9c8ee63",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/test/integration/test-helpers.ts",
+      "bytes": 5863,
+      "sha256": "590a7f9263b04ed49d20b07ab6591aa8b995c94f97492cb7821bb68b020f9f58",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/test/retry.test.ts",
+      "bytes": 1112,
+      "sha256": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/test/telegram-service.test.ts",
+      "bytes": 1988,
+      "sha256": "41fa6865c1ca4054c8d8fd28f3bcb62f0fde3c9ad4dc4c8b3b9a6e90408e9e1d",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/tsconfig.json",
+      "bytes": 418,
+      "sha256": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c",
+      "mode": "0o100644"
+    },
+    {
+      "path": "v7c-small-prist-r3/TZ-telegram-gateway-service.md",
+      "bytes": 17617,
+      "sha256": "65e7c7a5304c18ac194b5bae0584e79930032d07dfba3a4ae494eebdbee23a15",
+      "mode": "0o100644"
+    }
+  ],
+  "excluded": []
+}

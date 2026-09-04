@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 3,
+  "blindId": "vz-f4c8c0",
+  "scenario": "new",
+  "checkedAt": "2026-09-02T06:51:30.689Z",
+  "workspaceCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+  "workspaceTree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
+  "stateFingerprint": "9a6283565961b00ab0e5f6edaa294698251f04b1bb1070f7de58f00e1d8ac5ed",
+  "scratchIsolated": true,
+  "projectedHarnessFiles": [],
+  "setup": [],
+  "repetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "9a6283565961b00ab0e5f6edaa294698251f04b1bb1070f7de58f00e1d8ac5ed",
+      "results": [
+        {
+          "name": "tests",
+          "missing": true,
+          "required": true,
+          "reason": "static project has no direct test command",
+          "exitCode": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "static project has no build command",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T06:46:56.818Z",
+          "completedAt": "2026-09-02T06:48:28.919Z",
+          "durationMs": 92112,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "0440e475d64218e18a405f4b399377f8a8fab8977a9b8d371f1f9349122974ce",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":false,\"evidence\":\"accessible title/author form adds a visible book\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A03\",\"passed\":false,\"evidence\":\"one book moves through reading and completed states immediately\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A04\",\"passed\":false,\"evidence\":\"book and status survive browser reload\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A05\",\"passed\":false,\"evidence\":\"book and status survive full application stop and restart\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A06\",\"passed\":false,\"evidence\":\"multiple books remain independent after one state change\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A07\",\"passed\":false,\"evidence\":\"empty required values create no book and expose validation\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A08\",\"passed\":false,\"evidence\":\"primary product copy and controls are Russian\",\"error\":\"title control was not found by accessible name or placeholder.\"}],\"smoke\":{\"passed\":false,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": false,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": false,
+                "evidence": "accessible title/author form adds a visible book",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A03",
+                "passed": false,
+                "evidence": "one book moves through reading and completed states immediately",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A04",
+                "passed": false,
+                "evidence": "book and status survive browser reload",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A05",
+                "passed": false,
+                "evidence": "book and status survive full application stop and restart",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A06",
+                "passed": false,
+                "evidence": "multiple books remain independent after one state change",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A07",
+                "passed": false,
+                "evidence": "empty required values create no book and expose validation",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A08",
+                "passed": false,
+                "evidence": "primary product copy and controls are Russian",
+                "error": "title control was not found by accessible name or placeholder."
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "accessible title/author form adds a visible book",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "one book moves through reading and completed states immediately",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "book and status survive browser reload",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "book and status survive full application stop and restart",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "multiple books remain independent after one state change",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "empty required values create no book and expose validation",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A08",
+          "passed": false,
+          "evidence": "primary product copy and controls are Russian",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-B01",
+          "passed": false,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "9a6283565961b00ab0e5f6edaa294698251f04b1bb1070f7de58f00e1d8ac5ed",
+      "results": [
+        {
+          "name": "tests",
+          "missing": true,
+          "required": true,
+          "reason": "static project has no direct test command",
+          "exitCode": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "static project has no build command",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T06:48:28.920Z",
+          "completedAt": "2026-09-02T06:49:59.740Z",
+          "durationMs": 90807,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "0440e475d64218e18a405f4b399377f8a8fab8977a9b8d371f1f9349122974ce",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":false,\"evidence\":\"accessible title/author form adds a visible book\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A03\",\"passed\":false,\"evidence\":\"one book moves through reading and completed states immediately\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A04\",\"passed\":false,\"evidence\":\"book and status survive browser reload\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A05\",\"passed\":false,\"evidence\":\"book and status survive full application stop and restart\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A06\",\"passed\":false,\"evidence\":\"multiple books remain independent after one state change\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A07\",\"passed\":false,\"evidence\":\"empty required values create no book and expose validation\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A08\",\"passed\":false,\"evidence\":\"primary product copy and controls are Russian\",\"error\":\"title control was not found by accessible name or placeholder.\"}],\"smoke\":{\"passed\":false,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": false,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": false,
+                "evidence": "accessible title/author form adds a visible book",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A03",
+                "passed": false,
+                "evidence": "one book moves through reading and completed states immediately",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A04",
+                "passed": false,
+                "evidence": "book and status survive browser reload",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A05",
+                "passed": false,
+                "evidence": "book and status survive full application stop and restart",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A06",
+                "passed": false,
+                "evidence": "multiple books remain independent after one state change",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A07",
+                "passed": false,
+                "evidence": "empty required values create no book and expose validation",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A08",
+                "passed": false,
+                "evidence": "primary product copy and controls are Russian",
+                "error": "title control was not found by accessible name or placeholder."
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "accessible title/author form adds a visible book",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "one book moves through reading and completed states immediately",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "book and status survive browser reload",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "book and status survive full application stop and restart",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "multiple books remain independent after one state change",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "empty required values create no book and expose validation",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A08",
+          "passed": false,
+          "evidence": "primary product copy and controls are Russian",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-B01",
+          "passed": false,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "9a6283565961b00ab0e5f6edaa294698251f04b1bb1070f7de58f00e1d8ac5ed",
+      "results": [
+        {
+          "name": "tests",
+          "missing": true,
+          "required": true,
+          "reason": "static project has no direct test command",
+          "exitCode": null
+        },
+        {
+          "name": "build",
+          "missing": true,
+          "required": true,
+          "reason": "static project has no build command",
+          "exitCode": null
+        },
+        {
+          "name": "hidden-browser",
+          "required": true,
+          "command": [
+            "node.exe",
+            "<harness>\\new-ui.hidden.mjs"
+          ],
+          "startedAt": "2026-09-02T06:49:59.740Z",
+          "completedAt": "2026-09-02T06:51:30.559Z",
+          "durationMs": 90823,
+          "exitCode": 0,
+          "signal": null,
+          "timedOut": false,
+          "spawnError": null,
+          "stdoutSha256": "0440e475d64218e18a405f4b399377f8a8fab8977a9b8d371f1f9349122974ce",
+          "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdoutTail": "{\"schemaVersion\":3,\"scenario\":\"new\",\"checks\":[{\"id\":\"N3-A02\",\"passed\":true,\"evidence\":\"three requested Russian states are visible\"},{\"id\":\"N3-A01\",\"passed\":false,\"evidence\":\"accessible title/author form adds a visible book\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A03\",\"passed\":false,\"evidence\":\"one book moves through reading and completed states immediately\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A04\",\"passed\":false,\"evidence\":\"book and status survive browser reload\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A05\",\"passed\":false,\"evidence\":\"book and status survive full application stop and restart\",\"error\":\"locator.waitFor: Timeout 30000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\\u001b[22m\\n\"},{\"id\":\"N3-A06\",\"passed\":false,\"evidence\":\"multiple books remain independent after one state change\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A07\",\"passed\":false,\"evidence\":\"empty required values create no book and expose validation\",\"error\":\"title control was not found by accessible name or placeholder.\"},{\"id\":\"N3-A08\",\"passed\":false,\"evidence\":\"primary product copy and controls are Russian\",\"error\":\"title control was not found by accessible name or placeholder.\"}],\"smoke\":{\"passed\":false,\"browserErrors\":0},\"passed\":false}\n",
+          "stderrTail": "",
+          "structuredOutput": {
+            "scenario": "new",
+            "passed": false,
+            "smoke": {
+              "passed": false,
+              "browserErrors": 0
+            },
+            "checks": [
+              {
+                "id": "N3-A02",
+                "passed": true,
+                "evidence": "three requested Russian states are visible"
+              },
+              {
+                "id": "N3-A01",
+                "passed": false,
+                "evidence": "accessible title/author form adds a visible book",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A03",
+                "passed": false,
+                "evidence": "one book moves through reading and completed states immediately",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A04",
+                "passed": false,
+                "evidence": "book and status survive browser reload",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A05",
+                "passed": false,
+                "evidence": "book and status survive full application stop and restart",
+                "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+              },
+              {
+                "id": "N3-A06",
+                "passed": false,
+                "evidence": "multiple books remain independent after one state change",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A07",
+                "passed": false,
+                "evidence": "empty required values create no book and expose validation",
+                "error": "title control was not found by accessible name or placeholder."
+              },
+              {
+                "id": "N3-A08",
+                "passed": false,
+                "evidence": "primary product copy and controls are Russian",
+                "error": "title control was not found by accessible name or placeholder."
+              }
+            ]
+          }
+        }
+      ],
+      "checks": [
+        {
+          "id": "N3-A01",
+          "passed": false,
+          "evidence": "accessible title/author form adds a visible book",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A02",
+          "passed": true,
+          "evidence": "three requested Russian states are visible"
+        },
+        {
+          "id": "N3-A03",
+          "passed": false,
+          "evidence": "one book moves through reading and completed states immediately",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A04",
+          "passed": false,
+          "evidence": "book and status survive browser reload",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A05",
+          "passed": false,
+          "evidence": "book and status survive full application stop and restart",
+          "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Мастер и Маргарита', { exact: true }).first() to be visible\u001b[22m\n"
+        },
+        {
+          "id": "N3-A06",
+          "passed": false,
+          "evidence": "multiple books remain independent after one state change",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A07",
+          "passed": false,
+          "evidence": "empty required values create no book and expose validation",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-A08",
+          "passed": false,
+          "evidence": "primary product copy and controls are Russian",
+          "error": "title control was not found by accessible name or placeholder."
+        },
+        {
+          "id": "N3-B01",
+          "passed": false,
+          "evidence": "direct project test command"
+        },
+        {
+          "id": "N3-B02",
+          "passed": false,
+          "evidence": "documented build or type/package check"
+        },
+        {
+          "id": "N3-B03",
+          "passed": false,
+          "evidence": "real local start and Chromium smoke"
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "statePreserved": true
+}

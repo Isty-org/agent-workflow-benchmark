@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "sourceReportArtifactsVerified": true,
+  "selectedRows": 36,
+  "uniqueTaskIds": 36,
+  "cells": 12,
+  "repetitionsPerCell": 3,
+  "lineage": {
+    "benchmark-v7-luna-xhigh-n3-2026-09-01": 27,
+    "benchmark-v7c-prist-permissions-corrected-2026-09-02": 9
+  },
+  "firstPassFilesChecked": 11814,
+  "firstPassBytesChecked": 125313226,
+  "firstPassHashMismatches": 0,
+  "baselineGitTreesChecked": 18,
+  "sourceReportsImmutable": true,
+  "omittedReportArtifact": "PRIST-SERVICE-IMPROVEMENTS.md: outside the comparison export; its original hash remains in artifact-verification.json",
+  "evidenceScope": "Final selected rows, final evaluations/checks, frozen protocol and setup provenance only. Source status fields and historical identifiers are preserved."
+}

@@ -1,0 +1,359 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "canaryGate": {
+    "completed": 18,
+    "measuredTasksCreated": false,
+    "passed": 18,
+    "present": true,
+    "required": 18
+  },
+  "contentLock": "46865a2b501cfe6df7b15b46e55b763c19fdc4f742ed9a1e510a703c5a7c72b4",
+  "frozen": true,
+  "generatedAt": "2026-09-02T05:17:08.256Z",
+  "measuredTasksCreated": false,
+  "orderedInputs": [
+    {
+      "bytes": 733,
+      "path": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "sha256": "2a71067b2a0d65782d7b1cc8d7a0415b322425c9c6db719306bee8f9ae8da634"
+    },
+    {
+      "bytes": 65017,
+      "path": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "sha256": "4f5d3bf8e7d5b8456a33eec3e473e70531324a2d7f30335d9edbd3a057e5a224"
+    },
+    {
+      "bytes": 8525,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/PROTOCOL.md",
+      "sha256": "891313c3e8eecbcd2225b889341bc459ce6ab35eb2667d92a59a8be7154f6899"
+    },
+    {
+      "bytes": 2189,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/RUBRIC.md",
+      "sha256": "6b9ca3ceb242be8ea13d88f82057f4f9cad45ba28c025cb766d837445ff4e4f0"
+    },
+    {
+      "bytes": 1454,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/activation-canary.md",
+      "sha256": "9dcaa04b761103b6b68758b2174f2c85fe84b2cd8e12d46458e5346041ac6a2e"
+    },
+    {
+      "bytes": 2075,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/answer-bank.json",
+      "sha256": "58d41a50173763253c15d51a3e4f2996a7453e7dd2d892ae2350351deb8bafe3"
+    },
+    {
+      "bytes": 1035,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/dispatch-contract.md",
+      "sha256": "918286cda7dad2ef427dead6241acdb3c3ac02805d15df3c091df43af2b2fad0"
+    },
+    {
+      "bytes": 830,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/envelope.md",
+      "sha256": "f76e39a9b9951a2f0093fbbf137fbf67b0c57f353662cbaec5f1e7694546f578"
+    },
+    {
+      "bytes": 420,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/adjudicator.md",
+      "sha256": "d97e4159b7444240b7e3c0cae7f0f7484bb6041f8ff765060dc1d66b55eac037"
+    },
+    {
+      "bytes": 1011,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/blind-review-contract.md",
+      "sha256": "f68d03064d6be058eed54d5a23b4ae07f3ce6ecc6d3320c2aa1fb0bf7827bfdd"
+    },
+    {
+      "bytes": 1346,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/checker.md",
+      "sha256": "4239e290eb6f98a95381080f63e769c042430bb02dd85378638e84c3e770482a"
+    },
+    {
+      "bytes": 3941,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/contracts-v3/large.json",
+      "sha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455"
+    },
+    {
+      "bytes": 3422,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/contracts-v3/new.json",
+      "sha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703"
+    },
+    {
+      "bytes": 4028,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/contracts-v3/small.json",
+      "sha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be"
+    },
+    {
+      "bytes": 13639,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/harness-v3/large-search.hidden.cs",
+      "sha256": "fbbc0a20c30c9a3e4edd1aa01cc84f9da51132a95c7574057c5d1e8a6ff61bec"
+    },
+    {
+      "bytes": 15041,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/harness-v3/new-ui.hidden.mjs",
+      "sha256": "c53334900d3e8b484d36ee83fb28ae707bc980f5d628fcfb310bd6532019c24e"
+    },
+    {
+      "bytes": 13004,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/harness-v3/small-api.hidden.ts",
+      "sha256": "8bdf1d6e971ff02a5e47220e6776c50a159a5267e99391122c45926e2f7b06c4"
+    },
+    {
+      "bytes": 929,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/normalization.md",
+      "sha256": "bde2652027cf359cbf95ab94f892538016925f3d45c48e871713abd6f82361ba"
+    },
+    {
+      "bytes": 1231,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/reviewer.md",
+      "sha256": "7d7cee3b6aa48e247ea6a66e7a8ae6e1986acc497b47d8b26cd5ca530bc63f12"
+    },
+    {
+      "bytes": 984,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/schemas/evaluation.schema.json",
+      "sha256": "001a9504d08341beb60ef2bed944393e462c52590fa57c01fab2b3a5a0c19d21"
+    },
+    {
+      "bytes": 904,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/schemas/review-record.schema.json",
+      "sha256": "798120838c369c9e49184dd8a4f349f143d959207161800b5b63c212cee45e18"
+    },
+    {
+      "bytes": 5689,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/schemas/run-record.schema.json",
+      "sha256": "9ee830e92a520aa02739cd16c04295d0e4853b35cb5befc88ba7aeddfd54c787"
+    },
+    {
+      "bytes": 657,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/schemas/setup-inventory.schema.json",
+      "sha256": "23995690a073e71b286cd48e950840cba1c47c39418ea94809d460f98bcb5f0f"
+    },
+    {
+      "bytes": 1621,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/schemas/usage-record.schema.json",
+      "sha256": "db02a38734e5bfc4168bb539b9019f785ea4d03874228893daee4671ab9097b9"
+    },
+    {
+      "bytes": 10858,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/scripts/evaluate-v7.mjs",
+      "sha256": "251f673b021addb8896e946af749cf3b2af9156008c9a3d04992559163b3bd0f"
+    },
+    {
+      "bytes": 17314,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/evaluator/scripts/run-checks-v7.mjs",
+      "sha256": "8147801f4f95951b0db126064b06c72f7e8303110fe02395dcdec9783770c233"
+    },
+    {
+      "bytes": 458,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/fidelity/bmad.json",
+      "sha256": "08a78583703cf79578c7b33090e228bb843afb493fc49cb26c3a335c21378f79"
+    },
+    {
+      "bytes": 482,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/fidelity/classic-spec.json",
+      "sha256": "ce686e22f39a7e8bb0eb1ff759e9a66b3bc0270d9a5d8f0f555463bac0f23c13"
+    },
+    {
+      "bytes": 118,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/fidelity/plain.json",
+      "sha256": "80ae2c8efc59be9c61ec29881c9462b4a40cc414fa56ae35d2af57b3770f518e"
+    },
+    {
+      "bytes": 526,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/fidelity/prist.json",
+      "sha256": "f83647073a510db4652886ebf403f70844976efd0491eb6c554a2ed0b7f75c3f"
+    },
+    {
+      "bytes": 2090,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/freeze-contract.json",
+      "sha256": "22462df4f816c8a60c2d9d8db6efa3311f15732771a3d8d924fa10b2c68bb49b"
+    },
+    {
+      "bytes": 382,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/prompts/README.md",
+      "sha256": "db76744c1ad8f661984e6431159a12797f88b9ffffbdea071dceacc875cc4304"
+    },
+    {
+      "bytes": 528,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/prompts/large.md",
+      "sha256": "10574f43a3f571d8d43870553189d1767855a71c23f04915bb0a5644dd7ac8e4"
+    },
+    {
+      "bytes": 668,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/prompts/new.md",
+      "sha256": "4b332c027cded7e65dcf3fab1ae8a694dc62450594ac493c4b36057eafcb14c6"
+    },
+    {
+      "bytes": 537,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/prompts/small.md",
+      "sha256": "ee50a8845b935acebd0181391b4875f7a1e8607b1f265853b28ddc548dc50db2"
+    },
+    {
+      "bytes": 55,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/runtime/classic-me",
+      "sha256": "d8e2b935e0825d7cc97d9b5261bb52932be391b4cbd3a86fdb6b52fd8718958c"
+    },
+    {
+      "bytes": 861,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/runtime/post-checkout",
+      "sha256": "1f18281f6a0d35fb3ebe447f1a61d3054691a5fdc10e56fd50f4130095008382"
+    },
+    {
+      "bytes": 3629,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/runtime/prist-worktree-bootstrap.mjs",
+      "sha256": "a18d8ecf098047fa52e044f453a5d009fad84d8af4b102b92333b66273677ec4"
+    },
+    {
+      "bytes": 1229,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/setup-contract.md",
+      "sha256": "e4941e57950830fcf86bd442c171f1d2b0828df874d9cd0220a1f9ef91166fa9"
+    },
+    {
+      "bytes": 2499,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/prist-large.md",
+      "sha256": "01fa73dc98cba8704e793db7acbcf0ed5e3488e6f2f3a5d20606c82df738ae82"
+    },
+    {
+      "bytes": 2233,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/prist-new.md",
+      "sha256": "55be0b08c99d6e7a97148a0a2c6679d71e3ff0033dda62a78f4b72405d80823d"
+    },
+    {
+      "bytes": 603,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/prist-release-gate.md",
+      "sha256": "073753368b28d5bea328d79a1d0970af6b69d8f17b60f06e15c8ed7ade79134d"
+    },
+    {
+      "bytes": 2515,
+      "path": "protocol/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/prist-small.md",
+      "sha256": "9c93c031e475fc92d2ba9a866a7404c970d5d7865a718cb38b9485415344f702"
+    },
+    {
+      "bytes": 1448,
+      "path": "scripts/v7/advance-canary-state.mjs",
+      "sha256": "53bf8550a9fc02903ae119407b892147919228648d8b438cceca83be9a327808"
+    },
+    {
+      "bytes": 2269,
+      "path": "scripts/v7/advance-final-freeze-state.mjs",
+      "sha256": "297392cb08be69a802b4f6b4d65deae0a5a6d4d0abf0cc621b10233c38a7eee4"
+    },
+    {
+      "bytes": 3809,
+      "path": "scripts/v7/advance-release-setup.mjs",
+      "sha256": "1d07f6bb8403304de44d797ad6bbc6e013a2833865d9692f3934977ae7dfb734"
+    },
+    {
+      "bytes": 2400,
+      "path": "scripts/v7/batch-capture.mjs",
+      "sha256": "a1031d191edc3e50e03e819ba38162a9d81dd3b011f0d9efe49c000fae2c1c67"
+    },
+    {
+      "bytes": 3510,
+      "path": "scripts/v7/blind-review.mjs",
+      "sha256": "c19fa856d8c0653cb41ab5ba54a621a0aef6dcd289c4adc425ac1b3e262f4893"
+    },
+    {
+      "bytes": 2353,
+      "path": "scripts/v7/canary-registry.mjs",
+      "sha256": "061fd59fb3463525b627a94417ae709394d895403e36862d7af9be2523958877"
+    },
+    {
+      "bytes": 5469,
+      "path": "scripts/v7/capture.mjs",
+      "sha256": "097d882991121b31cdfab70d60f7189999d10ff81a07e1a979642715e12bf7da"
+    },
+    {
+      "bytes": 1417,
+      "path": "scripts/v7/checks.mjs",
+      "sha256": "babfe7b978ca505bdd9537fb947598e0e8d4432abd75eb0020597745c6065d39"
+    },
+    {
+      "bytes": 13192,
+      "path": "scripts/v7/common.mjs",
+      "sha256": "d104e5f4b07fb3480298ae07f57632e6341c5368fd3cdfa9e350ff1940c72923"
+    },
+    {
+      "bytes": 6353,
+      "path": "scripts/v7/complete-canary-registry.mjs",
+      "sha256": "5f0312a1cd87aeb4e62449ac7b76109f0112f6330a59b15de20ca1f1fd9e8818"
+    },
+    {
+      "bytes": 6029,
+      "path": "scripts/v7/final-verifier.mjs",
+      "sha256": "2d313ea60415cf319240073c81808a10c91e57566036056d37f67dbd2cfbbdd7"
+    },
+    {
+      "bytes": 2881,
+      "path": "scripts/v7/fingerprint.mjs",
+      "sha256": "1d823c5eb2cd9a995992df7149a4c85167f88544ef03a7d63bc5eb1398ded8b2"
+    },
+    {
+      "bytes": 3414,
+      "path": "scripts/v7/freeze.mjs",
+      "sha256": "1cdac523049619bbf575fff5402dea0881046e73a07e6f1d583be7906c51e13c"
+    },
+    {
+      "bytes": 3829,
+      "path": "scripts/v7/harvest-setup-agents.mjs",
+      "sha256": "371d80de1ac61d710557710a9cf19363d2d0d5a82197fbaac01eb5bdcd4f23fa"
+    },
+    {
+      "bytes": 3350,
+      "path": "scripts/v7/inventory.mjs",
+      "sha256": "111572249f005aa957832f045c04979fc85f0ae50e731681f7da2f009b0cda8d"
+    },
+    {
+      "bytes": 2978,
+      "path": "scripts/v7/materialize-canary-branches.mjs",
+      "sha256": "0812ebf74cfd51db386d7e72d2ab821114846d9fc7719178fe127a187fb4be50"
+    },
+    {
+      "bytes": 2117,
+      "path": "scripts/v7/materialize-measured-worktrees.mjs",
+      "sha256": "856fbd5412693d8b1cdc9d99ca77be6891e7b7ed7e5453a515de514e5c760f3f"
+    },
+    {
+      "bytes": 5509,
+      "path": "scripts/v7/preflight.mjs",
+      "sha256": "e7d507f1b8741c70c72566d52bdd86bb36f17fb9933fd1c456a74c17d56919b4"
+    },
+    {
+      "bytes": 3390,
+      "path": "scripts/v7/record-canary-dispatch.mjs",
+      "sha256": "844936a5182e2526ceb8054815daf93c3ddeb05cd5d3595013feaf4f812a35fe"
+    },
+    {
+      "bytes": 2829,
+      "path": "scripts/v7/record-measured-dispatch.mjs",
+      "sha256": "26722d695d7da7c865f9d7dbd63091d2cb834fc334d9cd43ec50dc72b8218a37"
+    },
+    {
+      "bytes": 3660,
+      "path": "scripts/v7/registry.mjs",
+      "sha256": "24e4fa8a3224819c3f0fc3458cf988b1220e75de905162ed8a0f6e0b85467f94"
+    },
+    {
+      "bytes": 10933,
+      "path": "scripts/v7/report.mjs",
+      "sha256": "886705f18feea1fae68d54ecec4ad7f8704be1d034b61b38b68d2a71b340a8a3"
+    },
+    {
+      "bytes": 4278,
+      "path": "scripts/v7/self-tests.mjs",
+      "sha256": "393e1715ed5b93bc98dd41116ddb1b37249bc2d5c178346e46f10eaaee0e4de6"
+    },
+    {
+      "bytes": 2965,
+      "path": "scripts/v7/source-integrity.mjs",
+      "sha256": "d222480d3ae8c870b9fb0980de8f7f385204785c55b853f5f89ad12285acfc24"
+    },
+    {
+      "bytes": 5033,
+      "path": "scripts/v7/usage.mjs",
+      "sha256": "14dbfe0ee5a202342f047d640669e39218b24fb36f74ab8d4b3ae8a2f706031c"
+    }
+  ],
+  "releaseReady": true,
+  "schemaVersion": 1,
+  "status": "frozen"
+}

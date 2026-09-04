@@ -1,0 +1,1728 @@
+{
+  "schemaVersion": 1,
+  "title": "Plain Codex, BMAD Method, Prist и Classic spec-driven: первый сравнительный снимок",
+  "generatedFromFrozenEvidenceAt": "2026-09-02T15:10:03.441Z",
+  "sample": {
+    "scenarios": 3,
+    "methods": 4,
+    "repetitionsPerCell": 3,
+    "measuredTasks": 36
+  },
+  "execution": {
+    "model": "gpt-5.6-luna",
+    "reasoning": "xhigh",
+    "firstPassOnly": true,
+    "browserUsedByMeasuredAgents": false,
+    "maxClarificationsPerTask": 2
+  },
+  "methodology": {
+    "scenarios": {
+      "new-project": "Хочу небольшой личный веб-сервис «Мой список чтения». Я добавляю книгу с названием и автором, вижу списки «Хочу прочитать», «Читаю» и «Прочитано» и могу переносить книги между ними. Всё должно храниться локально и переживать перезапуск. Интерфейс — спокойный, понятный и на русском. Сделай готовую работающую версию, которую можно запустить на компьютере без Docker.",
+      "small-project": "В Telegram Gateway сейчас можно отправлять сообщения. Мне нужны ещё редактирование и удаление сообщений. Хочу, чтобы ошибки оставались удобными для интеграции, а существующие авторизация, очередь, повторы и защита от дублей продолжили работать. Доведи API до готового состояния и обнови документацию.",
+      "large-project": "Добавь в «Последние записи» поиск по названию встречи или приложению. Список должен обновляться по мере ввода, поиск — легко сбрасываться, а при отсутствии результатов должно быть понятно, что произошло. Поддержи русский и английский интерфейс и доведи изменение до готового состояния."
+    },
+    "conditions": {
+      "plain": "Исходный репозиторий и обычный Codex без сравниваемой методологии.",
+      "bmad": "BMAD Method 6.11.0, module bmm, integration codex.",
+      "prist": "Hosted Prist с project-local connection kit и service-owned spec-driven workflow.",
+      "classic-spec": "Repository-based классический spec-driven workflow."
+    },
+    "qualityWeights": {
+      "functional": 50,
+      "regressionBuildSmoke": 20,
+      "architectureProjectFit": 20,
+      "scopeUxSecurity": 10
+    },
+    "objectiveCheckRepetitionsPerTask": 3,
+    "blindReviewsPerTask": 2,
+    "thirdBlindReviewThresholdPoints": 4,
+    "severityCaps": {
+      "criticalFindingMaximumScore": 49,
+      "majorFindingMaximumScore": 69
+    }
+  },
+  "pricing": {
+    "schemaVersion": 1,
+    "capturedAt": "2026-09-01T16:30:00Z",
+    "model": "gpt-5.6-luna",
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+    "currency": "USD",
+    "perMillionTokens": {
+      "uncachedInput": 0.2,
+      "cachedInput": 0.02,
+      "cacheWriteInput": 0.25,
+      "outputIncludingReasoning": 1.2
+    },
+    "longContext": {
+      "thresholdInputTokensPerRequest": 272000,
+      "inputMultiplier": 2,
+      "outputMultiplier": 1.5
+    },
+    "notes": [
+      "Cache writes are billed at 1.25 times the uncached input rate.",
+      "Historical setup sessions used a 258400-token context window, below the long-context threshold.",
+      "Reasoning output tokens are included in output tokens and are not billed twice."
+    ]
+  },
+  "preparation": {
+    "elapsedMs": 232772,
+    "newlyIncurredProviderTokens": 0,
+    "newlyIncurredSetupCanonCostUsd": 0,
+    "note": "В измерительном цикле использован заранее замороженный baseline. Историческая стоимость создания методологий и продуктового канона в этот снимок не включена."
+  },
+  "aggregate": {
+    "new-project/plain": {
+      "n": 3,
+      "totalTokens": {
+        "median": 4752855,
+        "mean": 4940160.666666667
+      },
+      "uncachedInputTokens": {
+        "median": 453265,
+        "mean": 388283
+      },
+      "cachedInputTokens": {
+        "median": 4015360,
+        "mean": 4344576
+      },
+      "outputTokens": {
+        "median": 182587,
+        "mean": 207301.66666666666
+      },
+      "taskCostUsd": {
+        "median": 0.42385148,
+        "mean": 0.41331012
+      },
+      "taskElapsedMs": {
+        "median": 2013443,
+        "mean": 2042792
+      },
+      "quality": {
+        "median": 69,
+        "mean": 57.666666666666664
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "new-project/bmad": {
+      "n": 3,
+      "totalTokens": {
+        "median": 27151828,
+        "mean": 107100416.33333333
+      },
+      "uncachedInputTokens": {
+        "median": 1810189,
+        "mean": 3352980.3333333335
+      },
+      "cachedInputTokens": {
+        "median": 24921344,
+        "mean": 102424234.66666667
+      },
+      "outputTokens": {
+        "median": 420295,
+        "mean": 1323201.3333333333
+      },
+      "taskCostUsd": {
+        "median": 1.36481868,
+        "mean": 4.30692236
+      },
+      "taskElapsedMs": {
+        "median": 3629356,
+        "mean": 3497619.3333333335
+      },
+      "quality": {
+        "median": 69,
+        "mean": 57.666666666666664
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "new-project/prist": {
+      "n": 3,
+      "totalTokens": {
+        "median": 8695780,
+        "mean": 7309246.333333333
+      },
+      "uncachedInputTokens": {
+        "median": 194206,
+        "mean": 180732.33333333334
+      },
+      "cachedInputTokens": {
+        "median": 8441856,
+        "mean": 7083349.333333333
+      },
+      "outputTokens": {
+        "median": 45701,
+        "mean": 45164.666666666664
+      },
+      "taskCostUsd": {
+        "median": 0.26662576,
+        "mean": 0.23201105333333336
+      },
+      "taskElapsedMs": {
+        "median": 1257000,
+        "mean": 1215000
+      },
+      "quality": {
+        "median": 87,
+        "mean": 84
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "new-project/classic-spec": {
+      "n": 3,
+      "totalTokens": {
+        "median": 46266076,
+        "mean": 72036622
+      },
+      "uncachedInputTokens": {
+        "median": 2830233,
+        "mean": 3269806.6666666665
+      },
+      "cachedInputTokens": {
+        "median": 42001152,
+        "mean": 67277397.33333333
+      },
+      "outputTokens": {
+        "median": 1434691,
+        "mean": 1489418
+      },
+      "taskCostUsd": {
+        "median": 3.12769884,
+        "mean": 3.7868108799999995
+      },
+      "taskElapsedMs": {
+        "median": 4074624,
+        "mean": 4142943
+      },
+      "quality": {
+        "median": 45,
+        "mean": 50.666666666666664
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "small-project/plain": {
+      "n": 3,
+      "totalTokens": {
+        "median": 348491054,
+        "mean": 400859824.3333333
+      },
+      "uncachedInputTokens": {
+        "median": 9182309,
+        "mean": 10495502.333333334
+      },
+      "cachedInputTokens": {
+        "median": 338076160,
+        "mean": 388771413.3333333
+      },
+      "outputTokens": {
+        "median": 1244652,
+        "mean": 1592908.6666666667
+      },
+      "taskCostUsd": {
+        "median": 10.077087,
+        "mean": 11.786019133333335
+      },
+      "taskElapsedMs": {
+        "median": 4204885,
+        "mean": 4237103.666666667
+      },
+      "quality": {
+        "median": 35,
+        "mean": 37.333333333333336
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "small-project/bmad": {
+      "n": 3,
+      "totalTokens": {
+        "median": 39429899,
+        "mean": 374883005.3333333
+      },
+      "uncachedInputTokens": {
+        "median": 2395499,
+        "mean": 8789246.666666666
+      },
+      "cachedInputTokens": {
+        "median": 36873472,
+        "mean": 364417365.3333333
+      },
+      "outputTokens": {
+        "median": 193515,
+        "mean": 1676393.3333333333
+      },
+      "taskCostUsd": {
+        "median": 1.44226984,
+        "mean": 11.05786864
+      },
+      "taskElapsedMs": {
+        "median": 3648434,
+        "mean": 4311032.333333333
+      },
+      "quality": {
+        "median": 29,
+        "mean": 31.666666666666668
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "small-project/prist": {
+      "n": 3,
+      "totalTokens": {
+        "median": 16551737,
+        "mean": 16695365
+      },
+      "uncachedInputTokens": {
+        "median": 281761,
+        "mean": 361861
+      },
+      "cachedInputTokens": {
+        "median": 16221696,
+        "mean": 16281002.666666666
+      },
+      "outputTokens": {
+        "median": 48280,
+        "mean": 52501.333333333336
+      },
+      "taskCostUsd": {
+        "median": 0.43872212,
+        "mean": 0.46099385333333337
+      },
+      "taskElapsedMs": {
+        "median": 1556000,
+        "mean": 1662333.3333333333
+      },
+      "quality": {
+        "median": 69,
+        "mean": 69
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "small-project/classic-spec": {
+      "n": 3,
+      "totalTokens": {
+        "median": 218913325,
+        "mean": 218480201
+      },
+      "uncachedInputTokens": {
+        "median": 8441775,
+        "mean": 8434431.333333334
+      },
+      "cachedInputTokens": {
+        "median": 208773888,
+        "mean": 208565333.33333334
+      },
+      "outputTokens": {
+        "median": 1415869,
+        "mean": 1480436.3333333333
+      },
+      "taskCostUsd": {
+        "median": 7.90102716,
+        "mean": 7.634716533333333
+      },
+      "taskElapsedMs": {
+        "median": 4194725,
+        "mean": 3202676.6666666665
+      },
+      "quality": {
+        "median": 39,
+        "mean": 39.666666666666664
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "large-project/plain": {
+      "n": 3,
+      "totalTokens": {
+        "median": 113684554,
+        "mean": 125198810
+      },
+      "uncachedInputTokens": {
+        "median": 5576301,
+        "mean": 5492850.333333333
+      },
+      "cachedInputTokens": {
+        "median": 107446528,
+        "mean": 119052373.33333333
+      },
+      "outputTokens": {
+        "median": 661725,
+        "mean": 653586.3333333334
+      },
+      "taskCostUsd": {
+        "median": 4.05826076,
+        "mean": 4.263921133333333
+      },
+      "taskElapsedMs": {
+        "median": 3811712,
+        "mean": 3324487.6666666665
+      },
+      "quality": {
+        "median": 98,
+        "mean": 98
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "large-project/bmad": {
+      "n": 3,
+      "totalTokens": {
+        "median": 19725271,
+        "mean": 134742219.66666666
+      },
+      "uncachedInputTokens": {
+        "median": 1640121,
+        "mean": 4952974.666666667
+      },
+      "cachedInputTokens": {
+        "median": 17957120,
+        "mean": 129286826.66666667
+      },
+      "outputTokens": {
+        "median": 132531,
+        "mean": 502418.3333333333
+      },
+      "taskCostUsd": {
+        "median": 0.8408026,
+        "mean": 4.179233466666667
+      },
+      "taskElapsedMs": {
+        "median": 2041483,
+        "mean": 2352766.6666666665
+      },
+      "quality": {
+        "median": 25,
+        "mean": 30
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "large-project/prist": {
+      "n": 3,
+      "totalTokens": {
+        "median": 7304602,
+        "mean": 7505750.666666667
+      },
+      "uncachedInputTokens": {
+        "median": 185778,
+        "mean": 180494.33333333334
+      },
+      "cachedInputTokens": {
+        "median": 7110400,
+        "mean": 7299157.333333333
+      },
+      "outputTokens": {
+        "median": 25796,
+        "mean": 26099
+      },
+      "taskCostUsd": {
+        "median": 0.2068444,
+        "mean": 0.21340081333333336
+      },
+      "taskElapsedMs": {
+        "median": 815000,
+        "mean": 816333.3333333334
+      },
+      "quality": {
+        "median": 98,
+        "mean": 93
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    },
+    "large-project/classic-spec": {
+      "n": 3,
+      "totalTokens": {
+        "median": 177340814,
+        "mean": 160405823
+      },
+      "uncachedInputTokens": {
+        "median": 6984139,
+        "mean": 6769938.666666667
+      },
+      "cachedInputTokens": {
+        "median": 169265664,
+        "mean": 152765269.33333334
+      },
+      "outputTokens": {
+        "median": 1022989,
+        "mean": 870615
+      },
+      "taskCostUsd": {
+        "median": 6.09135428,
+        "mean": 5.45403112
+      },
+      "taskElapsedMs": {
+        "median": 2394283,
+        "mean": 1833106
+      },
+      "quality": {
+        "median": 82,
+        "mean": 73.33333333333333
+      },
+      "interventions": {
+        "median": 0,
+        "mean": 0
+      }
+    }
+  },
+  "ratiosToPlain": {
+    "new-project/bmad": {
+      "totalTokensMedianRatioToPlain": 5.7127,
+      "uncachedTokensMedianRatioToPlain": 3.9937,
+      "cachedTokensMedianRatioToPlain": 6.2065,
+      "taskCostMedianRatioToPlain": 3.22,
+      "elapsedMedianRatioToPlain": 1.8026,
+      "qualityMedianDeltaVsPlain": 0
+    },
+    "new-project/prist": {
+      "totalTokensMedianRatioToPlain": 1.8296,
+      "uncachedTokensMedianRatioToPlain": 0.4285,
+      "cachedTokensMedianRatioToPlain": 2.1024,
+      "taskCostMedianRatioToPlain": 0.6291,
+      "elapsedMedianRatioToPlain": 0.6243,
+      "qualityMedianDeltaVsPlain": 18
+    },
+    "new-project/classic-spec": {
+      "totalTokensMedianRatioToPlain": 9.7344,
+      "uncachedTokensMedianRatioToPlain": 6.2441,
+      "cachedTokensMedianRatioToPlain": 10.4601,
+      "taskCostMedianRatioToPlain": 7.3792,
+      "elapsedMedianRatioToPlain": 2.0237,
+      "qualityMedianDeltaVsPlain": -24
+    },
+    "small-project/bmad": {
+      "totalTokensMedianRatioToPlain": 0.1131,
+      "uncachedTokensMedianRatioToPlain": 0.2609,
+      "cachedTokensMedianRatioToPlain": 0.1091,
+      "taskCostMedianRatioToPlain": 0.1431,
+      "elapsedMedianRatioToPlain": 0.8677,
+      "qualityMedianDeltaVsPlain": -6
+    },
+    "small-project/prist": {
+      "totalTokensMedianRatioToPlain": 0.0475,
+      "uncachedTokensMedianRatioToPlain": 0.0307,
+      "cachedTokensMedianRatioToPlain": 0.048,
+      "taskCostMedianRatioToPlain": 0.0435,
+      "elapsedMedianRatioToPlain": 0.37,
+      "qualityMedianDeltaVsPlain": 34
+    },
+    "small-project/classic-spec": {
+      "totalTokensMedianRatioToPlain": 0.6282,
+      "uncachedTokensMedianRatioToPlain": 0.9194,
+      "cachedTokensMedianRatioToPlain": 0.6175,
+      "taskCostMedianRatioToPlain": 0.7841,
+      "elapsedMedianRatioToPlain": 0.9976,
+      "qualityMedianDeltaVsPlain": 4
+    },
+    "large-project/bmad": {
+      "totalTokensMedianRatioToPlain": 0.1735,
+      "uncachedTokensMedianRatioToPlain": 0.2941,
+      "cachedTokensMedianRatioToPlain": 0.1671,
+      "taskCostMedianRatioToPlain": 0.2072,
+      "elapsedMedianRatioToPlain": 0.5356,
+      "qualityMedianDeltaVsPlain": -73
+    },
+    "large-project/prist": {
+      "totalTokensMedianRatioToPlain": 0.0643,
+      "uncachedTokensMedianRatioToPlain": 0.0333,
+      "cachedTokensMedianRatioToPlain": 0.0662,
+      "taskCostMedianRatioToPlain": 0.051,
+      "elapsedMedianRatioToPlain": 0.2138,
+      "qualityMedianDeltaVsPlain": 0
+    },
+    "large-project/classic-spec": {
+      "totalTokensMedianRatioToPlain": 1.5599,
+      "uncachedTokensMedianRatioToPlain": 1.2525,
+      "cachedTokensMedianRatioToPlain": 1.5753,
+      "taskCostMedianRatioToPlain": 1.501,
+      "elapsedMedianRatioToPlain": 0.6281,
+      "qualityMedianDeltaVsPlain": -16
+    }
+  },
+  "rows": [
+    {
+      "scenario": "new-project",
+      "condition": "plain",
+      "replica": 1,
+      "taskId": "01a0608e-3abe-7b60-8fd8-92c18c7fd0f3",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 4752855,
+        "uncachedInput": 475376,
+        "cachedInput": 4015360,
+        "outputIncludingReasoning": 262119,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 2108161,
+        "agentActiveMs": 2108161,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 0.4899252,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 0.4899252
+      },
+      "quality": {
+        "official": 30,
+        "rawBeforeSeverityCap": 30
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "plain",
+      "replica": 2,
+      "taskId": "01a0608e-42f7-7902-ad68-d3f3cbce0ce0",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 3727071,
+        "uncachedInput": 236208,
+        "cachedInput": 3313664,
+        "outputIncludingReasoning": 177199,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 2013443,
+        "agentActiveMs": 2013443,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 0.32615368,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 0.32615368
+      },
+      "quality": {
+        "official": 69,
+        "rawBeforeSeverityCap": 69
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "plain",
+      "replica": 3,
+      "taskId": "01a0608e-4f5e-72b1-88ae-63f65dbc5667",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 6340556,
+        "uncachedInput": 453265,
+        "cachedInput": 5704704,
+        "outputIncludingReasoning": 182587,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 2006772,
+        "agentActiveMs": 2006772,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 0.42385148,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 0.42385148
+      },
+      "quality": {
+        "official": 74,
+        "rawBeforeSeverityCap": 74
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "bmad",
+      "replica": 1,
+      "taskId": "01a0608e-5b20-7142-868b-91c9f08c3e12",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 2923394,
+        "uncachedInput": 351770,
+        "cachedInput": 2404096,
+        "outputIncludingReasoning": 167528,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 1917461,
+        "agentActiveMs": 1917461,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 0.31946952,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 0.31946952
+      },
+      "quality": {
+        "official": 75,
+        "rawBeforeSeverityCap": 75
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "bmad",
+      "replica": 2,
+      "taskId": "01a0608e-6a3d-7a00-b575-5f4963bf2f83",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 27151828,
+        "uncachedInput": 1810189,
+        "cachedInput": 24921344,
+        "outputIncludingReasoning": 420295,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 3629356,
+        "agentActiveMs": 3629356,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 1.36481868,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 1.36481868
+      },
+      "quality": {
+        "official": 29,
+        "rawBeforeSeverityCap": 29
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "bmad",
+      "replica": 3,
+      "taskId": "01a0608e-7822-7ec3-b677-1b1b822377cc",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 291226027,
+        "uncachedInput": 7896982,
+        "cachedInput": 279947264,
+        "outputIncludingReasoning": 3381781,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4946041,
+        "agentActiveMs": 4946041,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 11.23647888,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 11.23647888
+      },
+      "quality": {
+        "official": 69,
+        "rawBeforeSeverityCap": 69
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "prist",
+      "replica": 1,
+      "taskId": "01a06255-8d3b-7791-9b54-ca4c0be7d1bd",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 8887075,
+        "uncachedInput": 194206,
+        "cachedInput": 8647168,
+        "outputIncludingReasoning": 45701,
+        "reasoningOutput": 18025
+      },
+      "timing": {
+        "taskElapsedMs": 1257000,
+        "agentActiveMs": 1256075
+      },
+      "costUsd": {
+        "lateChangeTask": 0.26662576,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 96,
+        "rawBeforeSeverityCap": 96
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "prist",
+      "replica": 2,
+      "taskId": "01a06255-b2e7-7f03-9aba-6359a715bc0a",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 8695780,
+        "uncachedInput": 204346,
+        "cachedInput": 8441856,
+        "outputIncludingReasoning": 49578,
+        "reasoningOutput": 20596
+      },
+      "timing": {
+        "taskElapsedMs": 1353000,
+        "agentActiveMs": 1351729
+      },
+      "costUsd": {
+        "lateChangeTask": 0.26919992,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 69,
+        "rawBeforeSeverityCap": 74
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "prist",
+      "replica": 3,
+      "taskId": "01a06255-998a-71f2-8bbe-cd6b9dcddfa6",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 4344884,
+        "uncachedInput": 143645,
+        "cachedInput": 4161024,
+        "outputIncludingReasoning": 40215,
+        "reasoningOutput": 15972
+      },
+      "timing": {
+        "taskElapsedMs": 1035000,
+        "agentActiveMs": 1033984
+      },
+      "costUsd": {
+        "lateChangeTask": 0.16020748,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 87,
+        "rawBeforeSeverityCap": 87
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "classic-spec",
+      "replica": 1,
+      "taskId": "01a0608e-e6ce-74b3-8089-a821ba50ce1e",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 125090696,
+        "uncachedInput": 5009466,
+        "cachedInput": 118049280,
+        "outputIncludingReasoning": 2031950,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4333008,
+        "agentActiveMs": 4333008,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 5.8012188,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 5.8012188
+      },
+      "quality": {
+        "official": 45,
+        "rawBeforeSeverityCap": 45
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "classic-spec",
+      "replica": 2,
+      "taskId": "01a0608e-f4a8-7221-a0af-2f7cd829f44d",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 44753094,
+        "uncachedInput": 1969721,
+        "cachedInput": 41781760,
+        "outputIncludingReasoning": 1001613,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4021197,
+        "agentActiveMs": 4021197,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 2.431515,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 2.431515
+      },
+      "quality": {
+        "official": 83,
+        "rawBeforeSeverityCap": 83
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "new-project",
+      "condition": "classic-spec",
+      "replica": 3,
+      "taskId": "01a0608f-0382-7e42-ba4a-cd7e6608d761",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 46266076,
+        "uncachedInput": 2830233,
+        "cachedInput": 42001152,
+        "outputIncludingReasoning": 1434691,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4074624,
+        "agentActiveMs": 4074624,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 3.12769884,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 3.12769884
+      },
+      "quality": {
+        "official": 24,
+        "rawBeforeSeverityCap": 24
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "plain",
+      "replica": 1,
+      "taskId": "01a0608f-189d-7d53-ab24-44820ac4ff2d",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 348491054,
+        "uncachedInput": 9182309,
+        "cachedInput": 338076160,
+        "outputIncludingReasoning": 1232585,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4082557,
+        "agentActiveMs": 4082557,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 10.077087,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 10.077087
+      },
+      "quality": {
+        "official": 34,
+        "rawBeforeSeverityCap": 34
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "plain",
+      "replica": 2,
+      "taskId": "01a0608f-456f-73c0-93c9-59aee7d7e620",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 254246872,
+        "uncachedInput": 8595948,
+        "cachedInput": 244406272,
+        "outputIncludingReasoning": 1244652,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4204885,
+        "agentActiveMs": 4204885,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 8.10089744,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 8.10089744
+      },
+      "quality": {
+        "official": 35,
+        "rawBeforeSeverityCap": 35
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "plain",
+      "replica": 3,
+      "taskId": "01a0608f-5e57-70b1-bc38-ec244fefddb8",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 599841547,
+        "uncachedInput": 13708250,
+        "cachedInput": 583831808,
+        "outputIncludingReasoning": 2301489,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4423869,
+        "agentActiveMs": 4423869,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 17.18007296,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 17.18007296
+      },
+      "quality": {
+        "official": 43,
+        "rawBeforeSeverityCap": 43
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "bmad",
+      "replica": 1,
+      "taskId": "01a0608f-6ce6-7780-ab7d-444ebe110540",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 35393309,
+        "uncachedInput": 2395499,
+        "cachedInput": 32809984,
+        "outputIncludingReasoning": 187826,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 3623164,
+        "agentActiveMs": 3623164,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 1.36069068,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 1.36069068
+      },
+      "quality": {
+        "official": 27,
+        "rawBeforeSeverityCap": 27
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "bmad",
+      "replica": 2,
+      "taskId": "01a0608f-c629-7be3-a8e5-0f17c53c3ec5",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 39429899,
+        "uncachedInput": 2362912,
+        "cachedInput": 36873472,
+        "outputIncludingReasoning": 193515,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 3648434,
+        "agentActiveMs": 3648434,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 1.44226984,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 1.44226984
+      },
+      "quality": {
+        "official": 29,
+        "rawBeforeSeverityCap": 29
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "bmad",
+      "replica": 3,
+      "taskId": "01a0608f-bbaa-7fc2-9b69-714504cc5e2c",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 1049825808,
+        "uncachedInput": 21609329,
+        "cachedInput": 1023568640,
+        "outputIncludingReasoning": 4647839,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 5661499,
+        "agentActiveMs": 5661499,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 30.3706454,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 30.3706454
+      },
+      "quality": {
+        "official": 39,
+        "rawBeforeSeverityCap": 39
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "prist",
+      "replica": 1,
+      "taskId": "01a06255-a6fb-7723-92f0-7466ce5db80d",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 16551737,
+        "uncachedInput": 281761,
+        "cachedInput": 16221696,
+        "outputIncludingReasoning": 48280,
+        "reasoningOutput": 22494
+      },
+      "timing": {
+        "taskElapsedMs": 1556000,
+        "agentActiveMs": 1553975
+      },
+      "costUsd": {
+        "lateChangeTask": 0.43872212,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 69,
+        "rawBeforeSeverityCap": 86
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "prist",
+      "replica": 2,
+      "taskId": "01a06255-ce35-7361-920c-f0e0534c1f20",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 12658563,
+        "uncachedInput": 246718,
+        "cachedInput": 12375040,
+        "outputIncludingReasoning": 36805,
+        "reasoningOutput": 16669
+      },
+      "timing": {
+        "taskElapsedMs": 1245000,
+        "agentActiveMs": 1243001
+      },
+      "costUsd": {
+        "lateChangeTask": 0.3410104,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 69,
+        "rawBeforeSeverityCap": 78
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "prist",
+      "replica": 3,
+      "taskId": "01a06255-e6e3-7a20-a2d2-7f6801625788",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 20875795,
+        "uncachedInput": 557104,
+        "cachedInput": 20246272,
+        "outputIncludingReasoning": 72419,
+        "reasoningOutput": 31722
+      },
+      "timing": {
+        "taskElapsedMs": 2186000,
+        "agentActiveMs": 2183774
+      },
+      "costUsd": {
+        "lateChangeTask": 0.60324904,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 69,
+        "rawBeforeSeverityCap": 76
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "classic-spec",
+      "replica": 1,
+      "taskId": "01a06091-937c-7301-97fc-8a0a6e3eedbb",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 241011622,
+        "uncachedInput": 9101316,
+        "cachedInput": 230582528,
+        "outputIncludingReasoning": 1327778,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4317311,
+        "agentActiveMs": 4317311,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 8.02524736,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 8.02524736
+      },
+      "quality": {
+        "official": 37,
+        "rawBeforeSeverityCap": 37
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "classic-spec",
+      "replica": 2,
+      "taskId": "01a06091-baed-7171-907b-6190c03d22fd",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 218913325,
+        "uncachedInput": 8441775,
+        "cachedInput": 208773888,
+        "outputIncludingReasoning": 1697662,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 4194725,
+        "agentActiveMs": 4194725,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 7.90102716,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 7.90102716
+      },
+      "quality": {
+        "official": 43,
+        "rawBeforeSeverityCap": 43
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "small-project",
+      "condition": "classic-spec",
+      "replica": 3,
+      "taskId": "01a061d1-f717-7bd3-9b76-60c62ac807d4",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 195515656,
+        "uncachedInput": 7760203,
+        "cachedInput": 186339584,
+        "outputIncludingReasoning": 1415869,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 1095994,
+        "agentActiveMs": 1095994,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 6.97787508,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 6.97787508
+      },
+      "quality": {
+        "official": 39,
+        "rawBeforeSeverityCap": 39
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "plain",
+      "replica": 1,
+      "taskId": "01a06092-5b15-7a11-a062-e5302eb4554e",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 166426014,
+        "uncachedInput": 6332330,
+        "cachedInput": 159358464,
+        "outputIncludingReasoning": 735220,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 3811712,
+        "agentActiveMs": 3811712,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 5.33589928,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 5.33589928
+      },
+      "quality": {
+        "official": 98,
+        "rawBeforeSeverityCap": 98
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "plain",
+      "replica": 2,
+      "taskId": "01a06092-6a08-76c0-8908-bf25e155bd90",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 113684554,
+        "uncachedInput": 5576301,
+        "cachedInput": 107446528,
+        "outputIncludingReasoning": 661725,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 3845186,
+        "agentActiveMs": 3845186,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 4.05826076,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 4.05826076
+      },
+      "quality": {
+        "official": 98,
+        "rawBeforeSeverityCap": 98
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "plain",
+      "replica": 3,
+      "taskId": "01a06093-56b3-7dd3-b487-e82bb5610f58",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 95485862,
+        "uncachedInput": 4569920,
+        "cachedInput": 90352128,
+        "outputIncludingReasoning": 563814,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 2316565,
+        "agentActiveMs": 2316565,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 3.39760336,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 3.39760336
+      },
+      "quality": {
+        "official": 98,
+        "rawBeforeSeverityCap": 98
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "bmad",
+      "replica": 1,
+      "taskId": "01a060a9-e9b2-77c3-b553-47882dc9d541",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 17666049,
+        "uncachedInput": 1579086,
+        "cachedInput": 15954432,
+        "outputIncludingReasoning": 132531,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 2010697,
+        "agentActiveMs": 2010697,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 0.79394304,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 0.79394304
+      },
+      "quality": {
+        "official": 25,
+        "rawBeforeSeverityCap": 25
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "bmad",
+      "replica": 2,
+      "taskId": "01a060aa-2719-7ba0-861a-973bad61c874",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 19725271,
+        "uncachedInput": 1640121,
+        "cachedInput": 17957120,
+        "outputIncludingReasoning": 128030,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 2041483,
+        "agentActiveMs": 2041483,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 0.8408026,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 0.8408026
+      },
+      "quality": {
+        "official": 25,
+        "rawBeforeSeverityCap": 25
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "bmad",
+      "replica": 3,
+      "taskId": "01a060aa-8e06-7e60-95b1-269c3c38035e",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 366835339,
+        "uncachedInput": 11639717,
+        "cachedInput": 353948928,
+        "outputIncludingReasoning": 1246694,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 3006120,
+        "agentActiveMs": 3006120,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 10.90295476,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 10.90295476
+      },
+      "quality": {
+        "official": 40,
+        "rawBeforeSeverityCap": 40
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "prist",
+      "replica": 1,
+      "taskId": "01a06255-be0b-74b0-bee4-634056a54da1",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 8491753,
+        "uncachedInput": 185778,
+        "cachedInput": 8277504,
+        "outputIncludingReasoning": 28471,
+        "reasoningOutput": 14239
+      },
+      "timing": {
+        "taskElapsedMs": 870000,
+        "agentActiveMs": 867895
+      },
+      "costUsd": {
+        "lateChangeTask": 0.23687088,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 98,
+        "rawBeforeSeverityCap": 98
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "prist",
+      "replica": 2,
+      "taskId": "01a06255-d9eb-74f3-9ea8-5fd07d536356",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 6720897,
+        "uncachedInput": 187299,
+        "cachedInput": 6509568,
+        "outputIncludingReasoning": 24030,
+        "reasoningOutput": 11741
+      },
+      "timing": {
+        "taskElapsedMs": 764000,
+        "agentActiveMs": 761648
+      },
+      "costUsd": {
+        "lateChangeTask": 0.19648716,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 98,
+        "rawBeforeSeverityCap": 98
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "prist",
+      "replica": 3,
+      "taskId": "01a06255-f43e-7b80-8c4c-4ff7b8a132b0",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 7304602,
+        "uncachedInput": 168406,
+        "cachedInput": 7110400,
+        "outputIncludingReasoning": 25796,
+        "reasoningOutput": 11439
+      },
+      "timing": {
+        "taskElapsedMs": 815000,
+        "agentActiveMs": 813728
+      },
+      "costUsd": {
+        "lateChangeTask": 0.2068444,
+        "newlyIncurredSetupCanon": 0
+      },
+      "quality": {
+        "official": 83,
+        "rawBeforeSeverityCap": 83
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "classic-spec",
+      "replica": 1,
+      "taskId": "01a060ad-296c-70b3-bdd7-e39c389c93c8",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 239846109,
+        "uncachedInput": 9880528,
+        "cachedInput": 228942592,
+        "outputIncludingReasoning": 1022989,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 2399179,
+        "agentActiveMs": 2399179,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 7.78254424,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 7.78254424
+      },
+      "quality": {
+        "official": 82,
+        "rawBeforeSeverityCap": 82
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "classic-spec",
+      "replica": 2,
+      "taskId": "01a060ad-c1e4-7ff3-95bf-1e167e15269c",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 177340814,
+        "uncachedInput": 6984139,
+        "cachedInput": 169265664,
+        "outputIncludingReasoning": 1091011,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 2394283,
+        "agentActiveMs": 2394283,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 6.09135428,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 6.09135428
+      },
+      "quality": {
+        "official": 40,
+        "rawBeforeSeverityCap": 40
+      },
+      "interventions": 0
+    },
+    {
+      "scenario": "large-project",
+      "condition": "classic-spec",
+      "replica": 3,
+      "taskId": "01a060cd-46cc-7151-b88c-c31e615a018d",
+      "model": "gpt-5.6-luna",
+      "reasoning": "xhigh",
+      "firstPassOnly": true,
+      "browserUsed": false,
+      "tokens": {
+        "total": 64030546,
+        "uncachedInput": 3445149,
+        "cachedInput": 60087552,
+        "outputIncludingReasoning": 497845,
+        "reasoningOutput": 0
+      },
+      "timing": {
+        "taskElapsedMs": 705856,
+        "agentActiveMs": 705856,
+        "humanWaitingMs": 0
+      },
+      "costUsd": {
+        "lateChangeTask": 2.48819484,
+        "newlyIncurredSetupCanon": 0,
+        "developmentFullCycle": 2.48819484
+      },
+      "quality": {
+        "official": 98,
+        "rawBeforeSeverityCap": 98
+      },
+      "interventions": 0
+    }
+  ],
+  "externalEvaluation": {
+    "pristRowsOnly": true,
+    "tokens": 29710054,
+    "costUsd": 1.14781888,
+    "excludedFromMethodRatios": true
+  },
+  "verification": {
+    "status": "pass",
+    "verifiedAt": "2026-09-02T15:14:33.015Z",
+    "matrixRows": 36,
+    "exactModelReasoning": true,
+    "firstPassOnly": true,
+    "browserUsed": false,
+    "objectiveRepetitionsPerRow": 3,
+    "blindReviewPasses": 18,
+    "secretScan": "pass",
+    "sourceIntegrityFiles": 2349
+  },
+  "limitations": [
+    "Первый сравнительный снимок: n=3 на ячейку. Результат не доказывает долгосрочную стабильность и не оценивает дисперсию между моделями, версиями или типами задач.",
+    "Вновь понесённая стоимость setup/canon равна нулю, потому что в этом измерительном цикле использован замороженный baseline. Историческую стоимость подготовки методов по этому снимку сравнивать нельзя.",
+    "Внешняя оценка измерена отдельно для Prist и исключена из межметодных отношений."
+  ]
+}

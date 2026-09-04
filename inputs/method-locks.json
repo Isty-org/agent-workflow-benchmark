@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "methods": {
+    "bmad": {
+      "integration": "codex",
+      "module": "bmm",
+      "version": "6.11.0"
+    },
+    "classicSpec": {
+      "fingerprint": "deferred_to_v3_setup_identity",
+      "source": "V3 pinned repository workflow"
+    },
+    "prist": {
+      "exactStageRevision": "87294911be2e6b75e4f560bfc2ae33c9aed88d3b",
+      "image": "sha256:35d12f562c7998ef1c7d5454ca8d47445e5431d629cac0eda0d499737b42d2c3",
+      "interface": "direct-api-mcp-only",
+      "liveEvidence": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/wi-131-live.json",
+      "origin": "https://prist.isty.ist",
+      "releaseEvidence": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/wi-131-release.json",
+      "stage": "WI-131 release-gated",
+      "workflowBundle": "2026-08-27.4"
+    }
+  },
+  "pristFinalStage": {
+    "origin": "https://prist.isty.ist",
+    "revision": "87294911be2e6b75e4f560bfc2ae33c9aed88d3b",
+    "image": "sha256:35d12f562c7998ef1c7d5454ca8d47445e5431d629cac0eda0d499737b42d2c3",
+    "health": 200,
+    "readiness": 200
+  },
+  "pristOperationProfile": {
+    "operations": [
+      "setup_context",
+      "project_context",
+      "get_spec_example",
+      "resolve_change",
+      "start",
+      "finish",
+      "begin_change",
+      "resume_change",
+      "prepare_finish",
+      "finish_change",
+      "refresh_activation",
+      "close_activation",
+      "remove_activation",
+      "prepare_full_canon_adaptation",
+      "confirm_full_canon_adaptation",
+      "cancel_full_canon_adaptation",
+      "sync_spec_snapshot",
+      "readiness_context",
+      "update_readiness",
+      "list_ideas",
+      "create_idea",
+      "update_idea",
+      "list_work",
+      "create_work",
+      "start_work",
+      "claim_work",
+      "update_work",
+      "work_context",
+      "comment_work",
+      "checkpoint_work",
+      "complete_work",
+      "attach_evidence",
+      "review_work",
+      "integrate_change_stream",
+      "discard_change_stream",
+      "connection_ready",
+      "github_context",
+      "prepare_github_connection",
+      "refresh_github_connection",
+      "link_github_repository",
+      "link_work_delivery"
+    ],
+    "requiredWorkflowOperations": [
+      "start",
+      "finish",
+      "begin_change",
+      "resume_change",
+      "prepare_finish",
+      "finish_change",
+      "refresh_activation",
+      "close_activation",
+      "remove_activation",
+      "project_context",
+      "resolve_change",
+      "sync_spec_snapshot",
+      "create_work",
+      "start_work",
+      "work_context",
+      "checkpoint_work",
+      "complete_work",
+      "attach_evidence"
+    ],
+    "sha256": "17d05612fd650ce45bd7cd553287ad3be563a2cca984001b1ad6fe0caa0a6de4"
+  },
+  "pristKit": {
+    "manifestVersion": "2026-08-27.4-manifest",
+    "version": "2026-08-27.4",
+    "path": "/api/v1/agent/bootstrap/kits/codex-2026-08-27.4.tar",
+    "sha256": "e2e07267bd22739af888747c8a7cd4918310d446c53c324168e14e8ca38081df",
+    "bytes": 559616
+  },
+  "rows": [
+    {
+      "runId": "v7-large-bmad-r1",
+      "condition": "bmad",
+      "setupCommit": "8e143aac954d2611414dd4b8da564e66c599e431",
+      "setupTree": "1a210daa607555f15235cecfb4caeed14b2ae8d8",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-bmad-r1.json"
+    },
+    {
+      "runId": "v7-large-bmad-r2",
+      "condition": "bmad",
+      "setupCommit": "8e143aac954d2611414dd4b8da564e66c599e431",
+      "setupTree": "1a210daa607555f15235cecfb4caeed14b2ae8d8",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-bmad-r2.json"
+    },
+    {
+      "runId": "v7-large-bmad-r3",
+      "condition": "bmad",
+      "setupCommit": "8e143aac954d2611414dd4b8da564e66c599e431",
+      "setupTree": "1a210daa607555f15235cecfb4caeed14b2ae8d8",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-bmad-r3.json"
+    },
+    {
+      "runId": "v7-large-classic-r1",
+      "condition": "classic-spec",
+      "setupCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+      "setupTree": "a62324590cc8f9c998baba32dc9a0137d8c59f2c",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-classic-r1.json"
+    },
+    {
+      "runId": "v7-large-classic-r2",
+      "condition": "classic-spec",
+      "setupCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+      "setupTree": "a62324590cc8f9c998baba32dc9a0137d8c59f2c",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-classic-r2.json"
+    },
+    {
+      "runId": "v7-large-classic-r3",
+      "condition": "classic-spec",
+      "setupCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+      "setupTree": "a62324590cc8f9c998baba32dc9a0137d8c59f2c",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-classic-r3.json"
+    },
+    {
+      "runId": "v7-large-plain-r1",
+      "condition": "plain",
+      "setupCommit": "54bcb6c9cdf8b2a763285f1b187913c0c6507b8c",
+      "setupTree": "5f7d90b06735388fab69dba1cf817f9d00cbd5eb",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-plain-r1.json"
+    },
+    {
+      "runId": "v7-large-plain-r2",
+      "condition": "plain",
+      "setupCommit": "54bcb6c9cdf8b2a763285f1b187913c0c6507b8c",
+      "setupTree": "5f7d90b06735388fab69dba1cf817f9d00cbd5eb",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-plain-r2.json"
+    },
+    {
+      "runId": "v7-large-plain-r3",
+      "condition": "plain",
+      "setupCommit": "54bcb6c9cdf8b2a763285f1b187913c0c6507b8c",
+      "setupTree": "5f7d90b06735388fab69dba1cf817f9d00cbd5eb",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-large-plain-r3.json"
+    },
+    {
+      "runId": "v7c-large-prist-r1",
+      "condition": "prist",
+      "setupCommit": "9f3a2b3c6ac2f199bb62ef68e5809459bc4f0289",
+      "setupTree": "04de686ab42a4d9fb8edb9c6d16177e63daa9ec6",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-large-prist-r1.json"
+    },
+    {
+      "runId": "v7c-large-prist-r2",
+      "condition": "prist",
+      "setupCommit": "84a87089f6e89749ef623be0715fe1ece09ebdde",
+      "setupTree": "9990a12e17ed2dcbc99577153387aae2334a0491",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-large-prist-r2.json"
+    },
+    {
+      "runId": "v7c-large-prist-r3",
+      "condition": "prist",
+      "setupCommit": "e44078f7092e36b3f9fe8cd2f238627acc5c6118",
+      "setupTree": "6fad7c027c5aef2d9d4695faa463b940d5b0257d",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-large-prist-r3.json"
+    },
+    {
+      "runId": "v7-new-bmad-r1",
+      "condition": "bmad",
+      "setupCommit": "178411826a9a2aadd6b2c3c153ba3193733ee2da",
+      "setupTree": "3ac5ae192640de84faffed3c1ffb3004472c924b",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-bmad-r1.json"
+    },
+    {
+      "runId": "v7-new-bmad-r2",
+      "condition": "bmad",
+      "setupCommit": "178411826a9a2aadd6b2c3c153ba3193733ee2da",
+      "setupTree": "3ac5ae192640de84faffed3c1ffb3004472c924b",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-bmad-r2.json"
+    },
+    {
+      "runId": "v7-new-bmad-r3",
+      "condition": "bmad",
+      "setupCommit": "178411826a9a2aadd6b2c3c153ba3193733ee2da",
+      "setupTree": "3ac5ae192640de84faffed3c1ffb3004472c924b",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-bmad-r3.json"
+    },
+    {
+      "runId": "v7-new-classic-r1",
+      "condition": "classic-spec",
+      "setupCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+      "setupTree": "45b1c1edfba49650eb37d7308d3ba8cf56c476f9",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-classic-r1.json"
+    },
+    {
+      "runId": "v7-new-classic-r2",
+      "condition": "classic-spec",
+      "setupCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+      "setupTree": "45b1c1edfba49650eb37d7308d3ba8cf56c476f9",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-classic-r2.json"
+    },
+    {
+      "runId": "v7-new-classic-r3",
+      "condition": "classic-spec",
+      "setupCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+      "setupTree": "45b1c1edfba49650eb37d7308d3ba8cf56c476f9",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-classic-r3.json"
+    },
+    {
+      "runId": "v7-new-plain-r1",
+      "condition": "plain",
+      "setupCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+      "setupTree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-plain-r1.json"
+    },
+    {
+      "runId": "v7-new-plain-r2",
+      "condition": "plain",
+      "setupCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+      "setupTree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-plain-r2.json"
+    },
+    {
+      "runId": "v7-new-plain-r3",
+      "condition": "plain",
+      "setupCommit": "47f816ccb0b255f42bc52286e56a5d38ce5171b5",
+      "setupTree": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-new-plain-r3.json"
+    },
+    {
+      "runId": "v7c-new-prist-r1",
+      "condition": "prist",
+      "setupCommit": "5c5d26d3c606da44cb55d0a6e398a508fde7d3e6",
+      "setupTree": "53e6cdabc74c063622678aec8d9741b2ef49d20a",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-new-prist-r1.json"
+    },
+    {
+      "runId": "v7c-new-prist-r2",
+      "condition": "prist",
+      "setupCommit": "dfa76a19d7a747d83236ed3db9fa91497075c238",
+      "setupTree": "3f0180b5697756b2c1b71cb1ff90acf0aa815e04",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-new-prist-r2.json"
+    },
+    {
+      "runId": "v7c-new-prist-r3",
+      "condition": "prist",
+      "setupCommit": "714b0c5dd4a4870e92825fe0392d9aefc1d943a4",
+      "setupTree": "4c66caa4e3f25b32fc47332c1043fa40225f34f8",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-new-prist-r3.json"
+    },
+    {
+      "runId": "v7-small-bmad-r1",
+      "condition": "bmad",
+      "setupCommit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+      "setupTree": "4ad6d71d7078fea33534a8d55021c9257cc15d62",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-bmad-r1.json"
+    },
+    {
+      "runId": "v7-small-bmad-r2",
+      "condition": "bmad",
+      "setupCommit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+      "setupTree": "4ad6d71d7078fea33534a8d55021c9257cc15d62",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-bmad-r2.json"
+    },
+    {
+      "runId": "v7-small-bmad-r3",
+      "condition": "bmad",
+      "setupCommit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+      "setupTree": "4ad6d71d7078fea33534a8d55021c9257cc15d62",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-bmad-r3.json"
+    },
+    {
+      "runId": "v7-small-classic-r1",
+      "condition": "classic-spec",
+      "setupCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+      "setupTree": "50e740dfcba9591c8add0905b4b8c93972df1b9f",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-classic-r1.json"
+    },
+    {
+      "runId": "v7-small-classic-r2",
+      "condition": "classic-spec",
+      "setupCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+      "setupTree": "50e740dfcba9591c8add0905b4b8c93972df1b9f",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-classic-r2.json"
+    },
+    {
+      "runId": "v7-small-classic-r3",
+      "condition": "classic-spec",
+      "setupCommit": "78b49d06f24372c36ccdc524464e7a9dadb8fba4",
+      "setupTree": "50e740dfcba9591c8add0905b4b8c93972df1b9f",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-classic-r3.json"
+    },
+    {
+      "runId": "v7-small-plain-r1",
+      "condition": "plain",
+      "setupCommit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+      "setupTree": "97a99b1427c4a86352b256f3711e2e272fa2fc5e",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-plain-r1.json"
+    },
+    {
+      "runId": "v7-small-plain-r2",
+      "condition": "plain",
+      "setupCommit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+      "setupTree": "97a99b1427c4a86352b256f3711e2e272fa2fc5e",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-plain-r2.json"
+    },
+    {
+      "runId": "v7-small-plain-r3",
+      "condition": "plain",
+      "setupCommit": "a503e508bce07ea4a33646405e2a9416a47afe9d",
+      "setupTree": "97a99b1427c4a86352b256f3711e2e272fa2fc5e",
+      "sourceManifest": "manifests/benchmark-v7-luna-xhigh-n3-2026-09-01.json",
+      "lock": "inputs/method-locks/v7-small-plain-r3.json"
+    },
+    {
+      "runId": "v7c-small-prist-r1",
+      "condition": "prist",
+      "setupCommit": "997c38d69480212a099093a4355bbfda249262cc",
+      "setupTree": "53ce432f8bbae6784c3d7834dee5841ba8b0983e",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-small-prist-r1.json"
+    },
+    {
+      "runId": "v7c-small-prist-r2",
+      "condition": "prist",
+      "setupCommit": "f9aa3292fd19c712a20bb8103927a130b08768bb",
+      "setupTree": "3e3a670b6d14c477c44eeb72ddf31759d1e4b555",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-small-prist-r2.json"
+    },
+    {
+      "runId": "v7c-small-prist-r3",
+      "condition": "prist",
+      "setupCommit": "6b6e0f086a60c35d099149bfc94c80c0f82de581",
+      "setupTree": "77905727e9de807cb952b1f07cfa36d9f02f4131",
+      "sourceManifest": "manifests/benchmark-v7c-prist-permissions-corrected-2026-09-02.json",
+      "lock": "inputs/method-locks/v7c-small-prist-r3.json"
+    }
+  ]
+}

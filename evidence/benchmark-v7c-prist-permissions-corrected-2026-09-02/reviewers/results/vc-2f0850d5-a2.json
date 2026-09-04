@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-2f0850d5-a2",
+  "blindId": "vc-2f0850d5",
+  "scenario": "new",
+  "checks": [
+    {
+      "id": "N3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "app.js:44 — состояние книг хранится в одном массиве books",
+        "app.js:99 — отдельная функция persistBooks отвечает за сохранение",
+        "app.js:124 — отдельная функция render отвечает за отображение"
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "app.js:83 — книга представлена единым объектом с полем status",
+        "app.js:234 — смена статуса изменяет status найденной книги",
+        "app.js:126 — списки строятся фильтрацией того же массива books"
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "pointsAwarded": 0,
+      "evidence": [
+        "README.md:7 — README содержит раздел запуска, но не описывает тесты",
+        "README.md:15 — альтернативная инструкция также содержит только запуск HTTP-сервера"
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "app.js:4 — ключ хранения имеет явную версию v1",
+        "app.js:76 — отдельная normalizeBook задаёт границу обработки данных",
+        "app.js:6 — статусы описаны конфигурационным массивом"
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "pointsAwarded": 1,
+      "evidence": [
+        "README.md:7 — описан локальный запуск без Docker",
+        "README.md:9 — указано требование Python 3",
+        "README.md:15 — описан запуск через python -m http.server"
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "app.js:268 — реализовано добавление книги",
+        "app.js:234 — реализован перенос между статусами",
+        "app.js:297 — поиск ограничен библиотекой книг"
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "index.html:74 — поля формы имеют связанные label",
+        "index.html:111 — поле поиска имеет доступное имя и кнопку очистки",
+        "app.js:172 — предусмотрены пустые состояния и сообщение об отсутствии результатов",
+        "app.js:275 — предусмотрена обработка незаполненных полей с возвратом фокуса"
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "app.js:99 — сохранение выполняется только через window.localStorage",
+        "index.html:12 — подключается локальный styles.css",
+        "index.html:13 — подключается локальный app.js",
+        "README.md:5 — явно указано локальное хранение в браузере"
+      ]
+    }
+  ],
+  "total": 24,
+  "findings": [
+    {
+      "severity": "major",
+      "rootCauseId": "missing-direct-tests",
+      "summary": "В проекте отсутствуют прямые тесты для добавления книги, смены статуса и восстановления данных.",
+      "evidence": [
+        "app.js:268 — добавление реализовано обработчиком формы без тестового слоя",
+        "app.js:234 — переход статуса реализован обработчиком изменения select без прямых тестов",
+        "README.md:7 — документация описывает запуск, но не тестовый сценарий"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "incomplete-readme-lifecycle",
+      "summary": "README описывает локальный запуск, но не фиксирует отсутствие или способ выполнения install, test и build шагов.",
+      "evidence": [
+        "README.md:7 — присутствует только раздел запуска без Docker",
+        "README.md:15 — приведена только альтернативная команда запуска",
+        "README.md:25 — описана остановка сервера без разделов тестирования и сборки"
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:36:21.000Z",
+  "durationMs": 149477,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "threadId": "01a0628a-5edd-7951-a8fa-59bbe60d89a8",
+  "processValidity": "accepted_with_unconsumed_child_creation_anomaly",
+  "processAnomalies": {
+    "createThreadCalled": true,
+    "childOutputConsumed": false,
+    "codexAppCalls": [
+      "create_thread"
+    ]
+  }
+}
+

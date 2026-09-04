@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.prist/benchmark/benchmark-v7-manifest.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "benchmarkId", "status", "execution", "agents", "policies", "sample", "cells"],
+  "properties": {
+    "schemaVersion": { "const": 7 },
+    "benchmarkId": { "const": "benchmark-v7-luna-xhigh-n3-2026-09-01" },
+    "status": { "enum": ["draft_setup", "frozen", "running", "complete", "blocked"] },
+    "execution": { "type": "object", "required": ["projectId", "projectRoot", "controlRoot", "environment", "dispatchPolicy"], "properties": { "projectId": { "const": "4c35b890-98ac-4ab2-9428-d1bf1c2fd514" }, "projectRoot": { "const": "C:/Users/nikit/devdev/agent-benchmark-polygon" }, "controlRoot": { "const": "C:/Users/nikit/devdev/prist-benchmark-control" }, "environment": { "const": "worktree" }, "dispatchPolicy": { "const": "parallel-after-final-freeze" } } },
+    "agents": { "type": "object", "required": ["setup", "canary", "measured", "reviewer"], "properties": { "setup": { "$ref": "#/$defs/luna" }, "canary": { "$ref": "#/$defs/luna" }, "measured": { "$ref": "#/$defs/luna" }, "reviewer": { "$ref": "#/$defs/luna" } } },
+    "policies": { "type": "object", "required": ["browserAllowed", "firstPassOnly", "repairTurnsPerRun", "maximumClarificationsPerRun", "maximumInfrastructureRetriesPerRun", "objectiveCheckRepetitions"], "properties": { "browserAllowed": { "const": false }, "firstPassOnly": { "const": true }, "repairTurnsPerRun": { "const": 0 }, "maximumClarificationsPerRun": { "const": 2 }, "maximumInfrastructureRetriesPerRun": { "const": 1 }, "objectiveCheckRepetitions": { "const": 3 } } },
+    "sample": { "type": "object", "required": ["scenarios", "conditions", "replicasPerCell", "measuredTasks", "pristLineages"], "properties": { "scenarios": { "const": 3 }, "conditions": { "const": 4 }, "replicasPerCell": { "const": 3 }, "measuredTasks": { "const": 36 }, "pristLineages": { "const": 9 } } },
+    "cells": { "type": "array", "minItems": 36, "maxItems": 36, "items": { "$ref": "#/$defs/cell" } }
+  },
+  "$defs": {
+    "luna": { "type": "object", "required": ["model", "reasoning"], "properties": { "model": { "const": "gpt-5.6-luna" }, "reasoning": { "const": "xhigh" } } },
+    "cell": { "type": "object", "required": ["runId", "blindId", "scenario", "condition", "replica", "branch", "status"], "properties": { "runId": { "pattern": "^v7-(new|small|large)-(plain|bmad|prist|classic)-r[123]$" }, "blindId": { "pattern": "^vz-[0-9a-f]{6}$" }, "scenario": { "enum": ["new-project", "small-project", "large-project"] }, "condition": { "enum": ["plain", "bmad", "prist", "classic-spec"] }, "replica": { "enum": [1, 2, 3] }, "branch": { "pattern": "^v7/b[0-9a-f]{10}$" }, "status": { "enum": ["planned", "waiting_for_wi131_release", "running", "completed_first_pass", "invalid_infrastructure"] } } }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "reviewerId": "vc-f2787e27-b",
+  "blindId": "vc-f2787e27",
+  "scenario": "new",
+  "checks": [
+    {
+      "id": "N3-C01",
+      "pointsAwarded": 6,
+      "evidence": [
+        "src/library.js:28-48 — загрузка и сохранение локального состояния вынесены в отдельный модуль.",
+        "public/app.js:14-22 — UI хранит прикладное состояние и ссылки на элементы интерфейса.",
+        "public/app.js:76-82 — commit координирует изменение состояния и persistence.",
+        "public/app.js:136-140 — render отвечает за отображение состояния."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "pointsAwarded": 4,
+      "evidence": [
+        "src/library.js:18-25 — книга описана единой структурой с одним полем status.",
+        "public/app.js:14 — единый массив state.books является состоянием приложения.",
+        "public/app.js:124-132 — списки строятся фильтрацией этого массива по status."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "pointsAwarded": 4,
+      "evidence": [
+        "test/library.test.mjs:37-45 — прямой тест добавления и переходов между статусами.",
+        "test/library.test.mjs:47-53 — прямой тест сохранения и восстановления из хранилища."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/library.js:50-60 — создание и добавление книги изолированы от UI.",
+        "src/library.js:63-74 — переходы, удаление и подсчёты представлены отдельными операциями.",
+        "src/library.js:18-25 — проверяются обязательные поля, дополнительные поля записи не запрещены."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "pointsAwarded": 1,
+      "evidence": [
+        "README.md:5-13 — описаны требование Node.js и локальный запуск.",
+        "README.md:33-39 — описан запуск тестов.",
+        "package.json:7-10 — доступны только scripts start и test; инструкции по установке и build отсутствуют."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "pointsAwarded": 4,
+      "evidence": [
+        "public/index.html:36-58 — добавление книги с названием, автором и начальным статусом.",
+        "public/app.js:161-183 — перенос и удаление книг реализованы через UI.",
+        "server.mjs:56-60 — приложение запускается локальным HTTP-сервером."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "pointsAwarded": 3,
+      "evidence": [
+        "public/index.html:38-57 — у полей есть русские label, required и понятная последовательность формы.",
+        "public/app.js:146-149 — ошибка заполнения показывает сообщение и возвращает фокус в незаполненное поле.",
+        "public/app.js:90-96 — для пустых разделов предусмотрены отдельные понятные состояния.",
+        "public/index.html:89-95 — предусмотрено сообщение об ошибке хранилища и очистка данных.",
+        "public/styles.css:39-42 — видимый focus-visible для кнопок, полей и select."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "pointsAwarded": 3,
+      "evidence": [
+        "src/library.js:3,28-48 — данные сохраняются только в localStorage под локальным ключом.",
+        "package.json:7-10 — отсутствуют зависимости и внешние сервисы.",
+        "server.mjs:11-12 — сервер по умолчанию слушает loopback-адрес 127.0.0.1."
+      ]
+    }
+  ],
+  "total": 28,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "readme-lifecycle-gap",
+      "summary": "README не описывает установку и сборку, а package.json не содержит build-скрипта.",
+      "evidence": [
+        "README.md:33-39 — описаны только проверки через npm test.",
+        "package.json:7-10 — определены только start и test scripts."
+      ]
+    }
+  ],
+  "blind": true,
+  "completedAt": "2026-09-02T14:26:42.000Z",
+  "durationMs": 90217,
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "syntaxNormalized": false,
+  "normalization": null
+}
+

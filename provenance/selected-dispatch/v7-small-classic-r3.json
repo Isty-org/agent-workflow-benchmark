@@ -1,0 +1,25 @@
+{
+  "policy": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+    "retry": "retry-1",
+    "status": "dispatched",
+    "model": "gpt-5.6-luna",
+    "reasoning": "xhigh",
+    "browserUsed": false,
+    "firstPassOnly": true,
+    "repairTurns": 0,
+    "clarificationsAllowed": 2,
+    "naturalPromptEnvelope": "frozen verbatim scenario prompt plus frozen common envelope"
+  },
+  "entry": {
+    "runId": "v7-small-classic-r3",
+    "blindId": "vz-42c2c4",
+    "scenario": "small-project",
+    "condition": "classic-spec",
+    "taskId": "01a061d1-f717-7bd3-9b76-60c62ac807d4",
+    "hostId": "local",
+    "workspace": "C:/Users/nikit/devdev/agent-benchmark-polygon/.v7-retry-1-worktrees/vz-42c2c4",
+    "status": "running"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schemaVersion", "benchmarkId", "runId", "scenario", "phase", "evaluatorVersion", "harnessCommit", "workspaceCommit", "contractSha256", "checks", "categories", "totalScore", "findings", "blind"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "benchmarkId": { "type": "string" },
+    "runId": { "pattern": "^r[0-9]{2}([a-z])?$" },
+    "scenario": { "enum": ["new", "small", "large"] },
+    "phase": { "enum": ["first_pass", "after_repair"] },
+    "evaluatorVersion": { "const": "1.0.0" },
+    "harnessCommit": { "pattern": "^[0-9a-f]{40}$" },
+    "workspaceCommit": { "pattern": "^[0-9a-f]{40}$" },
+    "contractSha256": { "pattern": "^[0-9a-f]{64}$" },
+    "checks": { "type": "array" },
+    "categories": { "type": "object" },
+    "totalScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "findings": { "type": "array" },
+    "blind": { "const": true }
+  }
+}

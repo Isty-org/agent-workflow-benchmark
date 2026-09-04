@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "blindId": "vc-c6fad81e",
+  "scenario": "large",
+  "phase": "first_pass",
+  "evaluatorVersion": "v7c-uniform-1",
+  "contractSha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455",
+  "setupCommit": "84a87089f6e89749ef623be0715fe1ece09ebdde",
+  "workspaceCommit": "7fdc989f735a054895378ca6fb2793776ada8dbe",
+  "workspaceTree": "20f6905cf2f6da32d4129345eebf7b5dab335986",
+  "firstPassContentFingerprint": "3109ae291368212ad3ee0a3eadd0f95a9286462cc61be063392b9c9792e1782f",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "11f6621470e85c3a8504c29f18c249b5b695961eee2ce4ab2d14230836cfa50c",
+      "passed": true
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "11f6621470e85c3a8504c29f18c249b5b695961eee2ce4ab2d14230836cfa50c",
+      "passed": true
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "11f6621470e85c3a8504c29f18c249b5b695961eee2ce4ab2d14230836cfa50c",
+      "passed": true
+    }
+  ],
+  "checkReceiptSha256": "9547613e3970a7e9086cb4e035b4209046f0bfcb2e09c80e326d9380971a15ea",
+  "checks": [
+    {
+      "id": "L3-A01",
+      "status": "pass",
+      "pointsAwarded": 7,
+      "maxPoints": 7,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A03",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A05",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A06",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A07",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A08",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A09",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A10",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; desktop tests plus harness-owned search tests",
+        "repetition 2: pass; desktop tests plus harness-owned search tests",
+        "repetition 3: pass; desktop tests plus harness-owned search tests"
+      ]
+    },
+    {
+      "id": "L3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; desktop project build",
+        "repetition 2: pass; desktop project build",
+        "repetition 3: pass; desktop project build"
+      ]
+    },
+    {
+      "id": "L3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; Avalonia headless render/load smoke",
+        "repetition 2: pass; Avalonia headless render/load smoke",
+        "repetition 3: pass; Avalonia headless render/load smoke"
+      ]
+    },
+    {
+      "id": "L3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333 — поисковый запрос хранится в состоянии MainWindowViewModel и фильтрует локальную коллекцию.",
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:87-89 — очистка запроса не вызывает runtime или persistence API.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:57,87-89,318-333 — query and clear command are presentation state; setter only reapplies the local filter and does not call runtime persistence."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:556-593 — последние записи берутся из ApplicationRuntimeSnapshot.RecentRecordings.",
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:765-836 — RecentRecordings строится как фильтрованное представление snapshot-derived коллекции.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:593,765-816 — recent snapshots are reconciled into the internal collection.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — visible RecentRecordings is derived by filtering the reconciled collection."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-c6fad81e-a: tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:295-377 — прямые ViewModel-тесты покрывают ввод, очистку и состояние без результатов.",
+        "vc-c6fad81e-a: tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:233-265 — прямой тест покрывает запрос переименования и сохранение через runtime.",
+        "vc-c6fad81e-a: tests/IsTranscribe.Desktop.Tests/LocalizationResourceContractTests.cs:98-115 — проверяется наличие XAML-ресурсов в обоих языках; отдельных тестов refresh-поиска и UI accessibility для поиска нет.",
+        "vc-c6fad81e-b2: tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:297-377 — direct ViewModel tests cover query changes, clear behavior, and no-results state.",
+        "vc-c6fad81e-b2: tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:232-293 — direct tests cover rename dispatch and user-owned title behavior across language changes."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:29,765-768 — применяется MaximumRecentItems до фильтрации.",
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:782-813,818-833 — сохраняются порядок snapshot и жизненный цикл item ViewModel, включая Dispose удалённых элементов.",
+        "vc-c6fad81e-a: src/IsTranscribe.Persistence/Persistence/MeetingSessionRepository.cs:260-262 — исходная выборка упорядочена по started_at DESC и id DESC.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:767-810 — snapshot order is preserved, limited by MaximumRecentItems, and removed items are disposed.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — filtering preserves the source order and item instances."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:18-25,317-318 — используются существующие spec://-ссылки FEAT-013 для primary window и recent recordings.",
+        "vc-c6fad81e-a: tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:8-12,295-297 — тесты привязаны к существующим спецификациям.",
+        "vc-c6fad81e-a: specs/modules/app/FEAT-013-minimal-desktop-experience.md:152-160 — изменение укладывается в существующий раздел Recent Recordings.",
+        "vc-c6fad81e-b2: specs/common/structure.md:20-28 — existing code ownership maps desktop presentation to app specifications and tests.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:18-24,317 — implementation uses existing FEAT-013 recent-recordings traceability.",
+        "vc-c6fad81e-b2: tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:8-12,295-296 — tests use the same existing specification anchors."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:530-538,765-836 — snapshot refresh повторно согласует элементы и применяет текущий фильтр.",
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/Views/MainWindow.axaml:342-370 — разделяет пустое состояние, пустой результат поиска и список результатов.",
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/Views/MainWindow.axaml:383-394 — существующий rename action остаётся доступным на элементах списка.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/Views/MainWindow.axaml:318-494 — recent search, empty, no-results, list, rename, open, and remove states remain wired.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:530-545,765-816 — runtime snapshot refreshes reconcile recent items and preserve the active query.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:375-381 — rename remains routed through the runtime."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/Views/MainWindow.axaml:326-338 — TextBox имеет binding с обновлением по каждому изменению, automation label и отдельную focusable Button для очистки с automation name и tooltip.",
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:91-97 — русские подписи поиска, очистки и состояния без результатов.",
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:91-97 — английские подписи поиска, очистки и состояния без результатов.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-339 — field updates on every text change and the clear button is a focusable Button with automation name and tooltip.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:91-97 — English field, clear, and no-results copy exists.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:91-97 — Russian field, clear, and no-results copy exists."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333 — query является локальным presentation state.",
+        "vc-c6fad81e-a: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — фильтрация работает только над локальными ViewModel-коллекциями и не меняет snapshot или runtime.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333,818-837 — query is held and consumed only in local presentation filtering.",
+        "vc-c6fad81e-b2: src/IsTranscribe.Desktop/Views/MainWindow.axaml:327-337 — UI binds the query to the ViewModel and clear command; no runtime or persistence binding is present."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "vc-c6fad81e-a",
+      "total": 28,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333 — поисковый запрос хранится в состоянии MainWindowViewModel и фильтрует локальную коллекцию.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:87-89 — очистка запроса не вызывает runtime или persistence API."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:556-593 — последние записи берутся из ApplicationRuntimeSnapshot.RecentRecordings.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:765-836 — RecentRecordings строится как фильтрованное представление snapshot-derived коллекции."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:295-377 — прямые ViewModel-тесты покрывают ввод, очистку и состояние без результатов.",
+            "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:233-265 — прямой тест покрывает запрос переименования и сохранение через runtime.",
+            "tests/IsTranscribe.Desktop.Tests/LocalizationResourceContractTests.cs:98-115 — проверяется наличие XAML-ресурсов в обоих языках; отдельных тестов refresh-поиска и UI accessibility для поиска нет."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:29,765-768 — применяется MaximumRecentItems до фильтрации.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:782-813,818-833 — сохраняются порядок snapshot и жизненный цикл item ViewModel, включая Dispose удалённых элементов.",
+            "src/IsTranscribe.Persistence/Persistence/MeetingSessionRepository.cs:260-262 — исходная выборка упорядочена по started_at DESC и id DESC."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:18-25,317-318 — используются существующие spec://-ссылки FEAT-013 для primary window и recent recordings.",
+            "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:8-12,295-297 — тесты привязаны к существующим спецификациям.",
+            "specs/modules/app/FEAT-013-minimal-desktop-experience.md:152-160 — изменение укладывается в существующий раздел Recent Recordings."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:530-538,765-836 — snapshot refresh повторно согласует элементы и применяет текущий фильтр.",
+            "src/IsTranscribe.Desktop/Views/MainWindow.axaml:342-370 — разделяет пустое состояние, пустой результат поиска и список результатов.",
+            "src/IsTranscribe.Desktop/Views/MainWindow.axaml:383-394 — существующий rename action остаётся доступным на элементах списка."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/IsTranscribe.Desktop/Views/MainWindow.axaml:326-338 — TextBox имеет binding с обновлением по каждому изменению, automation label и отдельную focusable Button для очистки с automation name и tooltip.",
+            "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:91-97 — русские подписи поиска, очистки и состояния без результатов.",
+            "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:91-97 — английские подписи поиска, очистки и состояния без результатов."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333 — query является локальным presentation state.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — фильтрация работает только над локальными ViewModel-коллекциями и не меняет snapshot или runtime."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "vc-c6fad81e-b2",
+      "total": 27,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:57,87-89,318-333 — query and clear command are presentation state; setter only reapplies the local filter and does not call runtime persistence."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:593,765-816 — recent snapshots are reconciled into the internal collection.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — visible RecentRecordings is derived by filtering the reconciled collection."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:297-377 — direct ViewModel tests cover query changes, clear behavior, and no-results state.",
+            "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:232-293 — direct tests cover rename dispatch and user-owned title behavior across language changes."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:767-810 — snapshot order is preserved, limited by MaximumRecentItems, and removed items are disposed.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:818-837 — filtering preserves the source order and item instances."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "specs/common/structure.md:20-28 — existing code ownership maps desktop presentation to app specifications and tests.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:18-24,317 — implementation uses existing FEAT-013 recent-recordings traceability.",
+            "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:8-12,295-296 — tests use the same existing specification anchors."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/IsTranscribe.Desktop/Views/MainWindow.axaml:318-494 — recent search, empty, no-results, list, rename, open, and remove states remain wired.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:530-545,765-816 — runtime snapshot refreshes reconcile recent items and preserve the active query.",
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:375-381 — rename remains routed through the runtime."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-339 — field updates on every text change and the clear button is a focusable Button with automation name and tooltip.",
+            "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:91-97 — English field, clear, and no-results copy exists.",
+            "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:91-97 — Russian field, clear, and no-results copy exists."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/IsTranscribe.Desktop/ViewModels/MainWindowViewModel.cs:318-333,818-837 — query is held and consumed only in local presentation filtering.",
+            "src/IsTranscribe.Desktop/Views/MainWindow.axaml:327-337 — UI binds the query to the ViewModel and clear command; no runtime or persistence binding is present."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 50,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 20,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 18,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "rawScore": 98,
+  "totalScore": 98,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "search-test-coverage-gap",
+      "summary": "Новая ветка поиска проверена только на уровне ViewModel для ввода, очистки и пустого результата; нет прямого теста фильтра после SnapshotChanged и нет UI-теста automation/focus для поля и clear action.",
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:295-377 — покрыты query, clear и no-results.",
+        "tests/IsTranscribe.Desktop.Tests/LocalizationResourceContractTests.cs:98-115 — проверяются ресурсы, но не поведение MainWindow UI и accessibility."
+      ],
+      "reviewers": [
+        "vc-c6fad81e-a"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "search-test-gaps",
+      "summary": "Direct coverage does not verify an active query surviving a runtime snapshot refresh or the search field and clear button's automation semantics.",
+      "evidence": [
+        "tests/IsTranscribe.Desktop.Tests/MainWindowViewModelTests.cs:297-377 — tests cover typing, clearing, and no results but do not publish a refreshed snapshot while a query is active.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-339 — automation properties are present, but no direct MainWindow UI test exercises them."
+      ],
+      "reviewers": [
+        "vc-c6fad81e-b2"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "recent-loading-unwired",
+      "summary": "The recent-recordings loading copy is defined but the MainWindow recent section has no loading-state binding, so initialization can present the ordinary empty state while data is still loading.",
+      "evidence": [
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.en.axaml:100 — loading copy is defined.",
+        "src/IsTranscribe.Desktop/Localization/Resources/Strings.ru.axaml:100 — Russian loading copy is defined.",
+        "src/IsTranscribe.Desktop/Views/MainWindow.axaml:325-370 — recent visibility is driven by HasRecentRecordings and search predicates; no loading resource or ShowBusyIndicator is used."
+      ],
+      "reviewers": [
+        "vc-c6fad81e-b2"
+      ]
+    }
+  ],
+  "provenance": "supplemental_uniform_adjudication",
+  "originalFrozenCheck": "evidence/benchmark-v7c-prist-permissions-corrected-2026-09-02/checks/v7c-large-prist-r2.json",
+  "blind": true
+}

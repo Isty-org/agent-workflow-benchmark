@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-32c22d",
+  "scenario": "large",
+  "workspaceCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+  "setupCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+  "contractSha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-32c22d-a",
+      "total": 26,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "MainWindowViewModel.cs:57-58,325-355,835-850 keeps query and filtered results in presentation state; filtering and clearing perform no runtime calls.",
+            "Normalized-workspace references to RecentSearchText are limited to the desktop view model, XAML, tests and product specification; no Application or Persistence references were found."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindowViewModel.cs:557-608 applies runtime snapshots and reconciles RecentRecordings.",
+            "MainWindowViewModel.cs:779-847 derives FilteredRecentRecordings from the capped RecentRecordings collection without changing the source snapshot."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:237-295 covers title/source filtering, whitespace normalization, no-results and clear behavior.",
+            "MainWindowViewModelTests.cs:299-359 covers rename routing and language-preserved custom titles; LocalizationResourceContractTests.cs:98-176 covers resource references and XAML literals.",
+            "Direct normalized tests do not cover active-query snapshot refresh, active-query rename membership, or search-specific keyboard/focus behavior."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindowViewModel.cs:30 and 781 cap the source at MaximumRecentItems.",
+            "MainWindowViewModel.cs:796-825 preserves source order, reuses existing item view models and disposes removed items; 837-845 preserves that order in the filtered collection.",
+            "MainWindowViewModel.cs:1193-1243 updates existing item state and command availability during reconciliation."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "FEAT-017-recent-recording-search.md:99 defines the existing @spec traceability rule.",
+            "MainWindowViewModel.cs:20,324,834,1165; MainWindow.axaml:325; and MainWindowViewModelTests.cs:233-234 use the FEAT-017 spec references.",
+            "SPEC-MAP.md:33 lists FEAT-017 as active canon."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindow.axaml:318-499 contains the recent-recordings search, empty-history, no-results and item-action surfaces.",
+            "MainWindowViewModel.cs:543-608 refreshes the presentation from runtime snapshots, and 1193-1243 preserves rename and existing row actions.",
+            "String.Recent.Loading exists in both catalogs at line 100 but has no binding/use in the desktop surface, leaving recent-specific loading presentation unverified."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindow.axaml:326-343 provides a resource-backed watermark, AutomationProperties.Name, named clear action and tooltip.",
+            "Strings.en.axaml:91-99 and Strings.ru.axaml:91-99 provide bilingual recent-search and no-results strings; LocalizationService.cs:48-59 refreshes dictionaries and raises LanguageChanged.",
+            "The frozen objective receipt reports the dedicated search suite failed in all three repetitions during no-results resource discovery, so the localized no-results contract remains unresolved despite the visible catalog entries."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindowViewModel.cs:321-323 documents RecentSearchText as session-only presentation state.",
+            "The normalized workspace contains no RecentSearchText references in Application or Persistence code, and filtering/clearing in MainWindowViewModel.cs:835-850 do not invoke external services."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-32c22d-b",
+      "total": 28,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "MainWindowViewModel.cs:325-355 stores RecentSearchText in presentation state; filtering and clearing at :834-850 are local operations with no runtime persistence call."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "ApplicationRuntimeSnapshot.cs:14-20 defines RecentRecordings as snapshot data. MainWindowViewModel.cs:779-847 reconciles that snapshot into RecentRecordings and derives FilteredRecentRecordings in order."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:237-295 covers query, title/source matching, whitespace, no-results and clear. Tests at :299-356 cover rename and language behavior. Direct coverage for active-query refresh/rename membership and UI accessibility is absent."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindowViewModel.cs:781 limits source data with Take(MaximumRecentItems), :820-824 preserves ordering, and :792-793 disposes removed items. Filtering reuses the existing item instances at :837-845."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "FEAT-017 is registered in SPEC-MAP.md:33 and tracked in BOARD.md:24. The feature spec and implementation/tests use existing @spec traceability markers without benchmark-specific product terminology."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindowViewModel.cs:357-383 preserves initialization flow; :543-608 handles snapshot refresh; :779-850 reconciles records, rename events and filtering. MainWindow.axaml:347-376 keeps empty-history, no-results and filtered-list states distinct, while :388-467 retains row actions."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindow.axaml:328-343 provides a bound TextBox with localized placeholder/name and a localized, named, tooltip-backed clear Button. Strings.en.axaml:93-97 and Strings.ru.axaml:93-97 provide the RU/EN states; LocalizationService.cs:34-57 refreshes dictionaries and raises LanguageChanged."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "RecentSearchText is private view-model state at MainWindowViewModel.cs:57 and :325-355. Search references are confined to presentation XAML, localization, tests and the feature spec; no storage, logging or external-call path uses the query."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-32c22d-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-32c22d-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-32c22d-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-32c22d-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

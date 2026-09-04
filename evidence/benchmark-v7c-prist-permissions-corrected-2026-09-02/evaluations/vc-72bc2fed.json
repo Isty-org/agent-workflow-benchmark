@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "blindId": "vc-72bc2fed",
+  "scenario": "new",
+  "phase": "first_pass",
+  "evaluatorVersion": "v7c-uniform-1",
+  "contractSha256": "81808e2de1a329b539e7ab9e6f367833c4324aeb74e64b28645457d932265703",
+  "setupCommit": "5c5d26d3c606da44cb55d0a6e398a508fde7d3e6",
+  "workspaceCommit": "5c5d26d3c606da44cb55d0a6e398a508fde7d3e6",
+  "workspaceTree": "53e6cdabc74c063622678aec8d9741b2ef49d20a",
+  "firstPassContentFingerprint": "4c92c34fa7e77bbd7d97ca0444a04f5171db7b688ceb5f937744e0b5c071db71",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "91332d0965c7611ff1ab1742e520a48061922b0a4841f9bf6cba37b163ca1d12",
+      "passed": true
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "91332d0965c7611ff1ab1742e520a48061922b0a4841f9bf6cba37b163ca1d12",
+      "passed": true
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "91332d0965c7611ff1ab1742e520a48061922b0a4841f9bf6cba37b163ca1d12",
+      "passed": true
+    }
+  ],
+  "checkReceiptSha256": "7a9ca4518ffc1cf609a31529bcbee420c9ec54ce0e3a89d6e48dbd70bfb52a99",
+  "checks": [
+    {
+      "id": "N3-A01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; accessible title/author form adds a visible book",
+        "repetition 2: pass; accessible title/author form adds a visible book",
+        "repetition 3: pass; accessible title/author form adds a visible book"
+      ]
+    },
+    {
+      "id": "N3-A02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; three requested Russian states are visible",
+        "repetition 2: pass; three requested Russian states are visible",
+        "repetition 3: pass; three requested Russian states are visible"
+      ]
+    },
+    {
+      "id": "N3-A03",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; one book moves through reading and completed states immediately",
+        "repetition 2: pass; one book moves through reading and completed states immediately",
+        "repetition 3: pass; one book moves through reading and completed states immediately"
+      ]
+    },
+    {
+      "id": "N3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; book and status survive browser reload",
+        "repetition 2: pass; book and status survive browser reload",
+        "repetition 3: pass; book and status survive browser reload"
+      ]
+    },
+    {
+      "id": "N3-A05",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; book and status survive full application stop and restart",
+        "repetition 2: pass; book and status survive full application stop and restart",
+        "repetition 3: pass; book and status survive full application stop and restart"
+      ]
+    },
+    {
+      "id": "N3-A06",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; multiple books remain independent after one state change",
+        "repetition 2: pass; multiple books remain independent after one state change",
+        "repetition 3: pass; multiple books remain independent after one state change"
+      ]
+    },
+    {
+      "id": "N3-A07",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; empty required values create no book and expose validation",
+        "repetition 2: pass; empty required values create no book and expose validation",
+        "repetition 3: pass; empty required values create no book and expose validation"
+      ]
+    },
+    {
+      "id": "N3-A08",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; primary product copy and controls are Russian",
+        "repetition 2: pass; primary product copy and controls are Russian",
+        "repetition 3: pass; primary product copy and controls are Russian"
+      ]
+    },
+    {
+      "id": "N3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; direct project test command",
+        "repetition 2: pass; direct project test command",
+        "repetition 3: pass; direct project test command"
+      ]
+    },
+    {
+      "id": "N3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; documented build or type/package check",
+        "repetition 2: pass; documented build or type/package check",
+        "repetition 3: pass; documented build or type/package check"
+      ]
+    },
+    {
+      "id": "N3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; real local start and Chromium smoke",
+        "repetition 2: pass; real local start and Chromium smoke",
+        "repetition 3: pass; real local start and Chromium smoke"
+      ]
+    },
+    {
+      "id": "N3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "vc-72bc2fed-a: src/main.jsx:32 — состояние книг хранится в React state.",
+        "vc-72bc2fed-a: src/main.jsx:39 — persistence выполняется отдельным effect.",
+        "vc-72bc2fed-a: src/lib/readingList.js:70 — чистая функция распределяет книги по статусу.",
+        "vc-72bc2fed-b: src/lib/readingList.js:43-84 — доменные операции и валидация вынесены в чистые функции.",
+        "vc-72bc2fed-b: src/main.jsx:18-61 — App управляет состоянием и синхронизацией localStorage.",
+        "vc-72bc2fed-b: src/main.jsx:219-285 — отдельные UI-компоненты отвечают за колонки, карточки и пустые состояния."
+      ]
+    },
+    {
+      "id": "N3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-72bc2fed-a: src/main.jsx:63 — статистика вычисляется из единого массива books.",
+        "vc-72bc2fed-a: src/main.jsx:200 — колонки получают книги через booksByStatus.",
+        "vc-72bc2fed-a: src/lib/readingList.js:75 — переход меняет status существующей записи.",
+        "vc-72bc2fed-b: src/main.jsx:63-70 — счётчики и прогресс вычисляются из единого массива books.",
+        "vc-72bc2fed-b: src/main.jsx:195-204 — колонки строятся через booksByStatus из того же массива.",
+        "vc-72bc2fed-b: src/lib/readingList.js:75-79 — переход изменяет status конкретной книги в исходном списке."
+      ]
+    },
+    {
+      "id": "N3-C03",
+      "status": "partial",
+      "pointsAwarded": 3,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-72bc2fed-a: test/readingList.test.js:13 — прямой тест создания книги.",
+        "vc-72bc2fed-a: test/readingList.test.js:23 — прямой тест перехода между статусами.",
+        "vc-72bc2fed-a: test/readingList.test.js:37 — тест нормализации данных при чтении persistence-состояния.",
+        "vc-72bc2fed-a: src/main.jsx:40 — фактическая запись в localStorage не покрыта прямым тестом.",
+        "vc-72bc2fed-b: test/readingList.test.js:13-20 — прямой тест создания книги.",
+        "vc-72bc2fed-b: test/readingList.test.js:23-34 — прямой тест перехода между статусами.",
+        "vc-72bc2fed-b: test/readingList.test.js:37-46 — прямой тест восстановления и очистки данных persistence-слоя; запись в localStorage отдельно не проверяется."
+      ]
+    },
+    {
+      "id": "N3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-72bc2fed-a: src/lib/readingList.js:5 — статусы описаны централизованной конфигурацией.",
+        "vc-72bc2fed-a: src/lib/readingList.js:33 — запись книги имеет расширяемые поля id, title, author, status и createdAt.",
+        "vc-72bc2fed-a: src/lib/readingList.js:70 — операции работы со списком вынесены в чистые функции.",
+        "vc-72bc2fed-b: src/lib/readingList.js:5-27 — статусы централизованы в расширяемой конфигурации.",
+        "vc-72bc2fed-b: src/lib/readingList.js:33-53 — книга имеет стабильный id, status и createdAt, а чтение нормализует старые записи.",
+        "vc-72bc2fed-b: src/main.jsx:67-70 — производные представления строятся из модели книги."
+      ]
+    },
+    {
+      "id": "N3-C05",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-72bc2fed-a: package.json:6 — доступны dev, build, preview и test scripts.",
+        "vc-72bc2fed-a: README.md:9 — описан install.",
+        "vc-72bc2fed-a: README.md:11 — описан локальный dev-запуск.",
+        "vc-72bc2fed-a: README.md:18 — описаны build и preview.",
+        "vc-72bc2fed-a: README.md:5-21 — команда npm test в README не описана.",
+        "vc-72bc2fed-b: package.json:7-10 — определены команды dev, build и test.",
+        "vc-72bc2fed-b: README.md:5-21 — описаны установка, локальный запуск, сборка и preview; команда npm test не документирована."
+      ]
+    },
+    {
+      "id": "N3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "vc-72bc2fed-a: src/main.jsx:153 — форма добавления книги с названием и автором.",
+        "vc-72bc2fed-a: src/lib/readingList.js:5 — присутствуют три требуемых статуса.",
+        "vc-72bc2fed-a: src/main.jsx:261 — книгу можно переместить через выбор статуса.",
+        "vc-72bc2fed-a: src/main.jsx:40 — список сохраняется локально.",
+        "vc-72bc2fed-b: src/main.jsx:72-95 — реализованы добавление, перемещение и удаление книг.",
+        "vc-72bc2fed-b: src/main.jsx:195-205 — отображаются три требуемые колонки статусов.",
+        "vc-72bc2fed-b: src/main.jsx:39-46 — изменения сохраняются локально."
+      ]
+    },
+    {
+      "id": "N3-D02",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-72bc2fed-a: src/main.jsx:154 — поля формы имеют видимые подписи через label.",
+        "vc-72bc2fed-a: src/main.jsx:247 — удаление имеет доступную aria-label.",
+        "vc-72bc2fed-a: src/styles.css:30 — задан видимый focus-visible для интерактивных элементов.",
+        "vc-72bc2fed-a: src/main.jsx:231 — предусмотрены пустые состояния колонок.",
+        "vc-72bc2fed-a: src/main.jsx:20-25 — ошибка повреждённого состояния формируется, но src/main.jsx:40-42 очищает уведомление после записи пустого списка.",
+        "vc-72bc2fed-b: src/main.jsx:153-178 — поля имеют видимые label, клавиатурную submit-навигацию и сообщение валидации role=alert.",
+        "vc-72bc2fed-b: src/main.jsx:247-267 — кнопка удаления и select имеют доступные aria-label.",
+        "vc-72bc2fed-b: src/main.jsx:273-285 — для пустых колонок есть русские пояснения.",
+        "vc-72bc2fed-b: src/main.jsx:182 — ошибки storage выводятся через role=status; ошибка первоначального чтения очищается первым effect."
+      ]
+    },
+    {
+      "id": "N3-D03",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 3,
+      "evidence": [
+        "vc-72bc2fed-a: src/main.jsx:20 — используется browser localStorage.",
+        "vc-72bc2fed-a: src/main.jsx:40 — сохраняется только сериализованный список книг.",
+        "vc-72bc2fed-a: src/main.jsx:1-12 — приложение не использует API-клиент или разрешения.",
+        "vc-72bc2fed-a: src/styles.css:1 — при открытии запрашивается внешний Google Fonts URL.",
+        "vc-72bc2fed-b: src/main.jsx:39-45 — сохраняется только JSON списка книг в localStorage.",
+        "vc-72bc2fed-b: src/styles.css:1 — подключается внешний Google Fonts ресурс, создающий сетевую зависимость оформления.",
+        "vc-72bc2fed-b: src/main.jsx:20-21 — приложение использует локальное хранилище без разрешений и секретов."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "vc-72bc2fed-a",
+      "total": 26,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/main.jsx:32 — состояние книг хранится в React state.",
+            "src/main.jsx:39 — persistence выполняется отдельным effect.",
+            "src/lib/readingList.js:70 — чистая функция распределяет книги по статусу."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/main.jsx:63 — статистика вычисляется из единого массива books.",
+            "src/main.jsx:200 — колонки получают книги через booksByStatus.",
+            "src/lib/readingList.js:75 — переход меняет status существующей записи."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "test/readingList.test.js:13 — прямой тест создания книги.",
+            "test/readingList.test.js:23 — прямой тест перехода между статусами.",
+            "test/readingList.test.js:37 — тест нормализации данных при чтении persistence-состояния.",
+            "src/main.jsx:40 — фактическая запись в localStorage не покрыта прямым тестом."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/lib/readingList.js:5 — статусы описаны централизованной конфигурацией.",
+            "src/lib/readingList.js:33 — запись книги имеет расширяемые поля id, title, author, status и createdAt.",
+            "src/lib/readingList.js:70 — операции работы со списком вынесены в чистые функции."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "package.json:6 — доступны dev, build, preview и test scripts.",
+            "README.md:9 — описан install.",
+            "README.md:11 — описан локальный dev-запуск.",
+            "README.md:18 — описаны build и preview.",
+            "README.md:5-21 — команда npm test в README не описана."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/main.jsx:153 — форма добавления книги с названием и автором.",
+            "src/lib/readingList.js:5 — присутствуют три требуемых статуса.",
+            "src/main.jsx:261 — книгу можно переместить через выбор статуса.",
+            "src/main.jsx:40 — список сохраняется локально."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/main.jsx:154 — поля формы имеют видимые подписи через label.",
+            "src/main.jsx:247 — удаление имеет доступную aria-label.",
+            "src/styles.css:30 — задан видимый focus-visible для интерактивных элементов.",
+            "src/main.jsx:231 — предусмотрены пустые состояния колонок.",
+            "src/main.jsx:20-25 — ошибка повреждённого состояния формируется, но src/main.jsx:40-42 очищает уведомление после записи пустого списка."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/main.jsx:20 — используется browser localStorage.",
+            "src/main.jsx:40 — сохраняется только сериализованный список книг.",
+            "src/main.jsx:1-12 — приложение не использует API-клиент или разрешения.",
+            "src/styles.css:1 — при открытии запрашивается внешний Google Fonts URL."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "vc-72bc2fed-b",
+      "total": 26,
+      "checks": [
+        {
+          "id": "N3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/lib/readingList.js:43-84 — доменные операции и валидация вынесены в чистые функции.",
+            "src/main.jsx:18-61 — App управляет состоянием и синхронизацией localStorage.",
+            "src/main.jsx:219-285 — отдельные UI-компоненты отвечают за колонки, карточки и пустые состояния."
+          ]
+        },
+        {
+          "id": "N3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/main.jsx:63-70 — счётчики и прогресс вычисляются из единого массива books.",
+            "src/main.jsx:195-204 — колонки строятся через booksByStatus из того же массива.",
+            "src/lib/readingList.js:75-79 — переход изменяет status конкретной книги в исходном списке."
+          ]
+        },
+        {
+          "id": "N3-C03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "test/readingList.test.js:13-20 — прямой тест создания книги.",
+            "test/readingList.test.js:23-34 — прямой тест перехода между статусами.",
+            "test/readingList.test.js:37-46 — прямой тест восстановления и очистки данных persistence-слоя; запись в localStorage отдельно не проверяется."
+          ]
+        },
+        {
+          "id": "N3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "src/lib/readingList.js:5-27 — статусы централизованы в расширяемой конфигурации.",
+            "src/lib/readingList.js:33-53 — книга имеет стабильный id, status и createdAt, а чтение нормализует старые записи.",
+            "src/main.jsx:67-70 — производные представления строятся из модели книги."
+          ]
+        },
+        {
+          "id": "N3-C05",
+          "pointsAwarded": 2,
+          "evidence": [
+            "package.json:7-10 — определены команды dev, build и test.",
+            "README.md:5-21 — описаны установка, локальный запуск, сборка и preview; команда npm test не документирована."
+          ]
+        },
+        {
+          "id": "N3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "src/main.jsx:72-95 — реализованы добавление, перемещение и удаление книг.",
+            "src/main.jsx:195-205 — отображаются три требуемые колонки статусов.",
+            "src/main.jsx:39-46 — изменения сохраняются локально."
+          ]
+        },
+        {
+          "id": "N3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/main.jsx:153-178 — поля имеют видимые label, клавиатурную submit-навигацию и сообщение валидации role=alert.",
+            "src/main.jsx:247-267 — кнопка удаления и select имеют доступные aria-label.",
+            "src/main.jsx:273-285 — для пустых колонок есть русские пояснения.",
+            "src/main.jsx:182 — ошибки storage выводятся через role=status; ошибка первоначального чтения очищается первым effect."
+          ]
+        },
+        {
+          "id": "N3-D03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/main.jsx:39-45 — сохраняется только JSON списка книг в localStorage.",
+            "src/styles.css:1 — подключается внешний Google Fonts ресурс, создающий сетевую зависимость оформления.",
+            "src/main.jsx:20-21 — приложение использует локальное хранилище без разрешений и секретов."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 50,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 20,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 18,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 8,
+      "maxPoints": 10
+    }
+  },
+  "rawScore": 96,
+  "totalScore": 96,
+  "findings": [
+    {
+      "severity": "minor",
+      "rootCauseId": "storage-error-notice-cleared",
+      "summary": "Уведомление о повреждённом сохранённом JSON очищается первым успешным effect записи пустого списка.",
+      "evidence": [
+        "src/main.jsx:20-25 — чтение повреждённого состояния возвращает ошибку.",
+        "src/main.jsx:40-42 — effect записывает [] и сразу очищает storageNotice."
+      ],
+      "reviewers": [
+        "vc-72bc2fed-a"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "persistence-io-untested",
+      "summary": "Тестируется нормализация persistence-данных, но прямого теста чтения и записи localStorage нет.",
+      "evidence": [
+        "test/readingList.test.js:37-46 — проверяется только parseBooks.",
+        "src/main.jsx:20 — чтение localStorage находится вне тестируемого модуля.",
+        "src/main.jsx:40 — запись localStorage находится вне тестируемого модуля."
+      ],
+      "reviewers": [
+        "vc-72bc2fed-a"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "readme-omits-test-command",
+      "summary": "README не сообщает пользователю, как запустить тесты.",
+      "evidence": [
+        "package.json:10 — определён npm test.",
+        "README.md:5-21 — install, dev, build и preview описаны, npm test отсутствует."
+      ],
+      "reviewers": [
+        "vc-72bc2fed-a"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "external-font-dependency",
+      "summary": "Локальный интерфейс делает внешний запрос к Google Fonts.",
+      "evidence": [
+        "src/styles.css:1 — подключение шрифтов через https://fonts.googleapis.com."
+      ],
+      "reviewers": [
+        "vc-72bc2fed-a"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "read-error-cleared",
+      "summary": "Ошибка чтения localStorage может исчезнуть сразу после первого рендера.",
+      "evidence": [
+        "src/main.jsx:32-33 — сообщение об ошибке читается в отдельный state.",
+        "src/main.jsx:39-45 — первый effect записывает пустой список и очищает storageNotice даже после ошибки чтения."
+      ],
+      "reviewers": [
+        "vc-72bc2fed-b"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "persistence-boundary-untested",
+      "summary": "Прямые тесты проверяют parseBooks, но не полный цикл записи в localStorage и восстановления после перезапуска.",
+      "evidence": [
+        "test/readingList.test.js:36-46 — проверяется только нормализация входного массива.",
+        "src/main.jsx:39-45 — сериализация и запись выполняются в UI-слое без прямого теста."
+      ],
+      "reviewers": [
+        "vc-72bc2fed-b"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "readme-omits-test",
+      "summary": "README не содержит команды запуска тестов.",
+      "evidence": [
+        "package.json:10 — команда npm test существует.",
+        "README.md:9-21 — описаны install, dev, build и preview, тестовый запуск отсутствует."
+      ],
+      "reviewers": [
+        "vc-72bc2fed-b"
+      ]
+    },
+    {
+      "severity": "minor",
+      "rootCauseId": "remote-font-import",
+      "summary": "Стили запрашивают шрифты у Google Fonts, поэтому при офлайн-запуске возникает внешний сетевой запрос.",
+      "evidence": [
+        "src/styles.css:1 — @import обращается к fonts.googleapis.com."
+      ],
+      "reviewers": [
+        "vc-72bc2fed-b"
+      ]
+    }
+  ],
+  "provenance": "frozen_v7",
+  "originalFrozenCheck": null,
+  "blind": true
+}

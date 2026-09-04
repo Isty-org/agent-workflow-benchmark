@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-64b390",
+  "scenario": "small",
+  "workspaceCommit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+  "setupCommit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-64b390-a",
+      "total": 16,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/routes/bot-routes.ts:27-28,93-103 performs boundary parsing, but actionPayloadSchema is only z.record(z.unknown()) and no method-specific validation exists."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 1,
+          "evidence": [
+            "src/config.ts:27 centralizes the allowlist, while no method-schema registry exists; route and worker remain generic in src/routes/bot-routes.ts:93-103 and src/services/delivery-service.ts:477-480."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:190-251 covers queueing and idempotency for sendMessage, but direct tests contain no action validation coverage and no edit/delete coverage."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "Adding a method can be configured through OUTBOUND_METHOD_ALLOWLIST at src/config.ts:27 and filtered by src/services/registration-service.ts:112-115, but there is no corresponding registry/schema extension point."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md:120-133 and HOWTOSETUP.md:694-761 document only sendMessage, queueing, idempotency, and status polling; editMessageText, deleteMessage, their payloads, and action errors are absent."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Authorization remains on bot routes via requireApplicationAuth; registration queries remain tenant/application scoped in src/services/registration-service.ts:501-515 and delivery processing preserves queue status, retry, dispatch pacing, and generic Telegram calls in src/services/delivery-service.ts:455-520."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "src/lib/errors.ts:20-59 preserves stable error.code and error.message fields and sanitizes unknown errors, but Prisma errors expose raw meta through details at src/lib/errors.ts:30-38."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The default allowlist is only sendMessage in src/config.ts:27; application allowlists are intersected with the global allowlist in src/services/registration-service.ts:112-115 and rejected methods return OUTBOUND_METHOD_NOT_ALLOWED at lines 493-499."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-64b390-b",
+      "total": 12,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The versioned action route parses parameters and requires an object payload in src/routes/bot-routes.ts:27-38,92-103, but uses only z.record(z.unknown()) with no method-specific validation."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 0,
+          "evidence": [
+            "No method schema/registry is present. The allowlist is parsed from free-form OUTBOUND_METHOD_ALLOWLIST in src/config.ts:23,36-37,74, while application allowlists are stored separately in src/services/admin-service.ts:29-39."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 1,
+          "evidence": [
+            "The integration test covers sendMessage queueing, status polling and identical-payload duplication in test/integration/gateway.integration.test.ts:190-250. There are no tests for method validation, editMessageText, deleteMessage or conflicting idempotency reuse."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 1,
+          "evidence": [
+            "Adding a method can be done by changing the configurable allowlist, but there is no registry/schema extension point; the generic route and worker dispatch any configured method via src/routes/bot-routes.ts:92-103 and src/services/delivery-service.ts:477-480."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 1,
+          "evidence": [
+            "README.md:115-133 and HOWTOSETUP.md:694-761 document only sendMessage, generic queueing, idempotency and status polling. They do not document editMessageText/deleteMessage payloads or the complete error contract."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Application authentication and tenant/application scoping remain on bot and delivery routes in src/routes/bot-routes.ts:49-126 and src/services/registration-service.ts:501-515,576-593. Queue-first delivery, status polling, retry and Telegram pacing remain implemented in src/services/delivery-service.ts:45-127,451-590."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The public error envelope consistently exposes code, message, details and requestId in src/lib/errors.ts:40-61, and token fields are excluded from public models in src/lib/public-models.ts:10-53. However, database constraint errors expose Prisma code/meta through src/lib/errors.ts:28-34, leaking implementation details."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 1,
+          "evidence": [
+            "The default allowlist is narrow and contains only sendMessage in src/config.ts:23 and .env.example:19. However, the allowlist accepts arbitrary method strings and the worker dispatches the configured method generically, with no finite registry for allowed Telegram methods."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-64b390-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-64b390-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-64b390-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-64b390-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/routes/bot-routes.ts:37-38 defines z.record(z.unknown()).",
+        "No editMessageText or deleteMessage schemas or registry are present in the normalized product source."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-64b390-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/config.ts:23,36-37,74 accepts comma-separated arbitrary method names.",
+        "src/services/admin-service.ts:29-39 validates only against that configurable list.",
+        "src/services/delivery-service.ts:477-480 forwards the stored action directly to Telegram."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-64b390-b-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:190-250 covers sendMessage queueing and identical duplicate reuse.",
+        "No direct tests cover invalid action payloads or conflicting idempotency keys."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-64b390-b-finding-4",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "README.md:120-133 and HOWTOSETUP.md:700-761 describe sendMessage only and omit the requested methods and their payload/error contracts."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-64b390-b-finding-5",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/lib/errors.ts:28-34 maps Prisma errors into public details containing error.code and error.meta."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

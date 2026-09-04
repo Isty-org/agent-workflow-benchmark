@@ -1,0 +1,66 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-a2b788",
+  "conditionVisibleInWorkspace": false,
+  "createdAt": "2026-09-02T06:59:12.694Z",
+  "destinationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-a2b788",
+  "excludedPaths": [
+    ".agents",
+    ".git",
+    "_bmad"
+  ],
+  "executableProductContentChanged": false,
+  "includedFileHashes": [
+    {
+      "path": ".gitignore",
+      "sha256": "6763d1f0ab9cc988044e11ca10b7191bb42857b0814da48dc6812acb06b6e67f"
+    },
+    {
+      "path": "app.js",
+      "sha256": "b140e9f331f62893b8c5ba328acff65533daa54d8ab5dc10f2848d8f5738101e"
+    },
+    {
+      "path": "docs/project-context.md",
+      "sha256": "8d7506015fe12b7a7e8e66fd7d1d124030cad4b1d2081096e35f9bf1c14779b9"
+    },
+    {
+      "path": "index.html",
+      "sha256": "a632a1f893ac27ac153c0f8042df5c5c575874ec1b57c1bd837989fb0b906f2f"
+    },
+    {
+      "path": "package.json",
+      "sha256": "2b66f3bd73e5e985a6b24f17a751e994f5545c9e613eba6e16897f0e03728163"
+    },
+    {
+      "path": "README.md",
+      "sha256": "29b4fa16936be98d02f821db3366bdeaf402b77f174bbc47b6505e1bda23bec4"
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "7f48ec44644d273511f7ab7f16026051efe0a2ead599d0c4ba4937640ad515fc"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "030e47e34835ced51e0641d82891e65b0eb81a342bb954e4ead71412883c847c"
+    }
+  ],
+  "includedPaths": [
+    ".gitignore",
+    "README.md",
+    "app.js",
+    "docs",
+    "docs/project-context.md",
+    "index.html",
+    "package.json",
+    "server.mjs",
+    "styles.css"
+  ],
+  "methodMetadataVisibleInWorkspace": false,
+  "runId": "v7-new-bmad-r1",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "sourceWorkspaceCommit": "178411826a9a2aadd6b2c3c153ba3193733ee2da",
+  "sourceWorkspacePath": "redacted",
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false
+}

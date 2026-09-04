@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 3,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-6e543a",
+  "scenario": "small",
+  "phase": "first_pass",
+  "evaluatorVersion": "3.0.0",
+  "harnessCommit": "10065386fb43e22c2065d6a1049af29f7a10a139",
+  "workspaceCommit": "a48487eea83a730e37f8db5b71daf57ffbee9f97",
+  "setupCommit": "6ab2fedef71520c3f8ea21661021369e967908e0",
+  "contractSha256": "10065386fb43e22c2065d6a1049af29f7a10a139707166e9e0947309a0e760be",
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "d561275717a9d6711a3d340cc13db87823c6143f655e531d7f5666f4253aa79c",
+      "passed": false
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "d561275717a9d6711a3d340cc13db87823c6143f655e531d7f5666f4253aa79c",
+      "passed": false
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "d561275717a9d6711a3d340cc13db87823c6143f655e531d7f5666f4253aa79c",
+      "passed": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "S3-A01",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A02",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 9,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A04",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A05",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A06",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A07",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A08",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A09",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-A10",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: harness did not emit this check",
+        "repetition 2: harness did not emit this check",
+        "repetition 3: harness did not emit this check"
+      ]
+    },
+    {
+      "id": "S3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: npm test",
+        "repetition 2: npm test",
+        "repetition 3: npm test"
+      ]
+    },
+    {
+      "id": "S3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: npm run build",
+        "repetition 2: npm run build",
+        "repetition 3: npm run build"
+      ]
+    },
+    {
+      "id": "S3-B03",
+      "status": "fail",
+      "pointsAwarded": 0,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: real PostgreSQL integration and hidden API harness",
+        "repetition 2: real PostgreSQL integration and hidden API harness",
+        "repetition 3: real PostgreSQL integration and hidden API harness"
+      ]
+    },
+    {
+      "id": "S3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "src/routes/bot-routes.ts:89-102 validates supported payloads before src/services/registration-service.ts:523-535 creates a delivery; the worker consumes persisted payloads at src/services/delivery-service.ts:472-481.",
+        "bot-routes.ts:89-103 performs method-specific Zod validation before submitOutboundAction at lines 164-170."
+      ]
+    },
+    {
+      "id": "S3-C02",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 4,
+      "evidence": [
+        "Allowlist enforcement is centralized in src/services/registration-service.ts:497-503, and the worker does not duplicate validation. However, equivalent send/edit/delete schemas are independently defined in src/routes/bot-routes.ts:41-102 and src/routes/istina-compat-routes.ts:39-85.",
+        "The native schemas in bot-routes.ts:41-100 are duplicated in istina-compat-routes.ts:36-85. Allowlist enforcement itself is centralized in registration-service.ts:497-503."
+      ]
+    },
+    {
+      "id": "S3-C03",
+      "status": "partial",
+      "pointsAwarded": 3,
+      "maxPoints": 4,
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:246-578 covers queueing, validation, idempotency, retries, edit, and delete. The direct unit suite contains helper/config tests but no focused unit tests for route validation or submitOutboundAction idempotency.",
+        "gateway.integration.test.ts:246-578 covers queueing, validation, retries, and idempotency for the new methods; direct unit tests cover shared retry behavior, but no action-specific direct unit tests are present."
+      ]
+    },
+    {
+      "id": "S3-C04",
+      "status": "partial",
+      "pointsAwarded": 1,
+      "maxPoints": 3,
+      "evidence": [
+        "Adding a new method requires changes across the configured allowlist and duplicated route contracts; there is no single action registry/schema extension point.",
+        "The worker dispatches action and payload generically in delivery-service.ts:477-480, but adding a validated method requires changes in both duplicated route schema sets."
+      ]
+    },
+    {
+      "id": "S3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "README.md:119-184 documents the three methods, payload examples, idempotency behavior, status polling, compatibility endpoints, and error envelope.",
+        "README.md:116-197 and HOWTOSETUP.md:701-848 document endpoints, payloads, queue/status flow, idempotency, and error envelopes for send, edit, and delete."
+      ]
+    },
+    {
+      "id": "S3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "Application auth and scoped delivery access remain in src/routes/bot-routes.ts:115-190; queue-first persistence is in src/services/registration-service.ts:523-570; retry and rate-limit handling remain in src/services/delivery-service.ts:517-545 and :129-135.",
+        "Existing authenticated bot/status endpoints remain in bot-routes.ts:115-192; shared retry and rate-limit handling remains in delivery-service.ts:451-591 and config.ts:14-23."
+      ]
+    },
+    {
+      "id": "S3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "Stable code/message/details/requestId responses are enforced in src/lib/errors.ts:54-61 and public models omit bot tokens. The Prisma error branch at src/lib/errors.ts:28-34 returns database error metadata, exposing implementation details.",
+        "errors.ts:24-61 preserves stable error code/message/requestId fields; istina-compat-routes.ts:105-107 removes bot_token before delivery persistence."
+      ]
+    },
+    {
+      "id": "S3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "The default allowlist is exactly sendMessage, editMessageText, and deleteMessage in src/config.ts:23; admin validation rejects unsupported methods in src/services/admin-service.ts:29-39; runtime submission intersects application permissions with the global allowlist.",
+        "The default allowlist contains only sendMessage, editMessageText, and deleteMessage in config.ts:23 and config.test.ts:30-45; registration-service.ts:497-503 rejects methods outside the effective allowlist."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-6e543a-a",
+      "total": 22,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "src/routes/bot-routes.ts:89-102 validates supported payloads before src/services/registration-service.ts:523-535 creates a delivery; the worker consumes persisted payloads at src/services/delivery-service.ts:472-481."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Allowlist enforcement is centralized in src/services/registration-service.ts:497-503, and the worker does not duplicate validation. However, equivalent send/edit/delete schemas are independently defined in src/routes/bot-routes.ts:41-102 and src/routes/istina-compat-routes.ts:39-85."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "test/integration/gateway.integration.test.ts:246-578 covers queueing, validation, idempotency, retries, edit, and delete. The direct unit suite contains helper/config tests but no focused unit tests for route validation or submitOutboundAction idempotency."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 0,
+          "evidence": [
+            "Adding a new method requires changes across the configured allowlist and duplicated route contracts; there is no single action registry/schema extension point."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:119-184 documents the three methods, payload examples, idempotency behavior, status polling, compatibility endpoints, and error envelope."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Application auth and scoped delivery access remain in src/routes/bot-routes.ts:115-190; queue-first persistence is in src/services/registration-service.ts:523-570; retry and rate-limit handling remain in src/services/delivery-service.ts:517-545 and :129-135."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "Stable code/message/details/requestId responses are enforced in src/lib/errors.ts:54-61 and public models omit bot tokens. The Prisma error branch at src/lib/errors.ts:28-34 returns database error metadata, exposing implementation details."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The default allowlist is exactly sendMessage, editMessageText, and deleteMessage in src/config.ts:23; admin validation rejects unsupported methods in src/services/admin-service.ts:29-39; runtime submission intersects application permissions with the global allowlist."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-6e543a-b",
+      "total": 26,
+      "checks": [
+        {
+          "id": "S3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "bot-routes.ts:89-103 performs method-specific Zod validation before submitOutboundAction at lines 164-170."
+          ]
+        },
+        {
+          "id": "S3-C02",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The native schemas in bot-routes.ts:41-100 are duplicated in istina-compat-routes.ts:36-85. Allowlist enforcement itself is centralized in registration-service.ts:497-503."
+          ]
+        },
+        {
+          "id": "S3-C03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "gateway.integration.test.ts:246-578 covers queueing, validation, retries, and idempotency for the new methods; direct unit tests cover shared retry behavior, but no action-specific direct unit tests are present."
+          ]
+        },
+        {
+          "id": "S3-C04",
+          "pointsAwarded": 2,
+          "evidence": [
+            "The worker dispatches action and payload generically in delivery-service.ts:477-480, but adding a validated method requires changes in both duplicated route schema sets."
+          ]
+        },
+        {
+          "id": "S3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "README.md:116-197 and HOWTOSETUP.md:701-848 document endpoints, payloads, queue/status flow, idempotency, and error envelopes for send, edit, and delete."
+          ]
+        },
+        {
+          "id": "S3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Existing authenticated bot/status endpoints remain in bot-routes.ts:115-192; shared retry and rate-limit handling remains in delivery-service.ts:451-591 and config.ts:14-23."
+          ]
+        },
+        {
+          "id": "S3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "errors.ts:24-61 preserves stable error code/message/requestId fields; istina-compat-routes.ts:105-107 removes bot_token before delivery persistence."
+          ]
+        },
+        {
+          "id": "S3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The default allowlist contains only sendMessage, editMessageText, and deleteMessage in config.ts:23 and config.test.ts:30-45; registration-service.ts:497-503 rejects methods outside the effective allowlist."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 0,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 14,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 15,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "totalScore": 39,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-6e543a-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/routes/bot-routes.ts:41-102",
+        "src/routes/istina-compat-routes.ts:39-85"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-6e543a-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "test/integration/gateway.integration.test.ts:246-578",
+        "test/config.test.ts",
+        "test/retry.test.ts",
+        "test/telegram-service.test.ts"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-6e543a-a-finding-3",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "src/lib/errors.ts:28-34",
+        "src/lib/errors.ts:54-61"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-6e543a-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-6e543a-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

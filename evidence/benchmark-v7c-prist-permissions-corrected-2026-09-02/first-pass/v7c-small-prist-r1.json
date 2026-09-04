@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "runId": "v7c-small-prist-r1",
+  "blindId": "vc-d4fb0379",
+  "scenario": "small-project",
+  "condition": "prist",
+  "replica": 1,
+  "task": {
+    "taskId": "01a06255-a6fb-7723-92f0-7466ce5db80d",
+    "turnId": "01a06255-adc3-7050-8af1-c5e9e2c05117",
+    "hostId": "local",
+    "requestedModel": "gpt-5.6-luna",
+    "requestedReasoning": "xhigh",
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "firstPassOnly": true,
+    "repairTurns": 0
+  },
+  "setup": {
+    "commit": "997c38d69480212a099093a4355bbfda249262cc",
+    "tree": "53ce432f8bbae6784c3d7834dee5841ba8b0983e",
+    "fingerprint": "3b432b8e0c4006fa927136d8c8dc71f08686d955bd165c885e3e8943256196b8",
+    "hostedProjectId": "project_821552cc-723d-411a-b54e-cfba5e1ede97",
+    "hostedConnectionId": "connection_9177a8e4-636d-4cb8-9de1-e034a3e4c2fe"
+  },
+  "timing": {
+    "dispatchAt": "2026-09-02T13:36:15.000Z",
+    "taskStart": "2026-09-02T13:36:17.000Z",
+    "firstActivityAt": "2026-09-02T13:36:17.000Z",
+    "lastActivityAt": "2026-09-02T14:02:11.000Z",
+    "finalResponseAt": "2026-09-02T14:02:11.000Z",
+    "taskElapsedMs": 1556000,
+    "agentActiveMs": 1553975,
+    "humanWaitingMs": 0,
+    "externalChecksMs": null
+  },
+  "snapshot": {
+    "head": "997c38d69480212a099093a4355bbfda249262cc",
+    "tree": "53ce432f8bbae6784c3d7834dee5841ba8b0983e",
+    "status": "M .env.example\n M HOWTOSETUP.md\n M README.md\n M TZ-telegram-gateway-service.md\n M specs/modules/gateway/FEAT-102-delivery-and-retries.md\n M src/config.ts\n M src/routes/bot-routes.ts\n M src/services/delivery-service.ts\n M src/services/registration-service.ts\n M src/services/telegram-service.ts\n M test/integration/gateway.integration.test.ts\n M test/integration/test-helpers.ts\n?? test/outbound-action.test.ts",
+    "contentFingerprint": "98ce8ace0d2e439b9d47c6c3b2b8c68fea47db9f0d2c0c55e70eb59ab4996703",
+    "files": {
+      ".agents/skills/spec-driven-work/SKILL.md": "9485e9dcba786b6b2bf19f3f2b275017c3925894645ffe5bd7640fb9c8bfc548",
+      ".agents/skills/spec-driven-work/agents/openai.yaml": "7ecdda658c1bba182d774af8a7489da58fa83d253a2d09e0bbb2c6e4f35a1793",
+      ".agents/skills/spec-driven-work/fixtures/parallel-context-scenarios.json": "a0922228cad25722c1ea1d63bfec7fe52bd0b316952c56bcacb09d2fa16ff540",
+      ".agents/skills/spec-driven-work/references/change-flow.md": "2bccbf14ea531285a52fd14b3a95384e44fc35c6094c7bcf6b7eddce6b9e6a2a",
+      ".agents/skills/spec-driven-work/references/full-canon-adaptation.md": "8595a02b6bb06ec214087b292d2dcc6543d0b3a12abd63660f790f5a8583ec33",
+      ".agents/skills/spec-driven-work/references/parallel-work.md": "51851ec3731a5b5ec82529ff4392ef2db69b2d2e9baef4aa93a3eecd30cd9f19",
+      ".agents/skills/spec-driven-work/references/service-lifecycle.md": "016183faf8ae215b3d03be0b750883ba31a3901fbf48cc7db01e54f589aec888",
+      ".agents/skills/spec-driven-work/references/setup-recovery.md": "e7dd0a5cee975b5f12cd8371885f96ace7e206abef0915f07769e38b7669a509",
+      ".agents/skills/spec-driven-work/references/specification-authoring.md": "54f1a4fc618609cce847e004829a4200f1eacd47e22191f84c0f61f7a430ed7d",
+      ".agents/skills/spec-driven-work/references/specification-lifecycle.md": "de08064b93ef297c6522b0744d81e99b43a82cafde9ddd88f6f33f73d18e6ae0",
+      ".agents/skills/spec-driven-work/references/work-items.md": "90b35d3a7dc5d6887083720d1458d2ad72cb45eccdf22b850fbc9bed8a9bae0b",
+      ".agents/skills/spec-driven-work/scripts/check-workflow.mjs": "a4065c9c7568664c2885ae388ab250dc930bd0e7af674697bce8d4427f11fefc",
+      ".agents/skills/spec-driven-work/scripts/instruction-reconciliation.json": "d203cb0f9bb5c5a75982bbb1dedce47b52377c1aea10b089097b7257a230dbe2",
+      ".agents/skills/spec-driven-work/scripts/portable-change-driver.mjs": "921246e727fa5f43446ca054270cb9380105e20d71f8fea38b3ac91c1760d954",
+      ".agents/skills/spec-driven-work/scripts/prepare-isolated-checkout.mjs": "d9e7e52a87ee3f3068e41c3eba5beb6a76bb72660c841201beefd17cb5b0fd98",
+      ".agents/skills/spec-driven-work/scripts/prist-mcp-stdio.mjs": "7c81cd24379aba38548dddf9fd7648727e2997b0d521ca0fe4aaabfe3d067513",
+      ".agents/skills/spec-driven-work/scripts/prist-onboarding.mjs": "39b3860a897ea3932b6d364732055207d345cab346c871427e01779c8d16b3b8",
+      ".agents/skills/spec-driven-work/scripts/prist-worktree-bootstrap.mjs": "e6a53bb6f2d5fa577256a4d80c1237e63f8d1cb6d0a0b1b092bc1c01b5f49723",
+      ".agents/skills/spec-driven-work/scripts/repository-inventory.mjs": "d6c9f95ff8227d3ba3cd34fddf566263f8ebcf01e754a811a0cf7cc09f8f034a",
+      ".agents/skills/spec-driven-work/scripts/sync-spec-space.mjs": "78165b4ce0aacbcf526d60a02734d2bc6bee47bac261222efca443c169c7fd4c",
+      ".agents/skills/spec-driven-work/scripts/traceability-audit.mjs": "236a453eda6019edc4baf586fb2a51823a6fce06d71e4f577fd4e775fbd1500e",
+      ".claude/skills/spec-driven-work/SKILL.md": "9485e9dcba786b6b2bf19f3f2b275017c3925894645ffe5bd7640fb9c8bfc548",
+      ".claude/skills/spec-driven-work/agents/openai.yaml": "7ecdda658c1bba182d774af8a7489da58fa83d253a2d09e0bbb2c6e4f35a1793",
+      ".claude/skills/spec-driven-work/fixtures/parallel-context-scenarios.json": "a0922228cad25722c1ea1d63bfec7fe52bd0b316952c56bcacb09d2fa16ff540",
+      ".claude/skills/spec-driven-work/references/change-flow.md": "2bccbf14ea531285a52fd14b3a95384e44fc35c6094c7bcf6b7eddce6b9e6a2a",
+      ".claude/skills/spec-driven-work/references/full-canon-adaptation.md": "8595a02b6bb06ec214087b292d2dcc6543d0b3a12abd63660f790f5a8583ec33",
+      ".claude/skills/spec-driven-work/references/parallel-work.md": "51851ec3731a5b5ec82529ff4392ef2db69b2d2e9baef4aa93a3eecd30cd9f19",
+      ".claude/skills/spec-driven-work/references/service-lifecycle.md": "016183faf8ae215b3d03be0b750883ba31a3901fbf48cc7db01e54f589aec888",
+      ".claude/skills/spec-driven-work/references/setup-recovery.md": "e7dd0a5cee975b5f12cd8371885f96ace7e206abef0915f07769e38b7669a509",
+      ".claude/skills/spec-driven-work/references/specification-authoring.md": "54f1a4fc618609cce847e004829a4200f1eacd47e22191f84c0f61f7a430ed7d",
+      ".claude/skills/spec-driven-work/references/specification-lifecycle.md": "de08064b93ef297c6522b0744d81e99b43a82cafde9ddd88f6f33f73d18e6ae0",
+      ".claude/skills/spec-driven-work/references/work-items.md": "90b35d3a7dc5d6887083720d1458d2ad72cb45eccdf22b850fbc9bed8a9bae0b",
+      ".claude/skills/spec-driven-work/scripts/check-workflow.mjs": "a4065c9c7568664c2885ae388ab250dc930bd0e7af674697bce8d4427f11fefc",
+      ".claude/skills/spec-driven-work/scripts/instruction-reconciliation.json": "d203cb0f9bb5c5a75982bbb1dedce47b52377c1aea10b089097b7257a230dbe2",
+      ".claude/skills/spec-driven-work/scripts/portable-change-driver.mjs": "921246e727fa5f43446ca054270cb9380105e20d71f8fea38b3ac91c1760d954",
+      ".claude/skills/spec-driven-work/scripts/prepare-isolated-checkout.mjs": "d9e7e52a87ee3f3068e41c3eba5beb6a76bb72660c841201beefd17cb5b0fd98",
+      ".claude/skills/spec-driven-work/scripts/prist-mcp-stdio.mjs": "7c81cd24379aba38548dddf9fd7648727e2997b0d521ca0fe4aaabfe3d067513",
+      ".claude/skills/spec-driven-work/scripts/prist-onboarding.mjs": "39b3860a897ea3932b6d364732055207d345cab346c871427e01779c8d16b3b8",
+      ".claude/skills/spec-driven-work/scripts/repository-inventory.mjs": "d6c9f95ff8227d3ba3cd34fddf566263f8ebcf01e754a811a0cf7cc09f8f034a",
+      ".claude/skills/spec-driven-work/scripts/sync-spec-space.mjs": "78165b4ce0aacbcf526d60a02734d2bc6bee47bac261222efca443c169c7fd4c",
+      ".claude/skills/spec-driven-work/scripts/traceability-audit.mjs": "236a453eda6019edc4baf586fb2a51823a6fce06d71e4f577fd4e775fbd1500e",
+      ".codex/config.toml": "555683b4b0ce0d6458e12ffdb1d5f60e23607a69176f830fcfae59b7cd45fa46",
+      ".env.example": "ec1a6d2e5cd99e37c145e1d9cd6717bb1905704007ed942d660a118006cf2310",
+      ".gitattributes": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+      ".gitignore": "972a86918aa489f06174eeac70f0effc59263ab6ea1213125958c23ba3d5e806",
+      ".mcp.json": "d8e397af03b5b032f21d0aa967086f0c78b33c87b76f2e9898ae0a144df7de02",
+      ".prist/connection.json": "2eaaf635d12799b6337a86ca5d2514114ba0cb9677a75e8d2f1dd5b2be289585",
+      ".prist/recovery/entrypoints/AGENTS.before-prist.md": "9d9289b5a0cc723eb7c6c15f6fd7999f2ea427a5f9ad44feacf4e28f08e51cd3",
+      ".prist/recovery/entrypoints/CLAUDE.before-prist.md": "46dc571810d473a4bcf01f33f99fb26d994ddbcad1f7328aaf96a3dc5f44f233",
+      ".prist/recovery/entrypoints/manifest.json": "4d466410b2a328a63fa0d56218b1964308d222c8cbb19ed9ed834b2c466a4431",
+      ".prist/repository-setup-receipt.json": "72d8c4304083a013fdf9d3804c87bf110c5901cf680c388fe36f325024f43a6b",
+      ".prist/workflow.json": "72d8c4304083a013fdf9d3804c87bf110c5901cf680c388fe36f325024f43a6b",
+      "AGENTS.md": "ad68b241366592e6d54e7d756f390e9156d37399fe2902ec5804da7b763d690b",
+      "CLAUDE.md": "35363df35a219b51146680f35fa5687082c8112398c9e8c4be35a30d727f86d9",
+      "HOWTOSETUP.md": "8f747799978a2d08c4c62f3eee544c42b07262c0863f19d51e67bec80889ef3b",
+      "README.md": "65aa603551b0c1158ef6c3f4feeea898028426f80d78a01d97b503992f83b24f",
+      "TZ-telegram-gateway-service.md": "fd716290aa926432a67f18c3f370a8528ce88731c18bf95aa770ecd4291d5cf5",
+      "dist/src/app.js": "0c9bc8b98a53a7bc500d6ee9319d4725c406d2beb1da9b1e67d3b9ad75a998b8",
+      "dist/src/config.js": "aec51fd695bb5c479fbf08fe7400d860e42155a96898a7bd46d8ff3a958f1c6f",
+      "dist/src/lib/crypto.js": "0c8cd74957700fe17029f4883b826747010ed9483be359cbf43945d0b5d3bca5",
+      "dist/src/lib/errors.js": "1b22955bdd2a4d8ac3a377b090fe1fafe9ddef18c8ca85a0ab41ebec77fdd2ee",
+      "dist/src/lib/metrics.js": "ef8538d99a5b732526b602073bcb0df9d85af8ee7b4e251f161ac581b3fb0e06",
+      "dist/src/lib/public-models.js": "0123bfcb0d31424cb0534a5c7ce395165f6a7a02a1fb0feb11c18e5b61db89f1",
+      "dist/src/lib/retry.js": "3249db5fd209523aa7a6b7f29b81888123e714eb3f0e77e28be5f2500861128c",
+      "dist/src/plugins/auth.js": "af5f32c43773f368c9ca314681c8cfbdb3a6eb1a7b205634c5b5443f19ced357",
+      "dist/src/routes/admin-routes.js": "79681fa2513fb45d48970604017ffdbba7071739b65da90456f85f81f9d59ddf",
+      "dist/src/routes/admin-ui-routes.js": "2bacb8fa951189c452a05811f66249bdd33e7d3fda0f80bac6a5ad7d677a2642",
+      "dist/src/routes/bot-routes.js": "3517360ad6e71a22e077818443883ba94f3d9024f98333579c0b7659875e76af",
+      "dist/src/routes/health-routes.js": "ddefc59a114b8c0d0061a13212c6ae7e21acfe91c8beabb886e6022fec8972ed",
+      "dist/src/routes/ingress-routes.js": "5f1b5bfd8dfa248d25f23630933287a675048126230619f6a77dbc02db6ddaec",
+      "dist/src/routes/istina-compat-routes.js": "db64c618bd252d0fd0e349cf417af26474ba2e0e895fba2b04928cb7d79f8451",
+      "dist/src/server.js": "bccca1076282d6c67b5a08a39f4c0cb88667aa0d0ca3b8007f220ff8d9aeabb6",
+      "dist/src/services/admin-service.js": "eaa2080b35229e701729ae2f74138e121039c255b98bae4c268b1d114863ef5b",
+      "dist/src/services/audit-service.js": "7eb685b2c7a4e95081af77ae4b552a60607f8971ff39c808806febba22bde499",
+      "dist/src/services/delivery-service.js": "1aa3809e3b70a84145f80f31fb81468676e446f984084b1c53165c1a3578e8d0",
+      "dist/src/services/registration-service.js": "ef4f84283dd7babb9f182ea36bb69b61aa102be9856af55405f5b66339424af9",
+      "dist/src/services/telegram-service.js": "713cd12c405cb666be4bb0bb5cf46227a4b67557153da2d45523716138d97c61",
+      "dist/src/services/worker-service.js": "da33f491b293532d975ec03af312f7173535775bd58a6a4d3ce31d857e131e96",
+      "dist/test/crypto.test.js": "2052b1a796b0bfd11741a0bb03586c7da61ceead3723ea3639458cb1fb1e8708",
+      "dist/test/integration/gateway.integration.test.js": "2bf981a9b0cbc4e5536fa12d9ce20522be8629b4f070411dbbf71b251509d016",
+      "dist/test/integration/test-helpers.js": "6691b9075b754d5927293cdbcf24f684706a52389e773939c942ff81a101b815",
+      "dist/test/outbound-action.test.js": "ccffd43d1040f76274e2e4ea98e5a89c88d90691237bb3282b8227a451ed3e68",
+      "dist/test/retry.test.js": "8c103cbc85eeb7b5338d6902098cfc1bed588a825b8925bbf2348a5d48534320",
+      "dist/test/telegram-service.test.js": "fa0f5d263084ce32238b3629062c443219ea609805c5e1451a3b1e9eaa425349",
+      "docker-compose.integration.yml": "f341fab79f61d7d17e7d3da653f8471c76c2f41b1b5718e300c551e3c90a782c",
+      "package-lock.json": "ce126c6bb885655b2bb12ac44d4bb879956ad69cd435324776836c9cd89978fc",
+      "package.json": "72895a5e7fc564cc644fe3f5ea3775ec77a53986e9ad07f75e2b6ca29c328c31",
+      "prisma/migrations/20260420202800_init/migration.sql": "7867e405cd7dd86427da23bc519b7b73b62c30de3224f3a97ee4c02c045ef16a",
+      "prisma/migrations/migration_lock.toml": "e36c96b04c104e758d02a6cdb7fc2583b3c77b6c6eacab1f561f4c44597b10b7",
+      "prisma/schema.prisma": "85aaa3ac940df320a89d45c17633f259f8dc66ce349948bad85f77995e1a1f81",
+      "scripts/run-integration-tests.js": "48ea949d4305bffd9599b2308fd0dfaa25ecdd8532dbff9b0d28f2514d78f11b",
+      "specs/SPEC-MAP.md": "1354b9d16f328d91500afdd6e9d48497099a4202e6f9ffcc3a60bc4d6a00fb63",
+      "specs/common/PROP-001-product-boundary.md": "3bd1210c7a869c629a1a47632b7bcfcbf0446d3f9dc19f1760fa7ff4bf97b26f",
+      "specs/common/main.md": "bf3d64e337eac6c585c3f7fdeccc5c5e11ed7c177ae0690530123005b812d675",
+      "specs/common/structure.md": "3d7292260b8388c0a720e66aa81396a47bee3e092095bf09e664add04b3d4274",
+      "specs/modules/gateway/FEAT-101-bot-registration.md": "6073827862545973f3fb8a02437cffcd513c2a645cf55cdb4828273162a8230f",
+      "specs/modules/gateway/FEAT-102-delivery-and-retries.md": "a3f315c03939235fddd86c157b17edcb3328cb7fcff2f444813bb7494f21cac3",
+      "specs/modules/gateway/FEAT-103-admin-and-compatibility.md": "de6c561c49229b49af74074da8c5cfbde16ebefe8a261ad79e402a661b0d539e",
+      "specs/modules/gateway/INFRA-101-runtime-and-security.md": "5d9d95f44f691f7c54aa27bf7bd3711d035e6dd6d5aa17e857490a796cca59f8",
+      "src/app.ts": "dc5445f633defcff47ed219e9e14bfb33f5c000e172fec16e2d3fe93c3721e7a",
+      "src/config.ts": "11f45e87d21d1bfc96243654f388976a5dfb68d791490560d5b6f4375278d9ae",
+      "src/fastify.d.ts": "7798276ddd8082b436a47edba6c46c31aba0ad278189752903071939a0289987",
+      "src/lib/crypto.ts": "ca7fdb87e547a1e95301e88142f3fd6b736a70c40ffb9bb67cdec210f33575fc",
+      "src/lib/errors.ts": "f91825da60858de13b7615cb3a29360bce9b235b82fc888ceec1ae6966782fef",
+      "src/lib/metrics.ts": "35653f1aa142ddc5f05a67430ee06f68c43c589e8d9a33280588a9226bd2e171",
+      "src/lib/public-models.ts": "a558b7d3a5567365acb8a7f164fa192cf58ec3591c666ee8ef4e2e807a153574",
+      "src/lib/retry.ts": "ecb28e4ea3b75b3958c1eb6d5da68a20bcc584c5a9a32c49b9770524a4360bc4",
+      "src/plugins/auth.ts": "1a3378182d6853410d59036146e3477b858db3581f8b6da218fb12d91d0dff3d",
+      "src/routes/admin-routes.ts": "7136f229a5a8e11fcec7a3db76e58901e0ff8d33b249371a58f0496b57500b43",
+      "src/routes/admin-ui-routes.ts": "8d4d6310cc95f239f47207baf9adae82a1e2859d50b58648fe891a8906fe5524",
+      "src/routes/bot-routes.ts": "bf4aca58f523b3dad5099b5c3b60e8f682ac574ec70460c03c3f2160ee6d4ee1",
+      "src/routes/health-routes.ts": "c3c6c0e4f092b6ddbc99e7cefd2527916da6e7632c3adb6b00d4e72647ded79f",
+      "src/routes/ingress-routes.ts": "a4d8898dca568857c5a4796ea13f4fa0ae7d1763253ba6b38fbce9f01b9d97ff",
+      "src/routes/istina-compat-routes.ts": "6f757fffbe20e6474fda6eaa531e7a750d5f9bb13e4bf7fe9b4b5cab47658d20",
+      "src/server.ts": "1051b990e020fc4ca37efe17914b0d074e9976f447fa3a690949815da7b48529",
+      "src/services/admin-service.ts": "cc0c493ace2fc449e9e47775bef95861c8ed96b82bcced5cf80fc55e2ba05464",
+      "src/services/audit-service.ts": "ff03a46c59ead6cd3747d6d9ffe36cfe7d6e69e27cf273b962893418202c416a",
+      "src/services/delivery-service.ts": "d9631cd6aa9ec39e78d13e29c54838ca79f40b6e3cd26fc895301fd624eb1c0c",
+      "src/services/registration-service.ts": "b22db582d4b1d2d9fed6e1eb0953077323bb3955f2c0c7733c2182bc0ca7ddf2",
+      "src/services/telegram-service.ts": "9b42867bebab43d0e9d37bd67c0ce09b6de3fca590934ab1e56bc84ecff28b2d",
+      "src/services/worker-service.ts": "fe6ff222fae456a4689889d7e3ae766b3a956a48edcdd2f4cc912bbcec58a120",
+      "test/crypto.test.ts": "c3bd241d0197b67fbdb5f86f6493fd9c17246ee0fe1213cf3ef912873b12096b",
+      "test/integration/gateway.integration.test.ts": "f2f50596b1084051c8a454007e9a85bf341b85752dcfcb364e73d5eae09e5b76",
+      "test/integration/test-helpers.ts": "227d67e0efebfb2acfa50cb8261b7c30c6378821e2ca7ca744c1a8f7a58bf70f",
+      "test/outbound-action.test.ts": "63fc3b59bd90ed420ed0dd968ba09f252899b6eb759521ab0936d5a5aa6195d7",
+      "test/retry.test.ts": "0434da1f368fc065ec3d05cf33514116bf9099f3e114fa775935090fb5fd4485",
+      "test/telegram-service.test.ts": "1cc801234964c090c37f34d8b62f89f3c7d8c9444582d0e9530555da373f5404",
+      "tsconfig.json": "c547e460c2e2651889ad9cde61a90e42c4f62d576227cfdfe11be233beebe77c"
+    }
+  },
+  "capturedAt": "2026-09-02T14:02:24.565Z",
+  "firstPassFrozen": true,
+  "interventions": {
+    "clarifications": 0,
+    "answers": 0,
+    "repairTurns": 0
+  },
+  "usage": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+    "runId": "v7c-small-prist-r1",
+    "capturedAt": "2026-09-02T14:02:36.197Z",
+    "source": {
+      "taskId": "01a06255-a6fb-7723-92f0-7466ce5db80d",
+      "turnId": "01a06255-adc3-7050-8af1-c5e9e2c05117",
+      "sessionSha256": "e93a86c58582a802756068183923a3549d70a11726cead6f2e7c11c12ede8e01"
+    },
+    "actualModel": "gpt-5.6-luna",
+    "actualReasoning": "xhigh",
+    "inputTokens": 16503457,
+    "uncachedInputTokens": 281761,
+    "cachedInputTokens": 16221696,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 48280,
+    "reasoningOutputTokens": 22494,
+    "totalTokens": 16551737,
+    "toolCounts": {
+      "exec": 109
+    },
+    "billing": {
+      "currency": "USD",
+      "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+      "pricingSha256": "2a71067b2a0d65782d7b1cc8d7a0415b322425c9c6db719306bee8f9ae8da634",
+      "estimatedTaskCostUsd": 0.43872212,
+      "reasoningIncludedInOutput": true
+    },
+    "redacted": true,
+    "privacy": {
+      "transcriptCopied": false,
+      "toolInputsCopied": false,
+      "toolOutputsCopied": false,
+      "credentialsCopied": false,
+      "rateLimitDataCopied": false
+    }
+  },
+  "checks": {
+    "path": "checks/server-runs-attempt2/v7c-small-prist-r1.json",
+    "repetitions": 3,
+    "provenance": "frozen_v7"
+  },
+  "evaluation": {
+    "path": "evaluations/vc-d4fb0379.json",
+    "rawScore": 86,
+    "officialScore": 69,
+    "reviewPasses": 2
+  },
+  "validity": {
+    "status": "valid_first_pass",
+    "reason": "Corrected setup preflight passed; exact Luna xhigh first pass preserved; product failures remain valid; objective checks repeated three times; blind review complete."
+  },
+  "privacy": {
+    "browserUsed": false,
+    "credentialsCopied": false,
+    "transcriptCopied": false,
+    "rawToolPayloadsCopied": false,
+    "credentialFilesStoredAsHashesOnly": true,
+    "webSearchObserved": true
+  },
+  "safeToolSummary": {
+    "itemCount": 266,
+    "commandExecution": {
+      "count": 102,
+      "durationMs": 386329,
+      "completed": 97,
+      "failed": 5
+    },
+    "mcpToolCall": {
+      "count": 4,
+      "durationMs": 5103,
+      "completed": 3,
+      "failed": 1
+    },
+    "fileChange": {
+      "count": 16
+    },
+    "webSearch": {
+      "count": 1
+    },
+    "contextCompaction": {
+      "count": 0
+    }
+  },
+  "lifecycle": {
+    "schemaVersion": 1,
+    "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+    "runId": "v7c-small-prist-r1",
+    "blindId": "vc-d4fb0379",
+    "capturedAt": "2026-09-02T14:19:21.685Z",
+    "projectId": "project_821552cc-723d-411a-b54e-cfba5e1ede97",
+    "connectionId": "connection_9177a8e4-636d-4cb8-9de1-e034a3e4c2fe",
+    "operationCounts": {
+      "connection_ready": 2,
+      "finish_change": 1,
+      "prepare_finish": 5,
+      "project_context": 6,
+      "resume_change": 5,
+      "setup_context": 6,
+      "start": 1,
+      "sync_spec_snapshot": 2,
+      "work_context": 5
+    },
+    "activations": [
+      {
+        "route": "tracked",
+        "status": "completed",
+        "closedAt": "2026-09-02T14:01:42.850Z",
+        "revision": 5,
+        "createdAt": "2026-09-02T13:39:19.544Z",
+        "updatedAt": "2026-09-02T14:01:42.850Z",
+        "workRunId": "run_52c5748307a8ac982857f331ae9756bf",
+        "workItemId": "WI-001",
+        "activationId": "activation_551a1c02cadea82cf40f17a967d9cdb1",
+        "changeStreamId": "stream_413f0875c64da1d8b9a4b9144479fe26"
+      }
+    ],
+    "workRuns": [
+      {
+        "status": "completed",
+        "endedAt": "2026-09-02T14:01:42.849+00:00",
+        "version": 3,
+        "startedAt": "2026-09-02T13:39:19.561+00:00",
+        "workRunId": "run_52c5748307a8ac982857f331ae9756bf",
+        "workItemId": "WI-001",
+        "releaseReason": null,
+        "changeStreamId": "stream_413f0875c64da1d8b9a4b9144479fe26",
+        "lastActivityAt": "2026-09-02T14:01:42.849+00:00"
+      }
+    ],
+    "changeStreams": [
+      {
+        "status": "integrated",
+        "version": 3,
+        "createdAt": "2026-09-02T13:39:19.561+00:00",
+        "updatedAt": "2026-09-02T14:01:42.849+00:00",
+        "workItemId": "WI-001",
+        "discardedAt": null,
+        "integratedAt": "2026-09-02T14:01:42.849+00:00",
+        "changeStreamId": "stream_413f0875c64da1d8b9a4b9144479fe26"
+      }
+    ],
+    "auditGroups": [
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:20:54.326277+00:00",
+        "firstAt": "2026-09-02T13:20:54.326277+00:00",
+        "eventType": "connection_created",
+        "operation": null
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:20:57.228361+00:00",
+        "firstAt": "2026-09-02T13:20:57.228361+00:00",
+        "eventType": "connection_activated",
+        "operation": null
+      },
+      {
+        "count": 6,
+        "lastAt": "2026-09-02T13:28:34.27431+00:00",
+        "firstAt": "2026-09-02T13:20:58.101528+00:00",
+        "eventType": "operation_authorized",
+        "operation": "setup_context"
+      },
+      {
+        "count": 2,
+        "lastAt": "2026-09-02T13:21:16.041412+00:00",
+        "firstAt": "2026-09-02T13:21:07.295903+00:00",
+        "eventType": "operation_authorized",
+        "operation": "connection_ready"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:21:07.29845+00:00",
+        "firstAt": "2026-09-02T13:21:07.29845+00:00",
+        "eventType": "connection_blocked",
+        "operation": null
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:21:16.044906+00:00",
+        "firstAt": "2026-09-02T13:21:16.044906+00:00",
+        "eventType": "connection_ready",
+        "operation": null
+      },
+      {
+        "count": 6,
+        "lastAt": "2026-09-02T13:28:33.989111+00:00",
+        "firstAt": "2026-09-02T13:21:18.0335+00:00",
+        "eventType": "operation_authorized",
+        "operation": "project_context"
+      },
+      {
+        "count": 2,
+        "lastAt": "2026-09-02T13:28:32.507442+00:00",
+        "firstAt": "2026-09-02T13:21:18.838907+00:00",
+        "eventType": "operation_authorized",
+        "operation": "sync_spec_snapshot"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T13:39:19.53992+00:00",
+        "firstAt": "2026-09-02T13:39:19.53992+00:00",
+        "eventType": "operation_authorized",
+        "operation": "start"
+      },
+      {
+        "count": 5,
+        "lastAt": "2026-09-02T14:01:39.927919+00:00",
+        "firstAt": "2026-09-02T13:55:46.065759+00:00",
+        "eventType": "operation_authorized",
+        "operation": "resume_change"
+      },
+      {
+        "count": 5,
+        "lastAt": "2026-09-02T14:01:40.228311+00:00",
+        "firstAt": "2026-09-02T13:55:46.384816+00:00",
+        "eventType": "operation_authorized",
+        "operation": "work_context"
+      },
+      {
+        "count": 5,
+        "lastAt": "2026-09-02T14:01:42.263815+00:00",
+        "firstAt": "2026-09-02T13:55:53.69545+00:00",
+        "eventType": "operation_authorized",
+        "operation": "prepare_finish"
+      },
+      {
+        "count": 1,
+        "lastAt": "2026-09-02T14:01:42.842281+00:00",
+        "firstAt": "2026-09-02T14:01:42.842281+00:00",
+        "eventType": "operation_authorized",
+        "operation": "finish_change"
+      }
+    ],
+    "fidelity": {
+      "engaged": true,
+      "completed": true,
+      "status": "completed",
+      "residualActiveWorkRuns": 0,
+      "residualActiveChangeStreams": 0
+    },
+    "privacy": {
+      "transcriptCopied": false,
+      "originalRequestCopied": false,
+      "credentialsCopied": false,
+      "auditDetailsCopied": false
+    }
+  }
+}

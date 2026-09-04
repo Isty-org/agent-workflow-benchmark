@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-31ed36",
+  "scenario": "large",
+  "workspaceCommit": "a7eba5fdcf29a67ffd25d58fa2526af85a4f657e",
+  "setupCommit": "8e143aac954d2611414dd4b8da564e66c599e431",
+  "contractSha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455",
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-31ed36-a",
+      "total": 28,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "Search state and filtering are confined to MainWindowViewModel.cs and MainWindow.axaml; no runtime, persistence, or external-call references were found."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "RecentRecordings is reconciled from runtime snapshots, while FilteredRecentRecordings is derived from it at MainWindowViewModel.cs:765-832."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:295-330 covers query and clear; lines 232-265 cover rename and lines 267-293 cover language behavior. Direct active-refresh and search accessibility tests are absent."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MaximumRecentItems and Take are applied at MainWindowViewModel.cs:29 and 767; item disposal and ordering are preserved at lines 771-810."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Existing spec references are used in MainWindowViewModel.cs:18-25, ApplicationRuntime.cs:1580-1583, and the related interface/tests."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "Existing empty-state, item-action, refresh, and rename paths remain wired in MainWindow.axaml and MainWindowViewModel.cs; visual smoke passed."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Field and clear button have dynamic RU/EN labels, automation names, tooltip text, and keyboard-accessible Button semantics at MainWindow.axaml:327-337."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The query appears only in desktop presentation code, XAML, localization, and tests; it is absent from runtime persistence and external-call paths."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-31ed36-b",
+      "total": 28,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "Search state and derived collections are owned by MainWindowViewModel.cs:56-57, 109-152, and 820-832; query changes do not call runtime or persistence APIs."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindowViewModel.cs:556 and 765-832 derive RecentRecordings from the runtime snapshot and FilteredRecentRecordings from that capped collection."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:295-330 covers live title/app filtering, empty results, and clear; existing tests cover rename and language behavior, but no visible direct test covers active-query refresh, rename membership, or search accessibility."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindowViewModel.cs:767 caps at MaximumRecentItems, lines 782-810 preserve snapshot ordering and item identity, and lines 824-830 filter existing items."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Existing @spec references remain in MainWindowViewModel.cs:18-24 and ApplicationRuntime.cs:1580-1583; no benchmark-specific specification or persistence model is introduced."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindow.axaml:318-492 keeps empty states and all existing item actions in the filtered surface; receipt visual-smoke passes all repetitions."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindow.axaml:326-337 supplies field and clear-button names, tooltip, command, and keyboard-capable Button semantics; both language catalogs contain the states."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "RecentSearchQuery appears only in MainWindowViewModel and MainWindow.axaml bindings/tests; no runtime, storage, logging, or external-call use is present."
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-31ed36-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "The supplied receipt reports all ten hidden-search tests failing at the shared SearchResources precondition with “A bilingual no-results resource was not found.”"
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-31ed36-a-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "Normalized tests cover live filtering, clear, rename, and some language behavior, but do not directly assert active-query snapshot refresh or search-control accessibility."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-31ed36-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "v7-large-bmad-r3.json records hidden-search exitCode 1 for repetitions 1-3; all 10 hidden tests failed at the shared SearchResources precondition reporting that a bilingual no-results resource was not found."
+      ],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-31ed36-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [
+        "MainWindowViewModelTests.cs:295-330 covers basic live filtering and clearing, while active-query refresh, rename membership, and search-specific accessibility assertions are absent from the visible tests."
+      ],
+      "affectedCheckIds": []
+    }
+  ],
+  "blind": true
+}

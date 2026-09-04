@@ -1,0 +1,189 @@
+{
+  "benchmarkId": "benchmark-v7-luna-xhigh-n3-2026-09-01",
+  "blindId": "vz-5cf4bb",
+  "conditionVisibleInWorkspace": false,
+  "createdAt": "2026-09-02T06:59:13.783Z",
+  "destinationPath": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/review-inputs/vz-5cf4bb",
+  "excludedPaths": [
+    ".git",
+    ".human",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "specs/examples/FEAT-900-account-lifecycle.example.md",
+    "specs/protocols/BOARD-PROTOCOL.md",
+    "specs/protocols/BOOT.md",
+    "specs/protocols/SPEC-AUTHORING-PROTOCOL.md",
+    "specs/protocols/SPEC-PROTOCOL.md",
+    "specs/protocols/TECHDEBT-PROTOCOL.md",
+    "specs/protocols/WAL-PROTOCOL.md",
+    "specs/protocols/WORK-ITEM-PROTOCOL.md",
+    "specs/work/README.md",
+    "specs/work/archive"
+  ],
+  "executableProductContentChanged": false,
+  "includedFileHashes": [
+    {
+      "path": ".agentsignore",
+      "sha256": "10374b5c0e810c3f9127fe7cd377f0abfebf8be50771a4fe3e8740fa2a1dea30"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "77f1157cbcbc80cecea1ad203592ccb656a544cd26e7a5007d54bf8e1f83026e"
+    },
+    {
+      "path": "app.js",
+      "sha256": "0db5b55e28351b61f4c55afb4a0cbdc32886337cf015130854a5303d3ab98f88"
+    },
+    {
+      "path": "index.html",
+      "sha256": "2cbcf91a781729392b7ae03b9bfb3cedef74e6ae8bab871fdf14315cced8e966"
+    },
+    {
+      "path": "package.json",
+      "sha256": "e32d1ee207485368d7315598c66097d71bf232370e31a811941496b17588783c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "190a3bded1eb910a3da6218156e53301bb36fd9c2f0a0c01ba557b5ba48942c9"
+    },
+    {
+      "path": "server.js",
+      "sha256": "d81794607bfcf194272e6cbb27947aa2baf8b657a99db6bd9147e76f0bc172e4"
+    },
+    {
+      "path": "specs/.me",
+      "sha256": "d8e2b935e0825d7cc97d9b5261bb52932be391b4cbd3a86fdb6b52fd8718958c"
+    },
+    {
+      "path": "specs/.me.template",
+      "sha256": "5d833421c378db40f52b8b6ac5d88af1f44c630786d9c73336a6e6950afbe28e"
+    },
+    {
+      "path": "specs/BOARD.md",
+      "sha256": "521fbedd961977eee8d36fe5a5c04548146938ac2ba54d60b30d26a0aacba3cf"
+    },
+    {
+      "path": "specs/common/main.md",
+      "sha256": "64de543f6119adfe8c55f349faf633379e42c6dd275f377425a6f7a62d249556"
+    },
+    {
+      "path": "specs/common/PROP-000.md",
+      "sha256": "d9539f0621b4b8829dabd9f490c001f2d132f7451c0eddaba79cb3517d136eb2"
+    },
+    {
+      "path": "specs/common/PROP-001-DATA.md",
+      "sha256": "1469ff8fb01397d2bbd378377353b5cbfbca5c5a992abba457fd2401d2e254e5"
+    },
+    {
+      "path": "specs/common/PROP-002-STACK.md",
+      "sha256": "ff0867b0fe93f8e5b29de30dec65a3195db17fa81900909aeea28fd23b1a2b0a"
+    },
+    {
+      "path": "specs/common/PROP-003-UI.md",
+      "sha256": "b6cc77af28ce340c46ff6ea0219b679cd5ff3068d1fa8999b3e2943f89e3bc26"
+    },
+    {
+      "path": "specs/common/PROP-004-PRODUCT.md",
+      "sha256": "762dad580cfc3f2c56ef0beaefbc74d4b09b00e0320b948be630cecbb5571fd2"
+    },
+    {
+      "path": "specs/common/PROP-005-RUNTIME.md",
+      "sha256": "938d87d22563cff131712b3d6b4df409c971b2aadf55771676b63cdde2c5c68d"
+    },
+    {
+      "path": "specs/common/PROP-006-API.md",
+      "sha256": "8a6566eece6ad1a93b26c03a2dd37711b4cb259e2ea0fac358720b25736e3679"
+    },
+    {
+      "path": "specs/common/structure.md",
+      "sha256": "0649684cef398102749a5942872ffd81aba59a3850fbddb3a74ada6c8b52ca48"
+    },
+    {
+      "path": "specs/examples/FEAT-901-example-product-capability.md",
+      "sha256": "2b660760a7d056b033abb77e47eccb92f2b2cdc9196c9ebe1eb00d8a644abca6"
+    },
+    {
+      "path": "specs/examples/INFRA-900-example-runtime-baseline.md",
+      "sha256": "6f5cf245344b49ab3ee851b2523376d01a1ed47528f533e321b974ee57c372aa"
+    },
+    {
+      "path": "specs/modules/core/FEAT-001-reading-list.md",
+      "sha256": "6027076845c57e9c896285dd30809c8325cd7afb920c42025c9feb560a79f4bb"
+    },
+    {
+      "path": "specs/modules/core/INFRA-001-local-runtime.md",
+      "sha256": "f34aecefe5cdd3230c0ab8fff5c6d9e2868ee0c9e7163631d39e49442611845e"
+    },
+    {
+      "path": "specs/modules/core/PROP-100-core-module.md",
+      "sha256": "e203fde54865b3d919e527d1278bb642e68d6420d5fe5d529c01a6bd4ea1492d"
+    },
+    {
+      "path": "specs/SPEC-MAP.md",
+      "sha256": "ec520a11c4c30342a31db85222b11d8f329e3b1b7513cea1192dae0568e9809f"
+    },
+    {
+      "path": "specs/TECHDEBT.md",
+      "sha256": "1e250c275d19f37a78e8805e688f1ea6bfe21b519e202bd0c77cced4dcde75c1"
+    },
+    {
+      "path": "specs/WAL.md",
+      "sha256": "711355df5b0601b336a79a3d099b8634f084889a357166d9d416e042c604ee0a"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "213bad64794503447060ae2fd1ec84699083ead6dacaa0e6e840a5fda9c9553f"
+    },
+    {
+      "path": "tests/server.test.js",
+      "sha256": "822dfde702cf138febda662ea90198247f11cddc2eb5d8ee3d04a8f2a3703e11"
+    }
+  ],
+  "includedPaths": [
+    ".agentsignore",
+    ".gitignore",
+    "README.md",
+    "app.js",
+    "index.html",
+    "package.json",
+    "server.js",
+    "specs",
+    "specs/.me",
+    "specs/.me.template",
+    "specs/BOARD.md",
+    "specs/SPEC-MAP.md",
+    "specs/TECHDEBT.md",
+    "specs/WAL.md",
+    "specs/common",
+    "specs/common/PROP-000.md",
+    "specs/common/PROP-001-DATA.md",
+    "specs/common/PROP-002-STACK.md",
+    "specs/common/PROP-003-UI.md",
+    "specs/common/PROP-004-PRODUCT.md",
+    "specs/common/PROP-005-RUNTIME.md",
+    "specs/common/PROP-006-API.md",
+    "specs/common/main.md",
+    "specs/common/structure.md",
+    "specs/examples",
+    "specs/examples/FEAT-901-example-product-capability.md",
+    "specs/examples/INFRA-900-example-runtime-baseline.md",
+    "specs/modules",
+    "specs/modules/core",
+    "specs/modules/core/FEAT-001-reading-list.md",
+    "specs/modules/core/INFRA-001-local-runtime.md",
+    "specs/modules/core/PROP-100-core-module.md",
+    "specs/protocols",
+    "specs/work",
+    "styles.css",
+    "tests",
+    "tests/server.test.js"
+  ],
+  "methodMetadataVisibleInWorkspace": false,
+  "runId": "v7-new-classic-r2",
+  "scenario": "new-project",
+  "schemaVersion": 1,
+  "sourceWorkspaceCommit": "48fa382df84a70bbe4faadc4d0cc81dc676559ac",
+  "sourceWorkspacePath": "redacted",
+  "taskMetadataVisibleInWorkspace": false,
+  "transcriptVisibleInWorkspace": false
+}

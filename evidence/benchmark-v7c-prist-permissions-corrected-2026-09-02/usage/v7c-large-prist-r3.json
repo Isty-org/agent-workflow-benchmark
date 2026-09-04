@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "runId": "v7c-large-prist-r3",
+  "capturedAt": "2026-09-02T13:56:37.650Z",
+  "source": {
+    "taskId": "01a06255-f43e-7b80-8c4c-4ff7b8a132b0",
+    "turnId": "01a06255-fa44-7c51-926d-1e04828d69c7",
+    "sessionSha256": "4329355822010c5de5be484f763667ef53c07edd293a3d30c109875201aba47e"
+  },
+  "actualModel": "gpt-5.6-luna",
+  "actualReasoning": "xhigh",
+  "inputTokens": 7278806,
+  "uncachedInputTokens": 168406,
+  "cachedInputTokens": 7110400,
+  "cacheWriteInputTokens": 0,
+  "outputTokens": 25796,
+  "reasoningOutputTokens": 11439,
+  "totalTokens": 7304602,
+  "toolCounts": {
+    "exec": 72
+  },
+  "billing": {
+    "currency": "USD",
+    "pricingSnapshot": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/setup/pricing/gpt-5.6-luna-2026-09-01.json",
+    "pricingSha256": "2a71067b2a0d65782d7b1cc8d7a0415b322425c9c6db719306bee8f9ae8da634",
+    "estimatedTaskCostUsd": 0.2068444,
+    "reasoningIncludedInOutput": true
+  },
+  "redacted": true,
+  "privacy": {
+    "transcriptCopied": false,
+    "toolInputsCopied": false,
+    "toolOutputsCopied": false,
+    "credentialsCopied": false,
+    "rateLimitDataCopied": false
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "benchmark-v7c-prist-permissions-corrected-2026-09-02",
+  "blindId": "vz-7e960c",
+  "scenario": "large",
+  "phase": "first_pass",
+  "evaluatorVersion": "v7c-uniform-1",
+  "contractSha256": "2e3b80a3fddb59ea7b5610371ab6041bb743ad1c64e0a7e64334460b8dbc3455",
+  "setupCommit": "b8b0f1a962afca890e60a507fe9c6447a8f8d16d",
+  "workspaceCommit": "bf107777647dc00fc09758c79fa4b6c6000aace6",
+  "workspaceTree": "4f1f832e14d201e2225163c48d00385524d9cfc5",
+  "firstPassContentFingerprint": null,
+  "checkRepetitions": [
+    {
+      "repetition": 1,
+      "stateFingerprint": "add9ec378cd5ffba41d8a3e823e166c38844373ac4df4322dd1df444bb3bdd8a",
+      "passed": true
+    },
+    {
+      "repetition": 2,
+      "stateFingerprint": "add9ec378cd5ffba41d8a3e823e166c38844373ac4df4322dd1df444bb3bdd8a",
+      "passed": true
+    },
+    {
+      "repetition": 3,
+      "stateFingerprint": "add9ec378cd5ffba41d8a3e823e166c38844373ac4df4322dd1df444bb3bdd8a",
+      "passed": true
+    }
+  ],
+  "checkReceiptSha256": "a2d6ae98fc0dc7fa5f4aa5e36da83a1dacfa0032d8842a97f2f2d7d057d3c76c",
+  "checks": [
+    {
+      "id": "L3-A01",
+      "status": "pass",
+      "pointsAwarded": 7,
+      "maxPoints": 7,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A03",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A04",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A05",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A06",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A07",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A08",
+      "status": "pass",
+      "pointsAwarded": 5,
+      "maxPoints": 5,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A09",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-A10",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "repetition 1: pass; harness-owned xUnit behavior check passed",
+        "repetition 2: pass; harness-owned xUnit behavior check passed",
+        "repetition 3: pass; harness-owned xUnit behavior check passed"
+      ]
+    },
+    {
+      "id": "L3-B01",
+      "status": "pass",
+      "pointsAwarded": 8,
+      "maxPoints": 8,
+      "evidence": [
+        "repetition 1: pass; desktop tests plus harness-owned search tests",
+        "repetition 2: pass; desktop tests plus harness-owned search tests",
+        "repetition 3: pass; desktop tests plus harness-owned search tests"
+      ]
+    },
+    {
+      "id": "L3-B02",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; desktop project build",
+        "repetition 2: pass; desktop project build",
+        "repetition 3: pass; desktop project build"
+      ]
+    },
+    {
+      "id": "L3-B03",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "repetition 1: pass; Avalonia headless render/load smoke",
+        "repetition 2: pass; Avalonia headless render/load smoke",
+        "repetition 3: pass; Avalonia headless render/load smoke"
+      ]
+    },
+    {
+      "id": "L3-C01",
+      "status": "pass",
+      "pointsAwarded": 6,
+      "maxPoints": 6,
+      "evidence": [
+        "v7-review-vz-7e960c-a: MainWindowViewModel.cs:324-345,824-840 owns query and filtering; filtering performs local collection updates only. IApplicationRuntime.cs:16-20,124-136 exposes no search or query-persistence API.",
+        "v7-review-vz-7e960c-b: RecentSearchQuery and filtering are confined to MainWindowViewModel.cs:324-345 and :824-840; no query field exists in the runtime snapshot or runtime interface."
+      ]
+    },
+    {
+      "id": "L3-C02",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "v7-review-vz-7e960c-a: ApplicationRuntimeSnapshot.cs:14-20 is the recent-recordings source. MainWindowViewModel.cs:770-820 reconciles snapshot data into stable item ViewModels, then derives FilteredRecentRecordings from that collection.",
+        "v7-review-vz-7e960c-b: ReconcileRecentRecordings derives RecentRecordings from the runtime snapshot, while FilteredRecentRecordings is rebuilt from that collection; item Apply updates search text from display title, raw source and localized source (MainWindowViewModel.cs:770-840, :1169-1177)."
+      ]
+    },
+    {
+      "id": "L3-C03",
+      "status": "partial",
+      "pointsAwarded": 2,
+      "maxPoints": 4,
+      "evidence": [
+        "v7-review-vz-7e960c-a: MainWindowViewModelTests.cs:232-290 covers query, reset, no-results and language changes; lines 292-353 cover rename and localization. LocalizationResourceContractTests.cs:98-143 checks bilingual references. There is no direct test for active-query snapshot refresh, active-query rename membership, or UI focus/accessibility semantics.",
+        "v7-review-vz-7e960c-b: MainWindowViewModelTests.cs:233-290 covers basic title/application filtering, reset, no-results and language changes; separate rename coverage exists at :293-325. No direct search-specific refresh, active-query rename-membership, or UI accessibility test is present."
+      ]
+    },
+    {
+      "id": "L3-C04",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "v7-review-vz-7e960c-a: MainWindowViewModel.cs:29 caps at five items; lines 770-820 preserve snapshot order, move existing items by SessionId, dispose removed items and insert new items; lines 824-840 derive filtered order without reordering.",
+        "v7-review-vz-7e960c-b: MaximumRecentItems is 5 and ReconcileRecentRecordings applies Take(MaximumRecentItems), preserves snapshot order, reuses items by SessionId, disposes removed items, and refreshes the filtered derivation (MainWindowViewModel.cs:29, :770-840)."
+      ]
+    },
+    {
+      "id": "L3-C05",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "v7-review-vz-7e960c-a: Changed code references the existing FEAT-013 recent-recordings anchor in MainWindowViewModel.cs:318-323,381,1222-1227 and MainWindow.axaml:325. The project uses the established @spec convention and the existing FEAT-013 specification defines the search behavior.",
+        "v7-review-vz-7e960c-b: The change uses existing FEAT-013 and FEAT-010.A spec references in MainWindowViewModel.cs, MainWindow.axaml and MainWindowViewModelTests.cs; README.md:18 documents the existing @spec traceability rule."
+      ]
+    },
+    {
+      "id": "L3-D01",
+      "status": "pass",
+      "pointsAwarded": 4,
+      "maxPoints": 4,
+      "evidence": [
+        "v7-review-vz-7e960c-a: MainWindow.axaml:348-507 retains distinct empty, no-results and populated states with rename, transcription, open-folder, open-file and remove actions. MainWindowViewModel.cs:770-840 reapplies filtering after snapshot reconciliation, including rename-driven updates.",
+        "v7-review-vz-7e960c-b: Empty, filtered no-results, rename and row actions are represented in MainWindow.axaml:348-381 and :383-501; runtime snapshot refresh and rename delegation remain wired in MainWindowViewModel.cs:535-598 and :381-384. The loading presentation is incomplete."
+      ]
+    },
+    {
+      "id": "L3-D02",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "v7-review-vz-7e960c-a: MainWindow.axaml:330-340 gives the field a localized placeholder and AutomationProperties.Name; the clear button has a localized name, tooltip and command. Lines 362-379 provide a localized reset action in the no-results state. Strings.ru.axaml and Strings.en.axaml:91-96 provide both language states.",
+        "v7-review-vz-7e960c-b: The TextBox has a localized placeholder and AutomationProperties.Name, the clear Button has localized AutomationProperties.Name and tooltip, and the no-results reset action is named (MainWindow.axaml:330-340, :362-379). RU/EN resources exist at Strings.ru.axaml:93-96 and Strings.en.axaml:93-96."
+      ]
+    },
+    {
+      "id": "L3-D03",
+      "status": "pass",
+      "pointsAwarded": 3,
+      "maxPoints": 3,
+      "evidence": [
+        "v7-review-vz-7e960c-a: RecentSearchQuery and FilteredRecentRecordings occur in the desktop ViewModel/XAML and tests only. MainWindowViewModel.cs:324-336,824-840 performs presentation-only filtering, with no logging, storage, runtime mutation or external call.",
+        "v7-review-vz-7e960c-b: The query is an in-memory MainWindowViewModel property and only rebuilds FilteredRecentRecordings; repository/runtime APIs expose no search-query parameter or persistence field (MainWindowViewModel.cs:324-345, :824-840; ApplicationRuntimeSnapshot.cs:14-22; IApplicationRuntime.cs:18-20)."
+      ]
+    }
+  ],
+  "reviewPasses": [
+    {
+      "reviewerId": "v7-review-vz-7e960c-a",
+      "total": 28,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "MainWindowViewModel.cs:324-345,824-840 owns query and filtering; filtering performs local collection updates only. IApplicationRuntime.cs:16-20,124-136 exposes no search or query-persistence API."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "ApplicationRuntimeSnapshot.cs:14-20 is the recent-recordings source. MainWindowViewModel.cs:770-820 reconciles snapshot data into stable item ViewModels, then derives FilteredRecentRecordings from that collection."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:232-290 covers query, reset, no-results and language changes; lines 292-353 cover rename and localization. LocalizationResourceContractTests.cs:98-143 checks bilingual references. There is no direct test for active-query snapshot refresh, active-query rename membership, or UI focus/accessibility semantics."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindowViewModel.cs:29 caps at five items; lines 770-820 preserve snapshot order, move existing items by SessionId, dispose removed items and insert new items; lines 824-840 derive filtered order without reordering."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Changed code references the existing FEAT-013 recent-recordings anchor in MainWindowViewModel.cs:318-323,381,1222-1227 and MainWindow.axaml:325. The project uses the established @spec convention and the existing FEAT-013 specification defines the search behavior."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 4,
+          "evidence": [
+            "MainWindow.axaml:348-507 retains distinct empty, no-results and populated states with rename, transcription, open-folder, open-file and remove actions. MainWindowViewModel.cs:770-840 reapplies filtering after snapshot reconciliation, including rename-driven updates."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MainWindow.axaml:330-340 gives the field a localized placeholder and AutomationProperties.Name; the clear button has a localized name, tooltip and command. Lines 362-379 provide a localized reset action in the no-results state. Strings.ru.axaml and Strings.en.axaml:91-96 provide both language states."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "RecentSearchQuery and FilteredRecentRecordings occur in the desktop ViewModel/XAML and tests only. MainWindowViewModel.cs:324-336,824-840 performs presentation-only filtering, with no logging, storage, runtime mutation or external call."
+          ]
+        }
+      ]
+    },
+    {
+      "reviewerId": "v7-review-vz-7e960c-b",
+      "total": 27,
+      "checks": [
+        {
+          "id": "L3-C01",
+          "pointsAwarded": 6,
+          "evidence": [
+            "RecentSearchQuery and filtering are confined to MainWindowViewModel.cs:324-345 and :824-840; no query field exists in the runtime snapshot or runtime interface."
+          ]
+        },
+        {
+          "id": "L3-C02",
+          "pointsAwarded": 4,
+          "evidence": [
+            "ReconcileRecentRecordings derives RecentRecordings from the runtime snapshot, while FilteredRecentRecordings is rebuilt from that collection; item Apply updates search text from display title, raw source and localized source (MainWindowViewModel.cs:770-840, :1169-1177)."
+          ]
+        },
+        {
+          "id": "L3-C03",
+          "pointsAwarded": 2,
+          "evidence": [
+            "MainWindowViewModelTests.cs:233-290 covers basic title/application filtering, reset, no-results and language changes; separate rename coverage exists at :293-325. No direct search-specific refresh, active-query rename-membership, or UI accessibility test is present."
+          ]
+        },
+        {
+          "id": "L3-C04",
+          "pointsAwarded": 3,
+          "evidence": [
+            "MaximumRecentItems is 5 and ReconcileRecentRecordings applies Take(MaximumRecentItems), preserves snapshot order, reuses items by SessionId, disposes removed items, and refreshes the filtered derivation (MainWindowViewModel.cs:29, :770-840)."
+          ]
+        },
+        {
+          "id": "L3-C05",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The change uses existing FEAT-013 and FEAT-010.A spec references in MainWindowViewModel.cs, MainWindow.axaml and MainWindowViewModelTests.cs; README.md:18 documents the existing @spec traceability rule."
+          ]
+        },
+        {
+          "id": "L3-D01",
+          "pointsAwarded": 3,
+          "evidence": [
+            "Empty, filtered no-results, rename and row actions are represented in MainWindow.axaml:348-381 and :383-501; runtime snapshot refresh and rename delegation remain wired in MainWindowViewModel.cs:535-598 and :381-384. The loading presentation is incomplete."
+          ]
+        },
+        {
+          "id": "L3-D02",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The TextBox has a localized placeholder and AutomationProperties.Name, the clear Button has localized AutomationProperties.Name and tooltip, and the no-results reset action is named (MainWindow.axaml:330-340, :362-379). RU/EN resources exist at Strings.ru.axaml:93-96 and Strings.en.axaml:93-96."
+          ]
+        },
+        {
+          "id": "L3-D03",
+          "pointsAwarded": 3,
+          "evidence": [
+            "The query is an in-memory MainWindowViewModel property and only rebuilds FilteredRecentRecordings; repository/runtime APIs expose no search-query parameter or persistence field (MainWindowViewModel.cs:324-345, :824-840; ApplicationRuntimeSnapshot.cs:14-22; IApplicationRuntime.cs:18-20)."
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": {
+    "functional": {
+      "score": 50,
+      "maxPoints": 50
+    },
+    "regression": {
+      "score": 20,
+      "maxPoints": 20
+    },
+    "architecture": {
+      "score": 18,
+      "maxPoints": 20
+    },
+    "scope": {
+      "score": 10,
+      "maxPoints": 10
+    }
+  },
+  "rawScore": 98,
+  "totalScore": 98,
+  "findings": [
+    {
+      "rootCauseId": "v7-review-vz-7e960c-a-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-7e960c-b-finding-1",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    },
+    {
+      "rootCauseId": "v7-review-vz-7e960c-b-finding-2",
+      "severity": "note",
+      "title": "Reviewer finding",
+      "evidence": [],
+      "affectedCheckIds": []
+    }
+  ],
+  "provenance": "supplemental_uniform_adjudication_reusing_frozen_blind_review",
+  "originalFrozenCheck": "evidence/benchmark-v7-luna-xhigh-n3-2026-09-01/checks/v7-large-classic-r3.json",
+  "blind": true
+}
