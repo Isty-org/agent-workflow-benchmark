@@ -7,8 +7,11 @@
   "scripts": {
     "verify": "python scripts/verify.py",
     "reevaluate": "python scripts/reevaluate.py",
+    "build:packages": "python scripts/build_evidence_packages.py build",
+    "verify:packages": "python scripts/build_evidence_packages.py verify",
+    "test:packages": "python -m unittest discover -s tests -v",
     "check:public": "python scripts/check_publication.py",
-    "check": "npm run verify && npm run reevaluate && npm run check:public"
+    "check": "npm run verify && npm run reevaluate && npm run test:packages && npm run check:public"
   },
   "devDependencies": { "@playwright/test": "1.62.1" }
 }

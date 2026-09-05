@@ -1,10 +1,8 @@
-# Agent Workflow Benchmark — first public export
+# Agent Workflow Benchmark v1.0.0
 
 ## Summary
 
-This release candidate packages the final 36-task cohort comparing Plain, BMAD 6.11.0, Classic `classic-2026.08`, and Prist across new, small existing, and large existing projects. Each of the 12 scenario/method cells has three independent first-pass runs using `gpt-5.6-luna` with `xhigh` reasoning.
-
-The public repository adds aligned English and Russian documentation, Apache-2.0 licensing for repository-owned material, explicit third-party scope, community metadata, cross-platform Git-only CI, payload immutability evidence, and an asset upload manifest.
+This first public release contains the final 36-task cohort comparing Plain, BMAD 6.11.0, Classic `classic-2026.08`, and Prist across new, small existing, and large existing projects. Each scenario/method cell has three independent first-pass runs using `gpt-5.6-luna` with `xhigh` reasoning.
 
 ## Result medians
 
@@ -16,7 +14,7 @@ Quality / measured task cost / elapsed time:
 | Small existing | 35 / $10.077087 / 70.1 min | 29 / $1.44226984 / 60.8 min | 39 / $7.90102716 / 69.9 min | 69 / $0.43872212 / 25.9 min |
 | Large existing | 98 / $4.05826076 / 63.5 min | 25 / $0.8408026 / 34.0 min | 82 / $6.09135428 / 39.9 min | 98 / $0.2068444 / 13.6 min |
 
-The metrics cover measured tasks. Historical setup, method adoption, and canon construction are outside the cost boundary. External evaluation for the nine Prist rows is recorded separately at 29,710,054 tokens and $1.14781888.
+The metrics cover measured tasks. Historical setup, method adoption, canon construction, and evaluation sit outside this cost boundary. External evaluation for the nine Prist rows is recorded separately at 29,710,054 tokens and $1.14781888.
 
 ## Provenance
 
@@ -24,26 +22,21 @@ The metrics cover measured tasks. Historical setup, method adoption, and canon c
 - 9 permissions-corrected Prist tasks come from V7C.
 - All 12 large-project rows use the final uniform supplemental evaluator.
 - Two inherited `rawBeforeSeverityCap` discrepancies remain disclosed for `v7-new-bmad-r3` and `v7-new-plain-r2`; all 36 official scores replay exactly.
-- The Classic cohort used the Russian `classic-2026.08` edition. A future English translation was not tested.
+- The Classic cohort used the Russian `classic-2026.08` edition. The later English translation was not tested.
 
-## Reproducibility
+## Verification
 
-- Verify: `npm run verify`
-- Re-evaluate: `npm run reevaluate`
-- Public/package checks: `npm run check:public`
-- Full Git-only CI equivalent: `npm run check`
-- Optional local archive audit: `python scripts/verify.py --assets`
+```text
+npm run check
+python scripts/verify.py --assets
+```
 
-## Assets
+The first command verifies the Git payload, replays all scores, runs package-builder negative tests, checks public documentation, and confirms frozen payload locks. The asset command additionally verifies the nine local raw sources and nine sanitized packages member by member.
 
-Nine ZIP files are prepared locally: first-pass snapshots, normalized reviewer inputs, and frozen baselines for each scenario. Their hashes, sizes, member manifests, and upload gates are in `assets/release-upload-manifest.json` and `assets/SHA256SUMS`.
+## Public evidence packages
 
-Archive publication requires final confirmation of redistribution rights documented in `THIRD_PARTY_NOTICES.md`. No remote, tag, release, or upload is created by this stage.
+Nine release assets provide sanitized first-pass, review-input, and baseline evidence for the three scenarios. They contain 32,096 source members with byte-identical content and exclude 27 local `specs/.me` identity files plus one generated `.pyc` cache. Nine credential files remain represented only by their historical SHA-256 values.
 
-## Final publication checklist
+Every package includes its source raw ZIP identity, complete included/excluded accounting, checksums, original member manifest, BMAD 6.11.0 MIT and trademark terms, Isty Classic Apache LICENSE/NOTICE, a hash-defined Classic scope, and the benchmark evidence-rights notice. The raw Stage 5 ZIPs are provenance inputs and are not release assets.
 
-1. Review the Stage 6 commit and rerun `npm run check` on Linux or Windows.
-2. Confirm the archive redistribution gate for BMAD, Classic, Prist kit material, product baselines, implementations, and reviewer inputs.
-3. Select a release tag tied to the reviewed commit.
-4. Upload only the approved files listed in `assets/release-upload-manifest.json` without changing bytes.
-5. Verify downloaded assets with `python scripts/verify.py --assets` and publish the SHA-256 list.
+Package sizes and SHA-256 values are in the [upload manifest](https://github.com/Isty-org/agent-workflow-benchmark/blob/v1.0.0/assets/release-upload-manifest.json) and [public checksum list](https://github.com/Isty-org/agent-workflow-benchmark/blob/v1.0.0/assets/PACKAGE-SHA256SUMS). Rights and trademark boundaries are documented in [THIRD_PARTY_NOTICES.md](https://github.com/Isty-org/agent-workflow-benchmark/blob/v1.0.0/THIRD_PARTY_NOTICES.md).

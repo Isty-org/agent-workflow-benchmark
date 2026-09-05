@@ -4,7 +4,7 @@
 
 Бенчмарк с сохранённой доказательной базой сравнивает четыре агентских процесса разработки в трёх сценариях изменения ПО. Финальная когорта: **3 сценария × 4 метода × 3 независимых повтора = 36 измеряемых first-pass задач**.
 
-Репозиторий представляет собой переносимый публичный export: замороженные промпты, входные данные сценариев, оценки, машиночитаемые результаты, отчёты, ссылки на evidence, инструменты проверки и манифесты подготовленных release assets. Исходные артефакты бенчмарка сохранены на исходном языке.
+Репозиторий представляет собой переносимый публичный export: замороженные промпты, входные данные сценариев, оценки, машиночитаемые результаты, отчёты, ссылки на evidence, инструменты проверки и манифесты release assets. Исходные артефакты бенчмарка сохранены на исходном языке.
 
 ## Результаты
 
@@ -83,7 +83,7 @@ Prompts, scenario inputs, evaluations, JSON, reports и evidence сохране�
 npm run verify
 ```
 
-Дополнительная проверка архивов требует девять локальных ZIP в Git-ignored каталоге `release-assets/`:
+Проверка assets требует девять побайтово сохранённых локальных raw ZIP и девять sanitized packages в Git-ignored каталоге `release-assets/`. Команда сверяет каждый package member с его raw source:
 
 ```text
 python scripts/verify.py --assets
@@ -109,7 +109,7 @@ npm run reevaluate
 python scripts/prepare.py --run v7-new-bmad-r1 --kind baselines --destination work/rerun-new-bmad-r1 --prompt-output work/rerun-new-bmad-r1.txt
 ```
 
-Rerun требует исходный профиль модели/reasoning, зависимости сценариев, release assets и доступный pinned Prist environment. Новые запуски формируют новый provenance. Подробности: [RERUN.md](RERUN.md).
+Rerun требует исходный профиль модели/reasoning, зависимости сценариев, sanitized release packages и доступный pinned Prist environment. Локальный identity-файл создаётся из `specs/.me.template` после материализации и остаётся вне публичного evidence. Новые запуски формируют новый provenance. Подробности: [RERUN.md](RERUN.md).
 
 CI-equivalent Git-only suite:
 
@@ -127,7 +127,7 @@ npm run check
 | `evidence/`, `manifests/` | Выбранные first-pass, usage, evaluation, review, checks, freeze и source-manifest records |
 | `evaluator/`, `scripts/`, `schemas/` | Замороженные check harnesses и переносимые инструменты verify/replay/materialization |
 | `provenance/`, `verification/`, `hashes/` | Source lineage, acceptance evidence, payload locks и raw SHA-256 inventory |
-| `assets/` | Описания девяти release assets, member inventories, checksums и upload manifest |
+| `assets/` | Raw provenance, описания sanitized packages, member inventories, Classic license scope, checksums и upload manifest |
 
 Числа собраны в [INVENTORY.md](INVENTORY.md), работа с архивами описана в [RELEASE-ASSETS.md](RELEASE-ASSETS.md).
 
@@ -144,6 +144,6 @@ npm run check
 
 ## Лицензия и статус публикации
 
-Apache-2.0 применяется к созданной издателем обвязке репозитория, публичной документации и verification tooling в границах [LICENSE-NOTES.md](LICENSE-NOTES.md). Замороженные inputs, evidence, reports, материалы методов, продуктовые baselines, созданные реализации, release archives, зависимости, названия сервисов и товарные знаки сохраняют собственные или неустановленные условия; подробности находятся в [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Apache-2.0 применяется к созданной издателем обвязке репозитория, публичной документации, verification tooling, package metadata и Isty-owned Classic methodology files, совпавшим с hash-scope из [LICENSE-NOTES.md](LICENSE-NOTES.md). Остальные замороженные inputs, evidence, reports, материалы методов, продуктовые baselines, созданные реализации, зависимости, названия сервисов и товарные знаки сохраняют существующие условия; подробности находятся в [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-Git-репозиторий подготовлен к финальному аудиту. Девять ZIP-архивов подготовлены локально и не загружены. Их [upload manifest](assets/release-upload-manifest.json) сохраняет обязательную проверку прав на сторонние материалы перед публикацией архивов.
+[Upload manifest](assets/release-upload-manifest.json) для `v1.0.0` разрешает публикацию девяти детерминированных sanitized evidence packages. В них 32 096 source members сохранены с побайтовым совпадением; 27 локальных `specs/.me` и один generated `.pyc` исключены с hash accounting. Девять raw ZIP остаются неизменными локальными provenance inputs и не загружаются напрямую. Hashes packages перечислены в [assets/PACKAGE-SHA256SUMS](assets/PACKAGE-SHA256SUMS).

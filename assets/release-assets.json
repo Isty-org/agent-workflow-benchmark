@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "local_only_not_published",
+  "status": "preserved_local_raw_archives_not_for_direct_upload",
   "assets": [
     {
       "name": "first-pass-large-project.zip",
@@ -12,7 +12,7 @@
       "fileCount": 8941,
       "uncompressedBytes": 105178991,
       "manifest": "assets/manifests/first-pass-large-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     },
     {
       "name": "first-pass-new-project.zip",
@@ -24,7 +24,7 @@
       "fileCount": 1163,
       "uncompressedBytes": 8045659,
       "manifest": "assets/manifests/first-pass-new-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     },
     {
       "name": "first-pass-small-project.zip",
@@ -36,7 +36,7 @@
       "fileCount": 1701,
       "uncompressedBytes": 12082033,
       "manifest": "assets/manifests/first-pass-small-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     },
     {
       "name": "review-inputs-large-project.zip",
@@ -48,7 +48,7 @@
       "fileCount": 7786,
       "uncompressedBytes": 95650732,
       "manifest": "assets/manifests/review-inputs-large-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     },
     {
       "name": "review-inputs-new-project.zip",
@@ -60,7 +60,7 @@
       "fileCount": 165,
       "uncompressedBytes": 907959,
       "manifest": "assets/manifests/review-inputs-new-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     },
     {
       "name": "review-inputs-small-project.zip",
@@ -72,7 +72,7 @@
       "fileCount": 812,
       "uncompressedBytes": 5614870,
       "manifest": "assets/manifests/review-inputs-small-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     },
     {
       "name": "baselines-large-project.zip",
@@ -84,7 +84,7 @@
       "fileCount": 8919,
       "uncompressedBytes": 104896563,
       "manifest": "assets/manifests/baselines-large-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     },
     {
       "name": "baselines-new-project.zip",
@@ -96,7 +96,7 @@
       "fileCount": 1047,
       "uncompressedBytes": 7136512,
       "manifest": "assets/manifests/baselines-new-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     },
     {
       "name": "baselines-small-project.zip",
@@ -108,7 +108,7 @@
       "fileCount": 1590,
       "uncompressedBytes": 11123196,
       "manifest": "assets/manifests/baselines-small-project.json",
-      "status": "prepared_local_unpublished"
+      "status": "preserved_local_provenance_source"
     }
   ]
 }

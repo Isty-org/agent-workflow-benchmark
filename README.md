@@ -4,7 +4,7 @@
 
 An evidence-preserving benchmark of four agent-development workflows across three software-change scenarios. The final cohort contains **3 scenarios × 4 methods × 3 independent repetitions = 36 measured first-pass tasks**.
 
-This repository is the portable public export: frozen prompts, scenario inputs, evaluations, machine-readable results, reports, evidence links, verification tools, and prepared release-asset manifests. Original benchmark artifacts remain in their source language.
+This repository is the portable public export: frozen prompts, scenario inputs, evaluations, machine-readable results, reports, evidence links, verification tools, and release-asset manifests. Original benchmark artifacts remain in their source language.
 
 ## Results
 
@@ -83,7 +83,7 @@ Verify the complete Git payload, cohort structure, task identities, lineage, evi
 npm run verify
 ```
 
-The optional archive check requires all nine local ZIPs in the Git-ignored `release-assets/` directory:
+The asset check requires the nine byte-preserved local raw ZIPs and nine sanitized packages under the Git-ignored `release-assets/` directory. It verifies every package member against its raw source:
 
 ```text
 python scripts/verify.py --assets
@@ -109,7 +109,7 @@ Materialize a verified baseline and compose a fresh launch prompt for a new expe
 python scripts/prepare.py --run v7-new-bmad-r1 --kind baselines --destination work/rerun-new-bmad-r1 --prompt-output work/rerun-new-bmad-r1.txt
 ```
 
-A rerun requires the original model/reasoning profile, scenario dependencies, release assets, and an available pinned Prist environment. New runs create new provenance. Details: [RERUN.md](RERUN.md).
+A rerun requires the original model/reasoning profile, scenario dependencies, sanitized release packages, and an available pinned Prist environment. Local identity files are recreated from `specs/.me.template` after materialization and stay outside public evidence. New runs create new provenance. Details: [RERUN.md](RERUN.md).
 
 For the CI-equivalent Git-only suite:
 
@@ -127,7 +127,7 @@ npm run check
 | `evidence/`, `manifests/` | Selected first-pass, usage, evaluation, review, check, freeze, and source-manifest records |
 | `evaluator/`, `scripts/`, `schemas/` | Frozen check harnesses and portable verification/replay/materialization tools |
 | `provenance/`, `verification/`, `hashes/` | Source lineage, acceptance evidence, payload locks, and raw SHA-256 inventory |
-| `assets/` | Nine release-asset definitions, member inventories, checksums, and upload manifest |
+| `assets/` | Raw provenance, sanitized package definitions, member inventories, Classic license scope, checksums, and upload manifest |
 
 See [INVENTORY.md](INVENTORY.md) for counts and [RELEASE-ASSETS.md](RELEASE-ASSETS.md) for archive handling.
 
@@ -144,6 +144,6 @@ See [INVENTORY.md](INVENTORY.md) for counts and [RELEASE-ASSETS.md](RELEASE-ASSE
 
 ## License and publication status
 
-Apache-2.0 applies to the benchmark publisher's repository scaffolding, public documentation, and verification tooling within the scope defined in [LICENSE-NOTES.md](LICENSE-NOTES.md). Frozen inputs, evidence, reports, method material, product baselines, generated implementations, release archives, dependencies, service names, and trademarks retain their own or undetermined terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Apache-2.0 applies to the benchmark publisher's repository scaffolding, public documentation, verification tooling, package metadata, and hash-matched Isty-owned Classic methodology files within [LICENSE-NOTES.md](LICENSE-NOTES.md). Other frozen inputs, evidence, reports, method material, product baselines, generated implementations, dependencies, service names, and trademarks retain their existing terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-The Git repository is prepared for final audit. Nine ZIP assets are prepared locally and have not been uploaded. Their [upload manifest](assets/release-upload-manifest.json) keeps archive publication behind a recorded third-party-rights review.
+The `v1.0.0` [upload manifest](assets/release-upload-manifest.json) approves nine deterministic sanitized evidence packages. Across them, 32,096 source members retain byte-identical content; 27 local `specs/.me` identities and one generated `.pyc` cache are excluded with hash accounting. The nine raw ZIPs remain unchanged local provenance inputs and are never direct release assets. Package hashes are listed in [assets/PACKAGE-SHA256SUMS](assets/PACKAGE-SHA256SUMS).

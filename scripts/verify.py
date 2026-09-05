@@ -132,7 +132,20 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--assets',action='store_true');parser.add_argument('--skip-index',action='store_true',help=argparse.SUPPRESS);args=parser.parse_args()
     result=dict(status='pass',cohort=cohort_check())
     if not args.skip_index:result['exportFiles']=verify_index()
-    if args.assets:result['assets']=assets_check()
+    if args.assets:
+        from build_evidence_packages import verify_all
+        raw_assets=assets_check()
+        packages=verify_all(ROOT/'release-assets'/'packages',ROOT/'release-assets')
+        result['assets']={
+            'rawArchives':raw_assets,
+            'sanitizedPackages':{
+                'packages':len(packages),
+                'includedEvidenceMembers':sum(x['includedEvidenceMembers'] for x in packages),
+                'excludedRawMembers':sum(x['excludedRawMembers'] for x in packages),
+                'priorCredentialHashesOnly':sum(x['priorCredentialHashesOnly'] for x in packages),
+                'records':packages,
+            },
+        }
     print(json.dumps(result,indent=2))
 if __name__=='__main__':
     try:main()

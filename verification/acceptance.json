@@ -19,7 +19,12 @@
     "rawFileHashes": 32124,
     "historicalFileHashes": 11805,
     "credentialHashesOnly": 9,
-    "baselineGitTreesReconstructed": 36
+    "baselineGitTreesReconstructed": 36,
+    "sanitizedPackages": 9,
+    "includedEvidenceMembers": 32096,
+    "excludedRawMembers": 28,
+    "rawArchivesEmbedded": 0,
+    "packageNoticesVerified": 54
   },
   "scores": {
     "officialScoresMatched": 36,
@@ -82,13 +87,15 @@
       "repositoryOwnedScope": "Apache-2.0",
       "scopeDocument": "LICENSE-NOTES.md",
       "thirdPartyDocument": "THIRD_PARTY_NOTICES.md",
-      "localSnapshotAudit": "pass_with_release_gate"
+      "localSnapshotAudit": "pass_with_sanitized_package_notices"
     },
     "release": {
-      "archivesPrepared": 9,
-      "archivesUploaded": 0,
+      "rawArchivesPreserved": 9,
+      "rawArchivesApprovedForUpload": 0,
+      "sanitizedPackagesPrepared": 9,
+      "sanitizedPackagesPublishable": 9,
       "uploadManifest": "assets/release-upload-manifest.json",
-      "archiveGate": "third_party_rights_confirmation_required"
+      "archiveGate": "resolved_with_sanitized_derivatives_and_pinned_notices"
     },
     "publicFacingScan": {
       "files": 20,
@@ -112,6 +119,7 @@
     "npm run check:public",
     "npm run check",
     "python scripts/verify.py --assets",
+    "python scripts/build_evidence_packages.py verify",
     "python scripts/reevaluate.py --output work/recomputed-scores.json",
     "python scripts/self_test.py"
   ],

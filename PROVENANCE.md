@@ -22,7 +22,11 @@ The source audit matched all 11,814 first-pass file hashes under their recorded 
 
 V7 stores frozen prompt components and a launch composition declaration. V7C stores complete frozen launch strings. The V7 launch declaration is not a recovered full dispatch transcript. Rerun prompts are explicit compositions using original components and a new assigned root.
 
-Historical bundle pointers in first-pass records did not supply standalone bundle files. Release ZIPs and member manifests provide portable content, including captured uncommitted files. Newly materialized repositories have new Git identities; source HEAD/tree identities remain recorded in metadata.
+Historical bundle pointers in first-pass records did not supply standalone bundle files. Public release packages provide sanitized portable content, including captured uncommitted files allowed by the publication policy. Their manifests anchor each package to one unchanged local Stage 5 ZIP and account for every source member. Newly materialized repositories have new Git identities; source HEAD/tree identities remain recorded in metadata.
+
+The nine local Stage 5 ZIPs retain their original bytes and SHA-256 values. They are provenance sources and are excluded from direct release upload. The public derivatives include 32,096 byte-identical evidence members. Sanitization removes 27 `specs/.me` local identity files and one generated `__pycache__/serve.cpython-312.pyc` member. The latter remains historically accounted for by its raw archive and source member manifest. Nine `.prist/connection.json` files were already absent from the raw ZIPs and remain represented by hashes only.
+
+Public package manifests include the committed raw member inventory and a hash-defined Apache-2.0 scope for exact Classic methodology files. Generated work records, product files, modified methodology files, and local identities remain outside that Classic scope.
 
 The original `artifact-verification.json` also lists `PRIST-SERVICE-IMPROVEMENTS.md`. That service-improvement document is outside this comparison export. Its identity is preserved, and it is the sole intentional omission from the original report artifact list.
 

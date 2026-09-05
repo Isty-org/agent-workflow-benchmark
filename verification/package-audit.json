@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "command": "python scripts/build_evidence_packages.py verify --packages release-assets/packages --raw-dir release-assets",
+  "packages": 9,
+  "rawArchives": 9,
+  "includedEvidenceMembers": 32096,
+  "excludedRawMembers": 28,
+  "excludedSpecsMe": 27,
+  "excludedPythonCache": 1,
+  "priorCredentialHashesOnly": 9,
+  "rawArchivesEmbedded": 0,
+  "contentTransformations": 0,
+  "noticesVerified": 54,
+  "secretScan": "pass",
+  "classicHashScope": "pass",
+  "deterministicRebuild": "pass_byte_identical_9_of_9",
+  "materializationSmoke": "pass_specs_me_absent_template_present_no_task_dispatched",
+  "packageChecksums": "assets/PACKAGE-SHA256SUMS"
+}

@@ -1,0 +1,325 @@
+{
+  "edition": "classic-2026.08",
+  "files": [
+    {
+      "bytes": 42,
+      "gitBlob": "0bdf437fda1c23466094e62d77bce3c3cd402786",
+      "mode": "100644",
+      "path": ".agentsignore",
+      "sha256": "7d8625a1e93b458c27a676c26476ade10ff108f0257f5193dbef6d9a35dfd8a3",
+      "sourcePath": "methodology/ru/.agentsignore"
+    },
+    {
+      "bytes": 30,
+      "gitBlob": "49d53960870956cd4480c62180eed47d76b0195a",
+      "mode": "100644",
+      "path": ".gitignore",
+      "sha256": "77f1157cbcbc80cecea1ad203592ccb656a544cd26e7a5007d54bf8e1f83026e",
+      "sourcePath": "methodology/ru/.gitignore"
+    },
+    {
+      "bytes": 815,
+      "gitBlob": "3a534c6bc76289ada979b9b1053e1f51646a45f0",
+      "mode": "100644",
+      "path": ".human/README.spec-workflow.md",
+      "sha256": "a489e8bdff30bc0dae9efdfc911c476a20046b31b765895ead44babcead2e5f6",
+      "sourcePath": "methodology/ru/.human/README.spec-workflow.md"
+    },
+    {
+      "bytes": 5076,
+      "gitBlob": "982e1427fa547563f518486bfa9cc377bd00aab6",
+      "mode": "100644",
+      "path": ".human/adopt-existing-project-agent.md",
+      "sha256": "bd48a00061f6a65a05c8a2fd125a977cfb6bfd10024e62b378f6d3982af759ac",
+      "sourcePath": "methodology/ru/.human/adopt-existing-project-agent.md"
+    },
+    {
+      "bytes": 3358,
+      "gitBlob": "9d0d6c0d624fa27df79ae59db9212f0d3f52ca2c",
+      "mode": "100644",
+      "path": ".human/adopt-existing-project-human.md",
+      "sha256": "fe3373035e43117174961ddb7e95e33041c7a41ab041a6515cb777f8ca4f5bb6",
+      "sourcePath": "methodology/ru/.human/adopt-existing-project-human.md"
+    },
+    {
+      "bytes": 9120,
+      "gitBlob": "74910278ebb057be54a0f4e7933c30e4785296cc",
+      "mode": "100644",
+      "path": ".human/how-it-works.md",
+      "sha256": "62f8e8fc1d2fc34fec6fb89b4b3c873ed246173969941ff5bdd59be22a5fccfe",
+      "sourcePath": "methodology/ru/.human/how-it-works.md"
+    },
+    {
+      "bytes": 498,
+      "gitBlob": "8aa2b5d480aafac0871440bff0fd76eacd0899c7",
+      "mode": "100644",
+      "path": ".human/shortcuts.md.template",
+      "sha256": "1c1a68db5aabc2632192de80531fd3247d5bcee399e3421522de64c3a145ec62",
+      "sourcePath": "methodology/ru/.human/shortcuts.md.template"
+    },
+    {
+      "bytes": 5626,
+      "gitBlob": "73d5db734957564f13f04ea9d44ef2341e17ff06",
+      "mode": "100644",
+      "path": ".human/start-project-instruction.md",
+      "sha256": "87701968bf8abd3e02a6b71bf29cbc3acee25cb67537e33c1191433c451bb740",
+      "sourcePath": "methodology/ru/.human/start-project-instruction.md"
+    },
+    {
+      "bytes": 3704,
+      "gitBlob": "b5797173d47bd786d86cb89e5118367ca1a5a933",
+      "mode": "100644",
+      "path": ".human/templates/AGENTS.md",
+      "sha256": "7d3084f6fe9d1338a5abf990182369cdb95a5d919a0a8c7a1cd488cf71af5b3f",
+      "sourcePath": "methodology/ru/.human/templates/AGENTS.md"
+    },
+    {
+      "bytes": 3704,
+      "gitBlob": "b5797173d47bd786d86cb89e5118367ca1a5a933",
+      "mode": "100644",
+      "path": ".human/templates/CLAUDE.md",
+      "sha256": "7d3084f6fe9d1338a5abf990182369cdb95a5d919a0a8c7a1cd488cf71af5b3f",
+      "sourcePath": "methodology/ru/.human/templates/CLAUDE.md"
+    },
+    {
+      "bytes": 3704,
+      "gitBlob": "b5797173d47bd786d86cb89e5118367ca1a5a933",
+      "mode": "100644",
+      "path": "AGENTS.md",
+      "sha256": "7d3084f6fe9d1338a5abf990182369cdb95a5d919a0a8c7a1cd488cf71af5b3f",
+      "sourcePath": "methodology/ru/AGENTS.md"
+    },
+    {
+      "bytes": 3704,
+      "gitBlob": "b5797173d47bd786d86cb89e5118367ca1a5a933",
+      "mode": "100644",
+      "path": "CLAUDE.md",
+      "sha256": "7d3084f6fe9d1338a5abf990182369cdb95a5d919a0a8c7a1cd488cf71af5b3f",
+      "sourcePath": "methodology/ru/CLAUDE.md"
+    },
+    {
+      "bytes": 4024,
+      "gitBlob": "5d61115e98ffd8359e0c877b64efbce9dd0755ff",
+      "mode": "100644",
+      "path": "README.md",
+      "sha256": "dbf5928b9f5cf6728500811d2303dcc780497e97fd2da397cdaf74aca33488bd",
+      "sourcePath": "methodology/ru/README.md"
+    },
+    {
+      "bytes": 276,
+      "gitBlob": "7db697b41dd915d712b4dab01c6e1c1dda332eee",
+      "mode": "100644",
+      "path": "specs/.me.template",
+      "sha256": "5d833421c378db40f52b8b6ac5d88af1f44c630786d9c73336a6e6950afbe28e",
+      "sourcePath": "methodology/ru/specs/.me.template"
+    },
+    {
+      "bytes": 726,
+      "gitBlob": "791609287764b8f583edaabcc7a3aba5f191e612",
+      "mode": "100644",
+      "path": "specs/BOARD.md",
+      "sha256": "1ad99c4863db7ea47a8e6aa1fb88717094c6d94ee5e8368da0f38d36806c26d3",
+      "sourcePath": "methodology/ru/specs/BOARD.md"
+    },
+    {
+      "bytes": 2988,
+      "gitBlob": "6311bff6075976348e75bf86f49b405768762f09",
+      "mode": "100644",
+      "path": "specs/SPEC-MAP.md",
+      "sha256": "f384a36c91e5bb7a8df502871735fadc597ffa8a8b3b017d5bab4465e6c33855",
+      "sourcePath": "methodology/ru/specs/SPEC-MAP.md"
+    },
+    {
+      "bytes": 697,
+      "gitBlob": "f4d4682f302c201d8acb40722db27f0d9b819c61",
+      "mode": "100644",
+      "path": "specs/TECHDEBT.md",
+      "sha256": "35dead59ebb42c8d0dd54e7c572f40bf455b37ea8e6965b87facb3626a6c5af0",
+      "sourcePath": "methodology/ru/specs/TECHDEBT.md"
+    },
+    {
+      "bytes": 598,
+      "gitBlob": "c5008c8bdcc9e0e6ddb0c31711508a944a35de0f",
+      "mode": "100644",
+      "path": "specs/WAL.md",
+      "sha256": "8d40e1dc356e21a3e42cc247aff1c64cc7acbc8e36b030135342647dadda6d18",
+      "sourcePath": "methodology/ru/specs/WAL.md"
+    },
+    {
+      "bytes": 9751,
+      "gitBlob": "73e36df7ff0e8a6936d128c3e2d76b8135c35e37",
+      "mode": "100644",
+      "path": "specs/common/PROP-000.md",
+      "sha256": "a2f6cc465fc7f9dd09927307425c7254cdeef553859c555e73aa75da35e20ba0",
+      "sourcePath": "methodology/ru/specs/common/PROP-000.md"
+    },
+    {
+      "bytes": 4516,
+      "gitBlob": "0b02fc6b586ab9e687389b613dda2894e666e39c",
+      "mode": "100644",
+      "path": "specs/common/PROP-001-DATA.md",
+      "sha256": "1d41fe23d2a5becb598531d5a41c9f9bc3b4c93f1c985a63138f575d3fa037ab",
+      "sourcePath": "methodology/ru/specs/common/PROP-001-DATA.md"
+    },
+    {
+      "bytes": 3697,
+      "gitBlob": "dbba49bb34d1fed7ef8c7993b1719237fc5271a1",
+      "mode": "100644",
+      "path": "specs/common/PROP-002-STACK.md",
+      "sha256": "f258f5a41c88fb4f67d8c6aa0b6e3a12bb698bdb6a878c31699c32e09176b599",
+      "sourcePath": "methodology/ru/specs/common/PROP-002-STACK.md"
+    },
+    {
+      "bytes": 3612,
+      "gitBlob": "48d57566276b7cf5dab01ff2caf168a0403d8333",
+      "mode": "100644",
+      "path": "specs/common/PROP-003-UI.md",
+      "sha256": "6d56194a17f5386af9ffeead1629efb44c07e1319221e1e817a011ff764c14b7",
+      "sourcePath": "methodology/ru/specs/common/PROP-003-UI.md"
+    },
+    {
+      "bytes": 3593,
+      "gitBlob": "5d4e56c369172d47cdab50be33f261348c6e5588",
+      "mode": "100644",
+      "path": "specs/common/PROP-004-PRODUCT.md",
+      "sha256": "dbf615e7b7c71a42b5c2ef537b9eb53e51a38a2cb2baeab2d6dad58136bdb666",
+      "sourcePath": "methodology/ru/specs/common/PROP-004-PRODUCT.md"
+    },
+    {
+      "bytes": 3648,
+      "gitBlob": "8f421a64d03065f518c319ae8490c457691ec970",
+      "mode": "100644",
+      "path": "specs/common/PROP-005-RUNTIME.md",
+      "sha256": "b4b689178ec5df4fce85cdfa80cf859d4a6f7b488f35e36f1db7819595bf4870",
+      "sourcePath": "methodology/ru/specs/common/PROP-005-RUNTIME.md"
+    },
+    {
+      "bytes": 4495,
+      "gitBlob": "9a550c013e397c70b55b2b48a9b0c8218c6c67ec",
+      "mode": "100644",
+      "path": "specs/common/PROP-006-API.md",
+      "sha256": "b092e478528235bffd2a38b08a098e78f14030a3e89499f15b5648ecccc71b58",
+      "sourcePath": "methodology/ru/specs/common/PROP-006-API.md"
+    },
+    {
+      "bytes": 4861,
+      "gitBlob": "1e4b514751789597ad65f044703117a856697ea5",
+      "mode": "100644",
+      "path": "specs/common/main.md",
+      "sha256": "3e7d72b91709fdebf3e641d1280fd351acf027dc7bd5aa3b7759c0572b9c214d",
+      "sourcePath": "methodology/ru/specs/common/main.md"
+    },
+    {
+      "bytes": 4949,
+      "gitBlob": "17a9f25b6400b149061d60f8ebaf3286a758f685",
+      "mode": "100644",
+      "path": "specs/common/structure.md",
+      "sha256": "a339561718a72571a0a680358a745b4db4762644d7e9a3442d683b148dd3c030",
+      "sourcePath": "methodology/ru/specs/common/structure.md"
+    },
+    {
+      "bytes": 14896,
+      "gitBlob": "ec9a0857a12597bde21a4ff56b58b16429017dfd",
+      "mode": "100644",
+      "path": "specs/examples/FEAT-900-account-lifecycle.example.md",
+      "sha256": "1cec559d9a6528d958bae86512ca4c66c4d24ea34c37ba21d4d8189a8c9d35f8",
+      "sourcePath": "methodology/ru/specs/examples/FEAT-900-account-lifecycle.example.md"
+    },
+    {
+      "bytes": 3487,
+      "gitBlob": "f800fb43acf6eae51ba14c5ff3058074ae71aecd",
+      "mode": "100644",
+      "path": "specs/examples/FEAT-901-example-product-capability.md",
+      "sha256": "2b660760a7d056b033abb77e47eccb92f2b2cdc9196c9ebe1eb00d8a644abca6",
+      "sourcePath": "methodology/ru/specs/examples/FEAT-901-example-product-capability.md"
+    },
+    {
+      "bytes": 3971,
+      "gitBlob": "b29ddab183e38544db628d1f926980e46c527025",
+      "mode": "100644",
+      "path": "specs/examples/INFRA-900-example-runtime-baseline.md",
+      "sha256": "6f5cf245344b49ab3ee851b2523376d01a1ed47528f533e321b974ee57c372aa",
+      "sourcePath": "methodology/ru/specs/examples/INFRA-900-example-runtime-baseline.md"
+    },
+    {
+      "bytes": 2538,
+      "gitBlob": "f428a92c22c630f0d2b6081f8e2b0bed17bfc965",
+      "mode": "100644",
+      "path": "specs/modules/core/PROP-100-core-module.md",
+      "sha256": "faa0268261298f6e40a464e483bd326c94ca5af6d01fbb37a775e71ff1404481",
+      "sourcePath": "methodology/ru/specs/modules/core/PROP-100-core-module.md"
+    },
+    {
+      "bytes": 7269,
+      "gitBlob": "c01c1bb45e59995c22e0a016f1db9b93293d6b24",
+      "mode": "100644",
+      "path": "specs/protocols/BOARD-PROTOCOL.md",
+      "sha256": "b560eafb58b1a52736f12b9a97262672fe6a4a19bc2882a3965dfa3012f552ae",
+      "sourcePath": "methodology/ru/specs/protocols/BOARD-PROTOCOL.md"
+    },
+    {
+      "bytes": 13947,
+      "gitBlob": "c6164fb77f89a68a3f89c6e348f0ee3ed235653e",
+      "mode": "100644",
+      "path": "specs/protocols/BOOT.md",
+      "sha256": "7b448bb40a083dda4c9b1d0bb23eae6450c8466454d1dd0687f55ae72d613a5f",
+      "sourcePath": "methodology/ru/specs/protocols/BOOT.md"
+    },
+    {
+      "bytes": 11122,
+      "gitBlob": "6bbd1664de48e4ef974e185b01fc43394fc1a10f",
+      "mode": "100644",
+      "path": "specs/protocols/SPEC-AUTHORING-PROTOCOL.md",
+      "sha256": "fda1286b66b41210fcad7d92e43f5b87ac95a2d420c44122bdde4ae5cdb741b2",
+      "sourcePath": "methodology/ru/specs/protocols/SPEC-AUTHORING-PROTOCOL.md"
+    },
+    {
+      "bytes": 14687,
+      "gitBlob": "2b90d23dc4965d3d64a0ba3d5ba9a7541dceece9",
+      "mode": "100644",
+      "path": "specs/protocols/SPEC-PROTOCOL.md",
+      "sha256": "91332a1dda9e5a9dedaa9d83f38e7e6033943e1b61e09170c84304f1d487180c",
+      "sourcePath": "methodology/ru/specs/protocols/SPEC-PROTOCOL.md"
+    },
+    {
+      "bytes": 2787,
+      "gitBlob": "1b67154c01b2a179333271925b6b7a8835a9b748",
+      "mode": "100644",
+      "path": "specs/protocols/TECHDEBT-PROTOCOL.md",
+      "sha256": "9fdde4f78f9882d3e8613bbbc2a326abc30715f8ffeefc689369f47eb23728da",
+      "sourcePath": "methodology/ru/specs/protocols/TECHDEBT-PROTOCOL.md"
+    },
+    {
+      "bytes": 4511,
+      "gitBlob": "b8b64607f38a04929d99c64f318b7b72fe95c5e6",
+      "mode": "100644",
+      "path": "specs/protocols/WAL-PROTOCOL.md",
+      "sha256": "1a44f4f84036780c8267e6c55539594f8f081280c0191504fc2b2f2b635857fe",
+      "sourcePath": "methodology/ru/specs/protocols/WAL-PROTOCOL.md"
+    },
+    {
+      "bytes": 11653,
+      "gitBlob": "cad30c8f9be8c5ac90ce0dea6935fb54a11b08bb",
+      "mode": "100644",
+      "path": "specs/protocols/WORK-ITEM-PROTOCOL.md",
+      "sha256": "41a061c386d1579e222058101b8a3248951c499fb8110518364e3fc4ea8dbc6f",
+      "sourcePath": "methodology/ru/specs/protocols/WORK-ITEM-PROTOCOL.md"
+    },
+    {
+      "bytes": 425,
+      "gitBlob": "51ae578ea2ccd8f2732f549e1e75150a78f846cc",
+      "mode": "100644",
+      "path": "specs/work/README.md",
+      "sha256": "786c975d9cbcd67ced5df0a6563bf2bd6c1129c0ac4756f5b1b67240dc249834",
+      "sourcePath": "methodology/ru/specs/work/README.md"
+    }
+  ],
+  "language": "ru",
+  "license": "Apache-2.0",
+  "licenseSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "methodologyCommit": "b5c3e3c6576570ec348b79305e0d455469d0642c",
+  "methodologyRepository": "https://github.com/Isty-org/spec-driven-ai-dev",
+  "noticeSha256": "2159c5eb9c573e8dbe7d6f11ecdb8d49beea36c1c709bbc1754d765c0ae38049",
+  "schemaVersion": 1,
+  "scopeRule": "Only package members whose relative path and raw SHA-256 match this inventory are covered as Isty-owned Classic methodology files."
+}

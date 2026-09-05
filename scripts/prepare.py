@@ -1,19 +1,24 @@
 """Materialize one verified release-asset slice into a new isolated repository."""
 import argparse,json,os,pathlib,subprocess,sys,zipfile
 from verify import ROOT,read,sha,check
+from build_evidence_packages import inspect_package
 def prepare(run,kind,destination):
     row=next(r for r in read('data/cohort.json')['rows'] if r['runId']==run)
-    asset=next(a for a in read('assets/release-assets.json')['assets'] if a['kind']==kind and a['scenario']==row['scenario'])
-    archive=ROOT/asset['path'];check(archive.is_file(),'Place the release asset at '+str(archive))
-    check(sha(archive.read_bytes())==asset['sha256'],'Archive checksum mismatch')
+    raw_asset=next(a for a in read('assets/release-assets.json')['assets'] if a['kind']==kind and a['scenario']==row['scenario'])
+    asset=next(a for a in read('assets/release-upload-manifest.json')['uploads'] if a['sourceArchive']['filename']==raw_asset['name'])
+    archive=ROOT/asset['sourcePath'];check(archive.is_file(),'Place the sanitized release package at '+str(archive))
+    raw_path=ROOT/raw_asset['path']
+    inspect_package(archive,asset,raw_path if raw_path.is_file() else None)
     target=pathlib.Path(destination).resolve();check(not target.exists(),'Destination must be a new path')
-    manifest=read(asset['manifest']);prefix=run+'/';entries=[e for e in manifest['files'] if e['path'].startswith(prefix)]
+    prefix=run+'/'
     with zipfile.ZipFile(archive) as z:
+        manifest=json.loads(z.read('MANIFEST.json'))
+        entries=[e for e in manifest['includedEvidenceMembers'] if e['sourcePath'].startswith(prefix)]
         payload=[]
         for e in entries:
-            rel=e['path'][len(prefix):];p=pathlib.PurePosixPath(rel)
+            rel=e['sourcePath'][len(prefix):];p=pathlib.PurePosixPath(rel)
             check(not p.is_absolute() and '..' not in p.parts and '\\' not in rel and ':' not in rel,'Unsafe archive path')
-            raw=z.read(e['path']);check(sha(raw)==e['sha256'] and len(raw)==e['bytes'],'Member hash mismatch: '+rel);payload.append((rel,raw,e['mode']))
+            raw=z.read(e['packagePath']);check(sha(raw)==e['sha256'] and len(raw)==e['bytes'],'Member hash mismatch: '+rel);payload.append((rel,raw,e['mode']))
     target.mkdir(parents=True)
     for rel,raw,mode in payload:
         p=target/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(raw)

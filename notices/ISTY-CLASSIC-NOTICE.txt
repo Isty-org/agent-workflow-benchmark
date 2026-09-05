@@ -1,0 +1,4 @@
+Spec-Driven AI Development
+Copyright 2026 Isty
+
+This product includes documentation and methodology materials developed by Isty.

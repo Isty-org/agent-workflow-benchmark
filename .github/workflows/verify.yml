@@ -28,6 +28,4 @@ jobs:
           node-version: "24"
           cache: npm
       - run: npm ci --ignore-scripts
-      - run: npm run verify
-      - run: npm run reevaluate
-      - run: npm run check:public
+      - run: npm run check

@@ -1,45 +1,59 @@
 {
-  "schemaVersion": 1,
-  "basis": "Frozen local baseline ZIPs and committed member manifests; no network claims",
-  "snapshotsChecked": [
+  "schemaVersion": 2,
+  "basis": "Frozen local raw ZIPs, committed member manifests, official BMAD v6.11.0 tag, Isty publication authorization, and deterministic sanitized package verification",
+  "rawSnapshotsChecked": [
     "release-assets/baselines-new-project.zip",
     "release-assets/baselines-small-project.zip",
     "release-assets/baselines-large-project.zip",
-    "assets/manifests/baselines-new-project.json",
-    "assets/manifests/baselines-small-project.json",
-    "assets/manifests/baselines-large-project.json"
+    "release-assets/first-pass-new-project.zip",
+    "release-assets/first-pass-small-project.zip",
+    "release-assets/first-pass-large-project.zip",
+    "release-assets/review-inputs-new-project.zip",
+    "release-assets/review-inputs-small-project.zip",
+    "release-assets/review-inputs-large-project.zip"
   ],
-  "methodIsolationFinding": {
-    "source": "Product-empty new-project baseline",
-    "bmad": {
-      "version": "6.11.0",
-      "roots": ["_bmad/", ".agents/skills/bmad-*"],
-      "licenseOrNoticePathFound": false
-    },
-    "classic": {
-      "edition": "classic-2026.08",
-      "language": "Russian",
-      "licenseOrNoticePathFound": false,
-      "englishEditionTested": false
-    },
-    "prist": {
-      "roots": [".agents/skills/spec-driven-work/", ".claude/skills/spec-driven-work/", ".codex/"],
-      "licenseOrNoticePathFound": false
-    }
+  "bmad": {
+    "version": "6.11.0",
+    "tag": "v6.11.0",
+    "tagObject": "178414679b11a171ca1597b0ebc1723ed488fc73",
+    "commit": "9ce3c397c9b238de96f7365da8019f6f66b059da",
+    "packageLicense": "MIT",
+    "licenseSha256": "0aa79baf6328b4a1e694ce10a12ffc36d7666554da128dff0e8fcda0fc536a66",
+    "contributorsSha256": "1f0d0736ff06fcea2c504834b9d13196f37ca57fae5cf9054899dcec4ed36ad4",
+    "trademarkSha256": "ce57ad749e43277c6021e5d5085980b33c9bf8f67a070bbbf07e041ccdddc58b",
+    "noticeIncludedInEveryPackage": true,
+    "endorsementClaim": false
   },
-  "productNoticeFinding": {
-    "largeProjectComponentNoticePathsFound": true,
-    "examples": [
-      "native/whisper/licenses/openai-whisper-LICENSE.txt",
-      "native/whisper/licenses/whisper.cpp-LICENSE.txt",
-      "packaging/macos/licenses/SourceGear-SQLite.txt",
-      "packaging/windows/notices/licenses/Apache-2.0.txt",
-      "packaging/windows/notices/licenses/MIT.txt",
-      "packaging/windows/notices/licenses/OFL-1.1.txt"
-    ],
-    "archiveWideGrantInferred": false
+  "classic": {
+    "edition": "classic-2026.08",
+    "language": "Russian",
+    "license": "Apache-2.0",
+    "methodologyCommit": "b5c3e3c6576570ec348b79305e0d455469d0642c",
+    "scopeDefinition": "assets/classic-methodology-scope.json",
+    "scopeFiles": 39,
+    "licenseSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "noticeSha256": "2159c5eb9c573e8dbe7d6f11ecdb8d49beea36c1c709bbc1754d765c0ae38049",
+    "scopeRule": "Path, bytes, and raw SHA-256 must match the accepted methodology inventory"
+  },
+  "otherEvidence": {
+    "publicationPurpose": "benchmark inspection and verification",
+    "additionalReuseRightsGranted": false,
+    "existingThirdPartyTermsPreserved": true,
+    "credentialValuesIncluded": false,
+    "credentialHashOnlyRecords": 9
+  },
+  "sanitizedPackages": {
+    "packages": 9,
+    "rawArchivesEmbedded": 0,
+    "includedEvidenceMembers": 32096,
+    "excludedRawMembers": 28,
+    "excludedSpecsMe": 27,
+    "excludedPythonCache": 1,
+    "packageNoticesVerified": 54,
+    "status": "publishable"
   },
   "repositoryOwnedScope": "LICENSE-NOTES.md",
-  "archivePublicationGate": "third_party_rights_confirmation_required",
-  "status": "pass_with_release_gate"
+  "releaseManifest": "assets/release-upload-manifest.json",
+  "archivePublicationGate": "resolved_with_sanitized_derivatives_and_pinned_notices",
+  "status": "pass"
 }

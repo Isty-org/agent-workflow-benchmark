@@ -1,97 +1,186 @@
 {
-  "schemaVersion": 1,
-  "status": "prepared_for_final_audit_not_uploaded",
-  "releaseTarget": "Select a tag tied to the reviewed Stage 6 commit at publication time.",
+  "schemaVersion": 2,
+  "status": "approved_for_publication",
+  "releaseTarget": "v1.0.0",
   "repositoryLicense": {
     "spdx": "Apache-2.0",
     "scope": "LICENSE-NOTES.md"
   },
-  "archiveLicenseGate": {
-    "status": "third_party_rights_confirmation_required",
+  "rawArchivePolicy": {
+    "status": "preserved_local_not_uploaded",
+    "checksumFile": "assets/SHA256SUMS",
+    "details": "The nine Stage 5 ZIPs remain byte-for-byte provenance anchors. Public release assets are sanitized derivatives and never embed a raw ZIP."
+  },
+  "packageGate": {
+    "rights": "resolved_with_pinned_notices_and_hash_scoped_classic_license",
+    "content": "pass_after_member_level_sanitization",
+    "determinism": "ZIP_STORED_fixed_time_mode_order",
+    "secretScan": "pass_with_hash_pinned_test_fixture_classification",
     "details": "THIRD_PARTY_NOTICES.md"
   },
-  "checksumFile": "assets/SHA256SUMS",
+  "checksumFile": "assets/PACKAGE-SHA256SUMS",
   "uploads": [
     {
-      "name": "first-pass-large-project.zip",
-      "sourcePath": "release-assets/first-pass-large-project.zip",
+      "name": "first-pass-large-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/first-pass-large-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 28157491,
-      "sha256": "5df64bdc15295149d1dc41cdee2d6a998326718195c93a8e8041f57b3f7a0ad2",
-      "memberManifest": "assets/manifests/first-pass-large-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 114198141,
+      "sha256": "08adc3fb591c0dbae07a3366592d1c1164c7e393445f0a76f8818c9142bfb00a",
+      "sourceArchive": {
+        "filename": "first-pass-large-project.zip",
+        "sourcePath": "release-assets/first-pass-large-project.zip",
+        "memberManifest": "assets/manifests/first-pass-large-project.json",
+        "memberManifestSha256": "5b47dd81ff690672185087a0779fdb8ad7d80b2b1fadaa8110e20a26851fe460",
+        "bytes": 28157491,
+        "sha256": "5df64bdc15295149d1dc41cdee2d6a998326718195c93a8e8041f57b3f7a0ad2",
+        "rawMemberCount": 8941
+      },
+      "sanitization": {"includedEvidenceMemberCount": 8938, "excludedRawMemberCount": 3, "priorHashOnlyExclusionCount": 3},
+      "status": "publishable"
     },
     {
-      "name": "first-pass-new-project.zip",
-      "sourcePath": "release-assets/first-pass-new-project.zip",
+      "name": "first-pass-new-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/first-pass-new-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 2948164,
-      "sha256": "b74c4b7bfa5a56828e416b3964ea6e2244834a8c2bcd5443326edcebc2c045d1",
-      "memberManifest": "assets/manifests/first-pass-new-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 9160071,
+      "sha256": "d26e932563b34597491fb722e5a6792e216781a91d5e4f9d4513e41bc88c15e9",
+      "sourceArchive": {
+        "filename": "first-pass-new-project.zip",
+        "sourcePath": "release-assets/first-pass-new-project.zip",
+        "memberManifest": "assets/manifests/first-pass-new-project.json",
+        "memberManifestSha256": "140f87b1fd3ba5a4779a28dd8d7437645fcd22bff4eedc68a3effccab345ee32",
+        "bytes": 2948164,
+        "sha256": "b74c4b7bfa5a56828e416b3964ea6e2244834a8c2bcd5443326edcebc2c045d1",
+        "rawMemberCount": 1163
+      },
+      "sanitization": {"includedEvidenceMemberCount": 1160, "excludedRawMemberCount": 3, "priorHashOnlyExclusionCount": 3},
+      "status": "publishable"
     },
     {
-      "name": "first-pass-small-project.zip",
-      "sourcePath": "release-assets/first-pass-small-project.zip",
+      "name": "first-pass-small-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/first-pass-small-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 4106306,
-      "sha256": "089e1e8f030ec63e9b3045112e3cf64d1b89e02f670a6893a2142681cf8d62f7",
-      "memberManifest": "assets/manifests/first-pass-small-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 13643199,
+      "sha256": "4d4bcf89daac667fb20d57a06ceec4aca273464f87d052bc7cb78864be9bb1cb",
+      "sourceArchive": {
+        "filename": "first-pass-small-project.zip",
+        "sourcePath": "release-assets/first-pass-small-project.zip",
+        "memberManifest": "assets/manifests/first-pass-small-project.json",
+        "memberManifestSha256": "f9b4c2d946f39f4df730d72a0a49760caa919ee1ad86383056c39d2057d81edc",
+        "bytes": 4106306,
+        "sha256": "089e1e8f030ec63e9b3045112e3cf64d1b89e02f670a6893a2142681cf8d62f7",
+        "rawMemberCount": 1701
+      },
+      "sanitization": {"includedEvidenceMemberCount": 1698, "excludedRawMemberCount": 3, "priorHashOnlyExclusionCount": 3},
+      "status": "publishable"
     },
     {
-      "name": "review-inputs-large-project.zip",
-      "sourcePath": "release-assets/review-inputs-large-project.zip",
+      "name": "review-inputs-large-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/review-inputs-large-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 24926492,
-      "sha256": "a53aa36c0e9724b860f8368e91868b829453239a769c349a009f641019d92f07",
-      "memberManifest": "assets/manifests/review-inputs-large-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 103571779,
+      "sha256": "e912cb639f81abcae5dc622eed745934db5c7c78bbb2542c3fe6a8c22f9f8afd",
+      "sourceArchive": {
+        "filename": "review-inputs-large-project.zip",
+        "sourcePath": "release-assets/review-inputs-large-project.zip",
+        "memberManifest": "assets/manifests/review-inputs-large-project.json",
+        "memberManifestSha256": "2529a66d77af4e55a1552c939300a710125360edae87fc4e90d70e9c3c1f4bd1",
+        "bytes": 24926492,
+        "sha256": "a53aa36c0e9724b860f8368e91868b829453239a769c349a009f641019d92f07",
+        "rawMemberCount": 7786
+      },
+      "sanitization": {"includedEvidenceMemberCount": 7783, "excludedRawMemberCount": 3, "priorHashOnlyExclusionCount": 0},
+      "status": "publishable"
     },
     {
-      "name": "review-inputs-new-project.zip",
-      "sourcePath": "release-assets/review-inputs-new-project.zip",
+      "name": "review-inputs-new-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/review-inputs-new-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 322359,
-      "sha256": "a050c5fdf129acf9fefa70ea49ac1071d12d92e38f803034b283370a503644c7",
-      "memberManifest": "assets/manifests/review-inputs-new-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 1076325,
+      "sha256": "ddf1df2cf85a90fda135370af1a2a462c4feb4c44ebe618742c661158544ba61",
+      "sourceArchive": {
+        "filename": "review-inputs-new-project.zip",
+        "sourcePath": "release-assets/review-inputs-new-project.zip",
+        "memberManifest": "assets/manifests/review-inputs-new-project.json",
+        "memberManifestSha256": "6bd3c7f38b5fad774428f5b20fb6d497152e878ac46801350628669524cf87ae",
+        "bytes": 322359,
+        "sha256": "a050c5fdf129acf9fefa70ea49ac1071d12d92e38f803034b283370a503644c7",
+        "rawMemberCount": 165
+      },
+      "sanitization": {"includedEvidenceMemberCount": 161, "excludedRawMemberCount": 4, "priorHashOnlyExclusionCount": 0},
+      "status": "publishable"
     },
     {
-      "name": "review-inputs-small-project.zip",
-      "sourcePath": "release-assets/review-inputs-small-project.zip",
+      "name": "review-inputs-small-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/review-inputs-small-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 1617341,
-      "sha256": "8d2326b34b22d0ecadc7f9a1d1c6a4490d5470b6dff13334d14372f06c6f6070",
-      "memberManifest": "assets/manifests/review-inputs-small-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 6306609,
+      "sha256": "1247d5e24f1e028e538d5fa683224cc99d7c4a060c11fa7b3d8894df314cd5c6",
+      "sourceArchive": {
+        "filename": "review-inputs-small-project.zip",
+        "sourcePath": "release-assets/review-inputs-small-project.zip",
+        "memberManifest": "assets/manifests/review-inputs-small-project.json",
+        "memberManifestSha256": "867ddf204cfe2e11c0b44e6672819b7e0b2564569f7a88ec7ea5218a55c98292",
+        "bytes": 1617341,
+        "sha256": "8d2326b34b22d0ecadc7f9a1d1c6a4490d5470b6dff13334d14372f06c6f6070",
+        "rawMemberCount": 812
+      },
+      "sanitization": {"includedEvidenceMemberCount": 809, "excludedRawMemberCount": 3, "priorHashOnlyExclusionCount": 0},
+      "status": "publishable"
     },
     {
-      "name": "baselines-large-project.zip",
-      "sourcePath": "release-assets/baselines-large-project.zip",
+      "name": "baselines-large-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/baselines-large-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 28119430,
-      "sha256": "15ad3a0dc4426a0b1a856c7057b4e1f822a8d9a5846d6eccf907fca2796aacf5",
-      "memberManifest": "assets/manifests/baselines-large-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 113894797,
+      "sha256": "130f367e517dfe39c1bdbe1d470f6ded855bf3132592bd94cded6c099bf3d0ec",
+      "sourceArchive": {
+        "filename": "baselines-large-project.zip",
+        "sourcePath": "release-assets/baselines-large-project.zip",
+        "memberManifest": "assets/manifests/baselines-large-project.json",
+        "memberManifestSha256": "a7bc753eba60a5ad09caceae618815b955aeb33d564db0d3ed440983fc185fad",
+        "bytes": 28119430,
+        "sha256": "15ad3a0dc4426a0b1a856c7057b4e1f822a8d9a5846d6eccf907fca2796aacf5",
+        "rawMemberCount": 8919
+      },
+      "sanitization": {"includedEvidenceMemberCount": 8916, "excludedRawMemberCount": 3, "priorHashOnlyExclusionCount": 0},
+      "status": "publishable"
     },
     {
-      "name": "baselines-new-project.zip",
-      "sourcePath": "release-assets/baselines-new-project.zip",
+      "name": "baselines-new-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/baselines-new-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 2675017,
-      "sha256": "a17416a2ef905b1b04b8102140ae784493d2d337cf0682c013c714a0496a87c6",
-      "memberManifest": "assets/manifests/baselines-new-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 8139648,
+      "sha256": "fbedec68832abad863348e6a7a1eea1d10d8087a5f71515bc72ab9e0f381af66",
+      "sourceArchive": {
+        "filename": "baselines-new-project.zip",
+        "sourcePath": "release-assets/baselines-new-project.zip",
+        "memberManifest": "assets/manifests/baselines-new-project.json",
+        "memberManifestSha256": "2bd46dbdfdd2dd8d4678071003a274720fe6087e8b31945a6db2d0be5ad1d150",
+        "bytes": 2675017,
+        "sha256": "a17416a2ef905b1b04b8102140ae784493d2d337cf0682c013c714a0496a87c6",
+        "rawMemberCount": 1047
+      },
+      "sanitization": {"includedEvidenceMemberCount": 1044, "excludedRawMemberCount": 3, "priorHashOnlyExclusionCount": 0},
+      "status": "publishable"
     },
     {
-      "name": "baselines-small-project.zip",
-      "sourcePath": "release-assets/baselines-small-project.zip",
+      "name": "baselines-small-project-evidence-package.zip",
+      "sourcePath": "release-assets/packages/baselines-small-project-evidence-package.zip",
       "mediaType": "application/zip",
-      "bytes": 3886597,
-      "sha256": "6fb884f4f4a7fafaa8650ea2ef6c071378dba33b29e3e612ac4f2db8443c1358",
-      "memberManifest": "assets/manifests/baselines-small-project.json",
-      "status": "prepared_local_awaiting_rights_confirmation"
+      "bytes": 12572848,
+      "sha256": "b1d59e4ccd2f21427378eec865eb377d950a902702db54a2b64a24b032256d59",
+      "sourceArchive": {
+        "filename": "baselines-small-project.zip",
+        "sourcePath": "release-assets/baselines-small-project.zip",
+        "memberManifest": "assets/manifests/baselines-small-project.json",
+        "memberManifestSha256": "44c0aa1a08a333d9c0b248c3b0cb21ddc13720b24a9a73067eeb302f3c6542b2",
+        "bytes": 3886597,
+        "sha256": "6fb884f4f4a7fafaa8650ea2ef6c071378dba33b29e3e612ac4f2db8443c1358",
+        "rawMemberCount": 1590
+      },
+      "sanitization": {"includedEvidenceMemberCount": 1587, "excludedRawMemberCount": 3, "priorHashOnlyExclusionCount": 0},
+      "status": "publishable"
     }
   ]
 }

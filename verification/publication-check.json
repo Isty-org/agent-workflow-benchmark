@@ -6,9 +6,13 @@
   "resultsMatchedSourceSnapshot": true,
   "stage5PayloadDirectoriesVerified": 3,
   "stage5PayloadContentEdits": 0,
-  "releaseAssetsInUploadManifest": 9,
-  "publicFilesScanned": 20,
+  "rawArchivesInProvenance": 9,
+  "rawArchivesApprovedForUpload": 0,
+  "sanitizedPackagesInUploadManifest": 9,
+  "sanitizedPackagesPublishable": 9,
+  "publicFilesScanned": 30,
   "secretLikeMatches": 0,
   "machineSpecificPathMatches": 0,
-  "licenseSnapshotAudit": "pass_with_release_gate"
+  "licenseSnapshotAudit": "pass",
+  "packageGate": "resolved_with_sanitized_derivatives_and_pinned_notices"
 }

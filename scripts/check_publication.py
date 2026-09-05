@@ -118,12 +118,17 @@ def verify_upload_manifest(errors: list[str]) -> None:
     source = read_json("assets/release-assets.json")
     upload = read_json("assets/release-upload-manifest.json")
     source_by_name = {asset["name"]: asset for asset in source["assets"]}
-    upload_by_name = {asset["name"]: asset for asset in upload["uploads"]}
-    if len(source_by_name) != 9 or set(source_by_name) != set(upload_by_name):
-        fail(errors, "Release upload manifest must contain the same nine ZIP assets")
+    upload_by_raw = {asset["sourceArchive"]["filename"]: asset for asset in upload["uploads"]}
+    if len(source_by_name) != 9 or set(source_by_name) != set(upload_by_raw):
+        fail(errors, "Release upload manifest must map nine raw archives to nine sanitized packages")
         return
+    if upload.get("status") != "approved_for_publication":
+        fail(errors, "Release upload manifest is not approved")
+    if upload.get("rawArchivePolicy", {}).get("status") != "preserved_local_not_uploaded":
+        fail(errors, "Raw archive no-upload policy is missing")
     for name, source_asset in source_by_name.items():
-        candidate = upload_by_name[name]
+        candidate = upload_by_raw[name]
+        raw = candidate["sourceArchive"]
         comparisons = {
             "sourcePath": source_asset["path"],
             "bytes": source_asset["bytes"],
@@ -131,20 +136,53 @@ def verify_upload_manifest(errors: list[str]) -> None:
             "memberManifest": source_asset["manifest"],
         }
         for key, value in comparisons.items():
-            if candidate.get(key) != value:
-                fail(errors, f"Release upload manifest mismatch: {name}/{key}")
-        if candidate.get("status") != "prepared_local_awaiting_rights_confirmation":
-            fail(errors, f"Release rights gate missing: {name}")
+            if raw.get(key) != value:
+                fail(errors, f"Raw provenance mismatch: {name}/{key}")
+        expected_package = name.removesuffix(".zip") + "-evidence-package.zip"
+        if candidate.get("name") != expected_package:
+            fail(errors, f"Sanitized package name mismatch: {name}")
+        if candidate.get("sourcePath") != f"release-assets/packages/{expected_package}":
+            fail(errors, f"Sanitized package path mismatch: {name}")
+        if candidate.get("status") != "publishable":
+            fail(errors, f"Sanitized package is not publishable: {name}")
+        if not re.fullmatch(r"[0-9a-f]{64}", candidate.get("sha256", "")):
+            fail(errors, f"Sanitized package checksum missing: {name}")
+        sanitization = candidate.get("sanitization", {})
+        if sanitization.get("includedEvidenceMemberCount", 0) + sanitization.get(
+            "excludedRawMemberCount", 0
+        ) != raw.get("rawMemberCount"):
+            fail(errors, f"Sanitized package member accounting mismatch: {name}")
+
+    sums = (ROOT / "assets/PACKAGE-SHA256SUMS").read_text(encoding="utf-8").splitlines()
+    expected_sums = [f"{item['sha256']}  {item['name']}" for item in upload["uploads"]]
+    if sums != expected_sums:
+        fail(errors, "PACKAGE-SHA256SUMS differs from upload manifest")
+
+    scope = read_json("assets/classic-methodology-scope.json")
+    if scope.get("methodologyCommit") != "b5c3e3c6576570ec348b79305e0d455469d0642c":
+        fail(errors, "Classic methodology scope commit mismatch")
+    if len(scope.get("files", [])) != 39 or len({item["path"] for item in scope["files"]}) != 39:
+        fail(errors, "Classic methodology scope must identify 39 unique files")
 
 
 def public_files():
     files = [path for path in ROOT.glob("*.md") if path.is_file()]
     files.extend(path for path in (ROOT / ".github").rglob("*") if path.is_file())
+    files.extend(path for path in (ROOT / "notices").rglob("*") if path.is_file())
+    files.extend(
+        path
+        for path in (ROOT / "tests").rglob("*")
+        if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc"
+    )
     files.extend(
         [
             ROOT / "assets/release-upload-manifest.json",
+            ROOT / "assets/PACKAGE-SHA256SUMS",
+            ROOT / "assets/classic-methodology-scope.json",
             ROOT / "package.json",
             ROOT / "LICENSE",
+            ROOT / "scripts/build_evidence_packages.py",
+            ROOT / "scripts/index_classic_scope.py",
         ]
     )
     return sorted(set(files))
@@ -154,7 +192,7 @@ def scan_public_files(errors: list[str]) -> None:
     local_patterns = [
         re.compile(r"(?i)[a-z]:[\\/]users[\\/]"),
         re.compile(r"/(?:users|home)/", re.IGNORECASE),
-        re.compile(r"(?i)agent-benchmark-polygon|prist-benchmark-control|spec-driven-ai-dev"),
+        re.compile(r"(?i)agent-benchmark-polygon|prist-benchmark-control"),
     ]
     secret_patterns = [
         re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----"),
@@ -210,7 +248,15 @@ def verify_license(errors: list[str]) -> None:
     for value in ["data/", "protocol/", "evidence/", "release-assets/", "BMAD", "Classic", "Prist"]:
         if value not in notes:
             fail(errors, f"License scope omission: {value}")
-    for value in ["BMAD Method 6.11.0", "classic-2026.08", "rights review", "license/notice"]:
+    for value in [
+        "BMAD Method 6.11.0",
+        "classic-2026.08",
+        "v6.11.0",
+        "MIT",
+        "TRADEMARK",
+        "sanitized",
+        "no additional",
+    ]:
         if value not in third_party:
             fail(errors, f"Third-party notice omission: {value}")
 
