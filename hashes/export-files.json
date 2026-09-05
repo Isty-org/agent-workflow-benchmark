@@ -2404,8 +2404,8 @@
     },
     {
       "path": "scripts/check_publication.py",
-      "bytes": 12487,
-      "sha256": "6cecf0fe9b9e66d439eb13e5290f05d6d0e28bdf43a8b4b945aef2d46a468aac"
+      "bytes": 12841,
+      "sha256": "4b20872d6c4618ffa464255fd2978a97f4973cd2638da3f93fdcb80eeb8e0679"
     },
     {
       "path": "scripts/index_classic_scope.py",
@@ -2449,8 +2449,8 @@
     },
     {
       "path": "tests/test_evidence_package_builder.py",
-      "bytes": 9656,
-      "sha256": "50a8ffcc8c22edfe3a223bf940a6d77d06a30c362145f0f6c775a0424239065f"
+      "bytes": 10659,
+      "sha256": "17f7d5faa57df74563cb6bee80b7fe6e98270684db1e565edee7a4ee690f4047"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -2494,8 +2494,8 @@
     },
     {
       "path": "verification/stage5-payload-lock.json",
-      "bytes": 906,
-      "sha256": "77854b6668379dda2c82f483528ee391b370bea555f81bd0782ac65209be5820"
+      "bytes": 941,
+      "sha256": "353783542ca9d11ab2ee0c93c6842d8a8e3e8235736a997dab53fa43ce1768f7"
     },
     {
       "path": "VERIFY.md",

@@ -16,6 +16,13 @@ MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
 SPEC.loader.exec_module(MODULE)
 
+PUBLICATION_SPEC = importlib.util.spec_from_file_location(
+    "check_publication", ROOT / "scripts/check_publication.py"
+)
+PUBLICATION_MODULE = importlib.util.module_from_spec(PUBLICATION_SPEC)
+assert PUBLICATION_SPEC.loader is not None
+PUBLICATION_SPEC.loader.exec_module(PUBLICATION_MODULE)
+
 
 def digest(raw):
     return hashlib.sha256(raw).hexdigest()
@@ -215,6 +222,21 @@ class EvidencePackageBuilderTests(unittest.TestCase):
             )
             with self.assertRaisesRegex(ValueError, "Package member hash mismatch"):
                 MODULE.inspect_package(tampered, self.tampered_expected(record, tampered), raw_path, ROOT)
+
+
+class PublicationPortabilityTests(unittest.TestCase):
+    def test_stage5_path_order_is_independent_of_host_path_flavor(self):
+        paths = [
+            "protocol/benchmark/README.md",
+            "protocol/benchmark.json",
+            "protocol/Benchmark.md",
+            "protocol/benchmark/evaluator/checker.md",
+        ]
+        accepted_windows_order = sorted(paths, key=pathlib.PureWindowsPath)
+        native_posix_order = sorted(paths, key=pathlib.PurePosixPath)
+        canonical_order = sorted(paths, key=PUBLICATION_MODULE.canonical_relative_path_key)
+        self.assertNotEqual(accepted_windows_order, native_posix_order)
+        self.assertEqual(accepted_windows_order, canonical_order)
 
 
 if __name__ == "__main__":

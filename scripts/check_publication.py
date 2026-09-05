@@ -51,6 +51,11 @@ def fail(errors: list[str], message: str) -> None:
     errors.append(message)
 
 
+def canonical_relative_path_key(relative: str) -> tuple[str, ...]:
+    """Match the accepted Stage 5 case-insensitive path-part order on every OS."""
+    return tuple(part.casefold() for part in pathlib.PurePosixPath(relative).parts)
+
+
 def extract_results(path: str, errors: list[str]):
     text = (ROOT / path).read_text(encoding="utf-8")
     found = {}
@@ -99,7 +104,10 @@ def verify_payload_lock(errors: list[str]) -> None:
     lock = read_json("verification/stage5-payload-lock.json")
     for expected in lock["scope"]:
         directory = ROOT / expected["directory"]
-        files = sorted(path for path in directory.rglob("*") if path.is_file())
+        files = sorted(
+            (path for path in directory.rglob("*") if path.is_file()),
+            key=lambda path: canonical_relative_path_key(path.relative_to(ROOT).as_posix()),
+        )
         lines = []
         total_bytes = 0
         for path in files:

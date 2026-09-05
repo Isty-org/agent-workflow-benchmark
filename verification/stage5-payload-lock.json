@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "baseCommit": "a37177f015facdafbc5338aede5c0b930a60742b",
-  "algorithm": "sha256 of sorted UTF-8 lines: <raw_sha256> <bytes> <repo_relative_path>\\n",
+  "algorithm": "sha256 of UTF-8 lines <raw_sha256> <bytes> <repo_relative_path>\\n ordered by case-folded POSIX path segments",
   "scope": [
     {
       "directory": "data",
